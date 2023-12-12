@@ -14,7 +14,7 @@ in genaral, $f(n)$ = $\frac{1}{n} + \frac{1}{n + 1} + ...$ with n terms OR $\fra
 
 but than $f(\infty) = ?$
 
-$f(n,x) = \frac{1}{n} + \frac{1}{n + 1} + ... + \frac{1}{xn - 1}$ for integer n and $x$ as $\frac{integer}{n}
+$f(n,x) = \frac{1}{n} + \frac{1}{n + 1} + ... + \frac{1}{xn - 1}$ for integer n and $x$ as $\frac{integer}{n}$
 
 $f(n,x + \frac{1}{n}) - f(n,x) = \frac{1}{xn}$
 
