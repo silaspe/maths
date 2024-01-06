@@ -8,6 +8,7 @@ nav:
   - Calculus: derivatives.md
   - Calculus II: calculus_2.md
   - Complex: complex.md
+  - Jacobian: jacobian.md
   - Hyperbolic: hyperbolic.md
   - Harmonic: harmonic.md
   - Trigonometry: trigonometry.md
