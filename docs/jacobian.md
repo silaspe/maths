@@ -88,3 +88,11 @@ dy\end{bmatrix} $$
 
 $$ f\prime (z) = \begin{bmatrix}  \frac{\partial u}{\partial x} \quad \frac{\partial v}{\partial x} \\
 \frac{\partial u}{\partial y} \quad \frac{\partial v}{\partial y}\end{bmatrix} $$
+
+#### clarification and cauchy-reimann equations
+
+technicaly a term like $\partial u_y$ seems like the change in $u$ when $z$ adds $dy$, but actually it is the change in $u$ when $z$ moves up by $dyi$, but this is just $x + yi + dyi$, so $x + (y + dy)i$ which means that it is a change in $u$ when $y$ increses
+
+in short, $\partial u_y$ is not the change in $u$ when $z$ adds $dy$, but the change of $u$ when you increse $y$
+
+on another note, the equation or jacobian matrix is a matrix, but as you know, evry complex number has a corrasponding matrix but not every matrix has a corrasponding complex number, so to  find out if the jacobian matrix is a complex number or just a matrix, or said another way, if complex function $f(z)$ has a derivitave, we need the cauchy-reimann equations, lets go derive them!
