@@ -77,17 +77,17 @@ $$ f(z + dx + dyi) = f(z + dz) = f(z) + \begin{bmatrix}  \partial u_x \\
 $$ f(z + dz) - f(z) = df = \begin{bmatrix}  \partial u_x \\
 \partial v_x\end{bmatrix} + \begin{bmatrix}  \partial u_y \\
 \partial v_y\end{bmatrix} = \partial u_x \hat{I} + \partial v_x \hat{j} + \partial u_y \hat{I} + \partial v_y \hat{j} = \frac{\partial u}{\partial x} dx \hat{I} + \frac{\partial v}{\partial x} dx \hat{j} + \frac{\partial u}{\partial y} dy \hat{I} + \frac{\partial v}{\partial y} dy \hat{j} = \begin{bmatrix} \frac{\partial u}{\partial x} dx + \frac{\partial u}{\partial y} dy  \\
-\frac{\partial v}{\partial x} dx + \frac{\partial v}{\partial y} dy\end{bmatrix} = \begin{bmatrix}  \frac{\partial u}{\partial x} \quad \frac{\partial v}{\partial x} \\
-\frac{\partial u}{\partial y} \quad \frac{\partial v}{\partial y}\end{bmatrix} \begin{bmatrix}  dx \\
+\frac{\partial v}{\partial x} dx + \frac{\partial v}{\partial y} dy\end{bmatrix} = \begin{bmatrix}  \frac{\partial u}{\partial x} \quad \frac{\partial u}{\partial y} \\
+\frac{\partial v}{\partial x} \quad \frac{\partial v}{\partial y}\end{bmatrix} \begin{bmatrix}  dx \\
 dy\end{bmatrix} $$
 
 $$ \begin{bmatrix}  du \\
-dv\end{bmatrix} = \begin{bmatrix}  \frac{\partial u}{\partial x} \quad \frac{\partial v}{\partial x} \\
-\frac{\partial u}{\partial y} \quad \frac{\partial v}{\partial y}\end{bmatrix} \begin{bmatrix}  dx \\
+dv\end{bmatrix} = \begin{bmatrix}  \frac{\partial u}{\partial x} \quad \frac{\partial u}{\partial y} \\
+\frac{\partial v}{\partial x} \quad \frac{\partial v}{\partial y}\end{bmatrix} \begin{bmatrix}  dx \\
 dy\end{bmatrix} $$
 
-$$ f\prime (z) = \begin{bmatrix}  \frac{\partial u}{\partial x} \quad \frac{\partial v}{\partial x} \\
-\frac{\partial u}{\partial y} \quad \frac{\partial v}{\partial y}\end{bmatrix} $$
+$$ f\prime (z) = \begin{bmatrix}  \frac{\partial u}{\partial x} \quad \frac{\partial u}{\partial y} \\
+\frac{\partial v}{\partial x} \quad \frac{\partial v}{\partial y}\end{bmatrix} $$
 
 #### clarification and cauchy-reimann equations
 
@@ -96,3 +96,31 @@ technicaly a term like $\partial u_y$ seems like the change in $u$ when $z$ adds
 in short, $\partial u_y$ is not the change in $u$ when $z$ adds $dy$, but the change of $u$ when you increse $y$
 
 on another note, the equation or jacobian matrix is a matrix, but as you know, evry complex number has a corrasponding matrix but not every matrix has a corrasponding complex number, so to  find out if the jacobian matrix is a complex number or just a matrix, or said another way, if complex function $f(z)$ has a derivitave, we need the cauchy-reimann equations, lets go derive them!
+
+so, if the jacobian matrix is a complex number $a + bi$ which I have been saving for something like this, than the corrasponding matrix is:
+
+$$ \begin{bmatrix} a & -b \\
+b & a\end{bmatrix} $$
+
+so that means that
+
+$$ \begin{bmatrix}  \frac{\partial u}{\partial x} \quad \frac{\partial u}{\partial y} \\
+\frac{\partial v}{\partial x} \quad \frac{\partial v}{\partial y}\end{bmatrix} = \begin{bmatrix} a & -b \\
+b & a\end{bmatrix} $$
+
+well, what makes a matrix of that form?
+
+for one, the top left equals the bottom right equals $a$
+
+and for another, the top right equals the bottom left equals $-b$
+
+### in conclusion...
+
+$$ f\prime (z) = \begin{bmatrix}  \frac{\partial u}{\partial x} \quad \frac{\partial u}{\partial y} \\
+\frac{\partial v}{\partial x} \quad \frac{\partial v}{\partial y}\end{bmatrix} $$
+
+and to test if this is a matrix or a complex number
+
+$$ \frac{\partial u}{\partial x} = \frac{\partial v}{\partial y} $$
+
+$$ \frac{\partial u}{\partial y} = -\frac{\partial v}{\partial x} $$
