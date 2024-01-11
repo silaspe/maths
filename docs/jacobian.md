@@ -129,7 +129,7 @@ $$ \frac{\partial u}{\partial y} = -\frac{\partial v}{\partial x} $$
 
 $$ f(z) = z^2 $$
 
-$$ f(x +yi) = (xx^2 - y^2) + (2xy)i $$
+$$ f(x +yi) = (x^2 - y^2) + (2xy)i $$
 
 $$ u = x^2 - y^2 $$
 
