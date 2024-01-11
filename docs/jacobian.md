@@ -124,3 +124,43 @@ and to test if this is a matrix or a complex number
 $$ \frac{\partial u}{\partial x} = \frac{\partial v}{\partial y} $$
 
 $$ \frac{\partial u}{\partial y} = -\frac{\partial v}{\partial x} $$
+
+### examples
+
+$$ f(z) = z^2 $$
+
+$$ f(x +yi) = (xx^2 - y^2) + (2xy)i $$
+
+$$ u = x^2 - y^2 $$
+
+$$ v = 2xy $$
+
+$$ \frac{\partial u}{\partial x} = \frac{\partial}{\partial x} (x^2 - y^2) = 2x $$
+
+$$ \frac{\partial u}{\partial y} = \frac{\partial}{\partial y} (x^2 - y^2) = -2y $$
+
+$$ \frac{\partial v}{\partial x} = \frac{\partial}{\partial x} (2xy) = 2y $$
+
+$$ \frac{\partial v}{\partial y} = \frac{\partial}{\partial y} (2xy) = 2x $$
+
+$$ 2x = 2x $$
+
+$$ -2y = -2y $$
+
+$$ f(z) = ccong(z) $$
+
+$$ f(x + yi) = x - yi $$
+
+$$ \frac{\partial u}{\partial x} = \frac{\partial}{\partial x} x = 1 $$
+
+$$ \frac{\partial u}{\partial y} = \frac{\partial}{\partial y} x = 0 $$
+
+$$ \frac{\partial v}{\partial x} = \frac{\partial}{\partial x} (-y) = 0 $$
+
+$$ \frac{\partial v}{\partial y} = \frac{\partial}{\partial y} (-y) = -1 $$
+
+$$ 1 \ne -1 $$
+
+$$ 0 = 0 $$
+
+in conclution $z^2$ has a derivitave, and $ccong(z)$ does not
