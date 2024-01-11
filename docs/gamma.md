@@ -32,8 +32,18 @@ $$ \int_{a}^{b} f(x) dx = : \int f(b) - \int f(a) $$
 
 $$ \int{0}^{\infty} f(x) dx = : (\lim_{x \to \infty} f(x)) - f(0) $$
 
-$$ \int e^{xt} dt = \frac{e^{xt}}{x} \partial $$
+$$ \int e^{xt} dt = \frac{e^{xt}}{x} $$
 
 $$ \int_{0}^{\infty} e^{xt} dt = \frac{e^{\infty x}}{x} - e^{0x} = -\frac{1}{x}, x<0 $$
 
-$$ \frac{d^n}{dx^n} \int_{0}^{\infty} e^{xt} dt = \frac{d^n}{dx^n} (-\frac{1}{x}) $$
+$$ \frac{d^n}{dx^n} \int_{0}^{\infty} e^{xt} dt = \frac{d^n}{dx^n} (-\frac{1}{x}), x<0 $$
+
+$$ \int_{0}^{\infty} \frac{\partial^n}{\partial x^n} e^{xt} dt = \frac{n!}{(-x)^{n + 1}}, x<0 $$
+
+$$ \int_{0}^{\infty} t^n e^{xt} dt = \frac{n!}{(-x)^{n + 1}}, x<0 $$
+
+$$ \int_{0}^{\infty} t^n e^{-t} dt = n! $$
+
+$$ \Gamma (x) = : \int_{0}^{\infty} t^{n - 1} e^{-t} dt $$
+
+problem solved! but this has no constraint that $n$ is an integer, so I will use $x$ now that it is freed up from the formula, and the factorial has its own definition so the formula has been demoted to $\Gamma (x + 1)$
