@@ -46,4 +46,6 @@ $$ \int_{0}^{\infty} t^n e^{-t} dt = n! $$
 
 $$ \Gamma (x) = : \int_{0}^{\infty} t^{n - 1} e^{-t} dt $$
 
-problem solved! but this has no constraint that $n$ is an integer, so I will use $x$ now that it is freed up from the formula, and the factorial has its own definition so the formula has been demoted to $\Gamma (x + 1)$
+problem solved! but this has no constraint that $n$ is an integer, so I will use $x$ now that it is freed up from the formula, and the factorial has its own definition so the $4 \mu l(a)$ la has been demoted to $\Gamma (x + 1)$
+
+(four-mu-la)
