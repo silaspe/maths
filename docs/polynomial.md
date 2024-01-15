@@ -25,3 +25,25 @@ $$ r = \frac{b^4}{256a^4} - \frac{b^4}{64a^3} + \frac{b^2c}{16a^3} - \frac{bd}{4
 ### depresed quartic
 
 $$ x^4 + px^2 + qx + r = 0 $$
+
+$$ x^4 + px^2 = -qx - r $$
+
+$$ x^4 + 2px^2 + p^2 = px^2 - qx - r + p^2 $$
+
+$$ (x^2 + p)^2 = px^2 - qx - r + p^2 $$
+
+$$ (x^2 + p)^2 + 2(x^2 + p)z + z^2 = (x^2 + p + z)^2 = px^2 - qx - r + p^2 + 2zx^2 + 2pz + z^2 = (p + 2z)x^2 - qx + 2pz + z^2 - r + p^2 $$
+
+now, define z so that the right side of this equation is a perfect square. But then a quadratic is of the form $(x - ?)(x - ?)$, so if it is a perfect sqare, than there is only one solution, which means that the discriminant equals zero, so
+
+$$ (-q)^2 - 4(p + 2z)(2pz + z^2 - r + p^2) = 0 $$
+
+expanding out, we get a cubic polynomial to solve for z. and once we do, we have that $(x^2 + p + z)^2 = (?x + ?)^2$, so now we can solve for x
+
+yay! but we still have to derive the quadratic discriminate and the cubic formula in the next few chapters.
+
+### cubic
+
+ax^3 + bx^2 + cx + d = 0
+
+x \to x - \frac{b}{3a}
