@@ -44,6 +44,6 @@ yay! but we still have to derive the quadratic discriminate and the cubic formul
 
 ### cubic
 
-ax^3 + bx^2 + cx + d = 0
+$$ ax^3 + bx^2 + cx + d = 0 $$
 
-x \to x - \frac{b}{3a}
+$$ x \to x - \frac{b}{3a} $$
