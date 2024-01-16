@@ -10,7 +10,7 @@ $$ ax^4 - 4ax^3 \frac{b}{4a} + 6ax^2 \frac{b^2}{16a^2} - 4ax \frac{b^3}{64a^3} +
 
 $$ ax^4 - bx^3 + \frac{3b^2 x^2}{8a} - \frac{b^3 x}{16a^2} + \frac{b^4}{256a^3} + bx^3 - \frac{3b^2 x^2}{4a} + \frac{3b^3 x}{16a^2} - \frac{b^4}{64a^3} + cx^2 - \frac{bcx}{2a} + \frac{b^2c}{16a^2} + dx - \frac{bd}{4a} + e = 0 $$
 
-$$ ax^4 + \frac{3b^2 x^2}{8a} - \frac{b^3 x}{16a^2} + \frac{b^4}{256a^3} - \frac{3b^2 x^2}{4a} + \frac{3b^3 x}{16a^2} - \frac{b^4}{64a^3} + cx^2 - \frac{bcx}{2a} + \frac{b^2c}{16a^2} + dx - \frac{bd}{4a} + e = 0 $$
+$$ ax^4 - \frac{3b^2 x^2}{8a} - \frac{b^3 x}{16a^2} + \frac{b^4}{256a^3} + \frac{3b^3 x}{16a^2} - \frac{b^4}{64a^3} + cx^2 - \frac{bcx}{2a} + \frac{b^2c}{16a^2} + dx - \frac{bd}{4a} + e = 0 $$
 
 $$ (a)x^4 + (c-\frac{3b^2}{8a})x^2 + (\frac{2b^3}{16a^2} - \frac{bc}{2a} + d)x + (\frac{b^4}{256a^3} - \frac{b^4}{64a^2} + \frac{b^2c}{16a^2} - \frac{bd}{4a} + e) = 0 $$
 
@@ -47,3 +47,23 @@ yay! but we still have to derive the quadratic discriminate and the cubic formul
 $$ ax^3 + bx^2 + cx + d = 0 $$
 
 $$ x \to x - \frac{b}{3a} $$
+
+$$ a (x - \frac{b}{3a})^3 + b (x - \frac{b}{3a})^2 + c (x - \frac{b}{3a}) + d = 0 $$
+
+$$ ax^3 - 3ax^2 \frac{b}{3a} + 3ax \frac{b^2}{9a^2} - a \frac{b^3}{27a^3} + bx^2 - 2bx \frac{b}{3a} + b \frac{b^2}{9a^2} + cx - c \frac{b}{3a} + d = 0 $$
+
+$$ ax^3 - bx^2 + \frac{b^2x}{3a} - \frac{b^3}{27a^2} + bx^2 - \frac{2b^2x}{3a} + \frac{b^3}{9a^2} + cx - \frac{bc}{3a} + d = 0 $$
+
+$$ ax^3 - \frac{b^2x}{3a} + \frac{b^3}{6a^2} + cx - \frac{bc}{3a} + d = 0 $$
+
+$$ (a)x^3 + (c - \frac{b^2}{3a})x + (\frac{b^3}{6a^2} - \frac{bc}{3a} + d) = 0 $$
+
+$$ x^3 + (c - \frac{b^2}{3a^2})x + (\frac{b^3}{6a^3} - \frac{bc}{3a^2} + \frac{d}{a}) = 0 $$
+
+$$ p = c - \frac{b^2}{3a^2} $$
+
+$$ q = \frac{b^3}{6a^3} - \frac{bc}{3a^2} + \frac{d}{a} $$
+
+### depresed cubic
+
+$$ x^3 + px + q = 0 $$
