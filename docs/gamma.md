@@ -30,7 +30,7 @@ $$ \frac{d}{dx} (\int f(x) dx) = : f(x) $$
 
 $$ \int_{a}^{b} f(x) dx = : \int f(b) - \int f(a) $$
 
-$$ \int{0}^{\infty} f(x) dx = : (\lim_{x \to \infty} f(x)) - f(0) $$
+$$ \int_{0}^{\infty} f(x) dx = : (\lim_{x \to \infty} f(x)) - f(0) $$
 
 $$ \int e^{xt} dt = \frac{e^{xt}}{x} $$
 
