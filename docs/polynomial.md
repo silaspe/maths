@@ -38,7 +38,7 @@ now, define z so that the right side of this equation is a perfect square. But t
 
 $$ (-q)^2 - 4(p + 2z)(2pz + z^2 - r + p^2) = 0 $$
 
-expanding out, we get a cubic polynomial to solve for z. and once we do, we have that $(x^2 + p + z)^2 = (?x + ?)^2$, so now we can solve for x
+expanding out, we get a cubic polynomial to solve for z. and once we do, we have that $(x^2 + p + z)^2 = (\someting x + \someting)^2$, so now we can solve for x with a quadratic
 
 yay! but we still have to derive the quadratic discriminate and the cubic formula in the next few chapters.
 
@@ -67,3 +67,35 @@ $$ q = \frac{b^3}{6a^3} - \frac{bc}{3a^2} + \frac{d}{a} $$
 ### depresed cubic
 
 $$ x^3 + px + q = 0 $$
+
+$$ x + y = z $$
+
+$$ z^3 = x^3 + 3x^2 y + 3x y^2 + y^3 = x^3 + 3xyz + y^3 $$
+
+$$ 3xyz = px $$
+
+$$ x^3 + 3xyz + q = 0 $$
+
+$$ x^3 + 3xyz + y^3 = y^3 - q $$
+
+$$ 3yz = p $$
+
+$$ z^3 = y^3 - q $$
+
+#### y
+
+$$ z = \frac{p}{3y} $$
+
+$$ y^3 - q = \frac{p^3}{27y^3} $$
+
+$$ (y^3)^2 - qy^3 - (\frac{p}{3})^3 = 0 $$
+
+#### z
+
+$$ y = \frac{p}{3z} $$
+
+$$ z^3 = \frac{p^3}{27z^3} - q $$
+
+$$ (z^3)^2 + qz^3 - (\frac{p}{3})^3 = 0 $$
+
+okay, so now we have to solve the quadratic, take the cube root, and subtract just to solve for x
