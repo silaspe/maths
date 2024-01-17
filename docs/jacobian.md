@@ -1,5 +1,7 @@
 ## linear algebra
 
+learn more at https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab
+
 $$\begin{bmatrix}  a \\
   b\end{bmatrix} = a + bi $$
 
