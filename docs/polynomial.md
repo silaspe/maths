@@ -38,7 +38,7 @@ now, define z so that the right side of this equation is a perfect square. But t
 
 $$ (-q)^2 - 4(p + 2z)(2pz + z^2 - r + p^2) = 0 $$
 
-expanding out, we get a cubic polynomial to solve for z. and once we do, we have that $(x^2 + p + z)^2 = (\someting x + \someting)^2$, so now we can solve for x with a quadratic
+expanding out, we get a cubic polynomial to solve for z. and once we do, we have that $(x^2 + p + z)^2 = (\something x + \something)^2$, so now we can solve for x with a quadratic
 
 yay! but we still have to derive the quadratic discriminate and the cubic formula in the next few chapters.
 
