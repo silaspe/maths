@@ -111,3 +111,21 @@ $$ x^2 + 2 \frac{b}{2a} x + \frac{b^2}{4a^2} = (x + \frac{b}{2a})^2 = \frac{b^2}
 $$ x + \frac{b}{2a} = \pm \sqrt{\frac{b^2 - 4ac}{(2a)^2}} = \pm \frac{\sqrt{b^2 - 4ac}}{2a} $$
 
 $$ x = -\frac{b}{2a} \pm \frac{\sqrt{b^2 - 4ac}}{2a} = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a} $$
+
+$$ x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a} $$
+
+#### depresed cubic
+
+$$ y^3 = \frac{q \pm \sqrt{q^2 + 4 (\frac{p}{3})^3}}{2} = \frac{q}{2} \pm \frac{\sqrt{q^2 + 4(\frac{p}{3})^3}}{2} = \frac{q}{2} \pm \sqrt{\frac{q^2 + 4(\frac{p}{3})^3}{4}} = \frac{q}{2} \pm \sqrt{(\frac{q}{2})^2 + (\frac{p}{3})^3} $$
+
+$$ y = \sqrt[3]{\frac{q}{2} \pm \sqrt{(\frac{q}{2})^2 + (\frac{p}{3})^3}} $$
+
+$$ z^3 = \frac{-q \pm \sqrt{q^2 + 4 (\frac{p}{3})^3}}{2} = -\frac{q}{2} \pm \frac{\sqrt{q^2 + 4(\frac{p}{3})^3}}{2} = -\frac{q}{2} \pm \sqrt{\frac{q^2 + 4(\frac{p}{3})^3}{4}} = -\frac{q}{2} \pm \sqrt{(\frac{q}{2})^2 + (\frac{p}{3})^3} $$
+
+$$ z = \sqrt[3]{-\frac{q}{2} \pm \sqrt{(\frac{q}{2})^2 + (\frac{p}{3})^3}} $$
+
+$$ x = z - y = \sqrt[3]{-\frac{q}{2} \pm \sqrt{(\frac{q}{2})^2 + (\frac{p}{3})^3}} - \sqrt[3]{\frac{q}{2} \pm \sqrt{(\frac{q}{2})^2 + (\frac{p}{3})^3}} = \sqrt[3]{-\frac{q}{2} \pm \sqrt{(\frac{q}{2})^2 + (\frac{p}{3})^3}} + \sqrt[3]{-\frac{q}{2} \pm \sqrt{(\frac{q}{2})^2 + (\frac{p}{3})^3}} $$
+
+but now, that $\pm$ is the only difference between $y$ and $z$, and if they are the same then $x$ equals zero, and if you saw https://www.youtube.com/watch?v=N-KXStupwsc between timestamps 16:18 and 19:55, than you know that we might as well say that they are different because we only need one solution, if $x \neq 0$ than they have to be different. In all cases, one has to be $+$ and one has to be $-$, you can choose which but I will just put the plus one first. In total:
+
+$$ x = \sqrt[3]{-\frac{q}{2} + \sqrt{(\frac{q}{2})^2 + (\frac{p}{3})^3}} + \sqrt[3]{-\frac{q}{2} - \sqrt{(\frac{q}{2})^2 + (\frac{p}{3})^3}} $$
