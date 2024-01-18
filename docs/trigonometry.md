@@ -17,3 +17,15 @@ the length below is the same as the hight of the right of the black triangle wit
 the length above is in the top right mini blue triangle with hypotanuse $sin(\beta)$, and I'll leave this as an exersize for the veiwer, but the angle in the top-left is $\alpha$ and its the adj so $cos(\alpha)sin(\beta)$
 
 in total $sin(\alpha + \beta) = cos(\alpha)sin(\beta) + sin(\alpha)cos(\beta)$
+
+now with the $cos$, which is the length of the green line, which is the length of the upper-black line minus the length of the mini blue triangle bottom
+
+the first length is the same as the length of the bottom of the black triangle with hypotanuse $cos(\beta)$ which is the adj so $cos(\alpha)cos(\beta)$
+
+the length of second line is in the bottom of the mini blue triangle with hypotanuse $sin(\beta)$, and as you know, the angle in the top-left is $\alpha$ and its the opp so $sin(\alpha)sin(\beta)$
+
+in total $cos(\alpha + \beta) = cos(\alpha)cos(\beta) - sin(\alpha)sin(\beta)$
+
+$$ cos(\alpha + \beta) = cos(\alpha)cos(\beta) - sin(\alpha)sin(\beta) $$
+
+$$ sin(\alpha + \beta) = cos(\alpha)sin(\beta) + sin(\alpha)cos(\beta) $$
