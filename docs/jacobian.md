@@ -1,6 +1,6 @@
 ## linear algebra
 
-learn more at [this linear algebra playlist](https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab)
+learn more [here](https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab)
 
 $$\begin{bmatrix}  a \\
   b\end{bmatrix} = a + bi $$
