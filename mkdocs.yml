@@ -5,8 +5,8 @@ repo_url: https://github.com/silaspe/maths
 
 nav:
   - Home: README.md
-  - Polynomial: polynomial.md
   - Calculus: derivatives.md
+  - Polynomial: polynomial.md
   - Calculus II: calculus_2.md
   - Complex: complex.md
   - Jacobian: jacobian.md
