@@ -126,7 +126,7 @@ $$ z = \sqrt[3]{-\frac{q}{2} \pm \sqrt{(\frac{q}{2})^2 + (\frac{p}{3})^3}} $$
 
 $$ x = z - y = \sqrt[3]{-\frac{q}{2} \pm \sqrt{(\frac{q}{2})^2 + (\frac{p}{3})^3}} - \sqrt[3]{\frac{q}{2} \pm \sqrt{(\frac{q}{2})^2 + (\frac{p}{3})^3}} = \sqrt[3]{-\frac{q}{2} \pm \sqrt{(\frac{q}{2})^2 + (\frac{p}{3})^3}} + \sqrt[3]{-\frac{q}{2} \pm \sqrt{(\frac{q}{2})^2 + (\frac{p}{3})^3}} $$
 
-but now, that $\pm$ is the only difference between $y$ and $z$, and if they are the same then $x$ equals zero, and if you saw [this mathologer video](https://www.youtube.com/watch?v=N-KXStupwsc&t=978s) between timestamps 16:18 and 19:55, than you know that we might as well say that they are different because we only need one solution, if $x \neq 0$ than they have to be different. In all cases, one has to be $+$ and one has to be $-$, you can choose which but I will just put the plus one first. In total:
+but now, that $\pm$ is the only difference between $y$ and $z$, and if they are the same then $x$ equals zero, and if you saw [this mathologer video](https://www.youtube.com/watch?v=N-KXStupwsc&t=978s) and stop at timestamp and 19:55, than you know that we might as well say that they are different because we only need one solution, if $x \neq 0$ than they have to be different. In all cases, one has to be $+$ and one has to be $-$, you can choose which but I will just put the plus one first. In total:
 
 $$ x = \sqrt[3]{-\frac{q}{2} + \sqrt{(\frac{q}{2})^2 + (\frac{p}{3})^3}} + \sqrt[3]{-\frac{q}{2} - \sqrt{(\frac{q}{2})^2 + (\frac{p}{3})^3}} $$
 
