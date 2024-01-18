@@ -126,7 +126,7 @@ $$ z = \sqrt[3]{-\frac{q}{2} \pm \sqrt{(\frac{q}{2})^2 + (\frac{p}{3})^3}} $$
 
 $$ x = z - y = \sqrt[3]{-\frac{q}{2} \pm \sqrt{(\frac{q}{2})^2 + (\frac{p}{3})^3}} - \sqrt[3]{\frac{q}{2} \pm \sqrt{(\frac{q}{2})^2 + (\frac{p}{3})^3}} = \sqrt[3]{-\frac{q}{2} \pm \sqrt{(\frac{q}{2})^2 + (\frac{p}{3})^3}} + \sqrt[3]{-\frac{q}{2} \pm \sqrt{(\frac{q}{2})^2 + (\frac{p}{3})^3}} $$
 
-but now, that $\pm$ is the only difference between $y$ and $z$, and if they are the same then $x$ equals zero, and if you saw https://www.youtube.com/watch?v=N-KXStupwsc between timestamps 16:18 and 19:55, than you know that we might as well say that they are different because we only need one solution, if $x \neq 0$ than they have to be different. In all cases, one has to be $+$ and one has to be $-$, you can choose which but I will just put the plus one first. In total:
+but now, that $\pm$ is the only difference between $y$ and $z$, and if they are the same then $x$ equals zero, and if you saw [this mathologer video](https://www.youtube.com/watch?v=N-KXStupwsc) between timestamps 16:18 and 19:55, than you know that we might as well say that they are different because we only need one solution, if $x \neq 0$ than they have to be different. In all cases, one has to be $+$ and one has to be $-$, you can choose which but I will just put the plus one first. In total:
 
 $$ x = \sqrt[3]{-\frac{q}{2} + \sqrt{(\frac{q}{2})^2 + (\frac{p}{3})^3}} + \sqrt[3]{-\frac{q}{2} - \sqrt{(\frac{q}{2})^2 + (\frac{p}{3})^3}} $$
 
@@ -134,7 +134,7 @@ so just plug in for $p$ and $q$ and add $\frac{b}{3a}$ and you have the cubic fo
 
 #### depresed quartic (again)
 
-so finally, after reading the whole page, you can understand the quadratic discriminant, (either that or you just skipped to this part) but probably not. So this discriminant is the $b^2 - 4ac$ in the quadratic formula, because the square root of a posatave number is posatave and plus or minus a posatave number has two solutions, the square root of a negatave number is undefined (unless complex numbers) and plus or minus an undefined number has zero solutions, the square root zero is zero and plus or minus zero has one solution. In total, the sign of the $b^2 - 4ac$ determins how many solutions exist, which is why it is called descriminant, so...
+so finally, after reading the whole page, you can understand the quadratic discriminant, (either that or you just skipped to this part) but probably not. So this discriminant is the $b^2 - 4ac$ in the quadratic formula, because the square root of a positive number is positive and plus or minus a positive number has two solutions, the square root of a negatave number is undefined (unless complex numbers) and plus or minus an undefined number has zero solutions, the square root zero is zero and plus or minus zero has one solution. In total, the sign of the $b^2 - 4ac$ determins how many solutions exist, which is why it is called descriminant, so...
 
 $$ (-q)^2 - 4(p + 2z)(2pz + z^2 - r + p^2) = 0 $$
 
