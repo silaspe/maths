@@ -78,6 +78,10 @@ proof complete!
 
 well everything! Now complex multiplication is mutch easier, for example $z \cdot w = r e^{i \theta} \rho e^{i \psi} = r \rho e^{\theta + \psi}$
 
-and if multiplying by a real number is scaling the distance from the origin, then complex multiplication has the mutch more intuitave interpritation that most pepole teach: multiply the magnitude and add the angle, eccept I think that just saying things like "multiplying by a number on the unit circle rotates a point counterclockwise" which by the way is true, needs rigoris proof. And I wanted to add more cases, but this page only needs one more fact before saying "now everything" so that the right of the page makes sense, anywas the fact is that the only reason why mathematicians use $e^{i \theta}$ is either to show that $e^{i \theta} e^{i \psi} = e^{\theta + \psi}$, to show that $\frac{d}{dx} e^{ix} = ie^{ix}$ which makes sense if you think about it, or to confuse complex number beginners possibly making them not want to learn about complex numbers in the first place
+and if multiplying by a real number is scaling the distance from the origin, then complex multiplication has the mutch more intuitave interpritation that most pepole teach: multiplying the magnitudes and adding the angles.
+
+another interpritation of complex multiplication is that if $w(z) = wz$ then $w(1) = w$ and scaling the input scales the output and then rotating the input rotates the output, in other words complex multiplication looks like scaling and rotating
+
+Eccept I think that just saying things like "multiplying by a number on the unit circle rotates a point counterclockwise" which by the way is true, needs rigoris proof. And I wanted to add more cases, but this page only needs one more fact before saying "now everything" so that the right of the page makes sense, anywas the fact is that the only reason why mathematicians use $e^{i \theta}$ is either to show that $e^{i \theta} e^{i \psi} = e^{i(\theta + \psi)}$, to show that $\frac{d}{dx} e^{ix} = ie^{ix}$ which makes sense if you think about it, or to confuse complex number beginners possibly making them not want to learn about complex numbers in the first place
 
 ### now everything
