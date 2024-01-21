@@ -54,6 +54,6 @@ $\frac{1}{e^{-u}} = 0$
 
 $e^{\infty} = \infty$
 
-$\frac{1}{\infty} = 0 \Rightarrow u = - \infty \quad \And \quad ln(1) = 0 \Rightarrow 1 + \frac{1}{2} + \frac{1}{3}... = \infty $
+$\frac{1}{\infty} = 0 \Rightarrow u = - \infty \quad \And \quad ln(1) = 0 \Rightarrow 1 + \frac{1}{2} + \frac{1}{3}... = \infty$
 
 ### $\frac{1}{\infty}$
