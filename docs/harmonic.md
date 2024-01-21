@@ -45,3 +45,15 @@ for the same reasons as before, this equals (remember that $n \to \infty$ in the
 now, with the power of $g$ on our side, we can solve for $1 + \frac{1}{2} + \frac{1}{3}...$ (which by the way is the point of this chapter) as 1 posatave, 0 negataves, so $ln(1) - ln(0)$, but $ln(0)$ is undefined, so time to define it!
 
 ### $ln(0)$
+
+$ln(0) = u$ (u for undefined)
+
+$e^u = 0$
+
+$\frac{1}{e^{-u}} = 0$
+
+$e^{\infty} = \infty$
+
+$\frac{1}{\infty} = 0 \Rightarrow u = - \infty \quad \And \quad ln(1) = 0 \Rightarrow 1 + \frac{1}{2} + \frac{1}{3}... = \infty $
+
+### $\frac{1}{\infty}$
