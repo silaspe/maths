@@ -66,6 +66,8 @@ so $\lim\limits_{n \to \infty} \frac{n}{n^2}$
 
 so $\lim\limits_{n \to \infty} \frac{\frac{1}{n^2}}{\frac{1}{n}}$
 
+so $\lim\limits_{n \to \infty} \frac{n^{-2}}{n^-1}$
+
 so derive L'Hopitals rule
 
 ### $\frac{0}{0}$
