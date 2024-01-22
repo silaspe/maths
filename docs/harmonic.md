@@ -58,6 +58,6 @@ $\frac{1}{\infty} = 0 \Rightarrow u = - \infty \quad \And \quad ln(1) = 0 \Right
 
 ### $\frac{1}{\infty}$
 
-well, I am not really saying that $\frac{1}{\infty} = 0$, but that $\frac{1}{\lim_{n \to \infty} n}$
+well, I am not really saying that $\frac{1}{\infty} = 0$, but that $\frac{1}{\lim\limits_{n \to \infty} n}$
 
-so $\lim_{n \to \infty} \frac{1}{n}$
+so $\lim\limits_{n \to \infty} \frac{1}{n}$
