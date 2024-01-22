@@ -12,7 +12,6 @@ nav:
   - Jacobian: jacobian.md
   - Gamma: gamma.md
   - Hyperbolic: hyperbolic.md
-  - Harmonic: harmonic.md
   - Trigonometry: trigonometry.md
 
 theme:
