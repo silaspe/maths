@@ -60,4 +60,4 @@ $\frac{1}{\infty} = 0 \Rightarrow u = - \infty \quad \And \quad ln(1) = 0 \Right
 
 well, I am not really saying that $\frac{1}{\infty} = 0$, but that $\frac{1}{\lim_{n \to \infty} n}$
 
-so $\lim_{N \to \infty} \frac{1}{n}$
+so $\lim_{n \to \infty} \frac{1}{n}$
