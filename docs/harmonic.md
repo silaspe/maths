@@ -61,3 +61,11 @@ $\frac{1}{\infty} = 0 \Rightarrow u = - \infty \quad \And \quad ln(1) = 0 \Right
 well, I am not really saying that $\frac{1}{\infty} = 0$, but that $\frac{1}{\lim\limits_{n \to \infty} n}$
 
 so $\lim\limits_{n \to \infty} \frac{1}{n}$
+
+so $\lim\limits_{n \to \infty} \frac{n}{n^2}$
+
+so $\lim\limits_{n \to \infty} \frac{\frac{1}{n^2}}{\frac{1}{n}}$
+
+so derive L'Hopitals rule
+
+### $\frac{0}{0}$
