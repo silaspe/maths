@@ -14,6 +14,7 @@ nav:
   - Hyperbolic: hyperbolic.md
   - Harmonic: harmonic.md
   - Trigonometry: trigonometry.md
+  - Eigenstuff: eigen.md
 
 theme:
   name: material
