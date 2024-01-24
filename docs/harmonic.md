@@ -1,6 +1,6 @@
 ## Harmonic
 
-i'm going to start with the alternating harmonic seireis $1 - \frac{1}{2} + \frac{1}{3} - \frac{1}{4} + \frac{1}{5} ...$
+i'm going to start with the alternating harmonic seireis $1 - \frac{1}{2} + \frac{1}{3} - \frac{1}{4} + \frac{1}{5}... $
 
 then, for example $- \frac{1}{4} = \frac{1}{4} - \frac{1}{2}$
 
@@ -58,16 +58,12 @@ $\frac{1}{\infty} = 0 \Rightarrow u = - \infty \quad \And \quad ln(1) = 0 \Right
 
 ### $\frac{1}{\infty}$
 
-well, I am not really saying that $\frac{1}{\infty} = 0$, but that $\frac{1}{\lim\limits_{n \to \infty} n}$
+I'll just say it, I spent a long time trying to figure it out a way to prove that $1 + \frac{1}{2} + \frac{1}{3}... = \infty$, and I realized that $e^{-\infty} = 0$ and $\frac{1}{\infty} = 0$ are true by convention, and the only proofs like "if you divide $1$ by $e$ engough times, it eventually has to hit zero" and "$\frac{1}{\infty}$ 'aproaches ' zero" are nor rigoris because the word "approach" proveably doesent have rigoris definition, so you just have to trust the conclution.
 
-so $\lim\limits_{n \to \infty} \frac{1}{n}$
+### conclution
 
-so $\lim\limits_{n \to \infty} \frac{n}{n^2}$
+$$ 1 - \frac{1}{2} + \frac{1}{3} - \frac{1}{4} + \frac{1}{5} ... = ln(2) $$
 
-so $\lim\limits_{n \to \infty} \frac{\frac{1}{n^2}}{\frac{1}{n}}$
+$$ m & posataves, & n & negataves = ln(\frac{m}{n}) $$
 
-so $\lim\limits_{n \to \infty} \frac{n^{-2}}{n^-1}$
-
-so derive L'Hopitals rule
-
-### $\frac{0}{0}$
+$$ 1 + \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \frac{1}{5}... = \infty $$
