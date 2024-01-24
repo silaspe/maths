@@ -1,4 +1,4 @@
-Learn more [here](https://www.youtube.com/watch?v=XkY2DOUCWMU), [here](https://www.youtube.com/watch?v=O85OWBJ2ayo&t=194s), [here](https://www.youtube.com/watch?v=uQhTuRlWMxw&t=592s), [here](https://www.youtube.com/watch?v=PFDu9oVAE-g&t=960s), [here](https://www.youtube.com/watch?v=uQhTuRlWMxw&t=283s), [and here](https://www.youtube.com/watch?v=P2LTAUO1TdA) in that order if you stop at 3:54 on the third, 16:01 on the fourth, and 4:53 on the fifth
+Learn more [here](https://www.youtube.com/watch?v=XkY2DOUCWMU), [here](https://www.youtube.com/watch?v=O85OWBJ2ayo&t=194s), [here](https://www.youtube.com/watch?v=uQhTuRlWMxw&t=592s), [here](https://www.youtube.com/watch?v=PFDu9oVAE-g&t=960s), [here](https://www.youtube.com/watch?v=uQhTuRlWMxw&t=283s), [and here](https://www.youtube.com/watch?v=P2LTAUO1TdA) in that order if you stop at 3:54 on the second, 10:44 on the third, 16:01 on the fourth, 4:53 on the fifth, and 12:21 on the sixth
 
 ### I want to take a matrix to a large power $n$
 
