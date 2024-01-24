@@ -27,4 +27,8 @@ a^n & 0 \\
 
 but if $A$ is not diagonal, than just switch to a basis (in particular, an eigenbasis that I will dedicate the rest of the page or)
 
-an eigenbasis 
+an eigenbasis as it is called, is also just usefull in other cases lke when you need to find the next [fibbonacci number](https://www.youtube.com/watch?v=BMPa0FA65Fk), or find the flow in a population of foxes and rabbits (even if you need to see the entire second video) which I will do both of thoes at the end of the page
+
+so the top question is...
+
+### what even is an eigenvector
