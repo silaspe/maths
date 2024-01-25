@@ -74,17 +74,17 @@ $$ \begin{bmatrix} a - \lambda & b \\
 c & d - \lambda \\ \end{bmatrix} \vec{v} = 0 $$
 
 $$ \begin{bmatrix} a - \lambda & b \\
-c & d - \lambda \\ \end{bmatrix} = A* $$
+c & d - \lambda \\ \end{bmatrix} = A^{\star} $$
 
-$$ a - \lambda = a* $$
+$$ a - \lambda = a^{\star} $$
 
-$$ b = b* $$
+$$ b = b^{\star} $$
 
-$$ c = c* $$
+$$ c = c^{\star} $$
 
-$$ d - \lambda = d* $$
+$$ d - \lambda = d^{\star} $$
 
-$$ A* = \begin{bmatrix} a* & b* \\
-c* & d* \\ \end{bmatrix} $$
+$$ A^{\star} = \begin{bmatrix} a^{\star} & b^{\star} \\
+c^{\star} & d^{\star} \\ \end{bmatrix} $$
 
-$$ A* \vec{v} = 0 $$
+$$ A^{\star} \vec{v} = 0 $$
