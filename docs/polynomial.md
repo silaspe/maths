@@ -34,7 +34,7 @@ $$ (x^2 + p)^2 = px^2 - qx - r + p^2 $$
 
 $$ (x^2 + p)^2 + 2(x^2 + p)z + z^2 = (x^2 + p + z)^2 = px^2 - qx - r + p^2 + 2zx^2 + 2pz + z^2 = (p + 2z)x^2 - qx + 2pz + z^2 - r + p^2 $$
 
-now, define z so that the right side of this equation is a perfect square. But then a quadratic is of the form $(x - ?)(x - ?)$, so if it is a perfect sqare, than there is only one solution, which means that the discriminant equals zero, so
+now, define z so that the right side of this equation is a perfect square. But then a quadratic is of the form $c(x - ?)(x - ?)$ or $(\something x + \something)^2$, so if it is a perfect sqare, than there is only one solution, which means that the discriminant equals zero, so
 
 $$ (-q)^2 - 4(p + 2z)(2pz + z^2 - r + p^2) = 0 $$
 
@@ -144,4 +144,4 @@ $$ (-8)z^3 + (-20p)z^2 + (8(r - 2p^2))z + (q^2 + 4pr - 4p^3) = 0 $$
 
 $$ (8)z^3 + (20p)z^2 + (16p^2 - 8r)z + (4p(p^2 - r) - q^2) = 0 $$
 
-solve for z! (not $\Gamma$($z + 1$))
+solve for z! (not $\Gamma$[ ](https://silaspe.github.io/maths/gamma.html)($z + 1$))
