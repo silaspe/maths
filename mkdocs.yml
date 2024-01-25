@@ -7,7 +7,7 @@ nav:
   - Home: README.md
   - Calculus: derivatives.md
   - Polynomial: polynomial.md
-  - calculus_part_2.md: calculus_2.md
+  - calculus part 2: calculus_2.md
   - Complex: complex.md
   - Jacobian: jacobian.md
   - Gamma: gamma.md
