@@ -84,4 +84,7 @@ $$ c = c* $$
 
 $$ d - \lambda = d* $$
 
+$$ A* = \begin{bmatrix} a* & b* \\
+c* & d* \\ \end{bmatrix} $$
+
 $$ A* \vec{v} = 0 $$
