@@ -31,4 +31,18 @@ an eigenbasis as it is called, is also just usefull in other cases lke when you 
 
 so the top question is...
 
-### what even is an eigenvector
+### what even is an eigenvector?
+
+an eigenvector is really a set of vectors (that I will refer to as an eigenset) that are all multiples of each other can be defined as the slope of the line that connects the tips of vectors in said eigenset, and an eigenvector is defined as a vector within said eigenset, unfortunately the slope is not the corrasponding eigenvalue, but that this slope can also be $\frac{1}{0}$ if it is pointing straight up, also on the note of eigensets, there can be two (two slopes, not two vectors) with any given matrix, I'll give you an example
+
+but you are probably just waiting for the definition, and here it is:
+
+under multiplication by matrix $A$, most vectors are rotated and scaled, but any eigenvector (or vector within the eigenset) is just scaled, and it makes sense that $2$ times the eigenvector isn't scaled either, thus every vector within the eigenset is an eigenvector, and the eigenvalue? that corrasponds to how mutch each vector is scaled, and two differend eigensets usually have different eigenvalues.
+
+But you are probably just waiting for the example, and here it is:
+
+a matrix with a [determinant](https://www.youtube.com/watch?v=Ip3X9LOh2dk0) of $0$, and a [rank](https://www.youtube.com/watch?v=uQhTuRlWMxw) of $1$ has eigensets of the line that it squishes space onto, and the null space of the matrix.
+
+Anyways, on to my favorate part!
+
+### how to find the eigenvetors and eigenvalues
