@@ -4,26 +4,20 @@ Learn more [here](https://www.youtube.com/watch?v=XkY2DOUCWMU), [here](https://w
 
 if the matrix (I'll call it $A$) is diagonal, in other words if it is of the form below
 
-$$ \begin{bmatrix}
-a & 0 & 0 & \dots \\
+$$ \begin{bmatrix} a & 0 & 0 & \dots \\
 0 & b & 0 & \dots \\
 0 & 0 & c & \dots \\
-\vdots & \vdots & \vdots & \ddots \\
-\end{bmatrix} $$
+\vdots & \vdots & \vdots & \ddots \\ \end{bmatrix} $$
 
 or because I am assuming $A$ is a $2 \times 2$ matrix, its probably more like
 
-$$ \begin{bmatrix}
-a & 0 \\
-0 & b \\
-\end{bmatrix}$$
+$$ \begin{bmatrix} a & 0 \\
+0 & b \\ \end{bmatrix}$$
 
 than $A^n$ is the matrix below:
 
-$$ \begin{bmatrix}
-a^n & 0 \\
-0 & b^n \\
-\end{bmatrix}$$
+$$ \begin{bmatrix} a^n & 0 \\
+0 & b^n \\ \end{bmatrix}$$
 
 but if $A$ is not diagonal, than just switch to a basis (in particular, an eigenbasis that I will dedicate the rest of the page or)
 
@@ -43,6 +37,47 @@ But you are probably just waiting for the example, and here it is:
 
 a matrix with a [determinant](https://www.youtube.com/watch?v=Ip3X9LOh2dk0) of $0$, and a [rank](https://www.youtube.com/watch?v=uQhTuRlWMxw) of $1$ has eigensets of the line that it squishes space onto, and the null space of the matrix.
 
-Anyways, on to my favorate part!
+Anyways, on to my favorate part! (And reason I made this page)
 
 ### how to find the eigenvetors and eigenvalues
+
+$$ eigenvetor = \vec{v} $$
+
+$$ eigenvalue = \lambda $$
+
+$$ matrix = A $$
+
+$$ A \vec{v} = \lambda \vec{v} $$
+
+$$ I = \begin{bmatrix} 1 & 0 \\
+0 & 1 \\ \end{bmatrix} $$
+
+$$ I \vec{v} = \vec{v} $$
+
+$$ A \vec{v} = \lambda (I \vec{v}) = (\lambda I) \vec{v} $$
+
+$$ A \vec{v} - (\lambda I) \vec{v} = 0 $$
+
+$$ (A - \lambda I) \vec{v} = 0 $$
+
+$$ \lambda I = \begin{bmatrix} \lambda & 0 \\
+0 & \lambda \\ \end{bmatrix} $$
+
+$$ A = \begin{bmatrix} a & b \\
+c & d \\ \end{bmatrix} $$
+
+$$ \begin{bmatrix} a - \lambda & b \\
+c & d - \lambda \\ \end{bmatrix} \vec{v} = 0 $$
+
+$$ \begin{bmatrix} a - \lambda & b \\
+c & d - \lambda \\ \end{bmatrix} = A* $$
+
+$$ a - \lambda = a* $$
+
+$$ b = b* $$
+
+$$ c = c* $$
+
+$$ d - \lambda = d* $$
+
+$$ A* \vec{v} = 0 $$
