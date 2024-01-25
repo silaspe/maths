@@ -12,6 +12,8 @@ $$ e^x = \lim_{N \to \infty} (1 + \frac{x}{N})^{N} $$
 
 $$ e^x = (1 + x dx)^{\frac{1}{dx}} $$
 
+you will see why this is usefull [here](https://silaspe.github.io/maths/complex.html)
+
 $$ \sum\limits_{n=0}^{\infty}C_n x^n = e^x $$
 
 $$ \sum\limits_{n=0}^{\infty}C_n n x^{n - 1} = e^x = \sum\limits_{n=0}^{\infty}C_n x^n $$
