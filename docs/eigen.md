@@ -60,9 +60,9 @@ $$ I \vec{v} = \vec{v} $$
 
 $$ A \vec{v} = \lambda (I \vec{v}) = (\lambda I) \vec{v} $$
 
-$$ A \vec{v} - (\lambda I) \vec{v} = 0 $$
+$$ A \vec{v} - (\lambda I) \vec{v} = \vec{0} $$
 
-$$ (A - \lambda I) \vec{v} = 0 $$
+$$ (A - \lambda I) \vec{v} = \vec{0} $$
 
 $$ \lambda I = \begin{bmatrix} \lambda & 0 \\
 0 & \lambda \\ \end{bmatrix} $$
@@ -71,7 +71,7 @@ $$ A = \begin{bmatrix} a & b \\
 c & d \\ \end{bmatrix} $$
 
 $$ \begin{bmatrix} a - \lambda & b \\
-c & d - \lambda \\ \end{bmatrix} \vec{v} = 0 $$
+c & d - \lambda \\ \end{bmatrix} \vec{v} = \vec{0} $$
 
 $$ \begin{bmatrix} a - \lambda & b \\
 c & d - \lambda \\ \end{bmatrix} = A^{\star} $$
@@ -87,4 +87,10 @@ $$ d - \lambda = d^{\star} $$
 $$ A^{\star} = \begin{bmatrix} a^{\star} & b^{\star} \\
 c^{\star} & d^{\star} \\ \end{bmatrix} $$
 
-$$ A^{\star} \vec{v} = 0 $$
+$$ A^{\star} \vec{v} = \vec{0} $$
+
+$$ \vec{v} = \begin{bmatrix} v_x \\
+v_y \\ \end{bmatrix} = v_x \hat{i} + v_y \hat{j} \neq \vec{0} = \begin{bmatrix} 0 \\
+0 \\ \end{bmatrix} = 0 \hat{i} + 0 \hat{j}  $$
+
+$$ A^{\star} \vec{v} = A^{\star} (v_x \hat{i} + v_y \hat{j}) = v_x (A^{\star} \hat{i}) + v_y (A^{\star} \hat{j}) = 0 $$
