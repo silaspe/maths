@@ -1,6 +1,6 @@
 ## Derivatives
 
-$$ \frac{f(x + dx) - f}{dx} = \frac{df}{dx} = f\prime $$
+$$ \frac{f(x + dx) - f(x)}{dx} = \frac{df}{dx} = f\prime (x) $$
 
 ### sum rule
 
@@ -8,11 +8,11 @@ $$ \frac{d(f(x) + g(x))}{dx} = \frac{f(x + dx) + g(x + dx) - f(x) -g(x)}{dx} = \
 
 $$ \frac{d(f(x) + g(x))}{dx} = \frac{df}{dx} + \frac{dg}{dx} $$
 
-$$ (f + g)\prime = f\prime(x) + g\prime(x) $$
+$$ (f + g)\prime = f\prime + g\prime $$
 
 ### product rule
 
-$$ f(x + dx) = f + df $$
+$$ f(x + dx) = f(x) + df $$
 
 $$ \frac{d(f(x)g(x))}{dx} = \frac{(f(x) + df)(g(x) + dg) - f(x)g(x)}{dx} = \frac{f(x)g(x) + f(x)dg + dfg(x) + dfdg - f(x)g(x)}{dx} = f(x)\frac{dg}{dx} + \frac{df}{dx}g(x) + \frac{dfdg}{dx} $$
 
@@ -20,15 +20,17 @@ $$ \frac{dfdg}{dx} \to 0 $$
 
 $$ \frac{d(f(x)g(x))}{dx} = f(x)\frac{dg}{dx} + \frac{df}{dx}g(x) $$
 
-$$ (fg\prime = fg\prime + f\prime g $$
+$$ (fg)\prime = fg\prime + f\prime g $$
 
 ### chain rule
 
-$$ \frac{f(x + \Delta x) - f}{\Delta x} = \frac{df}{dx} $$
+$$ \frac{f(x + \Delta x) - f}{\Delta x} = \frac{df}{dx} (x) $$
 
 $$ \Delta x \to 0 $$
 
 $$ \frac{d(f(g(x)))}{dx} = \frac{f(g(x + dx)) - f(g(x))}{dx} = \frac{f(g(x) + dg) - f(g(x))}{dx} $$
+
+$$ dg \to 0 $$
 
 $$ \frac{f(g(x) + dg) - f(g(x))}{dg} = \frac{df}{dx}(g(x)) $$
 
@@ -40,9 +42,9 @@ $$ (f(g))\prime = f\prime(g)g \prime$$
 
 ### mbc rule
 
-$$ \frac{df(cx)}{dx} = c f\prime(x) $$
+$$ \frac{dcf(x)}{dx} = c f\prime(x) $$
 
-$$ (f(cx))\prime = c f\prime $$
+$$ (cf(x))\prime = c f\prime $$
 
 ### exponent rule
 
@@ -91,8 +93,6 @@ $$ ln(f(x)) = ln(x^n) = n ln(x) $$
 $$ ln\prime(x) = \frac{1}{x} $$
 
 $$ \frac{f\prime(x)}{f(x)} = \frac{n}{x} $$
-
-$$ (x^n)\prime = f(x) \frac{n}{x} $$
 
 $$ (x^n)\prime = x^n \frac{n}{x} $$
 
