@@ -94,3 +94,25 @@ v_y \\ \end{bmatrix} = v_x \hat{i} + v_y \hat{j} \neq \vec{0} = \begin{bmatrix} 
 0 \\ \end{bmatrix} = 0 \hat{i} + 0 \hat{j}  $$
 
 $$ A^{\star} \vec{v} = A^{\star} (v_x \hat{i} + v_y \hat{j}) = v_x (A^{\star} \hat{i}) + v_y (A^{\star} \hat{j}) = 0 $$
+
+$$ v_x (A^{\star} \hat{i}) = - v_y (A^{\star} \hat{j}) $$
+
+$$ -\frac{v_x}{v_y} A^{\star} \hat{i} = A^{\star} \hat{j} $$
+
+$$ -\frac{v_x}{v_y} A^{\star}_x = A^{\star}_y $$
+
+$$ -\frac{v_x}{v_y} \begin{bmatrix} a^{\star} \\
+c^{\star} \\ \end{bmatrix} = \begin{bmatrix} b^{\star} \\
+d^{\star} \\ \end{bmatrix} $$
+
+$$ r \begin{bmatrix} a^{\star} \\
+c^{\star} \\ \end{bmatrix} = \begin{bmatrix} b^{\star} \\
+d^{\star} \\ \end{bmatrix} $$
+
+$$ \begin{bmatrix} r a^{\star} \\
+r c^{\star} \\ \end{bmatrix} = \begin{bmatrix} b^{\star} \\
+d^{\star} \\ \end{bmatrix} $$
+
+$$ r a^{\star} = b^{\star} $$
+
+$$ r c^{\star} = d^{\star} $$
