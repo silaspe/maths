@@ -116,3 +116,17 @@ d^{\star} \\ \end{bmatrix} $$
 $$ r a^{\star} = b^{\star} $$
 
 $$ r c^{\star} = d^{\star} $$
+
+$$ d^{\star} = r c^{\star} $$
+
+$$ r a^{\star} d^{\star} = b^{\star} r c^{\star} $$
+
+$$ a^{\star} d^{\star} = b^{\star} c^{\star} $$
+
+$$ a^{\star} d^{\star} - b^{\star} c^{\star} = 0 $$
+
+$$ (a - \lambda)(d - \lambda) - bc = 0 $$
+
+$$ ad - a \lambda - d \lambda + \lambda^2 - bc = 0 $$
+
+$$ (1) \lambda^2 + (-(a + d)) \lambda + (ad - bc) = 0 $$
