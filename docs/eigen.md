@@ -1,4 +1,4 @@
-Learn more [here](https://www.youtube.com/watch?v=XkY2DOUCWMU), [here](https://www.youtube.com/watch?v=O85OWBJ2ayo&t=194s), [here](https://www.youtube.com/watch?v=uQhTuRlWMxw&t=592s), [here](https://www.youtube.com/watch?v=PFDu9oVAE-g&t=960s), [here](https://www.youtube.com/watch?v=uQhTuRlWMxw&t=283s), [and here](https://www.youtube.com/watch?v=P2LTAUO1TdA) in that order if you stop at 3:54 on the second, 10:44 on the third, 16:01 on the fourth, 4:53 on the fifth, and 12:21 on the sixth
+## Learn more [here](https://www.youtube.com/watch?v=XkY2DOUCWMU), [here](https://www.youtube.com/watch?v=O85OWBJ2ayo&t=194s), [here](https://www.youtube.com/watch?v=uQhTuRlWMxw&t=592s), [here](https://www.youtube.com/watch?v=PFDu9oVAE-g&t=960s), [here](https://www.youtube.com/watch?v=uQhTuRlWMxw&t=283s), [and here](https://www.youtube.com/watch?v=P2LTAUO1TdA) in that order if you stop at 3:54 on the second, 10:44 on the third, 16:01 on the fourth, 4:53 on the fifth, and 12:21 on the sixth
 
 by the way, any matrix to the power of zero is the identity matrix $I$
 
@@ -39,7 +39,7 @@ under multiplication by matrix $A$, most vectors are rotated and scaled, but any
 
 But you are probably just waiting for the example, and here it is:
 
-a matrix with a [determinant](https://www.youtube.com/watch?v=Ip3X9LOh2dk0) of $0$, and a [rank](https://www.youtube.com/watch?v=uQhTuRlWMxw) of $1$ has eigensets of the line that it squishes space onto, and the null space of the matrix.
+## a matrix with a [determinant](https://www.youtube.com/watch?v=Ip3X9LOh2dk0) of $0$, and a [rank](https://www.youtube.com/watch?v=uQhTuRlWMxw) of $1$ has eigensets of the line that it squishes space onto, and the null space of the matrix.
 
 Anyways, on to my favorate part! (And reason I made this page)
 
@@ -93,7 +93,7 @@ $$ \vec{v} = \begin{bmatrix} v_x \\
 v_y \\ \end{bmatrix} = v_x \hat{i} + v_y \hat{j} \neq \vec{0} = \begin{bmatrix} 0 \\
 0 \\ \end{bmatrix} = 0 \hat{i} + 0 \hat{j}  $$
 
-$$ A^{\star} \vec{v} = A^{\star} (v_x \hat{i} + v_y \hat{j}) = v_x (A^{\star} \hat{i}) + v_y (A^{\star} \hat{j}) = 0 $$
+## $$ A^{\star} \vec{v} = A^{\star} (v_x \hat{i} + v_y \hat{j}) = v_x (A^{\star} \hat{i}) + v_y (A^{\star} \hat{j}) = 0 $$
 
 $$ v_x (A^{\star} \hat{i}) = - v_y (A^{\star} \hat{j}) $$
 
