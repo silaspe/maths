@@ -1,4 +1,8 @@
-## quartic
+## disclaimer
+
+this page uses terms like $dx$ and $e$, but these have nothing to do with calculas and are just notation, also in the $2nd$ and $4th$ chapters if this is the $1st$, I swapped $x$ for $x - \frac{b}{na}$ where $n$ is the degree of the polynomial so when pluging things in, make sure to add $\frac{b}{na}$, also I probably should have swapped the order I did this so that the quadratic came first, anyways lets start strong with the
+
+### quartic
 
 $$ ax^4 + bx^3 + cx^2 + dx + e = 0 $$
 
