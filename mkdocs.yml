@@ -15,6 +15,7 @@ nav:
   - Harmonic: harmonic.md
   - Trigonometry: trigonometry.md
   - Eigenstuff: eigen.md
+  - Quadratic (again): quadratic.md
 
 theme:
   name: material
