@@ -1,6 +1,6 @@
 ## disclaimer
 
-this page uses terms like $dx$ and $e$, but these have nothing to do with calculas and are just notation, also in the $2nd$ and $4th$ chapters if this is the $1st$, I swapped $x$ for $x - \frac{b}{na}$ where $n$ is the degree of the polynomial so when pluging things in, make sure to add $\frac{b}{na}$, also I probably should have swapped the order I did this so that the quadratic came first, the last thing to warn you about is that I re-used letters like $a$, $b$, $c$, $p$, $q$, anyways lets start strong with the
+this page uses terms like $dx$ and $e$, but these have nothing to do with calculas and are just notation, also in the $2nd$ and $4th$ chapters if this is the $1st$, I swapped $x$ for $x - \frac{b}{na}$ where $n$ is the degree of the polynomial so when pluging things in, make sure to add $\frac{b}{na}$, also I probably should have swapped the order I did this so that the quadratic came first, the last thing to warn you about is that I re-used letters like $a$, $b$, $c$, $p$, $q$, and $z$, anyways lets start strong with the...
 
 ### quartic
 
@@ -112,23 +112,23 @@ $$ x^2 + \frac{b}{a} x = x^2 + 2 \frac{b}{2a} x = - \frac{c}{a} $$
 
 $$ x^2 + 2 \frac{b}{2a} x + \frac{b^2}{4a^2} = (x + \frac{b}{2a})^2 = \frac{b^2}{4a^2} - \frac{c}{a} = \frac{b^2 - 4ac}{4a^2} $$
 
-$$ x + \frac{b}{2a} = \pm \sqrt{\frac{b^2 - 4ac}{(2a)^2}} = \pm \frac{\sqrt{b^2 - 4ac}}{2a} $$
+$$ x + \frac{b}{2a} = \pm  = \pm \frac{\sqrt{b^2 - 4ac}}{2a} $$
 
 $$ x = -\frac{b}{2a} \pm \frac{\sqrt{b^2 - 4ac}}{2a} = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a} $$
 
-$$ x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a} $$
+$$ x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a} = -\frac{b}{2a} \pm \sqrt{\frac{b^2 - 4ac}{4a^2}} $$
 
 #### depresed cubic (again)
 
-$$ y^3 = \frac{q \pm \sqrt{q^2 + 4 (\frac{p}{3})^3}}{2} = \frac{q}{2} \pm \frac{\sqrt{q^2 + 4(\frac{p}{3})^3}}{2} = \frac{q}{2} \pm \sqrt{\frac{q^2 + 4(\frac{p}{3})^3}{4}} = \frac{q}{2} \pm \sqrt{(\frac{q}{2})^2 + (\frac{p}{3})^3} $$
+$$ y^3 = \frac{q}{2} \pm \sqrt{\frac{q^2 + 4(\frac{p}{3})^3}{4}} = \frac{q}{2} \pm \sqrt{(\frac{q}{2})^2 + (\frac{p}{3})^3} $$
 
 $$ y = \sqrt[3]{\frac{q}{2} \pm \sqrt{(\frac{q}{2})^2 + (\frac{p}{3})^3}} $$
 
-$$ z^3 = \frac{-q \pm \sqrt{q^2 + 4 (\frac{p}{3})^3}}{2} = -\frac{q}{2} \pm \frac{\sqrt{q^2 + 4(\frac{p}{3})^3}}{2} = -\frac{q}{2} \pm \sqrt{\frac{q^2 + 4(\frac{p}{3})^3}{4}} = -\frac{q}{2} \pm \sqrt{(\frac{q}{2})^2 + (\frac{p}{3})^3} $$
+$$ z^3 = -\frac{q}{2} \pm \sqrt{\frac{q^2 + 4(\frac{p}{3})^3}{4}} = -\frac{q}{2} \pm \sqrt{(\frac{q}{2})^2 + (\frac{p}{3})^3} $$
 
 $$ z = \sqrt[3]{-\frac{q}{2} \pm \sqrt{(\frac{q}{2})^2 + (\frac{p}{3})^3}} $$
 
-$$ x = z - y = \sqrt[3]{-\frac{q}{2} \pm \sqrt{(\frac{q}{2})^2 + (\frac{p}{3})^3}} - \sqrt[3]{\frac{q}{2} \pm \sqrt{(\frac{q}{2})^2 + (\frac{p}{3})^3}} = \sqrt[3]{-\frac{q}{2} \pm \sqrt{(\frac{q}{2})^2 + (\frac{p}{3})^3}} + \sqrt[3]{-\frac{q}{2} \pm \sqrt{(\frac{q}{2})^2 + (\frac{p}{3})^3}} $$
+$$ x = z - y = \sqrt[3]{-\frac{q}{2} \pm \sqrt{(\frac{q}{2})^2 + (\frac{p}{3})^3}} - \sqrt[3]{\frac{q}{2} \pm \sqrt{(\frac{q}{2})^2 + (\frac{p}{3})^3}} = \sqrt[3]{-\frac{q}{2} \pm \sqrt{(\frac{q}{2})^2 + (\frac{p}{3})^3}} + \sqrt[3]{-\frac{q}{2} \mp \sqrt{(\frac{q}{2})^2 + (\frac{p}{3})^3}} $$
 
 but now, that $\pm$ is the only difference between $y$ and $z$, and if they are the same then $x$ equals zero, and if you saw [this mathologer video](https://www.youtube.com/watch?v=N-KXStupwsc&t=978s) and stop at timestamp and 19:55, than you know that we might as well say that they are different because we only need one solution, if $x \neq 0$ than they have to be different. In all cases, one has to be $+$ and one has to be $-$, you can choose which but I will just put the plus one first. In total:
 
@@ -136,7 +136,7 @@ $$ x = \sqrt[3]{-\frac{q}{2} + \sqrt{(\frac{q}{2})^2 + (\frac{p}{3})^3}} + \sqrt
 
 so just plug in for $p$ and $q$ and add $\frac{b}{3a}$ and you have the cubic formula!
 
-#### depresed quartic (again)
+#### z (quatic)
 
 so finally, after reading the whole page, you can understand the quadratic discriminant, (either that or you just skipped to this part) but probably not. So this discriminant is the $b^2 - 4ac$ in the quadratic formula, because the square root of a positive number is positive and plus or minus a positive number has two solutions, the square root of a negatave number is undefined (unless complex numbers) and plus or minus an undefined number has zero solutions, the square root zero is zero and plus or minus zero has one solution. In total, the sign of the $b^2 - 4ac$ determins how many solutions exist, which is why it is called descriminant, so...
 
