@@ -31,7 +31,7 @@ so the top question is...
 
 ### what even is an eigenvector?
 
-an eigenvector is really a set of vectors (that I will refer to as an eigenset) that are all multiples of each other can be defined as the slope of the line that connects the tips of vectors in said eigenset, and an eigenvector is defined as a vector within said eigenset, unfortunately the slope is not the corrasponding eigenvalue, but that this slope can also be $\frac{1}{0}$ if it is pointing straight up, also on the note of eigensets, there can be two (two slopes, not two vectors) with any given matrix, I'll give you an example
+an eigenvector is really a set of vectors (that I will refer to from now on as an eigenset) that are all multiples of each other can be defined as the slope of the line that connects the tips of vectors in said eigenset, and an eigenvector is defined as a vector within said eigenset, unfortunately the slope is not the corrasponding eigenvalue, but that this slope can also be $\frac{1}{0}$ if it is pointing straight up, also on the note of eigensets, there can be two (two slopes, not two vectors) with any given matrix, I'll give you an example
 
 but you are probably just waiting for the definition, and here it is:
 
@@ -45,9 +45,12 @@ Anyways, on to my favorate part! (And reason I made this page)
 
 ### how to find the eigenvetors and eigenvalues
 
-$$ eigenvetor = \vec{v} $$
+$$ eigenvetor = \vec{v} = \begin{bmatrix} v_x \\
+v_y \\ \end{bmatrix} $$
 
 $$ eigenvalue = \lambda $$
+
+$$ eigenset = r = \frac{v_y}{v_x} $$
 
 $$ matrix = A $$
 
@@ -105,21 +108,21 @@ $$ -\frac{v_x}{v_y} \begin{bmatrix} a^{\star} \\
 c^{\star} \\ \end{bmatrix} = \begin{bmatrix} b^{\star} \\
 d^{\star} \\ \end{bmatrix} $$
 
-$$ r \begin{bmatrix} a^{\star} \\
+$$ -\frac{1}{r} \begin{bmatrix} a^{\star} \\
 c^{\star} \\ \end{bmatrix} = \begin{bmatrix} b^{\star} \\
 d^{\star} \\ \end{bmatrix} $$
 
-$$ \begin{bmatrix} r a^{\star} \\
-r c^{\star} \\ \end{bmatrix} = \begin{bmatrix} b^{\star} \\
-d^{\star} \\ \end{bmatrix} $$
+$$ \begin{bmatrix} a^{\star} \\
+c^{\star} \\ \end{bmatrix} = \begin{bmatrix} -r b^{\star} \\
+-r d^{\star} \\ \end{bmatrix} $$
 
-$$ r a^{\star} = b^{\star} $$
+$$ a^{\star} = -r b^{\star} $$
 
-$$ r c^{\star} = d^{\star} $$
+$$ c^{\star} = -r d^{\star} $$
 
-$$ d^{\star} = r c^{\star} $$
+$$ -r d^{\star} = c^{\star} $$
 
-$$ r a^{\star} d^{\star} = b^{\star} r c^{\star} $$
+$$ -r a^{\star} d^{\star} = -b^{\star} r c^{\star} $$
 
 $$ a^{\star} d^{\star} = b^{\star} c^{\star} $$
 
@@ -130,3 +133,8 @@ $$ (a - \lambda)(d - \lambda) - bc = 0 $$
 $$ ad - a \lambda - d \lambda + \lambda^2 - bc = 0 $$
 
 $$ (1) \lambda^2 + (-(a + d)) \lambda + (ad - bc) = 0 $$
+
+$$ \lambda = -\frac{a + d}{2} \pm \frac{\sqrt{a^2 - 2ad + d^2 + 4bc}}{2} $$
+
+$$ \lambda = \begin{Bmatrix} bd = 0 \to \lambda = a, \lambda = d \\
+bd \neq 0 \to \lambda = \frac{\sqrt{a^2 - 2ad + d^2 + 4bc}}{2} -\frac{a + d}{2}, \lambda = -\frac{a + d}{2} - \frac{\sqrt{a^2 - 2ad + d^2 + 4bc}}{2} \\ \end{Bmatrix} $$
