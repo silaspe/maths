@@ -108,7 +108,7 @@ okay, so now we have to solve the quadratic, take the cube root, and subtract ju
 
 either [this](https://silaspe.github.io/maths/quadratic.html)
 
-or [that](https://silaspe.github.io/maths/polynomial.html#.)
+or [that](https://silaspe.github.io/maths/polynomial.html#_1)
 
 ### .
 
