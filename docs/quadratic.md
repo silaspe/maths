@@ -42,4 +42,4 @@ $$ s = k - \frac{b}{2a} $$
 
 $$ k^2 = \frac{b^2 - 4ac}{4a^2} $$
 
-$$ s = -\frac{b}{2a} \pm \sqrt{\frac{b^2 - 4ac}{4a^2}} $$
+$$ s = -\frac{b}{2a} \pm \sqrt{\frac{b^2 - 4ac}{4a^2}} = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a} $$
