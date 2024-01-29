@@ -136,7 +136,7 @@ $$ x = \sqrt[3]{-\frac{q}{2} + \sqrt{(\frac{q}{2})^2 + (\frac{p}{3})^3}} + \sqrt
 
 so just plug in for $p$ and $q$ and add $\frac{b}{3a}$ and you have the cubic formula!
 
-#### z (quatic)
+#### z (quartic)
 
 so finally, after reading the whole page, you can understand the quadratic discriminant, (either that or you just skipped to this part) but probably not. So this discriminant is the $b^2 - 4ac$ in the quadratic formula, because the square root of a positive number is positive and plus or minus a positive number has two solutions, the square root of a negatave number is undefined (unless complex numbers) and plus or minus an undefined number has zero solutions, the square root zero is zero and plus or minus zero has one solution. In total, the sign of the $b^2 - 4ac$ determins how many solutions exist, which is why it is called descriminant, so...
 
