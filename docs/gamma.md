@@ -18,9 +18,9 @@ $$ \frac{d^n}{dx^n} (-\frac{1}{x}) = \frac{n!}{(-x)^{n + 1}} $$
 
 if $\frac{n!}{(-x)^{n + 1}}$ is a function of x and x can be a constant then $\frac{d^n}{dx^n} (-\frac{1}{x})$ is not. so $\frac{n!}{(-x)^{n + 1}}$ at $x = -1$ is $n!$
 
-$\quad$ $\quad$ problem solved!... but that is a bit too many derivitaves...
+$\quad$ $\quad$ $\quad$ $\quad$ problem solved!... but that is a bit too many derivitaves...
 
-$\quad$ $\quad$ $\quad$ $\quad$ $\quad$ $\quad$ $\quad$ $\quad$ $\quad$ $\quad$ $\quad$ $\quad$ $\quad$ so an example of something easy to differentiate is $e^x$
+$\quad$ $\quad$ $\quad$ $\quad$ $\quad$ $\quad$ $\quad$ $\quad$ so an example of something easy to differentiate is $e^x$
 
 $$ \frac{d}{dx} e^x = e^x $$
 
