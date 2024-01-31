@@ -26,7 +26,7 @@ $$ f(n, k) - f(n - 1, k) = f(n - 1, k - 1) $$
 
 $$ \Delta f(x) = : f(x + 1) - f(x) $$
 
-$$ x^{\frac{n}{}} = : \prod\limits{k = x - n + 1}{x} k = x \cdot (x - 1) \cdot (x - 2) ... \quad n \quad times = \frac{x!}{(x - n)!} $$
+$$ x^{\frac{n}{}} = : \prod\limits_{k = x - n + 1}^{x} k = x \cdot (x - 1) \cdot (x - 2) ... \quad n \quad times = \frac{x!}{(x - n)!} $$
 
 $$ \Delta x^{\frac{n}{}} = \frac{(x + 1)!}{(x - n + 1)!} - \frac{x!}{(x - n)!} = (x + 1) \frac{x!}{(x - n + 1)!} - \frac{x!}{\frac{(x - n + 1)!}{x - n + 1}} = (x + 1) x^{\frac{n - 1}{}} - (x - n + 1) x^{\frac{n - 1}{}} = x^{\frac{n - 1}{}} ((x + 1) - (x - n + 1)) $$
 
@@ -42,4 +42,4 @@ $$ f(x, k) = \frac{x^{\frac{n}{}}}{n!} = \frac{x!}{n!(x - n)!} = \begin{pmatrix}
 k \\ \end{pmatrix} $$
 
 $$ (1 + x)^n = \sum\limits_{k = 0}^{\infty} \begin{pmatrix} n \\
-k \\ \end{pmatrix} x^k $$
+k \\ \end{pmatrix} x^k = \sum\limits_{k = 0}^{\infty} \frac{n! x^k}{k!(n - k)!} $$
