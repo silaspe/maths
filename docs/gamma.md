@@ -16,7 +16,7 @@ $$ \frac{d^n}{dx^n} \frac{1}{x} = \frac{(-1)^n n!}{x^{n - 1}} $$
 
 $$ \frac{d^n}{dx^n} (-\frac{1}{x}) = \frac{n!}{(-x)^{n + 1}} $$
 
-$\quad$ $\quad$ $\quad$ $\quad$ $\quad$ $\quad$  if $\frac{n!}{(-x)^{n + 1}}$ is a function of x and x can be a constant then $\frac{d^n}{dx^n} (-\frac{1}{x})$ is not. so $\frac{n!}{(-x)^{n + 1}}$ at $x = -1$ is $n!$
+$\quad$ $\quad$  if $\frac{n!}{(-x)^{n + 1}}$ is a function of x and x can be a constant then $\frac{d^n}{dx^n} (-\frac{1}{x})$ is not. so $\frac{n!}{(-x)^{n + 1}}$ at $x = -1$ is $n!$
 
 $\quad$ $\quad$ $\quad$ $\quad$ $\quad$ $\quad$ $\quad$ $\quad$ $\quad$ $\quad$ $\quad$ $\quad$ $\quad$ problem solved!... but that is a bit too many derivitaves...
 
