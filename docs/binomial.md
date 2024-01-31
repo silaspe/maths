@@ -43,3 +43,21 @@ k \\ \end{pmatrix} $$
 
 $$ (1 + x)^n = \sum\limits_{k = 0}^{\infty} \begin{pmatrix} n \\
 k \\ \end{pmatrix} x^k = \sum\limits_{k = 0}^{\infty} \frac{n! x^k}{k!(n - k)!} $$
+
+$$ if \quad x \quad is \quad closer \quad to \quad 0, \quad than \quad this \quad will \quad converge \quad faster  $$
+
+### $\sqrt{3}$
+
+$$ \sqrt{3} = \sqrt{4 - 1} = \sqrt{4(1 - \frac{1}{4})} = 2 \sqrt{1 - \frac{1}{4}} = 2 (1 - \frac{1}{4})^{\frac{1}{2}} \quad which \quad converges \quad really \quad fast! $$
+
+### $\pi$
+
+$$ \pi = 2 \int_{-1}^{1} \sqrt{1 - x^2} dx = 4 \int_{0}^{1} \sqrt{1 - x^2} dx $$
+
+$$ but \quad at \quad 0, \quad this \quad is \quad 1, \quad and \quad at \quad \frac{1}{2}, this \quad will \quad converge \quad really \quad fast! $$
+
+$$ But, \int_{0}^{\frac{1}{2}} \sqrt{1 - x^2} dx = \frac{\sqrt{3}}{8} + \frac{\pi}{12} $$
+
+$$ thus, \quad \pi = 12 ((\sum\limits_{k = 0}^{\infty} \frac{\begin{pmatrix} \frac{1}{2} \\
+k \\ \end{pmatrix} (-\frac{1}{4})^{k + 1}}{k + 1}) - \frac{\sum\limits_{k = 0}^{\infty} \begin{pmatrix} \frac{1}{2} \\
+k \\ \end{pmatrix} (-\frac{1}{4})^k}{4}) $$
