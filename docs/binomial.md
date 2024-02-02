@@ -73,4 +73,4 @@ k \\ \end{pmatrix} (-\frac{1}{4})^k}{4}) $$
 where
 
 $$ \begin{pmatrix} \frac{1}{2} \\
-k \\ \end{pmatrix} = \frac{\prod\limits_{m = x - k + 1}^{x} m}{k!} $$
+k \\ \end{pmatrix} = \frac{\prod\limits_{m = \frac{1}{2} - k + 1}^{\frac{1}{2}} m}{k!} $$
