@@ -83,8 +83,6 @@ problem solved! but this has no constraint that $n$ is an integer, so I will use
 .
 
 .
-
-.
 you found it!
 
 [quaternions](https://www.youtube.com/watch?v=d4EgbgTm0Bg)
