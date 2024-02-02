@@ -85,3 +85,49 @@ another interpritation of complex multiplication is that if $w(z) = wz$ then $w(
 Eccept I think that just saying things like "multiplying by a number on the unit circle rotates a point counterclockwise" which by the way is true, needs rigoris proof. And I wanted to add more cases, but this page only needs one more fact before saying "now everything" so that the right of the page makes sense, anywas the fact is that the only reason why mathematicians use $e^{i \theta}$ is either to show that $e^{i \theta} e^{i \psi} = e^{i(\theta + \psi)}$, to show that $\frac{d}{dx} e^{ix} = ie^{ix}$ which makes sense if you think about it, or to confuse complex number beginners possibly making them not want to learn about complex numbers in the first place
 
 ### now everything
+
+quaternions!
+
+jk
+
+.
+
+.
+
+.
+
+.
+
+.
+
+.
+
+.
+
+.
+
+.
+
+.
+
+.
+
+.
+
+.
+
+.
+
+ok, if you want quaternions, than...
+
+you have to find it!
+
+..........
+
+..[.](https://silaspe.github.io/maths/gamma.html#_1)........
+
+..........
+
+...........
+
+...........
