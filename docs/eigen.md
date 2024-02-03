@@ -92,8 +92,7 @@ c^{\star} & d^{\star} \\ \end{bmatrix} $$
 
 $$ A^{\star} \vec{v} = \vec{0} $$
 
-$$ \vec{v} = \begin{bmatrix} v_x \\
-v_y \\ \end{bmatrix} = v_x \hat{i} + v_y \hat{j} \neq \vec{0} = \begin{bmatrix} 0 \\
+$$ \vec{v} = v_x \hat{i} + v_y \hat{j} \neq \vec{0} = \begin{bmatrix} 0 \\
 0 \\ \end{bmatrix} = 0 \hat{i} + 0 \hat{j}  $$
 
 $$ A^{\star} \vec{v} = A^{\star} (v_x \hat{i} + v_y \hat{j}) = v_x (A^{\star} \hat{i}) + v_y (A^{\star} \hat{j}) = 0 $$
@@ -134,10 +133,10 @@ $$ ad - a \lambda - d \lambda + \lambda^2 - bc = 0 $$
 
 $$ (1) \lambda^2 + (-(a + d)) \lambda + (ad - bc) = 0 $$
 
-$$ \lambda = -\frac{a + d}{2} \pm \frac{\sqrt{a^2 - 2ad + d^2 + 4bc}}{2} $$
+$$ \lambda = \frac{a + d}{2} \pm \frac{\sqrt{a^2 + 2ad + d^2 - 4ad+ 4bc}}{2} = \frac{a + d}{2} \pm \frac{\sqrt{a^2 - 2ad + d^2 + 4bc}}{2} $$
 
 $$ \lambda = \begin{Bmatrix} bd = 0 \to \lambda = a, \lambda = d \\
-bd \neq 0 \to \lambda = \frac{\sqrt{a^2 - 2ad + d^2 + 4bc}}{2} -\frac{a + d}{2}, \lambda = -\frac{a + d}{2} - \frac{\sqrt{a^2 - 2ad + d^2 + 4bc}}{2} \\ \end{Bmatrix} $$
+bd \neq 0 \to \lambda = \frac{a + d}{2} + \frac{\sqrt{a^2 - 2ad + d^2 + 4bc}}{2}, \lambda = \frac{a + d}{2} - \frac{\sqrt{a^2 - 2ad + d^2 + 4bc}}{2} \\ \end{Bmatrix} $$
 
 $$ -r = \frac{a^{\star}}{b^{\star}} = \frac{c^{\star}}{d^{\star}} $$
 
