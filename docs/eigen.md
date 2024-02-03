@@ -138,3 +138,7 @@ $$ \lambda = -\frac{a + d}{2} \pm \frac{\sqrt{a^2 - 2ad + d^2 + 4bc}}{2} $$
 
 $$ \lambda = \begin{Bmatrix} bd = 0 \to \lambda = a, \lambda = d \\
 bd \neq 0 \to \lambda = \frac{\sqrt{a^2 - 2ad + d^2 + 4bc}}{2} -\frac{a + d}{2}, \lambda = -\frac{a + d}{2} - \frac{\sqrt{a^2 - 2ad + d^2 + 4bc}}{2} \\ \end{Bmatrix} $$
+
+$$ -r = \frac{a^{\star}}{b^{\star}} = \frac{c^{\star}}{d^{\star}} $$
+
+$$ r = -\frac{a^{\star}}{b^{\star}} = -\frac{c^{\star}}{d^{\star}} $$
