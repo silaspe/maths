@@ -156,4 +156,5 @@ $$ F_{n - 1} = 1 F_{n - 1} + 0 F_{n - 2} $$
 
 $$ \begin{bmatrix} F_n \\
 F_{n - 1} \\ \end{bmatrix} = \begin{bmatrix} 1 & 1 \\
-1 & 0 \\ \end{bmatrix} $$
+1 & 0 \\ \end{bmatrix} \begin{bmatrix} F_{n - 1} \\
+F_{n - 2} \\ \end{bmatrix} $$
