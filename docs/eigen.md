@@ -141,3 +141,19 @@ bd \neq 0 \to \lambda = \frac{a + d}{2} + \frac{\sqrt{a^2 - 2ad + d^2 + 4bc}}{2}
 $$ -r = \frac{a^{\star}}{b^{\star}} = \frac{c^{\star}}{d^{\star}} $$
 
 $$ r = -\frac{a^{\star}}{b^{\star}} = -\frac{c^{\star}}{d^{\star}} $$
+
+### fibbonacci
+
+$$ F_n = F_{n - 1} + F_{n - 2} $$
+
+$$ F_1 = 1 $$
+
+$$ F_2 = 1 $$
+
+$$ F_n = 1 F_{n - 1} + 1 F_{n - 2} $$
+
+$$ F_{n - 1} = 1 F_{n - 1} + 0 F_{n - 2} $$
+
+$$ \begin{bmatrix} F_n \\
+F_{n - 1} \\ \end{bmatrix} = \begin{bmatrix} 1 & 1 \\
+1 & 0 \\ \end{bmatrix} $$
