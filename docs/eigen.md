@@ -142,17 +142,6 @@ $$ -r = \frac{a^{\star}}{b^{\star}} = \frac{c^{\star}}{d^{\star}} $$
 
 $$ r = -\frac{a^{\star}}{b^{\star}} = -\frac{c^{\star}}{d^{\star}} $$
 
-### convergance
-
-quick question:
-
-what is the shortest distance between a point $(w_x, w_y)$, and a line $y = rx$?
-
-$$ \vec{w} = \begin{bmatrix} w_x \\
-w_y \\ \end{bmatrix} $$
-
-$$ r = \frac{w_y}{w_x} $$
-
 ### fibbonacci
 
 $$ F_n = F_{n - 1} + F_{n - 2} $$
@@ -169,3 +158,16 @@ $$ \begin{bmatrix} F_n \\
 F_{n - 1} \\ \end{bmatrix} = \begin{bmatrix} 1 & 1 \\
 1 & 0 \\ \end{bmatrix} \begin{bmatrix} F_{n - 1} \\
 F_{n - 2} \\ \end{bmatrix} $$
+
+as you know by the [determinant](https://www.youtube.com/watch?v=Ip3X9LOh2dk) video, if the matrix $A$ has a determinant of $D$, then the matrix $A^n$ has a determinant of $D^n$, so if the determinant is strictly in between $-1$ and $1$, than it will squish space onto a line, what line though?
+
+well, it has to be the eigenst, because
+
+but if the determinant is $-1$ or $1$
+
+but the determinant of the
+
+$$ \begin{bmatrix} 1 & 1 \\
+1 & 0 \\ \end{bmatrix} $$
+
+matrix is $$
