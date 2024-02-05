@@ -142,6 +142,17 @@ $$ -r = \frac{a^{\star}}{b^{\star}} = \frac{c^{\star}}{d^{\star}} $$
 
 $$ r = -\frac{a^{\star}}{b^{\star}} = -\frac{c^{\star}}{d^{\star}} $$
 
+### convergance
+
+quick question:
+
+what is the shortest distance between a point $(w_x, w_y)$, and a line $y = rx$?
+
+$$ \vec{w} = \begin{bmatrix} w_x \\
+w_y \\ \end{bmatrix} $$
+
+$$ r = \frac{w_y}{w_x} $$
+
 ### fibbonacci
 
 $$ F_n = F_{n - 1} + F_{n - 2} $$
