@@ -25,7 +25,7 @@ $$ \begin{bmatrix} a^n & 0 \\
 
 but if $A$ is not diagonal, than just switch to a basis (in particular, an eigenbasis that I will dedicate the rest of the page or)
 
-an eigenbasis as it is called, is also just usefull in other cases lke when you need to find the next [fibbonacci number](https://www.youtube.com/watch?v=BMPa0FA65Fk), or find the flow in a population of foxes and rabbits (even if you need to see the entire second video) which I will do both of thoes at the end of the page
+the eigenvector as it is called, is also just usefull in other cases lke when you need to find the next [fibbonacci number](https://www.youtube.com/watch?v=BMPa0FA65Fk), or find the flow in a population of foxes and rabbits (even if you need to see the entire second video) which I will do both of thoes at the end of the page
 
 so the top question is...
 
@@ -136,11 +136,19 @@ $$ (1) \lambda^2 + (-(a + d)) \lambda + (ad - bc) = 0 $$
 $$ \lambda = \frac{a + d}{2} \pm \frac{\sqrt{a^2 + 2ad + d^2 - 4ad+ 4bc}}{2} = \frac{a + d}{2} \pm \frac{\sqrt{a^2 - 2ad + d^2 + 4bc}}{2} $$
 
 $$ \lambda = \begin{Bmatrix} bd = 0 \to \lambda = a, \lambda = d \\
-bd \neq 0 \to \lambda = \frac{a + d}{2} + \frac{\sqrt{a^2 - 2ad + d^2 + 4bc}}{2}, \lambda = \frac{a + d}{2} - \frac{\sqrt{a^2 - 2ad + d^2 + 4bc}}{2} \\ \end{Bmatrix} $$
+bd \neq 0 \to \lambda = \frac{a + d + \sqrt{(a - d)^2 + 4bc}}{2}, \lambda = \frac{a + d - \sqrt{(a - d)^2 + 4bc}}{2} \\ \end{Bmatrix} $$
 
 $$ -r = \frac{a^{\star}}{b^{\star}} = \frac{c^{\star}}{d^{\star}} $$
 
-$$ r = -\frac{a^{\star}}{b^{\star}} = -\frac{c^{\star}}{d^{\star}} $$
+$$ r = -\frac{a^{\star}}{b^{\star}} = -\frac{c^{\star}}{d^{\star}} = -\frac{a - \lambda}{b} = -\frac{c}{d - \lambda} $$
+
+another thing that is important is if an eigenset is stable equilibrium (sorry, I coudn't find a good video), the eigenvector is an equilibrium.
+
+So if vectors will slowly drift towards the eigenset as you apply the transformation then it is convergent, but if vectors will slowly drift away from the eigenset as you apply the transformation then it is divergent
+
+I wanted to prove how to compute this, but than I had to find out the point to line distance forula, which requiers the inverse pithagorian therom, which requiers the pithagorian therom, and I don't know how to prove that without geometry
+
+so I will just tell you if an eigenset is convergent or not in the next part which I said I would do eventually... 
 
 ### fibbonacci
 
@@ -159,15 +167,26 @@ F_{n - 1} \\ \end{bmatrix} = \begin{bmatrix} 1 & 1 \\
 1 & 0 \\ \end{bmatrix} \begin{bmatrix} F_{n - 1} \\
 F_{n - 2} \\ \end{bmatrix} $$
 
-as you know by the [determinant](https://www.youtube.com/watch?v=Ip3X9LOh2dk) video, if the matrix $A$ has a determinant of $D$, then the matrix $A^n$ has a determinant of $D^n$, so if the determinant is strictly in between $-1$ and $1$, than it will squish space onto a line, what line though?
+$$ \lambda = \frac{1 + \sqrt{5}}{2} = \phi, \lambda = \frac{1 - \sqrt{5}}{2} = anti \phi $$
 
-well, it has to be the eigenst, because
+$$ \phi = : 1 + \frac{1}{\phi} = \frac{1 + \sqrt{5}}{2} $$
 
-but if the determinant is $-1$ or $1$
+$$ anti \phi = : 1 + \frac{1}{anti \phi} = \frac{1 - \sqrt{5}}{2} $$
 
-but the determinant of the
+the one with the plus is convergent, the other one is not
 
-$$ \begin{bmatrix} 1 & 1 \\
-1 & 0 \\ \end{bmatrix} $$
+$$ r = \frac{1}{\phi}, r =\frac{1}{anti \phi}  $$
 
-matrix is $$
+once again, the $\phi$ one is convergent, the $anti \phi$ one is not.
+
+but, if it is convergent when making the next fibbonacci number, then all possible starting conditions* will eventually approach the $\frac{F_n}{F_{n - 1}} = \phi$, but if that is true than...
+
+*even if it is not stable, if the starting conditions lie directly the alternitave line, the ratio of terms dosen't approach, but always is, $anti \phi$, but that is irrational so an easy fix is to make both of the enitial conditions integers. Anyways...
+
+$$ \frac{F_{n + 1}}{F_n} \to \phi $$
+
+$$ F_{n + 1} \approx \phi F_n $$
+
+okay, I have the next fibonacci number, onto foxes and rabitts
+
+### which one came first, the rabbit or the fox
