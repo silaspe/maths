@@ -2,7 +2,7 @@
 
 learn more [here](https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab)
 
-$$\begin{bmatrix}  a \\
+$$ \begin{bmatrix}  a \\
   b\end{bmatrix} = a + bi $$
 
 $$ \hat{I} = \begin{bmatrix}  1 \\
