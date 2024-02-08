@@ -1,4 +1,4 @@
-Learn more [here](https://www.youtube.com/watch?v=XkY2DOUCWMU), [here](https://www.youtube.com/watch?v=O85OWBJ2ayo&t=194s), [here](https://www.youtube.com/watch?v=uQhTuRlWMxw&t=592s), [here](https://www.youtube.com/watch?v=PFDu9oVAE-g&t=960s), [here](https://www.youtube.com/watch?v=uQhTuRlWMxw&t=283s), [and here](https://www.youtube.com/watch?v=P2LTAUO1TdA) in that order if you stop at 3:54 on the second, 10:44 on the third, 16:01 on the fourth, 4:53 on the fifth, and 12:21 on the sixth
+Learn more [here](https://www.youtube.com/watch?v=kYB8IZa5AuE), [here](https://www.youtube.com/watch?v=XkY2DOUCWMU), [here](https://www.youtube.com/watch?v=O85OWBJ2ayo&t=194s), [here](https://www.youtube.com/watch?v=uQhTuRlWMxw&t=592s), [here](https://www.youtube.com/watch?v=PFDu9oVAE-g&t=960s), [here](https://www.youtube.com/watch?v=uQhTuRlWMxw&t=283s), [and here](https://www.youtube.com/watch?v=P2LTAUO1TdA) in that order if you stop at 3:54 on the third, 10:44 on the fourth, 16:01 on the fifth, 4:53 on the sixth, and 12:21 on the seventh
 
 by the way, any matrix to the power of zero is the identity matrix $I$
 
@@ -158,6 +158,8 @@ $$ F_1 = 1 $$
 
 $$ F_2 = 1 $$
 
+$$ F_{n + 1} = ?(F_n) $$
+
 $$ F_n = 1 F_{n - 1} + 1 F_{n - 2} $$
 
 $$ F_{n - 1} = 1 F_{n - 1} + 0 F_{n - 2} $$
@@ -189,4 +191,21 @@ $$ F_{n + 1} \approx \phi F_n $$
 
 okay, I have the next fibonacci number, onto foxes and rabitts
 
-### which one came first, the rabbit or the fox
+### which one would win in a boxing match, the fox or the rabbit?
+
+$$ \frac{d}{dt} \begin{bmatrix} f(t) \\
+g(t) \\ \end{bmatrix} = \begin{bmatrix} f\prime (t) \\
+g\prime (t) \\ \end{bmatrix} $$
+
+$$ r(t) = number \quad of \quad rabbits $$
+
+$$ f(t) = number \quad of \quad foxes $$
+
+$$ r\prime (t) = \alpha r(t) - \beta f(t) $$
+
+$$ f\prime (t) = \gamma f(t) + \delta r(t) $$
+
+$$ \frac{d}{dt} \begin{bmatrix} r(t) \\
+f(t) \\ \end{bmatrix} = \begin{bmatrix} \alpha & \beta \\
+\delta & \gamma \\ \end{bmatrix} \begin{bmatrix} r(t) \\
+f(t) \\ \end{bmatrix} $$
