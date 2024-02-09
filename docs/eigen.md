@@ -205,7 +205,7 @@ $$ r\prime (t) = \alpha r(t) - \beta f(t) $$
 
 $$ f\prime (t) = \gamma f(t) + \delta r(t) $$
 
-$$ \frac{d}{dt} \begin{bmatrix} r(t) \\
-f(t) \\ \end{bmatrix} = \begin{bmatrix} \alpha & \beta \\
+$$ \begin{bmatrix} r\prime (t) \\
+f\prime (t) \\ \end{bmatrix} = \begin{bmatrix} \alpha & - \beta \\
 \delta & \gamma \\ \end{bmatrix} \begin{bmatrix} r(t) \\
 f(t) \\ \end{bmatrix} $$
