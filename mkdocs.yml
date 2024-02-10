@@ -18,7 +18,7 @@ nav:
   - Quadratic (again): quadratic.md
   - Binomial: binomial.md
   - fractional calculas: fractional_calculas.md
-  - fibbonacci: fibonacci.md
+  - fibbonacci: fibbonacci.md
 
 theme:
   name: material
