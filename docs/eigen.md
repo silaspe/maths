@@ -168,21 +168,21 @@ F_{n - 1} \\ \end{bmatrix} = \begin{bmatrix} 1 & 1 \\
 1 & 0 \\ \end{bmatrix} \begin{bmatrix} F_{n - 1} \\
 F_{n - 2} \\ \end{bmatrix} $$
 
-$$ \lambda = \frac{1 + \sqrt{5}}{2} = \phi, \lambda = \frac{1 - \sqrt{5}}{2} = anti \phi $$
+$$ \lambda = \frac{1 + \sqrt{5}}{2} = \phi, \lambda = \frac{1 - \sqrt{5}}{2} = \psi $$
 
 $$ \phi = : 1 + \frac{1}{\phi} = \frac{1 + \sqrt{5}}{2} $$
 
-$$ anti \phi = : 1 + \frac{1}{anti \phi} = \frac{1 - \sqrt{5}}{2} $$
+$$ \psi = : 1 + \frac{1}{\psi} = \frac{1 - \sqrt{5}}{2} $$
 
 the one with the plus is convergent, the other one is not
 
-$$ r = \frac{1}{\phi}, r =\frac{1}{anti \phi}  $$
+$$ r = \frac{1}{\phi}, r =\frac{1}{\psi}  $$
 
-once again, the $\phi$ one is convergent, the $anti \phi$ one is not.
+once again, the $\phi$ one is convergent, the $\psi$ one is not.
 
 but, if it is convergent when making the next fibbonacci number, then all possible starting conditions* will eventually approach the $\frac{F_n}{F_{n - 1}} = \phi$, but if that is true than...
 
-*even if it is not stable, if the starting conditions lie directly the alternitave line, the ratio of terms dosen't approach, but always is, $anti \phi$, but that is irrational so an easy fix is to make both of the enitial conditions integers. Anyways...
+*even if it is not stable, if the starting conditions lie directly the alternitave line, the ratio of terms dosen't approach, but always is, $\psi$, but that is irrational so an easy fix is to make both of the enitial conditions integers. Anyways...
 
 $$ \frac{F_{n + 1}}{F_n} \to \phi $$
 
