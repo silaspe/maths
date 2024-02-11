@@ -112,9 +112,9 @@ b & a\end{bmatrix} $$
 
 well, what makes a matrix of that form?
 
-for one, the top left equals the bottom right equals $a$
+for one, the top left equals the bottom right equals the real part
 
-and for another, the top right equals the bottom left equals $-b$
+and for another, the top right equals the negatave of the bottom left equals the negatave of the imaginary part
 
 ### in conclusion...
 
@@ -125,7 +125,7 @@ and to test if this is a matrix or a complex number
 
 $$ \frac{\partial u}{\partial x} = \frac{\partial v}{\partial y} $$
 
-$$ \frac{\partial u}{\partial y} = -\frac{\partial v}{\partial x} $$
+$$ -\frac{\partial u}{\partial y} = \frac{\partial v}{\partial x} $$
 
 ### examples
 
@@ -147,7 +147,11 @@ $$ \frac{\partial v}{\partial y} = \frac{\partial}{\partial y} (2xy) = 2x $$
 
 $$ 2x = 2x $$
 
-$$ -2y = -2y $$
+$$ 2y = 2y $$
+
+$$ f\prime (z) = 2x + 2yi = 2z $$
+
+another one!
 
 $$ f(z) = ccong(z) $$
 
@@ -165,4 +169,7 @@ $$ 1 \ne -1 $$
 
 $$ 0 = 0 $$
 
-in conclution $z^2$ has a derivitave, and $ccong(z)$ does not
+$$ f\prime (z) = \begin{bmatrix}  1 & 0 \\
+0 & -1 \end{bmatrix} $$
+
+in conclution, $z^2$ has a derivitave, and $ccong(z)$ does not.
