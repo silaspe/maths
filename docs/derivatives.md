@@ -24,7 +24,7 @@ $$ (fg)\prime = fg\prime + f\prime g $$
 
 ### chain rule
 
-$$ \frac{f(x + \Delta x) - f}{\Delta x} = \frac{df}{dx} (x) $$
+$$ \frac{f(x + \Delta x) - f(x)}{\Delta x} = \frac{df}{dx} (x) $$
 
 $$ \Delta x \to 0 $$
 
@@ -38,13 +38,13 @@ $$ \frac{f(g(x) + dg) - f(g(x))}{dg}\frac{dg}{dx} $$
 
 $$ = \frac{d(f(g(x)))}{dx} = \frac{df}{dx}(g(x))\frac{dg}{dx} $$
 
-$$ (f(g))\prime = f\prime(g)g \prime$$
+$$ (f(g))\prime = f\prime(g)g \prime $$
 
 ### mbc rule
 
 $$ \frac{dcf(x)}{dx} = c f\prime(x) $$
 
-$$ (cf(x))\prime = c f\prime $$
+$$ (cf)\prime = c f\prime $$
 
 ### exponent rule
 
@@ -52,7 +52,7 @@ $$ \frac{d(a^x)}{dx} = \frac{a^{x + dx} -a^x}{dx} = \frac{a^x a^{dx} - a^x}{dx} 
 
 $$ \frac{d(a^x)}{dx} = a^x \frac{a^{dx} - 1}{dx} $$
 
-(lets figure this out later!)
+$$ \text{(lets figure this out later!)} $$
 
 ### e
 
@@ -76,11 +76,11 @@ $$ \frac{d(e^{ln(f(x)})}{dx} = (ln(f(x)))\prime e^{ln(f(x))} = f(x) (ln(f(x)))\p
 
 $$ (ln(f))\prime = \frac{f\prime}{f} $$
 
-$$ f = a^x $$
+$$ f(x) = a^x $$
 
-$$ ln(f) = ln(a^x) = x ln(a) $$
+$$ ln(f(x)) = ln(a^x) = x ln(a) $$
 
-$$ \frac{f\prime}{f} = ln(a) $$
+$$ \frac{f\prime (x)}{f(x)} = ln(a) $$
 
 $$ (a^x)\prime = a^x ln(a) $$
 
