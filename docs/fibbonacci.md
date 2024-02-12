@@ -154,3 +154,27 @@ $$ F_n = \frac{L_{n + 1} + L_{n - 1}}{5} $$
 $$ \phi^n = \frac{\phi^{n + 1} + \phi^{n - 1}}{\sqrt{5}} $$
 
 $$ L_n = F_{n + 1} + F_{n - 1} $$
+
+### one more thing
+
+$$ \text{how would one combine $\phi^n = F_n \phi + F_{n - 1}$ and $\phi^n = \frac{L_n \phi + L_{n - 1}}{\sqrt{5}}$} $$
+
+$$ \text{for one, rearrange the second one} $$
+
+$$ \phi^n = F_n \phi + F_{n - 1} $$
+
+$$ \phi^n \sqrt{5} = L_n \phi + L_{n - 1} $$
+
+$$ F_{n - 1} = F_n - F_{n - 2} $$
+
+$$ L_{n - 1} = F_n + F_{n - 2} $$
+
+$$ \phi^n = F_n \phi + F_n - F_{n - 2} $$
+
+$$ \phi^n \sqrt{5} = L_n \phi + F_n + F_{n - 2} $$
+
+$$ (1 + \sqrt{5}) \phi^n = 2 \phi \phi^n = (F_n + L_n) \phi + F_n - F_{n - 2} + F_n + F_{n - 2} = (F_n + L_n) \phi + 2F_n $$
+
+$$ \phi \phi^n = \frac{1}{2} (F_n + L_n) \phi + F_n $$
+
+$$ \phi^n = \frac{1}{2} (F_n + L_n) + F_n \phi^{-1} = \frac{1}{2} F_n + \frac{1}{2} L_n - F_n \psi = \frac{1}{2} F_n + \frac{1}{2} L_n - \frac{1}{2} F_n + \sqrt{5} F_n = \frac{1}{2} L_n + \sqrt{5} F_n $$
