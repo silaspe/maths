@@ -1,5 +1,9 @@
 ## fibbonacci
 
+#### WARNING
+
+I don't know why, but it might be hard to scroll on this page, just use the scroll bar instead, anyways enjoy the math!
+
 $$ F_n = F_{n - 1} + F_{n - 2} $$
 
 $$ F_1 = 1 $$
@@ -101,8 +105,52 @@ $$ F_n = \frac{L_{n + 1} + L_{n - 1}}{5} $$
 
 $$ L_n \phi + L_{n - 1} = (\phi^n + \psi^n) \phi + \phi^{n - 1} + \psi^{n - 1} = \phi^{n + 1} + \psi^n \phi + \phi^{n - 1} - \psi^n \phi = \phi^{n + 1} + \phi^{n - 1} = \phi^n (\phi + \phi^{-1}) $$
 
-$$ \phi^n \sqrt{5} = L_n \phi + L_{n - 1} $$
+$$ \phi^n \sqrt{5} = L_n \phi + L_{n - 1} = \phi^{n + 1} + \phi^{n - 1} $$
 
-$$ \phi^n = \frac{L_n \phi + L_{n - 1}}{\sqrt{5}} $$
+$$ \phi^n = \frac{L_n \phi + L_{n - 1}}{\sqrt{5}} = \frac{\phi^{n + 1} + \phi^{n - 1}}{\sqrt{5}} $$
 
 $$ \text{$\phi^n = \phi^{n - 1} + \phi^{n - 2}$ btw} $$
+
+### everything up 'til now
+
+$$ F_1 = 1 $$
+
+$$ F_2 = 1 $$
+
+$$ F_0 = 0 $$
+
+$$ \phi^1 = \phi $$
+
+$$ \phi^2 = \phi + 1 $$
+
+$$ \phi^0 = 1 $$
+
+$$ L_1 = 1 $$
+
+$$ L_2 = 3 $$
+
+$$ L_0 = 2 $$
+
+.
+
+$$ F_n = F_{n - 1} + F_{n - 2} $$
+
+$$ \phi^n = \phi^{n - 1} + \phi^{n - 2} $$
+
+$$ L_n = L_{n - 1} + L_{n - 2} $$
+
+.
+
+$$ F_n = \frac{\phi^n - \psi^n}{\sqrt{5}} $$
+
+$$ \phi^n = F_n \phi + F_{n - 1} = \frac{L_n \phi + L_{n - 1}}{\sqrt{5}} $$
+
+$$ L_n = \phi^n + \psi^n $$
+
+.
+
+$$ F_n = \frac{L_{n + 1} + L_{n - 1}}{5} $$
+
+$$ \phi^n = \frac{\phi^{n + 1} + \phi^{n - 1}}{\sqrt{5}} $$
+
+$$ L_n = F_{n + 1} + F_{n - 1} $$
