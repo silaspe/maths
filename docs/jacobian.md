@@ -1,6 +1,6 @@
 ## linear algebra
 
-learn more [here](https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab)
+learn more [here](https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab), and [here](https://silaspe.github.io/maths/complex.html)
 
 $$ \begin{bmatrix}  a \\
   b\end{bmatrix} = a + bi $$
