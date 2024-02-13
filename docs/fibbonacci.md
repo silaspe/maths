@@ -1,9 +1,5 @@
 ## fibbonacci
 
-#### WARNING
-
-I don't know why, but it might be hard to scroll on this page, just use the scroll bar instead, anyways enjoy the math!
-
 $$ F_n = F_{n - 1} + F_{n - 2} $$
 
 $$ F_1 = 1 $$
@@ -191,7 +187,7 @@ $$ \phi \phi^n = \frac{1}{2} (F_n + L_n) \phi + F_n $$
 
 $$ \phi^n = \frac{1}{2} (F_n + L_n) + F_n \phi^{-1} = \frac{1}{2} F_n + \frac{1}{2} L_n - F_n \psi = \frac{1}{2} F_n + \frac{1}{2} L_n - \frac{1}{2} F_n + \frac{\sqrt{5}}{2} F_n $$
 
-$$ \phi^n = \frac{1}{2} L_n + \frac{\sqrt{5}}{2} F_n $$
+$$ \phi^n = \frac{1}{2} L_n + \frac{\sqrt{5}}{2} F_n \approx \frac{1}{2} \phi^n + \frac{\sqrt{5}}{2} \frac{\phi^n}{\sqrt{5}} = \phi^n $$
 
 ## fibbonacci 2
 
@@ -213,7 +209,7 @@ $$ S_4 = a + 2b + a + b = 2a + 3b $$
 
 $$ S_5 = 2a + 3b + a + 2b = 3a + 5b $$
 
-yes, I know that this text is not centered and is in a different font, but I'm tired of proving things that the corrasponding youtube narrator just says "I'll leave this as an exersize for the veiwer", for example I used lines $12$ through $27$ just to prove that the numbers that you were seeing were the fibbonacci numbers, I got too lazy to prove this next one, so I hate to say it, but I will leave proving the following statement as an exersize for the viewer:
+yes, I know that this text is not centered and is in a different font, but I'm tired of proving things that the corrasponding youtube narrator just says "I'll leave this as an exersize for the veiwer", for example I used lines $14$ through $29$ just to prove that the numbers that you were seeing were the fibbonacci numbers, I got too lazy to prove this next one, so I hate to say it, but I will leave proving the following statement as an exersize for the viewer:
 
 $$ S_n = F_n b + F_{n - 1} a = \frac{(\phi^n - \psi^n) b + (\phi^{n - 1} - \psi^{n - 1}) a}{\phi - \psi} = \frac{\phi^n b - \psi^n b - \psi \phi^n a + \phi \psi^n a}{\phi - \psi} $$
 
