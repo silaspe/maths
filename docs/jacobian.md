@@ -66,6 +66,10 @@ dy\end{bmatrix} $$
 
 $$ df = f(z + dz) - f(z) $$
 
+$$ \frac{\partial}{\partial x} f(x, t) = : \frac{f(x + dx, t) - f(x, t)}{dx} $$
+
+$$ \partial f(x, t)_x = : f(x + dx, t) - f(x, t) $$
+
 $$ f(z + dx \hat{I}) = f(z) + \begin{bmatrix}  \partial u_x \\
 \partial v_x\end{bmatrix} $$
 
