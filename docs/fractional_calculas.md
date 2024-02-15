@@ -18,8 +18,12 @@ $$ \frac{d^p}{dx^p} x^n = \frac{n! x^{n - p}}{(n - p)!} $$
 
 $$ where \quad (n - p)! = : \int_{0}^{\infty} t^{n - p} e^{-t} dt $$
 
-### $\quad_p \int_{a}^{x}$
+### $\quad_p \int_{0}^{x}$
 
-$$ \int f(x) dx = \int_{a}^{x} f(t) dt $$
+$$ \int f(x) dx = \int_{0}^{x} f(t) dt $$
 
-$$ \int \int f(x) dx^2 = \quad_2 \int f(x) dx^2 = \int_{a}^{x} \int_{a}^{y} f(t) dt dy = \int_{a}^{x} \int_{a}^{y} f(t) dy dt $$
+$$ \int \int f(x) dx^2 = ? = \quad_2 \int f(x) dx $$
+
+$$ ? = \int_{0}^{x} \int_{0}^{y} f(t) dt dy $$
+
+$$ ! = \int_{0}^{x} (x - t) f(t) dt = \int_{0}^{x} (x f(t) - t f(t)) dt = \int_{0}^{x} \int_{t}^{x} f(t) dy dt $$
