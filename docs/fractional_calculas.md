@@ -70,8 +70,46 @@ $$ du = f(t) dt $$
 
 $$ v = - \frac{1}{2} (x - t)^2 $$
 
-$$ \quad_3 \int_{a}^{x} f(t) dt^3 = \int_{t=a}^{x} u dv = [uv]_ {t=a}^{x} - \int_{a}^{x} - \frac{1}{2} (x - t)^2 f(t) dt = [- \frac{1}{2} (x - t)^2 \int_{a}^{t} f(s) ds]_ {t=a}^{x} + \int_{a}^{x} \frac{1}{2} (x - t)^2 f(t) dt = (- \frac{1}{2} (x - a)^2 \int_{a}^{a} f(s) ds) - (- \frac{1}{2} (x - x)^2 \int_{a}^{x} f(s) ds) + \int_{a}^{x} \frac{1}{2} (x - t)^2 f(t) dt $$
+$$ \quad_3 \int_{a}^{x} f(t) dt^3 = \int_{t=a}^{x} u dv = [uv]_ {t=a}^{x} - \int_{a}^{x} - \frac{1}{2} (x - t)^2 f(t) dt = [- \frac{1}{2} (x - t)^2 \int_{a}^{t} f(s) ds]_ {t=a}^{x} + \int_{a}^{x} - \frac{1}{2} (x - t)^2 f(t) dt = (- \frac{1}{2} (x - a)^2 \int_{a}^{a} f(s) ds) - (- \frac{1}{2} (x - x)^2 \int_{a}^{x} f(s) ds) + \int_{a}^{x} \frac{1}{2} (x - t)^2 f(t) dt $$
 
 $$ \quad_3 \int_{a} f(x) dx^3 = \frac{1}{2} \int_{a}^{x} (x - t)^2 f(t) dt $$
 
 ### $\quad_p \int_{a}^{x}$
+
+$$ \vdots $$
+
+$$ \quad_n \int_{a}^{x} f(t) dt = \int_{a}^{x} g(x, t, n) f(t) dt $$
+
+$$ \quad_{n + 1} \int_{a}^{x} f(t) dt^{n + 1} = \quad_n \int_{a}^{x} \int_{a}^{t} f(s) ds dt^n = \int_{a}^{x} g(x, t, n) \int_{a}^{t} f(s) ds dt $$
+
+$$ u = \int_{a}^{t} f(s) ds $$
+
+$$ dv = g(x, t, n) dt $$
+
+$$ du = f(t) dt $$
+
+$$ v \quad ? = ? \quad - g(x, t, n + 1) $$
+
+$$ \quad_{n + 1} \int_{a}^{x} f(t) dt^{n + 1} = \int_{t=a}^{x} u dv = [uv]_ {t=a}^{x} - \int_{a}^{x} - g(x, t, n + 1) f(t) dt = [- g(x, t, n + 1) \int_{a}^{t} f(s) ds]_ {t=a}^{x} + \int_{a}^{x} g(x, t, n + 1) f(t) dt = (- g(x, a, n + 1) \int_{a}^{a} f(s) ds) - (- g(x, x, n + 1) \int_{a}^{x} f(s) ds) + \int_{a}^{x} g(x, t, n + 1) f(t) dt = \int_{a}^{x} g(x, t, n + 1) f(t) dt + g(x, x, n + 1) \int_{a}^{x} f(s) ds = \int_{a}^{x} g(x, t, n + 1) f(t) dt $$
+
+$$ g(x, x, n + 1) = 0 AND \frac{d}{dt} g(x, t, n + 1) = - g(x, t, n) \Rightarrow v = - g(x, t, n + 1) $$
+
+$$ g(x, t, 2) = x - t $$
+
+$$ \frac{d}{dt} \frac{1}{(n - 1)!} (x - t)^{n - 1} = - \frac{1}{(n - 1)!} (n - 1) (x - t)^{n - 2} = - \frac{1}{(n - 2)!} (x - t)^{n - 2} $$
+
+$$ \frac{1}{(2 - 1)!} (x - t)^{2 - 1} = x - t $$
+
+$$ g(x, t, n) = \frac{1}{(n - 1)!} (x - t)^{n - 1} $$
+
+$$ \quad_n \int_{a} f(x) dx^n = \frac{1}{(n - 1)!} \int_{a}^{x} (x - t)^{n - 1} f(t) dt $$
+
+$$ \quad_n \int_{a} f(x) dx^n = \frac{1}{\Gamma (n)} \int_{a}^{x} (x - t)^{n - 1} f(t) dt $$
+
+$$ \Gamma (n) = : \int_{0}^{\infty} t^{r - 1} e^{-r} dr $$
+
+$$ \quad_\frac{1}{2} \int_{a} f(x) dx^{\frac{1}{2}} = : \frac{1}{\Gamma (\frac{1}{2})} \int_{a}^{x} (x - t)^{n - 1} f(t) dt = \frac{1}{\sqrt{\pi}} \int_{a}^{x} (x - t)^{n - 1} f(t) dt $$
+
+### $\frac{d^{\frac{1}{2}}}{dx^{\frac{1}{2}}}$
+
+$$ \frac{d^{\frac{1}{2}}}{dx^{\frac{1}{2}}} f(x) = : \frac{d}{dx} \frac{1}{\sqrt{\pi}} \int_{a}^{x} (x - t)^{n - 1} f(t) dt $$
