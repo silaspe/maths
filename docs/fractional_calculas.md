@@ -48,4 +48,30 @@ $$ \quad_2 \int_{0}^{x} f(t) dt^2 - \quad_2 \int_{0}^{a} f(t) dt^2 = \int_{0}^{x
 
 $$ \quad_2 \int_{a} f(x) dx^2 = \int_{a}^{x} (x - t) f(t) dt $$
 
-### $\quad_p \int_{0}^{x}$
+### $\quad_3 \int_{a}^{x}$
+
+$$ \quad_3 \int_{a}^{x} f(t) dt^3 = \quad_2 \int_{a}^{x} \int_{a}^{t} f(s) ds dt^2 = \int_{a}^{x} (x - t) \int_{a}^{t} f(s) ds dt $$
+
+$$ (uv) \prime = u v \prime + u \prime v $$
+
+$$ \int (uv) \prime dx = \int u v \prime dx + \int u \prime v dx $$
+
+$$ uv = \int u \frac{dv}{dx} dx + \int \frac{du}{dx} v dx $$
+
+$$ uv = \int u dv + \int du v $$
+
+$$ \int u dv = uv - \int du v $$
+
+$$ u = \int_{a}^{t} f(s) ds $$
+
+$$ dv = (x - t) dt $$
+
+$$ du = f(t) dt $$
+
+$$ v = - \frac{1}{2} (x - t)^2 $$
+
+$$ \quad_3 \int_{a}^{x} f(t) dt^3 = \int_{t=a}^{x} u dv = [uv]_ {t=a}^{x} - \int_{a}^{x} - \frac{1}{2} (x - t)^2 f(t) dt = [- \frac{1}{2} (x - t)^2 \int_{a}^{t} f(s) ds]_ {t=a}^{x} + \int_{a}^{x} \frac{1}{2} (x - t)^2 f(t) dt = (- \frac{1}{2} (x - a)^2 \int_{a}^{a} f(s) ds) - (- \frac{1}{2} (x - x)^2 \int_{a}^{x} f(s) ds) + \int_{a}^{x} \frac{1}{2} (x - t)^2 f(t) dt $$
+
+$$ \quad_3 \int_{a} f(x) dx^3 = \frac{1}{2} \int_{a}^{x} (x - t)^2 f(t) dt $$
+
+### $\quad_p \int_{a}^{x}$
