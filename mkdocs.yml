@@ -8,12 +8,12 @@ nav:
   - Calculus: derivatives.md
   - Polynomial: polynomial.md
   - Calculus part 2: calculus_2.md
+  - Trigonometry: trigonometry.md
   - Complex: complex.md
   - Jacobian: jacobian.md
   - Gamma: gamma.md
   - Hyperbolic: hyperbolic.md
   - Harmonic: harmonic.md
-  - Trigonometry: trigonometry.md
   - Eigenstuff: eigen.md
   - Quadratic (again): quadratic.md
   - Binomial: binomial.md
