@@ -94,9 +94,11 @@ $$ \quad_{n + 1} \int_{a}^{x} f(t) dt^{n + 1} = \int_{t=a}^{x} u dv = [uv]_ {t=a
 
 $$ g(x, x, n + 1) = 0 AND \frac{d}{dt} g(x, t, n + 1) = - g(x, t, n) \Rightarrow v = - g(x, t, n + 1) $$
 
-$$ g(x, t, 2) = x - t $$
+$$ \frac{1}{n!} (x - x)^n = 0 $$
 
-$$ \frac{d}{dt} \frac{1}{(n - 1)!} (x - t)^{n - 1} = - \frac{1}{(n - 1)!} (n - 1) (x - t)^{n - 2} = - \frac{1}{(n - 2)!} (x - t)^{n - 2} $$
+$$ \frac{d}{dt} \frac{1}{n!} (x - t)^n = - \frac{1}{n} n (x - t)^{n - 1} = - \frac{1}{(n - 1)!} (x - t)^{n - 1} $$
+
+$$ g(x, t, 2) = x - t $$
 
 $$ \frac{1}{(2 - 1)!} (x - t)^{2 - 1} = x - t $$
 
