@@ -19,6 +19,7 @@ nav:
   - Binomial: binomial.md
   - fractional calculas: fractional_calculas.md
   - fibbonacci: fibbonacci.md
+  - Probability: probability.md
 
 theme:
   name: material
