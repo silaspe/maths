@@ -125,6 +125,6 @@ p > 0 : \frac{d^k}{dx^k} (\frac{1}{\Gamma (\alpha)} \int_{a}^{x} (x - t)^{\alpha
 
 and here's a graph!
 
-https://www.desmos.com/calculator/uypsj28ndo
+<iframe src="https://www.desmos.com/calculator/uypsj28ndo?embed" width="500" height="500" style="border: 1px solid #ccc" frameborder=0></iframe>
 
 the calculator could not take derivitaves of fractional integrals, so I used the limit definition of the derivitave and sadly, that is why  you can only go from $-1$ to $1$
