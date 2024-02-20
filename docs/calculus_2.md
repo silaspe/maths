@@ -83,3 +83,13 @@ $$ g(x) h\prime (x) = \frac{f\prime (x) g(x) - f(x) g\prime (x)}{g(x)} $$
 $$ h\prime (x) = \frac{f\prime (x) g(x) - f(x) g\prime (x)}{g^2(x)} $$
 
 $$ (\frac{f}{g})\prime = \frac{f\prime g - f g\prime}{g^2} $$
+
+### L'Hopital's rule
+
+$$ f(c) = 0 $$
+
+$$ g(c) = 0 $$
+
+$$ ? = \lim_{x \to c} \frac{f(x)}{g(x)} = \frac{f(c + dx)}{g(c + dx)} = \frac{f(c) + df_c}{g(c) + dg_c} = \frac{df_c}{dg_c} = \frac{\frac{df_c}{dc}}{\frac{dg_c}{dc}} $$
+
+$$ \lim_{x \to c} \frac{f(x)}{g(x)} = \lim_{x \to c} \frac{\frac{d}{dx} f(x)}{\frac{d}{dx} g(x)} $$
