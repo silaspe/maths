@@ -108,10 +108,23 @@ $$ \quad_n \int_{a} f(x) dx^n = \frac{1}{(n - 1)!} \int_{a}^{x} (x - t)^{n - 1} 
 
 $$ \quad_n \int_{a} f(x) dx^n = \frac{1}{\Gamma (n)} \int_{a}^{x} (x - t)^{n - 1} f(t) dt $$
 
-$$ \Gamma (n) = : \int_{0}^{\infty} t^{r - 1} e^{-r} dr $$
+$$ \Gamma (n) = : \int_{0}^{\infty} r^{n - 1} e^{-r} dr $$
 
 $$ \quad_\frac{1}{2} \int_{a} f(x) dx^{\frac{1}{2}} = : \frac{1}{\Gamma (\frac{1}{2})} \int_{a}^{x} (x - t)^{n - 1} f(t) dt = \frac{1}{\sqrt{\pi}} \int_{a}^{x} (x - t)^{n - 1} f(t) dt $$
 
-### $\frac{d^{\frac{1}{2}}}{dx^{\frac{1}{2}}}$
+### differintegral (not derivigral)
 
 $$ \frac{d^{\frac{1}{2}}}{dx^{\frac{1}{2}}} f(x) = : \frac{d}{dx} \frac{1}{\sqrt{\pi}} \int_{a}^{x} (x - t)^{n - 1} f(t) dt $$
+
+$$ \frac{d^p}{dx^p} f(x) = : \begin{Bmatrix} p = 0 : f(x) \\
+p \text{ is an integer and greater than } 0 : \frac{d^p}{dx^p} f(x) \\
+p \text{ is an integer and less than } 0 : \frac{1}{(|p| - 1)!} \int_{a}^{x} (x - t)^{|p| - 1} f(t) dt \\
+p < 0 : \frac{1}{\Gamma (|p|)} \int_{a}^{x} (x - t)^{|p| - 1} f(t) dt \\
+p > 0 : \frac{d^k}{dx^k} (\frac{1}{\Gamma (\alpha)} \int_{a}^{x} (x - t)^{\alpha - 1} f(t) dt)  \\
+\text{where } p + \alpha = \text{integer } k \\ \end{Bmatrix} $$
+
+and here's a graph!
+
+https://www.desmos.com/calculator/uypsj28ndo
+
+the calculator could not take derivitaves of fractional integrals, so I used the limit definition of the derivitave and sadly, that is why  you can only go from $-1$ to $1$
