@@ -16,7 +16,7 @@ $$ \frac{d^k}{dx^k} x^n = \frac{n! x^{n - k}}{(n - k)!} $$
 
 $$ \frac{d^p}{dx^p} x^n = \frac{n! x^{n - p}}{(n - p)!} $$
 
-$$ where \quad (n - p)! = : \int_{0}^{\infty} t^{n - p} e^{-t} dt $$
+$$ \text{where } (n - p)! = : \int_{0}^{\infty} t^{n - p} e^{-t} dt $$
 
 ### $\quad_2 \int_{0}^{x}$
 
@@ -92,7 +92,7 @@ $$ v \quad ? = ? \quad - g(x, t, n + 1) $$
 
 $$ \quad_{n + 1} \int_{a}^{x} f(t) dt^{n + 1} = \int_{t=a}^{x} u dv = [uv]_ {t=a}^{x} - \int_{a}^{x} - g(x, t, n + 1) f(t) dt = [- g(x, t, n + 1) \int_{a}^{t} f(s) ds]_ {t=a}^{x} + \int_{a}^{x} g(x, t, n + 1) f(t) dt = (- g(x, a, n + 1) \int_{a}^{a} f(s) ds) - (- g(x, x, n + 1) \int_{a}^{x} f(s) ds) + \int_{a}^{x} g(x, t, n + 1) f(t) dt = \int_{a}^{x} g(x, t, n + 1) f(t) dt + g(x, x, n + 1) \int_{a}^{x} f(s) ds = \int_{a}^{x} g(x, t, n + 1) f(t) dt $$
 
-$$ g(x, x, n + 1) = 0 AND \frac{d}{dt} g(x, t, n + 1) = - g(x, t, n) \Rightarrow v = - g(x, t, n + 1) $$
+$$ g(x, x, n + 1) = 0 \text{AND} \frac{d}{dt} g(x, t, n + 1) = - g(x, t, n) \Rightarrow v = - g(x, t, n + 1) $$
 
 $$ \frac{1}{n!} (x - x)^n = 0 $$
 
@@ -108,7 +108,7 @@ $$ \quad_n \int_{a} f(x) dx^n = \frac{1}{(n - 1)!} \int_{a}^{x} (x - t)^{n - 1} 
 
 $$ \quad_n \int_{a} f(x) dx^n = \frac{1}{\Gamma (n)} \int_{a}^{x} (x - t)^{n - 1} f(t) dt $$
 
-$$ \Gamma (n) = : \int_{0}^{\infty} r^{n - 1} e^{-r} dr $$
+[(this is Gamma)](https://silaspe.github.io/maths/gamma.html)
 
 $$ \quad_\frac{1}{2} \int_{a} f(x) dx^{\frac{1}{2}} = : \frac{1}{\Gamma (\frac{1}{2})} \int_{a}^{x} (x - t)^{n - 1} f(t) dt = \frac{1}{\sqrt{\pi}} \int_{a}^{x} (x - t)^{n - 1} f(t) dt $$
 
