@@ -16,8 +16,8 @@ nav:
   - Harmonic: harmonic.md
   - Eigenstuff: eigen.md
   - Binomial: binomial.md
-  - fractional calculas: fractional_calculas.md
-  - fibbonacci: fibbonacci.md
+  - Fractional calculas: fractional_calculas.md
+  - Fibbonacci: fibbonacci.md
   - Probability: probability.md
 
 theme:
