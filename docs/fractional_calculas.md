@@ -40,7 +40,7 @@ $$ \frac{\partial}{\partial x} ! = \int_{0}^{x} f(t) dt $$
 
 $$ \frac{\partial^2}{\partial x^2} ! = f(x) $$
 
-$$ ? = ! $$
+$$ ? = \text{ } !  $$
 
 $$ \quad_2 \int_{0}^{x} f(t) dt^2 = \int_{0}^{x} (x - t) f(t) dt $$
 
