@@ -92,7 +92,7 @@ $$ v \quad ? = ? \quad - g(x, t, n + 1) $$
 
 $$ \quad_{n + 1} \int_{a}^{x} f(t) dt^{n + 1} = \int_{t=a}^{x} u dv = [uv]_ {t=a}^{x} - \int_{a}^{x} - g(x, t, n + 1) f(t) dt = [- g(x, t, n + 1) \int_{a}^{t} f(s) ds]_ {t=a}^{x} + \int_{a}^{x} g(x, t, n + 1) f(t) dt = (- g(x, a, n + 1) \int_{a}^{a} f(s) ds) - (- g(x, x, n + 1) \int_{a}^{x} f(s) ds) + \int_{a}^{x} g(x, t, n + 1) f(t) dt = \int_{a}^{x} g(x, t, n + 1) f(t) dt + g(x, x, n + 1) \int_{a}^{x} f(s) ds = \int_{a}^{x} g(x, t, n + 1) f(t) dt $$
 
-$$ g(x, x, n + 1) = 0 \text{AND} \frac{d}{dt} g(x, t, n + 1) = - g(x, t, n) \Rightarrow v = - g(x, t, n + 1) $$
+$$ g(x, x, n + 1) = 0 \text{ AND } \frac{d}{dt} g(x, t, n + 1) = - g(x, t, n) \Rightarrow v = - g(x, t, n + 1) $$
 
 $$ \frac{1}{n!} (x - x)^n = 0 $$
 
