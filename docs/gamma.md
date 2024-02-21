@@ -6,9 +6,9 @@ $$ n! = n(n - 1)(n - 2)... 1 $$
 
 $$ \frac{d}{dx} x^n = n x^{n - 1} $$
 
-$$ \frac{d^n}{dx^n} f(x) = : \frac{d}{dx} \frac{d^n}{dx^n} f(x) $$
+$$ \frac{d^n}{dx^n} f(x) = : \frac{d}{dx} ( \frac{d^{n - 1}}{dx^{n - 1}} f(x) ) $$
 
-$$ frac{d^1}{dx^1} f(x) = : \frac{d}{dx} f(x) $$
+$$ \frac{d^1}{dx^1} f(x) = : \frac{d}{dx} f(x) $$
 
 $$ \frac{d^2}{dx^2} x^n = n(n - 1) x^{n - 2} $$
 
