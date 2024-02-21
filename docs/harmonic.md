@@ -14,7 +14,7 @@ in genaral, $f(n)$ = $\frac{1}{n} + \frac{1}{n + 1} + ...$ with n terms OR $\fra
 
 but than $f(\infty) = ?$
 
-$f(n,x) = \frac{1}{n} + \frac{1}{n + 1} + ... + \frac{1}{xn - 1}$ $x$ as $\frac{integer}{n}$ for integer n
+$f(n,x) = \frac{1}{n} + \frac{1}{n + 1} + ... + \frac{1}{xn - 1}$ $x$ as $\frac{\text{integer}}{n}$ for integer n
 
 $f(n,x + \frac{1}{n}) - f(n,x) = \frac{1}{xn}$
 
@@ -64,6 +64,6 @@ I'll just say it, I spent a long time trying to figure it out a way to prove tha
 
 $$ 1 - \frac{1}{2} + \frac{1}{3} - \frac{1}{4} + \frac{1}{5} ... = ln(2) $$
 
-$$ m \quad posataves, \quad n \quad negataves = ln(\frac{m}{n}) $$
+$$ \text{m posataves, n negataves} = ln(\frac{m}{n}) $$
 
 $$ 1 + \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \frac{1}{5}... = \infty $$
