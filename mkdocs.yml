@@ -20,6 +20,7 @@ nav:
   - Fibbonacci: fibbonacci.md
   - Probability: probability.md
   - Complex II: complex_2.md
+  - The strand puzzle: the_strand_puzzle.md
 
 theme:
   name: material
