@@ -19,6 +19,7 @@ nav:
   - Fractional calculas: fractional_calculas.md
   - Fibbonacci: fibbonacci.md
   - Probability: probability.md
+  - Complex II: complex_2.md
 
 theme:
   name: material
