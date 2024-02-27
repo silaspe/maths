@@ -196,9 +196,9 @@ $$ \frac{d}{dt} \begin{bmatrix} f(t) \\
 g(t) \\ \end{bmatrix} = \begin{bmatrix} f\prime (t) \\
 g\prime (t) \\ \end{bmatrix} $$
 
-$$ r(t) = number \quad of \quad rabbits $$
+$$ r(t) = number \text{  } of \text{  } rabbits $$
 
-$$ f(t) = number \quad of \quad foxes $$
+$$ f(t) = number \text{  } of \text{  } foxes $$
 
 $$ r\prime (t) = \alpha r(t) - \beta f(t) $$
 
