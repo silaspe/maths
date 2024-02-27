@@ -12,3 +12,10 @@ sum rule, chain rule, product rule, multiplication by constant, exponent rule, i
 * [Hyperbolic](hyperbolic.md) - Geogebra visualization of hyperbolic arcs
 * [Trigonometry](trigonometry.md) - Desmos visualization of angle addition
 * [Harmonic](harmonic.md) - On the alternating and non-alternating harmonic seireis. I didn't want to remove the old description made by chatGPT, even if someone might think "more description equals longer page" which is why I replaced it. Here is the old description in quotation marks. "The alternating harmonic series `1 - 1/2 + 1/3 - 1/4 + 1/5 - ...` is restructured by rearranging terms, leading to a new series that converges to a known value. By defining a function `f(n)` that represents the sum of a sequence of fractions, and then extending this to `f(∞)`, it's shown that this sum converges to the natural logarithm of 2 (`ln(2)`). Therefore, the infinite alternating harmonic series sums up to `ln(2)`. This conclusion is reached through a creative manipulation of series and leveraging properties of logarithms."
+* [Eigenstuff](eigen.md) - the applications and derivations of eigervectors and eigenvalues
+* [Binomial](binomial.md) - a derivation of the binomial therom, an introduction to discrete calculas, and a method for computing pi (not pie)
+* [Fractional calculas](fractional_calculas.md) - an introduction to fractional calculas using cauchy's other integral formula
+* [Fibbonacci](fibbonacci.md) - using the golden ratio phi and the less popular psi to derive binet's formula among other things
+* [Probability](probability.md) - a coin flip game leads you into a new job as a detectave to test if someone is cheating
+* [Complex II](complex_2.md) - I'll write this down when I put something in here and suround this text in quotation marks
+* [The strand puzzle](the_strand_puzzle.md) - a popular puzzle from the strand magazine a few hundred years ago
