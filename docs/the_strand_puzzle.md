@@ -18,11 +18,11 @@ fifty houses on that side of the street, but not so many
 
 as five hundred."
 
-just to clarify, there are no houses on the other side of the street, and the house numbers don't skip any. To solve the puzzle, you find the number of his house, and the total number of houses on the street / number of the last house on the street, and that one is in between $50$ and $500$, for future refrence, I will call those unknowns $x$ and $y$ respectively. When someone gave ramanujan (I'm a big fan of him by the way), he (supposedly) solved it in under $10$ seconds.
+just to clarify, there are no houses on the other side of the street, and the house numbers don't skip any. To solve the puzzle, you find the number of his house, and the total number of houses on the street / number of the last house on the street, and that one is in between $50$ and $500$. For future refrence, I will call those unknowns $x$ and $y$ respectively. When someone gave ramanujan (I'm a big fan of him by the way), he (supposedly) solved it in under $10$ seconds.
 
 ### calculation
 
-also, because it is against MY rules to use something that I haven't derived (which is why the [polynomial](https://silaspe.github.io/maths/polynomial.html) page has more that $10$ lines, and why most of the contents of this website are derivations), first I will derive the formula for the sums of integers using [discrete calculas](https://silaspe.github.io/maths/binomial.html)
+also, because it is against MY rules to use something that I haven't derived (which is why the [polynomial](https://silaspe.github.io/maths/polynomial.html) page has more that $10$ lines), and why most of the contents of this website are derivations), first I will derive the formula for the sums of integers using [discrete calculas](https://silaspe.github.io/maths/binomial.html)
 
 #### the formula for the sums of integers (I couldn't find a better name)
 
