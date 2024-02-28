@@ -42,7 +42,7 @@ $$ f(1 - 1) = f(0) = f(1) - 1 $$
 
 $$ f(0) = 0 $$
 
-$$ \Delta^2 g(n) = : \Delta (\Delta g(n)) = \Delta (n + 1) = n + 1 + 1 - n - 1 = 1 $$
+$$ \Delta^2 g(n) = : \Delta (\Delta g(n)) $$
 
 $$ \Delta^2 f(n) = \Delta (n + 1) = n + 1 + 1 - n - 1 = 1 $$
 
@@ -163,3 +163,29 @@ $$ Y^2 - 2X^2 = 1 $$
 Which you might (but probably don't) know as the...
 
 ### pell equation
+
+$$ Y^2 - 2X^2 \approx 0 $$
+
+$$ Y^2 \approx 2X^2 $$
+
+$$ \frac{Y^2}{2X^2} \approx 2 $$
+
+$$ (\frac{Y}{X})^2 \approx 2 $$
+
+$$ \frac{Y}{X} \approx \sqrt{2} $$
+
+But that is besides the point. The pell equation can be rearanged into $Y = \sqrt{2X^2 + 1}$, then plug in values for $X$ until $Y$ is an integer. Doing this, (and remembering to divide by $2$ and take the floor), I'll list the solutions that we get.
+
+$$ 6 \quad 8 $$
+
+$$ 35 \quad 49 $$
+
+Just barely misses!
+
+$$ 204 \quad 288 $$
+
+There it is!
+
+### in genaral
+
+the real soluion would be a formula for the $n$'th solution to the strand puzzle droppng the second rule, it is a bit tedios to check using this method and someone probably would have used the formula and this wouldn't work. I usually don't tell you [the video](https://www.youtube.com/watch?v=V2BybLCmUzs) that this page is built on, but this time, you would notice that it takes a completely different method. So yes, I built the rest of this page from the ground up.
