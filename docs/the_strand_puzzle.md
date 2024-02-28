@@ -114,4 +114,52 @@ $$ f(n) = \frac{n (n - 1)}{2} + n = \frac{n (n - 1)}{2} + \frac{2n}{2} = \frac{(
 
 $$ \sum\limits_{k = 0}^{n} k = \frac{n (n + 1)}{2} $$
 
-### back to the strand puzzle
+### back to the strand puzzle or whatever I was doing because I don't remember
+
+now I can find formulas for the sums of house numbers and say that they are equal. The first starts at $1$ and stops at $x - 1$, so the formula is:
+
+$$ \frac{(x - 1) x}{2} $$
+
+Now, for the second formula, there are two methods. If I say "ao!", then forget the last $2$ lines, if i say "oa!", than remember them. With that being said...
+
+one method is to pull out an $x$ at each of the $y - x$ steps, which amounts to an addded $x(y - x)$, so it is:
+
+$$ \frac{(y - x) (y - x + 1)}{2} + x(y - x) = \frac{1}{2}((y - x) (y - x + 1) + 2x(y - x)) = \frac{1}{2}(y^2 - xy + y - xy + x^2 - x + 2xy - 2x^2) = \frac{1}{2}(y^2 + y - x^2 - x) = \frac{y (y + 1)}{2} - \frac{x (x + 1)}{2} $$
+
+ao!
+
+one method is to realize that this is the difference between the first $y$ houses and the first $x$ houses, so it is:
+
+$$ \frac{y (y + 1)}{2} - \frac{x (x + 1)}{2} $$
+
+oa!
+
+you can probably tell that the first was made by me, but time for some algebra!
+
+$$ \frac{(x - 1) x}{2} = \frac{y (y + 1)}{2} - \frac{x (x + 1)}{2} $$
+
+$$ (x - 1) x = y (y + 1) - x (x + 1) $$
+
+$$ x^2 - x = y^2 + y - x^2 - x $$
+
+$$ 2x^2 = y^2 + y $$
+
+Bit more!
+
+$$ 2 (4x^2) = 4y^2 + 4y $$
+
+$$ 2 (2x)^2 = 4y^2 + 4y + 1 - 1 = (4y^2 + 4y + 1) - 1 = (2y + 1)^2 - 1 $$
+
+$$ (2y + 1)^2 - 2 (2x)^2 - 1 = 0 $$
+
+$$ (2y + 1)^2 - 2 (2x)^2 = 1 $$
+
+$$ X = : 2x $$
+
+$$ Y = : 2y + 1 $$
+
+$$ Y^2 - 2X^2 = 1 $$
+
+Which you might (but probably don't) know as the...
+
+### pell equation
