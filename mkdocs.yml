@@ -37,6 +37,7 @@ use_directory_urls: false
 
 plugins:
   - search
+  - with-pdf
 
 markdown_extensions:
   - toc:
