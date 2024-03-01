@@ -3,4 +3,5 @@ python-markdown-math
 markdown-include
 pygments
 mkdocs-material
+markdown-katex
 mkdocs-with-pdf
