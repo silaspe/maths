@@ -168,7 +168,7 @@ $$ Y^2 - 2X^2 \approx 0 $$
 
 $$ Y^2 \approx 2X^2 $$
 
-$$ \frac{Y^2}{2X^2} \approx 2 $$
+$$ \frac{Y^2}{X^2} \approx 2 $$
 
 $$ (\frac{Y}{X})^2 \approx 2 $$
 
@@ -192,8 +192,15 @@ the real soluion would be a formula for the $n$'th solution to the strand puzzle
 
 Something that is easy to notice but hard to prove is that the bigger the $X$ and $Y$, the better the approxamation of $\sqrt{2}$, so I will conjecture the following: Any ratio $\frac{Y}{X}$ for $X$ and $Y$ solving the pell equation*, is closer to $\sqrt{2}$ than any other fraction with denominator less than or equal to $X$.
 
-*The numbers $X$ and $Y$ could solve the alternitave $Y^2 - 2X^2 = - 1$, so instead of the pell equation, it is more like $|Y^2 - 2X^2| = 1$
+*The numbers $X$ and $Y$ could solve the alternitave $Y^2 - 2X^2 = - 1$, so instead of the pell equation, from now on, it is more like $|Y^2 - 2X^2| = 1$
 
 Proof (by contradiction): Let's say that there is a fraction $\frac{b}{a}$ that is a better approxamation of $\sqrt{2}$ than $\frac{Y}{X}$ with $a$ strictly* less than $X$. $X$ and $Y$ solve $|Y^2 - 2X^2| = 1$, and $X$ is the next biggest solution than $a$. Well, what is $|b^2 - 2a^2|$? By the thing that is easy to notice but hard to prove, even if $|b^2 - 2a^2| = 1$, it still dosen't work, so $|b^2 - 2a^2| \neq 1$, and by the fact that $\sqrt{2}$ is irrational** (I'll prove that later), $|b^2 - 2a^2| \neq 0$, and by the fact that $a$ and $b$ are integers, $|b^2 - 2a^2| = an$ $integer$. So $|b^2 - 2a^2|$ is an integer, does not equal $0$, and does not equal $1$. But the closer to $1$, the better the approxamation (unless the numbers are is bigger). Thus, the proof is complete!
 
-*if $a = X$, than $|b^2 - 2a^2| = |b^2 - 2X^2|$
+*If $a = X$, than $|b^2 - 2a^2| = |b^2 - 2X^2|$. If $b = Y$, than I can ignore that case because $\frac{Y}{X}$ cannot be a better approxamation of $\sqrt{2}$ than $\frac{Y}{X}$. So if $b < Y$, $b^2 < Y^2$ * *, so $|b^2 - 2X^2|$ aslo is not $1$.
+
+
+(* *) If $a$, $b$, $X$, and $Y$ are all negatave, than $b^2 > Y^2$. But for one, if they are both ngatave, then they are not in reduced fractions. And for another, if one is negatave, than the whole thing is negatave, and $\sqrt{2}$ is not. Also if $b > Y$ (yes, it was only a constraint on $a$ and not $b$), than it still wouldn't work.
+
+** Warning! I will swap $a$ and $b$ in this proof: Note that an even number is two times an integer, if the square of a number is even, than the number that is being squared is even, and a ratio of two even numbers is not in reduced form. You can derive these because I am too busy writing this proof down. Lets say that a fraction $\frac{a}{b}$ in lowest terms (that will be important in the contradiction part of proof by contradiction) that equals $\sqrt{2}$. Going back, this means that $a^2 = 2b^2$. But $b^2$ is an integer, so $a^2$ is even, so $a$ is even. if $a$ is even, than lets say that $a = 2m$ for some integer $m$, $a^2 = 4m^2$, so $4m^2 = 2b^2$, so $2m^2 = b^2$. But $m^2$ is an integer, so $b^2$ is even, so $b$ is even, so $a$ and $b$ are both even, but if they are both even, (and if you remembered), this is a contradiction!
+
+Now, the proof is finally complete! Where was I again?
