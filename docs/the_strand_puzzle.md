@@ -188,4 +188,12 @@ There it is!
 
 ### in genaral
 
-the real soluion would be a formula for the $n$'th solution to the strand puzzle droppng the second rule, it is a bit tedios to check using this method and someone probably would have used the formula and this wouldn't work. I usually don't tell you [the video](https://www.youtube.com/watch?v=V2BybLCmUzs) that this page is built on, but this time, you would notice that it takes a completely different method. So yes, I built the rest of this page from the ground up.
+the real soluion would be a formula for the $n$'th solution to the strand puzzle droppng the second rule, it is a bit tedious to check using this method and someone probably would have used the formula and this wouldn't work. I usually don't tell you [the video](https://www.youtube.com/watch?v=V2BybLCmUzs) that this page is built on, but this time, you would notice that it takes a completely different method. So yes, I built the rest of this page from the ground up.
+
+Something that is easy to notice but hard to prove is that the bigger the $X$ and $Y$, the better the approxamation of $\sqrt{2}$, so I will conjecture the following: Any ratio $\frac{Y}{X}$ for $X$ and $Y$ solving the pell equation*, is closer to $\sqrt{2}$ than any other fraction with denominator less than or equal to $X$.
+
+*The numbers $X$ and $Y$ could solve the alternitave $Y^2 - 2X^2 = - 1$, so instead of the pell equation, it is more like $|Y^2 - 2X^2| = 1$
+
+Proof (by contradiction): Let's say that there is a fraction $\frac{b}{a}$ that is a better approxamation of $\sqrt{2}$ than $\frac{Y}{X}$ with $a$ strictly* less than $X$. $X$ and $Y$ solve $|Y^2 - 2X^2| = 1$, and $X$ is the next biggest solution than $a$. Well, what is $|b^2 - 2a^2|$? By the thing that is easy to notice but hard to prove, even if $|b^2 - 2a^2| = 1$, it still dosen't work, so $|b^2 - 2a^2| \neq 1$, and by the fact that $\sqrt{2}$ is irrational** (I'll prove that later), $|b^2 - 2a^2| \neq 0$, and by the fact that $a$ and $b$ are integers, $|b^2 - 2a^2| = an$ $integer$. So $|b^2 - 2a^2|$ is an integer, does not equal $0$, and does not equal $1$. But the closer to $1$, the better the approxamation (unless the numbers are is bigger). Thus, the proof is complete!
+
+*if $a = X$, than $|b^2 - 2a^2| = |b^2 - 2X^2|$
