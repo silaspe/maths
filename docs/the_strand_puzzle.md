@@ -192,7 +192,7 @@ the real soluion would be a formula for the $n$'th solution to the strand puzzle
 
 Something that is easy to notice but hard to prove is that the bigger the $X$ and $Y$, the better the approxamation of $\sqrt{2}$, so I will conjecture the following: Any ratio $\frac{Y}{X}$ for $X$ and $Y$ solving the pell equation*, is closer to $\sqrt{2}$ than any other fraction with denominator less than or equal to $X$.
 
-*The numbers $X$ and $Y$ could solve the alternitave $Y^2 - 2X^2 = - 1$, so instead of the pell equation, from now on, it is more like $|Y^2 - 2X^2| = 1$.
+*The numbers $X$ and $Y$ could solve the alternitave $Y^2 - 2X^2 = - 1$ that alternates with the pell equation as $X$ and $Y$ get bigger, so instead of the pell equation, from now on, it is more like $|Y^2 - 2X^2| = 1$.
 
 By the way, the conjecture was an "I'll leave this as an exersize for the veiwer", and I made up the proof as I went.
 
@@ -208,3 +208,31 @@ Proof (by contradiction): Let's say that there is a fraction $\frac{b}{a}$ that 
 Side note! With this proof, you can prove the thing that is easy to notice but hard to prove, but this would be a circular argument, because we need it to be true for it to be true. To this day, I haven't found a proof of this fact. But if I do, then you know the drill by now, I'll write the proof here and put this in quotation marks.
 
 Now, the proof is finally complete! Where was I again?
+
+### Time to keep going
+
+$$ Y^2 - 2X^2 = 1 $$
+
+$$ \hat{Y} = 2X + Y $$
+
+$$ \hat{X} = X + Y $$
+
+$$ \hat{Y}^2 - 2 \hat{X}^2 = (2X + Y)^2 - 2(X + Y)^2 = 4X^2 + 4XY + Y^2 - 2X^2 - 4XY - 2Y^2 = 2X^2 - Y^2 = -(Y^2 - 2X^2) $$
+
+$$ \hat{Y}^2 - 2 \hat{X}^2 = - 1 $$
+
+$$ Y_N = 2 \hat{X} + \hat{Y} $$
+
+$$ \text{(N for next)} $$
+
+$$ X_N = \hat{X} + \hat{Y} $$
+
+But the calculations that I did earlier still work, so
+
+$$ Y_N^2 - 2X_N^2 = 1 $$
+
+So like I said, solutions for the pell equation and inverse pell equation alternate.
+
+Okay, this actially happend: I was soving the strand puzzle and got up to this point. I met someone new, and naturally, I opened with how I got here and where I was with the strand puzzle. She said "can you prove that this is the next solution to the pell equation", and I said "I'm too tired fot that". My point is that you shold just run with it.
+
+From now on, $X$ will be replaced with $X_n$, $Y$ will be replaced with $Y_n$, $\hat{X}$ will be replaced with $\hat{X_n}$, $\hat{Y}$ will be replaced with $\hat{Y_n}$, $X_N$ will be replaced with $X_{n + 1}$, and $Y_N$ will be replaced with $Y_{n + 1}$. this is because it will look more like a formula on $n$ when you solve for $Y_n$ as appose to $Y$
