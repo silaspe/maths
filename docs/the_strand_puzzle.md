@@ -235,4 +235,16 @@ So like I said, solutions for the pell equation and inverse pell equation altern
 
 Okay, this actially happend: I was soving the strand puzzle and got up to this point. I met someone new, and naturally, I opened with how I got here and where I was with the strand puzzle. She said "can you prove that this is the next solution to the pell equation", and I said "I'm too tired fot that". My point is that you shold just run with it.
 
-From now on, $X$ will be replaced with $X_n$, $Y$ will be replaced with $Y_n$, $\hat{X}$ will be replaced with $\hat{X_n}$, $\hat{Y}$ will be replaced with $\hat{Y_n}$, $X_N$ will be replaced with $X_{n + 1}$, and $Y_N$ will be replaced with $Y_{n + 1}$. this is because it will look more like a formula on $n$ when you solve for $Y_n$ as appose to $Y$
+From now on, $X$ will be replaced with $X_n$, $Y$ will be replaced with $Y_n$, $\hat{X}$ will be replaced with $X_{n + 1}$, $\hat{Y}$ will be replaced with $Y_{n + 1}$, $X_N$ will be replaced with $X_{n + 2}$, and $Y_N$ will be replaced with $Y_{n + 2}$. this is because it will look more like a formula on $n$ when you solve for $Y_n$ as appose to $Y$. Also these can be solutions to the inverse pell equation. For the pell equation, I want to have a $2n$, so it has to be the inverse pell equation first, an easy answer is
+
+$$ X_1 = 1 $$
+
+$$ Y_1 = 1 $$
+
+and the first solution to the strand puzzle is $1 \quad 1$, so $2 \quad 3$ falls out of that, you can verify this solution yourself (you might recognize $\frac{17}{12}$ from the mathologer video, it translates to $6 \quad 8$ considered as the first real solution, but we’ll get there), so
+
+$$ X_2 = 2 $$
+
+$$ Y_2 = 3 $$
+
+and
