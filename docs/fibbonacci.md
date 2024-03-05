@@ -61,7 +61,7 @@ $$ C_n = F_n $$
 
 $$ \phi^n = F_n \phi + F_{n - 1} $$
 
-$$ \text{Yay, now I could solve for $F_n$ if it weren't for the second fibbonacci term, so how can I solve that?} $$
+$$ \text{yay, now I could solve for $F_n$ if it weren't for the second fibbonacci term, so how can I solve that?} $$
 
 $$ \text{well this is only because $\phi^2 = \phi + 1$, but same goes for $\psi$, so...} $$
 
@@ -69,7 +69,7 @@ $$ \psi^n = F_n \psi + F_{n - 1} $$
 
 $$ \text{and subtracting, we get...} $$
 
-$$ \phi^n - \psi^n = F_n \phi + F_{n - 1} -  F_n \psi - F_{n - 1} = (\phi - \psi) F_n = (\frac{1}{2} + \frac{\sqrt{5}}{2} - \frac{1}{2} + \frac{\sqrt{5}}{2}) F_n = \sqrt{5} f_n $$
+$$ \phi^n - \psi^n = F_n \phi + F_{n - 1} -  F_n \psi - F_{n - 1} = (\phi - \psi) F_n = (\frac{1}{2} + \frac{\sqrt{5}}{2} - \frac{1}{2} + \frac{\sqrt{5}}{2}) F_n = \sqrt{5} F_n $$
 
 $$ F_n = \frac{\phi^n - \psi^n}{\sqrt{5}} = \frac{\phi^n - \psi^n}{\phi - \psi} $$
 
