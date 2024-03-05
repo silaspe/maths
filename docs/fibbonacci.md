@@ -19,7 +19,7 @@ $$ \psi^{n - 1} = -\phi \psi^n $$
 
 $$ \phi^{n - 1} = -\psi \phi^n $$
 
-$$ \text{and don't forget that!} $$
+$$ \text{And don't forget that!} $$
 
 $$ \phi^2 = \phi + 1 $$
 
@@ -61,13 +61,13 @@ $$ C_n = F_n $$
 
 $$ \phi^n = F_n \phi + F_{n - 1} $$
 
-$$ \text{yay, now I could solve for $F_n$ if it weren't for the second fibbonacci term, so how can I solve that?} $$
+$$ \text{Yay, now I could solve for $F_n$ if it weren't for the second fibbonacci term, so how can I solve that?} $$
 
-$$ \text{well this is only because $\phi^2 = \phi + 1$, but same goes for $\psi$, so...} $$
+$$ \text{Well, this is only because $\phi^2 = \phi + 1$, but same goes for $\psi$, so...} $$
 
 $$ \psi^n = F_n \psi + F_{n - 1} $$
 
-$$ \text{and subtracting, we get...} $$
+$$ \text{And subtracting, we get...} $$
 
 $$ \phi^n - \psi^n = F_n \phi + F_{n - 1} -  F_n \psi - F_{n - 1} = (\phi - \psi) F_n = (\frac{1}{2} + \frac{\sqrt{5}}{2} - \frac{1}{2} + \frac{\sqrt{5}}{2}) F_n = \sqrt{5} F_n $$
 
