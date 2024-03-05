@@ -263,7 +263,7 @@ $$ Y_n = 2Y_{n - 1} + Y_{n - 2} $$
 
 ### The final dash in the silaspe marithon (yes, that is a referance to mathologer)
 
-For now, I will just copy some text from the [fibbonacci](https://silaspe.github.io/maths/fibbonacci.html) page and minipulate it.
+For now, I will just copy some text from the [fibbonacci](https://silaspe.github.io/maths/fibbonacci.html) page, and minipulate it.
 
 $$ z^2 = z + 1 $$
 
