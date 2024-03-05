@@ -247,4 +247,77 @@ $$ X_2 = 2 $$
 
 $$ Y_2 = 3 $$
 
-and
+and because of the recurance...
+
+$$ X_{n + 1} = X_n + Y_n $$
+
+$$ Y_{n + 1} = 2X_n + Y_n $$
+
+$$ X_{n + 2} = X_{n + 1} + Y_{n + 1} = X_n + Y_n + 2X_n + Y_n = 3X_n + 2Y_2 = 2(X_n + Y_n) + X_n = 2X_{n + 1} + X_n $$
+
+$$ Y_{n + 2} = 2X_{n + 1} + Y_{n + 1} = X_n + X_n + Y_n + Y_n + 2X_n + Y_n = 4X_n + 3Y_n = 2(2X_n + Y_n) + Y_n = 2Y_{n + 1} + Y_n $$
+
+$$ X_n = 2X_{n - 1} + X_{n - 2} $$
+
+$$ Y_n = 2Y_{n - 1} + Y_{n - 2} $$
+
+### The final dash in the silaspe marithon (yes, that is a referance to mathologer)
+
+For now, I will just copy some text from the [fibbonacci](https://silaspe.github.io/maths/fibbonacci.html) page and minipulate it.
+
+$$ z^2 = z + 1 $$
+
+$$ z = \begin{Bmatrix} 1 + \sqrt{2} = c \\
+1 - \sqrt{2} = d \\ \end{Bmatrix} $$
+
+$$ c^2 = 2c + 1 $$
+
+$$ c^3 = 2c^2 + c = 5c + 2 $$
+
+$$ c^4 = 5c^2 + 2c = 12c + 5 $$
+
+$$ \vdots $$
+
+$$ c^n = c_{n, n} c + c_{n, n - 1} $$
+
+$$ c^{n + 1} = c_{n + 1, n + 1}c + c_{n + 1, n} = c^n c = c_{n, n} c^2 + c_{n, n - 1} c = 2c_{n, n}c + c_{n, n} + c_{n, n - 1} c $$
+
+$$ c_{n + 1, n} = c_{n, n} $$
+
+$$ c_{n + 2, n} = c_{n + 1, n} = c_{n, n} $$
+
+$$ \vdots $$
+
+$$ c_{n + k, n} = c_{n, n} $$
+
+$$ C_n = : c_{n, n} $$
+
+$$ c^n = C_n c + C_{n - 1} $$
+
+$$ c^{n + 1} = C_{n + 1}c + C_n = c^n c = C_n c^2 + C_{n - 1} c = 2C_n c + C_n + C_{n - 1} c $$
+
+$$ C_{n + 1} = C_n + C_{n - 1} $$
+
+$$ C_n = 2C_{n - 1} + C_{n - 2} $$
+
+$$ c^2 = 2c + 1 = c C_2 + C_1 $$
+
+$$ C_1 = 1 $$
+
+$$ C_2 = 2 $$
+
+$$ C_n = X_n $$
+
+$$ c^n = X_n c + X_{n - 1} $$
+
+$$ \text{Yay, now I could solve for $X_n$ if it weren't for the second term, so how can I solve that?} $$
+
+$$ \text{well this is only because $c^2 = 2c + 1$, but same goes for $d$, so...} $$
+
+$$ d^n = X_n d + X_{n - 1} $$
+
+$$ \text{and subtracting, we get...} $$
+
+$$ c^n - d^n = X_n c + X_{n - 1} - X_n d - X_{n - 1} = (c - d) X_n = (1 + \sqrt{2} - 1 + \sqrt{2}) X_n =2\sqrt{2} X_n $$
+
+$$ X_n = \frac{c^n - d^n}{2\sqrt{2}} = \frac{c^n - d^n}{c - d} $$
