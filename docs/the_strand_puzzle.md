@@ -322,7 +322,7 @@ $$ c^n - d^n = X_n c + X_{n - 1} - X_n d - X_{n - 1} = (c - d) X_n = (1 + \sqrt{
 
 $$ X_n = \frac{c^n - d^n}{2\sqrt{2}} = \frac{c^n - d^n}{c - d} $$
 
-$$ \text{And rearanging the reccurance, we get} $$
+$$ \text{On a different note, rearanging the reccurance, we get} $$
 
 $$ X_{n - 2} = X_n - 2X_{n - 1} $$
 
@@ -370,6 +370,10 @@ $$ Y_1 = 1 $$
 
 $$ Y_2 = 3 $$
 
-$$ \text{Now it should click.} $$
+$$ \text{Now, it should click.} $$
 
-$$ X_n + X_{n - 1} = Y_n $$
+$$ Y_n = X_n + X_{n - 1} $$
+
+$$ Y_n = \frac{c^n - d^n}{c - d} + \frac{c^{n - 1} - d^{n - 1}}{c - d} = \frac{c^n - d^n + c^{n - 1} - d^{n - 1}}{c - d} $$
+
+$$ c^2 = 2c + 1 \to c = 2 + \frac{1}{c} $$
