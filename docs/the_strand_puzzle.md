@@ -312,7 +312,7 @@ $$ c^n = X_n c + X_{n - 1} $$
 
 $$ \text{Yay, now I could solve for $X_n$ if it weren't for the second term, so how can I solve that?} $$
 
-$$ \text{well this is only because $c^2 = 2c + 1$, but same goes for $d$, so...} $$
+$$ \text{Well, this is only because $c^2 = 2c + 1$, but same goes for $d$, so...} $$
 
 $$ d^n = X_n d + X_{n - 1} $$
 
@@ -321,3 +321,55 @@ $$ \text{and subtracting, we get...} $$
 $$ c^n - d^n = X_n c + X_{n - 1} - X_n d - X_{n - 1} = (c - d) X_n = (1 + \sqrt{2} - 1 + \sqrt{2}) X_n =2\sqrt{2} X_n $$
 
 $$ X_n = \frac{c^n - d^n}{2\sqrt{2}} = \frac{c^n - d^n}{c - d} $$
+
+$$ \text{And rearanging the reccurance, we get} $$
+
+$$ X_{n - 2} = X_n - 2X_{n - 1} $$
+
+$$ Y_{n - 2} = Y_n - 2Y_{n - 1} $$
+
+$$ X_2 = 2 = 2X_1 + X_0 = 2 + X_0 $$
+
+$$ Y_2 = 3 = 2Y_1 + Y_0 = 2 + Y_0 $$
+
+$$ X_0 = 0 $$
+
+$$ Y_0 = 1 $$
+
+$$ \text{but that is besides the point, what I want is a formula for } Y \text{. Skipping through a lot of trial and error, you might try this:} $$
+
+$$ X_n = 2X_{n - 1} + X_{n - 2} $$
+
+$$ X_{n - 1} = 2X_{n - 2} + X_{n - 3} $$
+
+$$ X_n + X_{n - 1} = 2X_{n - 1} + X_{n - 2} + 2X_{n - 2} + X_{n - 3} $$
+
+$$ (X_{(n)} + X_{(n) - 1}) = 2(X_{(n - 1)} + X_{(n - 1) - 1}) + (X_{(n - 2)} + X_{(n - 2) - 1}) $$
+
+$$ X_1 + X_{1 - 1} = X_1 + X_0 = 1 + 0 $$
+
+$$ X_1 + X_{1 - 1} = 1 $$
+
+$$ X_2 + X_{2 - 1} = X_2 + X_1 = 2 + 1 $$
+
+$$ X_2 + X_{2 - 1} = 3 $$
+
+$$ \text{Sound familiar? If not, I'll write down the formlas that we have just derived along with the formulas for } Y. $$
+
+$$ (X_{(n)} + X_{(n) - 1}) = 2(X_{(n - 1)} + X_{(n - 1) - 1}) + (X_{(n - 2)} + X_{(n - 2) - 1}) $$
+
+$$ X_1 + X_{1 - 1} = 1 $$
+
+$$ X_2 + X_{2 - 1} = 3 $$
+
+$$ \text{Now for } Y. $$
+
+$$ Y_n = 2Y_{n - 1} + Y_{n - 2} $$
+
+$$ Y_1 = 1 $$
+
+$$ Y_2 = 3 $$
+
+$$ \text{Now it should click.} $$
+
+$$ X_n + X_{n - 1} = Y_n $$
