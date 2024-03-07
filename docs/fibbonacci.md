@@ -11,6 +11,34 @@ $$ x^2 = x + 1 $$
 $$ x = \begin{Bmatrix} \frac{1}{2} + \frac{\sqrt{5}}{2} = \phi \\
 \frac{1}{2} - \frac{\sqrt{5}}{2} = \psi \\ \end{Bmatrix} $$
 
+$$ (-\frac{1}{x})^2 = \frac{1}{x^2} $$
+
+$$ 1 = \frac{1}{x} + \frac{1}{x^2} $$
+
+$$ 1 - \frac{1}{x} = \frac{1}{x^2} = (-\frac{1}{x})^2 $$
+
+$$ (-\frac{1}{x})^2 = (-\frac{1}{x}) + 1 $$
+
+$$ x = 1 + \frac{1}{x} $$
+
+$$ -\frac{1}{x} ? = ? x = 1 + \frac{1}{x} $$
+
+$$ -1 - \frac{1}{x} = -x ? = ? \frac{1}{x} $$
+
+$$ -x^2 ? = ? 1 $$
+
+$$ x ? = ? i, -i $$
+
+$$ \phi \ne i $$
+
+$$ \phi \ne -i $$
+
+$$ \psi \ne i $$
+
+$$ \psi \ne -i $$
+
+$$ \text{Thus...} $$
+
 $$ \phi^{-1} = -\psi $$
 
 $$ \psi^{-1} = -\phi $$
