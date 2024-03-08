@@ -374,6 +374,6 @@ $$ \text{Now, it should click.} $$
 
 $$ Y_n = X_n + X_{n - 1} $$
 
-$$ Y_n = \frac{c^n - d^n}{c - d} + \frac{c^{n - 1} - d^{n - 1}}{c - d} = \frac{c^n - d^n + c^{n - 1} - d^{n - 1}}{c - d} $$
+$$ Y_n = \frac{c^n - d^n}{c - d} + \frac{c^{n - 1} - d^{n - 1}}{c - d} = \frac{c^n - d^n + c^{n - 1} - d^{n - 1}}{c - d} = \frac{c^n - d^n + \frac{1}{c} c^n - \frac{1}{d} d^n}{c - d} $$
 
-$$ c^2 = 2c + 1 \to c = 2 + \frac{1}{c} $$
+$$  $$
