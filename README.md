@@ -19,3 +19,4 @@ sum rule, chain rule, product rule, multiplication by constant, exponent rule, i
 * [Probability](probability.md) - a coin flip game leads you into a new job as a detectave to test if someone is cheating or noy
 * [Complex II](complex_2.md) - a derivation of the roots of unity, "I'll write this down when I put something in here and suround this text in quotation marks"
 * [The strand puzzle](the_strand_puzzle.md) - a popular puzzle from the strand magazine a hundred years ago
+* [The infamous "arctan puzzle"](arctan.md) - the other puzzle that I was working on in the vacation
