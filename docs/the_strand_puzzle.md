@@ -261,7 +261,7 @@ $$ X_n = 2X_{n - 1} + X_{n - 2} $$
 
 $$ Y_n = 2Y_{n - 1} + Y_{n - 2} $$
 
-### The final dash in the silaspe marithon (yes, that is a referance to mathologer)
+### The final dash in the silaspe marithon (yes, that is a referance to mathologer marithon)
 
 For now, I will just copy some text from the [fibbonacci](https://silaspe.github.io/maths/fibbonacci.html) page, and minipulate it.
 
@@ -318,7 +318,7 @@ $$ d^n = X_n d + X_{n - 1} $$
 
 $$ \text{and subtracting, we get...} $$
 
-$$ c^n - d^n = X_n c + X_{n - 1} - X_n d - X_{n - 1} = (c - d) X_n = (1 + \sqrt{2} - 1 + \sqrt{2}) X_n =2\sqrt{2} X_n $$
+$$ c^n - d^n = X_n c + X_{n - 1} - X_n d - X_{n - 1} = (c - d) X_n = (1 + \sqrt{2} - 1 + \sqrt{2}) X_n = 2\sqrt{2} X_n $$
 
 $$ X_n = \frac{c^n - d^n}{2\sqrt{2}} = \frac{c^n - d^n}{c - d} $$
 
@@ -374,6 +374,43 @@ $$ \text{Now, it should click.} $$
 
 $$ Y_n = X_n + X_{n - 1} $$
 
-$$ Y_n = \frac{c^n - d^n}{c - d} + \frac{c^{n - 1} - d^{n - 1}}{c - d} = \frac{c^n - d^n + c^{n - 1} - d^{n - 1}}{c - d} = \frac{c^n - d^n + \frac{1}{c} c^n - \frac{1}{d} d^n}{c - d} $$
+$$ Y_n = \frac{c^n - d^n}{2\sqrt{2}} + \frac{c^{n - 1} - d^{n - 1}}{2\sqrt{2}} = \frac{c^n - d^n + c^{n - 1} - d^{n - 1}}{2\sqrt{2}} = \frac{c^n - d^n + \frac{1}{c} c^n - \frac{1}{d} d^n}{2\sqrt{2}} $$
 
-$$  $$
+$$ cd = (1 + \sqrt{2})(1 - \sqrt{2}) = 1 - \sqrt{2} + \sqrt{2} - 2 = -1 $$
+
+$$ Y_n = -\frac{d^n - c^n + \frac{1}{d} d^n - \frac{1}{c} c^n}{2\sqrt{2}} = \frac{cd d^n - cd c^n + cd \frac{1}{d} d^n - cd \frac{1}{c} c^n}{2\sqrt{2}} = \frac{cd d^n - cd c^n + cd^n - dc^n}{2\sqrt{2}} = \frac{cd^n (d + 1) - dc^n (c + 1)}{2\sqrt{2}} $$
+
+$$ c + 1 = 1 + \sqrt{2} + 1 = \sqrt{2}(1 + \sqrt{2}) = c\sqrt{2} $$
+
+$$ d + 1 = 1 - \sqrt{2} + 1 = \sqrt{2}(\sqrt{2} - 1) = -d\sqrt{2} $$
+
+$$ Y_n = \frac{-cdd^n\sqrt{2} - cdc^n\sqrt{2}}{2\sqrt{2}} = \frac{-cdc^n - cdd^n}{2} $$
+
+$$ -cd = 1 $$
+
+$$ Y_n = \frac{c^n + d^n}{2} $$
+
+### The final step in the silaspe marithon
+
+You might recognize these two formulas from the mathologer video thit I showed you earlier. Around half of the page after and including the "in genaral" chapter was improv, including things like "the proof". The only things that weren't improv were the result for $X_n$, the proof was using*, the other thing was the reccurance relation, I used a reccurance relation that went backwards, but it still counts. You can use these formulas (that I'll write down) for solutions for $x_n$ and $y_n$ (I bet that you forgot about them). I forgot to tell you that $x_n$ and $y_n$ are the $n$'th soultions to the strand puzzle respecively. Another thing to notice is that on the [github repo](https://github.com/silaspe/maths/blob/main/docs/the_strand_puzzle.md), this is the $395$'th line, this is already the longest page so far, but from now on, if I reach $400$ lines, I'll write down "$400$ lines!!".
+
+*Bunnymatics, a study of the population of immortal bunies. They can be a child, or an adult. Each day, the child bunnies turn into adult bunnies, and the adult bunnies asectually reproduce and then clone themselves (probably an adultb thing). Day one, there is one adult bunny. if you give the child bunnies price $1$ and the adult bunnies price $c$, one more day is multiplying the price by $c$
+
+
+$400$ lines!!!!!!
+
+$$ X_n = \frac{(1 + \sqrt{2})^n - (1 - \sqrt{2})^n}{2\sqrt{2}} $$
+
+$$ Y_n = \frac{(1 + \sqrt{2})^n + (1 - \sqrt{2})^n}{2} $$
+
+$$ X_n \approx 2x_n $$
+
+$$ Y_n \approx 2y_n + 1 $$
+
+$$ x_n = \frac{X_{2n}}{2} $$
+
+$$ y_n = \frac{Y_{2n}}{2} - \frac{1}{2} $$
+
+$$ x_n = \frac{(1 + \sqrt{2})^{2n} - (1 - \sqrt{2})^{2n}}{4\sqrt{2}} $$
+
+$$ y_n = \frac{(1 + \sqrt{2})^n + (1 - \sqrt{2})^n}{4} - \frac{1}{2} $$
