@@ -70,7 +70,7 @@ $$ log_e (x) = ln(x) $$
 
 ### logarithmic derivitave
 
-$$ e^{ln(f(x)} = f(x) $$
+$$ e^{ln(f(x))} = f(x) $$
 
 $$ \frac{d(e^{ln(f(x)})}{dx} = (ln(f(x)))\prime e^{ln(f(x))} = f(x) (ln(f(x)))\prime = f\prime(x) $$
 
