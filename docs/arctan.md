@@ -54,4 +54,30 @@ $$ \frac{b}{a} = \frac{rsin(\theta)}{rcos(\theta)} = \frac{sin(\theta)}{cos(\the
 
 $$ \text{Good, } r \text{ dosen't change } \theta $$
 
-$$ \theta = arctan(\frac{b}{a}) $$
+$$ \theta = arctan(\frac{b}{a}) = ? $$
+
+There's the arctan. By the way, this was when I used $h$ instead of $dx$. If $arctan = tan^{-1}$, than I tried to find the derivitves of the inverse for the taylor seiries. I accedentally proved the chain rule with the proof that is now on the [calculus](https://silaspe.github.io/maths/derivatives.html) page as a bonus. I thought "different method for finding $\theta$. First, normalise $z$."
+
+$$ ln(z) = ln(e^{i\theta}) = i\theta $$
+
+$$ i^2 = -1 $$
+
+$$ (i) (-i) = 1 $$
+
+$$ \frac{1}{i} = -i $$
+
+$$ \theta = -i \text{ } ln(z) $$
+
+$$ \text{But what about } ln(z) \text{?} $$
+
+$$ \text{You might remember the formula } \frac{a^{dx} - 1}{dx} \text{ for } ln(a) \text{, so let's try that!} $$
+
+$$ \theta = -i \frac{z^{dx} - 1}{dx} $$
+
+$$ \text{But then, what about }z^{dx} \text{?} $$
+
+$$ \theta = -i \text{ } \frac{((1 + i dx)^{\frac{\theta}{dx}})^{dx} - 1}{dx} = \frac{1}{i} \text{ } \frac{(1 + i dx)^\theta - 1}{dx} = \text{ } \frac{(1 + i\theta dx) - 1}{i dx} $$
+
+$$ \theta = \theta $$
+
+So, all that we have proved is that $\theta = \theta$. Yay!
