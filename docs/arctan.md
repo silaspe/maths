@@ -82,5 +82,12 @@ $$ \theta = \theta $$
 
 So, all that we have proved is that $\theta = \theta$. Yay!
 
-Ok, so that's the end of that train of thought. I googled "dreivitave of arctan" for the result. When I found the awnsser $\frac{1}{1 + x^2}$, I diden't find an awnser why. So, of course I asked ChatGPT, the proof went something liike this:
+Ok, so that's the end of that train of thought. I googled "derivitave of arctan" for the result. When I found the awnsser $\frac{1}{1 + x^2}$, I diden't find an awnser why. So, of course I asked ChatGPT, the proof went something like this:
 
+Actually, I forgot it and this is my best guess, with $\frac{}{f}$ as the inverse of $f$:
+
+$$ f(\frac{}{f} (x)) = : x $$
+
+$$ \frac{d}{dx} f(\frac{}{{}^f} (x)) = f\prime (\frac{}{f} (x)) \frac{}{f}\prime (x) = 1 $$
+
+$$ \frac{}{f}\prime (x) = \frac{1}{f\prime (\frac{}{f} (x))} $$
