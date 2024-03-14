@@ -52,7 +52,7 @@ That's $r$, but what about $\theta$?
 
 $$ \frac{b}{a} = \frac{rsin(\theta)}{rcos(\theta)} = \frac{sin(\theta)}{cos(\theta)} = tan(\theta) $$
 
-$$ \text{Good, } r \text{ dosen't change } \theta $$
+$$ \text{Good, } r \text{ dosen't change } \theta! $$
 
 $$ \theta = arctan(\frac{b}{a}) = ? $$
 
@@ -91,3 +91,11 @@ $$ f(\frac{}{f} (x)) = : x $$
 $$ \frac{d}{dx} f(\frac{}{{}^f} (x)) = f\prime (\frac{}{f} (x)) \frac{}{f}\prime (x) = 1 $$
 
 $$ \frac{}{f}\prime (x) = \frac{1}{f\prime (\frac{}{f} (x))} $$
+
+$$ f(x) = tan(x) $$
+
+$$ \frac{}{f} = arctan(x) $$
+
+$$ arctan\prime (x) = \frac{1}{tan\prime (arctan(x))} $$
+
+$$ \text{Oh! I forgot to tell you about (well, for one, it's pi day today) the other trigonometric functions other than } \text{sin} \text{ pronounced "sine", and } cos \text{ pronounced "cosine" or "cos", but I prefer cosine, theres } tan = \frac{sin}{cos} \text{ pronounced "tan" or "tangent", which I use interchangibly in real life, and it's inverse } arctan \text{ pronounced execly how it is spelled, but theres also } sec = \frac{1}{cos} \text{ pronounced "secant" or "sec", but I prefer secant, but theres also } csc = \frac{1}{sin} \text{ counterintuitivly, but it's pronounced "cosec" or "cosecant", but I prefer cosec. You can also square any of these for a } 2 \text{ superscript in front of the function instead of the parenthasies} $$
