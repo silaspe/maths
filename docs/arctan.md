@@ -99,3 +99,29 @@ $$ \frac{}{f} = arctan(x) $$
 $$ arctan\prime (x) = \frac{1}{tan\prime (arctan(x))} $$
 
 $$ \text{Oh! I forgot to tell you about (well, for one, it's pi day today) the other trigonometric functions other than } \text{sin} \text{ pronounced "sine", and } cos \text{ pronounced "cosine" or "cos", but I prefer cosine, theres } tan = \frac{sin}{cos} \text{ pronounced "tan" or "tangent", which I use interchangibly in real life, and it's inverse } arctan \text{ pronounced execly how it is spelled, but theres also } sec = \frac{1}{cos} \text{ pronounced "secant" or "sec", but I prefer secant, but theres also } csc = \frac{1}{sin} \text{ counterintuitivly, but it's pronounced "cosec" or "cosecant", but I prefer cosec. You can also square any of these for a } 2 \text{ superscript in front of the function instead of the parenthasies} $$
+
+$$ tan\prime (x) = (\frac{sin(x)}{cos(x)}) \prime = \frac{sin\prime (x) cos(x) - sin(x) cos\prime (x)}{cos^2(x)} = \frac{cos(x) cos(x) + sin(x) sin(x)}{cos^2(x)} $$
+
+$$ \text{Okay, we have } cos^2 + sin^2 \text{. Eccept, I still have to derive that.} $$
+
+$$ z = e^{i\theta} = r(cos(\theta) + i \text{ } sin(\theta)) = rcos(\theta) + irsin(\theta) $$
+
+$$ r = 1 $$
+
+$$ z = cos(\theta) + isin(\theta) = a + bi $$
+
+$$ a = cos(\theta) $$
+
+$$ b = sin(\theta) $$
+
+$$ r = \sqrt{a^2 + b^2} $$
+
+$$ cos^2 (\theta) + sin^2 (\theta) = 1 $$
+
+$$ \text{Okay, time to keep going.} $$
+
+$$ tan\prime (x) = \frac{1}{cos^2(x)} $$
+
+$$ tan\prime (x) = sec^2 (x) $$
+
+$$ tan^2 (x) = \frac{sin^2 (x)}{cos^2 (x)} = \frac{sin^2 (x) + cos^2 (x) - cos^2 (x)}{cos^2 (x)} $$
