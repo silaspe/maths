@@ -1,6 +1,8 @@
 ### First, some history
 
-Before this website was even created, I was on a vacation to europe for family, and I solved at last $2$ puzzles. After that, I said that I solved the strand puzzle and the arctan puzzle. First, I solved the strand puzzle in praha, but I only solved fir $x_n$ and not $y_n$, the time that I truly solved the strand puzzle was while I was writing it down on the page. I solved the strand puzzle first by the way. I know what you might be thinking, what even is the arctan puzzle?
+Before this website was even created, I was on a vacation to europe for family, and I solved at last $2$ puzzles. After that, I said that I solved the strand puzzle and the arctan puzzle. First, I solved the strand puzzle in praha, but I only solved fir $x_n$ and not $y_n$, the time that I truly solved the strand puzzle was while I was writing it down on the page. I solved the strand puzzle first by the way. I know what you might be thinking,
+
+## what even is the arctan puzzle?
 
 $$ z = a + bi = re^{i\theta} = r(cos(\theta) + i \text{ } sin(\theta)) = rcos(\theta) + irsin(\theta) $$
 
@@ -56,7 +58,7 @@ $$ \text{Good, } r \text{ dosen't change } \theta! $$
 
 $$ \theta = arctan(\frac{b}{a}) = ? $$
 
-There's the arctan. By the way, this was when I used $h$ instead of $dx$. If $arctan = tan^{-1}$, than I tried to find the derivitves of the inverse for the taylor seiries. I accedentally proved the chain rule with the proof that is now on the [calculus](https://silaspe.github.io/maths/derivatives.html) page as a bonus. I thought "different method for finding $\theta$. First, normalise $z$."
+There's the arctan. By the way, this was when I used $h$ instead of $dx$. If $arctan = tan^{-1}$, than I tried to find the derivitves of the inverse for the taylor seiries. I accedentally proved the chain rule with the proof that is now on the [calculus page](https://silaspe.github.io/maths/derivatives.html) as a bonus. I thought "different method for finding $\theta$. First, normalise $z$."
 
 $$ ln(z) = ln(e^{i\theta}) = i\theta $$
 
@@ -82,11 +84,11 @@ $$ \theta = \theta $$
 
 So, all that we have proved is that $\theta = \theta$. Yay!
 
-Ok, so that's the end of that train of thought. I googled "derivitave of arctan" for the result. When I found the awnsser $\frac{1}{1 + x^2}$, I diden't find an awnser why. So, of course I asked ChatGPT, the proof went something like this:
+Ok, so that's the end of that train of thought. I googled "derivitave of arctan" for the result. When I found the awnser $\frac{1}{1 + x^2}$, I diden't find an awnser why. So, of course I asked ChatGPT, the proof went something like this:
 
 Actually, I forgot it and this is my best guess, with $\frac{}{f}$ as the inverse of $f$:
 
-### derivitave of $arctan$
+### derivitave of arctan
 
 $$ f(\frac{}{f} (x)) = : x $$
 
@@ -134,4 +136,4 @@ $$ arctan\prime (x) = \frac{1}{sec^2 (arctan(x))} = \frac{1}{1 + sec^2 (arctan(x
 
 $$ arctan\prime (x) = \frac{1}{1 + x^2} $$
 
-### integral of the derivitave of $arctan$
+### integral of the derivitave of arctan
