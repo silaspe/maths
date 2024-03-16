@@ -86,6 +86,8 @@ Ok, so that's the end of that train of thought. I googled "derivitave of arctan"
 
 Actually, I forgot it and this is my best guess, with $\frac{}{f}$ as the inverse of $f$:
 
+### derivitave of $arctan$
+
 $$ f(\frac{}{f} (x)) = : x $$
 
 $$ \frac{d}{dx} f(\frac{}{{}^f} (x)) = f\prime (\frac{}{f} (x)) \frac{}{f}\prime (x) = 1 $$
@@ -124,4 +126,12 @@ $$ tan\prime (x) = \frac{1}{cos^2(x)} $$
 
 $$ tan\prime (x) = sec^2 (x) $$
 
-$$ tan^2 (x) = \frac{sin^2 (x)}{cos^2 (x)} = \frac{sin^2 (x) + cos^2 (x) - cos^2 (x)}{cos^2 (x)} $$
+$$ tan^2 (x) = \frac{sin^2 (x)}{cos^2 (x)} = \frac{sin^2 (x) + cos^2 (x) - cos^2 (x)}{cos^2 (x)} = \frac{sin^2 (x) + cos^2 (x)}{cos^2 (x)} - \frac{cos^2 (x)}{cos^2 (x)} $$
+
+$$ tan^2 (x) = sec^2 (x) - 1 $$
+
+$$ arctan\prime (x) = \frac{1}{sec^2 (arctan(x))} = \frac{1}{1 + sec^2 (arctan(x)) - 1} = \frac{1}{1 + tan^2 (arctan(x))} = \frac{1}{1 + tan(arctan(x))tan(arctan(x))} $$
+
+$$ arctan\prime (x) = \frac{1}{1 + x^2} $$
+
+### integral of the derivitave of $arctan$
