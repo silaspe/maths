@@ -136,4 +136,7 @@ $$ arctan\prime (x) = \frac{1}{sec^2 (arctan(x))} = \frac{1}{1 + sec^2 (arctan(x
 
 $$ arctan\prime (x) = \frac{1}{1 + x^2} $$
 
-### integral of the derivitave of arctan
+### Many weeks latar...
+
+I asked ChatGPT for awnsers, and it solved it immediety. This is why I called the arctan puzzle the "tricky puzzle that took $1$ ChatGPT search to solve". Warning: This counts as a taylor seiries for $arctan(x)$ in the interval $-1 < x < 1$
+
