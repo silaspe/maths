@@ -136,7 +136,22 @@ $$ arctan\prime (x) = \frac{1}{sec^2 (arctan(x))} = \frac{1}{1 + sec^2 (arctan(x
 
 $$ arctan\prime (x) = \frac{1}{1 + x^2} $$
 
-### Many weeks latar...
+### Many weeks later...
 
-I asked ChatGPT for awnsers, and it solved it immediety. This is why I called the arctan puzzle the "tricky puzzle that took $1$ ChatGPT search to solve". Warning: This counts as a taylor seiries for $arctan(x)$ in the interval $-1 < x < 1$
+I asked ChatGPT for awnsers, and it solved it immediety. This is why I called the arctan puzzle the "tricky puzzle that took $1$ ChatGPT search to solve". Warning: This counts as a taylor seiries for $arctan(x)$ in the interval $-1 < x < 1$ (or equal to $1$!)
 
+$$ arctan(0) = 0 $$
+
+$$ arctan(x) = \int_{0}^{x} \frac{1}{1 + t^2} dt $$
+
+#### Quick tangent (no pun intended, plus this is more about arctan than tan)
+
+$$ \sum\limits_{n=0}^{\infty}x^n = ? $$
+
+$$ \text{By the convention in the harmonic page below, if } -1 < x < 1 \text{, than the powers of } x \text{ approach } 0 $$
+
+[ ](https://silaspe.github.io/maths/harmonic.html#frac1infty)
+
+$$ x ? = x \sum\limits_{n=0}^{\infty}x^n = \sum\limits_{n=0}^{\infty}x^{n + 1} = \sum\limits_{n=1}^{\infty + 1}x^n $$
+
+$$ x^{\infty + 1} \to 0 $$
