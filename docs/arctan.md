@@ -138,7 +138,7 @@ $$ arctan\prime (x) = \frac{1}{1 + x^2} $$
 
 ### Many weeks later...
 
-I asked ChatGPT for awnsers, and it solved it immediety. This is why I called the arctan puzzle the "tricky puzzle that took $1$ ChatGPT search to solve". Warning: This counts as a taylor seiries for $arctan(x)$ in the interval $-1 < x < 1$ (or equal to $1$!)
+I asked ChatGPT for awnsers, and it solved it immediety. This is why I called the arctan puzzle the "tricky puzzle that took $1$ ChatGPT search to solve". Warning: This counts as a [taylor seiries](suibl.aisop/em.agtihtsh/) (404 page not found) for $arctan(x)$ in the interval $-1 < x < 1$ (or equal to $1$!)
 
 $$ arctan(0) = 0 $$
 
@@ -152,6 +152,16 @@ $$ \text{By the convention in the harmonic page below, if } -1 < x < 1 \text{, t
 
 [ ](https://silaspe.github.io/maths/harmonic.html#frac1infty)
 
-$$ x ? = x \sum\limits_{n=0}^{\infty}x^n = \sum\limits_{n=0}^{\infty}x^{n + 1} = \sum\limits_{n=1}^{\infty + 1}x^n $$
+$$ ? x = x \sum\limits_{n=0}^{\infty}x^n = \sum\limits_{n=0}^{\infty}x^{n + 1} = \sum\limits_{n=1}^{\infty + 1}x^n = \sum\limits_{n=0}^{\infty}x^n - x^0 + x^{\infty + 1} $$
+
+$$ x^0 = 1 $$
 
 $$ x^{\infty + 1} \to 0 $$
+
+$$ ? x = ? - 1 $$
+
+$$ ? (x - 1) = -1 $$
+
+$$ ? = \frac{-1}{x - 1} $$
+
+$$ \sum\limits_{n=0}^{\infty}x^n = \frac{1}{1 - x} $$
