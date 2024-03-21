@@ -16,12 +16,13 @@ nav:
   - Harmonic: harmonic.md
   - Eigenstuff: eigen.md
   - Binomial: binomial.md
-  - Fractional calculas: fractional_calculas.md
+  - Fractional calculus: fractional_calculas.md
   - Fibbonacci: fibbonacci.md
   - Probability: probability.md
   - Complex II: complex_2.md
   - The strand puzzle: the_strand_puzzle.md
   - The infamous "arctan puzzle": arctan.md
+  - Modular arithmetic: mod.md
 
 theme:
   name: material
