@@ -150,7 +150,7 @@ $$ \sum\limits_{n=0}^{\infty}x^n = ? $$
 
 $$ \text{By the convention in the harmonic page below, if } -1 < x < 1 \text{, than the powers of } x \text{ approach } 0 $$
 
-[ ](https://silaspe.github.io/maths/harmonic.html#frac1infty)
+[.](https://silaspe.github.io/maths/harmonic.html#frac1infty)
 
 $$ ? x = x \sum\limits_{n=0}^{\infty}x^n = \sum\limits_{n=0}^{\infty}x^{n + 1} = \sum\limits_{n=1}^{\infty + 1}x^n = \sum\limits_{n=0}^{\infty}x^n - x^0 + x^{\infty + 1} $$
 
