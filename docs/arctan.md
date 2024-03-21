@@ -165,3 +165,13 @@ $$ ? (x - 1) = -1 $$
 $$ ? = \frac{-1}{x - 1} $$
 
 $$ \sum\limits_{n=0}^{\infty}x^n = \frac{1}{1 - x} $$
+
+#### back on track
+
+$$ \frac{1}{1 + x^2} = \frac{1}{1 - (-x^2)} = \sum\limits_{n=0}^{\infty} (-x^2)^n = \sum\limits_{n=0}^{\infty} (-1)^n x^{2n} $$
+
+$$ arctan(x) = \int_{0}^{x} \sum\limits_{n=0}^{\infty} (-1)^n t^{2n} dt = \sum\limits_{n=0}^{\infty} \int_{0}^{x} (-1)^n t^{2n} dt $$
+
+$$ \int_{0}^{x} (-1)^n t^{2n} dt = (-1)^n \frac{x^{2n + 1}}{2n + 1} $$
+
+$$ arctan(x) = \sum\limits_{n=0}^{\infty} (-1)^n \frac{x^{2n + 1}}{2n + 1} = x - \frac{x^3}{3} + \frac{x^5}{5} - \frac{x^7}{7} \dots $$
