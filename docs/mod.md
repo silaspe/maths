@@ -78,12 +78,26 @@ $$ a ⊜ b \to M(a) = M(b) $$
 
 $$ a ⊜ M(a) $$
 
-A function like $M$ would be useful for converting back and forth, but what should it be? What about $M(k)$ equals the $k$'th term in, I'll call it the modular counting.
+A function like $M$ would be useful for converting back and forth, but what should it be? What about $M(k)$ equals the $k$'th term in, I'll call it the modular counting. Also, instead of the objectave of finding what numbers are equal to, you try to find it's $M$. Also, there are only $10$ numbers in modular arithmetic, because
 
-$$ -1 < M(k) < n $$
+$$ -1 < M(k) < n. $$
 
-$$ a = a_d n + M(a) $$
+$$ k = k_d n + M(k) $$
 
 $$ k ⊜ M(k) \text{, So } M(M(k)) = M(k) \text{.} $$
 
 $$ M(a + b) = ? $$
+
+$$ a = a_d n + M(a) $$
+
+$$ b = b_d n + M(b) $$
+
+$$ M(a + b) = M(a_d n + M(a) + b_d n + M(b)) = M((a_d + b_d) n + M(a) + M(b)) $$
+
+$$ M(a + b) = M(M(a) + M(b)) $$
+
+$$ M(ab) = ? $$
+
+$$ M(ab) = M((a_d n + M(a))(b_d n + M(b))) = M(a_d n b_d n + a_d n M(b) + M(a) b_d n + M(a) M(b)) = M((a_d b_d n + a_d M(b) + b_d M(a)) n + M(a) M(b)) $$
+
+$$ M(ab) = M(M(a)M(b)) $$
