@@ -168,6 +168,10 @@ $$ 5 \cdot 2 ⊜ 0 \text{ again} $$
 
 $$ \vdots $$
 
+$$ 10 \cdot 2 ⊜ 0 \ne 1 $$
+
+$$ ? \ne 3 $$
+
 $$ \frac{1}{2} ⊜ \frac{1}{0} $$
 
 So the promlem is that you can't divide by some non-0 numbers like I said. This happens when you are dividing by a factor of the base of the modulas (the base of the modulas is the term where you restart couning first) and the numerator does not also have a factor of it. Said simply
@@ -176,4 +180,44 @@ $$ \frac{a}{b} ⊜ \frac{1}{0} \text{ precisely when } n \text{ divides } b \tex
 
 $$ \text{The solution, of coarse, is to swich the base from } 10 \text{ to } 5 $$
 
-$$ n = 5 $$
+$$ n = 5. $$
+
+$$ \text{Side note! } 2 \text{ and } 3 \text{ are } i \text{ and } -i \text{ respectavely. Actually I don't know which is } i \text{ and which is } -i \text{, but here's proof!} $$
+
+$$ i^2 = -1 $$
+
+$$ (-i)^2 = -1 $$
+
+$$ 2^2 = 4 = 5 - 1 ⊜ -1 $$
+
+$$ 3^2 = 9 = 2 \cdot 5 - 1 ⊜ -1 $$
+
+$$ i \cdot -i = 1 $$
+
+$$ 2 \cdot 3 = 6 ⊜ 1 $$
+
+
+($200$ lines btw)
+
+$$ i + (-i) = 0 $$
+
+$$ -(i) = -i $$
+
+$$ -(-i) = i $$
+
+$$ 2 + 3 = 5 = 5 \cdot 1 + 0 ⊜ 0 $$
+
+$$ -2 = 5 \cdot (-1) + 3 ⊜ 3 $$
+
+$$ -3 = 5 \cdot (-1) + 2 ⊜ 2 $$
+
+So, because $0$ $1$ $i$ $-i$ and $-1$ would multiplty to get another one of $0$ $1$ $i$ $-i$ and $-1$. This means that if you want to multiply numbers mod $5$, just use the beautiful angle addition of the complex plane. Let's try to fnd the mod $7$ equivilant using last monday's work. That took all day. First, the times tables mod $7$
+
+$$ \begin{bmatrix} x \quad 0 & 1 & 2 & 3 & 4 & 5 & 6 \\
+0 \quad 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+1 \quad 0 & 1 & 2 & 3 & 4 & 5 & 6 \\
+2 \quad 0 & 2 & 4 & 6 & 1 & 3 & 5 \\
+3 \quad 0 & 3 & 6 & 2 & 5 & 1 & 4 \\
+4 \quad 0 & 4 & 1 & 5 & 2 & 6 & 3 \\
+5 \quad 0 & 5 & 3 & 1 & 6 & 4 & 2 \\
+6 \quad 0 & 6 & 5 & 4 & 3 & 2 & 1 \\ \end{bmatrix} $$
