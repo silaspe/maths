@@ -221,3 +221,14 @@ $$ \begin{bmatrix} x \quad 0 & 1 & 2 & 3 & 4 & 5 & 6 \\
 4 \quad 0 & 4 & 1 & 5 & 2 & 6 & 3 \\
 5 \quad 0 & 5 & 3 & 1 & 6 & 4 & 2 \\
 6 \quad 0 & 6 & 5 & 4 & 3 & 2 & 1 \\ \end{bmatrix} $$
+
+So, iI would want numbers $2$ - $5$ to corraspond with letters $a$ - $d$. And no letter for $6$, because it is already equal to $-1$ mod $7$. So the puzzle is to solve for $a$ $b$ $c$ and $d$ with the following times table:
+
+$$ \begin{bmatrix} x \quad 0 & 1 & a & b & c & d & -1 \\
+0 \quad 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+1 \quad 0 & 1 & a & b & c & d & -1 \\
+a \quad 0 & a & c & -1 & 1 & b & d \\
+b \quad 0 & b & -1 & a & d & 1 & c \\
+c \quad 0 & c & 1 & d & a & -1 & b \\
+d \quad 0 & d & b & 1 & -1 & c & a \\
+-1 \quad 0 & -1 & d & c & b & a & 1 \\ \end{bmatrix} $$
