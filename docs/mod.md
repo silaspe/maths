@@ -250,3 +250,15 @@ SPOILERS BELOW
 .
 
 .
+
+$$ j = \pm i $$
+
+$$ k = -j = \mp i $$
+
+$$ \text{So, mod } 5 $$
+
+$$ 2 = j $$
+
+$$ 3 = k $$
+
+$$ \text{back to mod } 7. $$
