@@ -233,6 +233,48 @@ c \quad 0 & c & 1 & d & a & -1 & b \\
 d \quad 0 & d & b & 1 & -1 & c & a \\
 -1 \quad 0 & -1 & d & c & b & a & 1 \\ \end{bmatrix} $$
 
+$$ j = \pm i $$
+
+$$ k = -j = \mp i $$
+
+$$ \text{So, mod } 5 $$
+
+$$ 2 = j $$
+
+$$ 3 = k $$
+
+$$ \text{back to mod } 7 \text{ with a more flattened out times table without multiplication by } 0 \text{ or } 1 \text{, because that is preatty self explanitory.} $$
+
+$$ aa = c $$
+
+$$ ab = -1 $$
+
+$$ ac = 1 $$
+
+$$ ad = b $$
+
+$$ a (-1) = d $$
+
+$$ bb = a $$
+
+$$ bc = d $$
+
+$$ bd = 1 $$
+
+$$ b (-1) = c $$
+
+$$ cc = a $$
+
+$$ cd = -1 $$
+
+$$ c (-1) = d $$
+
+$$ dd = c $$
+
+$$ d (-1) = a $$
+
+$$ (-1) (-1) = 1 $$
+
 I'll let you think about it.
 
 SPOILERS BELOW
@@ -250,15 +292,3 @@ SPOILERS BELOW
 .
 
 .
-
-$$ j = \pm i $$
-
-$$ k = -j = \mp i $$
-
-$$ \text{So, mod } 5 $$
-
-$$ 2 = j $$
-
-$$ 3 = k $$
-
-$$ \text{back to mod } 7. $$
