@@ -1,12 +1,12 @@
 ## house numbers
 
-First things first, I have to copy the strand puzzle word for word, having the same punctuation, same capitalisation, and same time pressing enter, and here it is
+First things first, I have to copy the strand puzzle word for word, having the same punctuation, same capitalization, and same timing for pressing enter, and here it is
 
 "There is a man who lives on a long street, numbered on
 
 his side one, two, three, and so on, and that all the
 
-numbers or one side of him added up exacly the same
+numbers on one side of him added up exactly the same
 
 as all the numbers on the other side of him.
 
@@ -18,11 +18,11 @@ fifty houses on that side of the street, but not so many
 
 as five hundred."
 
-just to clarify, there are no houses on the other side of the street, and the house numbers don't skip any. To solve the puzzle, you find the number of his house, and the total number of houses on the street / number of the last house on the street, and that one is in between $50$ and $500$. For future refrence, I will call those unknowns $x$ and $y$ respectively. When someone gave ramanujan (I'm a big fan of him by the way), he (supposedly) solved it in under $10$ seconds.
+just to clarify, there are no houses on the other side of the street, and the house numbers don't skip any. To solve the puzzle, you find the number of his house, and the total number of houses on the street / number of the last house on the street, and that one is in between $50$ and $500$. For future reference, I will call those unknowns $x$ and $y$ respectively. When someone gave ramanujan (I'm a big fan of him by the way), he (supposedly) solved it in under $10$ seconds.
 
 ### calculation
 
-also, because it is against MY rules to use something that I haven't derived (which is why the [polynomial](https://silaspe.github.io/maths/polynomial.html) page has more that $10$ lines), and why most of the contents of this website are derivations), first I will derive the formula for the sums of integers using [discrete calculas](https://silaspe.github.io/maths/binomial.html)
+also, because it is against MY rules to use something that I haven't derived (which is why the [polynomial](https://silaspe.github.io/maths/polynomial.html) page has more than $10$ lines), and why most of the contents of this website are derivations), first I will derive the formula for the sums of integers using [discrete calculus](https://silaspe.github.io/maths/binomial.html)
 
 #### the formula for the sums of integers (I couldn't find a better name)
 
@@ -198,10 +198,10 @@ By the way, the conjecture was an "I'll leave this as an exersize for the veiwer
 
 Proof (by contradiction): Let's say that there is a fraction $\frac{b}{a}$ that is a better approxamation of $\sqrt{2}$ than $\frac{Y}{X}$ with $a$ strictly* less than $X$. $X$ and $Y$ solve $|Y^2 - 2X^2| = 1$, and $X$ is the next biggest solution than $a$. Well, what is $|b^2 - 2a^2|$? By the thing that is easy to notice but hard to prove, even if $|b^2 - 2a^2| = 1$, it still dosen't work, so $|b^2 - 2a^2| \neq 1$, and by the fact that $\sqrt{2}$ is irrational** (I'll prove that later), $|b^2 - 2a^2| \neq 0$, and by the fact that $a$ and $b$ are integers, $|b^2 - 2a^2| = an$ $integer$. So $|b^2 - 2a^2|$ is an integer, does not equal $0$, and does not equal $1$. But the closer to $1$, the better the approxamation (unless the numbers are is bigger). Thus, the proof is complete!
 
-*If $a = X$, than $|b^2 - 2a^2| = |b^2 - 2X^2|$. If $b = Y$, than I can ignore that case because $\frac{Y}{X}$ cannot be a better approxamation of $\sqrt{2}$ than $\frac{Y}{X}$. So if $b < Y$, $b^2 < Y^2$ * *, so $|b^2 - 2X^2|$ aslo is not $1$.
+*If $a = X$, than $|b^2 - 2a^2| = |b^2 - 2X^2|$. If $b = Y$, than I can ignore that case because $\frac{Y}{X}$ cannot be a better approxamation of $\sqrt{2}$ than $\frac{Y}{X}$. So if $b < Y$, $b^2 < Y^2$ * *, so $|b^2 - 2X^2|$ also is not $1$.
 
 
-(* *) If $a$, $b$, $X$, and $Y$ are all negatave, than $b^2 > Y^2$. But for one, if they are both ngatave, then they are not in reduced fractions. And for another, if one is negatave, than the whole thing is negatave, and $\sqrt{2}$ is not. Also if $b > Y$ (yes, it was only a constraint on $a$ and not $b$), than it still wouldn't work.
+(* *) If $a$, $b$, $X$, and $Y$ are all negatave, than $b^2 > Y^2$. But for one, if they are both negatave, then they are not in reduced fractions. And for another, if one is negatave, than the whole thing is negatave, and $\sqrt{2}$ is not. Also if $b > Y$ (yes, it was only a constraint on $a$ and not $b$), than it still wouldn't work.
 
 ** Warning! I will swap $a$ and $b$ in this proof: Note that an even number is two times an integer, if the square of a number is even, than the number that is being squared is even, and a ratio of two even numbers is not in reduced form. You can derive these because I am too busy writing this proof down. Lets say that a fraction $\frac{a}{b}$ in lowest terms (that will be important in the contradiction part of proof by contradiction) that equals $\sqrt{2}$. Going back, this means that $a^2 = 2b^2$. But $b^2$ is an integer, so $a^2$ is even, so $a$ is even. if $a$ is even, than lets say that $a = 2m$ for some integer $m$, $a^2 = 4m^2$, so $4m^2 = 2b^2$, so $2m^2 = b^2$. But $m^2$ is an integer, so $b^2$ is even, so $b$ is even, so $a$ and $b$ are both even, but if they are both even, (and if you remembered), this is a contradiction!
 
@@ -392,9 +392,9 @@ $$ Y_n = \frac{c^n + d^n}{2} $$
 
 ### The final step in the silaspe marithon
 
-You might recognize these two formulas from the mathologer video thit I showed you earlier. Around half of the page after and including the "in genaral" chapter was improv, including things like "the proof". The only things that weren't improv were the result for $X_n$, the proof was using*, the other thing was the reccurance relation, I used a reccurance relation that went backwards, but it still counts. You can use these formulas (that I'll write down) for solutions for $x_n$ and $y_n$ (I bet that you forgot about them). I forgot to tell you that $x_n$ and $y_n$ are the $n$'th soultions to the strand puzzle respecively. Another thing to notice is that on the [github repo](https://github.com/silaspe/maths/blob/main/docs/the_strand_puzzle.md), this is the $395$'th line, this is already the longest page so far, but from now on, if I reach $400$ lines, I'll write down "$400$ lines!!".
+You might recognize these two formulas from the mathologer video thit I showed you earlier. Around half of the page after and including the "in genaral" chapter was improv, including things like "the proof". The only things that weren't improv were the result for $X_n$, the proof was using*, the other thing was the reccurance relation, I used a reccurance relation that went backwards, but it still counts. You can use these formulas (that I'll write down) for solutions for $x_n$ and $y_n$ (I bet that you forgot about them). I forgot to tell you that $x_n$ and $y_n$ are the $n$'th solutions to the strand puzzle respecively. Another thing to notice is that on the [github repo](https://github.com/silaspe/maths/blob/main/docs/the_strand_puzzle.md), this is the $395$'th line, this is already the longest page so far, but from now on, if I reach $400$ lines, I'll write down "$400$ lines!!".
 
-*Bunnymatics, a study of the population of immortal bunies. They can be a child, or an adult. Each day, the child bunnies turn into adult bunnies, and the adult bunnies asectually reproduce and then clone themselves (probably an adultb thing). Day one, there is one adult bunny. if you give the child bunnies price $1$ and the adult bunnies price $c$, one more day is multiplying the price by $c$
+*Bunnymatics, a study of the population of immortal bunies. They can be a child, or an adult. Each day, the child bunnies turn into adult bunnies, and the adult bunnies asexually reproduce and then clone themselves (probably an adult thing). Day one, there is one adult bunny. if you give the bunnies price of $1$ for child bunnies and price $c$ for adult bunnies, one more day is multiplying the price by $c$
 
 
 $400$ lines!!!!!!
