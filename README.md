@@ -20,4 +20,4 @@ sum rule, chain rule, product rule, multiplication by constant, exponent rule, i
 * [Complex II](complex_2.md) - a derivation of the roots of unity, "I'll write this down when I put something in here and suround this text in quotation marks"
 * [The strand puzzle](the_strand_puzzle.md) - a popular puzzle from the strand magazine a hundred years ago
 * [The infamous "arctan puzzle"](arctan.md) - the other puzzle that I was working on in the vacation
-* [Modular arithmetic](mod.md) - if you restart counting after $5$
+* [Modular arithmetic](mod.md) - if you restart counting after $10$, $5$, or $7$
