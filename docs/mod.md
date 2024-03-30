@@ -292,3 +292,48 @@ SPOILERS BELOW
 .
 
 .
+
+You might have gussed that all of these have absolute value $1$, but you might not have known that these are the [roots of unity(https://silaspe.github.io/maths/complex_2.html). But remember to use that $j$ thing. And yes, as oppose to $e^{i\theta} = cos(\theta) + i \text{ } sin(\theta)$,
+
+$$ e^{j\theta} = cos(\theta) + j sin(\theta). $$
+
+Also, $300$ lines by the way.
+
+You might have also noticed that these numbers can circle around in two different ways. (I found the $d$ one before the $b$ one by the way)
+
+$$ 1b = b $$
+
+$$ bb = a $$
+
+$$ ab = -1 $$
+
+$$ (-1) b = c $$
+
+$$ cb = d $$
+
+$$ db = 1. $$
+
+and also
+
+$$ 1d = d $$
+
+$$ dd = c $$
+
+$$ cd = -1 $$
+
+$$ (-1) d = a $$
+
+$$ ad = b $$
+
+$$ bd = 1. $$
+
+Here's a diagram of both in the complex plane:
+
+
+
+And for $d$:
+
+
+
+And also, if two numbers on the complex plane have absolute value $1$, and they multiply to $1$, then they are complex congegates or as you might know as $ccong$, so the correct picture translating back from letters $a$ - $d$ and $-1$ to numbers $2$ - $5$ and $6$ would be the $b$ - picture with up being $j$ and down being $k$. And here it is
+
