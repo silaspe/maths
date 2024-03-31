@@ -335,5 +335,8 @@ And for $d$:
 
 
 
-And also, if two numbers on the complex plane have absolute value $1$, and they multiply to $1$, then they are complex congegates or as you might know as $ccong$, so the correct picture translating back from letters $a$ - $d$ and $-1$ to numbers $2$ - $5$ and $6$ would be the $b$ - picture with up being $j$ and down being $k$. And here it is
+And also, if two numbers on the complex plane have absolute value $1$, and they multiply to $1$, then they are complex congegates or as you might know as $ccong$, so the correct picture translating back from letters $a$ - $d$ and $-1$ to numbers $2$ - $5$ and $6$ would be the $b$ - picture with up being $j$ and down being $k$. And here it is:
 
+
+
+I will add only this line of text ot my website, because it would be sad to add anything else to my website on easter.
