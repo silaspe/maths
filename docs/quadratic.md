@@ -1,3 +1,5 @@
+Welcome to the hidden page that is not listed on the home page or the dropdown menu. Anyways, let's do the
+
 ## quadratic
 
 $$ ax^2 + bx + c = (d) x^2 + (-d(s_1 + s_2)) x + (d s_1 s_2) = d(x - s_1)(x - s_2) $$
@@ -43,3 +45,5 @@ $$ s = k - \frac{b}{2a} $$
 $$ k^2 = \frac{b^2 - 4ac}{4a^2} $$
 
 $$ s = -\frac{b}{2a} \pm \sqrt{\frac{b^2 - 4ac}{4a^2}} = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a} $$
+
+And time to continue like a multiple choice book. If you want to see the other more common proof of the quadratic formula, click [here](https://silaspe.github.io/maths/polynomial.html#_1). But if you think you had enough quadratic for the day, click [here](https://silaspe.github.io/maths/polynomial.html#depresed-cubic-again)
