@@ -16,8 +16,8 @@ sum rule, chain rule, product rule, multiplication by constant, exponent rule, i
 * [Binomial](binomial.md) - a derivation of the binomial therom, an introduction to discrete calculas, and a method for computing pi (not pie)
 * [Fractional calculas](fractional_calculas.md) - an introduction to fractional calculas using cauchy's other integral formula
 * [Fibbonacci](fibbonacci.md) - using the golden ratio phi and the less popular psi to derive binet's formula among other things
-* [Probability](probability.md) - a coin flip game leads you into a new job as a detectave to test if someone is cheating or noy
+* [Probability](probability.md) - a coin flip game leads you into a new job as a detectave to test if someone is cheating or not (I haven't added anything to it in a while)
 * [Complex II](complex_2.md) - a derivation of the roots of unity, "I'll write this down when I put something in here and suround this text in quotation marks"
-* [The strand puzzle](the_strand_puzzle.md) - a popular puzzle from the strand magazine a hundred years ago
+* [The strand puzzle](the_strand_puzzle.md) - a popular puzzle from the strand magazine a hundred years ago that ramanujan solved "strtaight away", whatever that means
 * [The infamous "arctan puzzle"](arctan.md) - the other puzzle that I was working on in the vacation
 * [Modular arithmetic](mod.md) - if you restart counting after $10$, $5$, or $7$
