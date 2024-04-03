@@ -344,3 +344,5 @@ I will add only this line of text to my website, because it would be sad to add 
 I will add only this line of text to my website, because it would be sad to add anything else to my website on April $1$'st. Well, no it wouldn't be, but no one would belive something added on April $1$'st. So I'll take the day off.
 
 Okay, you know the drill. Time to copy paste and tweak the preveous line, just give me a sec... Wait! April $2$'nd is not a holiday. But that means that I have to work today. I think I liked the quadruple weekend more.
+
+And, would you look at that. I forgot to work for all of yesterday, and I have to take the day off for family. Like I said many times: I'll imbed the desmos graphs tomorrow, or maybe today if I am lucky
