@@ -345,4 +345,6 @@ I will add only this line of text to my website, because it would be sad to add 
 
 Okay, you know the drill. Time to copy paste and tweak the preveous line, just give me a sec... Wait! April $2$'nd is not a holiday. But that means that I have to work today. I think I liked the quadruple weekend more.
 
-And, would you look at that. I forgot to work for all of yesterday, and I have to take the day off for family. Like I said many times: I'll imbed the desmos graphs tomorrow, or maybe today if I am lucky
+And, would you look at that. I forgot to work at all yesterday, and I have to take the day off for family. Like I said many times: I'll imbed the desmos graphs tomorrow, or maybe today if I am lucky
+
+At this point on April $4$'th, I'll just stop working on this page and write down below the day that I imbed the desmos graphs.
