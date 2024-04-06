@@ -329,15 +329,17 @@ $$ bd = 1. $$
 
 Here's a diagram of both in the complex plane:
 
-
+<iframe src="https://www.desmos.com/calculator/romrb3jmbq?embed" width="500" height="500" style="border: 1px solid #ccc" frameborder=0></iframe>
 
 And for $d$:
 
-
+<iframe src="https://www.desmos.com/calculator/fhdf4mg7bb?embed" width="500" height="500" style="border: 1px solid #ccc" frameborder=0></iframe>
 
 And also, if two numbers on the complex plane have absolute value $1$, and they multiply to $1$, then they are complex congegates or as you might know as $ccong$, so the correct picture translating back from letters $a$ - $d$ and $-1$ to numbers $2$ - $5$ and $6$ would be the $b$ - picture with up being $j$ and down being $k$. And here it is:
 
+<iframe src="https://www.desmos.com/calculator/nbtmgnbayw?embed" width="500" height="500" style="border: 1px solid #ccc" frameborder=0></iframe>
 
+Isn't it beautiful? I can just add the angles and multiply the magnitudes of any two numbers to get their product mod $7$. Also if two numbers are complex conjugates on the unit circle, then they are inverses of each other, and I've never seen that in a real desmos graph before! Also, that was a bit of a lie, because I'm actually editing on the repo, so the graph isn’t loading, and I would have to click on the tab with the graph to see it. Alternatively, I could just hit the "Commit changes" button on the top-right and wait for $2$ minutes to see it on the website. Yeah, I'll do that.
 
 I will add only this line of text to my website, because it would be sad to add anything else to my website on easter.
 
@@ -348,4 +350,5 @@ Okay, you know the drill. Time to copy paste and tweak the preveous line, just g
 And, would you look at that. I forgot to work at all yesterday, and I have to take the day off for family. Like I said many times: I'll imbed the desmos graphs tomorrow, or maybe today if I am lucky
 
 At this point on April $4$'th, I'll just stop working on this page and write down below the day that I imbed the desmos graphs.
- still!
+
+April $6$'th, I deleted the thing I did the day before, and that's why it dosen't look different
