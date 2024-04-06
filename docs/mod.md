@@ -293,6 +293,8 @@ SPOILERS BELOW
 
 .
 
+### awnser
+
 You might have gussed that all of these have absolute value $1$, but you might not have known that these are the [roots of unity(https://silaspe.github.io/maths/complex_2.html). But remember to use that $j$ thing. And yes, as oppose to $e^{i\theta} = cos(\theta) + i \text{ } sin(\theta)$,
 
 $$ e^{j\theta} = cos(\theta) + j sin(\theta). $$
@@ -339,7 +341,7 @@ And also, if two numbers on the complex plane have absolute value $1$, and they 
 
 <iframe src="https://www.desmos.com/calculator/nbtmgnbayw?embed" width="500" height="500" style="border: 1px solid #ccc" frameborder=0></iframe>
 
-Isn't it beautiful? I can just add the angles and multiply the magnitudes of any two numbers to get their product mod $7$. Also if two numbers are complex conjugates on the unit circle, then they are inverses of each other, and I've never seen that in a real desmos graph before! Also, that was a bit of a lie, because I'm actually editing on the repo, so the graph isn’t loading, and I would have to click on the tab with the graph to see it. Alternatively, I could just hit the "Commit changes" button on the top-right and wait for $2$ minutes to see it on the website. Yeah, I'll do that.
+Isn't it beautiful? I can just add the angles and multiply the magnitudes of any two numbers to get their product mod $7$. $6$ is on $-1$ which makes sense because $6 = 7 - 1$. Also, numers on opposite sides add to $7$, and "opposite side" in complex numbers means "negatave", so that is also just so perfect to me to. Also, if two numbers are complex conjugates on the unit circle, then they are inverses of each other, and I've never seen that in a real desmos graph before! Also, that was a bit of a lie, because I'm actually editing on the repo, so the graph isn’t loading, and I would have to click on the tab with the graph to see it. Alternatively, I could just hit the "Commit changes" button on the top-right and wait for $2$ minutes to see it on the website. Yeah, I'll do that.
 
 I will add only this line of text to my website, because it would be sad to add anything else to my website on easter.
 
@@ -351,4 +353,8 @@ And, would you look at that. I forgot to work at all yesterday, and I have to ta
 
 At this point on April $4$'th, I'll just stop working on this page and write down below the day that I imbed the desmos graphs.
 
-April $6$'th, I deleted the thing I did the day before, and that's why it dosen't look different
+April $6$'th, I deleted the thing I did the day before, and that's why it dosen't look different.
+
+### how to make your own diagram for modular arithmetic in base $p$ in the desmos graphing calculator
+
+You don't actually need to write out the full times table, you just have to find the smallest primitave root $r$ of the base (a primitave root of a base is a number where it's power's would result in all different numbers (exept $0$) in the modular base. e.g. $2$ in mod $5$, $2^0 ⊜ 1$, $2^1 ⊜ 2$, $2^2 ⊜ 4$, $2^3 ⊜ 3$, $2^4 ⊜ 1$. One way to find one is to google it, or use brute force) and then put it a $p - 1$'th around the unit circle from $1$, which is just the point ($1$, $0$). Anyways, first boot up [the desmos graphing calculator](https://www.desmos.com/calculator), then I realized that the colors of the functions you draw go red, blue, green, purple, black, and back to red. First, type $x$ and check if it is a good color for your circle,  if it is, remove the letter $x$ and copy this "x^{2}+y^{2}=1" and paste it into desmos, if not, press the button on the top-right of the box that you are writing in, which I will call the $x$ button, and repeat until you either find a good color, or choose the least worst color available. In my case, black. Oh, and paste in "p=1" to make a slider called $p$ and set it to the base. then do the same thing for the dots, but click on the emptyness underneith the box before pressing the $x$ button. Once you find a good dot color, paste in "\left(0,0\right)". Then, this is the tricky part, click on the emptyness underneith the box, then press the $x$ button, repeat $5$ times to get the same color, this will be known as "repeat until same color". then copy and paste in "\left(1,0\right)", repeat until same color, than ""
