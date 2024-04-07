@@ -21,3 +21,4 @@ sum rule, chain rule, product rule, multiplication by constant, exponent rule, i
 * [The strand puzzle](the_strand_puzzle.md) - a popular puzzle from the strand magazine a hundred years ago that ramanujan solved "strtaight away", whatever that means
 * [The infamous "arctan puzzle"](arctan.md) - the other puzzle that I was working on in the vacation
 * [Modular arithmetic](mod.md) - if you restart counting after $10$, $5$, or $7$
+* [Galois theory (as I know it)](galois.md) - IMPROV WARNING: I know little to nothing about galois theory, my best guss is that it is the study of feilds
