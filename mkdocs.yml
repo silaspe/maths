@@ -23,7 +23,7 @@ nav:
   - The strand puzzle: the_strand_puzzle.md
   - The infamous "arctan puzzle": arctan.md
   - Modular arithmetic: mod.md
-  - Galois theory (as I know it): galois.md
+  - Brainstorming a new page: aa.md
 
 theme:
   name: material
