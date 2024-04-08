@@ -1,0 +1,3 @@
+The equations below are the beginning of pages that may or may not get added to my website. All pages after Modular arithmetic and this one started here in the brainstorm page. I got these from copying things from a piece of paper that hes potential to become a digital page. And finaly, the titles have a question mark if they are my best guss for the titles of the page, no question mark if I made the page and know the title, and a question mark if I never published the page, but still want the world to see it.
+
+### feild theory/galois theory?
