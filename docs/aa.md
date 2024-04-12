@@ -1,4 +1,4 @@
-The equations below are the beginning of pages that may or may not get added to my website. All pages after Modular arithmetic and this one started here in the brainstorm page. I got these from copying things from a piece of paper that hes potential to become a digital page. And finaly, the titles have a question mark if they are my best guss for the titles of the page, no question mark if I made the page and know the title, and a question mark if I never published the page, but still want the world to see it. Also, happy eclipse day! The eclipse was worth the $10$ (total) hours of driving.
+The equations below are the beginning of pages that may or may not get added to my website. All pages after Modular arithmetic and this one started here in the brainstorm page. I got these from copying things from a piece of paper that hes potential to become a digital page. And finaly, the titles have a question mark if they are my best guss for the titles of the page, no question mark if I made the page and know the title, a question mark if I never published the page, but still want the world to see it, and extra small if is just one puzzle, but didn't fit anywhere and/or was worth making a dedicated page. Also, happy eclipse day! The eclipse was worth the $10$ (total) hours of driving.
 
 ### galois theory/field theory?
 
@@ -28,4 +28,12 @@ $$ (a + b \sqrt{7}) - (c + d \sqrt{7}) = (a - c) + (b - d) \sqrt{7} $$
 
 $$ (a + b \sqrt{7}) \cdot (c + d \sqrt{7}) = (ac + 7bd) + (ad + bc) \sqrt{7} $$
 
-$$ \text{And all of these are a number of this form. The end! Yeah, that was my whole* idea} $$
+$$ \text{And all of these are a number of this form. The end! Yeah, that was my whole* idea.} $$
+
+#### that one puzzle
+
+$$ \frac{\partial (x^2 + y^2)}{\partial (x + y)} = ? $$
+
+$$ \text{Okay fine, yes, that one was a joke. But it took me a whole weekend to solve.} $$
+
+$$ \text{Not that every day isn't a weekend for me, but I remember solving it on sunday and posing ist the day before.} $$
