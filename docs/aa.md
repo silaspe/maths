@@ -37,3 +37,7 @@ $$ \frac{\partial (x^2 + y^2)}{\partial (x + y)} = ? $$
 $$ \text{Okay fine, yes, that one was a joke. But it took me a whole weekend to solve.} $$
 
 $$ \text{Not that every day isn't a weekend for me, but I remember solving it on sunday and posing ist the day before.} $$
+
+#### I might not work today (sad emoji)
+
+... Because there is a science something, what was it again? Physics festival! So I am sad to say that, today, I will break my at least $1$ edit to my website per day today... Wait! This text that I am writing counts as something, so I'll add this to my website. Anyways, I need to leave, and everyone is waiting for me.
