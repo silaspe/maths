@@ -1,7 +1,7 @@
 This page is not on the website (yet), because it is entirely psudo-code and python code.
 
 ### asterisk operator (psudo)
-
+```
 define Asterisk(x,y,n)
   (coment) if n is 1, it is adding x and y
   (coment) if n is 2, it is multiplying x and y
@@ -22,7 +22,7 @@ define Asterisk(x,y,n)
     return Asterisk(x,Asterisk(x,y - 1,n),n - 1)
 
   (coment) this makes sense if you think about it.
-
+```
 ### asterisk operator (python)
 
 ```py
@@ -39,26 +39,25 @@ def Asterisk(a, b, n):
 
 ### the exact digits of square roots (psudo)
 
-### the exact digits of square roots (python)
+### the exact digits of square roots (python) (I have been working on this since this page was made)
 
 ```py
 def Root(x, y, n):
   f = 0
-  while f^x <= y:
+  while f**x <= y:
     f += 1
   f -= 1
   a = f
   l = 0
-  t = n - 1
-  for t:
+  for i in range(n):
     a *= 10
     l += 1
-    while a^x <= y*(10^(lx)):
+    while a**x <= y*(10**(l*x)):
       a += 1
     a -= 1
-  a -= f*(10^l)
-  if n >> 1:
-    return (str(f) + str(.)) + str(a)
+  a -= f*(10**l)
+  if n > 1:
+    return str(f) + '.' + str(a)
   else:
     return str(f)
 ```
