@@ -29,8 +29,40 @@ define Asterisk(x,y,n)
 def Asterisk(a, b, n):
   if n == 1:
     return a + b
+  elif n == 2:
+    return a*b
   elif b == 1:
     return a
   else:
     return Asterisk(a,Asterisk(a,b - 1,n),n - 1)
 ```
+
+### the exact digits of square roots (psudo)
+
+### the exact digits of square roots (python)
+
+```py
+def Root(x, y, n):
+  f = 0
+  while f^x <= y:
+    f += 1
+  f -= 1
+  a = f
+  l = 0
+  t = n - 1
+  for t:
+    a *= 10
+    l += 1
+    while a^x <= y*(10^(lx)):
+      a += 1
+    a -= 1
+  a -= f*(10^l)
+  if n >> 1:
+    return (str(f) + str(.)) + str(a)
+  else:
+    return str(f)
+```
+
+### the exact digits of logarithms (psudo)
+
+### the exact digits of logarithms (python)
