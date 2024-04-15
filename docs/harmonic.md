@@ -1,6 +1,6 @@
 ## Harmonic
 
-i'm going to start with the alternating harmonic seireis $1 - \frac{1}{2} + \frac{1}{3} - \frac{1}{4} + \frac{1}{5}... $
+i'm going to start with the alternating harmonic seireis $1 - \frac{1}{2} + \frac{1}{3} - \frac{1}{4} + \frac{1}{5}...$
 
 then, for example $- \frac{1}{4} = \frac{1}{4} - \frac{1}{2}$
 
