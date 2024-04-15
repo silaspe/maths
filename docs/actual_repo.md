@@ -65,3 +65,23 @@ def Root(x, y, n):
 ### the exact digits of logarithms (psudo)
 
 ### the exact digits of logarithms (python)
+
+```py
+def Log(x, y, n):
+  f = 0
+  while x**f <= y:
+    f += 1
+  f -= 1
+  a = f
+  l = 0
+  for i in range(n):
+    a *= 10
+    l += 1
+    while x**a <= y**(10**(l)):
+      a += 1
+    a -= 1
+  a -= f*(10**l)
+  if n > 1:
+    return str(f) + '.' + str(a)
+  else:
+    return str(f)
