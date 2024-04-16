@@ -45,3 +45,23 @@ $$ \text{Not that every day isn't a weekend for me, but I remember solving it on
 #### or today
 
 ... That chapter title and this text will be what I add to my website today.
+
+### why can't you multiply two vectors? (all endings)?
+
+$$ \vec{v} = \begin{bmatrix} v_x \\
+v_y \\
+v_z \\ \end{bmatrix} = v_x \hat{i} + v_y \hat{j} + v_z \hat{k} $$
+
+$$ \vec{w} = \begin{bmatrix} w_x \\
+w_y \\
+w_z \\ \end{bmatrix} = w_x \hat{i} + w_y \hat{j} + w_z \hat{k} $$
+
+$$ \vec{v} \vec{w} = (v_x \hat{i} + v_y \hat{j} + v_z \hat{k}) (w_x \hat{i} + w_y \hat{j} + w_z \hat{k}) = v_x \hat{i} w_x \hat{i} + v_x \hat{i} w_y \hat{j} + v_x \hat{i} w_z \hat{k} + v_y \hat{j} w_x \hat{i} + v_y \hat{j} w_y \hat{j} + v_y \hat{j} w_z \hat{k} + v_z \hat{k} w_x \hat{i} + v_z \hat{k} w_y \hat{j} + v_z \hat{k} w_z \hat{k} $$
+
+$$ \text{For lack of a better way to display this, } \vec{v} \vec{w} \text{ equals the thing below:} $$
+
+$$ (\hat{i} \hat{i})(v_x w_x) + (\hat{i} \hat{j})(v_x w_y) + (\hat{i} \hat{k})(v_x w_z) $$
+
+$$ (\hat{j} \hat{i})(v_y w_x) + (\hat{j} \hat{j})(v_y w_y) + (\hat{j} \hat{k})(v_y w_z) $$
+
+$$ (\hat{k} \hat{i})(v_z w_x) + (\hat{k} \hat{j})(v_z w_y) + (\hat{k} \hat{k})(v_z w_z) $$
