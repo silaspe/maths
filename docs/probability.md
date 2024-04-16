@@ -29,7 +29,7 @@ k \\ \end{pmatrix} x^k y^{n - k} = \sum\limits_{k = 0}^{\infty} \frac{n! x^k y^{
 
 so if I made $x$ into the probability $p$ of landing heads, made $y$ into $(1 - p)$, and made $n$ into the number of flips, than on the left, I would get $1^n$, which is just $1$, but on the right, knowing that multaplying probabilities is the probability that they happen in parellel (if independent!), I would get the sum of the probability of any number number of heads times the probability of getting tails $5$ minus the total number of heads times (which is the total number of tails) times each orientation e.g.heads, tails, heads tails, heads is the same as heads, heads, heads, tails, tails. So this is taking the probability of getting some number of heads and tails, adding them up, and saying that it is $100$%, going one step back, each term is the probability of getting some number of heads which I will call $k$, I will also swap $5$ with $n$.
 
-This seems preatty useful and what I did was took apart the binomial therom and the probability is the probability of getting $k$ heads and $n - k$ tails and each oreintation. I will write this probability below saying that there are $n$ flips, $k$ heads, and probability $p$ of landing heads.
+This seems preaty useful and what I did was took apart the binomial therom and the probability is the probability of getting $k$ heads and $n - k$ tails and each oreintation. I will write this probability below saying that there are $n$ flips, $k$ heads, and probability $p$ of landing heads.
 
 $$ P(n, k, p) = \begin{pmatrix} n \\
 k \\ \end{pmatrix} p^k (1 - p)^{n - k} $$
