@@ -48,28 +48,101 @@ $$ \text{Not that every day isn't a weekend for me, but I remember solving it on
 
 ### why can't you multiply two vectors? (all endings)?
 
+$$ \vec{u} = \begin{bmatrix} u_x \\
+u_y \\
+u_z \\ \end{bmatrix} = u_x \hat{i} + u_y \hat{j} + u_z \hat{k} $$
+
 $$ \vec{v} = \begin{bmatrix} v_x \\
 v_y \\
 v_z \\ \end{bmatrix} = v_x \hat{i} + v_y \hat{j} + v_z \hat{k} $$
 
-$$ \vec{w} = \begin{bmatrix} w_x \\
-w_y \\
-w_z \\ \end{bmatrix} = w_x \hat{i} + w_y \hat{j} + w_z \hat{k} $$
-
-$$ \vec{v} \vec{w} = (v_x \hat{i} + v_y \hat{j} + v_z \hat{k}) (w_x \hat{i} + w_y \hat{j} + w_z \hat{k}) = v_x \hat{i} w_x \hat{i} + v_x \hat{i} w_y \hat{j} + v_x \hat{i} w_z \hat{k} + v_y \hat{j} w_x \hat{i} + v_y \hat{j} w_y \hat{j} + v_y \hat{j} w_z \hat{k} + v_z \hat{k} w_x \hat{i} + v_z \hat{k} w_y \hat{j} + v_z \hat{k} w_z \hat{k} $$
+$$ \vec{u} \vec{v} = (u_x \hat{i} + u_y \hat{j} + u_z \hat{k}) (v_x \hat{i} + v_y \hat{j} + v_z \hat{k}) = u_x \hat{i} v_x \hat{i} + u_x \hat{i} v_y \hat{j} + u_x \hat{i} v_z \hat{k} + u_y \hat{j} v_x \hat{i} + u_y \hat{j} v_y \hat{j} + u_y \hat{j} v_z \hat{k} + u_z \hat{k} v_x \hat{i} + u_z \hat{k} v_y \hat{j} + u_z \hat{k} v_z \hat{k} $$
 
 $$ \text{For lack of a better way to display this, } \vec{v} \vec{w} \text{ equals the thing below:} $$
 
-$$ (\hat{i} \hat{i})(v_x w_x) + (\hat{i} \hat{j})(v_x w_y) + (\hat{i} \hat{k})(v_x w_z) $$
+$$ (\hat{i} \hat{i})(u_x v_x) + (\hat{i} \hat{j})(u_x v_y) + (\hat{i} \hat{k})(u_x v_z) $$
 
-$$ (\hat{j} \hat{i})(v_y w_x) + (\hat{j} \hat{j})(v_y w_y) + (\hat{j} \hat{k})(v_y w_z) $$
+$$ (\hat{j} \hat{i})(u_y v_x) + (\hat{j} \hat{j})(u_y v_y) + (\hat{j} \hat{k})(u_y v_z) $$
 
-$$ (\hat{k} \hat{i})(v_z w_x) + (\hat{k} \hat{j})(v_z w_y) + (\hat{k} \hat{k})(v_z w_z) $$
+$$ (\hat{k} \hat{i})(u_z v_x) + (\hat{k} \hat{j})(u_z v_y) + (\hat{k} \hat{k})(u_z v_z) $$
 
 $$ \text{Ending } 1 \text{, I give up.} $$
 
-Because there is no way that this is a vector
+$$ \text{Because there is no way that this is a vector} $$
 
 ### ending 2, geometric algebra/clifford algebra?
 
-Yeah, I forgot all endings to multiplying vectors, so I came up with the previous one. Well, I guss I had this one, but I would rather make it into it's own page. After waching [A Swift Introduction to Geometric Algebra](https://www.youtube.com/watch?v=60z_hpEAtD8) (litteraly, that was the name), I thought that (if it is a scalar plus a bivector), than it is just a scalar plus a vector times $i$ (or $-i$, I am not sure yet), but I will call it $U$ instead. But first, here's the definition of multiplying two basis vectors (all the alternitave endings probably just had alternitave definitions for this. I think that I remember the definition that multiplication was anticomutative, which would lead me to the cross product)
+Yeah, I forgot all endings to multiplying vectors, so I came up with the previous one. Well, I guss I had this one, but I would rather make it into it's own page. After waching [A Swift Introduction to Geometric Algebra](https://www.youtube.com/watch?v=60z_hpEAtD8) (litteraly, that was the name), I thought that (if it is a scalar plus a bivector), than it is just a scalar plus a vector times $i$ (or $-i$, I am not sure yet), but I will call it $U$ instead. But first, here's the definition of multiplying two basis vectors (all the alternitave endings probably just had alternitave definitions for this. I think that I remember the definition that multiplication was anticomutative, which would lead me to the cross product): The prodct of a basis vector $e_1$ and it self is $1$, and the product of two basis vectors $e_1$ and $e_2$ equals $-e_2 e_1$. this means that you can do this at any point in the product of basis vectors.
+
+$$ \hat{i} = x $$
+
+$$ \hat{j} = y $$
+
+$$ \hat{k} = z $$
+
+$$ \text{Now is about as good of a time as any to simplify the product.} $$
+
+$$ \vec{u} \vec{v} = \begin{pmatrix} (xx)(u_x v_x) + (xy)(u_x v_y) + (xz)(u_x v_z) +  \\
+(yx)(u_y v_x) + (yy)(u_y v_y) + (yz)(u_y v_z) + \\
+(zx)(u_z v_x) + (zy)(u_z v_y) + (zz)(u_z v_z) \\ \end{pmatrix} = \begin{pmatrix} (xx)(u_x v_x) + (xy)(u_x v_y) - (zx)(u_x v_z) -  \\
+(xy)(u_y v_x) + (yy)(u_y v_y) + (yz)(u_y v_z) + \\
+(zx)(u_z v_x) - (yz)(u_z v_y) + (zz)(u_z v_z) \\ \end{pmatrix} = \begin{pmatrix} u_x v_x + (xy)(u_x v_y) - (zx)(u_x v_z) -  \\
+(xy)(u_y v_x) + u_y v_y + (yz)(u_y v_z) + \\
+(zx)(u_z v_x) - (yz)(u_z v_y) + u_z v_z \\ \end{pmatrix} = u_x v_x +  u_y v_y + u_z v_z + \begin{pmatrix} (xy)(u_x v_y - u_y v_x) +  \\
+(yz)(u_y v_z - u_z v_y) + \\
+(zx)(u_z v_x - u_x v_z) \\ \end{pmatrix} = \vec{u} \cdot \vec{v} + \begin{pmatrix} (xy)(u_x v_y - u_y v_x) +  \\
+(yz)(u_y v_z - u_z v_y) + \\
+(zx)(u_z v_x - u_x v_z) \\ \end{pmatrix} $$
+
+$$ \text{But now, I need to turn a bivector into a vector, I'll use that } U \text{ thing for that} $$
+
+$$ U = xyz $$
+
+$$ U^2 = xyzxyz = -xyzxzy = xyzzxy = xyxy = -xxyy $$
+
+$$ U^2 = -1 $$
+
+$$ \text{Yes, your suspicions are confirmed, it was called } i \text{ for that reason.} $$
+
+
+$100$ Lines.
+
+$$ U^3 = xyzxyzxyz = -xyxzyzxyz = xxyzyzxyz = yzyzxyz = -yyzzxyz = -xyz = -U = xzy = -zxy = zyx $$
+
+$$ U^4 = U^2 U^2 = (-1) (-1) = 1 $$
+
+$$ U^4 = U^3 U = (-U) U = -U^2 = -(-1) = 1 $$
+
+.
+
+$$ U^1 = U = xyz $$
+
+$$ U^2 = 1 $$
+
+$$ U^3 = -U = zyx = -xyz $$
+
+$$ U^4 = (-U) U  = 1 $$
+
+.
+
+$2 \cdot 2 \cdot 2 \cdot 2 \cdot 2 \cdot 2 \cdot 2$ lines!
+
+$$ xy = xyzz = Uz $$
+
+$$ yz = yzxx = -yxzx = xyzx = Ux $$
+
+$$ zx = zxyy = -zyxy = -(-U)y = Uy $$
+
+$$ \text{Yes! Now I can finaly solve the puzzle.} $$
+
+$$ \vec{u} \vec{v} = \vec{u} \cdot \vec{v} + \begin{pmatrix} (Uz)(u_x v_y - u_y v_x) +  \\
+(Ux)(u_y v_z - u_z v_y) + \\
+(Uy)(u_z v_x - u_x v_z) \\ \end{pmatrix} = \vec{u} \cdot \vec{v} + U \begin{pmatrix} x(u_y v_z - u_z v_y) +  \\
+y(u_z v_x - u_x v_z) + \\
+z(u_x v_y - u_y v_x) \\ \end{pmatrix} = \vec{u} \cdot \vec{v} + U \begin{bmatrix} u_y v_z - u_z v_y \\
+u_z v_x - u_x v_z \\
+u_x v_y - u_y v_x \\ \end{bmatrix} $$
+
+.
+
+$$ \vec{u} \vec{v} = \vec{u} \cdot \vec{v} + \hat{i} \hat{j} \hat{k} \text{ } \vec{u} \times \vec{v} $$
