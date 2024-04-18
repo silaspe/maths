@@ -65,3 +65,11 @@ $$ (\hat{i} \hat{i})(v_x w_x) + (\hat{i} \hat{j})(v_x w_y) + (\hat{i} \hat{k})(v
 $$ (\hat{j} \hat{i})(v_y w_x) + (\hat{j} \hat{j})(v_y w_y) + (\hat{j} \hat{k})(v_y w_z) $$
 
 $$ (\hat{k} \hat{i})(v_z w_x) + (\hat{k} \hat{j})(v_z w_y) + (\hat{k} \hat{k})(v_z w_z) $$
+
+$$ \text{Ending } 1 \text{, I give up.} $$
+
+Because there is no way that this is a vector
+
+### ending 2, geometric algebra/clifford algebra?
+
+Yeah, I forgot all endings to multiplying vectors, so I came up with the previous one. Well, I guss I had this one, but I would rather make it into it's own page. After waching [A Swift Introduction to Geometric Algebra](https://www.youtube.com/watch?v=60z_hpEAtD8) (litteraly, that was the name), I thought that (if it is a scalar plus a bivector), than it is just a scalar plus a vector times $i$ (or $-i$, I am not sure yet), but I will call it $U$ instead. But first, here's the definition of multiplying two basis vectors (all the alternitave endings probably just had alternitave definitions for this. I think that I remember the definition that multiplication was anticomutative, which would lead me to the cross product)
