@@ -146,3 +146,5 @@ u_x v_y - u_y v_x \\ \end{bmatrix} $$
 .
 
 $$ \vec{u} \vec{v} = \vec{u} \cdot \vec{v} + \hat{i} \hat{j} \hat{k} \text{ } \vec{u} \times \vec{v} $$
+
+### it is bitcoin halfing day today!!!
