@@ -85,3 +85,28 @@ def Log(x, y, n):
     return str(f) + '.' + str(a)
   else:
     return str(f)
+```
+
+### as a cherry on top, the exact digits of the roots of polynomials (psudo)
+
+```
+def Roots(p(x), StartValue, n):
+  f = StartValue
+  while x**f <= y:
+    f += 1
+  f -= 1
+  a = f
+  l = 0
+  for i in range(n):
+    a *= 10
+    l += 1
+    while p(a*(10**(-l) <= p(y):
+(coment) you will have to expand and simplify the equation so that it is a differance of integers
+      a += 1
+    a -= 1
+  a -= f*(10**l)
+  if n > 1:
+    return str(f) + '.' + str(a)
+  else:
+    return str(f)
+```
