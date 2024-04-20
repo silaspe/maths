@@ -42,7 +42,7 @@ $$ \text{Not that every day isn't a weekend for me, but I remember solving it on
 
 ... Because there is a science something, what was it again? Physics festival! So I am sad to say that, today, I will break my at least $1$ edit to my website per day rule... Wait! This text that I am writing counts as something, so I'll add this to my website. Anyways, I need to leave, and everyone is waiting for me.
 
-#### or today
+#### or today.
 
 ... That chapter title and this text will be what I add to my website today.
 
@@ -147,4 +147,22 @@ u_x v_y - u_y v_x \\ \end{bmatrix} $$
 
 $$ \vec{u} \vec{v} = \vec{u} \cdot \vec{v} + \hat{i} \hat{j} \hat{k} \text{ } \vec{u} \times \vec{v} $$
 
-### it is bitcoin halfing day today!!!
+#### it is bitcoin halfing day today!!!
+
+#### maxwell's equation (singular)
+
+$$ \nabla F = J $$
+
+$$ \text{Actually,} $$
+
+$$ \nabla F = \frac{J}{c \epsilon_0} $$
+
+[.](https://www.youtube.com/watch?v=60z_hpEAtD8)
+
+#### how to solve a rubix cube
+
+I'll leave it to J perm.
+
+[.](https://www.youtube.com/watch?v=7Ron6MN45LY)
+
+[.](https://www.youtube.com/@JPerm)
