@@ -18,8 +18,6 @@ $$ \frac{d(f(x)g(x))}{dx} = \frac{(f(x) + df)(g(x) + dg) - f(x)g(x)}{dx} = \frac
 
 $$ \frac{dfdg}{dx} \to 0 $$
 
-$$ \frac{d(f(x)g(x))}{dx} = f(x)\frac{dg}{dx} + \frac{df}{dx}g(x) $$
-
 $$ (fg)\prime = fg\prime + f\prime g $$
 
 ### chain rule
@@ -34,11 +32,11 @@ $$ dg \to 0 $$
 
 $$ \frac{f(g(x) + dg) - f(g(x))}{dg} = \frac{df}{dx}(g(x)) $$
 
-$$ \frac{f(g(x) + dg) - f(g(x))}{dg}\frac{dg}{dx} $$
+$$ \frac{f(g(x) + dg) - f(g(x))}{dg} \frac{dg}{dx} = \frac{df}{dx}(g(x)) \frac{dg}{dx} = \frac{f(g(x) + dg) - f(g(x))}{dx} = \frac{d(f(g(x)))}{dx} $$
 
-$$ = \frac{d(f(g(x)))}{dx} = \frac{df}{dx}(g(x))\frac{dg}{dx} $$
+$$ \frac{d(f(g(x)))}{dx} = \frac{df}{dx}(g(x))\frac{dg}{dx} $$
 
-$$ (f(g))\prime = f\prime(g)g \prime $$
+$$ (f(g))\prime = f\prime(g) g\prime $$
 
 ### mbc rule
 
@@ -97,3 +95,6 @@ $$ \frac{f\prime(x)}{f(x)} = \frac{n}{x} $$
 $$ (x^n)\prime = x^n \frac{n}{x} $$
 
 $$ (x^n)\prime = n x^{n - 1} $$
+
+
+$$ \text{in exactly } 100 \text{ lines.} $$
