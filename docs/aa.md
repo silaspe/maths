@@ -72,7 +72,7 @@ $$ \text{Because there is no way that this is a vector} $$
 
 ### ending 2, geometric algebra/clifford algebra?
 
-Yeah, I forgot all endings to multiplying vectors, so I came up with the previous one. Well, I guss I had this one, but I would rather make it into it's own page. After waching [A Swift Introduction to Geometric Algebra](https://www.youtube.com/watch?v=60z_hpEAtD8) (litteraly, that was the name), I thought that (if it is a scalar plus a bivector), than it is just a scalar plus a vector times $i$ (or $-i$, I am not sure yet), but I will call it $U$ instead. But first, here's the definition of multiplying two basis vectors (all the alternitave endings probably just had alternitave definitions for this. I think that I remember the definition that multiplication was anticomutative, which would lead me to the cross product): The prodct of a basis vector $e_1$ and it self is $1$, and the product of two basis vectors $e_1$ and $e_2$ equals $-e_2 e_1$. this means that you can do this at any point in the product of basis vectors.
+Yeah, I forgot all endings to multiplying vectors, so I came up with the previous one. Well, I guss I had this one, but I would rather make it into it's own page. After waching [A Swift Introduction to Geometric Algebra](https://www.youtube.com/watch?v=60z_hpEAtD8) (litteraly, that was the name), I thought that (if it is a scalar plus a bivector), than it is just a scalar plus a vector times $i$ (or $-i$, I am not sure yet), but I will call it $U$ instead. But first, here's the definition of multiplying two basis vectors (all the alternitave endings probably just had alternitave definitions for this. I think that I remember the definition that multiplication was anticomutative, which would lead me to the cross product): The prodct of a basis vector $e_1$ and it self is $1$, and the product of two basis vectors $e_1$ and $e_2$ equals $-e_2 e_1$. This means that you can do this at any point in the product of basis vectors.
 
 $$ \hat{i} = x $$
 
@@ -94,18 +94,20 @@ $$ \vec{u} \vec{v} = \begin{pmatrix} (xx)(u_x v_x) + (xy)(u_x v_y) + (xz)(u_x v_
 (yz)(u_y v_z - u_z v_y) + \\
 (zx)(u_z v_x - u_x v_z) \\ \end{pmatrix} $$
 
-$$ \text{But now, I need to turn a bivector into a vector, I'll use that } U \text{ thing for that} $$
+$$ \text{But now, I need to turn a bivector into a vector, I'll use that } U \text{ thing for that.} $$
+
+
+$100$ Lines.
 
 $$ U = xyz $$
+
+Puzzle time! Prove that $U \vec{v} = \vec{v} U$.
 
 $$ U^2 = xyzxyz = -xyzxzy = xyzzxy = xyxy = -xxyy $$
 
 $$ U^2 = -1 $$
 
 $$ \text{Yes, your suspicions are confirmed, it was called } i \text{ for that reason.} $$
-
-
-$100$ Lines.
 
 $$ U^3 = xyzxyzxyz = -xyxzyzxyz = xxyzyzxyz = yzyzxyz = -yyzzxyz = -xyz = -U = xzy = -zxy = zyx $$
 
@@ -145,11 +147,15 @@ u_x v_y - u_y v_x \\ \end{bmatrix} $$
 
 .
 
+$$ \vec{u} \vec{v} = \vec{u} \cdot \vec{v} + U \text{ } \vec{u} \times \vec{v} $$
+
 $$ \vec{u} \vec{v} = \vec{u} \cdot \vec{v} + \hat{i} \hat{j} \hat{k} \text{ } \vec{u} \times \vec{v} $$
 
-#### it is bitcoin halfing day today!!!
+$$ \vec{u} \vec{v} = \vec{u} \cdot \vec{v} + \vec{u} \times \vec{v} \text{ } i $$
 
-#### maxwell's equation (singular)
+#### it's bitcoin halfing day today!!!
+
+#### Maxwell's equation (singular)
 
 $$ \nabla F = J $$
 
@@ -166,3 +172,41 @@ I'll leave it to J perm.
 [.](https://www.youtube.com/watch?v=7Ron6MN45LY)
 
 [.](https://www.youtube.com/@JPerm)
+
+### $\frac{1}{\vec{v}}$?
+
+$$ \vec{v} \frac{1}{\vec{v}} = \vec{v} \cdot \frac{1}{\vec{v}} + \hat{i} \hat{j} \hat{k} \text{ } \vec{v} \times \frac{1}{\vec{v}} = 1 + \hat{i} \hat{j} \hat{k} \text{ } 0 $$
+
+$$ \vec{v} \cdot \frac{1}{\vec{v}} = 1 $$
+
+$$ \vec{v} \times \frac{1}{\vec{v}} = 0 $$
+
+$$ \text{if } \vec{v} \times \frac{1}{\vec{v}} = 0 \text{, than they are on the same axis, so } \frac{1}{\vec{v}} = c \vec{v} \text{, and the puzzle now is to solve for } c \text{ in terms of } \vec{v} $$
+
+$$ \vec{v} \cdot c \vec{v} = || \vec{v} || \cdot || c \vec{v} || \cdot cos(\text{The angle between them}) = 1 $$
+
+$$ \text{But the angle between them is } 0 \text{, so} $$
+
+$$ \vec{v} \cdot c \vec{v} = || \vec{v} || \cdot || c \vec{v} || =  c || \vec{v} || \cdot || \vec{v} || = 1 $$
+
+$$ c = \frac{1}{|| \vec{v} ||^2} $$
+
+$$ \frac{1}{\vec{v}} = \frac{\vec{v}}{|| \vec{v} ||^2} $$
+
+$$ \frac{1}{\frac{1}{\vec{v}}} = \frac{\frac{1}{\vec{v}}}{|| \frac{1}{\vec{v}} ||^2} = \frac{\frac{1}{\vec{v}}}{|| \vec{v} \frac{1}{|| \vec{v} ||^2} ||^2} = \frac{\frac{1}{\vec{v}}}{\frac{1}{|| \vec{v} ||^4} || \vec{v}||^2} = \frac{\frac{\vec{v}}{|| \vec{v} ||^2}}{\frac{1}{|| \vec{v}||^2}} = \vec{v} $$
+
+$$ \text{But that is only in } 3d \text{, what about } 4d \text{ and beyond? I remember telling my sister the other day "what happens when you multiply two vectors? In } 4 \text{ dimensions!" (Both gasp).} $$
+
+$$ \text{Lets say that we are in dimension } d \text{. First, basis vectors} $$
+
+$$ e_1 = \hat{i} $$
+
+$$ e_2 = \hat{j} $$
+
+$$ e_3 = \hat{k} $$
+
+$$ \vdots $$
+
+$$ \vec{u} = \sum\limits_{n = 0}^{d} u_n e_n $$
+
+$$ \vec{v} = \sum\limits_{n = 0}^{d} v_n e_n $$
