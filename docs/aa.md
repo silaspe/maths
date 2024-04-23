@@ -97,7 +97,7 @@ $$ \vec{u} \vec{v} = \begin{pmatrix} (xx)(u_x v_x) + (xy)(u_x v_y) + (xz)(u_x v_
 $$ \text{But now, I need to turn a bivector into a vector, I'll use that } U \text{ thing for that.} $$
 
 
-$100$ Lines.
+$100$ Lines btw.
 
 $$ U = xyz $$
 
@@ -199,14 +199,33 @@ $$ \text{But that is only in } 3d \text{, what about } 4d \text{ and beyond? I r
 
 $$ \text{Lets say that we are in dimension } d \text{. First, basis vectors} $$
 
-$$ e_1 = \hat{i} $$
+$$ e_1 = \hat{i} = x $$
 
-$$ e_2 = \hat{j} $$
+$$ e_2 = \hat{j} = y $$
 
-$$ e_3 = \hat{k} $$
+$$ e_3 = \hat{k} = z $$
+
+$$ e_4 = \hat{l} = w $$
 
 $$ \vdots $$
 
-$$ \vec{u} = \sum\limits_{n = 0}^{d} u_n e_n $$
+$$ \vec{u} = \begin{bmatrix} u_1 \\
+u_2 \\
+u_3 \\
+\vdots \\
+u_d\\ \end{bmatrix} = \sum\limits_{n = 1}^{d} u_n e_n $$
 
-$$ \vec{v} = \sum\limits_{n = 0}^{d} v_n e_n $$
+$$ \vec{v} = \begin{bmatrix} v_1 \\
+v_2 \\
+v_3 \\
+\vdots \\
+v_d \\ \end{bmatrix} = \sum\limits_{n = 1}^{d} v_n e_n $$
+
+$$ \vec{u} \vec{v} = \begin{bmatrix} (xx) u_1 v_1 & (xy) u_1 v_2 & (xz) u_1 v_3 & (xw) u_1 v_4 & \dots & (x e_d) u_1 v_d  \\
+(yx) u_2 v_1 & (yy) u_2 v_2 & (yz) u_2 v_3 & (yw) u_2 v_4 & \dots & (y e_d) u_2 v_d \\
+(zx) u_3 v_1 & (zy) u_3 v_2 & (zz) u_3 v_3 & (zw) u_3 v_4 & \dots & (z e_d) u_3 v_d \\
+(wx) u_4 v_1 & (wy) u_4 v_2 & (wz) u_4 v_3 & (ww) u_4 v_4 & \dots & (w e_d) u_4 v_d \\
+\vdots & \vdots & \vdots & \vdots & \ddots & \vdots \\
+(e_d x) u_d v_1 & (e_d y) u_d v_2 & (e_d z) u_d v_3 & (e_d w) u_d v_4 & \dots & (e_d e_d) u_d v_d \\ \end{bmatrix} $$
+
+$$ \text{It was really frustrating to write a plus in between, so I just gave up. Just assume that the result above is summed together.} $$
