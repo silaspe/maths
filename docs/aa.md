@@ -243,3 +243,9 @@ $$ \vec{u} \vec{v} = \begin{bmatrix} (xx) u_1 v_1 & (xy) u_1 v_2 & (xz) u_1 v_3 
 (e_d x) u_d v_1 & (e_d y) u_d v_2 & (e_d z) u_d v_3 & (e_d w) u_d v_4 & \dots &  \\ \end{bmatrix} $$
 
 $$ \text{It was really frustrating to write a plus in between, so I just gave up. Just assume that the result above is summed together.} $$
+
+$$ \vdots $$
+
+$$ \text{I actually have no udea how to prove this, but} $$
+
+$$ \frac{1}{\vec{v}} = \frac{\vec{v}}{|| \vec{v} ||^2} $$
