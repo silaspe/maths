@@ -197,6 +197,8 @@ $$ c = \frac{1}{|| \vec{v} ||^2} $$
 
 $$ \frac{1}{\vec{v}} = \frac{\vec{v}}{|| \vec{v} ||^2} $$
 
+And perfect timing, it is exactly $200$ lines
+
 $$ \frac{1}{\frac{1}{\vec{v}}} = \frac{\frac{1}{\vec{v}}}{|| \frac{1}{\vec{v}} ||^2} = \frac{\frac{1}{\vec{v}}}{|| \vec{v} \frac{1}{|| \vec{v} ||^2} ||^2} = \frac{\frac{1}{\vec{v}}}{\frac{1}{|| \vec{v} ||^4} || \vec{v}||^2} = \frac{\frac{\vec{v}}{|| \vec{v} ||^2}}{\frac{1}{|| \vec{v}||^2}} = \vec{v} $$
 
 $$ \text{But that is only in } 3d \text{, what about } 4d \text{ and beyond? I remember telling my sister the other day "what happens when you multiply two vectors? In } 4 \text{ dimensions!" (Both gasp).} $$
@@ -249,3 +251,74 @@ $$ \vdots $$
 $$ \text{I actually have no udea how to prove this, but} $$
 
 $$ \frac{1}{\vec{v}} = \frac{\vec{v}}{|| \vec{v} ||^2} $$
+
+#### mini quadratic
+
+How this page works is that I count up in binary such that if the last digit is one, it has a constant term, if the second to last digit is one, it has a linear term, if the third to last digit is one, it has a quadratic term. Starting at $0$ with the number above.
+
+.
+
+000
+
+$$  = 0 $$
+
+$$ x = \frac{0}{0} $$
+
+001
+
+$$ a = 0 $$
+
+$$ x = \frac{0}{0} $$
+
+010
+
+$$ ax = 0 $$
+
+$$ x = \frac{0}{a} $$
+
+011
+
+$$ ax + b = 0 $$
+
+$$ x + \frac{b}{a} = 0 $$
+
+$$ x = -\frac{b}{a} $$
+
+100
+
+$$ ax^2 = 0 $$
+
+$$ x^2 = \frac{0}{a} $$
+
+$$ x = \sqrt{\frac{0}{a}} $$
+
+$$ \text{if } a = 0 \text{, then the square root of } \frac{0}{0} \text{ is still } \frac{0}{0} \text{, and if } a \ne 0 \text{ then the square root of } 0 \text{ is still } 0 \text{! (Not } 0 \text{ factorial)} $$
+
+$$ x = \frac{0}{a} $$
+
+
+$300$ Lines.
+
+101
+
+$$ ax^2 + b = 0 $$
+
+$$ x^2 = -\frac{b}{a} $$
+
+$$ x = \sqrt{-\frac{b}{a}} $$
+
+110
+
+$$ ax^2 + bx = 0 $$
+
+$$ x(ax + b) = 0 $$
+
+$$ x = 0, x = -\frac{b}{a} $$
+
+$$ x = -\frac{b}{2a} \mp \frac{b}{2a} $$
+
+111
+
+$$ ax^2 + bx + c = 0 $$
+
+$$ x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a} $$
