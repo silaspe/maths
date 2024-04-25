@@ -10,7 +10,7 @@ v_z \\ \end{bmatrix} = v_x \hat{i} + v_y \hat{j} + v_z \hat{k} $$
 
 $$ \vec{u} \vec{v} = (u_x \hat{i} + u_y \hat{j} + u_z \hat{k}) (v_x \hat{i} + v_y \hat{j} + v_z \hat{k}) = u_x \hat{i} v_x \hat{i} + u_x \hat{i} v_y \hat{j} + u_x \hat{i} v_z \hat{k} + u_y \hat{j} v_x \hat{i} + u_y \hat{j} v_y \hat{j} + u_y \hat{j} v_z \hat{k} + u_z \hat{k} v_x \hat{i} + u_z \hat{k} v_y \hat{j} + u_z \hat{k} v_z \hat{k} $$
 
-$$ \text{For lack of a better way to display this, } \vec{v} \vec{w} \text{ equals the thing below:} $$
+$$ \text{For lack of a better way to display this, } \vec{u} \vec{v} \text{ equals the thing below:} $$
 
 $$ (\hat{i} \hat{i})(u_x v_x) + (\hat{i} \hat{j})(u_x v_y) + (\hat{i} \hat{k})(u_x v_z) $$
 
@@ -100,4 +100,4 @@ Also, the cross product only works in $3d$ while this $\hat{i} \hat{j} \hat{k} \
 $100$ lines!
 
 $$ \vec{u} \vec{v} = \vec{u} \cdot \vec{v} + \vec{u} ∧ \vec{v} $$
-.
+
