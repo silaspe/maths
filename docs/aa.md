@@ -322,3 +322,7 @@ $$ x = -\frac{b}{2a} \mp \frac{b}{2a} $$
 $$ ax^2 + bx + c = 0 $$
 
 $$ x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a} $$
+
+#### hyperbolic arcs 
+
+<iframe src="https://www.geogebra.org/calculator/ysw94mwz?embed" width="800" height="600" allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;" frameborder="0"></iframe>
