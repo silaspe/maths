@@ -207,7 +207,7 @@ $$ \vec{v} = \frac{|| \vec{v} ||^2}{\vec{v}} $$
 
 $$ \frac{1}{\vec{v}} = \frac{\vec{v}}{|| \vec{v} ||^2} $$
 
-$$ \text{I had this proof that } \frac{1}{\\frac{1}{\vec{v}}} = \vec{v} \text{ that I would put right here, but I accedentally deleted that one (and it is now an exersize for the veiwer). In conclution:} $$
+$$ \text{I had this proof that } \frac{1}{\frac{1}{\vec{v}}} = \vec{v} \text{ that I would put right here, but I accedentally deleted that one (and it is now an exersize for the veiwer). In conclution:} $$
 
 $$ \vec{v}^2 = || \vec{v} ||^2 $$
 
