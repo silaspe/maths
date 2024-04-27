@@ -101,3 +101,118 @@ $100$ lines!
 
 $$ \vec{u} \vec{v} = \vec{u} \cdot \vec{v} + \vec{u} ∧ \vec{v} $$
 
+### $\frac{1}{\vec{v}}$ (and $\vec{v}^2$)
+
+$$ \text{Lets say that we are in dimension } d \text{. First, basis vectors} $$
+
+$$ e_1 = \hat{i} = x $$
+
+$$ e_2 = \hat{j} = y $$
+
+$$ e_3 = \hat{k} = z $$
+
+$$ e_4 = \hat{l} = w $$
+
+$$ \vdots $$
+
+$$ \vec{u} = \begin{bmatrix} u_1 \\
+u_2 \\
+u_3 \\
+\vdots \\
+u_d\\ \end{bmatrix} = \sum\limits_{n = 1}^{d} u_n e_n $$
+
+$$ \vec{v} = \begin{bmatrix} v_1 \\
+v_2 \\
+v_3 \\
+\vdots \\
+v_d \\ \end{bmatrix} = \sum\limits_{n = 1}^{d} v_n e_n $$
+
+$$ \vec{u} \vec{v} = \begin{bmatrix} (xx) u_1 v_1 & (xy) u_1 v_2 & (xz) u_1 v_3 & (xw) u_1 v_4 & \dots & (x e_d) u_1 v_d  \\
+(yx) u_2 v_1 & (yy) u_2 v_2 & (yz) u_2 v_3 & (yw) u_2 v_4 & \dots & (y e_d) u_2 v_d \\
+(zx) u_3 v_1 & (zy) u_3 v_2 & (zz) u_3 v_3 & (zw) u_3 v_4 & \dots & (z e_d) u_3 v_d \\
+(wx) u_4 v_1 & (wy) u_4 v_2 & (wz) u_4 v_3 & (ww) u_4 v_4 & \dots & (w e_d) u_4 v_d \\
+\vdots & \vdots & \vdots & \vdots & \ddots & \vdots \\
+(e_d x) u_d v_1 & (e_d y) u_d v_2 & (e_d z) u_d v_3 & (e_d w) u_d v_4 & \dots & (e_d e_d) u_d v_d \\ \end{bmatrix} = \begin{bmatrix} u_1 v_1 & (xy) u_1 v_2 & (xz) u_1 v_3 & (xw) u_1 v_4 & \dots & (x e_d) u_1 v_d  \\
+(yx) u_2 v_1 & u_2 v_2 & (yz) u_2 v_3 & (yw) u_2 v_4 & \dots & (y e_d) u_2 v_d \\
+(zx) u_3 v_1 & (zy) u_3 v_2 & u_3 v_3 & (zw) u_3 v_4 & \dots & (z e_d) u_3 v_d \\
+(wx) u_4 v_1 & (wy) u_4 v_2 & (wz) u_4 v_3 & u_4 v_4 & \dots & (w e_d) u_4 v_d \\
+\vdots & \vdots & \vdots & \vdots & \ddots & \vdots \\
+(e_d x) u_d v_1 & (e_d y) u_d v_2 & (e_d z) u_d v_3 & (e_d w) u_d v_4 & \dots & u_d v_d \\ \end{bmatrix} = (u_1 v_1 + u_2 v_2 + u_3 v_3 + u_4 v_4 + \dots + u_d v_d) + \begin{bmatrix}  & (xy) u_1 v_2 & (xz) u_1 v_3 & (xw) u_1 v_4 & \dots & (x e_d) u_1 v_d  \\
+(yx) u_2 v_1 &  & (yz) u_2 v_3 & (yw) u_2 v_4 & \dots & (y e_d) u_2 v_d \\
+(zx) u_3 v_1 & (zy) u_3 v_2 &  & (zw) u_3 v_4 & \dots & (z e_d) u_3 v_d \\
+(wx) u_4 v_1 & (wy) u_4 v_2 & (wz) u_4 v_3 &  & \dots & (w e_d) u_4 v_d \\
+\vdots & \vdots & \vdots & \vdots &  & \vdots \\
+(e_d x) u_d v_1 & (e_d y) u_d v_2 & (e_d z) u_d v_3 & (e_d w) u_d v_4 & \dots &  \\ \end{bmatrix} = (u_1 v_1 + u_2 v_2 + u_3 v_3 + u_4 v_4 + \dots + u_d v_d) + \begin{bmatrix}  & (xy) u_1 v_2 & (xz) u_1 v_3 & (xw) u_1 v_4 & \dots & (x e_d) u_1 v_d  \\
+-(xy) u_2 v_1 &  & (yz) u_2 v_3 & (yw) u_2 v_4 & \dots & (y e_d) u_2 v_d \\
+-(xz) u_3 v_1 & -(yz) u_3 v_2 &  & (zw) u_3 v_4 & \dots & (z e_d) u_3 v_d \\
+-(xw) u_4 v_1 & -(yw) u_4 v_2 & -(zw) u_4 v_3 &  & \dots & (w e_d) u_4 v_d \\
+\vdots & \vdots & \vdots & \vdots &  & \vdots \\
+-(x e_d) u_d v_1 & -(y e_d) u_d v_2 & -(z e_d) u_d v_3 & -(w e_d) u_d v_4 & \dots &  \\ \end{bmatrix} $$
+
+$$ \text{It was really frustrating to write a plus in between, so I just gave up. Just assume that the results above and below are summed together (I kept swiching between "Just assume that the result above is summed together" and "Just assume that the results above and below are summed together").} $$
+
+$$ \text{Here's an idea! Square the vector.} $$
+
+$$ \vec{v} \vec{v} = (v_1 v_1 + v_2 v_2 + v_3 v_3 + v_4 v_4 + \dots + v_d v_d) + \begin{bmatrix}  & (xy) v_1 v_2 & (xz) v_1 v_3 & (xw) v_1 v_4 & \dots & (x e_d) v_1 v_d  \\
+-(xy) v_2 v_1 &  & (yz) v_2 v_3 & (yw) v_2 v_4 & \dots & (y e_d) v_2 v_d \\
+-(xz) v_3 v_1 & -(yz) v_3 v_2 &  & (zw) v_3 v_4 & \dots & (z e_d) v_3 v_d \\
+-(xw) v_4 v_1 & -(yw) v_4 v_2 & -(zw) v_4 v_3 &  & \dots & (w e_d) v_4 v_d \\
+\vdots & \vdots & \vdots & \vdots &  & \vdots \\
+-(x e_d) v_d v_1 & -(y e_d) v_d v_2 & -(z e_d) v_d v_3 & -(w e_d) v_d v_4 & \dots &  \\ \end{bmatrix} $$
+
+$$ \text{By the way, here's the dot product and absolute value of two and one vector respectively.} $$
+
+$$ \vec{u} \cdot \vec{v} = u_1 v_1 + u_2 v_2 + u_3 v_3 + u_4 v_4 + \dots + u_d v_d = \sum\limits_{n = 1}^{d} u_n v_n $$
+
+$$ || \vec{v} || = \sqrt{v_1^2 + v_2^2 + v_3^2 + v_4^2 + \dots + v_d^2} $$
+
+$$ || \vec{v} ||^2 = || v_1^2 + v_2^2 + v_3^2 + v_4^2 + \dots + v_d^2 || $$
+
+$$ \text{But the square of a number is always positave (this is VGA (vannila geomatric algebra), not CGA (
+complex geomatric algebra)), and the sum of positave numbers is positave, and the absolute value of a positave number is positave, so...} $$
+
+$$ || \vec{v} ||^2 = v_1^2 + v_2^2 + v_3^2 + v_4^2 + \dots + v_d^2 $$
+
+$$ \vec{v} \cdot \vec{v} = v_1^2 + v_2^2 + v_3^2 + v_4^2 + \dots + v_d^2 $$
+
+$$ || \vec{v} ||^2 = \vec{v} \cdot \vec{v} $$
+
+$$ \text{But then I realized, this if halfway to the square of a vector.} $$
+
+$$ \vec{v}^2 = \vec{v} \cdot \vec{v} + \vec{v} ∧ \vec{v} = || \vec{v} ||^2 + \vec{v} ∧ \vec{v} $$
+
+$$ \text{If the cross product of a vector with itself is the zero vector, and the } 3d \text{ wedge product is proportional to the cross product, than it would make sense that the wedge product of a vector with itself is zero as well (this argument works in } 3d \text{ by the way). You might have noticed earlier that we almost proved this.} $$
+
+$$ \vec{v}^2 = || \vec{v} ||^2 + \begin{bmatrix}  & (xy) v_1 v_2 & (xz) v_1 v_3 & (xw) v_1 v_4 & \dots & (x e_d) v_1 v_d  \\
+-(xy) v_2 v_1 &  & (yz) v_2 v_3 & (yw) v_2 v_4 & \dots & (y e_d) v_2 v_d \\
+-(xz) v_3 v_1 & -(yz) v_3 v_2 &  & (zw) v_3 v_4 & \dots & (z e_d) v_3 v_d \\
+-(xw) v_4 v_1 & -(yw) v_4 v_2 & -(zw) v_4 v_3 &  & \dots & (w e_d) v_4 v_d \\
+\vdots & \vdots & \vdots & \vdots &  & \vdots \\
+-(x e_d) v_d v_1 & -(y e_d) v_d v_2 & -(z e_d) v_d v_3 & -(w e_d) v_d v_4 & \dots &  \\ \end{bmatrix} = || \vec{v} ||^2 + \begin{bmatrix}  & (xy) v_1 v_2 & (xz) v_1 v_3 & (xw) v_1 v_4 & \dots & (x e_d) v_1 v_d  \\
+-(xy)v_1 v_2  &  & (yz) v_2 v_3 & (yw) v_2 v_4 & \dots & (y e_d) v_2 v_d \\
+-(xz) v_1 v_3 & -(yz) v_2 v_3 &  & (zw) v_3 v_4 & \dots & (z e_d) v_3 v_d \\
+-(xw) v_1 v_4 & -(yw) v_2 v_4 & -(zw) v_3 v_4 &  & \dots & (w e_d) v_4 v_d \\
+\vdots & \vdots & \vdots & \vdots &  & \vdots \\
+-(x e_d) v_1 v_d & -(y e_d) v_2 v_d & -(z e_d) v_3 v_d & -(w e_d) v_4 v_d & \dots &  \\ \end{bmatrix} $$
+
+$$ \text{As you can see, each term is perfectly canceled out by the term across the diagonal. And perfect timing, it will be on } 200 \text{ lines.} $$
+
+$$ \vec{v}^2 = || \vec{v} ||^2 $$
+
+$$ \text{Also, now I can solve for } \frac{1}{\vec{v}} $$
+
+$$ \vec{v} \vec{v} = || \vec{v} ||^2 $$
+
+$$ \vec{v} = \frac{|| \vec{v} ||^2}{\vec{v}} $$
+
+$$ \frac{1}{\vec{v}} = \frac{\vec{v}}{|| \vec{v} ||^2} $$
+
+$$ \text{I had this proof that } \frac{1}{\\frac{1}{\vec{v}}} = \vec{v} \text{ that I would put right here, but I accedentally deleted that one (and it is now an exersize for the veiwer). In conclution:} $$
+
+$$ \vec{v}^2 = || \vec{v} ||^2 $$
+
+$$ \text{And} $$
+
+$$ \frac{1}{\vec{v}} = \frac{\vec{v}}{|| \vec{v} ||^2}. $$
+
+$$ \text{By the way, this means that the inverse of a vector is a vector, } \frac{\vec{u}}{\vec{v}} = \frac{\vec{u} \vec{v}}{|| \vec{v} ||^2} \text{. The inverse of a } 2d \text{ is it's circle inverse, the inverse of a } 3d \text{ vector is it's sphere inverse, the inverse of a } 4d \text{ vector is it's hypersphere inverse, and so on.} $$
