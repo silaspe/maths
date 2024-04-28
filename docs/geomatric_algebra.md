@@ -216,3 +216,36 @@ $$ \text{And} $$
 $$ \frac{1}{\vec{v}} = \frac{\vec{v}}{|| \vec{v} ||^2}. $$
 
 $$ \text{By the way, this means that the inverse of a vector is a vector, } \frac{\vec{u}}{\vec{v}} = \frac{\vec{u} \vec{v}}{|| \vec{v} ||^2} \text{. The inverse of a } 2d \text{ is it's circle inverse, the inverse of a } 3d \text{ vector is it's sphere inverse, the inverse of a } 4d \text{ vector is it's hypersphere inverse, and so on.} $$
+
+#### fun fact!
+
+As you know, $\vec{u} \cdot \vec{v} = u_1 v_1 + u_2 v_2 + u_3 v_3 + u_4 v_4 + \dots + u_d v_d$. But what about $\vec{v} \cdot \vec{u}$? And what about the wedge product? (By the way, this is about the product)
+
+$$ \vec{v} \cdot \vec{u} = v_1 u_1 + v_2 u_2 + v_3 u_3 + v_4 u_4 + \dots + v_d u_d = u_1 v_1 + u_2 v_2 + u_3 v_3 + u_4 v_4 + \dots + u_d v_d $$
+
+$$ \vec{v} \cdot \vec{u} = \vec{u} \cdot \vec{v} $$
+
+$$ \vec{v} \vec{u} = \vec{u} \cdot \vec{v} + \vec{v} ∧ \vec{u} $$
+
+$$ \vec{u} ∧ \vec{v} = \begin{bmatrix}  & (xy) u_1 v_2 & (xz) u_1 v_3 & (xw) u_1 v_4 & \dots & (x e_d) u_1 v_d  \\
+-(xy) u_2 v_1 &  & (yz) u_2 v_3 & (yw) u_2 v_4 & \dots & (y e_d) u_2 v_d \\
+-(xz) u_3 v_1 & -(yz) u_3 v_2 &  & (zw) u_3 v_4 & \dots & (z e_d) u_3 v_d \\
+-(xw) u_4 v_1 & -(yw) u_4 v_2 & -(zw) u_4 v_3 &  & \dots & (w e_d) u_4 v_d \\
+\vdots & \vdots & \vdots & \vdots &  & \vdots \\
+-(x e_d) u_d v_1 & -(y e_d) u_d v_2 & -(z e_d) u_d v_3 & -(w e_d) u_d v_4 & \dots &  \\ \end{bmatrix} $$
+
+$$ \vec{v} ∧ \vec{u} = \begin{bmatrix}  & (xy) v_1 u_2 & (xz) v_1 u_3 & (xw) v_1 u_4 & \dots & (x e_d) v_1 u_d  \\
+-(xy) v_2 u_1 &  & (yz) v_2 u_3 & (yw) v_2 u_4 & \dots & (y e_d) v_2 u_d \\
+-(xz) v_3 u_1 & -(yz) v_3 u_2 &  & (zw) v_3 u_4 & \dots & (z e_d) v_3 u_d \\
+-(xw) v_4 u_1 & -(yw) v_4 u_2 & -(zw) v_4 u_3 &  & \dots & (w e_d) v_4 u_d \\
+\vdots & \vdots & \vdots & \vdots &  & \vdots \\
+-(x e_d) v_d u_1 & -(y e_d) v_d u_2 & -(z e_d) v_d u_3 & -(w e_d) v_d u_4 & \dots &  \\ \end{bmatrix} = \begin{bmatrix}  & -(xy) v_1 u_2 & -(xz) v_1 u_3 & -(xw) v_1 u_4 & \dots & -(x e_d) v_1 u_d  \\
+(xy) v_2 u_1 &  & -(yz) v_2 u_3 & -(yw) v_2 u_4 & \dots & -(y e_d) v_2 u_d \\
+(xz) v_3 u_1 & (yz) v_3 u_2 &  & -(zw) v_3 u_4 & \dots & -(z e_d) v_3 u_d \\
+(xw) v_4 u_1 & (yw) v_4 u_2 & (zw) v_4 u_3 &  & \dots & -(w e_d) v_4 u_d \\
+\vdots & \vdots & \vdots & \vdots &  & \vdots \\
+(x e_d) v_d u_1 & (y e_d) v_d u_2 & (z e_d) v_d u_3 & (w e_d) v_d u_4 & \dots &  \\ \end{bmatrix} $$
+
+$$ \vec{v} ∧ \vec{u} = - \vec{u} ∧ \vec{v} $$
+
+$$ \vec{v} \vec{u} = \vec{u} \cdot \vec{v} - \vec{u} ∧ \vec{v} $$
