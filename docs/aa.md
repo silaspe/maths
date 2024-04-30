@@ -326,3 +326,45 @@ $$ x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a} $$
 #### hyperbolic arcs 
 
 <iframe src="https://www.geogebra.org/calculator/ysw94mwz?embed" width="800" height="600" allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;" frameborder="0"></iframe>
+
+### line through two points?
+
+$$ f(a_x) = a_y $$
+
+$$ f(b_x) = b_y $$
+
+$$ f(x) \text{ Is a linear function.} $$
+
+$$ \text{So, } f(x) \text{ is the line that passes thru } (a_x, a_y) \text{ and } (b_x, b_y) $$
+
+$$ \text{there are many ways to solve this puzzle, but I only have time to show you one.} $$
+
+$$ f(x) = cx + d $$
+
+$$ c a_x + d = a_y $$
+
+$$ c b_x + d = b_y $$
+
+$$ c a_x + d - c b_x - d = a_y - b_y $$
+
+$$ c(a_x - b_x) = a_y - b_y $$
+
+$$ c = \frac{a_y - b_y}{a_x - b_x} $$
+
+$$ \frac{a_y - b_y}{a_x - b_x} a_x + d = a_y $$
+
+$$ \frac{a_y - b_y}{a_x - b_x} a_x - a_y = d $$
+
+$$ (a_y - b_y) a_x - a_y (a_x - b_x) = d (a_x - b_x) $$
+
+$$ a_x a_y - a_x b_y - a_y a_x + a_y b_x = d (a_x - b_x) $$
+
+$$ a_x a_y - a_x a_y + a_y b_x - a_x b_y = d (a_x - b_x) $$
+
+$$ d = \frac{a_y b_x - a_x b_y}{a_x - b_x} $$
+
+$$ f(x) = \frac{a_y - b_y}{a_x - b_x} x + \frac{a_y b_x - a_x b_y}{a_x - b_x} = \frac{b_y - a_y}{b_x - a_x} x + \frac{a_x b_y - a_y b_x}{b_x - a_x} = \frac{(a_y - b_y) x + a_y b_x - a_x b_y}{a_x - b_x} = \frac{(b_y - a_y) x + a_x b_y - a_y b_x}{b_x - a_x} $$
+
+$$ \text{Personally, my favorite is:} $$
+
+$$ f(x) = \frac{a_y - b_y}{a_x - b_x} x + \frac{a_x b_y - a_y b_x}{b_x - a_x} $$
