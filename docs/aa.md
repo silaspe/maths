@@ -374,3 +374,7 @@ $$ f(x) = \frac{a_y - b_y}{a_x - b_x} x + \frac{a_x b_y - a_y b_x}{b_x - a_x} $$
 $$ | 1.0 | .01 \text{ } .1 | 01.0 \text{ } 1.0 \text{ } 2.0 | .0011 \text{ } .02 \text{ } .1 \text{ } .2 | 0.01 \text{ } .0121 \text{ } 1.0 \text{ } .13 \text{ } 3.0 | .001 \text{ } 0.1 \text{ } .03 \text{ } .1 \text{ } 2.0 \text{ } .3 | 001.0 \text{ } .010212 \text{ } 0.2 \text{ } 1.0 \text{ } 13.0 \text{ } .2 \text{ } 4.0 | $$
 
 $$ \text{To solve this puzzle, you must either find out what comes next, or find the pattern, or both!} $$
+
+#### By the way...
+
+$$ \text{I am trying to build a computer... Within a computer!} $$
