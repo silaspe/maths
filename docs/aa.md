@@ -323,6 +323,8 @@ $$ ax^2 + bx + c = 0 $$
 
 $$ x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a} $$
 
+$$ \text{I'm sorry that this got shoved in your face. Just scroll up.} $$
+
 #### hyperbolic arcs 
 
 <iframe src="https://www.geogebra.org/calculator/ysw94mwz?embed" width="800" height="600" allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;" frameborder="0"></iframe>
