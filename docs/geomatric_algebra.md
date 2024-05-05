@@ -20,7 +20,7 @@ $$ (\hat{k} \hat{i})(u_z v_x) + (\hat{k} \hat{j})(u_z v_y) + (\hat{k} \hat{k})(u
 
 ### geometric algebra
 
-[A Swift Introduction to Geometric Algebra](https://www.youtube.com/watch?v=60z_hpEAtD8) (litteraly, that was the name) exists, and it is where these ideas come from (at least in this chapter). The prodct of a basis vector $e_1$ and it self is $1$, and the product of two basis vectors $e_1$ and $e_2$ equals $-e_2 e_1$. This means that you can do this at any point in the product of basis vectors (this should make sense). 
+[A Swift Introduction to Geometric Algebra](https://www.youtube.com/watch?v=60z_hpEAtD8) (literally, that was the name) exists, and it is where these ideas come from (at least in this chapter). The prodct of a basis vector $e_1$ and it self is $1$, and the product of two basis vectors $e_1$ and $e_2$ equals $-e_2 e_1$. This means that you can do this at any point in the product of basis vectors (this should make sense). By the way, $U = \hat{i} \hat{j} \hat{k}$
 
 $$ \hat{i} = x $$
 
@@ -44,13 +44,13 @@ $$ \vec{u} \vec{v} = \begin{pmatrix} (xx)(u_x v_x) + (xy)(u_x v_y) + (xz)(u_x v_
 
 $$ \text{But now, I need to turn a bivector into a vector. Heres a cool concept, } U \text{.} $$
 
-$$ U = xyz $$
-
 Puzzle time! Prove that $U \vec{v} = \vec{v} U$.
 
 $$ U^2 = xyzxyz = -xyzxzy = xyzzxy = xyxy = -xxyy $$
 
 $$ U^2 = -1 $$
+
+$U$ is usually called $i$ for this reason.
 
 $$ U^3 = xyzxyzxyz = -xyxzyzxyz = xxyzyzxyz = yzyzxyz = -yyzzxyz = -xyz = -U = xzy = -zxy = zyx $$
 
@@ -249,3 +249,33 @@ $$ \vec{v} ∧ \vec{u} = \begin{bmatrix}  & (xy) v_1 u_2 & (xz) v_1 u_3 & (xw) v
 $$ \vec{v} ∧ \vec{u} = - \vec{u} ∧ \vec{v} $$
 
 $$ \vec{v} \vec{u} = \vec{u} \cdot \vec{v} - \vec{u} ∧ \vec{v} $$
+
+### complex numbers
+
+
+By the way, $2 \cdot 2 \cdot 2 \cdot 2 \cdot 2 \cdot 2 \cdot 2 \cdot 2$ lines.
+
+$$ \text{complex numbers (surprisingly in geomatric algebra) come from } 2d \text{ geomatric algebra. So time to re-derive that! (And use } i \text{ this time instead of } U \text{.) Here's the definitions:} $$
+
+.
+
+$$ x = \hat{i} \text{ (This is so that } \hat{i} \text{ isn't confused with } i \text{).} $$
+
+$$ y = \hat{j} $$
+
+$$ i = \hat{i} \hat{j} $$
+
+$$ x^2 = 1 $$
+
+$$ y^2 = 1 $$
+
+$$ xy = -yx $$
+
+$$ \text{And with those, you can derive} $$
+
+$$ i^2 = -1 $$
+
+$$ \text{this is why it was called } i. $$
+
+.
+.
