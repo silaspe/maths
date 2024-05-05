@@ -10,7 +10,7 @@ v_z \\ \end{bmatrix} = v_x \hat{i} + v_y \hat{j} + v_z \hat{k} $$
 
 $$ \vec{u} \vec{v} = (u_x \hat{i} + u_y \hat{j} + u_z \hat{k}) (v_x \hat{i} + v_y \hat{j} + v_z \hat{k}) = u_x \hat{i} v_x \hat{i} + u_x \hat{i} v_y \hat{j} + u_x \hat{i} v_z \hat{k} + u_y \hat{j} v_x \hat{i} + u_y \hat{j} v_y \hat{j} + u_y \hat{j} v_z \hat{k} + u_z \hat{k} v_x \hat{i} + u_z \hat{k} v_y \hat{j} + u_z \hat{k} v_z \hat{k} $$
 
-$$ \text{For lack of a better way to display this, } \vec{u} \vec{v} \text{ equals the thing below:} $$
+$$ \text{For lack of a better way to display this, } \vec{u} \vec{v} \text{ equals the sum of the things below:} $$
 
 $$ (\hat{i} \hat{i})(u_x v_x) + (\hat{i} \hat{j})(u_x v_y) + (\hat{i} \hat{k})(u_x v_z) $$
 
@@ -20,7 +20,7 @@ $$ (\hat{k} \hat{i})(u_z v_x) + (\hat{k} \hat{j})(u_z v_y) + (\hat{k} \hat{k})(u
 
 ### geometric algebra
 
-[A Swift Introduction to Geometric Algebra](https://www.youtube.com/watch?v=60z_hpEAtD8) (literally, that was the name) exists, and it is where these ideas come from (at least in this chapter). The prodct of a basis vector $e_1$ and it self is $1$, and the product of two basis vectors $e_1$ and $e_2$ equals $-e_2 e_1$. This means that you can do this at any point in the product of basis vectors (this should make sense). By the way, $U = \hat{i} \hat{j} \hat{k}$
+[A Swift Introduction to Geometric Algebra](https://www.youtube.com/watch?v=60z_hpEAtD8) exists (literally, that was the name), and it is where these ideas come from (at least in this chapter and the complex numbers chapter coming soon). The prodct of a basis vector $e_1$ and it self is $1$, and the product of two basis vectors $e_1$ and $e_2$ equals $-e_2 e_1$. This means that you can do this at any point in the product of basis vectors (this should make sense). By the way, $U = \hat{i} \hat{j} \hat{k}$
 
 $$ \hat{i} = x $$
 
@@ -42,7 +42,7 @@ $$ \vec{u} \vec{v} = \begin{pmatrix} (xx)(u_x v_x) + (xy)(u_x v_y) + (xz)(u_x v_
 (yz)(u_y v_z - u_z v_y) + \\
 (zx)(u_z v_x - u_x v_z) \\ \end{pmatrix} $$
 
-$$ \text{But now, I need to turn a bivector into a vector. Heres a cool concept, } U \text{.} $$
+$$ \text{But now, I need to turn a bivector into a vector. What about that } U \text{ thing?} $$
 
 Puzzle time! Prove that $U \vec{v} = \vec{v} U$.
 
@@ -94,10 +94,10 @@ $$ \vec{u} \vec{v} = \vec{u} \cdot \vec{v} + \hat{i} \hat{j} \hat{k} \text{ } \v
 
 $$ \vec{u} \vec{v} = \vec{u} \cdot \vec{v} + \vec{u} \times \vec{v} \text{ } i $$
 
-Also, the cross product only works in $3d$ while this $\hat{i} \hat{j} \hat{k} \text{ } \vec{u} \times \vec{v}$ thing works in any dimention. This operator actually has a name (well, two names), the outer product (as oppose to the dot product sometimes refered to as the inner product) or wedge product for it's apperance as a wedge unicode character. This more genaral cross product is written $\vec{u} ∧ \vec{v}$. Also, I have to interrupt this for...
+Also, the cross product only works in $3d$ while this $U \text{ } \vec{u} \times \vec{v}$ thing works in any dimention. This operator actually has a name (well, two names), the outer product (as oppose to the dot product sometimes refered to as the inner product) or wedge product for it's apperance as a wedge unicode character. This more genaral cross product is written $\vec{u} ∧ \vec{v}$. Also, I have to interrupt this for...
 
 
-$100$ lines!
+$100$ lines! But
 
 $$ \vec{u} \vec{v} = \vec{u} \cdot \vec{v} + \vec{u} ∧ \vec{v} $$
 
@@ -219,7 +219,7 @@ $$ \text{By the way, this means that the inverse of a vector is a vector, } \fra
 
 #### fun fact!
 
-As you know, $\vec{u} \cdot \vec{v} = u_1 v_1 + u_2 v_2 + u_3 v_3 + u_4 v_4 + \dots + u_d v_d$. But what about $\vec{v} \cdot \vec{u}$? And what about the wedge product? (By the way, this is about the product)
+As you know, $\vec{u} \cdot \vec{v} = u_1 v_1 + u_2 v_2 + u_3 v_3 + u_4 v_4 + \dots + u_d v_d$. But what about $\vec{v} \cdot \vec{u}$? And what about the wedge product? (By the way, this is about the vector product or sometimes called the geometric product)
 
 $$ \vec{v} \cdot \vec{u} = v_1 u_1 + v_2 u_2 + v_3 u_3 + v_4 u_4 + \dots + v_d u_d = u_1 v_1 + u_2 v_2 + u_3 v_3 + u_4 v_4 + \dots + u_d v_d $$
 
@@ -239,12 +239,17 @@ $$ \vec{v} ∧ \vec{u} = \begin{bmatrix}  & (xy) v_1 u_2 & (xz) v_1 u_3 & (xw) v
 -(xz) v_3 u_1 & -(yz) v_3 u_2 &  & (zw) v_3 u_4 & \dots & (z e_d) v_3 u_d \\
 -(xw) v_4 u_1 & -(yw) v_4 u_2 & -(zw) v_4 u_3 &  & \dots & (w e_d) v_4 u_d \\
 \vdots & \vdots & \vdots & \vdots &  & \vdots \\
--(x e_d) v_d u_1 & -(y e_d) v_d u_2 & -(z e_d) v_d u_3 & -(w e_d) v_d u_4 & \dots &  \\ \end{bmatrix} = \begin{bmatrix}  & -(xy) v_1 u_2 & -(xz) v_1 u_3 & -(xw) v_1 u_4 & \dots & -(x e_d) v_1 u_d  \\
+-(x e_d) v_d u_1 & -(y e_d) v_d u_2 & -(z e_d) v_d u_3 & -(w e_d) v_d u_4 & \dots &  \\ \end{bmatrix} = -\begin{bmatrix}  & -(xy) v_1 u_2 & -(xz) v_1 u_3 & -(xw) v_1 u_4 & \dots & -(x e_d) v_1 u_d  \\
 (xy) v_2 u_1 &  & -(yz) v_2 u_3 & -(yw) v_2 u_4 & \dots & -(y e_d) v_2 u_d \\
 (xz) v_3 u_1 & (yz) v_3 u_2 &  & -(zw) v_3 u_4 & \dots & -(z e_d) v_3 u_d \\
 (xw) v_4 u_1 & (yw) v_4 u_2 & (zw) v_4 u_3 &  & \dots & -(w e_d) v_4 u_d \\
 \vdots & \vdots & \vdots & \vdots &  & \vdots \\
-(x e_d) v_d u_1 & (y e_d) v_d u_2 & (z e_d) v_d u_3 & (w e_d) v_d u_4 & \dots &  \\ \end{bmatrix} $$
+(x e_d) v_d u_1 & (y e_d) v_d u_2 & (z e_d) v_d u_3 & (w e_d) v_d u_4 & \dots &  \\ \end{bmatrix} = -\begin{bmatrix}  & (xy) u_1 v_2 & (xz) u_1 v_3 & (xw) u_1 v_4 & \dots & (x e_d) u_1 v_d  \\
+-(xy) u_2 v_1 &  & (yz) u_2 v_3 & (yw) u_2 v_4 & \dots & (y e_d) u_2 v_d \\
+-(xz) u_3 v_1 & -(yz) u_3 v_2 &  & (zw) u_3 v_4 & \dots & (z e_d) u_3 v_d \\
+-(xw) u_4 v_1 & -(yw) u_4 v_2 & -(zw) u_4 v_3 &  & \dots & (w e_d) u_4 v_d \\
+\vdots & \vdots & \vdots & \vdots &  & \vdots \\
+-(x e_d) u_d v_1 & -(y e_d) u_d v_2 & -(z e_d) u_d v_3 & -(w e_d) u_d v_4 & \dots &  \\ \end{bmatrix} $$
 
 $$ \vec{v} ∧ \vec{u} = - \vec{u} ∧ \vec{v} $$
 
@@ -255,9 +260,9 @@ $$ \vec{v} \vec{u} = \vec{u} \cdot \vec{v} - \vec{u} ∧ \vec{v} $$
 
 By the way, $2 \cdot 2 \cdot 2 \cdot 2 \cdot 2 \cdot 2 \cdot 2 \cdot 2$ lines.
 
-$$ \text{complex numbers (surprisingly in geomatric algebra) come from } 2d \text{ geomatric algebra. So time to re-derive that! (And use } i \text{ this time instead of } U \text{.) Here's the definitions:} $$
+$$ \text{complex numbers (surprisingly in geomatric algebra) come from } 2d \text{ geomatric algebra. So time to re-derive that! (And use } i \text{ this time instead of } U \text{.) Here's the definitions and link to the complex numbers page:} $$
 
-.
+[.](https://silaspe.github.io/maths/complex.html)
 
 $$ x = \hat{i} \text{ (This is so that } \hat{i} \text{ isn't confused with } i \text{).} $$
 
