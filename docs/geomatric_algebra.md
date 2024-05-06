@@ -149,7 +149,7 @@ $$ \vec{u} \vec{v} = \begin{bmatrix} (xx) u_1 v_1 & (xy) u_1 v_2 & (xz) u_1 v_3 
 \vdots & \vdots & \vdots & \vdots &  & \vdots \\
 -(x e_d) u_d v_1 & -(y e_d) u_d v_2 & -(z e_d) u_d v_3 & -(w e_d) u_d v_4 & \dots &  \\ \end{bmatrix} $$
 
-$$ \text{It was really frustrating to write a plus in between, so I just gave up. Just assume that the results above and below are summed together (I kept swiching between "Just assume that the result above is summed together" and "Just assume that the results above and below are summed together").} $$
+$$ \text{It was really frustrating to write a plus in between, so I just gave up. Just assume that the results above and below are summed together (I kept swiching between "Just assume that the result above is summed together" and "Just assume that the results above and below are summed together") (you can assume that every matrix on this page is a sum).} $$
 
 $$ \text{Here's an idea! Square the vector.} $$
 
@@ -253,12 +253,11 @@ $$ \vec{v} ∧ \vec{u} = \begin{bmatrix}  & (xy) v_1 u_2 & (xz) v_1 u_3 & (xw) v
 
 $$ \vec{v} ∧ \vec{u} = - \vec{u} ∧ \vec{v} $$
 
+By the way, $2 \cdot 2 \cdot 2 \cdot 2 \cdot 2 \cdot 2 \cdot 2 \cdot 2$ lines.
+
 $$ \vec{v} \vec{u} = \vec{u} \cdot \vec{v} - \vec{u} ∧ \vec{v} $$
 
 ### complex numbers
-
-
-By the way, $2 \cdot 2 \cdot 2 \cdot 2 \cdot 2 \cdot 2 \cdot 2 \cdot 2$ lines.
 
 $$ \text{complex numbers (surprisingly in geomatric algebra) come from } 2d \text{ geomatric algebra. So time to re-derive that! (And use } i \text{ this time instead of } U \text{.) Here's the definitions and link to the complex numbers page:} $$
 
@@ -274,7 +273,7 @@ $$ x^2 = 1 $$
 
 $$ y^2 = 1 $$
 
-$$ xy = -yx $$
+$$ xy = -yx \text{(} = i \text{)} $$
 
 $$ \text{And with those, you can derive} $$
 
@@ -283,4 +282,23 @@ $$ i^2 = -1 $$
 $$ \text{this is why it was called } i. $$
 
 .
-.
+
+$$ \text{Also, a bivector in } 2 \text{ dimensions has one degree of freedom (just like how a vector behaves in } 1d \text{) (by the way, a } k \text{-vector in } n \text{ dimensions has } \begin{pmatrix} n \\
+k \\ \end{pmatrix} \text{ DoF's (degrees of freedom)), so I'll call it, I dunno, a pseudoscalar. (} i \text{ Is always the unit pseudoscalar no matter the dimension.)} $$
+
+$$ \vec{u} = \begin{bmatrix} u_x \\
+u_y \\ \end{bmatrix} = u_x \hat{i} + u_y \hat{j} = u_x x + u_y y $$
+
+$$ \vec{v} = \begin{bmatrix} v_x \\
+v_y \\ \end{bmatrix} = v_x \hat{i} + v_y \hat{j} = v_x x + v_y y $$
+
+$$ \vec{u} \vec{v} = (xx) u_x v_x + (xy) u_x v_y + (yx) u_y v_x + (yy) u_y v_y = (u_x v_x + u_y v_y) + (u_x v_y - u_y v_x)i $$
+
+$$ \vec{u} ∧ \vec{v} = i \cdot Det \begin{pmatrix} u_x & u_y \\
+v_x & v_y \\ \end{pmatrix} $$
+
+$300$ Lines!
+
+Here's a [determinat video](https://www.youtube.com/watch?v=Ip3X9LOh2dk) and [linear algebra playlist](https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab) for context (make sure to skip the cross product video) (also, that determinant is probably the only matrix on this page. I'll come back here when I finish the page and put the awnser here: ) ( $\text{ }$ :) $\text{ }$ Btw.)
+
+$$  \text{Text over time! (As oppose to voice over, it's a font swich.) What's something that veiwers of this website would want from geomatric algebra? I think I have an idea: rotate a vector by the angle between two other vectors. I'l do it in } 20 \text{ minutes.} $$
