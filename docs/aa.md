@@ -248,7 +248,7 @@ $$ \text{It was really frustrating to write a plus in between, so I just gave up
 
 $$ \vdots $$
 
-$$ \text{I actually have no udea how to prove this, but} $$
+$$ \text{I actually have no idea how to prove this, but} $$
 
 $$ \frac{1}{\vec{v}} = \frac{\vec{v}}{|| \vec{v} ||^2} $$
 
