@@ -131,3 +131,11 @@ you have to find it!
 ...........
 
 ...........
+
+#### the Holy Grail of complex numbers, I forgot to do this $3$ months ago
+
+$$ cos(\pi) + isin(\pi) = e^{i \pi} $$
+
+$$ e^{i \pi} = -1 + i0 = -1 $$
+
+$$ e^{i \pi} + 1 = 0 $$
