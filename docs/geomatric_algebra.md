@@ -294,11 +294,58 @@ v_y \\ \end{bmatrix} = v_x \hat{i} + v_y \hat{j} = v_x x + v_y y $$
 
 $$ \vec{u} \vec{v} = (xx) u_x v_x + (xy) u_x v_y + (yx) u_y v_x + (yy) u_y v_y = (u_x v_x + u_y v_y) + (u_x v_y - u_y v_x)i $$
 
-$$ \vec{u} ∧ \vec{v} = i \cdot Det \begin{pmatrix} u_x & u_y \\
-v_x & v_y \\ \end{pmatrix} $$
+$$ \vec{u} ∧ \vec{v} = i \cdot Det \begin{bmatrix} u_x & u_y \\
+v_x & v_y \\ \end{bmatrix} $$
 
 $300$ Lines!
 
-Here's a [determinat video](https://www.youtube.com/watch?v=Ip3X9LOh2dk) and [linear algebra playlist](https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab) for context (make sure to skip the cross product video) (also, that determinant is probably the only matrix on this page. I'll come back here when I finish the page and put the awnser here: ) ( $\text{ }$ :) $\text{ }$ Btw.)
+Here's a [determinat video](https://www.youtube.com/watch?v=Ip3X9LOh2dk) and [linear algebra playlist](https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab) for context (make sure to skip the cross product video) (also, that determinant is probably the only matrix on this page. I'll come back here when I finish the page and put the awnser here: ) ( $\text{ }$ : ) $\text{ }$ Btw.)
 
 $$  \text{Text over time! (As oppose to voice over, it's a font swich.) What's something that veiwers of this website would want from geomatric algebra? I think I have an idea: rotate a vector by the angle between two other vectors. I'l do it in } 20 \text{ minutes.} $$
+
+$$ \text{It's the next day.} $$
+
+$$ \vec{v} i = v_x xi + v_y yi = v_x xxy + v_y yxy = v_x y - v_y xyy = v_x y - v_y x $$
+
+```py
+def complexify(v_x x + v_y y):
+  return v_x + v_y i
+```
+
+$$ \text{I just realized that this isn't a code repo(sitory). It was my instinct to write it in code form.} $$
+
+$$ \text{complexify} (v_x x + v_y y) = v_x + v_y i $$
+
+$$ \vec{v} i = (v_x x + v_y y)i = v_x xi + v_y yi = v_x xxy + v_y yxy = v_x y - v_y xyy = v_x y - v_y x $$
+
+$$ \text{complexify} (\vec{v} i) = i \text{ complexify} (\vec{v}) $$
+
+$$ i \vec{v} = i(v_x x + v_y y) = i v_x x + i v_y y $$
+
+$$ \text{But } v_x \text{ and } v_y \text{ are scalars, so} $$
+
+$$ i \vec{v} = v_x ix + v_y iy = v_x xyx + v_y xyy = -v_x yxx + v_y x = -v_x y + v_y x $$
+
+$$ \text{complexify} (i \vec{v}) = -i \text{ complexify} (\vec{v}). $$
+
+$$ \text{Next: Vector times a complex number.} $$
+
+$$ \text{vectorize} (a + bi) = ax + by $$
+
+$$ \text{complexify} (\text{vectorize} (z)) = z $$
+
+$$ \text{vectorize} (\text{complexify} (\vec{v})) = \vec{v} $$
+
+$$ (ax + by)(c + di) = axc + axdi + byc + bydi = \begin{pmatrix} ac (x) & ad (xi) \\
+bc (y) & bd (yi) \\ \end{pmatrix} = \begin{pmatrix} ac (x) & ad (xxy) \\
+bc (y) & bd (yxy) \\ \end{pmatrix} = \begin{pmatrix} ac (x) & ad (y) \\
+bc (y) & -bd (xyy) \\ \end{pmatrix} = \begin{pmatrix} ac (x) & ad (y) \\
+bc (y) & -bd (x) \\ \end{pmatrix} = (ac - bd)x + (ad + bc) y $$
+
+$$ z = a + bi $$
+
+$$ w = c + di $$
+
+$$ \text{vectorize} (z) w = \text{vectorize} (zw) $$
+
+$$ \vec{u} \text{ complexify} (\vec{v}) = \text{vectorize} (\text{complexify} (\vec{u}) \text{ complexify} (v) $$
