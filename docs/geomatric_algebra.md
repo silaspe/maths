@@ -292,14 +292,15 @@ u_y \\ \end{bmatrix} = u_x \hat{i} + u_y \hat{j} = u_x x + u_y y $$
 $$ \vec{v} = \begin{bmatrix} v_x \\
 v_y \\ \end{bmatrix} = v_x \hat{i} + v_y \hat{j} = v_x x + v_y y $$
 
-$$ \vec{u} \vec{v} = (xx) u_x v_x + (xy) u_x v_y + (yx) u_y v_x + (yy) u_y v_y = (u_x v_x + u_y v_y) + (u_x v_y - u_y v_x)i $$
+$$ \vec{u} \vec{v} = \begin{pmatrix} (xx) u_x v_x & (xy) u_x v_y \\
+(yx) u_y v_x & (yy) u_y v_y \\ \end{pmatrix} = (u_x v_x + u_y v_y) + (u_x v_y - u_y v_x)i $$
 
 $$ \vec{u} ∧ \vec{v} = i \cdot Det \begin{bmatrix} u_x & u_y \\
 v_x & v_y \\ \end{bmatrix} $$
 
 $300$ Lines!
 
-Here's a [determinat video](https://www.youtube.com/watch?v=Ip3X9LOh2dk) and [linear algebra playlist](https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab) for context (make sure to skip the cross product video) (also, that determinant is probably the only matrix on this page. I'll come back here when I finish the page and put the awnser here: ) ( $\text{ }$ : ) $\text{ }$ Btw.)
+Here's a [determinat video](https://www.youtube.com/watch?v=Ip3X9LOh2dk) and [linear algebra playlist](https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab) for context (make sure to skip the cross product video) (also, that determinant is probably the only matrix on this page. I'll come back here when I finish the page and put the awnser here: ). ( $\text{ }$ : ) $\text{ }$ Btw.)
 
 $$  \text{Text over time! (As oppose to voice over, it's a font swich.) What's something that veiwers of this website would want from geomatric algebra? I think I have an idea: rotate a vector by the angle between two other vectors. I'l do it in } 20 \text{ minutes.} $$
 
@@ -308,8 +309,8 @@ $$ \text{It's the next day.} $$
 $$ \vec{v} i = v_x xi + v_y yi = v_x xxy + v_y yxy = v_x y - v_y xyy = v_x y - v_y x $$
 
 ```py
-def complexify(v_x x + v_y y):
-  return v_x + v_y i
+def complexify(v_x, v_y):
+  return v_x + v_y * j
 ```
 
 $$ \text{I just realized that this isn't a code repo(sitory). It was my instinct to write it in code form.} $$
@@ -328,7 +329,7 @@ $$ i \vec{v} = v_x ix + v_y iy = v_x xyx + v_y xyy = -v_x yxx + v_y x = -v_x y +
 
 $$ \text{complexify} (i \vec{v}) = -i \text{ complexify} (\vec{v}). $$
 
-$$ \text{Next: Vector times a complex number.} $$
+$$ \text{Next: vector times a complex number.} $$
 
 $$ \text{vectorize} (a + bi) = ax + by $$
 
@@ -349,3 +350,23 @@ $$ w = c + di $$
 $$ \text{vectorize} (z) w = \text{vectorize} (zw) $$
 
 $$ \vec{u} \text{ complexify} (\vec{v}) = \text{vectorize} (\text{complexify} (\vec{u}) \text{ complexify} (v)) $$
+
+Wait a minute! (Which was the catch phrase of sugey (pronounced soo-gey) in the quick introduction that I mentioned earlier.) If multiplying a vector by a complex number acts like comlex number multiplication (rotating and scaling) (exempt it returns a vector, not a complex number), and a vector times a vector is a complex number, that what rotation is that? (Well, it scales by the magnitude and rotates by the angle counterclockwise from the positave $x$ axis.)
+
+$$ \text{By the way, } \vec{v} \vec{u} = ccong(\vec{u} \vec{v}) $$
+
+$$ |a + bi| = \sqrt{a^2 + b^2} $$
+
+$$ a + bi = \vec{u} \vec{v} $$
+
+$$ a = \vec{u} \cdot \vec{v} = u_x v_x + u_y v_y $$
+
+$$ bi = \vec{u} ∧ \vec{v} = (u_x v_y - u_y v_x)i $$
+
+$$ || \vec{u} \vec{v} || = \sqrt{(\vec{u} \cdot \vec{v})^2 + (-i \text{ } \vec{u} ∧ \vec{v})^2} = \sqrt{(u_x v_x + u_y v_y)^2 + (u_x v_y - u_y v_x)^2} = \sqrt{u_x v_x u_x v_x + u_x v_x u_y v_y + u_y v_y u_x v_x + u_y v_y u_y v_y + u_x v_y u_x v_y - u_x v_y u_y v_x - u_y v_x u_x v_y + u_y v_x u_y v_x} = \sqrt{u_x^2 v_x^2 + u_x^2 v_y^2 + u_y^2 v_x^2 + u_y^2 v_y^2} = \sqrt{(u_x^2 + u_y^2)(v_x^2 + v_y^2)} = \sqrt{u_x^2 + u_y^2} \sqrt{v_x^2 + v_y^2} $$
+
+$$ || \vec{u} || = \sqrt{u_x^2 + u_y^2} $$
+
+$$ || \vec{v} || = \sqrt{v_x^2 + v_y^2} $$
+
+$$ || \vec{u} \vec{v} || = || \vec{u} || \text{ } || \vec{v} || $$
