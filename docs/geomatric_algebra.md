@@ -20,7 +20,7 @@ $$ (\hat{k} \hat{i})(u_z v_x) + (\hat{k} \hat{j})(u_z v_y) + (\hat{k} \hat{k})(u
 
 ### geometric algebra
 
-[A Swift Introduction to Geometric Algebra](https://www.youtube.com/watch?v=60z_hpEAtD8) exists (literally, that was the name), and it is where these ideas come from (at least in this chapter and the complex numbers chapter coming soon). The prodct of a basis vector $e_1$ and it self is $1$, and the product of two basis vectors $e_1$ and $e_2$ equals $-e_2 e_1$. This means that you can do this at any point in the product of basis vectors (this should make sense). By the way, $U = \hat{i} \hat{j} \hat{k}$
+[A Swift Introduction to Geometric Algebra](https://www.youtube.com/watch?v=60z_hpEAtD8) exists (literally, that was the name), and it's where these ideas come from (at least in this chapter and the [complex numbers chapter](https://silaspe.github.io/maths/geomatric_algebra.html#complex-numbers) coming soon). The prodct of a basis vector $e_i$ and it self is $1$, and the product of two basis vectors $e_i$ and $e_j$ equals $-e_j e_i$ $(i \ne j)$. This means that you can do this at any point in the product of basis vectors (this should make sense). By the way, $U = \hat{i} \hat{j} \hat{k}$
 
 $$ \hat{i} = x $$
 
@@ -348,4 +348,4 @@ $$ w = c + di $$
 
 $$ \text{vectorize} (z) w = \text{vectorize} (zw) $$
 
-$$ \vec{u} \text{ complexify} (\vec{v}) = \text{vectorize} (\text{complexify} (\vec{u}) \text{ complexify} (v) $$
+$$ \vec{u} \text{ complexify} (\vec{v}) = \text{vectorize} (\text{complexify} (\vec{u}) \text{ complexify} (v)) $$
