@@ -370,3 +370,9 @@ $$ || \vec{u} || = \sqrt{u_x^2 + u_y^2} $$
 $$ || \vec{v} || = \sqrt{v_x^2 + v_y^2} $$
 
 $$ || \vec{u} \vec{v} || = || \vec{u} || \text{ } || \vec{v} || $$
+
+$$ \text{Next: the part that I have no idea how to prove!} $$
+
+$$ \vec{u} \vec{v} = || \vec{u} || \text{ } || \vec{v} || e^{i \theta} $$
+
+$$ \theta = \text{ The angle counterclockwise from } \vec{u} \text{ towards } \vec{v}. $$
