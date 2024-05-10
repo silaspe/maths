@@ -295,10 +295,12 @@ v_y \\ \end{bmatrix} = v_x \hat{i} + v_y \hat{j} = v_x x + v_y y $$
 $$ \vec{u} \vec{v} = \begin{pmatrix} (xx) u_x v_x & (xy) u_x v_y \\
 (yx) u_y v_x & (yy) u_y v_y \\ \end{pmatrix} = (u_x v_x + u_y v_y) + (u_x v_y - u_y v_x)i $$
 
-$$ \vec{u} ∧ \vec{v} = i \cdot Det \begin{bmatrix} u_x & u_y \\
-v_x & v_y \\ \end{bmatrix} $$
+
 
 $300$ Lines!
+
+$$ \vec{u} ∧ \vec{v} = i \cdot Det \begin{bmatrix} u_x & u_y \\
+v_x & v_y \\ \end{bmatrix} $$
 
 Here's a [determinat video](https://www.youtube.com/watch?v=Ip3X9LOh2dk) and [linear algebra playlist](https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab) for context (make sure to skip the cross product video) (also, that determinant is probably the only matrix on this page. I'll come back here when I finish the page and put the awnser here: ). ( $\text{ }$ : ) $\text{ }$ Btw.)
 
@@ -385,7 +387,7 @@ $$ \vec{u} \cdot \vec{v} = || \vec{u} || \text{ } || \vec{v} ||  cos(\theta) $$
 
 $$ \vec{u} ∧ \vec{v} = || \vec{u} || \text{ } || \vec{v} ||sin(\theta) i $$
 
-But what I wanted was that $\theta$! But it is ([almost](https://silaspe.github.io/maths/arctan.html)) impossible to find $\theta$ when all you know is $e^{i \theta}$. Wait a minute! If a complex number of the form $e^{i \theta}$ is just a rotation, and if multiplying a vector by a complex number acts like they were both complex numbers (exempt it returns a vector), than you can rotate a vecor $\vec{w}$ by the angle between two unit vectors (or just ones with inverse magnitude, but normalizing them is easier) without having to meven know about complex numbers!
+But what I wanted was that $\theta$! But it is ([almost](https://silaspe.github.io/maths/arctan.html)) impossible to find $\theta$ when all you know is $e^{i \theta}$. Wait a minute! If a complex number of the form $e^{i \theta}$ is just a rotation, and if multiplying a vector by a complex number acts like they were both complex numbers (exempt it returns a vector), than you can rotate a vecor $\vec{w}$ by the angle between two unit vectors (or just ones with inverse magnitude, but normalizing them is easier) without having to even know about complex numbers!
 
 $$ \hat{u} = \frac{\vec{u}}{|| \vec{u} ||} $$
 
@@ -396,3 +398,5 @@ $$ \hat{u} \hat{v} = e^{i \theta} $$
 $$ \text{So, the rotation is} $$
 
 $$ \vec{w} \hat{u} \hat{v}. $$
+
+(Mic drop.) Also, that was on $400$ lines exactly.
