@@ -99,7 +99,7 @@ Also, the cross product only works in $3d$ while this $U \text{ } \vec{u} \times
 
 $100$ lines! But
 
-$$ \vec{u} \vec{v} = \vec{u} \cdot \vec{v} + \vec{u} ∧ \vec{v} $$
+$$ \vec{u} \vec{v} = \vec{u} \cdot \vec{v} + \vec{u} ∧ \vec{v}. $$
 
 ### $\frac{1}{\vec{v}}$ (and $\vec{v}^2$)
 
@@ -351,7 +351,9 @@ $$ \text{vectorize} (z) w = \text{vectorize} (zw) $$
 
 $$ \vec{u} \text{ complexify} (\vec{v}) = \text{vectorize} (\text{complexify} (\vec{u}) \text{ complexify} (v)) $$
 
-Wait a minute! (Which was the catch phrase of sugey (pronounced soo-gey) in the quick introduction that I mentioned earlier.) If multiplying a vector by a complex number acts like comlex number multiplication (rotating and scaling) (exempt it returns a vector, not a complex number), and a vector times a vector is a complex number, that what rotation is that? (Well, it scales by the magnitude and rotates by the angle counterclockwise from the positave $x$ axis.)
+$$ \vec{v} z = \text{vectorize} (\text{complexify} (\vec{v}) z) $$
+
+Wait a minute! (Which was the catch phrase of sugey (pronounced soo-gey) in the quick introduction that I mentioned earlier.) If multiplying a vector by a complex number acts like comlex number multiplication (rotating and scaling) (exempt it returns a vector, not a complex number), and a vector times a vector is a complex number, that what rotation is that? (Well, the rotation and scaling of a complex number scales by the magnitude and rotates by the angle counterclockwise from the positave $x$ axis.)
 
 $$ \text{By the way, } \vec{v} \vec{u} = ccong(\vec{u} \vec{v}) $$
 
@@ -376,3 +378,21 @@ $$ \text{Next: the part that I have no idea how to prove!} $$
 $$ \vec{u} \vec{v} = || \vec{u} || \text{ } || \vec{v} || e^{i \theta} $$
 
 $$ \theta = \text{ The angle counterclockwise from } \vec{u} \text{ towards } \vec{v}. $$
+
+$$ \text{By the way, with this can derive two new equations! (But you probably know the first.)} $$
+
+$$ \vec{u} \cdot \vec{v} = || \vec{u} || \text{ } || \vec{v} ||  cos(\theta) $$
+
+$$ \vec{u} ∧ \vec{v} = || \vec{u} || \text{ } || \vec{v} ||sin(\theta) i $$
+
+But what I wanted was that $\theta$! But it is ([almost](https://silaspe.github.io/maths/arctan.html)) impossible to find $\theta$ when all you know is $e^{i \theta}$. Wait a minute! If a complex number of the form $e^{i \theta}$ is just a rotation, and if multiplying a vector by a complex number acts like they were both complex numbers (exempt it returns a vector), than you can rotate a vecor $\vec{w}$ by the angle between two unit vectors (or just ones with inverse magnitude, but normalizing them is easier) without having to meven know about complex numbers!
+
+$$ \hat{u} = \frac{\vec{u}}{|| \vec{u} ||} $$
+
+$$ \hat{v} = \frac{\vec{v}}{|| \vec{v} ||} $$
+
+$$ \hat{u} \hat{v} = e^{i \theta} $$
+
+$$ \text{So, the rotation is} $$
+
+$$ \vec{w} \hat{u} \hat{v}. $$
