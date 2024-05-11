@@ -10,7 +10,7 @@ $$ (a + bi)^2 = (aa - bb) + (ab + ab)i = (a^2 - b^2) + 2abi $$
 
 $$ (a + bi)r = ar + bri $$
 
-$$ ccong(a + bi) = a - bi $$
+$$ \text{ccong} (a + bi) = a - bi $$
 
 <iframe scrolling="no" title="sine_and_cosine" src="https://www.geogebra.org/material/iframe/id/qvcffjd6/width/1366/height/587/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="1366px" height="587px" style="border:0px;"> </iframe>
 
