@@ -24,7 +24,7 @@ $$ a - bi = re^{-i\theta} $$
 
 $$ \text{Side note!} $$
 
-$$ ccong{e^{i\theta}} = e^{-i\theta} = \frac{1}{e^{i\theta}} $$
+$$ \text{ccong} (e^{i\theta}) = e^{-i\theta} = \frac{1}{e^{i\theta}} $$
 
 $$ \text{End of side note.} $$
 
@@ -34,11 +34,11 @@ $$ \text{Side note!.. Again.} $$
 
 $$ r = |z| \text{ The distance from } 0 \text{, get it?} $$
 
-$$ z ccong(z) = |z|^2 $$
+$$ z \text{ ccong} (z) = |z|^2 $$
 
-$$ ccong(z) = \frac{|z|^2}{z} $$
+$$ \text{ccong} (z) = \frac{|z|^2}{z} $$
 
-$$ \frac{1}{z} = \frac{|z|^2}{ccong(z)} $$
+$$ \frac{1}{z} = \frac{|z|^2}{\text{ccong} (z)} $$
 
 $$ \text{End of side note... Again.} $$
 
