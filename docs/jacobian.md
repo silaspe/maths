@@ -157,7 +157,7 @@ $$ f\prime (z) = 2x + 2yi = 2z $$
 
 another one!
 
-$$ f(z) = ccong(z) $$
+$$ f(z) = \text{ccong} (z) $$
 
 $$ f(x + yi) = x - yi $$
 
@@ -176,4 +176,4 @@ $$ 0 = 0 $$
 $$ f\prime (z) = \begin{bmatrix}  1 & 0 \\
 0 & -1 \end{bmatrix} $$
 
-in conclution, $z^2$ has a derivitave, and $ccong(z)$ does not.
+in conclution, $z^2$ has a derivitave, and $\text{ccong} (z)$ does not.
