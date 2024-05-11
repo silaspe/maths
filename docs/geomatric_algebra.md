@@ -357,7 +357,7 @@ $$ \vec{v} z = \text{vectorize} (\text{complexify} (\vec{v}) z) $$
 
 Wait a minute! (Which was the catch phrase of sugey (pronounced soo-gey) in the quick introduction that I mentioned earlier.) If multiplying a vector by a complex number acts like comlex number multiplication (rotating and scaling) (exempt it returns a vector, not a complex number), and a vector times a vector is a complex number, that what rotation is that? (Well, the rotation and scaling of a complex number scales by the magnitude and rotates by the angle counterclockwise from the positave $x$ axis.)
 
-$$ \text{By the way, } \vec{v} \vec{u} = ccong(\vec{u} \vec{v}) $$
+$$ \text{By the way, } \vec{v} \vec{u} = \text{ccong} (\vec{u} \vec{v}) $$
 
 $$ |a + bi| = \sqrt{a^2 + b^2} $$
 
@@ -400,3 +400,23 @@ $$ \text{So, the rotation is} $$
 $$ \vec{w} \hat{u} \hat{v}. $$
 
 (Mic drop.) Also, that was on $400$ lines exactly.
+
+$$ \text{One more thing before maxwell's equation and rotors.} $$
+
+$$ (c + di)(ax + by) = cax + cby + diax + diby = \begin{pmatrix} ca (x) & cb (y) \\
+da (ix) & db (iy) \\ \end{pmatrix} = \begin{pmatrix} ca (x) & cb (y) \\
+da (xyx) & db (xyy) \\ \end{pmatrix} = \begin{pmatrix} ca (x) & cb (y) \\
+-da (yxx) & db (x) \\ \end{pmatrix} = \begin{pmatrix} ca (x) & cb (y) \\
+-da (y) & db (x) \\ \end{pmatrix} = (ca + db)x + (cb - da) y = (ax + by)(c - di) $$
+
+$$ z \vec{v} = \vec{v} \text{ ccong} (z) $$
+
+$$ \text{But if you remember, } \vec{v} \vec{u} = \text{ccong} (\vec{u} \vec{v}) \text{ and } \vec{u} \vec{v} \text{ is a complex number, so...} $$
+
+$$ \vec{u} \vec{v} \vec{w} = \vec{w} \text{ccong} (\vec{u} \vec{v}) = \vec{w} \vec{v} \vec{u} $$
+
+$$ \text{One more thing.} $$
+
+$$ \theta (\vec{u}, \vec{v}) = \text{ The angle counterclockwise from } \vec{u} \text{ towards } \vec{v}. $$
+
+$$ \vec{w} \vec{u} \vec{v} = \vec{w} \text{ Scaled by } || \vec{u} || \text{ and } || \vec{v} || \text{, and rotated by } \theta (\vec{u}, \vec{v})  $$
