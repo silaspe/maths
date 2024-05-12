@@ -23,7 +23,7 @@ nav:
   - The strand puzzle: the_strand_puzzle.md
   - The infamous "arctan puzzle": arctan.md
   - Modular arithmetic: mod.md
-  - Secretly clifford algebra: geomatric_algebra.md
+  - Geomatric algebra: geomatric_algebra.md
 
 theme:
   name: material
