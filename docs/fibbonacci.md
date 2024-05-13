@@ -193,7 +193,7 @@ $$ L_n \approx \phi^n $$
 
 ### one more thing
 
-$$ \text{how would one combine } \phi^n = F_n \phi + F_{n - 1} \text{ and } \phi^n = \frac{L_n \phi + L_{n - 1}}{\sqrt{5}}}? $$
+$$ \text{how would one combine } \phi^n = F_n \phi + F_{n - 1} \text{ and } \phi^n = \frac{L_n \phi + L_{n - 1}}{\sqrt{5}}? $$
 
 $$ \text{for one, rearrange the second one} $$
 
