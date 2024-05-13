@@ -365,7 +365,7 @@ $$ a + bi = \vec{u} \vec{v} $$
 
 $$ a = \vec{u} \cdot \vec{v} = u_x v_x + u_y v_y $$
 
-$$ bi = \vec{u} ∧ \vec{v} = (u_x v_y - u_y v_x)i $$
+$$ bi = \vec{u} ∧ \vec{v} = (u_x v_y - u_y v_x)i \text{ (This also means that } b = u_x v_y - u_y v_x = \vec{u} \times \vec{v} = -i \text{ } \vec{u} ∧ \vec{v} \text{).} $$
 
 $$ || \vec{u} \vec{v} || = \sqrt{(\vec{u} \cdot \vec{v})^2 + (-i \text{ } \vec{u} ∧ \vec{v})^2} = \sqrt{(u_x v_x + u_y v_y)^2 + (u_x v_y - u_y v_x)^2} = \sqrt{u_x v_x u_x v_x + u_x v_x u_y v_y + u_y v_y u_x v_x + u_y v_y u_y v_y + u_x v_y u_x v_y - u_x v_y u_y v_x - u_y v_x u_x v_y + u_y v_x u_y v_x} = \sqrt{u_x^2 v_x^2 + u_x^2 v_y^2 + u_y^2 v_x^2 + u_y^2 v_y^2} = \sqrt{(u_x^2 + u_y^2)(v_x^2 + v_y^2)} = \sqrt{u_x^2 + u_y^2} \sqrt{v_x^2 + v_y^2} $$
 
@@ -387,7 +387,7 @@ $$ \vec{u} \cdot \vec{v} = || \vec{u} || \text{ } || \vec{v} ||  cos(\theta) $$
 
 $$ \vec{u} ∧ \vec{v} = || \vec{u} || \text{ } || \vec{v} ||sin(\theta) i $$
 
-But what I wanted was that $\theta$! But it is ([almost](https://silaspe.github.io/maths/arctan.html)) impossible to find $\theta$ when all you know is $e^{i \theta}$. Wait a minute! If a complex number of the form $e^{i \theta}$ is just a rotation, and if multiplying a vector by a complex number acts like they were both complex numbers (exempt it returns a vector), than you can rotate a vecor $\vec{w}$ by the angle between two unit vectors (or just ones with inverse magnitude, but normalizing them is easier) without having to even know about complex numbers!
+But what I wanted was that $\theta!$ But it is ([almost](https://silaspe.github.io/maths/arctan.html)) impossible to find $\theta$ when all you know is $e^{i \theta}$. Wait a minute! If a complex number of the form $e^{i \theta}$ is just a rotation, and if multiplying a vector by a complex number acts like they were both complex numbers (exempt it returns a vector), than you can rotate a vecor $\vec{w}$ by the angle between two unit vectors (or just ones with inverse magnitude, but normalizing them is easier) without having to even know about complex numbers!
 
 $$ \hat{u} = \frac{\vec{u}}{|| \vec{u} ||} $$
 
@@ -413,10 +413,24 @@ $$ z \vec{v} = \vec{v} \text{ ccong} (z) $$
 
 $$ \text{But if you remember, } \vec{v} \vec{u} = \text{ccong} (\vec{u} \vec{v}) \text{ and } \vec{u} \vec{v} \text{ is a complex number, so...} $$
 
-$$ \vec{u} \vec{v} \vec{w} = \vec{w} \text{ccong} (\vec{u} \vec{v}) = \vec{w} \vec{v} \vec{u} $$
+$$ \vec{u} \vec{v} \vec{w} = \vec{w} \text{ ccong} (\vec{u} \vec{v}) = \vec{w} \vec{v} \vec{u} $$
 
 $$ \text{One more thing.} $$
 
 $$ \theta (\vec{u}, \vec{v}) = \text{ The angle counterclockwise from } \vec{u} \text{ towards } \vec{v}. $$
 
-$$ \vec{w} \vec{u} \vec{v} = \vec{w} \text{ Scaled by } || \vec{u} || \text{ and } || \vec{v} || \text{, and rotated by } \theta (\vec{u}, \vec{v})  $$
+$$ \vec{w} \vec{u} \vec{v} = \vec{w} \text{ Scaled by the length of } \vec{u} \text{ and } \vec{v} \text{, and rotated by } \theta (\vec{u}, \vec{v}).  $$
+
+### Rotors
+
+A rotor is a way to rotate a vector by any angle in any plane (Yes, plane. I think it makes the same if not more sense to rotate in a plane. I also think that this is simalar to the ∧ v.s. $\times$ Product.) in any dimention. Let's start with the simplest possible rotor I can think of, in $3d$, $90$°, $x$ - $y$ plane. (I'll call $\vec{v}$ rotated by the name of $\vec{v} \prime$)
+
+$$ \vec{v} = v_x x + v_y y + v_z z $$
+
+$$ \vec{v} \prime = v_x y - v_y x + v_z z $$
+
+$$ \vec{v} \prime = \vec{v} xy ? $$
+
+$$ \vec{v} xy = (v_x x + v_y y + v_z z) xy = v_x xxy + v_y yxy + v_z zxy = v_x y - v_y xyy - v_z xzy = (v_x) y - (v_y) x + (v_z) xyz $$
+
+$$ \text{What was that thing he said at this point? Oh right, it was: Well, it almost worked, the } x \text{ and the } y \text{ coordinates got rotated correctly, but the } z \text{ coordinate got turned into this trivector, let's try something else.} $$
