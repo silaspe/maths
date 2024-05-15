@@ -20,7 +20,7 @@ $$ (\hat{k} \hat{i})(u_z v_x) + (\hat{k} \hat{j})(u_z v_y) + (\hat{k} \hat{k})(u
 
 ### geometric algebra
 
-[A Swift Introduction to Geometric Algebra](https://www.youtube.com/watch?v=60z_hpEAtD8) exists (literally, that was the name), and it's where these ideas come from (at least in this chapter and the [complex numbers chapter](https://silaspe.github.io/maths/geomatric_algebra.html#complex-numbers) coming soon). The prodct of a basis vector $e_i$ and it self is $1$, and the product of two basis vectors $e_i$ and $e_j$ equals $-e_j e_i$ $(i \ne j)$. This means that you can do this at any point in the product of basis vectors (this should make sense). By the way, $U = \hat{i} \hat{j} \hat{k}$
+WARNING! This page requires knowing [linear algebra](https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab), mostly just vectors, and the first part of [A Swift Introduction to Geometric Algebra](https://www.youtube.com/watch?v=60z_hpEAtD8&t=179s) (literally, that was the name) to know what a $k$-vector is. (Also, it's where these ideas come from (at least in this chapter and the [complex numbers chapter](https://silaspe.github.io/maths/geomatric_algebra.html#complex-numbers) coming soon).) Here is the definition for the product of basis vectors: The prodct of a basis vector $e_i$ and it self is $1$, and the product of two basis vectors $e_i$ and $e_j$ equals $-e_j e_i (i \ne j)$. This means that you can do this at any point in the product of basis vectors (this should make sense). By the way, $U = \hat{i} \hat{j} \hat{k}$
 
 $$ \hat{i} = x $$
 
@@ -451,6 +451,10 @@ $$ yx \vec{v} xy = - v_x x - v_y y + v_z z $$
 
 $$ \text{ The } z \text{ coordinate is correct! Success! But the } x \text{ and } y \text{ got messed up, of coarse they did, we rotated twice. (Once for } yx \text{ on the left, and once for } xy \text{ on the right.) let's add back in that angle } \theta. $$
 
-$$ \text{First, replace } xy \text{ and } yx \text{ with } cos(\theta) x + sin(\theta) y \text{ and } cos(-\theta) x + sin(-\theta) y \text{ respectively.} $$
+Do you remember [euler's identity](https://silaspe.github.io/maths/complex.html), $e^{i \theta} = cos(\theta) + isin(\theta)$ right? Well, this actually for any $i$ whose square is $-1$, the thing is that $xy^2 = xyxy = -xxyy = -1$, so
 
-$$ \text{(The second one can simplify to } cos(\theta) x - sin(\theta) y \text{).} $$
+$$ e^{xy \theta} = cos(\theta) + xy \text{ } sin(\theta). $$
+
+$$ \text{So, replace } xy \text{ and } yx \text{ with } cos(\theta) + xy \text{ } sin(\theta) \text{ and } cos(-\theta) + xy \text{ } sin(-\theta) \text{ respectively.} $$
+
+$$ \text{(The second one can simplify to } cos(\theta) - xy \text{ } sin(\theta) \text{).} $$
