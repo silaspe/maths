@@ -138,11 +138,6 @@ $$ \vec{u} \vec{v} = \begin{bmatrix} (xx) u_1 v_1 & (xy) u_1 v_2 & (xz) u_1 v_3 
 (wx) u_4 v_1 & (wy) u_4 v_2 & (wz) u_4 v_3 & u_4 v_4 & \dots & (w e_d) u_4 v_d \\
 \vdots & \vdots & \vdots & \vdots & \ddots & \vdots \\
 (e_d x) u_d v_1 & (e_d y) u_d v_2 & (e_d z) u_d v_3 & (e_d w) u_d v_4 & \dots & u_d v_d \\ \end{bmatrix} = (u_1 v_1 + u_2 v_2 + u_3 v_3 + u_4 v_4 + \dots + u_d v_d) + \begin{bmatrix}  & (xy) u_1 v_2 & (xz) u_1 v_3 & (xw) u_1 v_4 & \dots & (x e_d) u_1 v_d  \\
-(yx) u_2 v_1 &  & (yz) u_2 v_3 & (yw) u_2 v_4 & \dots & (y e_d) u_2 v_d \\
-(zx) u_3 v_1 & (zy) u_3 v_2 &  & (zw) u_3 v_4 & \dots & (z e_d) u_3 v_d \\
-(wx) u_4 v_1 & (wy) u_4 v_2 & (wz) u_4 v_3 &  & \dots & (w e_d) u_4 v_d \\
-\vdots & \vdots & \vdots & \vdots &  & \vdots \\
-(e_d x) u_d v_1 & (e_d y) u_d v_2 & (e_d z) u_d v_3 & (e_d w) u_d v_4 & \dots &  \\ \end{bmatrix} = (u_1 v_1 + u_2 v_2 + u_3 v_3 + u_4 v_4 + \dots + u_d v_d) + \begin{bmatrix}  & (xy) u_1 v_2 & (xz) u_1 v_3 & (xw) u_1 v_4 & \dots & (x e_d) u_1 v_d  \\
 -(xy) u_2 v_1 &  & (yz) u_2 v_3 & (yw) u_2 v_4 & \dots & (y e_d) u_2 v_d \\
 -(xz) u_3 v_1 & -(yz) u_3 v_2 &  & (zw) u_3 v_4 & \dots & (z e_d) u_3 v_d \\
 -(xw) u_4 v_1 & -(yw) u_4 v_2 & -(zw) u_4 v_3 &  & \dots & (w e_d) u_4 v_d \\
@@ -449,12 +444,18 @@ $$ yx v_z zxy = v_z z $$
 
 $$ yx \vec{v} xy = - v_x x - v_y y + v_z z $$
 
-$$ \text{ The } z \text{ coordinate is correct! Success! But the } x \text{ and } y \text{ got messed up, of coarse they did, we rotated twice. (Once for } yx \text{ on the left, and once for } xy \text{ on the right.) let's add back in that angle } \theta. $$
+$$ \text{ The } z \text{ coordinate is correct! Success! But the } x \text{ and } y \text{ got messed up, of coarse they did, we rotated twice. (Once for } yx \text{ on the left, and once for } xy \text{ on the right.) let's add back in that angle } \theta \text{ to prove that we did rotate twice.} $$
 
 Do you remember [euler's identity](https://silaspe.github.io/maths/complex.html), $e^{i \theta} = cos(\theta) + isin(\theta)$ right? Well, this actually for any $i$ whose square is $-1$, the thing is that $xy^2 = xyxy = -xxyy = -1$, so
 
 $$ e^{xy \theta} = cos(\theta) + xy \text{ } sin(\theta). $$
 
+$$ \text{And just to make sure, let's test for } \theta = 90° $$
+
+$$ cos(90°) + xy \text{ } sin(90°) = 0 + xy \text{ } 1 = xy. $$
+
 $$ \text{So, replace } xy \text{ and } yx \text{ with } cos(\theta) + xy \text{ } sin(\theta) \text{ and } cos(-\theta) + xy \text{ } sin(-\theta) \text{ respectively.} $$
 
 $$ \text{(The second one can simplify to } cos(\theta) - xy \text{ } sin(\theta) \text{).} $$
+
+$$ (cos(\theta) - xy \text{ } sin(\theta)) \text{ } \vec{v} \text{ } (cos(\theta) + xy \text{ } sin(\theta)) = (cos(\theta) - xy \text{ } sin(\theta)) (v_x x + v_y y + v_z z) (cos(\theta) + xy \text{ } sin(\theta)) = cos(\theta) v_x x \text{ } cos(\theta) + cos(\theta) v_x xxy \text{ } sin(\theta) - xy \text{ } sin(\theta) v_x x \text{ } cos(\theta) - xy \text{ } sin(\theta) v_x xxy \text{ } sin(\theta) + cos(\theta) v_y y \text{ } cos(\theta) + cos(\theta) v_y yxy \text{ } sin(\theta) - xy \text{ } sin(\theta) v_y y \text{ } cos(\theta) - xy \text{ } sin(\theta) v_y yxy \text{ } sin(\theta) + cos(\theta) v_z z \text{ } cos(\theta) + cos(\theta) v_z zxy \text{ } sin(\theta) - xy \text{ } sin(\theta) v_z z \text{ } cos(\theta) - xy \text{ } sin(\theta) v_z zxy \text{ } sin(\theta) $$
