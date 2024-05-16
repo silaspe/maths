@@ -458,4 +458,24 @@ $$ \text{So, replace } xy \text{ and } yx \text{ with } cos(\theta) + xy \text{ 
 
 $$ \text{(The second one can simplify to } cos(\theta) - xy \text{ } sin(\theta) \text{).} $$
 
-$$ (cos(\theta) - xy \text{ } sin(\theta)) \text{ } \vec{v} \text{ } (cos(\theta) + xy \text{ } sin(\theta)) = (cos(\theta) - xy \text{ } sin(\theta)) (v_x x + v_y y + v_z z) (cos(\theta) + xy \text{ } sin(\theta)) = cos(\theta) v_x x \text{ } cos(\theta) + cos(\theta) v_x xxy \text{ } sin(\theta) - xy \text{ } sin(\theta) v_x x \text{ } cos(\theta) - xy \text{ } sin(\theta) v_x xxy \text{ } sin(\theta) + cos(\theta) v_y y \text{ } cos(\theta) + cos(\theta) v_y yxy \text{ } sin(\theta) - xy \text{ } sin(\theta) v_y y \text{ } cos(\theta) - xy \text{ } sin(\theta) v_y yxy \text{ } sin(\theta) + cos(\theta) v_z z \text{ } cos(\theta) + cos(\theta) v_z zxy \text{ } sin(\theta) - xy \text{ } sin(\theta) v_z z \text{ } cos(\theta) - xy \text{ } sin(\theta) v_z zxy \text{ } sin(\theta) $$
+$$ \vec{v} \prime = (v_x cos(\theta) - v_y sin(\theta))x + (v_y cos(\theta) + v_x sin(\theta))y + v_z z $$
+
+$$ (cos(\theta) - xy \text{ } sin(\theta)) \text{ } \vec{v} \text{ } (cos(\theta) + xy \text{ } sin(\theta)) = (cos(\theta) - xy \text{ } sin(\theta)) (v_x x + v_y y + v_z z) (cos(\theta) + xy \text{ } sin(\theta)) = cos(\theta) v_x x \text{ } cos(\theta) + cos(\theta) v_x xxy \text{ } sin(\theta) - xy \text{ } sin(\theta) v_x x \text{ } cos(\theta) - xy \text{ } sin(\theta) v_x xxy \text{ } sin(\theta) + cos(\theta) v_y y \text{ } cos(\theta) + cos(\theta) v_y yxy \text{ } sin(\theta) - xy \text{ } sin(\theta) v_y y \text{ } cos(\theta) - xy \text{ } sin(\theta) v_y yxy \text{ } sin(\theta) + cos(\theta) v_z z \text{ } cos(\theta) + cos(\theta) v_z zxy \text{ } sin(\theta) - xy \text{ } sin(\theta) v_z z \text{ } cos(\theta) - xy \text{ } sin(\theta) v_z zxy \text{ } sin(\theta) = (v_x cos(\theta) cos(\theta)) x + (v_x cos(\theta) sin(\theta)) xxy - (v_x sin(\theta) cos(\theta)) xyx - (v_x sin(\theta) sin(\theta)) xyxxy + (v_y cos(\theta) cos(\theta)) y + (v_y cos(\theta) sin(\theta)) yxy - (v_y sin(\theta) cos(\theta)) xyy - (v_y sin(\theta) sin(\theta)) xyyxy + (v_z cos(\theta) cos(\theta)) z + (v_z cos(\theta) sin(\theta)) zxy - (v_z sin(\theta) cos(\theta)) xyz - (v_z sin(\theta) sin(\theta)) xyzxy $$
+
+$$ xxy = y $$
+
+$$ xyx = -yxx = -y $$
+
+$$ xyxxy = xyy = x $$
+
+$$ yxy = -yyx = -x $$
+
+$$ xyy = x $$
+
+$$ xyyxy = xxy = y $$
+
+$$ zxy = -xzy = xyz $$
+
+$$ xyzxy = -xyxzy = xxyzy = yzy = -zyy = -z $$
+
+$$ (cos(\theta) - xy \text{ } sin(\theta)) \text{ } \vec{v} \text{ } (cos(\theta) + xy \text{ } sin(\theta)) = (v_x cos(\theta) cos(\theta)) x + (v_x cos(\theta) sin(\theta)) y + (v_x sin(\theta) cos(\theta)) y - (v_x sin(\theta) sin(\theta)) x + (v_y cos(\theta) cos(\theta)) y - (v_y cos(\theta) sin(\theta)) x - (v_y sin(\theta) cos(\theta)) x - (v_y sin(\theta) sin(\theta)) y + (v_z cos(\theta) cos(\theta)) z + (v_z cos(\theta) sin(\theta)) xyz - (v_z sin(\theta) cos(\theta)) xyz + (v_z sin(\theta) sin(\theta)) z $$
