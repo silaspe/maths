@@ -22,37 +22,37 @@ $$ (\hat{k} \hat{i})(u_z v_x) + (\hat{k} \hat{j})(u_z v_y) + (\hat{k} \hat{k})(u
 
 WARNING! This page requires knowing [linear algebra](https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab), mostly just vectors, and the first part of [A Swift Introduction to Geometric Algebra](https://www.youtube.com/watch?v=60z_hpEAtD8&t=179s) (literally, that was the name) to know what a $k$-vector is. (Also, it's where these ideas come from (at least in this chapter and the [complex numbers chapter](https://silaspe.github.io/maths/geomatric_algebra.html#complex-numbers) coming soon).) Here is the definition for the product of basis vectors: The prodct of a basis vector $e_i$ and it self is $1$, and the product of two basis vectors $e_i$ and $e_j$ equals $-e_j e_i (i \ne j)$. This means that you can do this at any point in the product of basis vectors (this should make sense). By the way, $U = \hat{i} \hat{j} \hat{k}$
 
-$$ \hat{i} = x $$
+$$ \hat{i} = \hat{x} $$
 
-$$ \hat{j} = y $$
+$$ \hat{j} = \hat{y} $$
 
-$$ \hat{k} = z $$
+$$ \hat{k} = \hat{z} $$
 
 $$ \text{Now is about as good of a time as any to simplify the product.} $$
 
-$$ \vec{u} \vec{v} = \begin{pmatrix} (xx)(u_x v_x) + (xy)(u_x v_y) + (xz)(u_x v_z) +  \\
-(yx)(u_y v_x) + (yy)(u_y v_y) + (yz)(u_y v_z) + \\
-(zx)(u_z v_x) + (zy)(u_z v_y) + (zz)(u_z v_z) \\ \end{pmatrix} = \begin{pmatrix} (xx)(u_x v_x) + (xy)(u_x v_y) - (zx)(u_x v_z) -  \\
-(xy)(u_y v_x) + (yy)(u_y v_y) + (yz)(u_y v_z) + \\
-(zx)(u_z v_x) - (yz)(u_z v_y) + (zz)(u_z v_z) \\ \end{pmatrix} = \begin{pmatrix} u_x v_x + (xy)(u_x v_y) - (zx)(u_x v_z) -  \\
-(xy)(u_y v_x) + u_y v_y + (yz)(u_y v_z) + \\
-(zx)(u_z v_x) - (yz)(u_z v_y) + u_z v_z \\ \end{pmatrix} = u_x v_x +  u_y v_y + u_z v_z + \begin{pmatrix} (xy)(u_x v_y - u_y v_x) +  \\
-(yz)(u_y v_z - u_z v_y) + \\
-(zx)(u_z v_x - u_x v_z) \\ \end{pmatrix} = \vec{u} \cdot \vec{v} + \begin{pmatrix} (xy)(u_x v_y - u_y v_x) +  \\
-(yz)(u_y v_z - u_z v_y) + \\
-(zx)(u_z v_x - u_x v_z) \\ \end{pmatrix} $$
+$$ \vec{u} \vec{v} = \begin{pmatrix} (\hat{x} \hat{x})(u_x v_x) + (\hat{x} \hat{y})(u_x v_y) + (\hat{x} \hat{z})(u_x v_z) +  \\
+(\hat{y} \hat{x})(u_y v_x) + (\hat{y} \hat{y})(u_y v_y) + (\hat{y} \hat{z})(u_y v_z) + \\
+(\hat{z} \hat{x})(u_z v_x) + (\hat{z} \hat{y})(u_z v_y) + (\hat{z} \hat{z})(u_z v_z) \\ \end{pmatrix} = \begin{pmatrix} (\hat{x} \hat{x})(u_x v_x) + (\hat{x} \hat{y})(u_x v_y) - (\hat{z} \hat{x})(u_x v_z) -  \\
+(\hat{x} \hat{y})(u_y v_x) + (\hat{y} \hat{y})(u_y v_y) + (\hat{y} \hat{z})(u_y v_z) + \\
+(\hat{z} \hat{x})(u_z v_x) - (\hat{y} \hat{z})(u_z v_y) + (\hat{z} \hat{z})(u_z v_z) \\ \end{pmatrix} = \begin{pmatrix} u_x v_x + (\hat{x} \hat{y})(u_x v_y) - (\hat{z} \hat{x})(u_x v_z) -  \\
+(\hat{x} \hat{y})(u_y v_x) + u_y v_y + (\hat{y} \hat{z})(u_y v_z) + \\
+(\hat{z} \hat{x})(u_z v_x) - (\hat{y} \hat{z})(u_z v_y) + u_z v_z \\ \end{pmatrix} = u_x v_x +  u_y v_y + u_z v_z + \begin{pmatrix} (\hat{x} \hat{y})(u_x v_y - u_y v_x) +  \\
+(\hat{y} \hat{z})(u_y v_z - u_z v_y) + \\
+(\hat{z} \hat{x})(u_z v_x - u_x v_z) \\ \end{pmatrix} = \vec{u} \cdot \vec{v} + \begin{pmatrix} (\hat{x} \hat{y})(u_x v_y - u_y v_x) +  \\
+(\hat{y} \hat{z})(u_y v_z - u_z v_y) + \\
+(\hat{z} \hat{x})(u_z v_x - u_x v_z) \\ \end{pmatrix} $$
 
 $$ \text{But now, I need to turn a bivector into a vector. What about that } U \text{ thing?} $$
 
 Puzzle time! Prove that $U \vec{v} = \vec{v} U$.
 
-$$ U^2 = xyzxyz = -xyzxzy = xyzzxy = xyxy = -xxyy $$
+$$ U^2 = \hat{x} \hat{y} \hat{z} \hat{x} \hat{y} \hat{z} = -\hat{x} \hat{y} \hat{z} \hat{x} \hat{z} \hat{y} = \hat{x} \hat{y} \hat{z} \hat{z} \hat{x} \hat{y} = \hat{x} \hat{y} \hat{x} \hat{y} = -\hat{x} \hat{x} \hat{y} \hat{y} $$
 
 $$ U^2 = -1 $$
 
 $U$ is usually called $i$ for this reason.
 
-$$ U^3 = xyzxyzxyz = -xyxzyzxyz = xxyzyzxyz = yzyzxyz = -yyzzxyz = -xyz = -U = xzy = -zxy = zyx $$
+$$ U^3 = \hat{x} \hat{y} \hat{z} \hat{x} \hat{y} \hat{z} \hat{x} \hat{y} \hat{z} = -\hat{x} \hat{y} \hat{x} \hat{z} \hat{y} \hat{z} \hat{x} \hat{y} \hat{z} = \hat{x} \hat{x} \hat{y} \hat{z} \hat{y} \hat{z} \hat{x} \hat{y} \hat{z} = \hat{y} \hat{z} \hat{y} \hat{z} \hat{x} \hat{y} \hat{z} = -\hat{y} \hat{y} \hat{z} \hat{z} \hat{x} \hat{y} \hat{z} = -\hat{x} \hat{y} \hat{z} = -U = \hat{x} \hat{z} \hat{y} = -\hat{z} \hat{x} \hat{y} = \hat{z} \hat{y} \hat{x} $$
 
 $$ U^4 = U^2 U^2 = (-1) (-1) = 1 $$
 
@@ -60,29 +60,29 @@ $$ U^4 = U^3 U = (-U) U = -U^2 = -(-1) = 1 $$
 
 .
 
-$$ U^1 = U = xyz $$
+$$ U^1 = U = \hat{x} \hat{y} \hat{z} $$
 
 $$ U^2 = 1 $$
 
-$$ U^3 = -U = zyx = -xyz $$
+$$ U^3 = -U = \hat{z} \hat{y} \hat{x} = -\hat{x} \hat{y} \hat{z} $$
 
 $$ U^4 = (-U) U  = 1 $$
 
 .
 
-$$ xy = xyzz = Uz $$
+$$ \hat{x} \hat{y} = \hat{x} \hat{y} \hat{z} \hat{z} = U \hat{z} $$
 
-$$ yz = yzxx = -yxzx = xyzx = Ux $$
+$$ \hat{y} \hat{z} = \hat{y} \hat{z} \hat{x} \hat{x} = -\hat{y} \hat{x} \hat{z} \hat{x} = \hat{x} \hat{y} \hat{z} \hat{x} = U \hat{x} $$
 
-$$ zx = zxyy = -zyxy = -(-U)y = Uy $$
+$$ \hat{z} \hat{x} = \hat{z} \hat{x} \hat{y} \hat{y} = -\hat{z} \hat{y} \hat{x} \hat{y} = -(-U) \hat{y} = U \hat{y} $$
 
 $$ \text{Yes! Now I can finaly solve the puzzle.} $$
 
-$$ \vec{u} \vec{v} = \vec{u} \cdot \vec{v} + \begin{pmatrix} (Uz)(u_x v_y - u_y v_x) +  \\
-(Ux)(u_y v_z - u_z v_y) + \\
-(Uy)(u_z v_x - u_x v_z) \\ \end{pmatrix} = \vec{u} \cdot \vec{v} + U \begin{pmatrix} x(u_y v_z - u_z v_y) +  \\
-y(u_z v_x - u_x v_z) + \\
-z(u_x v_y - u_y v_x) \\ \end{pmatrix} = \vec{u} \cdot \vec{v} + U \begin{bmatrix} u_y v_z - u_z v_y \\
+$$ \vec{u} \vec{v} = \vec{u} \cdot \vec{v} + \begin{pmatrix} (U \hat{z})(u_x v_y - u_y v_x) +  \\
+(U \hat{x})(u_y v_z - u_z v_y) + \\
+(U \hat{y})(u_z v_x - u_x v_z) \\ \end{pmatrix} = \vec{u} \cdot \vec{v} + U \begin{pmatrix} \hat{x} (u_y v_z - u_z v_y) +  \\
+\hat{y} (u_z v_x - u_x v_z) + \\
+\hat{z} (u_x v_y - u_y v_x) \\ \end{pmatrix} = \vec{u} \cdot \vec{v} + U \begin{bmatrix} u_y v_z - u_z v_y \\
 u_z v_x - u_x v_z \\
 u_x v_y - u_y v_x \\ \end{bmatrix} $$
 
@@ -90,7 +90,7 @@ u_x v_y - u_y v_x \\ \end{bmatrix} $$
 
 $$ \vec{u} \vec{v} = \vec{u} \cdot \vec{v} + U \text{ } \vec{u} \times \vec{v} $$
 
-$$ \vec{u} \vec{v} = \vec{u} \cdot \vec{v} + \hat{i} \hat{j} \hat{k} \text{ } \vec{u} \times \vec{v} $$
+$$ \vec{u} \vec{v} = \vec{u} \cdot \vec{v} + \hat{x} \hat{y} \hat{z} \text{ } \vec{u} \times \vec{v} $$
 
 $$ \vec{u} \vec{v} = \vec{u} \cdot \vec{v} + \vec{u} \times \vec{v} \text{ } i $$
 
