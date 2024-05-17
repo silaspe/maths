@@ -105,13 +105,13 @@ $$ \vec{u} \vec{v} = \vec{u} \cdot \vec{v} + \vec{u} ∧ \vec{v}. $$
 
 $$ \text{Lets say that we are in dimension } d \text{. First, basis vectors} $$
 
-$$ e_1 = \hat{i} = x $$
+$$ e_1 = \hat{i} = \hat{x} $$
 
-$$ e_2 = \hat{j} = y $$
+$$ e_2 = \hat{j} = \hat{y} $$
 
-$$ e_3 = \hat{k} = z $$
+$$ e_3 = \hat{k} = \hat{z} $$
 
-$$ e_4 = \hat{l} = w $$
+$$ e_4 = \hat{l} = \hat{w} $$
 
 $$ \vdots $$
 
@@ -127,33 +127,38 @@ v_3 \\
 \vdots \\
 v_d \\ \end{bmatrix} = \sum\limits_{n = 1}^{d} v_n e_n $$
 
-$$ \vec{u} \vec{v} = \begin{bmatrix} (xx) u_1 v_1 & (xy) u_1 v_2 & (xz) u_1 v_3 & (xw) u_1 v_4 & \dots & (x e_d) u_1 v_d  \\
-(yx) u_2 v_1 & (yy) u_2 v_2 & (yz) u_2 v_3 & (yw) u_2 v_4 & \dots & (y e_d) u_2 v_d \\
-(zx) u_3 v_1 & (zy) u_3 v_2 & (zz) u_3 v_3 & (zw) u_3 v_4 & \dots & (z e_d) u_3 v_d \\
-(wx) u_4 v_1 & (wy) u_4 v_2 & (wz) u_4 v_3 & (ww) u_4 v_4 & \dots & (w e_d) u_4 v_d \\
+$$ \vec{u} \vec{v} = \begin{bmatrix} (\hat{x} \hat{x}) u_1 v_1 & (\hat{x} \hat{y}) u_1 v_2 & (\hat{x} \hat{z}) u_1 v_3 & (\hat{x} \hat{w}) u_1 v_4 & \dots & (\hat{x} e_d) u_1 v_d  \\
+(\hat{y} \hat{x}) u_2 v_1 & (\hat{y} \hat{y}) u_2 v_2 & (\hat{y} \hat{z}) u_2 v_3 & (\hat{y} \hat{w}) u_2 v_4 & \dots & (\hat{y} e_d) u_2 v_d \\
+(\hat{z} \hat{x}) u_3 v_1 & (\hat{z} \hat{y}) u_3 v_2 & (\hat{z} \hat{z}) u_3 v_3 & (\hat{z} \hat{w}) u_3 v_4 & \dots & (\hat{z} e_d) u_3 v_d \\
+(\hat{w} \hat{x}) u_4 v_1 & (\hat{w} \hat{y}) u_4 v_2 & (\hat{w} \hat{z}) u_4 v_3 & (\hat{w} \hat{w}) u_4 v_4 & \dots & (\hat{w} e_d) u_4 v_d \\
 \vdots & \vdots & \vdots & \vdots & \ddots & \vdots \\
-(e_d x) u_d v_1 & (e_d y) u_d v_2 & (e_d z) u_d v_3 & (e_d w) u_d v_4 & \dots & (e_d e_d) u_d v_d \\ \end{bmatrix} = \begin{bmatrix} u_1 v_1 & (xy) u_1 v_2 & (xz) u_1 v_3 & (xw) u_1 v_4 & \dots & (x e_d) u_1 v_d  \\
-(yx) u_2 v_1 & u_2 v_2 & (yz) u_2 v_3 & (yw) u_2 v_4 & \dots & (y e_d) u_2 v_d \\
-(zx) u_3 v_1 & (zy) u_3 v_2 & u_3 v_3 & (zw) u_3 v_4 & \dots & (z e_d) u_3 v_d \\
-(wx) u_4 v_1 & (wy) u_4 v_2 & (wz) u_4 v_3 & u_4 v_4 & \dots & (w e_d) u_4 v_d \\
+(e_d \hat{x}) u_d v_1 & (e_d \hat{y}) u_d v_2 & (e_d \hat{z}) u_d v_3 & (e_d \hat{w}) u_d v_4 & \dots & (e_d e_d) u_d v_d \\ \end{bmatrix} = \begin{bmatrix} u_1 v_1 & (\hat{x} \hat{y}) u_1 v_2 & (\hat{x} \hat{z}) u_1 v_3 & (\hat{x} \hat{w}) u_1 v_4 & \dots & (\hat{x} e_d) u_1 v_d  \\
+(\hat{y} \hat{x}) u_2 v_1 & u_2 v_2 & (\hat{y} \hat{z}) u_2 v_3 & (\hat{y} \hat{w}) u_2 v_4 & \dots & (\hat{y} e_d) u_2 v_d \\
+(\hat{z} \hat{x}) u_3 v_1 & (\hat{z} \hat{y}) u_3 v_2 & u_3 v_3 & (\hat{z} \hat{w}) u_3 v_4 & \dots & (\hat{z} e_d) u_3 v_d \\
+(\hat{w} \hat{x}) u_4 v_1 & (\hat{w} \hat{y}) u_4 v_2 & (\hat{w} \hat{z}) u_4 v_3 & u_4 v_4 & \dots & (\hat{w} e_d) u_4 v_d \\
 \vdots & \vdots & \vdots & \vdots & \ddots & \vdots \\
-(e_d x) u_d v_1 & (e_d y) u_d v_2 & (e_d z) u_d v_3 & (e_d w) u_d v_4 & \dots & u_d v_d \\ \end{bmatrix} = (u_1 v_1 + u_2 v_2 + u_3 v_3 + u_4 v_4 + \dots + u_d v_d) + \begin{bmatrix}  & (xy) u_1 v_2 & (xz) u_1 v_3 & (xw) u_1 v_4 & \dots & (x e_d) u_1 v_d  \\
--(xy) u_2 v_1 &  & (yz) u_2 v_3 & (yw) u_2 v_4 & \dots & (y e_d) u_2 v_d \\
--(xz) u_3 v_1 & -(yz) u_3 v_2 &  & (zw) u_3 v_4 & \dots & (z e_d) u_3 v_d \\
--(xw) u_4 v_1 & -(yw) u_4 v_2 & -(zw) u_4 v_3 &  & \dots & (w e_d) u_4 v_d \\
+(e_d \hat{x}) u_d v_1 & (e_d \hat{y}) u_d v_2 & (e_d \hat{z}) u_d v_3 & (e_d \hat{w}) u_d v_4 & \dots & u_d v_d \\ \end{bmatrix} $$
+
+$$ \vec{u} \vec{v} = (u_1 v_1 + u_2 v_2 + u_3 v_3 + u_4 v_4 + \dots + u_d v_d) + \begin{bmatrix}  & (\hat{x} \hat{y}) u_1 v_2 & (\hat{x} \hat{z}) u_1 v_3 & (\hat{x} \hat{w}) u_1 v_4 & \dots & (\hat{x} e_d) u_1 v_d  \\
+-(\hat{x} \hat{y}) u_2 v_1 &  & (\hat{y} \hat{z}) u_2 v_3 & (\hat{y} \hat{w}) u_2 v_4 & \dots & (\hat{y} e_d) u_2 v_d \\
+-(\hat{x} \hat{z}) u_3 v_1 & -(\hat{y} \hat{z}) u_3 v_2 &  & (\hat{z} \hat{w}) u_3 v_4 & \dots & (\hat{z} e_d) u_3 v_d \\
+-(\hat{x} \hat{w}) u_4 v_1 & -(\hat{y} \hat{w}) u_4 v_2 & -(\hat{z} \hat{w}) u_4 v_3 &  & \dots & (\hat{w} e_d) u_4 v_d \\
 \vdots & \vdots & \vdots & \vdots &  & \vdots \\
--(x e_d) u_d v_1 & -(y e_d) u_d v_2 & -(z e_d) u_d v_3 & -(w e_d) u_d v_4 & \dots &  \\ \end{bmatrix} $$
+-(\hat{x} e_d) u_d v_1 & -(\hat{y} e_d) u_d v_2 & -(\hat{z} e_d) u_d v_3 & -(\hat{w} e_d) u_d v_4 & \dots & \\ \end{bmatrix} $$
 
-$$ \text{It was really frustrating to write a plus in between, so I just gave up. Just assume that the results above and below are summed together (I kept swiching between "Just assume that the result above is summed together" and "Just assume that the results above and below are summed together") (you can assume that every matrix on this page is a sum).} $$
+$$ \text{It was really frustrating to write a plus in between, so I just gave up. Just assume that the results above and below are summed together (I kept swiching between "Just assume that the result above is summed together" and "Just assume that the results above and below are summed together") (you can assume that every matrix on this page is a sum). Here's an idea! Square the vector.} $$
 
-$$ \text{Here's an idea! Square the vector.} $$
-
-$$ \vec{v} \vec{v} = (v_1 v_1 + v_2 v_2 + v_3 v_3 + v_4 v_4 + \dots + v_d v_d) + \begin{bmatrix}  & (xy) v_1 v_2 & (xz) v_1 v_3 & (xw) v_1 v_4 & \dots & (x e_d) v_1 v_d  \\
--(xy) v_2 v_1 &  & (yz) v_2 v_3 & (yw) v_2 v_4 & \dots & (y e_d) v_2 v_d \\
--(xz) v_3 v_1 & -(yz) v_3 v_2 &  & (zw) v_3 v_4 & \dots & (z e_d) v_3 v_d \\
--(xw) v_4 v_1 & -(yw) v_4 v_2 & -(zw) v_4 v_3 &  & \dots & (w e_d) v_4 v_d \\
+$$ \vec{v} \vec{v} = (v_1 v_1 + v_2 v_2 + v_3 v_3 + v_4 v_4 + \dots + v_d v_d) + \begin{bmatrix}  & (\hat{x} \hat{y}) v_1 v_2 & (\hat{x} \hat{z}) v_1 v_3 & (\hat{x} \hat{w}) v_1 v_4 & \dots & (\hat{x} e_d) v_1 v_d  \\
+-(\hat{x} \hat{y}) v_2 v_1 &  & (\hat{y} \hat{z}) v_2 v_3 & (\hat{y} \hat{w}) v_2 v_4 & \dots & (\hat{y} e_d) v_2 v_d \\
+-(\hat{x} \hat{z}) v_3 v_1 & -(\hat{y} \hat{z}) v_3 v_2 &  & (\hat{z} \hat{w}) v_3 v_4 & \dots & (\hat{z} e_d) v_3 v_d \\
+-(\hat{x} \hat{w}) v_4 v_1 & -(\hat{y} \hat{w}) v_4 v_2 & -(\hat{z} \hat{w}) v_4 v_3 &  & \dots & (\hat{w} e_d) v_4 v_d \\
 \vdots & \vdots & \vdots & \vdots &  & \vdots \\
--(x e_d) v_d v_1 & -(y e_d) v_d v_2 & -(z e_d) v_d v_3 & -(w e_d) v_d v_4 & \dots &  \\ \end{bmatrix} $$
+-(\hat{x} e_d) v_d v_1 & -(\hat{y} e_d) v_d v_2 & -(\hat{z} e_d) v_d v_3 & -(\hat{w} e_d) v_d v_4 & \dots &  \\ \end{bmatrix} $$
+
+(incert filler text here)
+
+
+(incert filler text here)
 
 $$ \text{By the way, here's the dot product and absolute value of two and one vector respectively.} $$
 
