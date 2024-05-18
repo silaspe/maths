@@ -169,7 +169,7 @@ $$ || \vec{v} || = \sqrt{v_1^2 + v_2^2 + v_3^2 + v_4^2 + \dots + v_d^2} $$
 $$ || \vec{v} ||^2 = || v_1^2 + v_2^2 + v_3^2 + v_4^2 + \dots + v_d^2 || $$
 
 $$ \text{But the square of a number is always positave (this is VGA (vannila geomatric algebra), not CGA (
-complex geomatric algebra)), and the sum of positave numbers is positave, and the absolute value of a positave number is positave, so...} $$
+complex geomatric algebra (the term CGA actually means conformal geomatric algebra)) also, the square of the square root of itself, and } i^2 \text{ is still } -1 \text{, I think that I was confusing the square of the square root with the square root of the square), and the sum of positave numbers is positave, and the absolute value of a positave number is positave, so...} $$
 
 $$ || \vec{v} ||^2 = v_1^2 + v_2^2 + v_3^2 + v_4^2 + \dots + v_d^2 $$
 
@@ -183,17 +183,17 @@ $$ \vec{v}^2 = \vec{v} \cdot \vec{v} + \vec{v} ∧ \vec{v} = || \vec{v} ||^2 + \
 
 $$ \text{If the cross product of a vector with itself is the zero vector, and the } 3d \text{ wedge product is proportional to the cross product, than it would make sense that the wedge product of a vector with itself is zero as well (this argument works in } 3d \text{ by the way). You might have noticed earlier that we almost proved this.} $$
 
-$$ \vec{v}^2 = || \vec{v} ||^2 + \begin{bmatrix}  & (xy) v_1 v_2 & (xz) v_1 v_3 & (xw) v_1 v_4 & \dots & (x e_d) v_1 v_d  \\
--(xy) v_2 v_1 &  & (yz) v_2 v_3 & (yw) v_2 v_4 & \dots & (y e_d) v_2 v_d \\
--(xz) v_3 v_1 & -(yz) v_3 v_2 &  & (zw) v_3 v_4 & \dots & (z e_d) v_3 v_d \\
--(xw) v_4 v_1 & -(yw) v_4 v_2 & -(zw) v_4 v_3 &  & \dots & (w e_d) v_4 v_d \\
+$$ \vec{v}^2 = || \vec{v} ||^2 + \begin{bmatrix}  & (\hat{x} \hat{y}) v_1 v_2 & (\hat{x} \hat{z}) v_1 v_3 & (\hat{x} \hat{w}) v_1 v_4 & \dots & (\hat{x} e_d) v_1 v_d  \\
+-(\hat{x} \hat{y}) v_2 v_1 &  & (\hat{y} \hat{z}) v_2 v_3 & (\hat{y} \hat{w}) v_2 v_4 & \dots & (\hat{y} e_d) v_2 v_d \\
+-(\hat{x} \hat{z}) v_3 v_1 & -(\hat{y} \hat{z}) v_3 v_2 &  & (\hat{z} \hat{w}) v_3 v_4 & \dots & (\hat{z} e_d) v_3 v_d \\
+-(\hat{x} \hat{w}) v_4 v_1 & -(\hat{y} \hat{w}) v_4 v_2 & -(\hat{z} \hat{w}) v_4 v_3 &  & \dots & (\hat{w} e_d) v_4 v_d \\
 \vdots & \vdots & \vdots & \vdots &  & \vdots \\
--(x e_d) v_d v_1 & -(y e_d) v_d v_2 & -(z e_d) v_d v_3 & -(w e_d) v_d v_4 & \dots &  \\ \end{bmatrix} = || \vec{v} ||^2 + \begin{bmatrix}  & (xy) v_1 v_2 & (xz) v_1 v_3 & (xw) v_1 v_4 & \dots & (x e_d) v_1 v_d  \\
--(xy)v_1 v_2  &  & (yz) v_2 v_3 & (yw) v_2 v_4 & \dots & (y e_d) v_2 v_d \\
--(xz) v_1 v_3 & -(yz) v_2 v_3 &  & (zw) v_3 v_4 & \dots & (z e_d) v_3 v_d \\
--(xw) v_1 v_4 & -(yw) v_2 v_4 & -(zw) v_3 v_4 &  & \dots & (w e_d) v_4 v_d \\
+-(\hat{x} e_d) v_d v_1 & -(\hat{y} e_d) v_d v_2 & -(\hat{z} e_d) v_d v_3 & -(\hat{w} e_d) v_d v_4 & \dots &  \\ \end{bmatrix} = || \vec{v} ||^2 + \begin{bmatrix}  & (\hat{x} \hat{y}) v_1 v_2 & (\hat{x} \hat{z}) v_1 v_3 & (\hat{x} \hat{w}) v_1 v_4 & \dots & (\hat{x} e_d) v_1 v_d  \\
+-(\hat{x} \hat{y}) v_1 v_2 &  & (\hat{y} \hat{z}) v_2 v_3 & (\hat{y} \hat{w}) v_2 v_4 & \dots & (\hat{y} e_d) v_2 v_d \\
+-(\hat{x} \hat{z}) v_1 v_3 & -(\hat{y} \hat{z}) v_2 v_3 &  & (\hat{z} \hat{w}) v_3 v_4 & \dots & (\hat{z} e_d) v_3 v_d \\
+-(\hat{x} \hat{w}) v_1 v_4 & -(\hat{y} \hat{w}) v_2 v_4 & -(\hat{z} \hat{w}) v_3 v_4 &  & \dots & (\hat{w} e_d) v_4 v_d \\
 \vdots & \vdots & \vdots & \vdots &  & \vdots \\
--(x e_d) v_1 v_d & -(y e_d) v_2 v_d & -(z e_d) v_3 v_d & -(w e_d) v_4 v_d & \dots &  \\ \end{bmatrix} $$
+-(\hat{x} e_d) v_1 v_d & -(\hat{y} e_d) v_2 v_d & -(\hat{z} e_d) v_3 v_d & -(\hat{w} e_d) v_4 v_d & \dots &  \\ \end{bmatrix} $$
 
 $$ \text{As you can see, each term is perfectly canceled out by the term across the diagonal. And perfect timing, it will be on } 200 \text{ lines.} $$
 
@@ -227,29 +227,29 @@ $$ \vec{v} \cdot \vec{u} = \vec{u} \cdot \vec{v} $$
 
 $$ \vec{v} \vec{u} = \vec{u} \cdot \vec{v} + \vec{v} ∧ \vec{u} $$
 
-$$ \vec{u} ∧ \vec{v} = \begin{bmatrix}  & (xy) u_1 v_2 & (xz) u_1 v_3 & (xw) u_1 v_4 & \dots & (x e_d) u_1 v_d  \\
--(xy) u_2 v_1 &  & (yz) u_2 v_3 & (yw) u_2 v_4 & \dots & (y e_d) u_2 v_d \\
--(xz) u_3 v_1 & -(yz) u_3 v_2 &  & (zw) u_3 v_4 & \dots & (z e_d) u_3 v_d \\
--(xw) u_4 v_1 & -(yw) u_4 v_2 & -(zw) u_4 v_3 &  & \dots & (w e_d) u_4 v_d \\
+$$ \vec{u} ∧ \vec{v} = \begin{bmatrix}  & (\hat{x} \hat{y}) u_1 v_2 & (\hat{x} \hat{z}) u_1 v_3 & (\hat{x} \hat{w}) u_1 v_4 & \dots & (\hat{x} e_d) u_1 v_d  \\
+-(\hat{x} \hat{y}) u_2 v_1 &  & (\hat{y} \hat{z}) u_2 v_3 & (\hat{y} \hat{w}) u_2 v_4 & \dots & (\hat{y} e_d) u_2 v_d \\
+-(\hat{x} \hat{z}) u_3 v_1 & -(\hat{y} \hat{z}) u_3 v_2 &  & (\hat{z} \hat{w}) u_3 v_4 & \dots & (\hat{z} e_d) u_3 v_d \\
+-(\hat{x} \hat{w}) u_4 v_1 & -(\hat{y} \hat{w}) u_4 v_2 & -(\hat{z} \hat{w}) u_4 v_3 &  & \dots & (\hat{w} e_d) u_4 v_d \\
 \vdots & \vdots & \vdots & \vdots &  & \vdots \\
--(x e_d) u_d v_1 & -(y e_d) u_d v_2 & -(z e_d) u_d v_3 & -(w e_d) u_d v_4 & \dots &  \\ \end{bmatrix} $$
+-(\hat{x} e_d) u_d v_1 & -(\hat{y} e_d) u_d v_2 & -(\hat{z} e_d) u_d v_3 & -(\hat{w} e_d) u_d v_4 & \dots &  \\ \end{bmatrix} $$
 
-$$ \vec{v} ∧ \vec{u} = \begin{bmatrix}  & (xy) v_1 u_2 & (xz) v_1 u_3 & (xw) v_1 u_4 & \dots & (x e_d) v_1 u_d  \\
--(xy) v_2 u_1 &  & (yz) v_2 u_3 & (yw) v_2 u_4 & \dots & (y e_d) v_2 u_d \\
--(xz) v_3 u_1 & -(yz) v_3 u_2 &  & (zw) v_3 u_4 & \dots & (z e_d) v_3 u_d \\
--(xw) v_4 u_1 & -(yw) v_4 u_2 & -(zw) v_4 u_3 &  & \dots & (w e_d) v_4 u_d \\
+$$ \vec{v} ∧ \vec{u} = \begin{bmatrix}  & (\hat{x} \hat{y}) v_1 u_2 & (\hat{x} \hat{z}) v_1 u_3 & (\hat{x} \hat{w}) v_1 u_4 & \dots & (\hat{x} e_d) v_1 u_d  \\
+-(\hat{x} \hat{y}) v_2 u_1 &  & (\hat{y} \hat{z}) v_2 u_3 & (\hat{y} \hat{w}) v_2 u_4 & \dots & (\hat{y} e_d) v_2 u_d \\
+-(\hat{x} \hat{z}) v_3 u_1 & -(\hat{y} \hat{z}) v_3 u_2 &  & (\hat{z} \hat{w}) v_3 u_4 & \dots & (\hat{z} e_d) v_3 u_d \\
+-(\hat{x} \hat{w}) v_4 u_1 & -(\hat{y} \hat{w}) v_4 u_2 & -(\hat{z} \hat{w}) v_4 u_3 &  & \dots & (\hat{w} e_d) v_4 u_d \\
 \vdots & \vdots & \vdots & \vdots &  & \vdots \\
--(x e_d) v_d u_1 & -(y e_d) v_d u_2 & -(z e_d) v_d u_3 & -(w e_d) v_d u_4 & \dots &  \\ \end{bmatrix} = -\begin{bmatrix}  & -(xy) v_1 u_2 & -(xz) v_1 u_3 & -(xw) v_1 u_4 & \dots & -(x e_d) v_1 u_d  \\
-(xy) v_2 u_1 &  & -(yz) v_2 u_3 & -(yw) v_2 u_4 & \dots & -(y e_d) v_2 u_d \\
-(xz) v_3 u_1 & (yz) v_3 u_2 &  & -(zw) v_3 u_4 & \dots & -(z e_d) v_3 u_d \\
-(xw) v_4 u_1 & (yw) v_4 u_2 & (zw) v_4 u_3 &  & \dots & -(w e_d) v_4 u_d \\
+-(\hat{x} e_d) v_d u_1 & -(\hat{y} e_d) v_d u_2 & -(\hat{z} e_d) v_d u_3 & -(\hat{w} e_d) v_d u_4 & \dots &  \\ \end{bmatrix} = -\begin{bmatrix}  & -(\hat{x} \hat{y}) v_1 u_2 & -(\hat{x} \hat{z}) v_1 u_3 & -(\hat{x} \hat{w}) v_1 u_4 & \dots & -(\hat{x} e_d) v_1 u_d  \\
+(\hat{x} \hat{y}) v_2 u_1 &  & -(\hat{y} \hat{z}) v_2 u_3 & -(\hat{y} \hat{w}) v_2 u_4 & \dots & -(\hat{y} e_d) v_2 u_d \\
+(\hat{x} \hat{z}) v_3 u_1 & (\hat{y} \hat{z}) v_3 u_2 &  & -(\hat{z} \hat{w}) v_3 u_4 & \dots & -(\hat{z} e_d) v_3 u_d \\
+(\hat{x} \hat{w}) v_4 u_1 & (\hat{y} \hat{w}) v_4 u_2 & (\hat{z} \hat{w}) v_4 u_3 &  & \dots & -(\hat{w} e_d) v_4 u_d \\
 \vdots & \vdots & \vdots & \vdots &  & \vdots \\
-(x e_d) v_d u_1 & (y e_d) v_d u_2 & (z e_d) v_d u_3 & (w e_d) v_d u_4 & \dots &  \\ \end{bmatrix} = -\begin{bmatrix}  & (xy) u_1 v_2 & (xz) u_1 v_3 & (xw) u_1 v_4 & \dots & (x e_d) u_1 v_d  \\
--(xy) u_2 v_1 &  & (yz) u_2 v_3 & (yw) u_2 v_4 & \dots & (y e_d) u_2 v_d \\
--(xz) u_3 v_1 & -(yz) u_3 v_2 &  & (zw) u_3 v_4 & \dots & (z e_d) u_3 v_d \\
--(xw) u_4 v_1 & -(yw) u_4 v_2 & -(zw) u_4 v_3 &  & \dots & (w e_d) u_4 v_d \\
+(\hat{x} e_d) v_d u_1 & (\hat{y} e_d) v_d u_2 & (\hat{z} e_d) v_d u_3 & (\hat{w} e_d) v_d u_4 & \dots &  \\ \end{bmatrix} = -\begin{bmatrix}  & (\hat{x} \hat{y}) u_1 v_2 & (\hat{x} \hat{z}) u_1 v_3 & (\hat{x} \hat{w}) u_1 v_4 & \dots & (\hat{x} e_d) u_1 v_d  \\
+-(\hat{x} \hat{y}) u_2 v_1 &  & (\hat{y} \hat{z}) u_2 v_3 & (\hat{y} \hat{w}) u_2 v_4 & \dots & (\hat{y} e_d) u_2 v_d \\
+-(\hat{x} \hat{z}) u_3 v_1 & -(\hat{y} \hat{z}) u_3 v_2 &  & (\hat{z} \hat{z}) u_3 v_4 & \dots & (\hat{z} e_d) u_3 v_d \\
+-(\hat{x} w) u_4 v_1 & -(\hat{y} w) u_4 v_2 & -(\hat{z} w) u_4 v_3 &  & \dots & (w e_d) u_4 v_d \\
 \vdots & \vdots & \vdots & \vdots &  & \vdots \\
--(x e_d) u_d v_1 & -(y e_d) u_d v_2 & -(z e_d) u_d v_3 & -(w e_d) u_d v_4 & \dots &  \\ \end{bmatrix} $$
+-(\hat{x} e_d) u_d v_1 & -(\hat{y} e_d) u_d v_2 & -(\hat{z} e_d) u_d v_3 & -(w e_d) u_d v_4 & \dots &  \\ \end{bmatrix} $$
 
 $$ \vec{v} ∧ \vec{u} = - \vec{u} ∧ \vec{v} $$
 
