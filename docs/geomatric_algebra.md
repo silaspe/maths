@@ -155,12 +155,12 @@ $$ \vec{v} \vec{v} = (v_1 v_1 + v_2 v_2 + v_3 v_3 + v_4 v_4 + \dots + v_d v_d) +
 \vdots & \vdots & \vdots & \vdots &  & \vdots \\
 -(\hat{x} e_d) v_d v_1 & -(\hat{y} e_d) v_d v_2 & -(\hat{z} e_d) v_d v_3 & -(\hat{w} e_d) v_d v_4 & \dots &  \\ \end{bmatrix} $$
 
-(incert filler text here)
-
 
 (incert filler text here)
 
-$$ \text{By the way, here's the dot product and absolute value of two and one vector respectively.} $$
+$$ \text{By the way, } \hat{\hat{\hat{\hat{\hat{\hat{\hat{\hat{\hat{\hat{\hat{\hat{\hat{\hat{\hat{\hat{\hat{\hat{\hat{\hat{\hat{\hat{\hat{\hat{\hat{\hat{\hat{\hat{\hat{\hat{w}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}. $$
+
+$$ \text{Also by the way, here's the formulas for the dot product and absolute value of two and one vector respectively.} $$
 
 $$ \vec{u} \cdot \vec{v} = u_1 v_1 + u_2 v_2 + u_3 v_3 + u_4 v_4 + \dots + u_d v_d = \sum\limits_{n = 1}^{d} u_n v_n $$
 
@@ -253,27 +253,27 @@ $$ \vec{v} ∧ \vec{u} = \begin{bmatrix}  & (\hat{x} \hat{y}) v_1 u_2 & (\hat{x}
 
 $$ \vec{v} ∧ \vec{u} = - \vec{u} ∧ \vec{v} $$
 
-By the way, $2 \cdot 2 \cdot 2 \cdot 2 \cdot 2 \cdot 2 \cdot 2 \cdot 2$ lines.
+Also, halfway through (well, more like mostly through), if I added one more $\hat{w}$, it would be "unabe to render expression". By the way, $2 \cdot 2 \cdot 2 \cdot 2 \cdot 2 \cdot 2 \cdot 2 \cdot 2$ lines.
 
 $$ \vec{v} \vec{u} = \vec{u} \cdot \vec{v} - \vec{u} ∧ \vec{v} $$
 
 ### complex numbers
 
-$$ \text{complex numbers (surprisingly in geomatric algebra) come from } 2d \text{ geomatric algebra. So time to re-derive that! (And use } i \text{ this time instead of } U \text{.) Here's the definitions and link to the complex numbers page:} $$
+$$ \text{complex numbers (surprisingly in geomatric algebra) come from } 2d \text{ geomatric algebra. So time to re-derive that! (And use } i \text{ this time instead of } U \text{.) (I thought that } i \text{ should have a hat, but that wouldn't work.) Here's the definitions and link to the complex numbers page:} $$
 
 [.](https://silaspe.github.io/maths/complex.html)
 
-$$ x = \hat{i} \text{ (This is so that } \hat{i} \text{ isn't confused with } i \text{).} $$
+$$ \hat{i} = x \text{ (This is so that } \hat{i} \text{ isn't confused with } i \text{).} $$
 
-$$ y = \hat{j} $$
+$$ \hat{j} = y $$
 
-$$ i = \hat{i} \hat{j} $$
+$$ \hat{i} \hat{j} = i $$
 
 $$ x^2 = 1 $$
 
 $$ y^2 = 1 $$
 
-$$ xy = -yx \text{(} = i \text{)} $$
+$$ xy = -yx \text{ (} = i \text{)} $$
 
 $$ \text{And with those, you can derive} $$
 
@@ -287,13 +287,13 @@ $$ \text{Also, a bivector in } 2 \text{ dimensions has one degree of freedom (ju
 k \\ \end{pmatrix} \text{ DoF's (degrees of freedom)), so I'll call it, I dunno, a pseudoscalar. (} i \text{ Is always the unit pseudoscalar no matter the dimension.)} $$
 
 $$ \vec{u} = \begin{bmatrix} u_x \\
-u_y \\ \end{bmatrix} = u_x \hat{i} + u_y \hat{j} = u_x x + u_y y $$
+u_y \\ \end{bmatrix} = u_x x + u_y y $$
 
 $$ \vec{v} = \begin{bmatrix} v_x \\
-v_y \\ \end{bmatrix} = v_x \hat{i} + v_y \hat{j} = v_x x + v_y y $$
+v_y \\ \end{bmatrix} = v_x x + v_y y $$
 
-$$ \vec{u} \vec{v} = \begin{pmatrix} (xx) u_x v_x & (xy) u_x v_y \\
-(yx) u_y v_x & (yy) u_y v_y \\ \end{pmatrix} = (u_x v_x + u_y v_y) + (u_x v_y - u_y v_x)i $$
+$$ \vec{u} \vec{v} = \begin{pmatrix} (\hat{x} \hat{x}) u_x v_x & (\hat{x} \hat{y}) u_x v_y \\
+(\hat{y} \hat{x}) u_y v_x & (\hat{y} \hat{y}) u_y v_y \\ \end{pmatrix} = (u_x v_x + u_y v_y) + (u_x v_y - u_y v_x)i $$
 
 
 
@@ -308,7 +308,7 @@ $$  \text{Text over time! (As oppose to voice over, it's a font swich.) What's s
 
 $$ \text{It's the next day.} $$
 
-$$ \vec{v} i = v_x xi + v_y yi = v_x xxy + v_y yxy = v_x y - v_y xyy = v_x y - v_y x $$
+$$ \vec{v} i = v_x \hat{x} i + v_y \hat{y} i = v_x \hat{x} \hat{x} \hat{y} + v_y \hat{y} \hat{x} \hat{y} = v_x \hat{y} - v_y \hat{x} \hat{y} \hat{y} = v_x \hat{y - v_y \hat{x} $$
 
 ```py
 def complexify(v_x, v_y):
@@ -317,33 +317,33 @@ def complexify(v_x, v_y):
 
 $$ \text{I just realized that this isn't a code repo(sitory). It was my instinct to write it in code form.} $$
 
-$$ \text{complexify} (v_x x + v_y y) = v_x + v_y i $$
+$$ \text{complexify} (v_x \hat{x} + v_y \hat{y}) = v_x + v_y i $$
 
-$$ \vec{v} i = (v_x x + v_y y)i = v_x xi + v_y yi = v_x xxy + v_y yxy = v_x y - v_y xyy = v_x y - v_y x $$
+$$ \vec{v} i = (v_x \hat{x} + v_y \hat{y})i = v_x \hat{x} i + v_y \hat{y} i = v_x \hat{x} \hat{x} \hat{y} + v_y \hat{y} \hat{x} \hat{y} = v_x \hat{y} - v_y \hat{x} \hat{y} \hat{y} = v_x \hat{y} - v_y \hat{x} $$
 
 $$ \text{complexify} (\vec{v} i) = i \text{ complexify} (\vec{v}) $$
 
-$$ i \vec{v} = i(v_x x + v_y y) = i v_x x + i v_y y $$
+$$ i \vec{v} = i(v_x \hat{x} + v_y \hat{y}) = i v_x x + i v_y \hat{y} $$
 
 $$ \text{But } v_x \text{ and } v_y \text{ are scalars, so} $$
 
-$$ i \vec{v} = v_x ix + v_y iy = v_x xyx + v_y xyy = -v_x yxx + v_y x = -v_x y + v_y x $$
+$$ i \vec{v} = v_x i \hat{x} + v_y i \hat{y} = v_x \hat{x} \hat{y} \hat{x} + v_y \hat{x} \hat{y} \hat{y} = -v_x \hat{y} \hat{x} \hat{x} + v_y \hat{x} = -v_x \hat{y} + v_y \hat{x} $$
 
 $$ \text{complexify} (i \vec{v}) = -i \text{ complexify} (\vec{v}). $$
 
 $$ \text{Next: vector times a complex number.} $$
 
-$$ \text{vectorize} (a + bi) = ax + by $$
+$$ \text{vectorize} (a + bi) = a \hat{x} + b \hat{y} $$
 
 $$ \text{complexify} (\text{vectorize} (z)) = z $$
 
 $$ \text{vectorize} (\text{complexify} (\vec{v})) = \vec{v} $$
 
-$$ (ax + by)(c + di) = axc + axdi + byc + bydi = \begin{pmatrix} ac (x) & ad (xi) \\
-bc (y) & bd (yi) \\ \end{pmatrix} = \begin{pmatrix} ac (x) & ad (xxy) \\
-bc (y) & bd (yxy) \\ \end{pmatrix} = \begin{pmatrix} ac (x) & ad (y) \\
-bc (y) & -bd (xyy) \\ \end{pmatrix} = \begin{pmatrix} ac (x) & ad (y) \\
-bc (y) & -bd (x) \\ \end{pmatrix} = (ac - bd)x + (ad + bc) y $$
+$$ (a \hat{x} + b \hat{y})(c + di) = a \hat{x} c + a \hat{x} di + b \hat{y} c + b \hat{y} di = \begin{pmatrix} ac (\hat{x}) & ad (\hat{x} i) \\
+bc (\hat{y}) & bd (\hat{y} i) \\ \end{pmatrix} = \begin{pmatrix} ac (\hat{x}) & ad (\hat{x} \hat{x} \hat{y}) \\
+bc (\hat{y}) & bd (\hat{y} \hat{x} \hat{y}) \\ \end{pmatrix} = \begin{pmatrix} ac (\hat{x}) & ad (\hat{y}) \\
+bc (\hat{y}) & -bd (\hat{x} \hat{y} \hat{y}) \\ \end{pmatrix} = \begin{pmatrix} ac (\hat{x}) & ad (\hat{y}) \\
+bc (\hat{y}) & -bd (\hat{x}) \\ \end{pmatrix} = (ac - bd) \hat{x} + (ad + bc) \hat{y} $$
 
 $$ z = a + bi $$
 
@@ -403,11 +403,11 @@ $$ \vec{w} \hat{u} \hat{v}. $$
 
 $$ \text{One more thing before maxwell's equation and rotors.} $$
 
-$$ (c + di)(ax + by) = cax + cby + diax + diby = \begin{pmatrix} ca (x) & cb (y) \\
-da (ix) & db (iy) \\ \end{pmatrix} = \begin{pmatrix} ca (x) & cb (y) \\
-da (xyx) & db (xyy) \\ \end{pmatrix} = \begin{pmatrix} ca (x) & cb (y) \\
--da (yxx) & db (x) \\ \end{pmatrix} = \begin{pmatrix} ca (x) & cb (y) \\
--da (y) & db (x) \\ \end{pmatrix} = (ca + db)x + (cb - da) y = (ax + by)(c - di) $$
+$$ (c + di)(a \hat{x} + b \hat{y}) = ca \hat{x} + cb \hat{y} + dia \hat{x} + dib \hat{y} = \begin{pmatrix} ca (\hat{x}) & cb (\hat{y}) \\
+da (i \hat{x}) & db (i \hat{y}) \\ \end{pmatrix} = \begin{pmatrix} ca (\hat{x}) & cb (\hat{y}) \\
+da (\hat{x} \hat{y} \hat{x}) & db (\hat{x} \hat{y} \hat{y}) \\ \end{pmatrix} = \begin{pmatrix} ca (\hat{x}) & cb (\hat{y}) \\
+-da (\hat{y} \hat{x} \hat{x}) & db (\hat{x}) \\ \end{pmatrix} = \begin{pmatrix} ca (\hat{x}) & cb (\hat{y}) \\
+-da (\hat{y}) & db (\hat{x}) \\ \end{pmatrix} = (ca + db) \hat{x} + (cb - da) \hat{y} = (a \hat{x} + b \hat{y})(c - di) $$
 
 $$ z \vec{v} = \vec{v} \text{ ccong} (z) $$
 
