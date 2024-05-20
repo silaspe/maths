@@ -425,23 +425,23 @@ $$ \vec{w} \vec{u} \vec{v} = \vec{w} \text{ Scaled by the length of } \vec{u} \t
 
 A rotor is a way to rotate a vector by any angle $\theta$ in any plane (Yes, plane. I think it makes the same if not more sense to rotate in a plane. I also think that this is simalar to the ∧ v.s. $\times$ Product.) in any dimention. Let's start with the simplest possible rotor I can think of, in $3d$, $90$°, $x$ - $y$ plane. (I'll call $\vec{v}$ rotated by the name of $\vec{v} \prime$)
 
-$$ \vec{v} = v_x x + v_y y + v_z z $$
+$$ \vec{v} = v_x \hat{x} + v_y \hat{y} + v_z \hat{z} $$
 
-$$ \vec{v} \prime = v_x y - v_y x + v_z z $$
+$$ \vec{v} \prime = v_x \hat{y} - v_y \hat{x} + v_z \hat{z} $$
 
-$$ \vec{v} \prime = \vec{v} xy ? $$
+$$ \vec{v} \prime = \vec{v} \hat{x} \hat{y} ? $$
 
-$$ \vec{v} xy = (v_x x + v_y y + v_z z) xy = v_x xxy + v_y yxy + v_z zxy = v_x y - v_y xyy - v_z xzy = (v_x) y - (v_y) x + (v_z) xyz $$
+$$ \vec{v} \hat{x} \hat{y} = (v_x \hat{x} + v_y \hat{y} + v_z \hat{z}) \hat{x} \hat{y} = v_x \hat{x} \hat{x} \hat{y} + v_y \hat{y} \hat{x} \hat{y} + v_z \hat{z} \hat{x} \hat{y} = v_x \hat{y} - v_y \hat{x} \hat{y} \hat{y} - v_z \hat{x} \hat{z} \hat{y} = (v_x) \hat{y} - (v_y) \hat{x} + (v_z) \hat{x} \hat{y} \hat{z} $$
 
 $$ \text{What was that thing he said at this point? Oh right, it was: Well, it almost worked, the } x \text{ and the } y \text{ coordinates got rotated correctly, but the } z \text{ coordinate got turned into this trivector, let's try something else.} $$
 
 $$ \text{Do you remember that time when I proved that } z \vec{v} = \vec{v} \text{ ccong} (z) \text{, that means that I can now prove this: } \vec{v} z = \text{ccong} (z) \vec{v} \text{. I'll assume that that means } yx \text{, I'll try that!} $$
 
-$$ yx \vec{v} = yx (v_x x + v_y y + v_z z) = yx v_x x + yx v_y y + yx v_z z = v_x yxx + v_y yxy + v_z yxz = v_x y - v_y xyy - v_z xyz = (v_x) y - (v_y) x - (v_z) xyz $$
+$$ \hat{y} \hat{x} \vec{v} = \hat{y} \hat{x} (v_x \hat{x} + v_y \hat{y} + v_z \hat{z}) = yx v_x x + yx v_y y + yx v_z z = v_x yxx + v_y yxy + v_z yxz = v_x y - v_y xyy - v_z xyz = (v_x) y - (v_y) x - (v_z) xyz $$
 
 $$ \text{Once again, the } x \text{ and the } y \text{ coordinates got rotated correctly, but the } z \text{ coordinate got turned into the inverse trivector this time, maybe doing both at once would cancel out?} $$
 
-$$ yx \vec{v} xy = yx (v_x x + v_y y + v_z z) xy = yx v_x xxy + yx v_y yxy + yx v_z zxy = v_x yxy + v_y yxyxy + yx v_z zxy = - v_x xyy - v_y yyxxy + yx v_z zxy = - v_x x - v_y y + yx v_z zxy $$
+$$ \hat{y} \hat{x} \vec{v} \hat{x} \hat{y} = \hat{y} \hat{x} (v_x \hat{x} + v_y \hat{y} + v_z \hat{z}) \hat{x} \hat{y} = \hat{y} \hat{x} v_x xxy + yx v_y yxy + yx v_z zxy = v_x yxy + v_y yxyxy + yx v_z zxy = - v_x xyy - v_y yyxxy + yx v_z zxy = - v_x x - v_y y + yx v_z zxy $$
 
 $$ yx v_z zxy = v_z yxzxy = -v_z yxxzy = -v_z yzy = v_z yyz $$
 
