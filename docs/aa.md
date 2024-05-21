@@ -402,3 +402,57 @@ $400$ lines
 $$ (u_1 + u_2 x + u_3 y + u_4 xy + u_5 z + u_6 xz + u_7 yz + u_8 xyz)(v_1 + v_2 x + v_3 y + v_4 xy + v_5 z + v_6 xz + v_7 yz + v_8 xyz) = u_1 v_1 + u_1 v_2 x + u_1 v_3 y + u_1 v_4 xy + u_1 v_5 z + u_1 v_6 xz + u_1 v_7 yz + u_1 v_8 xyz + u_2 v_1 x + u_2 v_2 + u_2 v_3 xy + u_2 v_4 y + u_2 v_5 xz + u_2 v_6 z + u_2 v_7 xyz + u_2 v_8 yz + u_3 v_1 y - u_3 v_2 xy + u_3 v_3 - u_3 v_4 x + u_3 v_5 yz - u_3 v_6 xyz + u_3 v_7 z - u_3 v_8 xz + u_4 v_1 xy - u_4 v_2 y + u_4 v_3 x - u_4 v_4 + u_4 v_5 xyz - u_4 v_6 yz + u_4 v_7 xz - u_4 v_8 z + u_5 v_1 z - u_5 v_2 xz - u_5 v_3 yz + u_5 v_4 xyz + u_5 v_5 - u_5 v_6 x - u_5 v_7 y + u_5 v_8 xy $$
 
 $$ \text{I think I'm too lazy to finish this.} $$
+
+### set theory (definitions)?
+
+$$ \text{A set is a well defined collection of objects, a set could contain the two shoes on you feet, or the } 5 \text{ peices of chese on this cutting board (that I'm going to pretend exists), sets can even contain other sets, but sets can not contain themselfes, because tis would lead to a paradox: would the set that contains every set that dosen't contain itsef contain itself?" this also means that there isn't a set that contains everything.} $$
+
+$$ \text{But the thing is, using some symbols, you can describe almost all of math. These symbols can just be pronounced as words, and it would make a sentence, such as "} ¬ \exists (x): |x| > 0 \text{" as "there does not exist } x \text{ such that the absolute value of } x \text{ is strictly greater than } 0 \text{". Time to rapidfire through each one's pronunciation and meaning.} $$
+
+.
+
+$$ ∀ \text{ Is pronounced "for any" or "for all" (but I prefer "for any") and means what it says. It than has an open parentheses, a thing (} x, y, z, \text{ or a set) that I will call } x \text{, an open parentheses (parenthese is not a word), a } \cdot \text{, a statement that implies something about } x \text{, and finish it off with a statement including } x. $$
+
+$$ ( \text{ and } ) \text{ are not pronounced.} $$
+
+$$ \cdot \text{ Is pronounced "such that" and is only used in one context: for any } x \text{ such that...} $$
+
+$$ : \text{ Is pronounced however a colon is pronounced.} $$
+
+$$ \exists \text{ Is pronounced "there exists" and I don't think I need to explain that.} $$
+
+$$ ¬ \text{ Is pronounced "is not" or "does not" as in "there does not exist } x \text{".} $$
+
+$$ \epsilon \text{ Is pronounced "is an element of" where an element of a set is a singular object that is contained in that set.} $$
+
+$$ ∅ \text{ Is pronounced "the empty set" and means "the set of which is empty inside".} $$
+
+$$ x, y, \text{ And } z \text{ are pronounced "} x, y, \text{ And } z \text{" and they all mean "a thing that could  be an element of a set".} $$
+
+$$ ⊆ \text{ Is pronounced "is a subset of" and I'll get to the meaning in the next chapter.} $$
+
+$$ \text{capital letters are sets.} $$
+
+$$ \iff \text{ Is pronounced "if and only if" as in "statement } a \text{ is true if and only if statement } b \text{ is true".} $$
+
+$$ pow \text{ Is pronounced "the power set of" as in "} pow(s) \text{" and I'll get to the meaning in the next chapter.} $$
+
+$$ ∩ \text{ Is pronounced "and" and means "} a ∩ b \text{ is true if and only if statement } a \text{ is true and } b \text{ is true".} $$
+
+$$ = : \text{ Is pronounced "equals by definition" and means "define the thing on the left as the thing on the right", or was it the other wat around?} $$
+
+$$ = \text{ Is pronounced "is the same as" and I'll get to it's formal meaning in the next chapter.} $$
+
+$$  \text{ Is pronounced "" and means "" as in "".} $$
+
+### set theory (definitions from those definitions)?
+
+$$ ¬ \exists (x): x \epsilon ∅ $$
+
+$$ A ⊆ B \iff ∀(x) \cdot x \epsilon A: x \epsilon B $$
+
+$$ ∀(P) \cdot ∀(U) \cdot U ⊆ S: U \epsilon P ∩ ∀(T) \cdot T ¬ ⊆ S: T ¬ \epsilon P: P = : pow(S) $$
+
+$$ A = B \iff A ⊆ B ∩ B ⊆ A $$
+
+### set theory proofs??
