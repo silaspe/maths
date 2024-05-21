@@ -429,21 +429,19 @@ $$ ∅ \text{ Is pronounced "the empty set" and means "the set of which is empty
 
 $$ x, y, \text{ And } z \text{ are pronounced "} x, y, \text{ And } z \text{" and they all mean "a thing that could  be an element of a set".} $$
 
-$$ ⊆ \text{ Is pronounced "is a subset of" and I'll get to the meaning in the next chapter.} $$
+$$ ⊆ \text{ Is pronounced "is a subset of" and I'll get to the meaning of that in the next chapter.} $$
 
 $$ \text{capital letters are sets.} $$
 
 $$ \iff \text{ Is pronounced "if and only if" as in "statement } a \text{ is true if and only if statement } b \text{ is true".} $$
 
-$$ pow \text{ Is pronounced "the power set of" as in "} pow(s) \text{" and I'll get to the meaning in the next chapter.} $$
+$$ pow \text{ Is pronounced "the power set of" as in "} pow(S) \text{" and I'll get to the meaning in the next chapter.} $$
 
 $$ ∩ \text{ Is pronounced "and" and means "} a ∩ b \text{ is true if and only if statement } a \text{ is true and } b \text{ is true".} $$
 
 $$ = : \text{ Is pronounced "equals by definition" and means "define the thing on the left as the thing on the right", or was it the other wat around?} $$
 
 $$ = \text{ Is pronounced "is the same as" and I'll get to it's formal meaning in the next chapter.} $$
-
-$$  \text{ Is pronounced "" and means "" as in "".} $$
 
 ### set theory (definitions from those definitions)?
 
