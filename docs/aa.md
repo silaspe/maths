@@ -403,19 +403,19 @@ $$ (u_1 + u_2 x + u_3 y + u_4 xy + u_5 z + u_6 xz + u_7 yz + u_8 xyz)(v_1 + v_2 
 
 $$ \text{I think I'm too lazy to finish this.} $$
 
-### set theory (definitions)?
+### set theory/logic (definitions)?
 
 $$ \text{A set is a well defined collection of objects, a set could contain the two shoes on you feet, or the } 5 \text{ peices of chese on this cutting board (that I'm going to pretend exists), sets can even contain other sets, but sets can not contain themselfes, because tis would lead to a paradox: would the set that contains every set that dosen't contain itsef contain itself?" this also means that there isn't a set that contains everything.} $$
 
-$$ \text{But the thing is, using some symbols, you can describe almost all of math. These symbols can just be pronounced as words, and it would make a sentence, such as "} ¬ \exists (x): |x| > 0 \text{" as "there does not exist } x \text{ such that the absolute value of } x \text{ is strictly greater than } 0 \text{". Time to rapidfire through each one's pronunciation and meaning.} $$
+$$ \text{But the thing is, using some symbols, you can describe almost all of math. These symbols can just be pronounced as words, and it would make a sentence, such as "} ¬ \exists (x): |x| < 0 \text{" as "there does not exist } x \text{ such that the absolute value of } x \text{ is strictly less than } 0 \text{". Time to rapidfire through each one's pronunciation and meaning.} $$
 
 .
 
-$$ ∀ \text{ Is pronounced "for any" or "for all" (but I prefer "for any") and means what it says. It than has an open parentheses, a thing (} x, y, z, \text{ or a set) that I will call } x \text{, an open parentheses (parenthese is not a word), a } \cdot \text{, a statement that implies something about } x \text{, and finish it off with a statement including } x. $$
+$$ ∀ \text{ Is pronounced "for any" or "for all" (but I prefer "for any") and means what it says. It than has an open parentheses, a thing (} x, y, z, \text{ or a set) that I will call } x \text{ for now, a closed parentheses (parenthese is not a word), a } \cdot \text{, a statement that implies something about } x \text{, a colon, and finish it off with a statement including } x. $$
 
-$$ ( \text{ and } ) \text{ are not pronounced.} $$
+$$ \text{"} ( \text{" and "} ) \text{" are not pronounced.} $$
 
-$$ \cdot \text{ Is pronounced "such that" and is only used in one context: for any } x \text{ such that...} $$
+$$ \cdot \text{ Is pronounced "such that" and it's only used in two contexts: "for any } x \text{ such that..." and "there exists } x \text{ such that...".} $$
 
 $$ : \text{ Is pronounced however a colon is pronounced.} $$
 
@@ -423,9 +423,9 @@ $$ \exists \text{ Is pronounced "there exists" and I don't think I need to expla
 
 $$ ¬ \text{ Is pronounced "is not" or "does not" as in "there does not exist } x \text{".} $$
 
-$$ \epsilon \text{ Is pronounced "is an element of" where an element of a set is a singular object that is contained in that set.} $$
+$$ \in \text{ Is pronounced "is an element of" where an element of a set is a singular object that is contained in that set.} $$
 
-$$ ∅ \text{ Is pronounced "the empty set" and means "the set of which is empty inside".} $$
+$$ Ø \text{ Is pronounced "the empty set" and means "the set of which is empty inside".} $$
 
 $$ x, y, \text{ And } z \text{ are pronounced "} x, y, \text{ And } z \text{" and they all mean "a thing that could  be an element of a set".} $$
 
@@ -443,14 +443,48 @@ $$ = : \text{ Is pronounced "equals by definition" and means "define the thing o
 
 $$ = \text{ Is pronounced "is the same as" and I'll get to it's formal meaning in the next chapter.} $$
 
-### set theory (definitions from those definitions)?
+$$ \in^S \text{ Is pronounced "is a super element" (} S \text{ for super) and I'll get to it's meaning in the next chapter.} $$
 
-$$ ¬ \exists (x): x \epsilon ∅ $$
+$$ ∨ \text{ Is pronounced "or" and means "} a ∨ b \text{ is true if statement } a \text{ is true or } b \text{ is true... Or both!".} $$
 
-$$ A ⊆ B \iff ∀(x) \cdot x \epsilon A: x \epsilon B $$
+$$ \text{succ Is pronounced "the immediate successor of" and means "that number } + 1 \text{".} $$
 
-$$ ∀(P) \cdot ∀(U) \cdot U ⊆ S: U \epsilon P ∩ ∀(T) \cdot T ¬ ⊆ S: T ¬ \epsilon P: P = : pow(S) $$
+### set theory/logic (definitions from those definitions)?
+
+$$ ¬ \exists (x) \cdot x \in Ø $$
+
+$$ A ⊆ B \iff ∀(x) \cdot x \in A: x \in B $$
+
+$$ ∀(P) \cdot ∀(U) \cdot U ⊆ S: U \in P ∩ ∀(T) \cdot T ¬ ⊆ S: T ¬ \in P: P = : pow(S) $$
 
 $$ A = B \iff A ⊆ B ∩ B ⊆ A $$
+
+$$ ¬ \exists (S) \cdot S \in S $$
+
+$$ x \in \in S \iff \exists (U) \cdot U \in S ∩ x \in U $$
+
+$$ x \in \in S \text{ can also be written as } \in^2 $$
+
+$$ x \in \in \in S \iff \exists (U) \cdot U \in S ∩ x \in \in U $$
+
+$$ x \in \in \in S \text{ can also be written as } \in^3 $$
+
+$$ x \in \in \in \in S \iff \exists (U) \cdot U \in S ∩ x \in \in \in U $$
+
+$$ x \in \in \in \in S \text{ can also be written as } \in^4 $$
+
+$$ \vdots $$
+
+$$ x \in^{a + b} S \text{ can also be written as } x \in^a \in^b S $$
+
+$$ x \in^S S \iff x \in S ∨ \exists (U) \cdot U \in S ∩ x \in^S U $$
+
+###### .
+
+Was [recursion](https://silaspe.github.io/maths/aa.html#.) in the rule book? I guess so.
+
+$$ 0 = Ø $$
+
+$$ \text{succ} (n) \text{ (Which mathematicly equals } n + 1 \text{) Is how you would usually define numbers, so I'll define numbers that way, I'll say that succ} (n) \text{ is the set that contains all numbers } 0 \text{-} n. $$
 
 ### set theory proofs??
