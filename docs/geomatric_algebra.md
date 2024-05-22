@@ -263,17 +263,17 @@ $$ \text{complex numbers (surprisingly in geomatric algebra) come from } 2d \tex
 
 [.](https://silaspe.github.io/maths/complex.html)
 
-$$ \hat{i} = x \text{ (This is so that } \hat{i} \text{ isn't confused with } i \text{).} $$
+$$ \hat{i} = \hat{x} \text{ (This is so that } \hat{i} \text{ isn't confused with } i \text{).} $$
 
-$$ \hat{j} = y $$
+$$ \hat{j} = \hat{y} $$
 
-$$ \hat{i} \hat{j} = i $$
+$$ \hat{x} \hat{y} = i $$
 
-$$ x^2 = 1 $$
+$$ \hat{x}^2 = 1 $$
 
-$$ y^2 = 1 $$
+$$ \hat{y}^2 = 1 $$
 
-$$ xy = -yx \text{ (} = i \text{)} $$
+$$ \hat{x} \hat{y} = -\hat{y} \hat{x} \text{(} = i \text{)} $$
 
 $$ \text{And with those, you can derive} $$
 
@@ -287,10 +287,10 @@ $$ \text{Also, a bivector in } 2 \text{ dimensions has one degree of freedom (ju
 k \\ \end{pmatrix} \text{ DoF's (degrees of freedom)), so I'll call it, I dunno, a pseudoscalar. (} i \text{ Is always the unit pseudoscalar no matter the dimension.)} $$
 
 $$ \vec{u} = \begin{bmatrix} u_x \\
-u_y \\ \end{bmatrix} = u_x x + u_y y $$
+u_y \\ \end{bmatrix} = u_x \hat{x} + u_y \hat{y} $$
 
 $$ \vec{v} = \begin{bmatrix} v_x \\
-v_y \\ \end{bmatrix} = v_x x + v_y y $$
+v_y \\ \end{bmatrix} = v_x \hat{x} + v_y \hat{y} $$
 
 $$ \vec{u} \vec{v} = \begin{pmatrix} (\hat{x} \hat{x}) u_x v_x & (\hat{x} \hat{y}) u_x v_y \\
 (\hat{y} \hat{x}) u_y v_x & (\hat{y} \hat{y}) u_y v_y \\ \end{pmatrix} = (u_x v_x + u_y v_y) + (u_x v_y - u_y v_x)i $$
@@ -308,7 +308,7 @@ $$  \text{Text over time! (As oppose to voice over, it's a font swich.) What's s
 
 $$ \text{It's the next day.} $$
 
-$$ \vec{v} i = v_x \hat{x} i + v_y \hat{y} i = v_x \hat{x} \hat{x} \hat{y} + v_y \hat{y} \hat{x} \hat{y} = v_x \hat{y} - v_y \hat{x} \hat{y} \hat{y} = v_x \hat{y - v_y \hat{x} $$
+$$ \vec{v} i = (v_x \hat{x} + v_y \hat{y})i = v_x \hat{x} i + v_y \hat{y} i = v_x \hat{x} \hat{x} \hat{y} + v_y \hat{y} \hat{x} \hat{y} = v_x \hat{y} - v_y \hat{x} \hat{y} \hat{y} = v_x \hat{y} - v_y \hat{x} $$
 
 ```py
 def complexify(v_x, v_y):
@@ -365,9 +365,9 @@ $$ a + bi = \vec{u} \vec{v} $$
 
 $$ a = \vec{u} \cdot \vec{v} = u_x v_x + u_y v_y $$
 
-$$ bi = \vec{u} ∧ \vec{v} = (u_x v_y - u_y v_x)i \text{ (This also means that } b = u_x v_y - u_y v_x = \vec{u} \times \vec{v} = -i \text{ } \vec{u} ∧ \vec{v} \text{).} $$
+$$ bi = \vec{u} ∧ \vec{v} = (u_x v_y - u_y v_x)i \text{ (This also means that } b = u_x v_y - u_y v_x = \vec{u} \times \vec{v} \text{).} $$
 
-$$ || \vec{u} \vec{v} || = \sqrt{(\vec{u} \cdot \vec{v})^2 + (-i \text{ } \vec{u} ∧ \vec{v})^2} = \sqrt{(u_x v_x + u_y v_y)^2 + (u_x v_y - u_y v_x)^2} = \sqrt{u_x v_x u_x v_x + u_x v_x u_y v_y + u_y v_y u_x v_x + u_y v_y u_y v_y + u_x v_y u_x v_y - u_x v_y u_y v_x - u_y v_x u_x v_y + u_y v_x u_y v_x} = \sqrt{u_x^2 v_x^2 + u_x^2 v_y^2 + u_y^2 v_x^2 + u_y^2 v_y^2} = \sqrt{(u_x^2 + u_y^2)(v_x^2 + v_y^2)} = \sqrt{u_x^2 + u_y^2} \sqrt{v_x^2 + v_y^2} $$
+$$ || \vec{u} \vec{v} || = \sqrt{(\vec{u} \cdot \vec{v})^2 + (\vec{u} \times \vec{v})^2} = \sqrt{(u_x v_x + u_y v_y)^2 + (u_x v_y - u_y v_x)^2} = \sqrt{u_x v_x u_x v_x + u_x v_x u_y v_y + u_y v_y u_x v_x + u_y v_y u_y v_y + u_x v_y u_x v_y - u_x v_y u_y v_x - u_y v_x u_x v_y + u_y v_x u_y v_x} = \sqrt{u_x^2 v_x^2 + u_x^2 v_y^2 + u_y^2 v_x^2 + u_y^2 v_y^2} = \sqrt{(u_x^2 + u_y^2)(v_x^2 + v_y^2)} = \sqrt{u_x^2 + u_y^2} \sqrt{v_x^2 + v_y^2} $$
 
 $$ || \vec{u} || = \sqrt{u_x^2 + u_y^2} $$
 
@@ -423,7 +423,7 @@ $$ \vec{w} \vec{u} \vec{v} = \vec{w} \text{ Scaled by the length of } \vec{u} \t
 
 ### Rotors
 
-A rotor is a way to rotate a vector by any angle $\theta$ in any plane (Yes, plane. I think it makes the same if not more sense to rotate in a plane. I also think that this is simalar to the ∧ v.s. $\times$ Product.) in any dimention. Let's start with the simplest possible rotor I can think of, in $3d$, $90$°, $x$ - $y$ plane. (I'll call $\vec{v}$ rotated by the name of $\vec{v} \prime$)
+A rotor is a way to rotate a vector by any angle $\theta$ in any plane (Yes, plane. I think it makes the same if not more sense to rotate in a plane. I also think that this is simalar to the ∧ v.s. $\times$ Product.) in any dimention. Let's start with the simplest possible rotor I can think of, in $3d$, $90$°, $\hat{x}$ - $\hat{y}$ plane. (I'll call $\vec{v}$ rotated by the name of $\vec{v} \prime$)
 
 $$ \vec{v} = v_x \hat{x} + v_y \hat{y} + v_z \hat{z} $$
 
@@ -435,35 +435,35 @@ $$ \vec{v} \hat{x} \hat{y} = (v_x \hat{x} + v_y \hat{y} + v_z \hat{z}) \hat{x} \
 
 $$ \text{What was that thing he said at this point? Oh right, it was: Well, it almost worked, the } x \text{ and the } y \text{ coordinates got rotated correctly, but the } z \text{ coordinate got turned into this trivector, let's try something else.} $$
 
-$$ \text{Do you remember that time when I proved that } z \vec{v} = \vec{v} \text{ ccong} (z) \text{, that means that I can now prove this: } \vec{v} z = \text{ccong} (z) \vec{v} \text{. I'll assume that that means } yx \text{, I'll try that!} $$
+$$ \text{Do you remember that time when I proved that } z \vec{v} = \vec{v} \text{ ccong} (z) \text{, that means that I can now prove this: } \vec{v} z = \text{ccong} (z) \vec{v} \text{. I'll assume that that means } \hat{y} \hat{x} \text{, I'll try that!} $$
 
-$$ \hat{y} \hat{x} \vec{v} = \hat{y} \hat{x} (v_x \hat{x} + v_y \hat{y} + v_z \hat{z}) = yx v_x x + yx v_y y + yx v_z z = v_x yxx + v_y yxy + v_z yxz = v_x y - v_y xyy - v_z xyz = (v_x) y - (v_y) x - (v_z) xyz $$
+$$ \hat{y} \hat{x} \vec{v} = \hat{y} \hat{x} (v_x \hat{x} + v_y \hat{y} + v_z \hat{z}) = \hat{y} \hat{x} v_x \hat{x} + \hat{y} \hat{x} v_y \hat{y} + \hat{y} \hat{x} v_z \hat{z} = v_x \hat{y} \hat{x} \hat{x} + v_y \hat{y} \hat{x} \hat{y} + v_z \hat{y} \hat{x} \hat{z} = v_x \hat{y} - v_y \hat{x} \hat{y} \hat{y} - v_z xyz = (v_x) y - (v_y) x - (v_z) \hat{x} \hat{y} \hat{z} $$
 
 $$ \text{Once again, the } x \text{ and the } y \text{ coordinates got rotated correctly, but the } z \text{ coordinate got turned into the inverse trivector this time, maybe doing both at once would cancel out?} $$
 
-$$ \hat{y} \hat{x} \vec{v} \hat{x} \hat{y} = \hat{y} \hat{x} (v_x \hat{x} + v_y \hat{y} + v_z \hat{z}) \hat{x} \hat{y} = \hat{y} \hat{x} v_x xxy + yx v_y yxy + yx v_z zxy = v_x yxy + v_y yxyxy + yx v_z zxy = - v_x xyy - v_y yyxxy + yx v_z zxy = - v_x x - v_y y + yx v_z zxy $$
+$$ \hat{y} \hat{x} \vec{v} \hat{x} \hat{y} = \hat{y} \hat{x} (v_x \hat{x} + v_y \hat{y} + v_z \hat{z}) \hat{x} \hat{y} = \hat{y} \hat{x} v_x \hat{x} \hat{x}  \hat{y} + \hat{y} \hat{x} v_y \hat{y} \hat{x} \hat{y} + \hat{y} \hat{x} v_z \hat{z} \hat{x} \hat{y} = v_x \hat{y} \hat{x} \hat{y} + v_y \hat{y} \hat{x} \hat{y} \hat{x} \hat{y} + \hat{y} \hat{x} v_z \hat{z} \hat{x} \hat{y} = - v_x \hat{x} \hat{y} \hat{y} - v_y \hat{y} \hat{y} \hat{x} \hat{x} \hat{y} + \hat{y} \hat{x} v_z \hat{z} \hat{x} \hat{y} = - v_x \hat{x} - v_y \hat{y} + \hat{y} \hat{x} v_z \hat{z} \hat{x} \hat{y} $$
 
-$$ yx v_z zxy = v_z yxzxy = -v_z yxxzy = -v_z yzy = v_z yyz $$
+$$ \hat{y} \hat{x} v_z \hat{z} \hat{x} \hat{y} = v_z \hat{y} \hat{x} \hat{z} \hat{x} \hat{y} = -v_z \hat{y} \hat{x} \hat{x} \hat{z} \hat{y} = -v_z \hat{y} \hat{z} \hat{y} = v_z \hat{y} \hat{y} \hat{z} $$
 
-$$ yx v_z zxy = v_z z $$
+$$ \hat{y} \hat{x} v_z \hat{z} \hat{x} \hat{y} = v_z \hat{z} $$
 
-$$ yx \vec{v} xy = - v_x x - v_y y + v_z z $$
+$$ \hat{y} \hat{x} \vec{v} \hat{x} \hat{y} = - v_x \hat{x} - v_y \hat{y} + v_z \hat{z} $$
 
-$$ \text{ The } z \text{ coordinate is correct! Success! But the } x \text{ and } y \text{ got messed up, of coarse they did, we rotated twice. (Once for } yx \text{ on the left, and once for } xy \text{ on the right.) let's add back in that angle } \theta \text{ to prove that we did rotate twice.} $$
+$$ \text{ The } z \text{ coordinate is correct! Success! But the } x \text{ and } y \text{ got messed up, of coarse they did, we rotated twice. (Once for } \hat{y} \hat{x} \text{ on the left, and once for } \hat{x} \hat{y} \text{ on the right.) let's add back in that angle } \theta \text{ to prove that we did rotate twice.} $$
 
-Do you remember [euler's identity](https://silaspe.github.io/maths/complex.html), $e^{i \theta} = cos(\theta) + isin(\theta)$ right? Well, this actually for any $i$ whose square is $-1$, the thing is that $xy^2 = xyxy = -xxyy = -1$, so
+Do you remember [euler's identity](https://silaspe.github.io/maths/complex.html), $e^{i \theta} = cos(\theta) + isin(\theta)$ right? Well, this actually for any $i$ whose square is $-1$, the thing is that $(\hat{x} \hat{y})^2 = \hat{x} \hat{y} \hat{x} \hat{y} = -\hat{x} \hat{x} \hat{y} \hat{y} = -1$, so
 
-$$ e^{xy \theta} = cos(\theta) + xy \text{ } sin(\theta). $$
+$$ e^{\hat{x} \hat{y} \theta} = cos(\theta) + \hat{x} \hat{y} \text{ } sin(\theta). $$
 
 $$ \text{And just to make sure, let's test for } \theta = 90° $$
 
-$$ cos(90°) + xy \text{ } sin(90°) = 0 + xy \text{ } 1 = xy. $$
+$$ cos(90°) + \hat{x} \hat{y} \text{ } sin(90°) = 0 + \hat{x} \hat{y} \text{ } 1 = \hat{x} \hat{y}. $$
 
-$$ \text{So, replace } xy \text{ and } yx \text{ with } cos(\theta) + xy \text{ } sin(\theta) \text{ and } cos(-\theta) + xy \text{ } sin(-\theta) \text{ respectively.} $$
+$$ \text{So, replace } \hat{x} \hat{y} \text{ and } \hat{y} \hat{x} \text{ with } cos(\theta) + \hat{x} \hat{y} \text{ } sin(\theta) \text{ and } cos(-\theta) + \hat{x} \hat{y} \text{ } sin(-\theta) \text{ respectively.} $$
 
-$$ \text{(The second one can simplify to } cos(\theta) - xy \text{ } sin(\theta) \text{).} $$
+$$ \text{(The second one can simplify to } cos(\theta) - \hat{x} \hat{y} \text{ } sin(\theta) \text{).} $$
 
-$$ \vec{v} \prime = (v_x cos(\theta) - v_y sin(\theta))x + (v_y cos(\theta) + v_x sin(\theta))y + v_z z $$
+$$ \vec{v} \prime = (v_x cos(\theta) - v_y sin(\theta)) \hat{x} + (v_y cos(\theta) + v_x sin(\theta)) \hat{y} + v_z \hat{z} $$
 
 $$ (cos(\theta) - xy \text{ } sin(\theta)) \text{ } \vec{v} \text{ } (cos(\theta) + xy \text{ } sin(\theta)) = (cos(\theta) - xy \text{ } sin(\theta)) (v_x x + v_y y + v_z z) (cos(\theta) + xy \text{ } sin(\theta)) = cos(\theta) v_x x \text{ } cos(\theta) + cos(\theta) v_x xxy \text{ } sin(\theta) - xy \text{ } sin(\theta) v_x x \text{ } cos(\theta) - xy \text{ } sin(\theta) v_x xxy \text{ } sin(\theta) + cos(\theta) v_y y \text{ } cos(\theta) + cos(\theta) v_y yxy \text{ } sin(\theta) - xy \text{ } sin(\theta) v_y y \text{ } cos(\theta) - xy \text{ } sin(\theta) v_y yxy \text{ } sin(\theta) + cos(\theta) v_z z \text{ } cos(\theta) + cos(\theta) v_z zxy \text{ } sin(\theta) - xy \text{ } sin(\theta) v_z z \text{ } cos(\theta) - xy \text{ } sin(\theta) v_z zxy \text{ } sin(\theta) = (v_x cos(\theta) cos(\theta)) x + (v_x cos(\theta) sin(\theta)) xxy - (v_x sin(\theta) cos(\theta)) xyx - (v_x sin(\theta) sin(\theta)) xyxxy + (v_y cos(\theta) cos(\theta)) y + (v_y cos(\theta) sin(\theta)) yxy - (v_y sin(\theta) cos(\theta)) xyy - (v_y sin(\theta) sin(\theta)) xyyxy + (v_z cos(\theta) cos(\theta)) z + (v_z cos(\theta) sin(\theta)) zxy - (v_z sin(\theta) cos(\theta)) xyz - (v_z sin(\theta) sin(\theta)) xyzxy $$
 
