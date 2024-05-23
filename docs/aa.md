@@ -483,7 +483,9 @@ $$ x \in^S S \iff x \in S ∨ \exists (U) \cdot U \in S ∩ x \in^S U $$
 
 ###### .
 
-Was [recursion](https://silaspe.github.io/maths/aa.html#1) in the rule book? I guess so.
+Was [recursion](https://silaspe.github.io/maths/aa.html#_1) in the rule book? I guess so.
+
+### set theory/logic (numbers)?
 
 $$ 0 = Ø $$
 
