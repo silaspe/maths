@@ -68,9 +68,9 @@ $$ (\hat{k} \hat{i})(u_z v_x) + (\hat{k} \hat{j})(u_z v_y) + (\hat{k} \hat{k})(u
 
 $$ \text{Ending } 1 \text{, I give up.} $$
 
-$$ \text{Because there is no way that this is a vector.} $$
+$$ \text{Because there is no way that this is a vector. Anyways, ending 2, } $$
 
-### ending 2, geometric algebra/clifford algebra?
+### geometric algebra
 
 Yeah, I forgot all endings to multiplying vectors, so I came up with the previous one. Well, I guss I had this one, but I would rather make it into it's own page. After waching [A Swift Introduction to Geometric Algebra](https://www.youtube.com/watch?v=60z_hpEAtD8) (litteraly, that was the name), I thought that (if it is a scalar plus a bivector), than it is just a scalar plus a vector times $i$ (or $-i$, I am not sure yet), but I will call it $U$ instead. But first, here's the definition of multiplying two basis vectors (all the alternitave endings probably just had alternitave definitions for this. I think that I remember the definition that multiplication was anticomutative, which would lead me to the cross product): The prodct of a basis vector $e_1$ and it self is $0$, and the product of two basis vectors $e_1$ and $e_2$ equals $-e_2 e_1$ equals $e_3$. This means that you can do this at any point in the product of basis vectors.
 
@@ -177,7 +177,7 @@ I'll leave it to J perm.
 
 [.](https://www.youtube.com/@JPerm)
 
-### $\frac{1}{\vec{v}}$?
+### $\frac{1}{\vec{v}}$
 
 $$ \vec{v} \frac{1}{\vec{v}} = \vec{v} \cdot \frac{1}{\vec{v}} + \hat{i} \hat{j} \hat{k} \text{ } \vec{v} \times \frac{1}{\vec{v}} = 1 + \hat{i} \hat{j} \hat{k} \text{ } 0 $$
 
@@ -329,7 +329,9 @@ $$ \text{I'm sorry that this got shoved in your face. Just scroll up.} $$
 
 <iframe src="https://www.geogebra.org/calculator/ysw94mwz?embed" width="800" height="600" allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;" frameborder="0"></iframe>
 
-### line through two points?
+$$ \text{This used to be a page on the website until I deleted it. The page the page still exists and you can find it by replacing the } aa \text{ is the URL link above with } hyperbolic \text{, I think you can see why I deleted it.} $$
+
+#### line through two points?
 
 $$ f(a_x) = a_y $$
 
@@ -413,7 +415,7 @@ $$ \text{But the thing is, using some symbols, you can describe almost all of ma
 
 $$ ∀ \text{ Is pronounced "for any" or "for all" (but I prefer "for any") and means what it says. It than has an open parentheses, a thing (} x, y, z, \text{ or a set) that I will call } x \text{ for now, a closed parentheses (parenthese is not a word), a } \cdot \text{, a statement that implies something about } x \text{, a colon, and finish it off with a statement including } x. $$
 
-$$ \text{"} ( \text{" and "} ) \text{" are not pronounced.} $$
+$$ ( \text{ and } ) \text{ are not pronounced.} $$
 
 $$ \cdot \text{ Is pronounced "such that" and it's only used in two contexts: "for any } x \text{ such that..." and "there exists } x \text{ such that...".} $$
 
@@ -443,7 +445,7 @@ $$ = : \text{ Is pronounced "equals by definition" and means "define the thing o
 
 $$ = \text{ Is pronounced "is the same as" and I'll get to it's formal meaning in the next chapter.} $$
 
-$$ \in^S \text{ Is pronounced "is a super element" (} S \text{ for super) and I'll get to it's meaning in the next chapter.} $$
+$$ \in^S \text{ Is pronounced "is a super element of" (} S \text{ for super) and I'll get to it's meaning in the next chapter.} $$
 
 $$ ∨ \text{ Is pronounced "or" and means "} a ∨ b \text{ is true if statement } a \text{ is true or } b \text{ is true... Or both!", it can also mean the union of two sets, in that case, it is pronounced "unioned with", but I'll get to it's formal meaning in the next chapter.} $$
 
@@ -467,15 +469,17 @@ $$ x \in \in S \iff \exists (U) \cdot U \in S ∩ x \in U $$
 
 $$ x \in \in S \text{ can also be written as } \in^2 $$
 
-$$ x \in \in \in S \iff \exists (U) \cdot U \in S ∩ x \in \in U $$
+$$ x \in \in \in S \iff \exists (U) \cdot U \in S ∩ x \in^2 U $$
 
 $$ x \in \in \in S \text{ can also be written as } \in^3 $$
 
-$$ x \in \in \in \in S \iff \exists (U) \cdot U \in S ∩ x \in \in \in U $$
+$$ x \in \in \in \in S \iff \exists (U) \cdot U \in S ∩ x \in^3 U $$
 
 $$ x \in \in \in \in S \text{ can also be written as } \in^4 $$
 
 $$ \vdots $$
+
+$$ x \in^{a + b} S \iff \exists (U) \cdot U \in^a S ∩ x \in^b U $$
 
 $$ x \in^{a + b} S \text{ can also be written as } x \in^a \in^b S $$
 
@@ -494,6 +498,8 @@ $$ \text{succ} (n) \text{ (Which mathematicly equals } n + 1 \text{) Is how you 
 $$ x \in A ∨ B \iff x \in A ∨ x \in B $$
 
 $$ ∀(S) \cdot E \in S ∩ ∀(T) \cdot T ¬ = E: T ¬ \in S: S = : set(E) $$
+
+$$ \text{Around } 500 \text{ lines?? (I might add another definition, but at the time of typing this, this is on } 500 \text{ lines.)} $$
 
 $$ \text{succ} (n) = : set(n) ∨ n $$
 
