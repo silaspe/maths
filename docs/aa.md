@@ -479,12 +479,14 @@ $$ x \in^{a + b} S \text{ can also be written as } x \in^a \in^b S $$
 
 $$ x \in^S S \iff x \in S ∨ \exists (U) \cdot U \in S ∩ x \in^S U $$
 
-###### .
+###### 1
 
-Was [recursion](https://silaspe.github.io/maths/aa.html#.) in the rule book? I guess so.
+Was [recursion](https://silaspe.github.io/maths/aa.html#1) in the rule book? I guess so.
 
 $$ 0 = Ø $$
 
 $$ \text{succ} (n) \text{ (Which mathematicly equals } n + 1 \text{) Is how you would usually define numbers, so I'll define numbers that way, I'll say that succ} (n) \text{ is the set that contains all numbers } 0 \text{-} n. $$
+
+$$ ∀(S) \cdot n \in S ∩ ∀(x) \cdot x \in n: x \in S ∩ ∀(y) \cdot y ¬ \in n ∩ y ¬ = n: y ¬ \in S: x \in S: S = : \text{succ} (n) $$
 
 ### set theory proofs??
