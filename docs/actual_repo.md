@@ -87,7 +87,7 @@ def Log(x, y, n):
     return str(f)
 ```
 
-### as a cherry on top, the exact digits of the roots of polynomials (psudo)
+#### as a cherry on top, the exact digits of the roots of polynomials (psudo)
 
 ```
 def Roots(p(x), StartValue, n):
@@ -109,4 +109,17 @@ def Roots(p(x), StartValue, n):
     return str(f) + '.' + str(a)
   else:
     return str(f)
+```
+
+### set theory numbers
+
+```py
+def SetTheoryNumbers(n)
+  string = "{"
+  k = n - 1
+  while k >= 0:
+    string += SetTheoryNumbers(k)
+    k -= 1
+  string += "}"
+  return string
 ```
