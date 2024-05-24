@@ -453,7 +453,7 @@ $$ \text{succ Is pronounced "the immediate successor of" and means "that number 
 
 $$ set \text{ Is pronounced "the set containing" as in "} set(S) \text{" and I'll get to it's formal meaning in the next chapter.} $$
 
-### set theory/logic (definitions from those definitions)?
+### set theory (definitions from those definitions)
 
 $$ ¬ \exists (x) \cdot x \in Ø $$
 
@@ -489,7 +489,7 @@ $$ x \in^S S \iff x \in S ∨ \exists (U) \cdot U \in S ∩ x \in^S U $$
 
 Was [recursion](https://silaspe.github.io/maths/aa.html#_1) in the rule book? I guess so.
 
-### set theory/logic (numbers)?
+### set theory (numbers)
 
 $$ 0 = Ø $$
 
@@ -503,4 +503,4 @@ $$ \text{Around } 500 \text{ lines?? (I might add another definition, but at the
 
 $$ \text{succ} (n) = : set(n) ∨ n $$
 
-### set theory proofs??
+### set theory proofs?
