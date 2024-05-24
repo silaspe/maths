@@ -92,7 +92,7 @@ $$ x \in A ∨ B \iff x \in A ∨ x \in B $$
 
 $$ ∀(S) \cdot E \in S ∩ ∀(T) \cdot T ¬ = E: T ¬ \in S: S = : set(E) $$
 
-$$ \text{Around } 500 \text{ lines?? (I might add another definition, but at the time of typing this, this is on } 500 \text{ lines.)} $$
+$$ \text{Around } 100 \text{ lines?? (I might add another definition, but at the time of typing this, this is on } 95 \text{ lines.)} $$
 
 $$ \text{succ} (n) = : set(n) ∨ n $$
 
