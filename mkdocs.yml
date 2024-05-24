@@ -24,6 +24,7 @@ nav:
   - The infamous "arctan puzzle": arctan.md
   - Modular arithmetic: mod.md
   - Geometric algebra: geomatric_algebra.md
+  - Set theory: set_theory.md
 
 theme:
   name: material
