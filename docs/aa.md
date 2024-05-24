@@ -329,7 +329,7 @@ $$ \text{I'm sorry that this got shoved in your face. Just scroll up.} $$
 
 <iframe src="https://www.geogebra.org/calculator/ysw94mwz?embed" width="800" height="600" allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;" frameborder="0"></iframe>
 
-$$ \text{This used to be a page on the website until I deleted it. The page the page still exists and you can find it by replacing the } aa \text{ is the URL link above with } hyperbolic \text{, I think you can see why I deleted it.} $$
+This used to be a page on the website until I deleted it. The page the page still exists and you can find it by replacing the `aa` in the URL link above with `hyperbolic`, I think you can see why I deleted it.
 
 #### line through two points?
 
