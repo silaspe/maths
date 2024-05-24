@@ -1,10 +1,10 @@
-### set theory/logic (definitions)?
+### What even is a set?
 
-$$ \text{A set is a well defined collection of objects, a set could contain the two shoes on you feet, or the } 5 \text{ peices of chese on this cutting board (that I'm going to pretend exists), sets can even contain other sets, but sets can not contain themselfes, because tis would lead to a paradox: would the set that contains every set that dosen't contain itsef contain itself?" this also means that there isn't a set that contains everything.} $$
+A set is a well defined collection of objects, a set could contain the two shoes on you feet, or the $5$ peices of chese on this cutting board (that I'm going to pretend exists), sets can even contain other sets, but sets can not contain themselfes, because tis would lead to a paradox: would the set that contains every set that dosen't contain itsef contain itself?" this also means that there isn't a set that contains everything.
 
-$$ \text{But the thing is, using some symbols, you can describe almost all of math. These symbols can just be pronounced as words, and it would make a sentence, such as "} ¬ \exists (x): |x| < 0 \text{" as "there does not exist } x \text{ such that the absolute value of } x \text{ is strictly less than } 0 \text{". Time to rapidfire through each one's pronunciation and meaning.} $$
+But the thing is, using some symbols, you can describe almost all of math. These symbols can just be pronounced as words, and it would make a sentence, such as " $¬ \exists (x): |x| < 0$ " as " there does not exist $x$ such that the absolute value of $x$ is strictly less than $0$ ". Time to rapidfire through each one's pronunciation and meaning.} $$
 
-.
+### definitions
 
 $$ ∀ \text{ Is pronounced "for any" or "for all" (but I prefer "for any") and means what it says. It than has an open parentheses, a thing (} x, y, z, \text{ or a set) that I will call } x \text{ for now, a closed parentheses (parenthese is not a word), a } \cdot \text{, a statement that implies something about } x \text{, a colon, and finish it off with a statement including } x. $$
 
@@ -46,7 +46,7 @@ $$ \text{succ Is pronounced "the immediate successor of" and means "that number 
 
 $$ set \text{ Is pronounced "the set containing" as in "} set(S) \text{" and I'll get to it's formal meaning in the next chapter.} $$
 
-### set theory (definitions from those definitions)
+## definitions from those definitions
 
 $$ ¬ \exists (x) \cdot x \in Ø $$
 
@@ -80,9 +80,9 @@ $$ x \in^S S \iff x \in S ∨ \exists (U) \cdot U \in S ∩ x \in^S U $$
 
 ###### .
 
-Was [recursion](https://silaspe.github.io/maths/aa.html#_1) in the rule book? I guess so.
+Was [recursion](https://silaspe.github.io/maths/set_theory.html#_1) in the rule book? I guess so.
 
-### set theory (numbers)
+### numbers
 
 $$ 0 = Ø $$
 
@@ -97,3 +97,5 @@ $$ \text{Around } 500 \text{ lines?? (I might add another definition, but at the
 $$ \text{succ} (n) = : set(n) ∨ n $$
 
 ### set theory proofs?
+
+no.
