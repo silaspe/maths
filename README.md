@@ -24,4 +24,5 @@ sum rule, chain rule, product rule, multiplication by constant, exponent rule, i
 * [Secretly clifford algebra](geomatric_algebra.md) - Yes, you can multiply two vectors.
 
 PS you don't get a vector
+
 * [Set theory](set_theory.md) - definitions of the subset, empty set, power set, and so on.
