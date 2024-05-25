@@ -1,4 +1,4 @@
-### What even is a set?
+## What even is a set?
 
 A set is a well defined collection of objects, a set could contain the two shoes on you feet, or the $5$ peices of chese on this cutting board (that I'm going to pretend exists), sets can even contain other sets, but sets can not contain themselfes, because tis would lead to a paradox: would the set that contains every set that dosen't contain itsef contain itself?" this also means that there isn't a set that contains everything.
 
@@ -32,7 +32,7 @@ $$ \iff \text{ Is pronounced "if and only if" as in "if statement } a \text{ is 
 
 $$ pow \text{ Is pronounced "the power set of" as in "} pow(S) \text{" and I'll get to the meaning in the next chapter.} $$
 
-$$ ∩ \text{ Is pronounced "and" and means "} a ∩ b \text{ is true if and only if statement } a \text{ is true and } b \text{ is true".} $$
+$$ ∩ \text{ Is pronounced "and" and means "} a ∩ b \text{ is true if and only if statement } a \text{ is true and } b \text{ is true", it can also mean the intersection of two sets, in that case, it is pronounced "intersectioned with", but I'll get to it's formal meaning in the next next next chapter..} $$
 
 $$ = : \text{ Is pronounced "equals by definition" and means "define the thing on the left as the thing on the right", or was it the other wat around?} $$
 
@@ -46,7 +46,7 @@ $$ \text{succ Is pronounced "the immediate successor of" and means "that number 
 
 $$ set \text{ Is pronounced "the set containing" as in "} set(S) \text{" and I'll get to it's formal meaning in the next chapter.} $$
 
-## definitions from those definitions
+### definitions from those definitions
 
 $$ ¬ \exists (x) \cdot x \in Ø $$
 
@@ -95,6 +95,10 @@ $$ ∀(S) \cdot E \in S ∩ ∀(T) \cdot T ¬ = E: T ¬ \in S: S = : set(E) $$
 $$ \text{Around } 100 \text{ lines?? (I might add another definition, but at the time of typing this, this is on } 95 \text{ lines.)} $$
 
 $$ \text{succ} (n) = : set(n) ∨ n $$
+
+### back to definitions from those definitions
+
+$$ x \in A ∩ B \iff x \in A ∩ x \in B $$
 
 ### set theory proofs?
 
