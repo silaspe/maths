@@ -497,10 +497,18 @@ $$ \text{succ} (n) \text{ (Which mathematicly equals } n + 1 \text{) Is how you 
 
 $$ x \in A ∨ B \iff x \in A ∨ x \in B $$
 
-$$ ∀(S) \cdot E \in S ∩ ∀(T) \cdot T ¬ = E: T ¬ \in S: S = : set(E) $$
-
 $$ \text{Around } 500 \text{ lines?? (I might add another definition, but at the time of typing this, this is on } 500 \text{ lines.)} $$
+
+$$ ∀(S) \cdot E \in S ∩ ∀(T) \cdot T ¬ = E: T ¬ \in S: S = : set(E) $$
 
 $$ \text{succ} (n) = : set(n) ∨ n $$
 
 ### set theory proofs?
+
+no
+
+#### bayes'
+
+<iframe src="https://www.desmos.com/calculator/1midapkbbr?embed" width="500" height="500" style="border: 1px solid #ccc" frameborder=0></iframe>
+
+[.](https://www.youtube.com/watch?v=HZGCoVF3YvM)
