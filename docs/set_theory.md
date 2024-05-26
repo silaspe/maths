@@ -4,15 +4,17 @@ A set is a well defined collection of objects, a set could contain the two shoes
 
 But the thing is, using some symbols, you can describe almost all of math. These symbols can just be pronounced as words, and it would make a sentence, such as " $¬ \exists (x): |x| < 0$ " as " there does not exist $x$ such that the absolute value of $x$ is strictly less than $0$ ". Time to rapidfire through each one's pronunciation and meaning.} $$
 
-### definitions
+### meanings of things
 
-$$ ∀ \text{ Is pronounced "for any" or "for all" (but I prefer "for any") and means what it says. It than has an open parentheses, a thing (} x, y, z, \text{ or a set) that I will call } x \text{ for now, a closed parentheses (parenthese is not a word), a } \cdot \text{, a statement that implies something about } x \text{, a colon, and finish it off with a statement including } x. $$
+$$ ∀ \text{ Is pronounced "for any" or "for all" (but I prefer "for any") and means what it says. It than has an open parentheses, a thing (or sometimes multiple things separated by a comma) (} x, y, z, \text{ or a set) that I will call } x \text{ for now, a closed parentheses (parenthese is not a word), a } \cdot \text{, a statement that implies something about } x \text{, a colon, and finish it off with a statement including } x. $$
 
 $$ ( \text{ and } ) \text{ are not pronounced.} $$
 
 $$ \cdot \text{ Is pronounced "such that" and it's only used in two contexts: "for any } x \text{ such that..." and "there exists } x \text{ such that...".} $$
 
 $$ : \text{ Is pronounced however a colon is pronounced.} $$
+
+$$ , \text{ Is pronounced however a comma is pronounced.} $$
 
 $$ \exists \text{ Is pronounced "there exists" and I don't think I need to explain that.} $$
 
@@ -32,7 +34,7 @@ $$ \iff \text{ Is pronounced "if and only if" as in "if statement } a \text{ is 
 
 $$ pow \text{ Is pronounced "the power set of" as in "} pow(S) \text{" and I'll get to the meaning in the next chapter.} $$
 
-$$ ∩ \text{ Is pronounced "and" and means "} a ∩ b \text{ is true if and only if statement } a \text{ is true and } b \text{ is true", it can also mean the intersection of two sets, in that case, it is pronounced "intersectioned with", but I'll get to it's formal meaning in the next next next chapter..} $$
+$$ ∩ \text{ Is pronounced "and" and means "} a ∩ b \text{ is true if and only if statement } a \text{ is true and } b \text{ is true", it can also mean the intersection of two sets, in that case, it is pronounced "intersectioned with", but I'll get to it's formal meaning in the next next next next chapter..} $$
 
 $$ = : \text{ Is pronounced "equals by definition" and means "define the thing on the left as the thing on the right", or was it the other wat around?} $$
 
@@ -46,7 +48,9 @@ $$ \text{succ Is pronounced "the immediate successor of" and means "that number 
 
 $$ set \text{ Is pronounced "the set containing" as in "} set(S) \text{" and I'll get to it's formal meaning in the next chapter.} $$
 
-### definitions from those definitions
+$$ → \text{ Is technically called the if then sign, but it is pronounced "implies" and means "statement } a → b \text{ is true if statement } a \text{ being true implies statement } b \text{ is true", so } a → b \text{ is true if statement } a \text{ is true and statement } b \text{ is true, or if statement } a \text{ is false and statement } b \text{ is false, or if statement } a \text{ is true and statement } b \text{ is false, but not if statement } a \text{ is false and statement } b \text{ is true. Also, if there was an element sign two spaces behind, pronounce it "being an element of" as oppose to  "is an element of"} $$
+
+### definitions
 
 $$ ¬ \exists (x) \cdot x \in Ø $$
 
@@ -96,9 +100,13 @@ $$ \text{Around } 100 \text{ lines?? (I might add another definition, but at the
 
 $$ \text{succ} (n) = : set(n) ∨ n $$
 
-### back to definitions from those definitions
+### back to definitions
 
 $$ x \in A ∩ B \iff x \in A ∩ x \in B $$
+
+$$ \text{Here's another definition of the subset: } ∀(A, B) \cdot ¬ \exists (x) \cdot x \in A ¬ → x \in B: A ⊆ B. $$
+
+$$ \text{And another one! } A ⊆ B \iff ¬ \exists (x) \cdot x \in A ∩ x ¬ \in B $$
 
 ### set theory proofs?
 
