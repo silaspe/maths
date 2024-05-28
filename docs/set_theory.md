@@ -2,7 +2,7 @@
 
 A set is a well defined collection of objects, a set could contain the two shoes on you feet, or the $5$ peices of chese on this cutting board (that I'm going to pretend exists), sets can even contain other sets, but sets can not contain themselfes, because tis would lead to a paradox: would the set that contains every set that dosen't contain itsef contain itself?" this also means that there isn't a set that contains everything.
 
-But the thing is, using some symbols, you can describe almost all of math. These symbols can just be pronounced as words, and it would make a sentence, such as " $¬ \exists (x): |x| < 0$ " as " there does not exist $x$ such that the absolute value of $x$ is strictly less than $0$ ". Time to rapidfire through each one's pronunciation and meaning.} $$
+But the thing is, using some symbols, you can describe almost all of math. These symbols can just be pronounced as words, and it would make a sentence, such as " $¬ \exists (x): |x| < 0$ " as " there does not exist $x$ such that the absolute value of $x$ is strictly less than $0$ ". Time to rapidfire through each one's pronunciation and meaning.
 
 ### meanings of things
 
@@ -48,7 +48,9 @@ $$ \text{succ Is pronounced "the immediate successor of" and means "that number 
 
 $$ set \text{ Is pronounced "the set containing" as in "} set(S) \text{" and I'll get to it's formal meaning in the next chapter.} $$
 
-$$ → \text{ Is technically called the if then sign, but it is pronounced "implies" and means "statement } a → b \text{ is true if statement } a \text{ being true implies statement } b \text{ is true", so } a → b \text{ is true if statement } a \text{ is true and statement } b \text{ is true, or if statement } a \text{ is false and statement } b \text{ is false, or if statement } a \text{ is true and statement } b \text{ is false, but not if statement } a \text{ is false and statement } b \text{ is true. Also, if there was an element sign two spaces behind, pronounce it "being an element of" as oppose to  "is an element of"} $$
+$$ → \text{ Is technically called the if then sign, but it is pronounced "implies" and means "statement } a → b \text{ is true if statement } a \text{ being true implies statement } b \text{ is true", so } a → b \text{ is true if statement } a \text{ is true and statement } b \text{ is true, or if statement } a \text{ is false and statement } b \text{ is false, or if statement } a \text{ is true and statement } b \text{ is false, but not if statement } a \text{ is false and statement } b \text{ is true. Also, if there was an element sign two spaces behind, pronounce it "being an element of" as oppose to  "is an element of".} $$
+
+$$ \text{I don't think that I need to explain the } < \text{sign.} $$
 
 ### definitions
 
@@ -86,6 +88,8 @@ $$ x \in^S S \iff x \in S ∨ \exists (U) \cdot U \in S ∩ x \in^S U $$
 
 Was [recursion](https://silaspe.github.io/maths/set_theory.html#_1) in the rule book? I guess so.
 
+[Recursion?](https://silaspe.github.io/maths/set_theory.html#_1) Get it?
+
 ### numbers
 
 $$ 0 = Ø $$
@@ -107,6 +111,8 @@ $$ x \in A ∩ B \iff x \in A ∩ x \in B $$
 $$ \text{Here's another definition of the subset: } ∀(A, B) \cdot ¬ \exists (x) \cdot x \in A ¬ → x \in B: A ⊆ B. $$
 
 $$ \text{And another one! } A ⊆ B \iff ¬ \exists (x) \cdot x \in A ∩ x ¬ \in B $$
+
+$$ n_1 < n_2 \iff n_1 \in n_2 $$
 
 ### set theory proofs?
 
