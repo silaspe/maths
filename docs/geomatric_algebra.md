@@ -459,13 +459,15 @@ $$ \text{And just to make sure, let's test for } \theta = 90° $$
 
 $$ cos(90°) + \hat{x} \hat{y} \text{ } sin(90°) = 0 + \hat{x} \hat{y} \text{ } 1 = \hat{x} \hat{y}. $$
 
-$$ \text{So, replace } \hat{x} \hat{y} \text{ and } \hat{y} \hat{x} \text{ with } cos(\theta) + \hat{x} \hat{y} \text{ } sin(\theta) \text{ and } cos(-\theta) + \hat{x} \hat{y} \text{ } sin(-\theta) \text{ respectively.} $$
+$$ \text{Also, } cos(\theta) = c \text{ and } sin(\theta) = s $$
 
-$$ \text{(The second one can simplify to } cos(\theta) - \hat{x} \hat{y} \text{ } sin(\theta) \text{).} $$
+$$ \text{So, replace } \hat{x} \hat{y} \text{ and } \hat{y} \hat{x} \text{ with } c + \hat{x} \hat{y} \text{ } s \text{ and } cos(-\theta) + \hat{x} \hat{y} \text{ } sin(-\theta) \text{ respectively.} $$
 
-$$ \vec{v} \prime = (v_x cos(\theta) - v_y sin(\theta)) \hat{x} + (v_y cos(\theta) + v_x sin(\theta)) \hat{y} + v_z \hat{z} $$
+$$ \text{(The second one can simplify to } c - \hat{x} \hat{y} \text{ } s \text{).} $$
 
-$$ (cos(\theta) - xy \text{ } sin(\theta)) \text{ } \vec{v} \text{ } (cos(\theta) + xy \text{ } sin(\theta)) = (cos(\theta) - xy \text{ } sin(\theta)) (v_x x + v_y y + v_z z) (cos(\theta) + xy \text{ } sin(\theta)) = cos(\theta) v_x x \text{ } cos(\theta) + cos(\theta) v_x xxy \text{ } sin(\theta) - xy \text{ } sin(\theta) v_x x \text{ } cos(\theta) - xy \text{ } sin(\theta) v_x xxy \text{ } sin(\theta) + cos(\theta) v_y y \text{ } cos(\theta) + cos(\theta) v_y yxy \text{ } sin(\theta) - xy \text{ } sin(\theta) v_y y \text{ } cos(\theta) - xy \text{ } sin(\theta) v_y yxy \text{ } sin(\theta) + cos(\theta) v_z z \text{ } cos(\theta) + cos(\theta) v_z zxy \text{ } sin(\theta) - xy \text{ } sin(\theta) v_z z \text{ } cos(\theta) - xy \text{ } sin(\theta) v_z zxy \text{ } sin(\theta) = (v_x cos(\theta) cos(\theta)) x + (v_x cos(\theta) sin(\theta)) xxy - (v_x sin(\theta) cos(\theta)) xyx - (v_x sin(\theta) sin(\theta)) xyxxy + (v_y cos(\theta) cos(\theta)) y + (v_y cos(\theta) sin(\theta)) yxy - (v_y sin(\theta) cos(\theta)) xyy - (v_y sin(\theta) sin(\theta)) xyyxy + (v_z cos(\theta) cos(\theta)) z + (v_z cos(\theta) sin(\theta)) zxy - (v_z sin(\theta) cos(\theta)) xyz - (v_z sin(\theta) sin(\theta)) xyzxy $$
+$$ \vec{v} \prime = (v_x c - v_y s) \hat{x} + (v_y c + v_x s) \hat{y} + v_z \hat{z} $$
+
+$$ (c - \hat{x} \hat{y} \text{ } s) \text{ } \vec{v} \text{ } (c + \hat{x} \hat{y} \text{ } s) = (c - \hat{x} \hat{y} \text{ } s) (v_x \hat{x} + v_y \hat{y} + v_z \hat{z}) (c + \hat{x} \hat{y} \text{ } s) = c v_x \hat{x} \text{ } c + c v_x \hat{x} \hat{x} \hat{y} \text{ } s - \hat{x} \hat{y} \text{ } s v_x \hat{x} \text{ } c - \hat{x} \hat{y} \text{ } s v_x \hat{x} \hat{x} \hat{y} \text{ } s + c v_y \hat{y} \text{ } c + c v_y \hat{y} \hat{x} \hat{y} \text{ } s - \hat{x} \hat{y} \text{ } s v_y \hat{y} \text{ } c - \hat{x} \hat{y} \text{ } s v_y \hat{y} \hat{x} \hat{y} \text{ } s + c v_z \hat{z} \text{ } c + c v_z \hat{z} \hat{x} \hat{y} \text{ } s - \hat{x} \hat{y} \text{ } s v_z \hat{z} \text{ } c - \hat{x} \hat{y} \text{ } s v_z \hat{z} \hat{x} \hat{y} \text{ } s = (v_x cc) \hat{x} + (v_x cs) \hat{x} \hat{x} \hat{y} - (v_x sc) \hat{x} \hat{y} \hat{x} - (v_x s s) \hat{x} \hat{y} \hat{x} \hat{x} \hat{y} + (v_y cc) \hat{y} + (v_y cs) \hat{y} \hat{x} \hat{y} - (v_y sc) \hat{x} \hat{y} \hat{y} - (v_y ss) \hat{x} \hat{y} \hat{y} \hat{x} \hat{y} + (v_z cc) \hat{z} + (v_z cs) \hat{z} \hat{x} \hat{y} - (v_z sc) \hat{x} \hat{y} \hat{z} - (v_z sin(\theta) sin(\theta)) \hat{x} \hat{y} \hat{z} \hat{x} \hat{y} $$
 
 $$ xxy = y $$
 
