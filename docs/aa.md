@@ -507,8 +507,10 @@ $$ \text{succ} (n) = : set(n) ∨ n $$
 
 no
 
-#### bayes'
+### bayes'?
 
 <iframe src="https://www.desmos.com/calculator/1midapkbbr?embed" width="500" height="500" style="border: 1px solid #ccc" frameborder=0></iframe>
 
 [.](https://www.youtube.com/watch?v=HZGCoVF3YvM)
+
+#### there was a power outage today :(
