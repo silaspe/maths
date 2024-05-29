@@ -34,7 +34,7 @@ an eigenvector is really a set of vectors (that I will refer to from now on as a
 
 but you are probably just waiting for the definition, and here it is:
 
-under multiplication by matrix $A$, most vectors are rotated and scaled, but any eigenvector (or vector within the eigenset) is just scaled, and it makes sense that $2$ times the eigenvector isn't scaled either, thus every vector within the eigenset is an eigenvector, and the eigenvalue? that corrasponds to how mutch each vector is scaled, and two differend eigensets usually have different eigenvalues.
+under multiplication by matrix $A$, most vectors are rotated and scaled, but any eigenvector (or vector within the eigenset) is just scaled, and it makes sense that $2$ times the eigenvector isn't scaled either, thus every vector within the eigenset is an eigenvector, and the eigenvalue? that corrasponds to how much each vector is scaled, and two differend eigensets usually have different eigenvalues.
 
 But you are probably just waiting for the example, and here it is:
 
@@ -44,14 +44,14 @@ Anyways, on to my favorate part! (And reason I made this page)
 
 ### how to find the eigenvetors and eigenvalues
 
-$$ eigenvetor = \vec{v} = \begin{bmatrix} v_x \\
+$$ \text{eigenvetor} = \vec{v} = \begin{bmatrix} v_x \\
 v_y \\ \end{bmatrix} $$
 
-$$ eigenvalue = \lambda $$
+$$ \text{eigenvalue} = \lambda $$
 
-$$ eigenset = r = \frac{v_y}{v_x} $$
+$$ \text{eigenset} = r = \frac{v_y}{v_x} $$
 
-$$ matrix = A $$
+$$ \text{matrix} = A $$
 
 $$ A \vec{v} = \lambda \vec{v} $$
 
@@ -95,6 +95,9 @@ $$ \vec{v} = v_x \hat{i} + v_y \hat{j} \neq \vec{0} = \begin{bmatrix} 0 \\
 0 \\ \end{bmatrix} = 0 \hat{i} + 0 \hat{j}  $$
 
 $$ A^{\star} \vec{v} = A^{\star} (v_x \hat{i} + v_y \hat{j}) = v_x (A^{\star} \hat{i}) + v_y (A^{\star} \hat{j}) = 0 $$
+
+
+$100$ lines.
 
 $$ v_x (A^{\star} \hat{i}) = - v_y (A^{\star} \hat{j}) $$
 
@@ -143,9 +146,9 @@ $$ r = -\frac{a^{\star}}{b^{\star}} = -\frac{c^{\star}}{d^{\star}} = -\frac{a - 
 
 another thing that is important is if an eigenset is stable equilibrium (sorry, I coudn't find a good video), the eigenvector is an equilibrium.
 
-So if vectors will slowly drift towards the eigenset as you apply the transformation then it is convergent, but if vectors will slowly drift away from the eigenset as you apply the transformation then it is divergent
+So if vectors will slowly drift towards the eigenset as you apply the transformation, then it is convergent, but if vectors will slowly drift away from the eigenset as you apply the transformation, then it is divergent.
 
-I wanted to prove how to compute this, but than I had to find out the point to line distance forula, which requiers the inverse pithagorian therom, which requiers the pithagorian therom, and I don't know how to prove that without geometry
+I wanted to prove how to compute this, but than I had to find out the point to line distance forula, which requiers the inverse pythagorean theorem, which requiers the pythagorean theorem, and I don't know how to prove that without geometry
 
 so I will just tell you if an eigenset is convergent or not in the next part which I said I would do eventually... 
 
@@ -174,7 +177,7 @@ $$ \phi = : 1 + \frac{1}{\phi} = \frac{1 + \sqrt{5}}{2} $$
 
 $$ \psi = : 1 + \frac{1}{\psi} = \frac{1 - \sqrt{5}}{2} $$
 
-the one with the plus is convergent, the other one is not
+The $\phi$ one is convergent, the $\psi$ one is not.
 
 $$ r = \frac{1}{\phi}, r =\frac{1}{\psi}  $$
 
@@ -182,7 +185,7 @@ once again, the $\phi$ one is convergent, the $\psi$ one is not.
 
 but, if it is convergent when making the next fibbonacci number, then all possible starting conditions* will eventually approach the $\frac{F_n}{F_{n - 1}} = \phi$, but if that is true than...
 
-*even if it is not stable, if the starting conditions lie directly the alternitave line, the ratio of terms dosen't approach, but always is, $\psi$, but that is irrational so an easy fix is to make both of the enitial conditions integers. Anyways...
+*even if it is not stable, if the starting conditions lie directly the alternitave line, the ratio of terms dosen't approach, but always is $\psi$, but that is irrational, so an easy fix is to make both of the enitial conditions integers. Anyways...
 
 $$ \frac{F_{n + 1}}{F_n} \to \phi $$
 
@@ -192,13 +195,17 @@ okay, I have the next fibonacci number, onto foxes and rabitts
 
 ### which one would win in a boxing match, the fox or the rabbit?
 
+
+
+$200$ lines.
+
 $$ \frac{d}{dt} \begin{bmatrix} f(t) \\
 g(t) \\ \end{bmatrix} = \begin{bmatrix} f\prime (t) \\
 g\prime (t) \\ \end{bmatrix} $$
 
-$$ r(t) = number \text{  } of \text{  } rabbits $$
+$$ r(t) = \text{ The number of rabbits.} $$
 
-$$ f(t) = number \text{  } of \text{  } foxes $$
+$$ f(t) = \text{ The number of foxes.} $$
 
 $$ r\prime (t) = \alpha r(t) - \beta f(t) $$
 
@@ -208,3 +215,8 @@ $$ \begin{bmatrix} r\prime (t) \\
 f\prime (t) \\ \end{bmatrix} = \begin{bmatrix} \alpha & - \beta \\
 \delta & \gamma \\ \end{bmatrix} \begin{bmatrix} r(t) \\
 f(t) \\ \end{bmatrix} $$
+
+$$ \lambda = \begin{Bmatrix} \beta \gamma = 0 \to \lambda = \alpha, \lambda = \gamma \\
+\beta \gamma \neq 0 \to \lambda = \frac{\alpha + \gamma + \sqrt{(\alpha - \gamma)^2 - 4 \beta \delta}}{2}, \lambda = \frac{\alpha + \gamma - \sqrt{(\alpha - \gamma)^2 - 4 \beta \delta}}{2} \\ \end{Bmatrix} $$
+
+$$ r = \frac{\alpha - \lambda}{\beta} $$
