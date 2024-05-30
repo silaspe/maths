@@ -467,22 +467,62 @@ $$ \text{(The second one can simplify to } c - \hat{x} \hat{y} \text{ } s \text{
 
 $$ \vec{v} \prime = (v_x c - v_y s) \hat{x} + (v_y c + v_x s) \hat{y} + v_z \hat{z} $$
 
-$$ (c - \hat{x} \hat{y} \text{ } s) \text{ } \vec{v} \text{ } (c + \hat{x} \hat{y} \text{ } s) = (c - \hat{x} \hat{y} \text{ } s) (v_x \hat{x} + v_y \hat{y} + v_z \hat{z}) (c + \hat{x} \hat{y} \text{ } s) = c v_x \hat{x} \text{ } c + c v_x \hat{x} \hat{x} \hat{y} \text{ } s - \hat{x} \hat{y} \text{ } s v_x \hat{x} \text{ } c - \hat{x} \hat{y} \text{ } s v_x \hat{x} \hat{x} \hat{y} \text{ } s + c v_y \hat{y} \text{ } c + c v_y \hat{y} \hat{x} \hat{y} \text{ } s - \hat{x} \hat{y} \text{ } s v_y \hat{y} \text{ } c - \hat{x} \hat{y} \text{ } s v_y \hat{y} \hat{x} \hat{y} \text{ } s + c v_z \hat{z} \text{ } c + c v_z \hat{z} \hat{x} \hat{y} \text{ } s - \hat{x} \hat{y} \text{ } s v_z \hat{z} \text{ } c - \hat{x} \hat{y} \text{ } s v_z \hat{z} \hat{x} \hat{y} \text{ } s = (v_x cc) \hat{x} + (v_x cs) \hat{x} \hat{x} \hat{y} - (v_x sc) \hat{x} \hat{y} \hat{x} - (v_x s s) \hat{x} \hat{y} \hat{x} \hat{x} \hat{y} + (v_y cc) \hat{y} + (v_y cs) \hat{y} \hat{x} \hat{y} - (v_y sc) \hat{x} \hat{y} \hat{y} - (v_y ss) \hat{x} \hat{y} \hat{y} \hat{x} \hat{y} + (v_z cc) \hat{z} + (v_z cs) \hat{z} \hat{x} \hat{y} - (v_z sc) \hat{x} \hat{y} \hat{z} - (v_z sin(\theta) sin(\theta)) \hat{x} \hat{y} \hat{z} \hat{x} \hat{y} $$
+$$ (c - \hat{x} \hat{y} \text{ } s) \text{ } \vec{v} \text{ } (c + \hat{x} \hat{y} \text{ } s) = (c - \hat{x} \hat{y} \text{ } s) (v_x \hat{x} + v_y \hat{y} + v_z \hat{z}) (c + \hat{x} \hat{y} \text{ } s) $$
 
-$$ xxy = y $$
+$$ (c - \hat{x} \hat{y} \text{ } s) \text{ } \vec{v} \text{ } (c + \hat{x} \hat{y} \text{ } s) = c v_x \hat{x} \text{ } c + c v_x \hat{x} \hat{x} \hat{y} \text{ } s - \hat{x} \hat{y} \text{ } s v_x \hat{x} \text{ } c - \hat{x} \hat{y} \text{ } s v_x \hat{x} \hat{x} \hat{y} \text{ } s + c v_y \hat{y} \text{ } c + c v_y \hat{y} \hat{x} \hat{y} \text{ } s - \hat{x} \hat{y} \text{ } s v_y \hat{y} \text{ } c - \hat{x} \hat{y} \text{ } s v_y \hat{y} \hat{x} \hat{y} \text{ } s + c v_z \hat{z} \text{ } c + c v_z \hat{z} \hat{x} \hat{y} \text{ } s - \hat{x} \hat{y} \text{ } s v_z \hat{z} \text{ } c - \hat{x} \hat{y} \text{ } s v_z \hat{z} \hat{x} \hat{y} \text{ } s = (v_x cc) \hat{x} + (v_x cs) \hat{x} \hat{x} \hat{y} - (v_x sc) \hat{x} \hat{y} \hat{x} - (v_x ss) \hat{x} \hat{y} \hat{x} \hat{x} \hat{y} + (v_y cc) \hat{y} + (v_y cs) \hat{y} \hat{x} \hat{y} - (v_y sc) \hat{x} \hat{y} \hat{y} - (v_y ss) \hat{x} \hat{y} \hat{y} \hat{x} \hat{y} + (v_z cc) \hat{z} + (v_z cs) \hat{z} \hat{x} \hat{y} - (v_z sc) \hat{x} \hat{y} \hat{z} - (v_z sin(\theta) sin(\theta)) \hat{x} \hat{y} \hat{z} \hat{x} \hat{y} $$
 
-$$ xyx = -yxx = -y $$
+$$ \text{I had to split it in } 2 \text{, it reached the limit of LaTeX symbols per line.} $$
 
-$$ xyxxy = xyy = x $$
+$$ \hat{x} \hat{x} \hat{y} = \hat{y} $$
 
-$$ yxy = -yyx = -x $$
+$$ \hat{x} \hat{y} \hat{x} = -\hat{y} \hat{x} \hat{x} = -\hat{y} $$
 
-$$ xyy = x $$
+$$ \hat{x} \hat{y} \hat{x} \hat{x} \hat{y} = \hat{x} \hat{y} \hat{y} = \hat{x} $$
 
-$$ xyyxy = xxy = y $$
+$$ \hat{y} \hat{x} \hat{y} = -\hat{y} \hat{y} \hat{x} = -\hat{x} $$
 
-$$ zxy = -xzy = xyz $$
+$$ \hat{x} \hat{y} \hat{y} = \hat{x} $$
 
-$$ xyzxy = -xyxzy = xxyzy = yzy = -zyy = -z $$
+$$ \hat{x} \hat{y} \hat{y} \hat{x} \hat{y} = \hat{x} \hat{x} \hat{y} = \hat{y} $$
 
-$$ (cos(\theta) - xy \text{ } sin(\theta)) \text{ } \vec{v} \text{ } (cos(\theta) + xy \text{ } sin(\theta)) = (v_x cos(\theta) cos(\theta)) x + (v_x cos(\theta) sin(\theta)) y + (v_x sin(\theta) cos(\theta)) y - (v_x sin(\theta) sin(\theta)) x + (v_y cos(\theta) cos(\theta)) y - (v_y cos(\theta) sin(\theta)) x - (v_y sin(\theta) cos(\theta)) x - (v_y sin(\theta) sin(\theta)) y + (v_z cos(\theta) cos(\theta)) z + (v_z cos(\theta) sin(\theta)) xyz - (v_z sin(\theta) cos(\theta)) xyz + (v_z sin(\theta) sin(\theta)) z $$
+$$ \hat{z} \hat{x} \hat{y} = -\hat{x} \hat{z} \hat{y} = \hat{x} \hat{y} \hat{z} $$
+
+$$ \hat{x} \hat{y} \hat{z} \hat{x} \hat{y} = -\hat{x} \hat{y} \hat{x} \hat{z} \hat{y} = \hat{x} \hat{x} \hat{y} \hat{z} \hat{y} = \hat{y} \hat{z} \hat{y} = -\hat{z} \hat{y} \hat{y} = -\hat{z} $$
+
+$$ (c - \hat{x} \hat{y} \text{ } s) \text{ } \vec{v} \text{ } (c + \hat{x} \hat{y} \text{ } s) = (v_x cc) \hat{x} + (v_x cs) \hat{y} + (v_x sc) \hat{y} - (v_x ss) \hat{x} + (v_y cc) \hat{y} - (v_y cs) \hat{x} - (v_y sc) \hat{x} - (v_y ss) \hat{y} + (v_z cc) \hat{z} + (v_z cs) \hat{x} \hat{y} \hat{z} - (v_z sc) \hat{x} \hat{y} \hat{z} + (v_z ss) \hat{z} $$
+
+$$ (v_x cc) \hat{x} + (v_x cs) \hat{y} + (v_x sc) \hat{y} - (v_x ss) \hat{x} = (v_x cc - v_x ss) \hat{x} + (v_x cs + v_x sc) \hat{y} = (v_x(cos(\theta) cos(\theta) - sin(\theta) sin(\theta))) \hat{x} + (v_x(cos(\theta) sin(\theta) + sin(\theta) cos(\theta))) \hat{y} $$
+
+And then, with some [trigonometry identities](https://silaspe.github.io/maths/trigonometry.html)...
+
+$$ cos(\theta + \theta) = cos(\theta) cos(\theta) - sin(\theta) sin(\theta) $$
+
+$500$ Lines!
+
+$$ sin(\theta + \theta) = cos(\theta) sin(\theta) + sin(\theta) cos(\theta) $$
+
+$$ (v_x cc) \hat{x} + (v_x cs) \hat{y} + (v_x sc) \hat{y} - (v_x ss) \hat{x} = (v_x cos(2 \theta)) \hat{x} + (v_x sin(2 \theta)) \hat{y} $$
+
+$$ (v_y cc) \hat{y} - (v_y cs) \hat{x} - (v_y sc) \hat{x} - (v_y ss) \hat{y} = (v_y cc - v_y ss) \hat{y} - (v_y cs + v_y sc) \hat{x} = (v_y(cos(\theta) cos(\theta) - sin(\theta) sin(\theta))) \hat{y} - (v_y(cos(\theta) sin(\theta) + sin(\theta) cos(\theta))) \hat{x} $$
+
+$$ (v_y cc) \hat{y} - (v_y cs) \hat{x} - (v_y sc) \hat{x} - (v_y ss) \hat{y} = (v_y cos(2 \theta)) \hat{y} - (v_y sin(2 \theta)) \hat{x} $$
+
+$$ (v_x cc) \hat{x} + (v_x cs) \hat{y} + (v_x sc) \hat{y} - (v_x ss) \hat{x} + (v_y cc) \hat{y} - (v_y cs) \hat{x} - (v_y sc) \hat{x} - (v_y ss) \hat{y} = (v_x cos(2 \theta)) \hat{x} + (v_x sin(2 \theta)) \hat{y} + (v_y cos(2 \theta)) \hat{y} - (v_y sin(2 \theta)) \hat{x} = (v_x cos(2 \theta) - v_y sin(2 \theta)) \hat{x} + (v_y cos(2 \theta) + v_x sin(2 \theta)) \hat{y} $$
+
+$$ (v_z cc) \hat{z} + (v_z cs) \hat{x} \hat{y} \hat{z} - (v_z sc) \hat{x} \hat{y} \hat{z} + (v_z ss) \hat{z} = (v_z cc) \hat{z} + (v_z ss) \hat{z} = (v_z(cc + ss)) \hat{z} $$
+
+And then, with some more [trigonometry identities](https://silaspe.github.io/maths/arctan.html#what-even-is-the-arctan-puzzle)...
+
+$$ (v_z cc) \hat{z} + (v_z cs) \hat{x} \hat{y} \hat{z} - (v_z sc) \hat{x} \hat{y} \hat{z} + (v_z ss) \hat{z} = (v_z) \hat{z} $$
+
+$$ \text{Also, } cos(2 \theta) = C \text{ and } sin(2 \theta) = S $$
+
+$$ \vec{v} \prime \prime = (v_x C - v_y S) \hat{x} + (v_y C + v_x S) \hat{y} + v_z \hat{z} $$
+
+$$ e^{-\hat{x} \hat{y} \theta} \vec{v} e^{\hat{x} \hat{y} \theta} = \vec{v} \prime \prime $$
+
+$$ \text{Yessssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss! (Yes, that was } 100 \text{ s's.) Now I have proved that it did rotate twice, there is a simple fix, divide the angle by } 2. $$
+
+$$ \vec{v} \prime = e^{-\hat{x} \hat{y} \frac{\theta}{2}} \vec{v} e^{\hat{x} \hat{y} \frac{\theta}{2}} $$
+
+$$ \text{And there it is, } \vec{v} \text{ in it's prime.} $$
