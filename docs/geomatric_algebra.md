@@ -319,7 +319,7 @@ $$ \text{I just realized that this isn't a code repo(sitory). It was my instinct
 
 $$ \text{complexify} (v_x \hat{x} + v_y \hat{y}) = v_x + v_y i $$
 
-$$ \vec{v} i = (v_x \hat{x} + v_y \hat{y})i = v_x \hat{x} i + v_y \hat{y} i = v_x \hat{x} \hat{x} \hat{y} + v_y \hat{y} \hat{x} \hat{y} = v_x \hat{y} - v_y \hat{x} \hat{y} \hat{y} = v_x \hat{y} - v_y \hat{x} $$
+(incert filler text here)
 
 $$ \text{complexify} (\vec{v} i) = i \text{ complexify} (\vec{v}) $$
 
