@@ -2,9 +2,9 @@
 
 All derivations here are painstakingly authored by Silas Pembroke, with a little help from his Dad.
 
-* [Polynomial](polynomial.md) - solving for the roots of the quartic equation
 * [Calculus](derivatives.md) - derivative formulas from first principles:
 sum rule, chain rule, product rule, multiplication by constant, exponent rule, introduction to $e$, logarithmic derivative, power rule
+* [Polynomial](polynomial.md) - solving for the roots of the quartic equation
 * [Calculus II](calculus_2.md) - derivations of $e$ and $e^x$ from limits, a derivation of the quotient rule
 * [Complex](complex.md) - introduction to complex numbers and their relationship to sine and cosine using geogebra
 * [Jacobian](jacobian.md) - on the relation between complex numbers and linear algebra
@@ -26,3 +26,4 @@ sum rule, chain rule, product rule, multiplication by constant, exponent rule, i
 PS you don't get a vector
 
 * [Set theory](set_theory.md) - definitions of the subset, empty set, power set, and so on.
+* [NOOOOOOOOOO](streak.md) - I lost evereything.
