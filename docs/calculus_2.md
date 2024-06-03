@@ -1,4 +1,4 @@
-## More about e
+## More about $e$
 
 $$ e = (1 + dx)^{\frac{1}{dx}} = \lim_{\Delta x \to 0} (1 + \Delta x)^{\frac{1}{\Delta x}} = \lim_{N \to \infty} (1 + \frac{1}{N})^N $$
 
@@ -20,7 +20,7 @@ $$ \sum\limits_{n=0}^{\infty}C_n n x^{n - 1} = e^x = \sum\limits_{n=0}^{\infty}C
 
 $$ \sum\limits_{n=0}^{\infty}C_n n x^{n - 1} = \sum\limits_{n=-1}^{\infty}C_{n + 1} (n + 1) x^n = c_0 0 x^{-1} + \sum\limits_{n=0}^{\infty}C_{n + 1} (n + 1) x^n = \sum\limits_{n=0}^{\infty}C_n x^n $$
 
-### More about e to the x
+### More about $e$ to the $x$
 
 $$ C_{n + 1} (n + 1) = C_n $$
 
