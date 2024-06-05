@@ -526,3 +526,5 @@ $$ \text{Yesssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
 $$ \vec{v} \prime = e^{-\hat{x} \hat{y} \frac{\theta}{2}} \vec{v} e^{\hat{x} \hat{y} \frac{\theta}{2}} $$
 
 $$ \text{And there it is, } \vec{v} \text{ in it's prime.} $$
+
+### Maxwell's equation
