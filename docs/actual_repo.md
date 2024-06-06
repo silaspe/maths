@@ -123,3 +123,35 @@ def SetTheoryNumbers(n)
   string += "}"
   return string
 ```
+
+### base names
+
+```py
+def SmallestPrimeDivisor(n):
+  k = 2
+  while n % k != 0:
+    k += 1
+  return k
+```
+
+```py
+def AlmostBase(n):
+  if n == 2:
+    return "bi"
+  if SmallestPrimeDivisor(n) == n:
+    return "un" + AlmostBase(n - 1) + "sna"
+  string = ""
+  k = n
+  while k != 1:
+    spdk = SmallestPrimeDivisor(k)
+    string += AlmostBase(spdk)
+    k /= spdk
+  return string
+```
+
+```py
+def base(n)
+  if n << 2:
+    return "n must be a positave integer!"
+  return AlmostBase(n) + "nary"
+```
