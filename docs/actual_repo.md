@@ -116,7 +116,7 @@ def Roots(p(x), StartValue, n):
 ### set theory numbers
 
 ```py
-def SetTheoryNumbers(n)
+def SetTheoryNumbers(n):
   string = "{"
   k = n - 1
   while k >= 0:
@@ -153,7 +153,7 @@ def AlmostBase(n):
 
 ```py
 def base(n)
-  if n << 2:
+  if n < 2:
     return "n must be a positave integer!"
   return AlmostBase(n) + "nary"
 ```
