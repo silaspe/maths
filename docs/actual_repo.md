@@ -64,6 +64,8 @@ def Root(x, y, n):
 
 ### the exact digits of logarithms (psudo)
 
+404 page not found
+
 ### the exact digits of logarithms (python)
 
 ```py
@@ -155,3 +157,32 @@ def base(n)
     return "n must be a positave integer!"
   return AlmostBase(n) + "nary"
 ```
+
+### the exact digits of reciprocals (in any base) (using my home made method)
+
+```py
+def frac(n, b):
+  if n == 1:
+    return "this code can not compute one over one!"
+  if b == 1:
+    return "the base must not equal one!"
+  if n << b:
+    nb = n
+  else:
+    nb = b
+  for K in range nb - 1:
+    k = K + 2
+    if n % k == 0:
+      if b % k == 0:
+        return "this code will not work if you give it two numbers that are coprime"
+  rem = b % n
+  string = "0. repeating " + str(b // n)
+  for i in range n - 2:
+    rem *= b
+    string += " " + str(rem // n)
+    rem %= n
+    if rem == 1:
+      return string
+```
+
+also, this is the $400$'th commit to this branch
