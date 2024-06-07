@@ -166,7 +166,7 @@ def frac(n, b):
     return "this code can not compute one over one!"
   if b == 1:
     return "the base must not equal one!"
-  if n << b:
+  if n < b:
     nb = n
   else:
     nb = b
