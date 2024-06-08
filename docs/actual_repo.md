@@ -170,14 +170,14 @@ def frac(n, b):
     nb = n
   else:
     nb = b
-  for K in range nb - 1:
+  for K in range(nb - 1):
     k = K + 2
     if n % k == 0:
       if b % k == 0:
         return "this code will not work if you give it two numbers that are coprime"
   rem = b % n
   string = "0. repeating " + str(b // n)
-  for i in range n - 2:
+  for i in range(n - 2):
     rem *= b
     string += " " + str(rem // n)
     rem %= n
@@ -185,4 +185,4 @@ def frac(n, b):
       return string
 ```
 
-also, this is the $400$'th commit to this branch
+also, this is the $400$'th commit to this branch.
