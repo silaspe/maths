@@ -37,6 +37,19 @@ def Asterisk(a, b, n):
     return Asterisk(a,Asterisk(a,b - 1,n),n - 1)
 ```
 
+### alternitave asterisk operator (python)
+
+```py
+def va, b, n):
+  if n == 1:
+    return a + b
+  if n == 2:
+    return a*b
+  k = a
+  for i in range(b - 1):
+    k = Asterisk(a, k, n - 1)
+```
+
 ### the exact digits of square roots (psudo)
 
 ### the exact digits of square roots (python) (I have been working on this since this page was made)
@@ -152,7 +165,7 @@ def AlmostBase(n):
 ```
 
 ```py
-def base(n)
+def base(n):
   if n < 2:
     return "n must be a positave integer!"
   return AlmostBase(n) + "nary"
