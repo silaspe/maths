@@ -26,6 +26,7 @@ nav:
   - Geometric algebra: geomatric_algebra.md
   - Set theory: set_theory.md
   - NOOOOOOOOOO: streak.md
+  - Code repo: actual_repo.md
 
 theme:
   name: material
