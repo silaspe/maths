@@ -52,6 +52,8 @@ def va, b, n):
 
 ### the exact digits of square roots (psudo)
 
+404 page not found
+
 ### the exact digits of square roots (python) (I have been working on this since this page was made)
 
 ```py
@@ -137,6 +139,20 @@ def SetTheoryNumbers(n):
     k -= 1
   string += "}"
   return string
+```
+
+### alternitave set theory numbers
+
+```py
+def AlmostSetTheoryNumbers(n):
+  if n == 0:
+    return ""
+  return SetTheoryNumbers(n - 1) + AlmostSetTheoryNumbers(n - 1)
+```
+
+```py
+def SetTheoryNumbers(n):
+  return "{" + AlmostSetTheoryNumbers(n) + "}"
 ```
 
 ### base names
