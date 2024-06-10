@@ -1,6 +1,6 @@
-This page is not on the website (yet), because it is entirely psudo-code and python code.
+This page is not on the website (yet), because it is entirely pseudo-code and python code.
 
-### asterisk operator (psudo)
+### asterisk operator (pseudo)
 ```
 define Asterisk(x,y,n)
   (coment) if n is 1, it is adding x and y
@@ -50,7 +50,7 @@ def va, b, n):
     k = Asterisk(a, k, n - 1)
 ```
 
-### the exact digits of square roots (psudo)
+### the exact digits of square roots (pseudo)
 
 404 page not found
 
@@ -77,7 +77,7 @@ def Root(x, y, n):
     return str(f)
 ```
 
-### the exact digits of logarithms (psudo)
+### the exact digits of logarithms (pseudo)
 
 404 page not found
 
@@ -104,7 +104,7 @@ def Log(x, y, n):
     return str(f)
 ```
 
-#### as a cherry on top, the exact digits of the roots of polynomials (psudo)
+#### as a cherry on top, the exact digits of the roots of polynomials (pseudo)
 
 ```
 def Roots(p(x), StartValue, n):
