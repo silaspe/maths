@@ -215,3 +215,17 @@ def frac(n, b):
 ```
 
 also, this is the $400$'th commit to this branch.
+
+### virus(DO NOT RUN THIS CODE)
+
+```py
+def crash(exponent):
+  result = "1"
+  for i in range(exponent):
+    result += result
+  return result
+```
+
+```py
+print(crash(crash(crash(crash(crash(crash(crash(crash(crash(crash(10000)))))))))))
+```
