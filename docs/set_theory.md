@@ -98,7 +98,7 @@ $$ \text{succ} (n) \text{ (Which mathematicly equals } n + 1 \text{) Is how you 
 
 $$ x \in A ∨ B \iff x \in A ∨ x \in B $$
 
-$$ ∀(S) \cdot E \in S ∩ ∀(T) \cdot T ¬ = E: T ¬ \in S: S = : set(E) $$
+$$ ∀(S) \cdot E \in S ∩ ∀(T) \cdot T ¬= E: T ¬ \in S: S = : set(E) $$
 
 $$ \text{Around } 100 \text{ lines?? (I might add another definition, but at the time of typing this, this is on } 95 \text{ lines.)} $$
 
@@ -114,6 +114,10 @@ $$ \text{And another one! } A ⊆ B \iff ¬ \exists (x) \cdot x \in A ∩ x ¬ \
 
 $$ n_1 < n_2 \iff n_1 \in n_2 $$
 
+$$ \text{WARNING! the next statement is the axiom of choice, kinda controversial.} $$
+
+$$ ∀(S) \cdot S ¬= Ø: \exists (x) \cdot x \in S $$
+
 ### set theory proofs?
 
-no.
+No.
