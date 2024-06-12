@@ -118,6 +118,36 @@ $$ \text{WARNING! the next statement is the axiom of choice, kinda controversial
 
 $$ ∀(S) \cdot S ¬= Ø: \exists (x) \cdot x \in S $$
 
+### group theory
+
+A group (call it $G$) is a certain type of set, including an addition like thing represente with a $+$ sign (this addition like thing could also be multiplication), let's start with the set of numbers $0$ - $4$ under [modular](https://silaspe.github.io/maths/mod.html) addition. To be a group, it has to follow $4$ different rules.
+
+$$ 1 \text{, Closure} $$
+
+$$ ∀(a, b) \cdot a \in G ∩ b \in G: a + b \in G $$
+
+Because it is modular, this holds true for modular addition.
+
+$$ 2 \text{, Associativity} $$
+
+$$ ∀(a, b, c) \cdot a \in G ∩ b \in G ∩ c \in G: (a + b) + c = a + (b + c) $$
+
+Because addition is associative, this holds true for modular addition.
+
+$$ 3 \text{, Identity} $$
+
+$$ \exists (e) \cdot e \in G ∩ ∀(a) \cdot a \in G: a + e = a ∩ ∀(b) \cdot b \in G: e + b = b $$
+
+Because of $0$, this holds true for modular addition.
+
+$$ 4 \text{, Inverses} $$
+
+$$ ∀(a) \cdot a \in G: \exists (b) \cdot b \in G ∩ a + b = e ∩ b + a = e $$
+
+Because of negataves and them looping back arround, this holds true for modular addition. (Also, modular multiplication almost works, but it fails at this step because there is no $\frac{1}{0}$.)
+
+Thus, the set of numbers $0$ - $4$ under modular addition is a group.
+
 ### set theory proofs?
 
 No.
