@@ -238,3 +238,18 @@ while true:
   result += result
   print result
 ```
+
+### group theory (I've kinda been doing a lot of group theory today and yesterday)
+
+```py
+def GroupTheory(TheNumberOfFaces, TransformationNumberOne, TransformationNumberOnesIndex, TransformationNumberTwo, TransformationNumberTwosIndex):
+  if (TheNumberOfFaces < 2) or (TransformationNumberOne != "f" and TransformationNumberOne != "r") or (TransformationNumberOnesIndex < 0 or TransformationNumberOnesIndex >= TheNumberOfFaces) or (TransformationNumberTwo != "f" and TransformationNumberTwo != "r") or (TransformationNumberTwosIndex < 0 or TransformationNumberTwosIndex >= TheNumberOfFaces):
+    return "that isn't group theory!"
+  if TransformationNumberOne == "f":
+    if TransformationNumberTwo == "f":
+      return "r" + str((TransformationNumberTwosIndex - TransformationNumberOnesIndex) % TheNumberOfFaces)
+    return "f" + str((TransformationNumberOnesIndex + TransformationNumberTwosIndex) % TheNumberOfFaces)
+  if TransformationNumberTwo == "f":
+    return "f" + str((TransformationNumberTwosIndex - TransformationNumberOnesIndex) % TheNumberOfFaces)
+  return "r" + str((TransformationNumberOnesIndex + TransformationNumberTwosIndex) % TheNumberOfFaces)
+```
