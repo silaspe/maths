@@ -120,7 +120,7 @@ $$ ∀(S) \cdot S ¬= Ø: \exists (x) \cdot x \in S $$
 
 ### group theory
 
-A group (call it $G$) is a certain type of set, including an addition like thing represente with a $+$ sign (this addition like thing could also be multiplication), let's start with the set of numbers $0$ - $4$ under [modular](https://silaspe.github.io/maths/mod.html) addition. To be a group, it has to follow $4$ different rules.
+A group (call it $G$) is a certain type of set, including an addition like thing represented with a $+$ sign (this addition like thing could also be multiplication), let's start with the set of numbers $0$ - $4$ under [modular](https://silaspe.github.io/maths/mod.html) addition. To be a group, it has to follow $4$ different rules.
 
 $$ 1 \text{, Closure} $$
 
