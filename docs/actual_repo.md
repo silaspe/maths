@@ -216,7 +216,7 @@ def frac(n, b):
 
 also, this is the $400$'th commit to this branch.
 
-### virus(DO NOT RUN THIS CODE)
+### virus (DO NOT RUN THIS CODE)
 
 ```py
 def crash(exponent):
@@ -228,4 +228,13 @@ def crash(exponent):
 
 ```py
 print(crash(crash(crash(crash(crash(crash(crash(crash(crash(crash(10000)))))))))))
+```
+
+### virus #2 (it goes without saying at this point)
+
+```py
+result = "1"
+while true:
+  result += result
+  print result
 ```
