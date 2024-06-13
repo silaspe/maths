@@ -248,7 +248,7 @@ def GroupTheory(TheNumberOfFaces, TransformationNumberOne, TransformationNumberO
   if TransformationNumberOne == "f":
     if TransformationNumberTwo == "f":
       return "r" + str((TransformationNumberTwosIndex - TransformationNumberOnesIndex) % TheNumberOfFaces)
-    return "f" + str((TransformationNumberOnesIndex + TransformationNumberTwosIndex) % TheNumberOfFaces)
+    return "f" + str((TransformationNumberOnesIndex - TransformationNumberTwosIndex) % TheNumberOfFaces)
   if TransformationNumberTwo == "f":
     return "f" + str((TransformationNumberTwosIndex - TransformationNumberOnesIndex) % TheNumberOfFaces)
   return "r" + str((TransformationNumberOnesIndex + TransformationNumberTwosIndex) % TheNumberOfFaces)
