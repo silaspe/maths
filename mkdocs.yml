@@ -5,7 +5,7 @@ repo_url: https://github.com/silaspe/maths
 
 nav:
   - Home: README.md
-  - Brainstorming a new page: aa.md
+  - Brainstorming a new page: brainstorm.md
   - Calculus: derivatives.md
   - Polynomial: polynomial.md
   - Calculus part 2: calculus_2.md
