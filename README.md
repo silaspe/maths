@@ -20,7 +20,7 @@ sum rule, chain rule, product rule, multiplication by constant, exponent rule, i
 * [The strand puzzle](the_strand_puzzle.md) - a popular puzzle from the strand magazine a hundred years ago that ramanujan solved "strtaight away", whatever that means
 * [The infamous "arctan puzzle"](arctan.md) - the other puzzle that I was working on in the vacation
 * [Modular arithmetic](mod.md) - if you restart counting after $10$, $5$, or $7$
-* [Brainstorming a new page](aa.md) - pretty self explanatory
+* [Brainstorming a new page](brainstorm.md) - pretty self explanatory
 * [Secretly clifford algebra](geomatric_algebra.md) - Yes, you can multiply two vectors.
 
 PS you don't get a vector
