@@ -27,4 +27,5 @@ PS you don't get a vector
 
 * [Set theory](set_theory.md) - definitions of the subset, empty set, power set, and so on.
 * [NOOOOOOOOOO](streak.md) - I lost evereything.
-* [Code repo](actual_repo.md) - pretty self explanatory. Also, the idea for both this page and the one above it did not originate in the brainstorm page.
+* [Code repo](actual_repo.md) - pretty self explanatory. Also, the idea for both this page and the one above it did not originate in the brainstorm page.Binary.md](binary.md
+* [Binary.md](binary.md) - why you should use binary
