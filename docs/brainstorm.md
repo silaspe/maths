@@ -526,3 +526,33 @@ One twig is a unit of distance, but first, y'know how one meter is one light sec
 #### happy father's day! (Weekend)
 
 #### happy father's day! (Actual)
+
+### counting in binary?
+
+Binary is a way to count where instead of the places: $1$, $10$, $100$, $1,000$, and so on, you use the $1$, $2$, $4$, $8$, $16$, $32$, $64$, $128$, $256$, $512$, $1,024$, $2,048$, $4,096$, $8,192$, $16,384$, $32,768$, $65,536$, $131,072$,  $262,144$, and so on for place names. (Also, if you were using binary to begin with, those would be $1$, $10$, $100$ and so on.) So the numbers $1-10$ would be $|$, $|.$, $||$, $|..$, $|.|$, $||.$, $|||$, $|...$, $|..|$, $|.|.$ (Period.) But how would you pronounce this?
+
+$$ | = \text{ One} $$
+
+$$ |. = \text{ Two} $$
+
+$$ |.. = \text{ Four} $$
+
+$$ |.... = \text{ Hex} $$
+
+$$ |.^{|...} = \text{ Byte} $$
+
+$$ |.^{|....} = \text{ Short} $$
+
+$$ |.^{|.....} = \text{ Int} $$
+
+$$ |.^{|......} = \text{ Long} $$
+
+$$ |.^{|.......} = \text{ Overlong} $$
+
+$$ \text{And finaly,} $$
+
+$$ |.^{|........} = |.^{Byte} = \text{ Byteplex or sha (for sha } 256 \text{)} $$
+
+$$ \text{And then, for the other powers of two, combine the names, so } |... = |.. \text{ } \cdot \text{ } |. = \text{ Four } + \text{ Two } = \text{ Four Two. Then, to get things that are other than powers of two, combine the names of all of the powers of two that sum to it, largest to smallest. (Also, } . = \text{Zero.)} $$
+
+$$ \text{So, } |..| = |... + | = \text{ Four two } + \text{ One } = \text{ Four Two One. But the thing is, } ||| \text{ is also pronounced "Four Two One". Okay, so, if something like that happens where the first part of the next digit is smaller that the last part of the previous digit, then... Um...} $$
