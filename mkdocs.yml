@@ -27,7 +27,7 @@ nav:
   - Set theory: set_theory.md
   - NOOOOOOOOOO: streak.md
   - Code repo: actual_repo.mdbinary.md
-  - Binary.md: binary.md
+  - Binary: binary.md
 
 theme:
   name: material
