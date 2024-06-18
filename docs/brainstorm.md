@@ -556,3 +556,7 @@ $$ |.^{|........} = |.^{Byte} = \text{ Byteplex or sha (for sha } 256 \text{)} $
 $$ \text{And then, for the other powers of two, combine the names, so } |... = |.. \text{ } \cdot \text{ } |. = \text{ Four } + \text{ Two } = \text{ Four Two. Then, to get things that are other than powers of two, combine the names of all of the powers of two that sum to it, largest to smallest. (Also, } . = \text{Zero.)} $$
 
 $$ \text{So, } |..| = |... + | = \text{ Four two } + \text{ One } = \text{ Four Two One. But the thing is, } ||| \text{ is also pronounced "Four Two One". Okay, so, if something like that happens where the first part of the next digit is smaller that the last part of the previous digit, then... Um...} $$
+
+#### update on working everey day
+
+Because tomorrow starts a month-long vacation, I'm going to go from working everey day to working $3$ to $4$ times per week. 
