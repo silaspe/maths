@@ -253,3 +253,9 @@ def GroupTheory(TheNumberOfFaces, TransformationNumberOne, TransformationNumberO
     return "f" + str((TransformationNumberTwosIndex - TransformationNumberOnesIndex) % TheNumberOfFaces)
   return "r" + str((TransformationNumberOnesIndex + TransformationNumberTwosIndex) % TheNumberOfFaces)
 ```
+
+### binary names
+
+```py
+
+```
