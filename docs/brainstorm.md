@@ -560,3 +560,5 @@ $$ \text{So, } |..| = |... + | = \text{ Four two } + \text{ One } = \text{ Four 
 #### update on working everey day
 
 Because tomorrow starts a month-long vacation, I'm going to go from working everey day to working $3$ to $4$ times per week. 
+
+#### vacation has started!
