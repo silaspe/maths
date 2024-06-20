@@ -257,5 +257,44 @@ def GroupTheory(TheNumberOfFaces, TransformationNumberOne, TransformationNumberO
 ### binary names
 
 ```py
+404 Page not found.
+```
 
+### alternitave numbers
+
+```py
+def SmallestPrimeDivisor(n):
+  k = 2
+  while n % k != 0:
+    k += 1
+  return k
+```
+
+```py
+def AlmostNumber(n, threshold):
+  if n <= threshold and n > 0:
+    isPrime = "false"
+    return str(n)
+  if SmallestPrimeDivisor(n) == n:
+    isPrime = "true"
+    return "((" + AlmostNumber(n - 1) + ")+1)"
+  else:
+    isPrime = "false"
+  string = ""
+  k = n
+  while k != 1:
+    spdk = SmallestPrimeDivisor(k)
+    string += AlmostBase(spdk)
+    k /= spdk
+  return string
+```
+
+```py
+def number(n, threshold):
+  if isPrime == "false":
+    return AlmostNumber(n, threshold)
+  result = ""
+  for i in range(1, len(AlmostNumber(n, threshold)) - 1):
+    result += AlmostNumber(n, threshold)[i]
+  return result
 ```
