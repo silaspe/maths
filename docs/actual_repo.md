@@ -40,7 +40,7 @@ def Asterisk(a, b, n):
 ### alternitave asterisk operator (python)
 
 ```py
-def va, b, n):
+def (a, b, n):
   if n == 1:
     return a + b
   if n == 2:
