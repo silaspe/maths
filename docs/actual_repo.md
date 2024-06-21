@@ -298,3 +298,19 @@ def number(n, threshold):
     result += AlmostNumber(n, threshold)[i]
   return result
 ```
+
+### magic sequences
+
+[magic sequences](https://www.youtube.com/watch?v=rDDaEVcwIJM&t=2420s)
+
+```py
+def MagiSeq(n):
+  MagicSequence = [1]
+  MagicNext = 1
+  for i in range(n - 1):
+    MagicNext *= 2
+    MagicNext %= n
+    MagicSequence += [MagicNext]
+    if MagicNext in MagicSequence[:-1]:
+      return MagicSequence
+```
