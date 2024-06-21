@@ -195,6 +195,7 @@ def SmallestPrimeDivisor(n):
   while n % k != 0:
     k += 1
   return k
+```
 
 ```py
 N = 100
