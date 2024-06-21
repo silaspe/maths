@@ -187,6 +187,38 @@ def base(n):
   return AlmostBase(n) + "nary"
 ```
 
+### base names (first $n$ values)
+
+```py
+def SmallestPrimeDivisor(n):
+  k = 2
+  while n % k != 0:
+    k += 1
+  return k
+
+```py
+N = 100
+```
+
+```py
+for n in range(N)
+  list = [None, None]
+  if n == 2:
+    L += ["bi"]
+    print("binary")
+  if SmallestPrimeDivisor(n) == n:
+    L.append("un" + L[n - 1] + "sna")
+    print("un" + AlmostBase(n - 1) + "snanary")
+  string = ""
+  k = n
+  while k != 1:
+    spdk = SmallestPrimeDivisor(k)
+    string += L[spdk]
+    k /= spdk
+  L.append(string)
+  print(string + "nary")
+```
+
 ### the exact digits of reciprocals (in any base) (using my home made method)
 
 ```py
