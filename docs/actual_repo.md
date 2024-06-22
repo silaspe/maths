@@ -202,7 +202,7 @@ N = 100
 ```
 
 ```py
-for n in range(N)
+for n in range(N):
   L = [None, None]
   if n == 2:
     L += ["bi"]
