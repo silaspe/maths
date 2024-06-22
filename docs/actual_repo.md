@@ -203,7 +203,7 @@ N = 100
 
 ```py
 for n in range(N)
-  list = [None, None]
+  L = [None, None]
   if n == 2:
     L += ["bi"]
     print("binary")
