@@ -109,7 +109,7 @@ def Log(x, y, n):
 ```
 def Roots(p(x), StartValue, n):
   f = StartValue
-  while x**f <= y:
+  while p(f) <= y:
     f += 1
   f -= 1
   a = f
