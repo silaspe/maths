@@ -347,3 +347,27 @@ def MagiSeq(n):
     if MagicNext in MagicSequence[:-1]:
       return MagicSequence
 ```
+
+### The Apocalyptic Numbers
+
+[The Apocalyptic Numbers](https://www.youtube.com/watch?v=0LkBwCSMsX4)
+
+```py
+for i in range(1000):
+  power = str(2 ** i)
+  for j in range(len(power)):
+    if power[j] == "6":
+      if len(power) >= j + 2:
+        if power[j + 1] == "6":
+          if power[j + 2] == "6":
+            if power[j + 3] != "6":
+              result = ""
+              for k in range(j):
+                result += power[k]
+              result += "  666  "
+              for k in range(j + 3, len(power)):
+                result += power[k]
+              if i != 157:
+                print()
+              print(f"{i}, 2^{i} = {result}")
+```
