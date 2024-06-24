@@ -387,7 +387,7 @@ $$ \vec{u} \cdot \vec{v} = || \vec{u} || \text{ } || \vec{v} ||  cos(\theta) $$
 
 $$ \vec{u} ∧ \vec{v} = || \vec{u} || \text{ } || \vec{v} ||sin(\theta) i $$
 
-But what I wanted was that $\theta!$ But it is ([almost](https://silaspe.github.io/maths/arctan.html)) impossible to find $\theta$ when all you know is $e^{i \theta}$. Wait a minute! If a complex number of the form $e^{i \theta}$ is just a rotation, and if multiplying a vector by a complex number acts like they were both complex numbers (exempt it returns a vector), than you can rotate a vecor $\vec{w}$ by the angle between two unit vectors (or just ones with inverse magnitude, but normalizing them is easier) without having to even know about complex numbers!
+But what I wanted was that $\theta!$ But I know that it is ([almost](https://silaspe.github.io/maths/arctan.html)) impossible to find $\theta$ when all you know is $e^{i \theta}$. Wait a minute! If a complex number of the form $e^{i \theta}$ is just a rotation, and if multiplying a vector by a complex number acts like they were both complex numbers (exempt it returns a vector), than you can rotate a vecor $\vec{w}$ by the angle between two unit vectors (or just ones with inverse magnitude, but normalizing them is easier) without having to even know about complex numbers!
 
 $$ \hat{u} = \frac{\vec{u}}{|| \vec{u} ||} $$
 
@@ -529,9 +529,12 @@ $$ \text{And there it is, } \vec{v} \text{ in it's prime.} $$
 
 ### Maxwell's equation (singular) (#spoilers)
 
-$$  = \text{ the } $$
+$$ \text{First, I don't know what any of it means, but here's the un-simplified Maxwell's equations (in the order of Gauss's law for electricity, Ampere's law, Faraday's law, and, I dunno, Gausss law for magnitism I guss.):} $$
 
-$$ \text{First, the un-simplified Maxwell's equations:} $$
+$$ \vec{\nabla} \cdot \vec{E} = \frac{\rho}{\epsilon_0} $$
 
-$$ \text{'s law:} $$
-.
+$$ \vec{\nabla} \times \vec{B} = \mu_0 (\vec{J} + \epsilon_0 \frac{\partial \vec{E}}{\partial t}) $$
+
+$$ \vec{\nabla} \times \vec{E} = -\frac{\partial \vec{B}}{\partial t} $$
+
+$$ \vec{\nabla} \cdot \vec{B} = 0 $$
