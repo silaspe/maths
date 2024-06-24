@@ -27,7 +27,7 @@ nav:
   - Set theory: set_theory.md
   - NOOOOOOOOOO: streak.md
   - Code repo: actual_repo.md
-  - Binary: binary.md
+  - The best way to count: binary.md
 
 theme:
   name: material
