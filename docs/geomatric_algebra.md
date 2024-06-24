@@ -18,7 +18,7 @@ $$ (\hat{j} \hat{i})(u_y v_x) + (\hat{j} \hat{j})(u_y v_y) + (\hat{j} \hat{k})(u
 
 $$ (\hat{k} \hat{i})(u_z v_x) + (\hat{k} \hat{j})(u_z v_y) + (\hat{k} \hat{k})(u_z v_z) $$
 
-### geometric algebra
+## geometric algebra
 
 WARNING! This page requires knowing [linear algebra](https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab), mostly just vectors, and the first part of [A Swift Introduction to Geometric Algebra](https://www.youtube.com/watch?v=60z_hpEAtD8&t=179s) (literally, that was the name) to know what a $k$-vector is. (Also, it's where these ideas come from (at least in this chapter and the [complex numbers chapter](https://silaspe.github.io/maths/geomatric_algebra.html#complex-numbers) coming soon... And the Maxwell's equation chapter at the end).) Here is the definition for the product of basis vectors: The prodct of a basis vector $e_i$ and it self is $1$, and the product of two basis vectors $e_i$ and $e_j$ equals $-e_j e_i (i \ne j)$. This means that you can do this at any point in the product of basis vectors (this should make sense). By the way, $U = \hat{i} \hat{j} \hat{k}$
 
@@ -538,3 +538,15 @@ $$ \vec{\nabla} \times \vec{B} = \mu_0 (\vec{J} + \epsilon_0 \frac{\partial \vec
 $$ \vec{\nabla} \times \vec{E} = -\frac{\partial \vec{B}}{\partial t} $$
 
 $$ \vec{\nabla} \cdot \vec{B} = 0 $$
+
+$$ \text{That's it!} $$
+
+#### Credits
+
+$$ \text{A.P. (for privacy reasons, I won't say his full name) He helped sometimes.} $$
+
+$$ \text{Sugey (that's just his username) who made a great introduction to geometric algebra.} $$
+
+$$ \text{Silaspe (me) did evereything else} $$
+
+#### JK
