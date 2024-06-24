@@ -547,6 +547,19 @@ $$ \text{A.P. (for privacy reasons, I won't say his full name) He helped sometim
 
 $$ \text{Sugey (that's just his username) who made a great introduction to geometric algebra.} $$
 
-$$ \text{Silaspe (me) did evereything else} $$
+$$ \text{Silaspe (me) did evereything else.} $$
 
 #### JK
+
+It would be easier to go from Maxwell's equation (singular) to Maxwell's equations (plural) than to go the other way around. Here it is:
+
+$$ \nabla F = J $$
+
+$$ \text{actually,} $$
+
+$$ \nabla F = \frac{J}{c \epsilon_0} $$
+
+$$ \text{I said it that way so that it would look better.} $$
+
+#### Maxwell's translation
+.
