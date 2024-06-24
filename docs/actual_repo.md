@@ -52,7 +52,7 @@ def (a, b, n):
 
 ### the exact digits of square roots (pseudo)
 
-404 page not found
+404 Page not found.
 
 ### the exact digits of square roots (python) (I have been working on this since this page was made)
 
@@ -79,7 +79,9 @@ def Root(x, y, n):
 
 ### the exact digits of logarithms (pseudo)
 
-404 page not found
+```py
+404 Page not found.
+```
 
 ### the exact digits of logarithms (python)
 
