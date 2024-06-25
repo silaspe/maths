@@ -28,7 +28,7 @@ nav:
   - NOOOOOOOOOO: streak.md
   - Code repo: actual_repo.md
   - The best way to count: binary.md
-
+  - Geometric algebra 2: geomatric_algebra_2.md
 theme:
   name: material
   palette:
