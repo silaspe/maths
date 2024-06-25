@@ -537,29 +537,5 @@ $$ \vec{\nabla} \times \vec{B} = \mu_0 (\vec{J} + \epsilon_0 \frac{\partial \vec
 
 $$ \vec{\nabla} \times \vec{E} = -\frac{\partial \vec{B}}{\partial t} $$
 
-$$ \vec{\nabla} \cdot \vec{B} = 0 $$
-
-$$ \text{That's it!} $$
-
-#### Credits
-
-$$ \text{A.P. (for privacy reasons, I won't say his full name) He helped sometimes.} $$
-
-$$ \text{Sugey (that's just his username) who made a great introduction to geometric algebra.} $$
-
-$$ \text{Silaspe (me) did evereything else.} $$
-
-#### JK
-
-It would be easier to go from Maxwell's equation (singular) to Maxwell's equations (plural) than to go the other way around. Here it is:
-
-$$ \nabla F = J $$
-
-$$ \text{actually,} $$
-
-$$ \nabla F = \frac{J}{c \epsilon_0} $$
-
-$$ \text{I said it that way so that it would look better.} $$
-
-#### Maxwell's translation
-.
+And cut! This page has reached the maximum LaTeX limit, continue at [Geometric algebra 2!](
+geomatric_algebra_2.md)
