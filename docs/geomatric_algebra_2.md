@@ -22,7 +22,15 @@ $$ \text{Silaspe (me) did evereything else.} $$
 
 It would be easier to go from Maxwell's equation (singular) to Maxwell's equations (plural) than to go the other way around. Here it is... After I combine some stuff. (By the way, $i = \hat{x} \hat{y} \hat{z}$ because it is $3d$.)
 
-$$ \text{First, the differentials. There are two, to combine into the spacetime gradient, the partial derivitave with respect to time (} \frac{\partial}{\partial t} \text{), and the space gradient (} \vec{\nabla} \text{).}  $$
+$$ \text{First, the differentials. There are two, to combine into the spacetime gradient, the partial derivitave with respect to time (} \frac{\partial}{\partial t} \text{), and the gradient (} \vec{\nabla} \text{) with respect to space, this spacetime gradient will be called } \nabla \text{. (As opposed to } \vec{\nabla} \text{.)} $$
+
+$$ \nabla = \frac{\partial}{\partial t} + \vec{\nabla} $$
+
+$$ \text{Actually, no. } $$
+
+$$ \nabla = \frac{1}{c} \frac{\partial}{\partial t} + \vec{\nabla} $$
+
+$$ \text{Doing this may seem familiar if you've worked with relativity enough.} $$
 
 $$ \nabla F = J $$
 
