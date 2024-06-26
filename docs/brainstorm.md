@@ -562,3 +562,5 @@ $$ \text{So, } |..| = |... + | = \text{ Four two } + \text{ One } = \text{ Four 
 Because tomorrow starts a month-long vacation, I'm going to go from working everey day to working $3$ to $4$ times per week. 
 
 #### vacation has started!
+
+#### shoutout to Dr. Keivan
