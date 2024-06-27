@@ -557,10 +557,12 @@ $$ \text{And then, for the other powers of two, combine the names, so } |... = |
 
 $$ \text{So, } |..| = |... + | = \text{ Four two } + \text{ One } = \text{ Four Two One. But the thing is, } ||| \text{ is also pronounced "Four Two One". Okay, so, if something like that happens where the first part of the next digit is smaller that the last part of the previous digit, then... Um...} $$
 
-#### update on working everey day
+#### update on working every day
 
-Because tomorrow starts a month-long vacation, I'm going to go from working everey day to working $3$ to $4$ times per week. 
+Because tomorrow starts a month-long vacation, I'm going to go from working every day to working $3$ to $4$ times per week. 
 
 #### vacation has started!
 
-#### shoutout to Dr. Keivan
+#### shoutout to Dr. Keivan!
+
+#### new hotel! (I've still been working every day.)
