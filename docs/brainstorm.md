@@ -565,4 +565,4 @@ Because tomorrow starts a month-long vacation, I'm going to go from working ever
 
 #### shoutout to Dr. Keivan!
 
-#### new hotel! (I've still been working every day.)
+#### I'm gonna meet my grandparents! (I've still been working every day.)
