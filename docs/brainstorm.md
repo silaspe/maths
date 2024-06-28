@@ -567,4 +567,6 @@ Because tomorrow starts a month-long vacation, I'm going to go from working ever
 
 #### I'm gonna meet my grandparents! (I've still been working every day.)
 
-#### false alarm, that's tomorrow
+#### false alarm, that's tomorrow.
+
+#### I'm gonna meet my grandparents!.. For real this time.
