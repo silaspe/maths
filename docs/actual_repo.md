@@ -373,3 +373,33 @@ for i in range(1000):
                 print()
               print(f"{i}, 2^{i} = {result}")
 ```
+
+### nsuemtb etrh etohreyo#r#y#
+
+```py
+def SmallestPrimeDivisor(n):
+  k = 2
+  while n % k != 0:
+    k += 1
+  return k
+```
+
+```py
+N = 100
+```
+
+```py
+for n in range(N):
+  L = ["", "{}"]
+  if SmallestPrimeDivisor(n) == n:
+    L.append("{" + L[n - 1] + "}")
+    print("{" + L[n - 1] + "}")
+  string = "{"
+  k = n
+  while k != 1:
+    spdk = SmallestPrimeDivisor(k)
+    string += L[spdk]
+    k /= spdk
+  L.append(string + "}")
+  print(string + "}")
+```
