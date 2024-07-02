@@ -285,6 +285,12 @@ def GroupTheory(TheNumberOfFaces, TransformationNumberOne, TransformationNumberO
   return "r" + str((TransformationNumberOnesIndex + TransformationNumberTwosIndex) % TheNumberOfFaces)
 ```
 
+### binary
+
+```py
+404 Page not found.
+```
+
 ### binary names
 
 ```py
