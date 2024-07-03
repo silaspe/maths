@@ -22,6 +22,8 @@ $$ \text{Silaspe (me) did evereything else.} $$
 
 It would be easier to go from Maxwell's equation (singular) to Maxwell's equations (plural) than to go the other way around. Here it is... After I combine some stuff. (By the way, $i = \hat{x} \hat{y} \hat{z}$ because it is $3d$.)
 
+#### the spacetime gradient
+
 $$ \text{First, the differentials. There are two, to combine into into the spacetime gradient, the partial derivitave with respect to time (} \frac{\partial}{\partial t} \text{), and the gradient with respect to space (} \vec{\nabla} \text{) (which equals } \frac{\partial}{\partial x} \hat{x} + \frac{\partial}{\partial y} \hat{y} + \frac{\partial}{\partial z} \hat{z} \text{) this spacetime gradient will be called } \nabla \text{. (As opposed to } \vec{\nabla} \text{.)} $$
 
 $$ \nabla = \frac{\partial}{\partial t} + \vec{\nabla} $$
@@ -33,6 +35,8 @@ $$ \nabla = \frac{1}{c} \frac{\partial}{\partial t} + \vec{\nabla} $$
 $$ \text{Doing this may seem familiar if you've worked with relativity enough.} $$
 
 $$ \text{This combonation also makes sense because we now just have the sum of four derivatives (} \nabla = \frac{1}{c} \frac{\partial}{\partial t} + \frac{\partial}{\partial x} \hat{x} + \frac{\partial}{\partial y} \hat{y} + \frac{\partial}{\partial z} \hat{z} \text{), so in the end, it's pretty similar to the traditional gradient.} $$
+
+##### the electromagnetic source
 
 $$ \text{Next: combine the sources that create the electric and magnetic fields (to create the source that creates the electromagnetic field), there are two (again), the charge density (} \rho \text{), and the current (} \vec{J} \text{). (by the way, this source will be caled } J \text{, as opposed to } \vec{J} \text{)To combine these, just add them!} $$
 
@@ -51,6 +55,8 @@ $$ J = c \rho - \vec{J} $$
 $$ \text{Again, this is seen a lot in realitivity, so it's nothing new in physics.} $$
 
 $$ \text{It also gives an interesting new interpretation of charge density as a current that is moving through time and not space.} $$
+
+##### the electromagnetic field
 
 $$ \text{Finaly, we need to combine the electric and magnetic fields(} \vec{E} \text{ and } \vec{B} \text{) into one electromagnetic field (} F \text{). But unlike before, we can NOT just add them, the issue this time is that they are both vectors, so they're components will mix. But now's the time to kill two birds with one stone, you see, the magnetic feild is traditionally defined with a cross product, and NOT a wedge product, but instead of re-defining the magnetic feild, remember how the wedge product is just } i \text{ times the cross product? Using that instead, we get this:} $$
 
@@ -76,5 +82,14 @@ $$ \text{I said it that way so that it would look better.} $$
 
 $$ \text{To prove this foumula, we need} $$
 
-#### Maxwell's translation (I just came up with that name.)
+### Maxwell's translation (I just came up with that name.)
 
+$$ \text{First, expand out all of the definitions that we made earlier.} $$
+
+$$ (\frac{1}{c} \frac{\partial}{\partial t} + \vec{\nabla}) \text{ } (\vec{E} + ic \vec{B}) = \frac{c \rho - \vec{J}}{c \epsilon_0} $$
+
+$$ \frac{1}{c} \frac{\partial \vec{E}}{\partial t} + \vec{\nabla} \vec{E} + ic \frac{1}{c} \frac{\partial}{\partial t} \vec{B} + ic \vec{\nabla} \vec{B} = \frac{c \rho - \vec{J}}{c \epsilon_0} $$
+
+$$ \frac{1}{c} \frac{\partial \vec{E}}{\partial t} + \vec{\nabla} \cdot \vec{E} + \vec{\nabla} ∧ \vec{E} + i \frac{\partial}{\partial t} \vec{B} + ic \vec{\nabla} \cdot \vec{B} + ic \vec{\nabla} ∧ \vec{B} = \frac{c \rho - \vec{J}}{c \epsilon_0} $$
+
+$$ \frac{1}{c} \frac{\partial \vec{E}}{\partial t} + \vec{\nabla} \cdot \vec{E} + \vec{\nabla} ∧ \vec{E} + i \frac{\partial}{\partial t} \vec{B} + ic \vec{\nabla} \cdot \vec{B} + ic \vec{\nabla} ∧ \vec{B} = \frac{c \rho - \vec{J}}{c \epsilon_0} $$
