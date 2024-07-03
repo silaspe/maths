@@ -36,7 +36,7 @@ $$ \text{Doing this may seem familiar if you've worked with relativity enough.} 
 
 $$ \text{This combonation also makes sense because we now just have the sum of four derivatives (} \nabla = \frac{1}{c} \frac{\partial}{\partial t} + \frac{\partial}{\partial x} \hat{x} + \frac{\partial}{\partial y} \hat{y} + \frac{\partial}{\partial z} \hat{z} \text{), so in the end, it's pretty similar to the traditional gradient.} $$
 
-##### the electromagnetic source
+#### the electromagnetic source
 
 $$ \text{Next: combine the sources that create the electric and magnetic fields (to create the source that creates the electromagnetic field), there are two (again), the charge density (} \rho \text{), and the current (} \vec{J} \text{). (by the way, this source will be caled } J \text{, as opposed to } \vec{J} \text{)To combine these, just add them!} $$
 
@@ -56,7 +56,7 @@ $$ \text{Again, this is seen a lot in realitivity, so it's nothing new in physic
 
 $$ \text{It also gives an interesting new interpretation of charge density as a current that is moving through time and not space.} $$
 
-##### the electromagnetic field
+#### the electromagnetic field
 
 $$ \text{Finaly, we need to combine the electric and magnetic fields(} \vec{E} \text{ and } \vec{B} \text{) into one electromagnetic field (} F \text{). But unlike before, we can NOT just add them, the issue this time is that they are both vectors, so they're components will mix. But now's the time to kill two birds with one stone, you see, the magnetic feild is traditionally defined with a cross product, and NOT a wedge product, but instead of re-defining the magnetic feild, remember how the wedge product is just } i \text{ times the cross product? Using that instead, we get this:} $$
 
