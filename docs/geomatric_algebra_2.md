@@ -148,8 +148,6 @@ $$ \text{We now have Ampere's law.} $$
 
 $$ \text{Third equation:} $$
 
-$$ \vec{\nabla} ∧ \vec{E} + i \frac{\partial \vec{B}}{\partial t} = 0 $$
-
 $$ i \vec{\nabla} \times \vec{E} + i \frac{\partial \vec{B}}{\partial t} = 0 $$
 
 $$ \vec{\nabla} \times \vec{E} + \frac{\partial \vec{B}}{\partial t} = 0 $$
