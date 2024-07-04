@@ -160,4 +160,8 @@ $$ \text{Finally, we have the fourth (and easiest equation after Gauss's law):} 
 
 $$ \vec{\nabla} \cdot \vec{B} = 0 $$
 
-$$ \text{and, that proves it! (and in the original order as a bonus.) (Incert text here about how I had a lot of fun in this } 3 \text{ month long journey, and that I could go on for an entire page about using geometric algebra for group theory, number theory, modular arithmetic, and so on. And how, if only, this was the } 500 \text{'th commit to this website)} $$
+and, that proves it! (and in the original order as a bonus.) (Incert text here about how I had a lot of fun in this $3$ month long journey, and that I could go on for an entire page about using geometric algebra for group theory, number theory, modular arithmetic, and so on. And how, if only, this was the $500$'th commit to this website) And, with that, the page has ended, thanks for waching! (Sorry, reading. I watch way to much youtube.)
+
+### Credits
+
+$$ \text{I think that I already did this part.} $$
