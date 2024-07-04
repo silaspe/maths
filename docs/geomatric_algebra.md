@@ -529,7 +529,7 @@ $$ \text{And there it is, } \vec{v} \text{ in it's prime.} $$
 
 ### Maxwell's equation (singular) (#spoilers)
 
-$$ \text{First, I don't know what any of it means, but here's the un-simplified Maxwell's equations (in the order of Gauss's law for electricity, Ampere's law, Faraday's law, and, I dunno, Gausss law for magnitism I guss.):} $$
+$$ \text{First, I don't know what any of it means, but here's the un-simplified Maxwell's equations (in the order of Gauss's law, Ampere's law, Faraday's law, and, I dunno, Gausss law for magnitism I guss.):} $$
 
 $$ \vec{\nabla} \cdot \vec{E} = \frac{\rho}{\epsilon_0} $$
 
