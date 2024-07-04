@@ -88,8 +88,78 @@ $$ \text{First, expand out all of the definitions that we made earlier.} $$
 
 $$ (\frac{1}{c} \frac{\partial}{\partial t} + \vec{\nabla}) \text{ } (\vec{E} + ic \vec{B}) = \frac{c \rho - \vec{J}}{c \epsilon_0} $$
 
-$$ \frac{1}{c} \frac{\partial \vec{E}}{\partial t} + \vec{\nabla} \vec{E} + ic \frac{1}{c} \frac{\partial}{\partial t} \vec{B} + ic \vec{\nabla} \vec{B} = \frac{c \rho - \vec{J}}{c \epsilon_0} $$
+$$ \frac{1}{c} \frac{\partial \vec{E}}{\partial t} + \vec{\nabla} \vec{E} + ic \frac{1}{c} \frac{\partial \vec{B}}{\partial t} + ic \vec{\nabla} \vec{B} = \frac{c \rho - \vec{J}}{c \epsilon_0} $$
 
-$$ \frac{1}{c} \frac{\partial \vec{E}}{\partial t} + \vec{\nabla} \cdot \vec{E} + \vec{\nabla} ∧ \vec{E} + i \frac{\partial}{\partial t} \vec{B} + ic \vec{\nabla} \cdot \vec{B} + ic \vec{\nabla} ∧ \vec{B} = \frac{c \rho - \vec{J}}{c \epsilon_0} $$
+$$ \frac{1}{c} \frac{\partial \vec{E}}{\partial t} + \vec{\nabla} \cdot \vec{E} + \vec{\nabla} ∧ \vec{E} + i \frac{\partial \vec{B}}{\partial t} + ic \vec{\nabla} \cdot \vec{B} + ic \vec{\nabla} ∧ \vec{B} = \frac{c \rho}{c \epsilon_0} - \frac{\vec{J}}{c \epsilon_0} $$
 
-$$ \frac{1}{c} \frac{\partial \vec{E}}{\partial t} + \vec{\nabla} \cdot \vec{E} + \vec{\nabla} ∧ \vec{E} + i \frac{\partial}{\partial t} \vec{B} + ic \vec{\nabla} \cdot \vec{B} + ic \vec{\nabla} ∧ \vec{B} = \frac{c \rho - \vec{J}}{c \epsilon_0} $$
+$$ \vec{\nabla} \cdot \vec{E} + \frac{1}{c} \frac{\partial \vec{E}}{\partial t} + ic \vec{\nabla} ∧ \vec{B} + \vec{\nabla} ∧ \vec{E} + i \frac{\partial \vec{B}}{\partial t} + ic \vec{\nabla} \cdot \vec{B} = \frac{\rho}{\epsilon_0} - \frac{\vec{J}}{c \epsilon_0} $$
+
+$$ \vec{\nabla} \cdot \vec{E} = \text{A scalar} $$
+
+$$ \frac{1}{c} \frac{\partial \vec{E}}{\partial t} + ic \vec{\nabla} ∧ \vec{B} = \text{a vector} $$
+
+$$ \vec{\nabla} ∧ \vec{E} + i \frac{\partial \vec{B}}{\partial t} = \text{a bivector} $$
+
+$$ ic \vec{\nabla} \cdot \vec{B} = \text{a trivector} $$
+
+$$ \text{And on the right hand side:} $$
+
+$$ \frac{\rho}{\epsilon_0} = \text{A scalar} $$
+
+$$ \frac{\vec{J}}{c \epsilon_0} = \text{a vector.} $$
+
+$$ \text{But then, you realize (or, at least, I realize) } 2 \text{ things, } 1 \text{: there are also bivector and trivector components on the right, but they are both } 0 \text{, } 2 \text{: for both to be equal, they must have the same scalar component, vector component, bivector component, and trivector component. So, we can derive four new equations:} $$
+
+$$ \vec{\nabla} \cdot \vec{E} = \frac{\rho}{\epsilon_0} $$
+
+$$ \frac{1}{c} \frac{\partial \vec{E}}{\partial t} + ic \vec{\nabla} ∧ \vec{B} = -\frac{\vec{J}}{c \epsilon_0} $$
+
+$$ \vec{\nabla} ∧ \vec{E} + i \frac{\partial \vec{B}}{\partial t} = 0 $$
+
+$$ ic \vec{\nabla} \cdot \vec{B} = 0 $$
+
+$$ \text{The first equation is Gauss's law!} $$
+
+$$ \text{Second equation:} $$
+
+$$ \frac{1}{c^2} \frac{\partial \vec{E}}{\partial t} + i \vec{\nabla} ∧ \vec{B} = -\frac{\vec{J}}{c^2 \epsilon_0} $$
+
+$$ c = \frac{1}{\sqrt{\mu_0 \epsilon_0}} $$
+
+$$ c^2 = \frac{1}{\mu_0 \epsilon_0} $$
+
+$$ \frac{1}{c^2} = \mu_0 \epsilon_0 $$
+
+$$ \mu_0 \epsilon_0 \frac{\partial \vec{E}}{\partial t} + i \vec{\nabla} ∧ \vec{B} = -\frac{1}{c^2} \frac{\vec{J}}{\epsilon_0} $$
+
+$$ \mu_0 \epsilon_0 \frac{\partial \vec{E}}{\partial t} + i \vec{\nabla} ∧ \vec{B} = -\mu_0 \epsilon_0 \frac{\vec{J}}{\epsilon_0} $$
+
+$$ \mu_0 \epsilon_0 \frac{\partial \vec{E}}{\partial t} + i \vec{\nabla} ∧ \vec{B} = -\mu_0 \vec{J} $$
+
+$$ \mu_0 \epsilon_0 \frac{\partial \vec{E}}{\partial t} + i^2 \vec{\nabla} \times \vec{B} = -\mu_0 \vec{J} $$
+
+$$ \mu_0 \epsilon_0 \frac{\partial \vec{E}}{\partial t} - \vec{\nabla} \times \vec{B} = -\mu_0 \vec{J} $$
+
+$$ -\vec{\nabla} \times \vec{B} = -\mu_0 \vec{J} - \mu_0 \epsilon_0 \frac{\partial \vec{E}}{\partial t} $$
+
+$$ \vec{\nabla} \times \vec{B} = \mu_0 (\vec{J} + \epsilon_0 \frac{\partial \vec{E}}{\partial t}) $$
+
+$$ \text{We now have Ampere's law.} $$
+
+$$ \text{Third equation:} $$
+
+$$ \vec{\nabla} ∧ \vec{E} + i \frac{\partial \vec{B}}{\partial t} = 0 $$
+
+$$ i \vec{\nabla} \times \vec{E} + i \frac{\partial \vec{B}}{\partial t} = 0 $$
+
+$$ \vec{\nabla} \times \vec{E} + \frac{\partial \vec{B}}{\partial t} = 0 $$
+
+$$ \vec{\nabla} \times \vec{E} = -\frac{\partial \vec{B}}{\partial t} $$
+
+$$ \text{We now have Faraday's law.} $$
+
+$$ \text{Finally, we have the fourth (and easiest equation after Gauss's law):} $$
+
+$$ \vec{\nabla} \cdot \vec{B} = 0 $$
+
+$$ \text{and, that proves it! (and in the original order as a bonus.) (Incert text here about how I had a lot of fun in this } 3 \text{ month long journey, and that I could go on for an entire page about using geometric algebra for group theory, number theory, modular arithmetic, and so on. And how, if only, this was the } 500 \text{'th commit to this website)} $$
