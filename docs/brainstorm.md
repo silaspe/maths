@@ -571,4 +571,6 @@ Because tomorrow starts a month-long vacation, I'm going to go from working ever
 
 #### I'm gonna meet my grandparents!.. For real this time.
 
+#### goodbye grandparents. (I've still been working every day.)
+
 #### new place.
