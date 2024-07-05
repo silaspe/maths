@@ -8,6 +8,8 @@ $$ \vec{\nabla} \times \vec{E} = -\frac{\partial \vec{B}}{\partial t} $$
 
 $$ \vec{\nabla} \cdot \vec{B} = 0 $$
 
+$$ \text{That is, in the ordor of: Gauss's law, Ampere's law, Faraday's law, } \vec{\nabla} \cdot \vec{B} = 0 \text{'s law.} $$
+
 $$ \text{That's it!} $$
 
 #### Credits
@@ -94,6 +96,9 @@ $$ \frac{1}{c} \frac{\partial \vec{E}}{\partial t} + \vec{\nabla} \cdot \vec{E} 
 
 $$ \vec{\nabla} \cdot \vec{E} + \frac{1}{c} \frac{\partial \vec{E}}{\partial t} + ic \vec{\nabla} ∧ \vec{B} + \vec{\nabla} ∧ \vec{E} + i \frac{\partial \vec{B}}{\partial t} + ic \vec{\nabla} \cdot \vec{B} = \frac{\rho}{\epsilon_0} - \frac{\vec{J}}{c \epsilon_0} $$
 
+
+$100$ Lines.
+
 $$ \vec{\nabla} \cdot \vec{E} = \text{A scalar} $$
 
 $$ \frac{1}{c} \frac{\partial \vec{E}}{\partial t} + ic \vec{\nabla} ∧ \vec{B} = \text{a vector} $$
@@ -165,3 +170,61 @@ and, that proves it! (and in the original order as a bonus.) (Incert text here a
 ### Credits
 
 $$ \text{I think that I already did this part.} $$
+
+.
+
+.
+
+.
+
+.
+
+.
+
+.
+
+.
+
+.
+
+.
+
+.
+
+.
+
+.
+
+.
+
+$200$ Lines.
+
+.
+
+.
+
+.
+
+.
+
+.
+
+.
+
+### post credit scene
+
+even if Hesthenes' law (I looked it up (on ChatGPT), that is the name of $\nabla F = \frac{J}{c \epsilon_0}$) is more compressed, it is an equallity of multivectors, and there should be a version that has four different equations, exept they are about $k$-vectors (slightly less confusing). Also, if you dont know how to use $\nabla$, $J$, $F$, and the geometric product, than you shouldn't have to. But still, a few things should be simplified (I will use the $\rightarrow$ sign to denote a re-definition), e.g...
+
+#### $\frac{\partial}{\partial t}$ re-definition
+
+$$ \frac{\partial}{\partial t} \rightarrow \frac{1}{c} \frac{\partial}{\partial t} \text{ Because unit issues.} $$
+
+#### $\rho$ and $\vec{J}$ re-definition
+
+$$ \rho \rightarrow c \rho \text{ Because unit issues.} $$
+
+$$ \vec{J} \rightarrow -\vec{J} \text{ Because it is the flow of positave charge (e.g. positrons and protons) as opposed to negatave charge (e.g. electrons).} $$
+
+#### $\vec{B}$ re-definition
+
+$$ \vec{B} \rightarrow ic \vec{B} \text{ Because unit issues and that the magnetic feild is a vector for some reason.} $$
