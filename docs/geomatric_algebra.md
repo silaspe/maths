@@ -94,7 +94,7 @@ $$ \vec{u} \vec{v} = \vec{u} \cdot \vec{v} + \hat{x} \hat{y} \hat{z} \text{ } \v
 
 $$ \vec{u} \vec{v} = \vec{u} \cdot \vec{v} + \vec{u} \times \vec{v} \text{ } i $$
 
-Also, the cross product only works in $3d$ while this $U \text{ } \vec{u} \times \vec{v}$ thing works in any dimention. This operator actually has a name (well, two names), the outer product (as oppose to the dot product sometimes refered to as the inner product) or wedge product for it's apperance as a wedge unicode character. This more genaral cross product is written $\vec{u} ∧ \vec{v}$. Also, I have to interrupt this for...
+Also, the cross product only works in $3d$ while this $U \text{ } \vec{u} \times \vec{v}$ thing works in any dimention. This operator actually has a name (well, two names), the outer product (as oppose to the dot product sometimes refered to as the inner product) or wedge product for it's apperance as a wedge unicode character. This more genaral cross product is written $\vec{u} ∧ \vec{v}$. (While we're on the topic of products, $\vec{u} \vec{v}$ is known as the geometric product of $\vec{u}$ and $\vec{v}$.) Also, I have to interrupt this for...
 
 
 $100$ lines! But
