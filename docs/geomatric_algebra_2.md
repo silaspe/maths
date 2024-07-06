@@ -34,7 +34,7 @@ $$ \text{Actually, no. } $$
 
 $$ \nabla = \frac{1}{c} \frac{\partial}{\partial t} + \vec{\nabla} $$
 
-Doing this may seem familiar if you've worked with [realitivity]([chrome://blank](https://silaspe.github.io/maths/derivaives.html?query=This_is_my_broken_website!)) enough.
+Doing this may seem familiar if you've worked with [realitivity](https://silaspe.github.io/maths/derivaives.html?query=This_is_my_broken_website!) enough.
 
 $$ \text{This combonation also makes sense because we now just have the sum of four derivatives (} \nabla = \frac{1}{c} \frac{\partial}{\partial t} + \frac{\partial}{\partial x} \hat{x} + \frac{\partial}{\partial y} \hat{y} + \frac{\partial}{\partial z} \hat{z} \text{), so in the end, it's pretty similar to the traditional gradient.} $$
 
@@ -54,7 +54,7 @@ $$ \text{Actually, wrong again, but this can be fixd by adding a factor of } c \
 
 $$ J = c \rho - \vec{J} $$
 
-$$ \text{Again, this is seen a lot in [realitivity](https://silaspe.github.io/index.html), so it's nothing new in physics.} $$
+$$ \text{Again, this is seen a lot in [realitivity](https://www.youtube.com/@LolGet404NotFound-Ed), so it's nothing new in physics.} $$
 
 $$ \text{It also gives an interesting new interpretation of charge density as a current that is moving through time and not space.} $$
 
@@ -227,38 +227,22 @@ $$ \vec{J} \rightarrow -\vec{J} \text{ Because it is the flow of positave charge
 
 $$ B = ic \vec{B} \text{ Because of some units issues, that the magnetic feild is a vector for some reason, and that it is a bivector now, so it sholudn't have a vector arrow.} $$
 
-$$ \text{Also, now } \nabla = \frac{D}{Dt} + \vec{\nabla} \text{, } J = \rho + \vec{J} \text{, } F = \vec{E} + B $$
+$$ \text{Now, we can simplify something, but what? Do you remember when we turned the equallity of multivectors into four equalities of } k \text{-vectors that were turned into maxwell's equations? Those equalities of } k \text{-vectors are the perfect target. Before simplification, they looked like this:} $$
 
-$$ \text{Also, now } \nabla F = \frac{J}{c \epsilon_0} \text{ means...} $$
+$$ \vec{\nabla} \cdot \vec{E} = \frac{\rho}{\epsilon_0} $$
 
-#### Maxwell's (other) translation
+$$ \frac{1}{c} \frac{\partial \vec{E}}{\partial t} + ic \vec{\nabla} ∧ \vec{B} = -\frac{\vec{J}}{c \epsilon_0} $$
 
-$$ (\frac{D}{Dt} + \vec{\nabla}) \text{ } (\vec{E} + B) = \frac{\rho + \vec{J}}{c \epsilon_0} $$
+$$ \vec{\nabla} ∧ \vec{E} + i \frac{\partial \vec{B}}{\partial t} = 0 $$
 
-$$ \frac{D \vec{E}}{Dt} + \vec{\nabla} \vec{E} + \frac{DB}{Dt} + \vec{\nabla} B = \frac{\rho + \vec{J}}{c \epsilon_0} $$
+$$ ic \vec{\nabla} \cdot \vec{B} = 0 $$
 
-$$ \frac{D \vec{E}}{Dt} + \vec{\nabla} \cdot \vec{E} + \vec{\nabla} ∧ \vec{E} + \frac{DB}{Dt} + \vec{\nabla} \cdot B + \vec{\nabla} ∧ B = \frac{\rho + \vec{J}}{c \epsilon_0} $$
-
-$$ \vec{\nabla} \cdot \vec{E} + \frac{D \vec{E}}{Dt} + \vec{\nabla} ∧ B + \vec{\nabla} ∧ \vec{E} + \frac{DB}{Dt} + \vec{\nabla} \cdot B = \frac{\rho}{c \epsilon_0} + \frac{\vec{J}}{c \epsilon_0} $$
-
-$$ \vec{\nabla} \cdot \vec{E} = \text{A scalar} $$
-
-$$ \frac{D \vec{E}}{Dt} + \vec{\nabla} ∧ B = \text{a vector} $$
-
-$$ \vec{\nabla} ∧ \vec{E} + \frac{DB}{Dt} = \text{a bivector} $$
-
-$$ \vec{\nabla} \cdot B = \text{a trivector} $$
-
-$$ \text{And on the right hand side:} $$
-
-$$ \frac{\rho}{c \epsilon_0} = \text{A scalar} $$
-
-$$ \frac{\vec{J}}{c \epsilon_0} = \text{a vector.} $$
+$$ \text{And after:} $$
 
 $$ \vec{\nabla} \cdot \vec{E} = \frac{\rho}{c \epsilon_0} $$
 
-$$ \frac{D \vec{E}}{Dt} + \vec{\nabla} ∧ B = \frac{\vec{J}}{c \epsilon_0} $$
+$$ \frac{D \vec{E}}{Dt} + i \vec{\nabla} ∧ \frac{B}{i} = \frac{\vec{J}}{c \epsilon_0} $$
 
 $$ \vec{\nabla} ∧ \vec{E} + \frac{DB}{Dt} = 0 $$
 
-$$ \vec{\nabla} \cdot B = 0 $$
+$$ i \vec{\nabla} \cdot \frac{B}{i} = 0 $$
