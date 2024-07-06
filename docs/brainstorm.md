@@ -575,7 +575,7 @@ Because tomorrow starts a month-long vacation, I'm going to go from working ever
 
 #### new place today.
 
-#### here's a thing that I wored on for hours, but did not want to delete
+#### here's a thing that I worked on for hours, but did not want to delete
 
 $$ (\frac{D}{Dt} + \vec{\nabla}) \text{ } (\vec{E} + B) = \frac{\rho + \vec{J}}{c \epsilon_0} $$
 
