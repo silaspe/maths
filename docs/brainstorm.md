@@ -573,4 +573,36 @@ Because tomorrow starts a month-long vacation, I'm going to go from working ever
 
 #### goodbye grandparents. (I've still been working every day.)
 
-#### new place.
+#### new place today.
+
+#### here's a thing that I wored on for hours, but did not want to delete
+
+$$ (\frac{D}{Dt} + \vec{\nabla}) \text{ } (\vec{E} + B) = \frac{\rho + \vec{J}}{c \epsilon_0} $$
+
+$$ \frac{D \vec{E}}{Dt} + \vec{\nabla} \vec{E} + \frac{DB}{Dt} + \vec{\nabla} B = \frac{\rho + \vec{J}}{c \epsilon_0} $$
+
+$$ \frac{D \vec{E}}{Dt} + \vec{\nabla} \cdot \vec{E} + \vec{\nabla} ∧ \vec{E} + \frac{DB}{Dt} + \vec{\nabla} \cdot B + \vec{\nabla} ∧ B = \frac{\rho + \vec{J}}{c \epsilon_0} $$
+
+$$ \vec{\nabla} \cdot \vec{E} + \frac{D \vec{E}}{Dt} + \vec{\nabla} ∧ B + \vec{\nabla} ∧ \vec{E} + \frac{DB}{Dt} + \vec{\nabla} \cdot B = \frac{\rho}{c \epsilon_0} + \frac{\vec{J}}{c \epsilon_0} $$
+
+$$ \vec{\nabla} \cdot \vec{E} = \text{A scalar} $$
+
+$$ \frac{D \vec{E}}{Dt} + \vec{\nabla} ∧ B = \text{a vector} $$
+
+$$ \vec{\nabla} ∧ \vec{E} + \frac{DB}{Dt} = \text{a bivector} $$
+
+$$ \vec{\nabla} \cdot B = \text{a trivector} $$
+
+$$ \text{And on the right hand side:} $$
+
+$$ \frac{\rho}{c \epsilon_0} = \text{A scalar} $$
+
+$$ \frac{\vec{J}}{c \epsilon_0} = \text{a vector.} $$
+
+$$ \vec{\nabla} \cdot \vec{E} = \frac{\rho}{c \epsilon_0} $$
+
+$$ \frac{D \vec{E}}{Dt} + \vec{\nabla} ∧ B = \frac{\vec{J}}{c \epsilon_0} $$
+
+$$ \vec{\nabla} ∧ \vec{E} + \frac{DB}{Dt} = 0 $$
+
+$$ \vec{\nabla} \cdot B = 0 $$
