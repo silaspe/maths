@@ -561,7 +561,9 @@ $$ \text{So, } |..| = |... + | = \text{ Four two } + \text{ One } = \text{ Four 
 
 Because tomorrow starts a month-long vacation, I'm going to go from working every day to working $3$ to $4$ times per week. 
 
-#### vacation has started!
+#### vacation to e#preo#u# has started!
+
+If you were wondering, this is one year after [the strand puzzle](https://silaspe.github.io/maths/the_strand_puzzle.html) and [the arctan puzzle](https://silaspe.github.io/maths/arctan.html)
 
 #### shoutout to Dr. Keivan!
 
@@ -606,3 +608,5 @@ $$ \frac{D \vec{E}}{Dt} + \vec{\nabla} ∧ B = \frac{\vec{J}}{c \epsilon_0} $$
 $$ \vec{\nabla} ∧ \vec{E} + \frac{DB}{Dt} = 0 $$
 
 $$ \vec{\nabla} \cdot B = 0 $$
+
+#### I'm gonna meet my cousins! (I've still been working every day.)
