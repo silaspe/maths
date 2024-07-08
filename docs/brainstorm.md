@@ -567,11 +567,11 @@ If you were wondering, this is one year after [the strand puzzle](https://silasp
 
 #### shoutout to Dr. Keivan!
 
-#### I'm gonna meet my grandparents! (I've still been working every day.)
+#### I'm gonna see my grandparents! (I've still been working every day.)
 
 #### false alarm, that's tomorrow.
 
-#### I'm gonna meet my grandparents!.. For real this time.
+#### I'm gonna see my grandparents!.. For real this time.
 
 #### goodbye grandparents. (I've still been working every day.)
 
@@ -609,4 +609,6 @@ $$ \vec{\nabla} ∧ \vec{E} + \frac{DB}{Dt} = 0 $$
 
 $$ \vec{\nabla} \cdot B = 0 $$
 
-#### I'm gonna meet my cousins! (I've still been working every day.)
+#### I'm gonna see my cousins! (I've still been working every day.)
+
+#### false alarm, that's... I would say tomorrow, but I'm writing this the day after I wrote the other one, so it's today.
