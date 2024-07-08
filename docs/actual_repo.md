@@ -288,13 +288,49 @@ def GroupTheory(TheNumberOfFaces, TransformationNumberOne, TransformationNumberO
 ### binary
 
 ```py
-404 Page not found.
+def replace(string, n):
+    result = ""
+    for i in range(n):
+        result += string[i]
+    if string[n] == "0":
+        result += "1"
+    else:
+        result += "0"
+    for i in range(n + 1, len(string)):
+        result += string[i]
+    return result
 ```
 
-### binary names
+```py
+def BinarySuccessor(string):
+    for i in range(len(string)):
+        if string[i] != "0" and string[i] != "1":
+            return "this code will not work if you don't give it a binary string!"
+    k = 0
+    result = string
+    while result[k] == "1":
+        result = replace(result, k)
+        k += 1
+    result = replace(result, k)
+    return result
+```
 
 ```py
-404 Page not found.
+def binaryfy(n):
+  result = "0"
+  for i in range(n):
+    result = BinarySuccessor(result)
+  return result
+```
+
+### binary names (I have been procrastinating this for $2$ weeks!)
+
+```py
+N = 100
+```
+
+```py
+
 ```
 
 ### alternitave numbers
