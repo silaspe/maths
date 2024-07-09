@@ -211,38 +211,26 @@ $200$ Lines.
 
 ### post credit scene
 
-even if Hesthenes' law (I looked it up (on ChatGPT), that is the name of $\nabla F = \frac{J}{c \epsilon_0}$) is more compressed, it is an equallity of multivectors, and there should be a version that has four different equations, exept they are about $k$-vectors (slightly less confusing). Also, if you dont know how to use $\nabla$, $J$, $F$, and the geometric product, than you shouldn't have to. But still, a few things should be simplified (I will use the $\rightarrow$ sign to denote a re-definition), e.g...
+even if Hesthenes' law (I looked it up (on ChatGPT), that is the name of $\nabla F = \frac{J}{c \epsilon_0}$) is more compressed, it is an equallity of multivectors, and there should be a version that has four different equations, exept they are about $k$-vectors (slightly less confusing). Also, if you dont know how to use $\nabla$, $J$, $F$, and the geometric product, than you shouldn't have to (the wedge prodoct just makes sense). But still, a few things should be simplified (e.g. every cross product) (I will use the $\rightarrow$ sign to denote a re-definition), and I will be adding these definitions as I go.
 
-#### $\frac{\partial}{\partial t}$ re-definition
+$$ \text{First, } B = i \vec{B} \text{ is a must have.} $$
 
-$$ \frac{D}{Dt} = \frac{1}{c} \frac{\partial}{\partial t} \text{ Because of some units issues.} $$
-
-#### $\rho$ and $\vec{J}$ re-definition
-
-$$ \rho \rightarrow c \rho \text{ Because of some units issues.} $$
-
-$$ \vec{J} \rightarrow -\vec{J} \text{ Because it is the flow of positave charge (e.g. positrons and protons) as opposed to negatave charge (e.g. electrons).} $$
-
-#### $\vec{B}$ re-definition
-
-$$ B = ic \vec{B} \text{ Because of some units issues, that the magnetic feild is a vector for some reason, and that it is a bivector now, so it sholudn't have a vector arrow.} $$
-
-$$ \text{Now, we can simplify something, but what? Do you remember when we turned the equallity of multivectors into four equalities of } k \text{-vectors that were turned into maxwell's equations? Those equalities of } k \text{-vectors are the perfect target. Before simplification, they looked like this:} $$
+Do you remember when we turned the equallity of multivectors into four equalities of $k$-vectors that were turned into Maxwell's equations? That means that Maxwell's equations seem like a good starting point. let's go from easiest to hardest, so, first, Gauss's law.
 
 $$ \vec{\nabla} \cdot \vec{E} = \frac{\rho}{\epsilon_0} $$
 
-$$ \frac{1}{c} \frac{\partial \vec{E}}{\partial t} + ic \vec{\nabla} ∧ \vec{B} = -\frac{\vec{J}}{c \epsilon_0} $$
+$$ \text{Ok, it has an electric feild (I approve), a dot product (I approve), and a bunch of other things that I approve of. In total, I approve.} $$
 
-$$ \vec{\nabla} ∧ \vec{E} + i \frac{\partial \vec{B}}{\partial t} = 0 $$
+$$ \text{Next, Faraday's law.} $$
 
-$$ ic \vec{\nabla} \cdot \vec{B} = 0 $$
+$$ \vec{\nabla} \times \vec{E} = -\frac{\partial \vec{B}}{\partial t} $$
 
-$$ \text{And after:} $$
+$$ \frac{\vec{\nabla} ∧ \vec{E}}{i} = \frac{-\frac{\partial B}{\partial t}}{i} $$
 
-$$ \vec{\nabla} \cdot \vec{E} = \frac{\rho}{c \epsilon_0} $$
+$$ \vec{\nabla} ∧ \vec{E} = -\frac{\partial B}{\partial t} $$
 
-$$ \frac{D \vec{E}}{Dt} + i \vec{\nabla} ∧ \frac{B}{i} = \frac{\vec{J}}{c \epsilon_0} $$
+$$ \text{Next, } \vec{\nabla} \cdot \vec{B} = 0 \text{'s law.} $$
 
-$$ \vec{\nabla} ∧ \vec{E} + \frac{DB}{Dt} = 0 $$
+$$ \vec{\nabla} \cdot \vec{B} = 0 $$
 
-$$ i \vec{\nabla} \cdot \frac{B}{i} = 0 $$
+$$ \text{You cant really just go } \vec{\nabla} \cdot \frac{B}{i} = 0 \text{, } \frac{\vec{\nabla} \cdot B}{i} = 0 \text{, } \vec{\nabla} \cdot B = 0 \text{, because that is not necessarily true, you see, } U ∧ (VW) \text{ does not necessarily equal } (U ∧ V)W \text{, Instead, you have to think about what } \vec{\nabla} \cdot \vec{B} = 0 \text{ is trying to say.} $$
