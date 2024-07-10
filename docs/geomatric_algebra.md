@@ -355,7 +355,7 @@ $$ \vec{u} \text{ complexify} (\vec{v}) = \text{vectorize} (\text{complexify} (\
 
 $$ \vec{v} z = \text{vectorize} (\text{complexify} (\vec{v}) z) $$
 
-Wait a minute! (Which was the catch phrase of sugey (pronounced soo-gey) in the quick introduction that I mentioned earlier.) If multiplying a vector by a complex number acts like comlex number multiplication (rotating and scaling) (exempt it returns a vector, not a complex number), and a vector times a vector is a complex number, that what rotation is that? (Well, the rotation and scaling of a complex number scales by the magnitude and rotates by the angle counterclockwise from the positave $x$ axis.)
+Wait a minute! (Which was the catch phrase of sudgy (pronounced soo-gey) in the quick introduction that I mentioned earlier.) If multiplying a vector by a complex number acts like comlex number multiplication (rotating and scaling) (exempt it returns a vector, not a complex number), and a vector times a vector is a complex number, that what rotation is that? (Well, the rotation and scaling of a complex number scales by the magnitude and rotates by the angle counterclockwise from the positave $x$ axis.)
 
 $$ \text{By the way, } \vec{v} \vec{u} = \text{ccong} (\vec{u} \vec{v}) $$
 
