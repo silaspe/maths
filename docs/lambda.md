@@ -1,1 +1,3 @@
+Ok, so, lambda calculus, I'll be following along with [the first part](https://www.youtube.com/watch?v=3VQ382QG-y4), at least for now.
 
+Ok, so, it looks like he's starting off with a function (written as $I$) that he calls "the identity". Now, what do you think $I(1)$ is? * Man in the backround says " same value! " *, and that is correct, $I(1) = 1$, $I(2) = 2$, what about $I(I)$? * No one awnsers *, yeah, it's $I$. (By the way, functions in lambda calculus are also called "combinators", each one has a function name (e.g. $I$), a more descriptive function name (e.g. identity), and an alias (which is always a bird for some reason) (e.g. Idiot bird))
