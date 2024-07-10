@@ -233,4 +233,18 @@ $$ \text{Next, } \vec{\nabla} \cdot \vec{B} = 0 \text{'s law.} $$
 
 $$ \vec{\nabla} \cdot \vec{B} = 0 $$
 
-$$ \text{You cant really just go } \vec{\nabla} \cdot \frac{B}{i} = 0 \text{, } \frac{\vec{\nabla} \cdot B}{i} = 0 \text{, } \vec{\nabla} \cdot B = 0 \text{, because that is not necessarily true, you see, } U ∧ (VW) \text{ does not necessarily equal } (U ∧ V)W \text{, Instead, you have to think about what } \vec{\nabla} \cdot \vec{B} = 0 \text{ is trying to say.} $$
+$$ \text{You can't really just go } \vec{\nabla} \cdot \frac{B}{i} = 0 \text{, } \frac{\vec{\nabla} \cdot B}{i} = 0 \text{, } \vec{\nabla} \cdot B = 0 \text{, because that is not necessarily true, you see, } U ∧ (VW) \text{ does not necessarily equal } (U ∧ V)W \text{, Instead, you have to think about what } \vec{\nabla} \cdot \vec{B} = 0 \text{ is trying to say.} $$
+
+$$ \text{Actually, I checked, you can just go } \vec{\nabla} \cdot \frac{B}{i} = 0 \text{, } \frac{\vec{\nabla} \cdot B}{i} = 0 \text{, } \vec{\nabla} \cdot B = 0 \text{!} $$
+
+$$ \vec{\nabla} \cdot B = 0 $$
+
+#### Maxwell's alternitave equations
+
+$$ \vec{\nabla} \cdot \vec{E} = \frac{\rho}{\epsilon_0} $$
+
+$$ \vec{\nabla} \cdot B = 0 $$
+
+$$ \vec{\nabla} ∧ \vec{E} = -\frac{\partial B}{\partial t} $$
+
+$$ \text{And, I cant figure out Ampere's law. The most recent attemt where I expanded out Hesthenes' law with bivector } B \text{ ended up with } 4 \text{ really weird equations. If I eventually figure is out, or someone else solves an equivalent problem, I'll put it below this text.} $$
