@@ -331,7 +331,7 @@ $$ \text{I'm sorry that this got shoved in your face. Just scroll up.} $$
 
 This used to be a page on the website until I deleted it. The page the page still exists and you can find it by replacing the `brainstorm` in the URL link above with `hyperbolic`, I think you can see why I deleted it.
 
-#### line through two points?
+### line through two points?
 
 $$ f(a_x) = a_y $$
 
@@ -397,9 +397,9 @@ $2$ d
 
 $$ (u_1 + u_2 x + u_3 y + u_4 xy)(v_1 + v_2 x + v_3 y + v_4 xy) = (u_1 v_1 + u_2 v_2 + u_3 v_3 - u_4 v_4) + (u_1 v_2 + u_2 v_1 - u_3 v_4 + u_4 v_3)x + (u_1 v_3 + u_2 v_4 + u_3 v_1 - u_4 v_2)y + (u_1 v_4 + u_2 v_3 - u_3 v_2 + u_4 v_1)xy $$
 
-$3$ d
+$400$ lines.
 
-$400$ lines
+$3$ d
 
 $$ (u_1 + u_2 x + u_3 y + u_4 xy + u_5 z + u_6 xz + u_7 yz + u_8 xyz)(v_1 + v_2 x + v_3 y + v_4 xy + v_5 z + v_6 xz + v_7 yz + v_8 xyz) = u_1 v_1 + u_1 v_2 x + u_1 v_3 y + u_1 v_4 xy + u_1 v_5 z + u_1 v_6 xz + u_1 v_7 yz + u_1 v_8 xyz + u_2 v_1 x + u_2 v_2 + u_2 v_3 xy + u_2 v_4 y + u_2 v_5 xz + u_2 v_6 z + u_2 v_7 xyz + u_2 v_8 yz + u_3 v_1 y - u_3 v_2 xy + u_3 v_3 - u_3 v_4 x + u_3 v_5 yz - u_3 v_6 xyz + u_3 v_7 z - u_3 v_8 xz + u_4 v_1 xy - u_4 v_2 y + u_4 v_3 x - u_4 v_4 + u_4 v_5 xyz - u_4 v_6 yz + u_4 v_7 xz - u_4 v_8 z + u_5 v_1 z - u_5 v_2 xz - u_5 v_3 yz + u_5 v_4 xyz + u_5 v_5 - u_5 v_6 x - u_5 v_7 y + u_5 v_8 xy $$
 
@@ -597,6 +597,8 @@ $$ \vec{\nabla} \cdot B = \text{a trivector} $$
 
 $$ \text{And on the right hand side:} $$
 
+$600$ lines.
+
 $$ \frac{\rho}{c \epsilon_0} = \text{A scalar} $$
 
 $$ \frac{\vec{J}}{c \epsilon_0} = \text{a vector.} $$
@@ -612,3 +614,43 @@ $$ \vec{\nabla} \cdot B = 0 $$
 #### I'm gonna see my cousins! (I've still been working every day.)
 
 #### false alarm, that's... I would say tomorrow, but I'm writing this the day after I wrote the other one, so it's today.
+
+#### ncuomdbee rr etphoe#o#r#y#
+
+$$ \text{This chapter is about writing numbers as infinate dimentional vectors (if the vector components are } 3 \text{, } 4 \text{, } 5 \text{ and then infinite } 0 \text{'s, than it would be written as } [3 \text{, } 4 \text{, } 5 \text{, } 0 \text{, } 0 \text{, } 0...] \text{), this is how:} $$
+
+$$ 2025000 = 2^3 \cdot 3^4 \cdot 5^5 \cdot 7^0 \cdot 11^0 \cdot 13^0 \cdot ... = [3 \text{, } 4 \text{, } 5 \text{, } 0 \text{, } 0 \text{, } 0...] = \vec{2025000} $$
+
+$$ \text{Before we do vector addition and scalar multiplcation, here's some code:} $$
+
+```py
+def SmallestPrimeDivisor(n):
+  k = 2
+  while n % k != 0:
+    k += 1
+  return k
+```
+
+```py
+def vec(n):
+  primes = []
+  for i in range(2, n + 1):
+    if SmallestPrimeDivisor(i) = i:
+      primes.append(i)
+  AlmostResult = []
+  for i in range(len(L)):
+    p = l[i]
+    power = 0
+    k = n
+    while k % p = 0:
+      k /= p
+      power += 1
+    AlmostResult.append(power)
+  k = 1
+  while AlmostResult[len(AlmostResult) - k] = [0]:
+    k += 1
+  result = []
+  for i in range(len(AlmostResult) - k + 1):
+    result += AlmostResult[i]
+  return result
+```
