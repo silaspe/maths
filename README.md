@@ -29,4 +29,5 @@ PS you don't get a vector
 * [NOOOOOOOOOO](streak.md) - I lost evereything.
 * [Code repo](actual_repo.md) - pretty self explanatory. Also, the idea for both this page and the one above it did not originate in the brainstorm page.Binary.md](binary.md
 * [My way to count](binary.md) - why YOU should use binary
-* [Geometric algebra 2](geomatric_algebra_2.md) - the first part crashed
+* [Geometric algebra 2](geomatric_algebra_2.md) - the first part (this page will not make sense without it) crashed
+* [Lambda calculus](lambda.md) - an exploration of lambda calculus based off of [this](https://www.youtube.com/watch?v=3VQ382QG-y4) and [this](https://www.youtube.com/watch?v=pAnLQ9jwN-E)
