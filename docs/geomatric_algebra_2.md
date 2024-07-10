@@ -16,7 +16,7 @@ $$ \text{That's it!} $$
 
 $$ \text{A.P. (For privacy reasons, I won't say his full name.) He helped sometimes.} $$
 
-$$ \text{Sugey (that's just his username) who made a great introduction to geometric algebra.} $$
+$$ \text{Sudgy (that's just his username) who made a great introduction to geometric algebra.} $$
 
 $$ \text{Silaspe (me) did evereything else.} $$
 
