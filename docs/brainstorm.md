@@ -658,3 +658,5 @@ def vec(n):
 #### by the way
 
 the amount of commits between now and $500$ is (well, I forgot $2$ and $3$) $1$... $0$, this is the $500$'t commit
+
+#### goodbye cousins. I'll see then next saturday
