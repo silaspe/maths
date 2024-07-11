@@ -655,8 +655,20 @@ def vec(n):
   return result
 ```
 
+$$ \vec{u} = [u_1, u_2, u_3, u_4, u_5, u_6...] = 2^{u_1} \cdot 3^{u_2} \cdot 5^{u_3} \cdot 7^{u_4} \cdot 11^{u_5} \cdot 13^{u_6} \cdot ... $$
+
+$$ \vec{v} = [v_1, v_2, v_3, v_4, v_5, v_6...] = 2^{v_1} \cdot 3^{v_2} \cdot 5^{v_3} \cdot 7^{v_4} \cdot 11^{v_5} \cdot 13^{v_6} \cdot ... $$
+
+$$ \vec{u} + \vec{v} = [u_1 + v_1, u_2 + v_2, u_3 + v_3, u_4 + v_4, u_5 + v_5, u_6 + v_6] = 2^{u_1 + v_1} \cdot 3^{u_2 + v_2} \cdot 5^{u_3 + v_3} \cdot 7^{u_4 + v_4} \cdot 11^{u_5 + v_5} \cdot 13^{u_6 + v_6} \cdot ... $$
+
+$$ \vec{u \cdot v} = 2^{u_1 + v_1} \cdot 3^{u_2 + v_2} \cdot 5^{u_3 + v_3} \cdot 7^{u_4 + v_4} \cdot 11^{u_5 + v_5} \cdot 13^{u_6 + v_6} \cdot ... $$
+
+$$ \vec{u} + \vec{v} = \vec{u \cdot v} $$
+
 #### by the way
 
 the amount of commits between now and $500$ is (well, I forgot $2$ and $3$) $1$... $0$, this is the $500$'t commit
 
 #### goodbye cousins. I'll see then next saturday
+
+#### new place today.
