@@ -661,7 +661,7 @@ $$ c \cdot \vec{v} = \vec{v^c} $$
 
 #### by the way...
 
-The amount of commits between now and $500$ is (well, I forgot $2$ and $3$) $1$... $0$, this is the $500$'t commit.
+The amount of commits between now and $500$ is (well, I forgot $2$ and $3$) $1$... $0$, this is the $500$'th commit.
 
 #### goodbye cousins. I'll see then next saturday
 
