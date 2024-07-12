@@ -659,12 +659,14 @@ $$ \vec{u} + \vec{v} = \vec{u \cdot v} $$
 
 $$ c \cdot \vec{v} = \vec{v^c} $$
 
-#### by the way
+#### by the way...
 
-the amount of commits between now and $500$ is (well, I forgot $2$ and $3$) $1$... $0$, this is the $500$'t commit
+The amount of commits between now and $500$ is (well, I forgot $2$ and $3$) $1$... $0$, this is the $500$'t commit.
 
 #### goodbye cousins. I'll see then next saturday
 
 #### I'm going to l#w#do#b!
 
 #### false alarm, that's... I dunno!
+
+#### Now, I'm in i#u#co#c.
