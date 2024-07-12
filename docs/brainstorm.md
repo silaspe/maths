@@ -619,7 +619,7 @@ $$ \vec{\nabla} \cdot B = 0 $$
 
 $$ \text{This chapter is about writing numbers as infinate dimentional vectors (if the vector components are } 3 \text{, } 4 \text{, } 5 \text{ and then infinite } 0 \text{'s, than it would be written as } [3 \text{, } 4 \text{, } 5 \text{, } 0 \text{, } 0 \text{, } 0...] \text{), this is how:} $$
 
-$$ 2025000 = 2^3 \cdot 3^4 \cdot 5^5 \cdot 7^0 \cdot 11^0 \cdot 13^0 \cdot ... = [3 \text{, } 4 \text{, } 5 \text{, } 0 \text{, } 0 \text{, } 0...] = \vec{2025000} $$
+$$ 2025000 = 2^3 \cdot 3^4 \cdot 5^5 \cdot 7^0 \cdot 11^0 \cdot 13^0 \cdot ... \rightarrow \vec{2025000} = [3 \text{, } 4 \text{, } 5 \text{, } 0 \text{, } 0 \text{, } 0...] $$
 
 $$ \text{Before we do vector addition and scalar multiplcation, here's some code:} $$
 
@@ -655,15 +655,9 @@ def vec(n):
   return result
 ```
 
-$$ \vec{u} = [u_1, u_2, u_3, u_4, u_5, u_6...] = 2^{u_1} \cdot 3^{u_2} \cdot 5^{u_3} \cdot 7^{u_4} \cdot 11^{u_5} \cdot 13^{u_6} \cdot ... $$
-
-$$ \vec{v} = [v_1, v_2, v_3, v_4, v_5, v_6...] = 2^{v_1} \cdot 3^{v_2} \cdot 5^{v_3} \cdot 7^{v_4} \cdot 11^{v_5} \cdot 13^{v_6} \cdot ... $$
-
-$$ \vec{u} + \vec{v} = [u_1 + v_1, u_2 + v_2, u_3 + v_3, u_4 + v_4, u_5 + v_5, u_6 + v_6] = 2^{u_1 + v_1} \cdot 3^{u_2 + v_2} \cdot 5^{u_3 + v_3} \cdot 7^{u_4 + v_4} \cdot 11^{u_5 + v_5} \cdot 13^{u_6 + v_6} \cdot ... $$
-
-$$ \vec{u \cdot v} = 2^{u_1 + v_1} \cdot 3^{u_2 + v_2} \cdot 5^{u_3 + v_3} \cdot 7^{u_4 + v_4} \cdot 11^{u_5 + v_5} \cdot 13^{u_6 + v_6} \cdot ... $$
-
 $$ \vec{u} + \vec{v} = \vec{u \cdot v} $$
+
+$$ c \cdot \vec{v} = \vec{v^c} $$
 
 #### by the way
 
