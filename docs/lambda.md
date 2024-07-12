@@ -11,3 +11,7 @@ Ok, so, what was this $\lambda$ stuff from earlier? (Finally he explains it.) So
 ### chapter $3$: What is Lambda Calculus?
 
 Lambda calculus is a really tiny symbol manipulation framework, a calculus is just a way of moving around symbols on a page (I actually didn't know that), the subject that you may have learnd in school called "calculus" is a specific calculus for things like differentials and integrals and stuff like that, derivatives. But this calculus is about something else, this calculus is about evaluating and defining functions.
+
+### chapter $4$: I'm tired of this, here's a crash course on lambda calculus.
+
+Functions (aka combinators) act on other functions, each one has a single letter abbreviation, and an alias. For the example function, it is written " $M$ ", and is called "The Mockingbird". Now, how that is defined in lambda calculus is " $M = : \lambda a. a(a)$ ". Now, this is where it starts to get complicated (that's a family meme)
