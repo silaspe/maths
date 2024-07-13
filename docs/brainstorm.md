@@ -169,7 +169,7 @@ $$ \nabla F = \frac{J}{c \epsilon_0} $$
 
 [.](https://www.youtube.com/watch?v=60z_hpEAtD8)
 
-#### how to solve a rubix cube
+#### how to solve a rubix cube.
 
 I'll leave it to J perm.
 
@@ -527,7 +527,7 @@ One twig is a unit of distance, but first, y'know how one meter is one light sec
 
 #### happy father's day! (Actual)
 
-### counting in binary?
+### counting in binary
 
 Binary is a way to count where instead of the places: $1$, $10$, $100$, $1,000$, and so on, you use the $1$, $2$, $4$, $8$, $16$, $32$, $64$, $128$, $256$, $512$, $1,024$, $2,048$, $4,096$, $8,192$, $16,384$, $32,768$, $65,536$, $131,072$,  $262,144$, and so on for place names. (Also, if you were using binary to begin with, those would be $1$, $10$, $100$ and so on.) So the numbers $1-10$ would be $|$, $|.$, $||$, $|..$, $|.|$, $||.$, $|||$, $|...$, $|..|$, $|.|.$ (Period.) But how would you pronounce this?
 
@@ -661,9 +661,9 @@ $$ c \cdot \vec{v} = \vec{v^c} $$
 
 #### by the way...
 
-The amount of commits between now and $500$ is (well, I forgot $2$ and $3$) $1$... $0$, this is the $500$'th commit.
+The amount of commits between now and $500$ is (well, I forgot $2$ and $3$) $1$... $0!$, this is the $500$'th commit.
 
-#### goodbye cousins. I'll see then next saturday
+#### goodbye cousins. I'll see them next saturday
 
 #### I'm going to l#w#do#b!
 
