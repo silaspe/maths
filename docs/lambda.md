@@ -14,4 +14,7 @@ Lambda calculus is a really tiny symbol manipulation framework, a calculus is ju
 
 ### chapter $4$: I'm tired of this, here's a crash course on lambda calculus.
 
-Functions (aka combinators) act on other functions, each one has a single letter abbreviation, and an alias. For the example function, it is written " $M$ ", and is called "The Mockingbird". Now, how that is defined in lambda calculus is " $M = : \lambda a. a(a)$ ". Now, this is where it starts to get complicated (that's a family meme)
+Functions (aka combinators) act on other functions, each one has a single letter abbreviation, and an alias. For the example function, it is written " $M$ ", and is called "The Mockingbird". Now, how it's defined in lambda calculus is " $M = : \lambda a. a(a)$ ". Now, this is where it starts to get complicated (that's a family meme). First, there's a $\lambda$ (aka lambda), which means: defining inputs (functions). Then, it defines an input ($a$), then, there's a $.$, which means: stop defining inputs. Then, there's an $a(a)$. The $a$ being a function is explaind by when I said "inputs (functions)", but then, there's another question: why is $a$ also an input? One or the other, right? Well, no, it is explaind by when I said "Functions act on other functions". Putting it all together, The Mockingbird function takes in one input, and evaluates it on itself.
+
+### chapter $5$: Code repo
+
