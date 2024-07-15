@@ -31,5 +31,3 @@ $$ f_2 (x) = x \cdot 2^x $$
 $$ f_3 (3) > 10^{100} \times \text{The american national debt.} $$
 
 $$ f_\omega (x) = : f_x (x) $$
-
-$$ f_{} (x) =  $$
