@@ -19,3 +19,17 @@ Functions (aka combinators) act on other functions, each one has a single letter
 ### chapter $5$: Big numbers and Transfinite ordinals
 
 This chapter dosen't have much lambda calculus, it's just what I have been doing for the past week. [This](https://www.youtube.com/watch?v=b-Bb_TyhC1A&t=1449s), [this](https://www.youtube.com/watch?v=Mzgw6zMtipQ&t=465s), and [this](https://www.youtube.com/watch?v=0X9DYRLmTNY&t=486s) were my only evinence (in that order), I knew enough about the fast-growing hierachies, but very little about the infinite ordinals.
+
+$$ f_0 (x) = : x + 1 $$
+
+$$ f_{n + 1} (x) = : f_n(f_n(f_n(...(f_n(x)))))... = f_n^x(x) $$
+
+$$ f_1 (x) = 2x $$
+
+$$ f_2 (x) = x \cdot 2^x $$
+
+$$ f_3 (3) > 10^{100} \times \text{The american national debt.} $$
+
+$$ f_\omega (x) = : f_x (x) $$
+
+$$ f_{} (x) =  $$
