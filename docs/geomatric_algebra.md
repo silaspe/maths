@@ -533,9 +533,5 @@ $$ \text{First, I don't know what any of it means, but here's the un-simplified 
 
 $$ \vec{\nabla} \cdot \vec{E} = \frac{\rho}{\epsilon_0} $$
 
-$$ \vec{\nabla} \times \vec{B} = \mu_0 (\vec{J} + \epsilon_0 \frac{\partial \vec{E}}{\partial t}) $$
-
-$$ \vec{\nabla} \times \vec{E} = -\frac{\partial \vec{B}}{\partial t} $$
-
 And cut! This page has reached the maximum LaTeX limit, continue at [Geometric algebra 2!](
 geomatric_algebra_2.md)
