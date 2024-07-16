@@ -18,7 +18,7 @@ Functions (aka combinators) act on other functions, each one has a single letter
 
 ### chapter $5$: Big numbers and Transfinite ordinals
 
-This chapter dosen't have much lambda calculus, it's just what I have been doing for the past week. [This](https://www.youtube.com/watch?v=b-Bb_TyhC1A&t=1449s), [this](https://www.youtube.com/watch?v=Mzgw6zMtipQ&t=465s), and [this](https://www.youtube.com/watch?v=0X9DYRLmTNY&t=486s) were my only evinence (in that order), I knew enough about the fast-growing hierachies, but very little about the infinite ordinals.
+This chapter dosen't have much lambda calculus, it's just what I have been doing for the past week. [This](https://www.youtube.com/watch?v=b-Bb_TyhC1A&t=1449s), [this](https://www.youtube.com/watch?v=Mzgw6zMtipQ&t=465s), and [this](https://www.youtube.com/watch?v=0X9DYRLmTNY&t=486s) were my only evinence (in that order) (you should watch them anyways, they're really cool videos), I knew enough about the fast-growing hierachies, but very little about the infinite ordinals.
 
 $$ f_0 (x) = : x + 1 $$
 
@@ -30,4 +30,6 @@ $$ f_2 (x) = x \cdot 2^x $$
 
 $$ f_3 (3) > 10^{100} \times \text{The american national debt.} $$
 
-$$ f_\omega (x) = : f_x (x) $$
+$$ f_\omega (x) = : f_x (x) \text{} $$
+
+$$ \text{Yes, that omega is a transfinite ordinal, but there's nothing infinate about it, it just grows faster than any finite number would (e.g. } f_{1000} (x) < f_\omega (x) \text{ because for all } x > 1000 \text{, the subscript would be bigger, thus it would grow faster), it's just notational shorthand, because if the input is really long to write, you would have to write it twice. But there is a connection between transfinite ordinals and these functions (which have a connection to big numbers, hence the name: Big numbers and Transfinite ordinals) that I will explain after I get to the largest ordinal that I know.} $$
