@@ -33,3 +33,5 @@ $$ f_3 (3) > 10^{100} \times \text{The american national debt.} $$
 $$ f_\omega (x) = : f_x (x) \text{} $$
 
 $$ \text{Yes, that omega is a transfinite ordinal, but there's nothing infinate about it, it just grows faster than any finite number would (e.g. } f_{1000} (x) < f_\omega (x) \text{ because for all } x > 1000 \text{, the subscript would be bigger, thus it would grow faster), it's just notational shorthand, because if the input is really long to write, you would have to write it twice. But there is a connection between transfinite ordinals and these functions (which have a connection to big numbers, hence the name: Big numbers and Transfinite ordinals) that I will explain after I get to the largest ordinal that I know.} $$
+
+$$ f_{} (x) =  $$
