@@ -34,4 +34,56 @@ $$ f_\omega (x) = : f_x (x) \text{} $$
 
 $$ \text{Yes, that omega is a transfinite ordinal, but there's nothing infinate about it, it just grows faster than any finite number would (e.g. } f_{1000} (x) < f_\omega (x) \text{ because for all } x > 1000 \text{, the subscript would be bigger, thus it would grow faster), it's just notational shorthand, because if the input is really long to write, you would have to write it twice. But there is a connection between transfinite ordinals and these functions (which have a connection to big numbers, hence the name: Big numbers and Transfinite ordinals) that I will explain after I get to the largest ordinal that I know.} $$
 
-$$ f_{} (x) =  $$
+$$ \text{For ordinals, there are three rules, } 1 \text{: you start with omega (} \omega \text{), } 2 \text{: you can add } 1 \text{, } 3 \text{: you can repeat 'til infinity*} $$
+
+$$ \text{*only an infinity that you have already reached} $$
+
+$$ \omega $$
+
+$$ \omega + 1 $$
+
+$$ \omega + 2 $$
+
+$$ \omega + 3 $$
+
+$$ \vdots $$
+
+$$ \omega + \omega $$
+
+$$ 2 \omega $$
+
+$$ 2 \omega + 1 $$
+
+$$ 2 \omega + 2 $$
+
+$$ 2 \omega + 3 $$
+
+$$ \vdots $$
+
+$$ 2 \omega + \omega $$
+
+$$ 3 \omega $$
+
+$$ \vdots $$
+
+$$ \omega \omega $$
+
+$$ \omega^2 $$
+
+$$ \omega^\omega $$
+
+$$ \omega^{\omega^\omega} $$
+
+$$ \omega^{\omega^{\omega^{\omega^{.^{.^.}}}}} = : \epsilon_0 = \text{}^\omega \omega $$
+
+$$ \text{Where }^y x \text{ is pronounced "} x \text{ tetrated to } y \text{" and equals } x^{x^{x^{x^{.^{.^.}}}}} y \text{ times. (Also, it's parenthesized from the right to the left.)} $$
+
+$$ \text{Also, } \epsilon_0 = \omega^{\epsilon_0} \text{, so } \epsilon_0 \text{ is a "fixed point" of } \omega \text{.} $$
+
+$$ \epsilon_{n + 1} = : \epsilon_n^{\epsilon_n^{\epsilon_n^{\epsilon_n^{.^{.^.}}}}} $$
+
+$$ \epsilon_\omega $$
+
+$$ \epsilon_{\epsilon_0} $$
+
+$$ \epsilon_{\epsilon_{\epsilon_{\epsilon_\ddots}}} = : \zeta_0 $$
