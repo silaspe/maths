@@ -87,3 +87,25 @@ $$ \epsilon_\omega $$
 $$ \epsilon_{\epsilon_0} $$
 
 $$ \epsilon_{\epsilon_{\epsilon_{\epsilon_\ddots}}} = : \zeta_0 $$
+
+$$ \text{IMPORTANT! This is only } \zeta_0 \text{ because at the end of that tower* of epsilons, there is a } 0 \text{.} $$
+
+$$ \text{*The term "tower" is exclusive to exponents, the term for subscripts is "dungeon".} $$
+
+$$ \zeta_n^{\zeta_n^{\zeta_n^{\zeta_n^{.^{.^.}}}}} = : \epsilon_{\zeta_n + 1} $$
+
+$$ \zeta_{n + 1} = : \epsilon_{\epsilon_{\epsilon_{\epsilon_\ddots}}} \text{ Where the final epsilon is an } \epsilon_{\zeta_n + 1} \text{.} $$
+
+
+$100$ lines.
+
+$$ \zeta_\omega $$
+
+$$ \zeta_{\epsilon_0} $$
+
+$$ \zeta_{\zeta_0} $$
+
+$$ \zeta_{\zeta_{\zeta_{\zeta_\ddots}}} = : \eta_0 = : \varphi (3) $$
+
+#### chapter $6$: THE VEBLEN HIERARCHY
+####
