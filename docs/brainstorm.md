@@ -561,7 +561,7 @@ $$ \text{So, } |..| = |... + | = \text{ Four two } + \text{ One } = \text{ Four 
 
 Because tomorrow starts a month-long vacation, I'm going to go from working every day to working $3$ to $4$ times per week. 
 
-#### vacation to e#preo#u# has started!
+#### vacation to h#suhr#x# has started!
 
 If you were wondering, this is one year after [the strand puzzle](https://silaspe.github.io/maths/the_strand_puzzle.html) and [the arctan puzzle](https://silaspe.github.io/maths/arctan.html)
 
