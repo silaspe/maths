@@ -38,14 +38,6 @@ $$ \text{Okay fine, yes, that one was a joke. But it took me a whole weekend to 
 
 $$ \text{Not that every day isn't a weekend for me, but I remember solving it on sunday and posing ist the day before.} $$
 
-#### I might not work today (sad emoji)
-
-... Because there is a science something, what was it again? Physics festival! So I am sad to say that, today, I will break my at least $1$ edit to my website per day rule... Wait! This text that I am writing counts as something, so I'll add this to my website. Anyways, I need to leave, and everyone is waiting for me.
-
-#### or today.
-
-... That chapter title and this text will be what I add to my website today.
-
 ### why can't you multiply two vectors? (all endings)?
 
 $$ \vec{u} = \begin{bmatrix} u_x \\
@@ -96,6 +88,14 @@ $$ \vec{u} \vec{v} = \begin{pmatrix} (xx)(u_x v_x) + (xy)(u_x v_y) + (xz)(u_x v_
 
 $$ \text{But now, I need to turn a bivector into a vector, I'll use that } U \text{ thing for that.} $$
 
+(incert text here)
+
+(incert text here)
+
+(incert text here)
+
+(incert text here)
+
 
 $100$ Lines btw.
 
@@ -125,9 +125,9 @@ $$ U^3 = -U = zyx = -xyz $$
 
 $$ U^4 = (-U) U  = 1 $$
 
-.
-
 $2 \cdot 2 \cdot 2 \cdot 2 \cdot 2 \cdot 2 \cdot 2$ lines!
+
+.
 
 $$ xy = xyzz = Uz $$
 
@@ -157,8 +157,6 @@ Also, the cross product only works in $3d$ while this $\hat{i} \hat{j} \hat{k} \
 
 $$ \vec{u} \vec{v} = \vec{u} \cdot \vec{v} + \vec{u} ∧ \vec{v} $$
 
-#### it's bitcoin halfing day today!!!
-
 #### Maxwell's equation (singular)
 
 $$ \nabla F = J $$
@@ -168,14 +166,6 @@ $$ \text{Actually,} $$
 $$ \nabla F = \frac{J}{c \epsilon_0} $$
 
 [.](https://www.youtube.com/watch?v=60z_hpEAtD8)
-
-#### how to solve a rubix cube.
-
-I'll leave it to J perm.
-
-[.](https://www.youtube.com/watch?v=7Ron6MN45LY)
-
-[.](https://www.youtube.com/@JPerm)
 
 ### $\frac{1}{\vec{v}}$
 
@@ -195,9 +185,17 @@ $$ \vec{v} \cdot c \vec{v} = || \vec{v} || \cdot || c \vec{v} || =  c || \vec{v}
 
 $$ c = \frac{1}{|| \vec{v} ||^2} $$
 
+(incert text here)
+
+(incert text here)
+
+(incert text here)
+
+(incert text here)
+
 $$ \frac{1}{\vec{v}} = \frac{\vec{v}}{|| \vec{v} ||^2} $$
 
-And perfect timing, it is exactly $200$ lines
+And perfect timing, it is exactly $200$ lines.
 
 $$ \frac{1}{\frac{1}{\vec{v}}} = \frac{\frac{1}{\vec{v}}}{|| \frac{1}{\vec{v}} ||^2} = \frac{\frac{1}{\vec{v}}}{|| \vec{v} \frac{1}{|| \vec{v} ||^2} ||^2} = \frac{\frac{1}{\vec{v}}}{\frac{1}{|| \vec{v} ||^4} || \vec{v}||^2} = \frac{\frac{\vec{v}}{|| \vec{v} ||^2}}{\frac{1}{|| \vec{v}||^2}} = \vec{v} $$
 
@@ -296,6 +294,8 @@ $$ \text{if } a = 0 \text{, then the square root of } \frac{0}{0} \text{ is stil
 
 $$ x = \frac{0}{a} $$
 
+(incert text here)
+
 
 $300$ Lines.
 
@@ -322,14 +322,6 @@ $$ x = -\frac{b}{2a} \mp \frac{b}{2a} $$
 $$ ax^2 + bx + c = 0 $$
 
 $$ x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a} $$
-
-$$ \text{I'm sorry that this got shoved in your face. Just scroll up.} $$
-
-#### hyperbolic arcs
-
-<iframe src="https://www.geogebra.org/calculator/ysw94mwz?embed" width="800" height="600" allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;" frameborder="0"></iframe>
-
-This used to be a page on the website until I deleted it. The page the page still exists and you can find it by replacing the `brainstorm` in the URL link above with `hyperbolic`, I think you can see why I deleted it.
 
 ### line through two points?
 
@@ -373,16 +365,6 @@ $$ \text{Personally, my favorite is:} $$
 
 $$ f(x) = \frac{a_y - b_y}{a_x - b_x} x + \frac{a_x b_y - a_y b_x}{b_x - a_x} $$
 
-#### THE NUMBERS
-
-$$ | 1.0 | .01 \text{ } .1 | 01.0 \text{ } 1.0 \text{ } 2.0 | .0011 \text{ } .02 \text{ } .1 \text{ } .2 | 0.01 \text{ } .0121 \text{ } 1.0 \text{ } .13 \text{ } 3.0 | .001 \text{ } 0.1 \text{ } .03 \text{ } .1 \text{ } 2.0 \text{ } .3 | 001.0 \text{ } .010212 \text{ } 0.2 \text{ } 1.0 \text{ } 13.0 \text{ } .2 \text{ } 4.0 | $$
-
-$$ \text{To solve this puzzle, you must either find out what comes next, or find the pattern, or both!} $$
-
-#### By the way...
-
-$$ \text{I am trying to build a computer... Within a computer!} $$
-
 #### multivector times tables
 
 $0$ d
@@ -397,6 +379,24 @@ $2$ d
 
 $$ (u_1 + u_2 x + u_3 y + u_4 xy)(v_1 + v_2 x + v_3 y + v_4 xy) = (u_1 v_1 + u_2 v_2 + u_3 v_3 - u_4 v_4) + (u_1 v_2 + u_2 v_1 - u_3 v_4 + u_4 v_3)x + (u_1 v_3 + u_2 v_4 + u_3 v_1 - u_4 v_2)y + (u_1 v_4 + u_2 v_3 - u_3 v_2 + u_4 v_1)xy $$
 
+(incert text here)
+
+(incert text here)
+
+(incert text here)
+
+(incert text here)
+
+(incert text here)
+
+(incert text here)
+
+(incert text here)
+
+(incert text here)
+
+(incert text here)
+
 $400$ lines.
 
 $3$ d
@@ -405,7 +405,7 @@ $$ (u_1 + u_2 x + u_3 y + u_4 xy + u_5 z + u_6 xz + u_7 yz + u_8 xyz)(v_1 + v_2 
 
 $$ \text{I think I'm too lazy to finish this.} $$
 
-### set theory/logic (definitions)?
+### set theory/logic (definitions)
 
 $$ \text{A set is a well defined collection of objects, a set could contain the two shoes on you feet, or the } 5 \text{ peices of chese on this cutting board (that I'm going to pretend exists), sets can even contain other sets, but sets can not contain themselfes, because tis would lead to a paradox: would the set that contains every set that dosen't contain itsef contain itself?" this also means that there isn't a set that contains everything.} $$
 
@@ -453,7 +453,7 @@ $$ \text{succ Is pronounced "the immediate successor of" and means "that number 
 
 $$ set \text{ Is pronounced "the set containing" as in "} set(S) \text{" and I'll get to it's formal meaning in the next chapter.} $$
 
-### set theory (definitions from those definitions)
+### set theory (definitions from those definitions)?
 
 $$ ¬ \exists (x) \cdot x \in Ø $$
 
@@ -523,10 +523,6 @@ No.
 
 One twig is a unit of distance, but first, y'know how one meter is one light second (the amount light traveles in one second) divided by $299,792,458$? Well, I was thinking: can't I just make a unit of measurement defined as one light second divided by $300,000,000$? Well, that would be decimal-centric! (I'd rather use binary.) So, I defined one twig (or one absolute unit) as one light second divided by $2^{30}$, so just under one foot, coming in at $10.99$ inches. Using twig-ic (I just came up with that name) is a lot like using metric (I was too lazy to invent an imperial like system (even though I'm 'murican) because I could only invent one unit), I was gonna use a binary based systen, but octal was better as it is closer to $10$ and is the amount of fingers on a cartoon character. If you divide a twig into $8$, you get $1$ unotwig, after that, $1$ duotwig, then $1$ triotwig, then $1$ quadtwig, then $1$ pentatwig, then $1$ hexatwig, then $1$ heptatwig, then $1$ octotwig, then $1$ nonatwig, then $1$ decatwig, then $1$ elatwig, but at that point, it is smaller than $1/10$'th of a nanometer, better stop there (also, the prefix is equal to the power of $8$ that you are dividing it by). If you want to get bigger units, add the prefix "nega", but when you get to one negaelatwig, it's the size of $8$ lightseconds. So that is the measurement system that I created last night.
 
-#### happy father's day! (Weekend)
-
-#### happy father's day! (Actual)
-
 ### counting in binary
 
 Binary is a way to count where instead of the places: $1$, $10$, $100$, $1,000$, and so on, you use the $1$, $2$, $4$, $8$, $16$, $32$, $64$, $128$, $256$, $512$, $1,024$, $2,048$, $4,096$, $8,192$, $16,384$, $32,768$, $65,536$, $131,072$,  $262,144$, and so on for place names. (Also, if you were using binary to begin with, those would be $1$, $10$, $100$ and so on.) So the numbers $1-10$ would be $|$, $|.$, $||$, $|..$, $|.|$, $||.$, $|||$, $|...$, $|..|$, $|.|.$ (Period.) But how would you pronounce this?
@@ -557,26 +553,6 @@ $$ \text{And then, for the other powers of two, combine the names, so } |... = |
 
 $$ \text{So, } |..| = |... + | = \text{ Four two } + \text{ One } = \text{ Four Two One. But the thing is, } ||| \text{ is also pronounced "Four Two One". Okay, so, if something like that happens where the first part of the next digit is smaller that the last part of the previous digit, then... Um...} $$
 
-#### update on working every day
-
-Because tomorrow starts a month-long vacation, I'm going to go from working every day to working $3$ to $4$ times per week. 
-
-#### vacation to h#suhr#x# has started!
-
-If you were wondering, this is one year after [the strand puzzle](https://silaspe.github.io/maths/the_strand_puzzle.html) and [the arctan puzzle](https://silaspe.github.io/maths/arctan.html)
-
-#### shoutout to Dr. Keivan!
-
-#### I'm gonna see my grandparents! (I've still been working every day.)
-
-#### false alarm, that's tomorrow.
-
-#### I'm gonna see my grandparents!.. For real this time.
-
-#### goodbye grandparents. (I've still been working every day.)
-
-#### new place today.
-
 #### here's a thing that I worked on for hours, but did not want to delete
 
 $$ (\frac{D}{Dt} + \vec{\nabla}) \text{ } (\vec{E} + B) = \frac{\rho + \vec{J}}{c \epsilon_0} $$
@@ -597,6 +573,30 @@ $$ \vec{\nabla} \cdot B = \text{a trivector} $$
 
 $$ \text{And on the right hand side:} $$
 
+(incert text here)
+
+(incert text here)
+
+(incert text here)
+
+(incert text here)
+
+(incert text here)
+
+(incert text here)
+
+(incert text here)
+
+(incert text here)
+
+(incert text here)
+
+(incert text here)
+
+(incert text here)
+
+(incert text here)
+
 $600$ lines.
 
 $$ \frac{\rho}{c \epsilon_0} = \text{A scalar} $$
@@ -610,10 +610,6 @@ $$ \frac{D \vec{E}}{Dt} + \vec{\nabla} ∧ B = \frac{\vec{J}}{c \epsilon_0} $$
 $$ \vec{\nabla} ∧ \vec{E} + \frac{DB}{Dt} = 0 $$
 
 $$ \vec{\nabla} \cdot B = 0 $$
-
-#### I'm gonna see my cousins! (I've still been working every day.)
-
-#### false alarm, that's... I would say tomorrow, but I'm writing this the day after I wrote the other one, so it's today.
 
 #### ncuomdbee rr etphoe#o#r#y#
 
@@ -658,29 +654,3 @@ def vec(n):
 $$ \vec{u} + \vec{v} = \vec{u \cdot v} $$
 
 $$ c \cdot \vec{v} = \vec{v^c} $$
-
-#### by the way...
-
-The amount of commits between now and $500$ is (well, I forgot $2$ and $3$) $1$... $0!$, this is the $500$'th commit.
-
-#### goodbye cousins. I'll see them next saturday
-
-#### I'm going to l#w#do#b!
-
-#### false alarm, that's... I dunno!
-
-#### Now, I'm in i#u#co#c.
-
-#### I'm gonna see my (other) cousins!
-
-#### by the way...
-
-Illuminati
-
-Illumination studios.
-
-#### Actually, yesterday was saturday.
-
-#### This is the last full day in j#u#bm#c
-
-#### leaving, part $1$:
