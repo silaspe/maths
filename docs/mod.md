@@ -1,6 +1,6 @@
 ## Like the title suggests, what would happen if you restart counting after $10$?
 
-You (supposedly) started counting when you were very young, so starting with counting to the interers, we will rebuild arithmatic from the ground up.
+You (supposedly) started counting when you were very young, so starting with counting to the intergrs, we will rebuild arithmatic from the ground up.
 
 $$ 1 $$
 
@@ -295,7 +295,7 @@ SPOILERS BELOW
 
 ### answer
 
-You might have gussed that all of these have absolute value $1$, but you might not have known that these are the [roots of unity(https://silaspe.github.io/maths/complex_2.html). But remember to use that $j$ thing. And yes, as oppose to $e^{i\theta} = cos(\theta) + i \text{ } sin(\theta)$,
+You might have gussed that all of these have absolute value $1$, but you might not have known that these are the [roots of unity](https://silaspe.github.io/maths/complex_2.html). But remember to use that $j$ thing. And yes, as opposed to $e^{i\theta} = cos(\theta) + i \text{ } sin(\theta)$,
 
 $$ e^{j\theta} = cos(\theta) + j sin(\theta). $$
 
