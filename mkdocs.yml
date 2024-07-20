@@ -30,6 +30,7 @@ nav:
   - The best way to count: binary.md
   - Geometric algebra 2: geomatric_algebra_2.md
   - Lambda calculus: lambda.md
+  - Random thoughts: rand.md
 theme:
   name: material
   palette:
