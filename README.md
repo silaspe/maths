@@ -27,7 +27,8 @@ PS you don't get a vector
 
 * [Set theory](set_theory.md) - definitions of the subset, empty set, power set, and so on.
 * [NOOOOOOOOOO](streak.md) - I lost evereything.
-* [Code repo](actual_repo.md) - pretty self explanatory. Also, the idea for both this page and the one above it did not originate in the brainstorm page.Binary.md](binary.md
+* [Code repo](actual_repo.md) - Pretty self explanatory. Also, the idea for both this page and the one above it did not originate in the brainstorm page.
 * [My way to count](binary.md) - why YOU should use binary
 * [Geometric algebra 2](geomatric_algebra_2.md) - the first part (this page will not make sense without it) crashed
-* [Lambda calculus](lambda.md) - an exploration of lambda calculus based off of [this](https://www.youtube.com/watch?v=3VQ382QG-y4) and [this](https://www.youtube.com/watch?v=pAnLQ9jwN-E)
+* [Lambda calculus](lambda.md) - an exploration of lambda calculus based off of [this](https://www.youtube.com/watch?v=3VQ382QG-y4) and [this](https://www.youtube.com/watch?v=pAnLQ9jwN-E)Random thoughts](rand.md
+* [Random thoughts](rand.md) - The half of the brainstorm page that had nothing to do with math, and everything to do with what was happening at the time.
