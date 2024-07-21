@@ -248,3 +248,15 @@ $$ \vec{\nabla} \cdot B = 0 $$
 $$ \vec{\nabla} ∧ \vec{E} = -\frac{\partial B}{\partial t} $$
 
 $$ \text{And, I cant figure out Ampere's law. The most recent attemt where I expanded out Hesthenes' law with bivector } B \text{ ended up with } 4 \text{ really weird equations. If I eventually figure is out, or someone else solves an equivalent problem, I'll put it below this text.} $$
+
+### Ampere's law
+
+$$ \text{Actually, I checked, you can't just go } \vec{\nabla} \cdot \frac{B}{i} = 0 \text{, } \frac{\vec{\nabla} \cdot B}{i} = 0 \text{, } \vec{\nabla} \cdot B = 0 \text{. The true equation for } \vec{\nabla} \cdot B \text{ was called "Ampere's law" by, I forgot his name. Here's } \vec{\nabla} \cdot \vec{B} = 0 \text{/Ampere's law anyways.} $$
+
+$$ \vec{\nabla} \cdot B = \mu_0 (\vec{J} + \epsilon_0 \frac{\partial \vec{E}}{\partial t}) $$
+
+$$ \text{But then I realized, there shoul be } 5 \text{ equations, one for } \vec{\nabla} \cdot \vec{E} \text{, one for } \vec{\nabla} ∧ \vec{E} \text{, one for } \vec{\nabla} \cdot B \text{, one for } \vec{\nabla} ∧ B \text{, and one for } \vec{\nabla} \odot B \text{. (That I will name after the person who discovers it first.)} $$
+
+$$ \text{Let me explain what this "} \odot \text{" thing is. First, it is the "surface product" as opposed to dot product or wedge product (in between the inner and outer products). If } \vec{\nabla} \cdot \text{ is the divergance and } \vec{\nabla} ∧ \text{ is the curl, } \vec{\nabla} \odot \text{ is the "semicurl".} $$
+
+$$ \text{But what actually is } \odot \text{? Awnser, (well, it's a thing that i came up with, but) } \vec{U} \vec{V} \text{ for bivectors } \vec{U} \text{ and } \vec{V} \text{ is } \vec{U} \cdot \vec{V} + \vec{U} ∧ \vec{V} + \vec{U} \odot \vec{V} \text{ (actually, } \vec{U} ∧ \vec{V} \text{ is a } 4 \text{-vector, so the following statement only works in } 4 \text{d or higher). You see, if you multiply } \vec{U} \text{ and } \vec{V} \text{ numerically, you get a scalar (the dot product), a } 4 \text{-vector (the wedge product), and a bivector (the surface product). Actually, there is a handy formula for the geometric product of an } n \text{-vector and a } k \text{-vector, it's an absolute value of } n-k \text{-vector, plus an absolute value of } n - k + 2 \text{-vector, plus an absolute value of } n - k + 4 \text{-vector, all the way to an } n + k \text{-vector, the } |n - k| \text{-vector is the dot product, and the } n + k \text{-vector is the wedge product, everything else is a surface product, but for bivectors, therre is only one.} $$
