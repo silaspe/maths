@@ -74,6 +74,8 @@ happy father's day! (Actual)
 
 .
 
+### vacation
+
 update on working every day
 
 Because tomorrow starts a month-long vacation, I'm going to go from working every day to working $3$ to $4$ times per week. 
@@ -155,3 +157,5 @@ Actually, yesterday was saturday.
 This is the last full day in j#u#bm#c.
 
 .
+
+Goodbye uncle, $2$ aunts, $4$ cousins, and $2$ grandparents.
