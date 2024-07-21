@@ -14,7 +14,7 @@ Lambda calculus is a really tiny symbol manipulation framework, a calculus is ju
 
 ### chapter $4$: I'm tired of this, here's a crash course on lambda calculus.
 
-Functions (aka combinators) act on other functions, each one has a single letter abbreviation, and an alias. For the example function, it is written " $M$ ", and is called "The Mockingbird". Now, how it's defined in lambda calculus is " $M = : \lambda a. a(a)$ ". Now, this is where it starts to get complicated (that's a family meme). First, there's a $\lambda$ (aka lambda), which means: defining inputs (functions). Then, it defines an input ($a$), then, there's a $.$, which means: stop defining inputs. Then, there's an $a(a)$. The $a$ being a function is explaind by when I said "inputs (functions)", but then, there's another question: why is $a$ also an input? One or the other, right? Well, no, it is explaind by when I said "Functions act on other functions". Putting it all together, The Mockingbird function takes in one input, and evaluates it on itself.
+Functions (aka combinators) act on other functions, each one has a single letter abbreviation, and an alias. For the $2$ example functions, they are written " $M$ " and " $K$ ", and called "The Mockingbird" and "The Kestrel". Now, how it's defined in lambda calculus is " $M = : \lambda a. a(a)$ " and " $K = : \lambda x. \lambda y. x$ ". Now, this is where it starts to get complicated (that's a family meme). First, there's a $\lambda$ (aka lambda), which means: defining inputs (functions). Then, it defines an input ($a$), then, there's a $.$, which means: stop defining inputs. (Right here in the other one, there's another $\lambda$, so, define inputs again.) Then, there's an $a(a)$. The $a$ being a function is explaind by when I said "inputs (functions)", but then, there's another question: why is $a$ also an input? One or the other, right? Well, no, it is explaind by when I said "Functions act on other functions". Putting it all together, The Mockingbird function takes in one input, and evaluates it on itself, and The Kestrel takes in two inputs, and just does the first one.
 
 ### chapter $5$: Big numbers and Transfinite ordinals
 
@@ -105,7 +105,22 @@ $$ \zeta_{\epsilon_0} $$
 
 $$ \zeta_{\zeta_0} $$
 
-$$ \zeta_{\zeta_{\zeta_{\zeta_\ddots}}} = : \eta_0 = : \varphi (3) $$
+$$ \zeta_{\zeta_{\zeta_{\zeta_\ddots}}} = : \eta_0 = : \varphi_3 (0) $$
 
 #### chapter $6$: THE VEBLEN HIERARCHY
-####
+
+First, if there's any confusion, the veblen hierarchey is this $\varphi$ thing.
+
+$$ \varphi_0 (\alpha) = : \omega^\alpha $$
+
+$$ \varphi_1 (\alpha) = : \epsilon_\alpha $$
+
+$$ \varphi_2 (\alpha) = : \zeta_\alpha $$
+
+$$ \varphi_3 (\alpha) = : \eta_\alpha $$
+
+$$ \varphi_\omega (0) = \varphi_{\varphi_0 (1)} (0) $$
+
+$$ \varphi_{\varphi_{\varphi_0 (1)} (0)} (0) $$
+
+$$ \varphi_{\varphi_{\varphi_{\varphi_\ddots (0)} (0)} (0)} (0) = : \Gamma_0 = \varphi_{\Gamma_0} (0) $$
