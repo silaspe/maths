@@ -159,3 +159,7 @@ This is the last full day in j#u#bm#c.
 .
 
 Goodbye uncle, $2$ aunts, $4$ cousins, and $2$ grandparents.
+
+.
+
+Scratch that, I saw them yesterday
