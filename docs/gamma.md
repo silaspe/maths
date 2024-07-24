@@ -1,5 +1,7 @@
 ## n!
 
+Credit: [BriTheMathGuy](https://www.youtube.com/watch?v=nZUuHN21zH4)
+
 $$ n! = ? $$
 
 $$ n! = n(n - 1)(n - 2)... 1 $$
