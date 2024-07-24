@@ -1,3 +1,5 @@
+Credit: [Mathologer](https://www.youtube.com/watch?v=N-KXStupwsc)
+
 ## disclaimer
 
 this page uses terms like $dx$ and $e$, but these have nothing to do with calculas and are just notation, also in the $2nd$ and $4th$ chapters if this is the $1st$, I swapped $x$ for $x - \frac{b}{na}$ where $n$ is the degree of the polynomial so when pluging things in, make sure to add $\frac{b}{na}$, also I probably should have swapped the order I did this so that the quadratic came first, the last thing to warn you about is that I re-used letters like $a$, $b$, $c$, $p$, $q$, and $z$, anyways lets start strong with the...
