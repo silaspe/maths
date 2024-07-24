@@ -323,14 +323,24 @@ def binaryfy(n):
   return result
 ```
 
-### binary names (I have been procrastinating this for $2$ weeks!)
+### binary names (I have been procrastinating this for a month!)
 
 ```py
-N = 100
-```
-
-```py
-
+def BinaryNames(string):
+  split = 1
+  length = len(string)
+  while split < length:
+    split *= 2
+  split /= 2
+  split = length - split
+  string_one = ""
+  for i in range(split):
+    string_one += string[i]
+  string_two = ""
+  for i in range(split + 1, length):
+    string_two += string[i]
+  if length - split == 
+  power
 ```
 
 ### alternitave numbers
