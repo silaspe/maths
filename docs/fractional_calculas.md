@@ -1,4 +1,6 @@
-## $\frac{calculas}{2}$
+## $\frac{\text{calculas}}{2}$
+
+Credit: [Morphocular](https://www.youtube.com/watch?v=2dwQUUDt5Is) (cool chanel)
 
 $$ \frac{d^{\frac{1}{2}}}{dx^{\frac{1}{2}}} f(x) = ? $$
 
