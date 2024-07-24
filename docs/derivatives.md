@@ -64,7 +64,7 @@ $$ e^{dx} = 1 + dx $$
 
 $$ e = (1 + dx)^{\frac{1}{dx}} $$
 
-$$ log_e (x) = ln(x) $$
+$$ log_e (x) = : ln(x) $$
 
 ### logarithmic derivitave
 
