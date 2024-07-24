@@ -31,6 +31,7 @@ nav:
   - Geometric algebra 2: geomatric_algebra_2.md
   - Lambda calculus: lambda.md
   - Random thoughts: rand.md
+  - Summer of Math Exposition 4: some4.md
 theme:
   name: material
   palette:
