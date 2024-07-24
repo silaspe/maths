@@ -32,3 +32,4 @@ PS you don't get a vector
 * [Geometric algebra 2](geomatric_algebra_2.md) - the first part (this page will not make sense without it) crashed
 * [Lambda calculus](lambda.md) - an exploration of lambda calculus based off of [this](https://www.youtube.com/watch?v=3VQ382QG-y4) and [this](https://www.youtube.com/watch?v=pAnLQ9jwN-E)
 * [Random thoughts](rand.md) - The half of the brainstorm page that had nothing to do with math, and everything to do with what was happening at the time.
+* [Summer of Math Exposition 4](some4.md) - my submision to [SoME4](https://www.youtube.com/watch?v=ojjzXyQCzso) (he didn't have a video for SoME $2$ through $4$)
