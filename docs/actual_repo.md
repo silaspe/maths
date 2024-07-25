@@ -323,10 +323,35 @@ def binaryfy(n):
   return result
 ```
 
-### binary names (I have been procrastinating this for a month!)
+### binary names (I have been procrastinating on this for a month!)
 
 ```py
-def BinaryNames(string):
+def IsZero(string):
+  for i in range(len(string)):
+    if string[i] != "0":
+      return "false"
+  return "true"
+```
+
+```py
+def IsOne(string):
+  for i in range(len(string) - 1):
+    if string[i] != "0":
+      return "false"
+  if string[len(string)] != "1":
+    return "false"
+  return "true"
+```
+
+```py
+def BinaryNames(n):
+  if n >= 65536
+    return "false"
+  string = binaryfy(n)
+  if IsZero(string) == "true":
+    return ""
+  if IsOne(string) == "true":
+    return "one "
   split = 1
   length = len(string)
   while split < length:
@@ -339,8 +364,19 @@ def BinaryNames(string):
   string_two = ""
   for i in range(split + 1, length):
     string_two += string[i]
-  if length - split == 
-  power
+  if IsZero(string_one) == "true":
+    return string_two
+  if length - split == 1
+    strpow = "two "
+  if length - split == 2
+    strpow = "four "
+  if length - split == 4
+    strpow = "hex "
+  if length - split == 8
+    strpow = "byte "
+  if IsOne(string_one) == "true":
+    return strpow + string_two
+  return string_one + strpow + string_two
 ```
 
 ### alternitave numbers
