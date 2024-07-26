@@ -126,3 +126,5 @@ $$ \varphi_{\varphi_{\varphi_0 (1)} (0)} (0) $$
 $$ \varphi_{\varphi_{\varphi_{\varphi_\ddots (0)} (0)} (0)} (0) = : \Gamma_0 = \varphi_{\Gamma_0} (0) $$
 
 $$ \text{Ok, here's the connection: Let's say that we want to turn an infinate ordinal (} \epsilon_0 \text{) into a function. First, the function will be } f_{\epsilon_0} (x) \text{, but for even more notational shorthand, it is written } \epsilon_0 (x) \text{. But here's how it's defined: step } 1 \text{: write the ordinal in terms of omega (so }^\omega \omega \text{), maybe easier said that done, step } 2 \text{: replace every omega with an } x \text{ (so, }^x x \text{), step } 3 \text{: make it a subscript for } f \text{ and evaluate it on } x \text{ (so } f_{^x x} (x) \text{).} $$
+
+Now, you can go over to [my repo](https://silaspe.github.io/maths/actual_repo.html#chapter-5-big-numbers-and-transfinite-ordinals) to see how to do it in python.
