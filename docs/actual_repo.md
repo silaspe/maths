@@ -487,3 +487,18 @@ for n in range(N):
   L.append(string + "}")
   print(string + "}")
 ```
+
+### Big numbers and Transfinite ordinals
+
+```py
+def f(n, x):
+  if n == 0:
+    return x + 1
+  if n == 1:
+    return 2 * x
+  if n == 2:
+    return x * 2 ** x
+  k = x
+  for i in range(x):
+    k = f(n - 1, k)
+```
