@@ -146,7 +146,7 @@ I'll start by multiplying $f(x) \cdot f(y)$
 
 $$ \vdots $$
 
-
+<iframe src="https://www.desmos.com/calculator/qwqbirdsyw?embed" width="500" height="500" style="border: 1px solid #ccc" frameborder=0></iframe>
 
 $$ \vdots $$
 
@@ -196,16 +196,6 @@ $$ cos(x) + isin(x) = e^{ix} $$
 
 proof complete!
 
-### now what?
-
-well, everything! Now complex multiplication is mutch easier, for example $z \cdot w = r e^{i \theta} \rho e^{i \psi} = r \rho e^{\theta + \psi}$
-
-and if multiplying by a real number is scaling the distance from the origin, then complex multiplication has the mutch more intuitave interpritation that most pepole teach: multiplying the magnitudes and adding the angles.
-
-another interpritation of complex multiplication is that if $w(z) = wz$ then $w(1) = w$ and scaling the input scales the output and then rotating the input rotates the output, in other words complex multiplication looks like scaling and rotating
-
-Eccept I think that just saying things like "multiplying by a number on the unit circle rotates a point counterclockwise" which by the way is true, needs rigoris proof. And I wanted to add more cases, but this page only needs one more fact before saying "now everything" so that the right of the page makes sense, anywas the fact is that the only reason why mathematicians use $e^{i \theta}$ is either to show that $e^{i \theta} e^{i \psi} = e^{i(\theta + \psi)}$, to show that $\frac{d}{dx} e^{ix} = ie^{ix}$ which makes sense if you think about it, or to confuse complex number beginners possibly making them not want to learn about complex numbers in the first place
-
 #### the Holy Grail of complex numbers (I forgot to do this $3$ months ago.)
 
 $$ cos(\pi) + isin(\pi) = e^{i \pi} $$
@@ -215,3 +205,140 @@ $$ e^{i \pi} = -1 + i0 $$
 $$ e^{i \pi} = -1 + i0 = -1 $$
 
 $$ e^{i \pi} + 1 = 0 $$
+
+## Jacobian matrices
+
+Learn more [here](https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab), and [here](https://silaspe.github.io/maths/complex.html).
+
+$$ \begin{bmatrix}  a \\
+  b\end{bmatrix} = a + bi $$
+
+$$ \hat{I} = \begin{bmatrix}  1 \\
+  0\end{bmatrix} = 1 $$
+
+$$ \hat{j} = \begin{bmatrix}  0 \\
+  1\end{bmatrix} = i $$
+
+$$ a + bi = \begin{bmatrix}  ? \quad ? \\
+? \quad ?\end{bmatrix} $$
+
+$$ \vdots $$
+
+$$ a + bi = \begin{bmatrix} a & -b \\
+b & a\end{bmatrix} $$
+
+### complex functions
+
+$$ z = x + yi =\begin{bmatrix}  x \\
+y\end{bmatrix} $$
+
+$$ f(z) = u + vi = \begin{bmatrix}  u \\
+v\end{bmatrix} $$
+
+$$ dz = dx + dyi = \begin{bmatrix}  dx \\
+dy\end{bmatrix} $$
+
+$$ df = du + dvi = \begin{bmatrix}  du \\
+dv\end{bmatrix} $$
+
+$$ \vdots $$
+
+$$ \begin{bmatrix}  du \\
+dv\end{bmatrix} = f\prime (z) \begin{bmatrix}  dx \\
+dy\end{bmatrix} $$
+
+$$ \text{And remember that!} $$
+
+$$ df = f(z + dz) - f(z) $$
+
+$$ \frac{\partial}{\partial x} f(x, t) = : \frac{f(x + dx, t) - f(x, t)}{dx} $$
+
+$$ \partial f(x, t)_x = : f(x + dx, t) - f(x, t) $$
+
+$$ f(z + dx \hat{I}) = f(z) + \begin{bmatrix}  \partial u_x \\
+\partial v_x\end{bmatrix} $$
+
+$$ f(z + dy \hat{j}) = f(z) + \begin{bmatrix}  \partial u_y \\
+\partial v_y\end{bmatrix} $$
+
+$$ f(z + dx + dyi) = f(z + dz) = f(z) + \begin{bmatrix}  \partial u_x \\
+\partial v_x\end{bmatrix} + \begin{bmatrix}  \partial u_y \\
+\partial v_y\end{bmatrix} $$
+
+$$ f(z + dz) - f(z) = df = \begin{bmatrix} \frac{\partial u}{\partial x} dx + \frac{\partial u}{\partial y} dy  \\
+\frac{\partial v}{\partial x} dx + \frac{\partial v}{\partial y} dy\end{bmatrix} = \begin{bmatrix}  \frac{\partial u}{\partial x} \quad \frac{\partial u}{\partial y} \\
+\frac{\partial v}{\partial x} \quad \frac{\partial v}{\partial y}\end{bmatrix} \begin{bmatrix}  dx \\
+dy\end{bmatrix} $$
+
+$$ \begin{bmatrix}  du \\
+dv\end{bmatrix} = \begin{bmatrix}  \frac{\partial u}{\partial x} \quad \frac{\partial u}{\partial y} \\
+\frac{\partial v}{\partial x} \quad \frac{\partial v}{\partial y}\end{bmatrix} \begin{bmatrix}  dx \\
+dy\end{bmatrix} $$
+
+$$ f\prime (z) = \begin{bmatrix}  \frac{\partial u}{\partial x} \quad \frac{\partial u}{\partial y} \\
+\frac{\partial v}{\partial x} \quad \frac{\partial v}{\partial y}\end{bmatrix} $$
+
+#### cauchy-reimann equations
+
+the equation or jacobian matrix is a matrix, but as you know, evry complex number has a corrasponding matrix, but not every matrix has a corrasponding complex number, so to find out if the jacobian matrix is a complex number or just a matrix, or said another way, if complex function $f(z)$ has a derivitave, we need the cauchy-reimann equations, lets go derive them!
+
+so, if the jacobian matrix is a complex number $a + bi$ (which I have been saving for something like this), than the corrasponding matrix is:
+
+$$ \begin{bmatrix} a & -b \\
+b & a\end{bmatrix} $$
+
+so, that means that
+
+$$ \begin{bmatrix} \frac{\partial u}{\partial x} \quad \frac{\partial u}{\partial y} \\
+\frac{\partial v}{\partial x} \quad \frac{\partial v}{\partial y}\end{bmatrix} = \begin{bmatrix} a & -b \\
+b & a\end{bmatrix} $$
+
+well, what makes a matrix of that form?
+
+for one, the top left equals the bottom right equals the real part
+
+and for another, the top right equals the negatave of the bottom left equals the negatave of the imaginary part
+
+### in conclusion...
+
+$$ f\prime (z) = \begin{bmatrix} \frac{\partial u}{\partial x} \quad \frac{\partial u}{\partial y} \\
+\frac{\partial v}{\partial x} \quad \frac{\partial v}{\partial y}\end{bmatrix} $$
+
+and to test if this is a matrix or a complex number
+
+$$ \frac{\partial u}{\partial x} = \frac{\partial v}{\partial y} $$
+
+$$ -\frac{\partial u}{\partial y} = \frac{\partial v}{\partial x} $$
+
+### examples
+
+$$ f(z) = z^2 $$
+
+$$ f(x + yi) = (x^2 - y^2) + (2xy)i $$
+
+$$ u = x^2 - y^2 $$
+
+$$ \vdots $$
+
+$$ 2x = 2x $$
+
+$$ 2y = 2y $$
+
+$$ f\prime (z) = 2x + 2yi = 2z $$
+
+another one!
+
+$$ f(z) = \text{ccong} (z) $$
+
+$$ f(x + yi) = x - yi $$
+
+$$ \vdots $$
+
+$$ 1 \ne -1 $$
+
+$$ 0 = 0 $$
+
+$$ f\prime (z) = \begin{bmatrix}  1 & 0 \\
+0 & -1 \end{bmatrix} $$
+
+in conclution, $z^2$ has a derivitave, and $\text{ccong} (z)$ does not.
