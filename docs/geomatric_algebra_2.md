@@ -54,7 +54,7 @@ $$ \text{Actually, wrong again, but this can be fixd by adding a factor of } c \
 
 $$ J = c \rho - \vec{J} $$
 
-$$ \text{Again, this is seen a lot in [realitivity](https://www.youtube.com/@LolGet404NotFound-Ed), so it's nothing new in physics.} $$
+Again, this is seen a lot in [realitivity](https://www.youtube.com/@LolGet404NotFound-Ed), so it's nothing new in physics.
 
 $$ \text{It also gives an interesting new interpretation of charge density as a current that is moving through time and not space.} $$
 
