@@ -342,3 +342,7 @@ $$ f\prime (z) = \begin{bmatrix}  1 & 0 \\
 0 & -1 \end{bmatrix} $$
 
 in conclution, $z^2$ has a derivitave, and $\text{ccong} (z)$ does not.
+
+## Gamma
+
+Skipping this one, it's just [BriTheMathGuy](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
