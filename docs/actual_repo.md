@@ -1,3 +1,5 @@
+WARING: when new code is added, it has not been debugged.
+
 This page is not on the website (yet), because it is entirely pseudo-code and python code.
 
 ### asterisk operator (pseudo)
