@@ -30,14 +30,6 @@ $$ (a + b \sqrt{7}) \cdot (c + d \sqrt{7}) = (ac + 7bd) + (ad + bc) \sqrt{7} $$
 
 $$ \text{And all of these are a number of this form. The end! Yeah, that was my whole* idea.} $$
 
-#### that one puzzle
-
-$$ \frac{\partial (x^2 + y^2)}{\partial (x + y)} = ? $$
-
-$$ \text{Okay fine, yes, that one was a joke. But it took me a whole weekend to solve.} $$
-
-$$ \text{Not that every day isn't a weekend for me, but I remember solving it on sunday and posing ist the day before.} $$
-
 ### why can't you multiply two vectors? (all endings)?
 
 $$ \vec{u} = \begin{bmatrix} u_x \\
