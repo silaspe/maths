@@ -14,7 +14,7 @@ Lambda calculus is a really tiny symbol manipulation framework, a calculus is ju
 
 ### chapter $4$: I'm tired of this, here's a crash course on lambda calculus.
 
-Functions (aka combinators) act on other functions, each one has a single letter abbreviation, and an alias. For the $2$ example functions, they are written " $M$ " and " $K$ ", and called "The Mockingbird" and "The Kestrel". Now, how it's defined in lambda calculus is " $M = : \lambda a. a(a)$ " and " $K = : \lambda x. \lambda y. x$ ". Now, this is where it starts to get complicated (that's a family meme). First, there's a $\lambda$ (aka lambda), which means: defining inputs (functions). Then, it defines an input ($a$), then, there's a $.$, which means: stop defining inputs. (Right here in the other one, there's another $\lambda$, so, define inputs again.) Then, there's an $a(a)$. The $a$ being a function is explaind by when I said "inputs (functions)", but then, there's another question: why is $a$ also an input? One or the other, right? Well, no, it is explaind by when I said "Functions act on other functions". Putting it all together, The Mockingbird function takes in one input, and evaluates it on itself, and The Kestrel takes in two inputs, and just does the first one.
+Functions (aka combinators) act on other functions, each one has a single letter abbreviation, and an alias. For the $2$ example functions, they are written " $M$ " and " $K$ ", and called "The Mockingbird" and "The Kestrel". Now, how it's defined in lambda calculus is " $M = : \lambda a. aa$ " and " $K = : \lambda x. \lambda y. x$ ". Now, this is where it starts to get complicated (that's a family meme). First, there's a $\lambda$ (aka lambda), which means: defining inputs (functions). Then, it defines an input ($a$), then, there's a $.$, which means: stop defining inputs. (Right here in the other one, there's another $\lambda$, so, define inputs again.) Then, there's an $a a$ (which is actually $a(a)$, it's just auto-parenthesized). The $a$ being a function is explaind by when I said "inputs (functions)", but then, there's another question: why is $a$ also an input? One or the other, right? Well, no, it is explaind by when I said "Functions act on other functions". Putting it all together, The Mockingbird function takes in one input, and evaluates it on itself, and The Kestrel takes in two inputs, and just does the first one.
 
 ### chapter $5$: Big numbers and Transfinite ordinals
 
@@ -128,3 +128,31 @@ $$ \varphi_{\varphi_{\varphi_{\varphi_\ddots (0)} (0)} (0)} (0) = : \Gamma_0 = \
 $$ \text{Ok, here's the connection: Let's say that we want to turn an infinate ordinal (} \epsilon_0 \text{) into a function. First, the function will be } f_{\epsilon_0} (x) \text{, but for even more notational shorthand, it is written } \epsilon_0 (x) \text{. But here's how it's defined: step } 1 \text{: write the ordinal in terms of omega (so }^\omega \omega \text{), maybe easier said that done, step } 2 \text{: replace every omega with an } x \text{ (so, }^x x \text{), step } 3 \text{: make it a subscript for } f \text{ and evaluate it on } x \text{ (so } f_{^x x} (x) \text{).} $$
 
 Now, you can go over to [my repo](https://silaspe.github.io/maths/actual_repo.html#big-numbers-and-transfinite-ordinals) to see how to do it in python.
+
+#### logic
+
+$$ K = \text{Kestrel} = \lambda x. \lambda y. x = : \text{True} = \text{T} $$
+
+$$ Ki = \text{Kite} = \lambda x. \lambda y. y = : \text{False} = \text{F} $$
+
+$$ \text{And} = : \lambda pq. p(q(\text{T}, \text{F}), q(\text{F}, \text{F})) = \lambda pq. p(q, \text{F}) = \lambda pq. p(q, p) $$
+
+$$ \text{And} = \lambda pq. pqp $$
+
+$$ \text{Or} = : \lambda pq. p(q(\text{T}, \text{T}), q(\text{T}, F)) = \lambda pq. p(\text{T}, q) = \lambda pq. p(p, q) $$
+
+$$ \text{Or} = \lambda pq. ppq $$
+
+$$ \text{Not} = : \lambda p. p(\text{F}, \text{T}) $$
+
+#### church numerals
+
+$$ 0 = \lambda f. \lambda x. x \text{ } ( = \text{False}) $$
+
+$$ 1 = \lambda f. \lambda x. fx $$
+
+$$ 2 = \lambda f. \lambda x. f(fx) $$
+
+$$ 3 = \lambda f. \lambda x. f(f(fx)) $$
+
+$$ \vdots $$
