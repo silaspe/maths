@@ -492,6 +492,8 @@ for n in range(N):
 
 ### Big numbers and Transfinite ordinals
 
+#### fast-growing hierachies
+
 ```py
 def f(n, x):
   if n == 0:
@@ -503,4 +505,18 @@ def f(n, x):
   k = x
   for i in range(x):
     k = f(n - 1, k)
+  return k
+```
+
+#### omega
+
+```py
+def omega_function(x):
+  return f(x, x)
+```
+
+#### epsilon
+
+```py
+def 
 ```
