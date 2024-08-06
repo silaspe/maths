@@ -233,7 +233,7 @@ $$ \text{Next, } \vec{\nabla} \cdot \vec{B} = 0 \text{'s law.} $$
 
 $$ \vec{\nabla} \cdot \vec{B} = 0 $$
 
-$$ \text{You can't really just go } \vec{\nabla} \cdot \frac{B}{i} = 0 \text{, } \frac{\vec{\nabla} \cdot B}{i} = 0 \text{, } \vec{\nabla} \cdot B = 0 \text{, because that is not necessarily true, you see, } U ∧ (VW) \text{ does not necessarily equal } (U ∧ V)W \text{, Instead, you have to think about what } \vec{\nabla} \cdot \vec{B} = 0 \text{ is trying to say.} $$
+$$ \text{You can't really just go } \vec{\nabla} \cdot \frac{B}{i} = 0 \text{, } \frac{\vec{\nabla} \cdot B}{i} = 0 \text{, } \vec{\nabla} \cdot B = 0 \text{, because that is not necessarily true, you see, } U ∧ (VW) \text{ does not necessarily equal } (U ∧ V) W \text{, Instead, you have to think about what } \vec{\nabla} \cdot \vec{B} = 0 \text{ is trying to say.} $$
 
 $$ \text{Actually, I checked, you can just go } \vec{\nabla} \cdot \frac{B}{i} = 0 \text{, } \frac{\vec{\nabla} \cdot B}{i} = 0 \text{, } \vec{\nabla} \cdot B = 0 \text{!} $$
 
@@ -260,3 +260,35 @@ $$ \text{But then I realized, there should be } 5 \text{ equations, one for } \v
 $$ \text{Let me explain what this "∘" thing is. First, it is the "surface product" as opposed to dot product or wedge product (in between the inner and outer products). If } \vec{\nabla} \cdot \text{ is the divergance and } \vec{\nabla} ∧ \text{ is the curl, } \vec{\nabla} ∘ \text{ is the "semicurl".} $$
 
 $$ \text{But what actually is ∘? Awnser: (well, it's a thing that I came up with, but) } \vec{U} \vec{V} \text{ for bivectors } \vec{U} \text{ and } \vec{V} \text{ is } \vec{U} \cdot \vec{V} + \vec{U} ∧ \vec{V} + \vec{U} ∘ \vec{V} \text{ (actually, } \vec{U} ∧ \vec{V} \text{ is a } 4 \text{-vector, so the following statement only works in } 4 \text{d or higher). You see, if you multiply } \vec{U} \text{ and } \vec{V} \text{ numerically, you get a scalar (the dot product), a } 4 \text{-vector (the wedge product), and a bivector (the surface product). Actually, there is a handy formula for the geometric product of an } n \text{-vector and a } k \text{-vector, it's an } |n - k| \text{-vector, plus an } |n - k| + 2 \text{-vector, plus an } |n - k| + 4 \text{-vector, all the way to an } n + k \text{-vector. The } |n - k| \text{-vector is the dot product, the } n + k \text{-vector is the wedge product, and everything else is a surface product. But for bivectors, there is only one, and if there is more than one, the bivector one would be ∘}_2 \text{, the trivector one would be ∘}_3 \text{, the } 4 \text{-vector one would be ∘}_4 \text{, and the } k \text{-vector one would be ∘}_k \text{.} $$
+
+#### plan of attack!
+
+$$ \text{OG Ampere's law:} $$
+
+$$ \vec{\nabla} \times \vec{B} = \mu_0 (\vec{J} + \epsilon_0 \frac{\partial \vec{E}}{\partial t}) $$
+
+$$ \text{I'll just focus on the left side of this equation for now.} $$
+
+$$ \frac{\vec{\nabla} ∧ \vec{B}}{i} $$
+
+$$ i^2 = -1 $$
+
+$$ i i = -1 $$
+
+$$ -i i = 1 $$
+
+$$ (i)(-i) = 1 $$
+
+$$ \frac{1}{i} = -i $$
+
+$$ -i (\vec{\nabla} ∧ \vec{B}) $$
+
+$$ -i (\vec{\nabla} ∧ \frac{B}{i}) $$
+
+$$ -i (\vec{\nabla} ∧ (-iB)) $$
+
+$$ (c \vec{u}) ∧ \vec{v} = c (\vec{u} ∧ \vec{v}) \text{ (For scalar } c \text{.)} $$
+
+$$ --i (\vec{\nabla} ∧ (iB)) $$
+
+$$ \text{So, the problem essentially boils down to finding } \vec{u} ∧ (iV) \text{} $$
