@@ -2,7 +2,7 @@ That one puzzle
 
 $$ \frac{\partial (x^2 + y^2)}{\partial (x + y)} = ? $$
 
-$$ \text{Okay fine, yes, that one was a joke. But it took me a whole weekend to solve.} $$
+$$ \text{Okay, fine, yes, that one was a joke. But it took me a whole weekend to solve.} $$
 
 $$ \text{Not that every day isn't a weekend for me, but I remember solving it on sunday and posing it the day before.} $$
 
@@ -202,3 +202,9 @@ scratch that, I went to atlanta, then to texas
 .
 
 (incert work here)
+
+.
+
+April $1$st
+
+Aha! I fooled you, by making you think that I fooled you.
