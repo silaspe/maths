@@ -271,6 +271,12 @@ $$ \text{I'll just focus on the left side of this equation for now.} $$
 
 $$ \frac{\vec{\nabla} ∧ \vec{B}}{i} $$
 
+$$ \frac{1}{i} (\vec{\nabla} ∧ \vec{B}) $$
+
+$$ \frac{1}{i} (\vec{\nabla} ∧ \frac{B}{i}) $$
+
+$$ \frac{1}{i} (\vec{\nabla} ∧ ((\frac{1}{i} B)) $$
+
 $$ i^2 = -1 $$
 
 $$ i i = -1 $$
@@ -281,14 +287,26 @@ $$ (i)(-i) = 1 $$
 
 $$ \frac{1}{i} = -i $$
 
-$$ -i (\vec{\nabla} ∧ \vec{B}) $$
-
-$$ -i (\vec{\nabla} ∧ \frac{B}{i}) $$
-
-$$ -i (\vec{\nabla} ∧ (-iB)) $$
+$$ \frac{1}{i} (\vec{\nabla} ∧ (-iB)) $$
 
 $$ (c \vec{u}) ∧ \vec{v} = c (\vec{u} ∧ \vec{v}) \text{ (For scalar } c \text{.)} $$
 
-$$ --i (\vec{\nabla} ∧ (iB)) $$
+$$ -\frac{1}{i} (\vec{\nabla} ∧ (iB)) $$
 
-$$ \text{So, the problem essentially boils down to finding } \vec{u} ∧ (iV) \text{} $$
+$$ \frac{1}{-i} (\vec{\nabla} ∧ (iB)) $$
+
+$$ \frac{1}{-i} (\vec{\nabla} ∧ (iB)) = \mu_0 (\vec{J} + \epsilon_0 \frac{\partial \vec{E}}{\partial t}) $$
+
+$300$ Lines.
+
+$$ \vec{\nabla} ∧ (iB) = -i \mu_0 (\vec{J} + \epsilon_0 \frac{\partial \vec{E}}{\partial t}) $$
+
+$$ \text{So, the problem essentially boils down to finding } \vec{u} ∧ (iV) \text{.} $$
+
+$$ \vec{u} = u_1 \hat{x} + u_2 \hat{y} + u_3 \hat{z} $$
+
+$$ V = V_1 \hat{x} \hat{y} + V_2 \hat{x} \hat{z} + V_3 \hat{y} \hat{z} $$
+
+$$ iV = (V_1 \hat{x} \hat{y} + V_2 \hat{x} \hat{z} + V_z \hat{y} \hat{z}) \hat{x} \hat{y} \hat{z} = V_1 \hat{x} \hat{y} \hat{x} \hat{y} \hat{z} + V_2 \hat{x} \hat{z} \hat{x} \hat{y} \hat{z} + V_3 \hat{y} \hat{z} \hat{x} \hat{y} \hat{z} = - V_1 \hat{x} \hat{x} \hat{y} \hat{y} \hat{z} - V_2 \hat{x} \hat{x} \hat{z} \hat{y} \hat{z} - V_3 \hat{y} \hat{z} \hat{y} \hat{x} \hat{z} = - V_1 \hat{z} - V_2 \hat{z} \hat{y} \hat{z} + V_3 \hat{y} \hat{y} \hat{z} \hat{x} \hat{z} = - V_1 \hat{z} + V_2 \hat{z} \hat{z} \hat{y} + V_3 \hat{z} \hat{x} \hat{z} = - V_1 \hat{z} + V_2 \hat{y} - V_3 \hat{z} \hat{z} \hat{x} = - V_1 \hat{z} + V_2 \hat{y} - V_3 \hat{x} $$
+
+$$ iV = - V_3 \hat{x} + V_2 \hat{y} - V_1 \hat{z} $$
