@@ -521,7 +521,7 @@ $$ \vec{v} \prime \prime = (v_x C - v_y S) \hat{x} + (v_y C + v_x S) \hat{y} + v
 
 $$ e^{-\hat{x} \hat{y} \theta} \vec{v} e^{\hat{x} \hat{y} \theta} = \vec{v} \prime \prime $$
 
-$$ \text{Yessssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss! (Yes, that was } 100 \text{ s's.) Now I have proved that it did rotate twice, there is a simple fix, divide the angle by } 2. $$
+$$ \text{Yessssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss! (Yes, that was } 100 \text{ s's.) Now I have proved that it did rotate twice. There is a simple fix, divide the angle by } 2. $$
 
 $$ \vec{v} \prime = e^{-\hat{x} \hat{y} \frac{\theta}{2}} \vec{v} e^{\hat{x} \hat{y} \frac{\theta}{2}} $$
 
