@@ -1,0 +1,1885 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="streak.html">
+      
+      
+        <link rel="next" href="binary.html">
+      
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.31">
+    
+    
+      
+        <title>Code repo - Silas Maths</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.3cba04c6.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#asterisk-operator-pseudo" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="index.html" title="Silas Maths" class="md-header__button md-logo" aria-label="Silas Maths" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Silas Maths
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Code repo
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/silaspe/maths" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Silas Maths
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="index.html" title="Silas Maths" class="md-nav__button md-logo" aria-label="Silas Maths" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Silas Maths
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/silaspe/maths" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Silas Maths
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="index.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="brainstorm.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Brainstorming a new page
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="derivatives.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Calculus
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="polynomial.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Polynomial
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="calculus_2.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Calculus part 2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="trigonometry.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Trigonometry
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="complex.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Complex
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="jacobian.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Jacobian
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="eigen.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Eigenstuff
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="gamma.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Gamma
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="harmonic.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Harmonic
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="binomial.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Binomial
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="fractional_calculas.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Fractional calculus
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="fibbonacci.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Fibbonacci
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="probability.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Probability
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="complex_2.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Complex II
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="the_strand_puzzle.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    The strand puzzle
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="arctan.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    The infamous "arctan puzzle"
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="mod.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Modular arithmetic
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="geomatric_algebra.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Geometric algebra
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="set_theory.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Set theory
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="streak.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    NOOOOOOOOOO
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Code repo
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="actual_repo.html" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Code repo
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#asterisk-operator-pseudo" class="md-nav__link">
+    <span class="md-ellipsis">
+      asterisk operator (pseudo)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#asterisk-operator-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      asterisk operator (python)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#alternitave-asterisk-operator-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      alternitave asterisk operator (python)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-exact-digits-of-square-roots-pseudo" class="md-nav__link">
+    <span class="md-ellipsis">
+      the exact digits of square roots (pseudo)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-exact-digits-of-square-roots-python-i-have-been-working-on-this-since-this-page-was-made" class="md-nav__link">
+    <span class="md-ellipsis">
+      the exact digits of square roots (python) (I have been working on this since this page was made)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-exact-digits-of-logarithms-pseudo" class="md-nav__link">
+    <span class="md-ellipsis">
+      the exact digits of logarithms (pseudo)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-exact-digits-of-logarithms-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      the exact digits of logarithms (python)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="the exact digits of logarithms (python)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#as-a-cherry-on-top-the-exact-digits-of-the-roots-of-polynomials-pseudo" class="md-nav__link">
+    <span class="md-ellipsis">
+      as a cherry on top, the exact digits of the roots of polynomials (pseudo)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#set-theory-numbers" class="md-nav__link">
+    <span class="md-ellipsis">
+      set theory numbers
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#alternitave-set-theory-numbers" class="md-nav__link">
+    <span class="md-ellipsis">
+      alternitave set theory numbers
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#base-names" class="md-nav__link">
+    <span class="md-ellipsis">
+      base names
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#base-names-first-n-values" class="md-nav__link">
+    <span class="md-ellipsis">
+      base names (first \(n\) values)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-exact-digits-of-reciprocals-in-any-base-using-my-home-made-method" class="md-nav__link">
+    <span class="md-ellipsis">
+      the exact digits of reciprocals (in any base) (using my home made method)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#virus-do-not-run-this-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      virus (DO NOT RUN THIS CODE)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#virus-2-it-goes-without-saying-at-this-point" class="md-nav__link">
+    <span class="md-ellipsis">
+      virus #2 (it goes without saying at this point)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#group-theory-ive-kinda-been-doing-a-lot-of-group-theory-today-and-yesterday" class="md-nav__link">
+    <span class="md-ellipsis">
+      group theory (I've kinda been doing a lot of group theory today and yesterday)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#binary" class="md-nav__link">
+    <span class="md-ellipsis">
+      binary
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#binary-names-i-have-been-procrastinating-on-this-for-a-month" class="md-nav__link">
+    <span class="md-ellipsis">
+      binary names (I have been procrastinating on this for a month!)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#alternitave-numbers" class="md-nav__link">
+    <span class="md-ellipsis">
+      alternitave numbers
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#magic-sequences" class="md-nav__link">
+    <span class="md-ellipsis">
+      magic sequences
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-apocalyptic-numbers" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Apocalyptic Numbers
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nsuemtb-etrh-etohreyory" class="md-nav__link">
+    <span class="md-ellipsis">
+      nsuemtb etrh etohreyo#r#y
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#big-numbers-and-transfinite-ordinals" class="md-nav__link">
+    <span class="md-ellipsis">
+      Big numbers and Transfinite ordinals
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Big numbers and Transfinite ordinals">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fast-growing-hierachies" class="md-nav__link">
+    <span class="md-ellipsis">
+      fast-growing hierachies
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#omega" class="md-nav__link">
+    <span class="md-ellipsis">
+      omega
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#epsilon" class="md-nav__link">
+    <span class="md-ellipsis">
+      epsilon
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="binary.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    The best way to count
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="geomatric_algebra_2.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Geometric algebra 2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="lambda.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Lambda calculus
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="rand.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Random thoughts
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="some4.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Summer of Math Exposition 4
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#asterisk-operator-pseudo" class="md-nav__link">
+    <span class="md-ellipsis">
+      asterisk operator (pseudo)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#asterisk-operator-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      asterisk operator (python)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#alternitave-asterisk-operator-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      alternitave asterisk operator (python)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-exact-digits-of-square-roots-pseudo" class="md-nav__link">
+    <span class="md-ellipsis">
+      the exact digits of square roots (pseudo)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-exact-digits-of-square-roots-python-i-have-been-working-on-this-since-this-page-was-made" class="md-nav__link">
+    <span class="md-ellipsis">
+      the exact digits of square roots (python) (I have been working on this since this page was made)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-exact-digits-of-logarithms-pseudo" class="md-nav__link">
+    <span class="md-ellipsis">
+      the exact digits of logarithms (pseudo)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-exact-digits-of-logarithms-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      the exact digits of logarithms (python)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="the exact digits of logarithms (python)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#as-a-cherry-on-top-the-exact-digits-of-the-roots-of-polynomials-pseudo" class="md-nav__link">
+    <span class="md-ellipsis">
+      as a cherry on top, the exact digits of the roots of polynomials (pseudo)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#set-theory-numbers" class="md-nav__link">
+    <span class="md-ellipsis">
+      set theory numbers
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#alternitave-set-theory-numbers" class="md-nav__link">
+    <span class="md-ellipsis">
+      alternitave set theory numbers
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#base-names" class="md-nav__link">
+    <span class="md-ellipsis">
+      base names
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#base-names-first-n-values" class="md-nav__link">
+    <span class="md-ellipsis">
+      base names (first \(n\) values)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-exact-digits-of-reciprocals-in-any-base-using-my-home-made-method" class="md-nav__link">
+    <span class="md-ellipsis">
+      the exact digits of reciprocals (in any base) (using my home made method)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#virus-do-not-run-this-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      virus (DO NOT RUN THIS CODE)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#virus-2-it-goes-without-saying-at-this-point" class="md-nav__link">
+    <span class="md-ellipsis">
+      virus #2 (it goes without saying at this point)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#group-theory-ive-kinda-been-doing-a-lot-of-group-theory-today-and-yesterday" class="md-nav__link">
+    <span class="md-ellipsis">
+      group theory (I've kinda been doing a lot of group theory today and yesterday)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#binary" class="md-nav__link">
+    <span class="md-ellipsis">
+      binary
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#binary-names-i-have-been-procrastinating-on-this-for-a-month" class="md-nav__link">
+    <span class="md-ellipsis">
+      binary names (I have been procrastinating on this for a month!)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#alternitave-numbers" class="md-nav__link">
+    <span class="md-ellipsis">
+      alternitave numbers
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#magic-sequences" class="md-nav__link">
+    <span class="md-ellipsis">
+      magic sequences
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-apocalyptic-numbers" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Apocalyptic Numbers
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nsuemtb-etrh-etohreyory" class="md-nav__link">
+    <span class="md-ellipsis">
+      nsuemtb etrh etohreyo#r#y
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#big-numbers-and-transfinite-ordinals" class="md-nav__link">
+    <span class="md-ellipsis">
+      Big numbers and Transfinite ordinals
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Big numbers and Transfinite ordinals">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fast-growing-hierachies" class="md-nav__link">
+    <span class="md-ellipsis">
+      fast-growing hierachies
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#omega" class="md-nav__link">
+    <span class="md-ellipsis">
+      omega
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#epsilon" class="md-nav__link">
+    <span class="md-ellipsis">
+      epsilon
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+  <h1>Code repo</h1>
+
+<p>This page is not on the website (yet), because it is entirely pseudo-code and python code.</p>
+<h3 id="asterisk-operator-pseudo">asterisk operator (pseudo)<a class="headerlink" href="#asterisk-operator-pseudo" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span><code><span class="nv">define</span><span class="w"> </span><span class="nv">Asterisk</span><span class="ss">(</span><span class="nv">x</span>,<span class="nv">y</span>,<span class="nv">n</span><span class="ss">)</span>
+<span class="w">  </span><span class="ss">(</span><span class="nv">coment</span><span class="ss">)</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="nv">n</span><span class="w"> </span><span class="nv">is</span><span class="w"> </span><span class="mi">1</span>,<span class="w"> </span><span class="nv">it</span><span class="w"> </span><span class="nv">is</span><span class="w"> </span><span class="nv">adding</span><span class="w"> </span><span class="nv">x</span><span class="w"> </span><span class="nv">and</span><span class="w"> </span><span class="nv">y</span>
+<span class="w">  </span><span class="ss">(</span><span class="nv">coment</span><span class="ss">)</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="nv">n</span><span class="w"> </span><span class="nv">is</span><span class="w"> </span><span class="mi">2</span>,<span class="w"> </span><span class="nv">it</span><span class="w"> </span><span class="nv">is</span><span class="w"> </span><span class="nv">multiplying</span><span class="w"> </span><span class="nv">x</span><span class="w"> </span><span class="nv">and</span><span class="w"> </span><span class="nv">y</span>
+<span class="w">  </span><span class="ss">(</span><span class="nv">coment</span><span class="ss">)</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="nv">n</span><span class="w"> </span><span class="nv">is</span><span class="w"> </span><span class="mi">3</span>,<span class="w"> </span><span class="nv">it</span><span class="w"> </span><span class="nv">is</span><span class="w"> </span><span class="nv">it</span><span class="w"> </span><span class="nv">is</span><span class="w"> </span><span class="nv">taking</span><span class="w"> </span><span class="nv">x</span><span class="w"> </span><span class="nv">to</span><span class="w"> </span><span class="nv">the</span><span class="w"> </span><span class="nv">power</span><span class="w"> </span><span class="nv">of</span><span class="w"> </span><span class="nv">y</span>
+<span class="w">  </span><span class="ss">(</span><span class="nv">coment</span><span class="ss">)</span><span class="w"> </span><span class="nv">and</span><span class="w"> </span><span class="nv">so</span><span class="w"> </span><span class="nv">on</span>.
+
+<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="nv">n</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="nv">x</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nv">y</span>
+
+<span class="w">  </span><span class="ss">(</span><span class="nv">coment</span><span class="ss">)</span><span class="w"> </span><span class="nv">because</span><span class="w"> </span><span class="nv">I</span><span class="w"> </span><span class="nv">said</span><span class="w"> </span><span class="nv">that</span><span class="w"> </span><span class="nv">earlier</span>.
+
+<span class="w">  </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="nv">y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="nv">x</span>
+
+<span class="w">  </span><span class="ss">(</span><span class="nv">coment</span><span class="ss">)</span><span class="w"> </span><span class="nv">x</span><span class="w"> </span><span class="nv">times</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">x</span>,<span class="w"> </span><span class="nv">x</span><span class="w"> </span><span class="nv">to</span><span class="w"> </span><span class="nv">the</span><span class="w"> </span><span class="nv">power</span><span class="w"> </span><span class="nv">of</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">x</span>,<span class="w"> </span><span class="nv">ect</span>
+
+<span class="w">  </span><span class="k">else</span><span class="w"> </span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="nv">Asterisk</span><span class="ss">(</span><span class="nv">x</span>,<span class="nv">Asterisk</span><span class="ss">(</span><span class="nv">x</span>,<span class="nv">y</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span>,<span class="nv">n</span><span class="ss">)</span>,<span class="nv">n</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="ss">)</span>
+
+<span class="w">  </span><span class="ss">(</span><span class="nv">coment</span><span class="ss">)</span><span class="w"> </span><span class="nv">this</span><span class="w"> </span><span class="nv">makes</span><span class="w"> </span><span class="nv">sense</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="nv">you</span><span class="w"> </span><span class="nv">think</span><span class="w"> </span><span class="nv">about</span><span class="w"> </span><span class="nv">it</span>.
+</code></pre></div>
+
+<h3 id="asterisk-operator-python">asterisk operator (python)<a class="headerlink" href="#asterisk-operator-python" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span><code><span class="k">def</span> <span class="nf">Asterisk</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">n</span><span class="p">):</span>
+  <span class="k">if</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+    <span class="k">return</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
+  <span class="k">elif</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">2</span><span class="p">:</span>
+    <span class="k">return</span> <span class="n">a</span><span class="o">*</span><span class="n">b</span>
+  <span class="k">elif</span> <span class="n">b</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+    <span class="k">return</span> <span class="n">a</span>
+  <span class="k">else</span><span class="p">:</span>
+    <span class="k">return</span> <span class="n">Asterisk</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">Asterisk</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span> <span class="o">-</span> <span class="mi">1</span><span class="p">,</span><span class="n">n</span><span class="p">),</span><span class="n">n</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>
+</code></pre></div>
+
+<h3 id="alternitave-asterisk-operator-python">alternitave asterisk operator (python)<a class="headerlink" href="#alternitave-asterisk-operator-python" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span><code><span class="k">def</span> <span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">n</span><span class="p">):</span>
+  <span class="k">if</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+    <span class="k">return</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
+  <span class="k">if</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">2</span><span class="p">:</span>
+    <span class="k">return</span> <span class="n">a</span><span class="o">*</span><span class="n">b</span>
+  <span class="n">k</span> <span class="o">=</span> <span class="n">a</span>
+  <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">b</span> <span class="o">-</span> <span class="mi">1</span><span class="p">):</span>
+    <span class="n">k</span> <span class="o">=</span> <span class="n">Asterisk</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">k</span><span class="p">,</span> <span class="n">n</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>
+</code></pre></div>
+
+<h3 id="the-exact-digits-of-square-roots-pseudo">the exact digits of square roots (pseudo)<a class="headerlink" href="#the-exact-digits-of-square-roots-pseudo" title="Permanent link">&para;</a></h3>
+<p>404 Page not found.</p>
+<h3 id="the-exact-digits-of-square-roots-python-i-have-been-working-on-this-since-this-page-was-made">the exact digits of square roots (python) (I have been working on this since this page was made)<a class="headerlink" href="#the-exact-digits-of-square-roots-python-i-have-been-working-on-this-since-this-page-was-made" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span><code><span class="k">def</span> <span class="nf">Root</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">n</span><span class="p">):</span>
+  <span class="n">f</span> <span class="o">=</span> <span class="mi">0</span>
+  <span class="k">while</span> <span class="n">f</span><span class="o">**</span><span class="n">x</span> <span class="o">&lt;=</span> <span class="n">y</span><span class="p">:</span>
+    <span class="n">f</span> <span class="o">+=</span> <span class="mi">1</span>
+  <span class="n">f</span> <span class="o">-=</span> <span class="mi">1</span>
+  <span class="n">a</span> <span class="o">=</span> <span class="n">f</span>
+  <span class="n">l</span> <span class="o">=</span> <span class="mi">0</span>
+  <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="n">a</span> <span class="o">*=</span> <span class="mi">10</span>
+    <span class="n">l</span> <span class="o">+=</span> <span class="mi">1</span>
+    <span class="k">while</span> <span class="n">a</span><span class="o">**</span><span class="n">x</span> <span class="o">&lt;=</span> <span class="n">y</span><span class="o">*</span><span class="p">(</span><span class="mi">10</span><span class="o">**</span><span class="p">(</span><span class="n">l</span><span class="o">*</span><span class="n">x</span><span class="p">)):</span>
+      <span class="n">a</span> <span class="o">+=</span> <span class="mi">1</span>
+    <span class="n">a</span> <span class="o">-=</span> <span class="mi">1</span>
+  <span class="n">a</span> <span class="o">-=</span> <span class="n">f</span><span class="o">*</span><span class="p">(</span><span class="mi">10</span><span class="o">**</span><span class="n">l</span><span class="p">)</span>
+  <span class="k">if</span> <span class="n">n</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">:</span>
+    <span class="k">return</span> <span class="nb">str</span><span class="p">(</span><span class="n">f</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39;.&#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+  <span class="k">else</span><span class="p">:</span>
+    <span class="k">return</span> <span class="nb">str</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
+</code></pre></div>
+
+<h3 id="the-exact-digits-of-logarithms-pseudo">the exact digits of logarithms (pseudo)<a class="headerlink" href="#the-exact-digits-of-logarithms-pseudo" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span><code><span class="mi">404</span> <span class="n">Page</span> <span class="ow">not</span> <span class="n">found</span><span class="o">.</span>
+</code></pre></div>
+
+<h3 id="the-exact-digits-of-logarithms-python">the exact digits of logarithms (python)<a class="headerlink" href="#the-exact-digits-of-logarithms-python" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span><code><span class="k">def</span> <span class="nf">Log</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">n</span><span class="p">):</span>
+  <span class="n">f</span> <span class="o">=</span> <span class="mi">0</span>
+  <span class="k">while</span> <span class="n">x</span><span class="o">**</span><span class="n">f</span> <span class="o">&lt;=</span> <span class="n">y</span><span class="p">:</span>
+    <span class="n">f</span> <span class="o">+=</span> <span class="mi">1</span>
+  <span class="n">f</span> <span class="o">-=</span> <span class="mi">1</span>
+  <span class="n">a</span> <span class="o">=</span> <span class="n">f</span>
+  <span class="n">l</span> <span class="o">=</span> <span class="mi">0</span>
+  <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="n">a</span> <span class="o">*=</span> <span class="mi">10</span>
+    <span class="n">l</span> <span class="o">+=</span> <span class="mi">1</span>
+    <span class="k">while</span> <span class="n">x</span><span class="o">**</span><span class="n">a</span> <span class="o">&lt;=</span> <span class="n">y</span><span class="o">**</span><span class="p">(</span><span class="mi">10</span><span class="o">**</span><span class="p">(</span><span class="n">l</span><span class="p">)):</span>
+      <span class="n">a</span> <span class="o">+=</span> <span class="mi">1</span>
+    <span class="n">a</span> <span class="o">-=</span> <span class="mi">1</span>
+  <span class="n">a</span> <span class="o">-=</span> <span class="n">f</span><span class="o">*</span><span class="p">(</span><span class="mi">10</span><span class="o">**</span><span class="n">l</span><span class="p">)</span>
+  <span class="k">if</span> <span class="n">n</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">:</span>
+    <span class="k">return</span> <span class="nb">str</span><span class="p">(</span><span class="n">f</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39;.&#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+  <span class="k">else</span><span class="p">:</span>
+    <span class="k">return</span> <span class="nb">str</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
+</code></pre></div>
+
+<h4 id="as-a-cherry-on-top-the-exact-digits-of-the-roots-of-polynomials-pseudo">as a cherry on top, the exact digits of the roots of polynomials (pseudo)<a class="headerlink" href="#as-a-cherry-on-top-the-exact-digits-of-the-roots-of-polynomials-pseudo" title="Permanent link">&para;</a></h4>
+<div class="codehilite"><pre><span></span><code><span class="nx">def</span><span class="w"> </span><span class="nx">Roots</span><span class="p">(</span><span class="nx">p</span><span class="p">(</span><span class="nx">x</span><span class="p">),</span><span class="w"> </span><span class="nx">StartValue</span><span class="p">,</span><span class="w"> </span><span class="nx">n</span><span class="p">):</span>
+<span class="w">  </span><span class="nx">f</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="nx">StartValue</span>
+<span class="w">  </span><span class="k">while</span><span class="w"> </span><span class="nx">p</span><span class="p">(</span><span class="nx">f</span><span class="p">)</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="nx">y</span><span class="p">:</span>
+<span class="w">    </span><span class="nx">f</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="mi">1</span>
+<span class="w">  </span><span class="nx">f</span><span class="w"> </span><span class="o">-=</span><span class="w"> </span><span class="mi">1</span>
+<span class="w">  </span><span class="nx">a</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="nx">f</span>
+<span class="w">  </span><span class="nx">l</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="mi">0</span>
+<span class="w">  </span><span class="k">for</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="nx">range</span><span class="p">(</span><span class="nx">n</span><span class="p">):</span>
+<span class="w">    </span><span class="nx">a</span><span class="w"> </span><span class="o">*=</span><span class="w"> </span><span class="mi">10</span>
+<span class="w">    </span><span class="nx">l</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="mi">1</span>
+<span class="w">    </span><span class="k">while</span><span class="w"> </span><span class="nx">p</span><span class="p">(</span><span class="nx">a</span><span class="o">*</span><span class="p">(</span><span class="mi">10</span><span class="o">**</span><span class="p">(</span><span class="o">-</span><span class="nx">l</span><span class="p">)</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="nx">p</span><span class="p">(</span><span class="nx">y</span><span class="p">):</span>
+<span class="p">(</span><span class="nx">coment</span><span class="p">)</span><span class="w"> </span><span class="nx">you</span><span class="w"> </span><span class="nx">will</span><span class="w"> </span><span class="nx">have</span><span class="w"> </span><span class="nx">to</span><span class="w"> </span><span class="nx">expand</span><span class="w"> </span><span class="k">and</span><span class="w"> </span><span class="nx">simplify</span><span class="w"> </span><span class="nx">the</span><span class="w"> </span><span class="nx">equation</span><span class="w"> </span><span class="nx">so</span><span class="w"> </span><span class="nx">that</span><span class="w"> </span><span class="nx">it</span><span class="w"> </span><span class="k">is</span><span class="w"> </span><span class="nx">a</span><span class="w"> </span><span class="nx">differance</span><span class="w"> </span><span class="nx">of</span><span class="w"> </span><span class="nx">integers</span>
+<span class="w">      </span><span class="nx">a</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="mi">1</span>
+<span class="w">    </span><span class="nx">a</span><span class="w"> </span><span class="o">-=</span><span class="w"> </span><span class="mi">1</span>
+<span class="w">  </span><span class="nx">a</span><span class="w"> </span><span class="o">-=</span><span class="w"> </span><span class="nx">f</span><span class="o">*</span><span class="p">(</span><span class="mi">10</span><span class="o">**</span><span class="nx">l</span><span class="p">)</span>
+<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="nx">n</span><span class="w"> </span><span class="p">&gt;</span><span class="w"> </span><span class="mi">1</span><span class="p">:</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="nx">str</span><span class="p">(</span><span class="nx">f</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="sc">&#39;.&#39;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">str</span><span class="p">(</span><span class="nx">a</span><span class="p">)</span>
+<span class="w">  </span><span class="k">else</span><span class="p">:</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="nx">str</span><span class="p">(</span><span class="nx">f</span><span class="p">)</span>
+</code></pre></div>
+
+<h3 id="set-theory-numbers">set theory numbers<a class="headerlink" href="#set-theory-numbers" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span><code><span class="k">def</span> <span class="nf">SetTheoryNumbers</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+  <span class="n">string</span> <span class="o">=</span> <span class="s2">&quot;{&quot;</span>
+  <span class="n">k</span> <span class="o">=</span> <span class="n">n</span> <span class="o">-</span> <span class="mi">1</span>
+  <span class="k">while</span> <span class="n">k</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">:</span>
+    <span class="n">string</span> <span class="o">+=</span> <span class="n">SetTheoryNumbers</span><span class="p">(</span><span class="n">k</span><span class="p">)</span>
+    <span class="n">k</span> <span class="o">-=</span> <span class="mi">1</span>
+  <span class="n">string</span> <span class="o">+=</span> <span class="s2">&quot;}&quot;</span>
+  <span class="k">return</span> <span class="n">string</span>
+</code></pre></div>
+
+<h3 id="alternitave-set-theory-numbers">alternitave set theory numbers<a class="headerlink" href="#alternitave-set-theory-numbers" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span><code><span class="k">def</span> <span class="nf">AlmostSetTheoryNumbers</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+  <span class="k">if</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+    <span class="k">return</span> <span class="s2">&quot;&quot;</span>
+  <span class="k">return</span> <span class="n">SetTheoryNumbers</span><span class="p">(</span><span class="n">n</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">+</span> <span class="n">AlmostSetTheoryNumbers</span><span class="p">(</span><span class="n">n</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="codehilite"><pre><span></span><code><span class="k">def</span> <span class="nf">SetTheoryNumbers</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+  <span class="k">return</span> <span class="s2">&quot;{&quot;</span> <span class="o">+</span> <span class="n">AlmostSetTheoryNumbers</span><span class="p">(</span><span class="n">n</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;}&quot;</span>
+</code></pre></div>
+
+<h3 id="base-names">base names<a class="headerlink" href="#base-names" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span><code><span class="k">def</span> <span class="nf">SmallestPrimeDivisor</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+  <span class="n">k</span> <span class="o">=</span> <span class="mi">2</span>
+  <span class="k">while</span> <span class="n">n</span> <span class="o">%</span> <span class="n">k</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
+    <span class="n">k</span> <span class="o">+=</span> <span class="mi">1</span>
+  <span class="k">return</span> <span class="n">k</span>
+</code></pre></div>
+
+<div class="codehilite"><pre><span></span><code><span class="k">def</span> <span class="nf">AlmostBase</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+  <span class="k">if</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">2</span><span class="p">:</span>
+    <span class="k">return</span> <span class="s2">&quot;bi&quot;</span>
+  <span class="k">if</span> <span class="n">SmallestPrimeDivisor</span><span class="p">(</span><span class="n">n</span><span class="p">)</span> <span class="o">==</span> <span class="n">n</span><span class="p">:</span>
+    <span class="k">return</span> <span class="s2">&quot;un&quot;</span> <span class="o">+</span> <span class="n">AlmostBase</span><span class="p">(</span><span class="n">n</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;sna&quot;</span>
+  <span class="n">string</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+  <span class="n">k</span> <span class="o">=</span> <span class="n">n</span>
+  <span class="k">while</span> <span class="n">k</span> <span class="o">!=</span> <span class="mi">1</span><span class="p">:</span>
+    <span class="n">spdk</span> <span class="o">=</span> <span class="n">SmallestPrimeDivisor</span><span class="p">(</span><span class="n">k</span><span class="p">)</span>
+    <span class="n">string</span> <span class="o">+=</span> <span class="n">AlmostBase</span><span class="p">(</span><span class="n">spdk</span><span class="p">)</span>
+    <span class="n">k</span> <span class="o">/=</span> <span class="n">spdk</span>
+  <span class="k">return</span> <span class="n">string</span>
+</code></pre></div>
+
+<div class="codehilite"><pre><span></span><code><span class="k">def</span> <span class="nf">base</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+  <span class="k">if</span> <span class="n">n</span> <span class="o">&lt;</span> <span class="mi">2</span><span class="p">:</span>
+    <span class="k">return</span> <span class="s2">&quot;n must be a positave integer!&quot;</span>
+  <span class="k">return</span> <span class="n">AlmostBase</span><span class="p">(</span><span class="n">n</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;nary&quot;</span>
+</code></pre></div>
+
+<h3 id="base-names-first-n-values">base names (first <span class="arithmatex">\(n\)</span> values)<a class="headerlink" href="#base-names-first-n-values" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span><code><span class="k">def</span> <span class="nf">SmallestPrimeDivisor</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+  <span class="n">k</span> <span class="o">=</span> <span class="mi">2</span>
+  <span class="k">while</span> <span class="n">n</span> <span class="o">%</span> <span class="n">k</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
+    <span class="n">k</span> <span class="o">+=</span> <span class="mi">1</span>
+  <span class="k">return</span> <span class="n">k</span>
+</code></pre></div>
+
+<div class="codehilite"><pre><span></span><code><span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">101</span><span class="p">):</span>
+  <span class="n">L</span> <span class="o">=</span> <span class="p">[</span><span class="kc">None</span><span class="p">,</span> <span class="kc">None</span><span class="p">]</span>
+  <span class="k">if</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">2</span><span class="p">:</span>
+    <span class="n">L</span> <span class="o">+=</span> <span class="p">[</span><span class="s2">&quot;bi&quot;</span><span class="p">]</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;binary&quot;</span><span class="p">)</span>
+  <span class="k">if</span> <span class="n">SmallestPrimeDivisor</span><span class="p">(</span><span class="n">n</span><span class="p">)</span> <span class="o">==</span> <span class="n">n</span><span class="p">:</span>
+    <span class="n">L</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;un&quot;</span> <span class="o">+</span> <span class="n">L</span><span class="p">[</span><span class="n">n</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="s2">&quot;sna&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;un&quot;</span> <span class="o">+</span> <span class="n">AlmostBase</span><span class="p">(</span><span class="n">n</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;snanary&quot;</span><span class="p">)</span>
+  <span class="n">string</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+  <span class="n">k</span> <span class="o">=</span> <span class="n">n</span>
+  <span class="k">while</span> <span class="n">k</span> <span class="o">!=</span> <span class="mi">1</span><span class="p">:</span>
+    <span class="n">spdk</span> <span class="o">=</span> <span class="n">SmallestPrimeDivisor</span><span class="p">(</span><span class="n">k</span><span class="p">)</span>
+    <span class="n">string</span> <span class="o">+=</span> <span class="n">L</span><span class="p">[</span><span class="n">spdk</span><span class="p">]</span>
+    <span class="n">k</span> <span class="o">/=</span> <span class="n">spdk</span>
+  <span class="n">L</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">string</span><span class="p">)</span>
+  <span class="nb">print</span><span class="p">(</span><span class="n">string</span> <span class="o">+</span> <span class="s2">&quot;nary&quot;</span><span class="p">)</span>
+</code></pre></div>
+
+<h3 id="the-exact-digits-of-reciprocals-in-any-base-using-my-home-made-method">the exact digits of reciprocals (in any base) (using my home made method)<a class="headerlink" href="#the-exact-digits-of-reciprocals-in-any-base-using-my-home-made-method" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span><code><span class="k">def</span> <span class="nf">frac</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+  <span class="k">if</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+    <span class="k">return</span> <span class="s2">&quot;this code can not compute one over one!&quot;</span>
+  <span class="k">if</span> <span class="n">b</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+    <span class="k">return</span> <span class="s2">&quot;the base must not equal one!&quot;</span>
+  <span class="k">if</span> <span class="n">n</span> <span class="o">&lt;</span> <span class="n">b</span><span class="p">:</span>
+    <span class="n">nb</span> <span class="o">=</span> <span class="n">n</span>
+  <span class="k">else</span><span class="p">:</span>
+    <span class="n">nb</span> <span class="o">=</span> <span class="n">b</span>
+  <span class="k">for</span> <span class="n">K</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">nb</span> <span class="o">-</span> <span class="mi">1</span><span class="p">):</span>
+    <span class="n">k</span> <span class="o">=</span> <span class="n">K</span> <span class="o">+</span> <span class="mi">2</span>
+    <span class="k">if</span> <span class="n">n</span> <span class="o">%</span> <span class="n">k</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+      <span class="k">if</span> <span class="n">b</span> <span class="o">%</span> <span class="n">k</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="k">return</span> <span class="s2">&quot;this code will not work if you give it two numbers that are coprime&quot;</span>
+  <span class="n">rem</span> <span class="o">=</span> <span class="n">b</span> <span class="o">%</span> <span class="n">n</span>
+  <span class="n">string</span> <span class="o">=</span> <span class="s2">&quot;0. repeating &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">b</span> <span class="o">//</span> <span class="n">n</span><span class="p">)</span>
+  <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span> <span class="o">-</span> <span class="mi">2</span><span class="p">):</span>
+    <span class="n">rem</span> <span class="o">*=</span> <span class="n">b</span>
+    <span class="n">string</span> <span class="o">+=</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">rem</span> <span class="o">//</span> <span class="n">n</span><span class="p">)</span>
+    <span class="n">rem</span> <span class="o">%=</span> <span class="n">n</span>
+    <span class="k">if</span> <span class="n">rem</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+      <span class="k">return</span> <span class="n">string</span>
+</code></pre></div>
+
+<p>also, this is the <span class="arithmatex">\(400\)</span>'th commit to this branch.</p>
+<h3 id="virus-do-not-run-this-code">virus (DO NOT RUN THIS CODE)<a class="headerlink" href="#virus-do-not-run-this-code" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span><code><span class="k">def</span> <span class="nf">crash</span><span class="p">(</span><span class="n">exponent</span><span class="p">):</span>
+  <span class="n">result</span> <span class="o">=</span> <span class="s2">&quot;1&quot;</span>
+  <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">exponent</span><span class="p">):</span>
+    <span class="n">result</span> <span class="o">+=</span> <span class="n">result</span>
+  <span class="k">return</span> <span class="n">result</span>
+</code></pre></div>
+
+<div class="codehilite"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">crash</span><span class="p">(</span><span class="n">crash</span><span class="p">(</span><span class="n">crash</span><span class="p">(</span><span class="n">crash</span><span class="p">(</span><span class="n">crash</span><span class="p">(</span><span class="n">crash</span><span class="p">(</span><span class="n">crash</span><span class="p">(</span><span class="n">crash</span><span class="p">(</span><span class="n">crash</span><span class="p">(</span><span class="n">crash</span><span class="p">(</span><span class="mi">10000</span><span class="p">)))))))))))</span>
+</code></pre></div>
+
+<h3 id="virus-2-it-goes-without-saying-at-this-point">virus #2 (it goes without saying at this point)<a class="headerlink" href="#virus-2-it-goes-without-saying-at-this-point" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span><code><span class="n">result</span> <span class="o">=</span> <span class="s2">&quot;1&quot;</span>
+<span class="k">while</span> <span class="n">true</span><span class="p">:</span>
+  <span class="n">result</span> <span class="o">+=</span> <span class="n">result</span>
+  <span class="nb">print</span> <span class="n">result</span>
+</code></pre></div>
+
+<h3 id="group-theory-ive-kinda-been-doing-a-lot-of-group-theory-today-and-yesterday">group theory (I've kinda been doing a lot of group theory today and yesterday)<a class="headerlink" href="#group-theory-ive-kinda-been-doing-a-lot-of-group-theory-today-and-yesterday" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span><code><span class="k">def</span> <span class="nf">GroupTheory</span><span class="p">(</span><span class="n">TheNumberOfFaces</span><span class="p">,</span> <span class="n">TransformationNumberOne</span><span class="p">,</span> <span class="n">TransformationNumberOnesIndex</span><span class="p">,</span> <span class="n">TransformationNumberTwo</span><span class="p">,</span> <span class="n">TransformationNumberTwosIndex</span><span class="p">):</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">TheNumberOfFaces</span> <span class="o">&lt;</span> <span class="mi">2</span><span class="p">)</span> <span class="ow">or</span> <span class="p">(</span><span class="n">TransformationNumberOne</span> <span class="o">!=</span> <span class="s2">&quot;f&quot;</span> <span class="ow">and</span> <span class="n">TransformationNumberOne</span> <span class="o">!=</span> <span class="s2">&quot;r&quot;</span><span class="p">)</span> <span class="ow">or</span> <span class="p">(</span><span class="n">TransformationNumberOnesIndex</span> <span class="o">&lt;</span> <span class="mi">0</span> <span class="ow">or</span> <span class="n">TransformationNumberOnesIndex</span> <span class="o">&gt;=</span> <span class="n">TheNumberOfFaces</span><span class="p">)</span> <span class="ow">or</span> <span class="p">(</span><span class="n">TransformationNumberTwo</span> <span class="o">!=</span> <span class="s2">&quot;f&quot;</span> <span class="ow">and</span> <span class="n">TransformationNumberTwo</span> <span class="o">!=</span> <span class="s2">&quot;r&quot;</span><span class="p">)</span> <span class="ow">or</span> <span class="p">(</span><span class="n">TransformationNumberTwosIndex</span> <span class="o">&lt;</span> <span class="mi">0</span> <span class="ow">or</span> <span class="n">TransformationNumberTwosIndex</span> <span class="o">&gt;=</span> <span class="n">TheNumberOfFaces</span><span class="p">):</span>
+    <span class="k">return</span> <span class="s2">&quot;that isn&#39;t group theory!&quot;</span>
+  <span class="k">if</span> <span class="n">TransformationNumberOne</span> <span class="o">==</span> <span class="s2">&quot;f&quot;</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">TransformationNumberTwo</span> <span class="o">==</span> <span class="s2">&quot;f&quot;</span><span class="p">:</span>
+      <span class="k">return</span> <span class="s2">&quot;r&quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">((</span><span class="n">TransformationNumberTwosIndex</span> <span class="o">-</span> <span class="n">TransformationNumberOnesIndex</span><span class="p">)</span> <span class="o">%</span> <span class="n">TheNumberOfFaces</span><span class="p">)</span>
+    <span class="k">return</span> <span class="s2">&quot;f&quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">((</span><span class="n">TransformationNumberOnesIndex</span> <span class="o">-</span> <span class="n">TransformationNumberTwosIndex</span><span class="p">)</span> <span class="o">%</span> <span class="n">TheNumberOfFaces</span><span class="p">)</span>
+  <span class="k">if</span> <span class="n">TransformationNumberTwo</span> <span class="o">==</span> <span class="s2">&quot;f&quot;</span><span class="p">:</span>
+    <span class="k">return</span> <span class="s2">&quot;f&quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">((</span><span class="n">TransformationNumberTwosIndex</span> <span class="o">-</span> <span class="n">TransformationNumberOnesIndex</span><span class="p">)</span> <span class="o">%</span> <span class="n">TheNumberOfFaces</span><span class="p">)</span>
+  <span class="k">return</span> <span class="s2">&quot;r&quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">((</span><span class="n">TransformationNumberOnesIndex</span> <span class="o">+</span> <span class="n">TransformationNumberTwosIndex</span><span class="p">)</span> <span class="o">%</span> <span class="n">TheNumberOfFaces</span><span class="p">)</span>
+</code></pre></div>
+
+<h3 id="binary">binary<a class="headerlink" href="#binary" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span><code><span class="k">def</span> <span class="nf">replace</span><span class="p">(</span><span class="n">string</span><span class="p">,</span> <span class="n">n</span><span class="p">):</span>
+  <span class="n">result</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+  <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="n">result</span> <span class="o">+=</span> <span class="n">string</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+  <span class="k">if</span> <span class="n">string</span><span class="p">[</span><span class="n">n</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;0&quot;</span><span class="p">:</span>
+    <span class="n">result</span> <span class="o">+=</span> <span class="s2">&quot;1&quot;</span>
+  <span class="k">else</span><span class="p">:</span>
+    <span class="n">result</span> <span class="o">+=</span> <span class="s2">&quot;0&quot;</span>
+  <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">string</span><span class="p">)):</span>
+    <span class="n">result</span> <span class="o">+=</span> <span class="n">string</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+  <span class="k">return</span> <span class="n">result</span>
+</code></pre></div>
+
+<div class="codehilite"><pre><span></span><code><span class="k">def</span> <span class="nf">BinarySuccessor</span><span class="p">(</span><span class="n">string</span><span class="p">):</span>
+  <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">string</span><span class="p">)):</span>
+    <span class="k">if</span> <span class="n">string</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">!=</span> <span class="s2">&quot;0&quot;</span> <span class="ow">and</span> <span class="n">string</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">!=</span> <span class="s2">&quot;1&quot;</span><span class="p">:</span>
+      <span class="k">return</span> <span class="s2">&quot;this code will not work if you don&#39;t give it a binary string!&quot;</span>
+  <span class="n">k</span> <span class="o">=</span> <span class="mi">0</span>
+  <span class="n">result</span> <span class="o">=</span> <span class="n">string</span>
+  <span class="k">while</span> <span class="n">result</span><span class="p">[</span><span class="n">k</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;1&quot;</span><span class="p">:</span>
+    <span class="n">result</span> <span class="o">=</span> <span class="n">replace</span><span class="p">(</span><span class="n">result</span><span class="p">,</span> <span class="n">k</span><span class="p">)</span>
+    <span class="n">k</span> <span class="o">+=</span> <span class="mi">1</span>
+  <span class="n">result</span> <span class="o">=</span> <span class="n">replace</span><span class="p">(</span><span class="n">result</span><span class="p">,</span> <span class="n">k</span><span class="p">)</span>
+  <span class="k">return</span> <span class="n">result</span>
+</code></pre></div>
+
+<div class="codehilite"><pre><span></span><code><span class="k">def</span> <span class="nf">binaryfy</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+  <span class="n">result</span> <span class="o">=</span> <span class="s2">&quot;0&quot;</span>
+  <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="n">result</span> <span class="o">=</span> <span class="n">BinarySuccessor</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
+  <span class="k">return</span> <span class="n">result</span>
+</code></pre></div>
+
+<h3 id="binary-names-i-have-been-procrastinating-on-this-for-a-month">binary names (I have been procrastinating on this for a month!)<a class="headerlink" href="#binary-names-i-have-been-procrastinating-on-this-for-a-month" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span><code><span class="k">def</span> <span class="nf">IsZero</span><span class="p">(</span><span class="n">string</span><span class="p">):</span>
+  <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">string</span><span class="p">)):</span>
+    <span class="k">if</span> <span class="n">string</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">!=</span> <span class="s2">&quot;0&quot;</span><span class="p">:</span>
+      <span class="k">return</span> <span class="s2">&quot;false&quot;</span>
+  <span class="k">return</span> <span class="s2">&quot;true&quot;</span>
+</code></pre></div>
+
+<div class="codehilite"><pre><span></span><code><span class="k">def</span> <span class="nf">IsOne</span><span class="p">(</span><span class="n">string</span><span class="p">):</span>
+  <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">string</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">string</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">!=</span> <span class="s2">&quot;0&quot;</span><span class="p">:</span>
+      <span class="k">return</span> <span class="s2">&quot;false&quot;</span>
+  <span class="k">if</span> <span class="n">string</span><span class="p">[</span><span class="nb">len</span><span class="p">(</span><span class="n">string</span><span class="p">)]</span> <span class="o">!=</span> <span class="s2">&quot;1&quot;</span><span class="p">:</span>
+    <span class="k">return</span> <span class="s2">&quot;false&quot;</span>
+  <span class="k">return</span> <span class="s2">&quot;true&quot;</span>
+</code></pre></div>
+
+<div class="codehilite"><pre><span></span><code><span class="k">def</span> <span class="nf">BinaryNames</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+  <span class="k">if</span> <span class="n">n</span> <span class="o">&gt;=</span> <span class="mi">65536</span>
+    <span class="k">return</span> <span class="s2">&quot;false&quot;</span>
+  <span class="n">string</span> <span class="o">=</span> <span class="n">binaryfy</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
+  <span class="k">if</span> <span class="n">IsZero</span><span class="p">(</span><span class="n">string</span><span class="p">)</span> <span class="o">==</span> <span class="s2">&quot;true&quot;</span><span class="p">:</span>
+    <span class="k">return</span> <span class="s2">&quot;&quot;</span>
+  <span class="k">if</span> <span class="n">IsOne</span><span class="p">(</span><span class="n">string</span><span class="p">)</span> <span class="o">==</span> <span class="s2">&quot;true&quot;</span><span class="p">:</span>
+    <span class="k">return</span> <span class="s2">&quot;one &quot;</span>
+  <span class="n">split</span> <span class="o">=</span> <span class="mi">1</span>
+  <span class="n">length</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">string</span><span class="p">)</span>
+  <span class="k">while</span> <span class="n">split</span> <span class="o">&lt;</span> <span class="n">length</span><span class="p">:</span>
+    <span class="n">split</span> <span class="o">*=</span> <span class="mi">2</span>
+  <span class="n">split</span> <span class="o">/=</span> <span class="mi">2</span>
+  <span class="n">split</span> <span class="o">=</span> <span class="n">length</span> <span class="o">-</span> <span class="n">split</span>
+  <span class="n">string_one</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+  <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">split</span><span class="p">):</span>
+    <span class="n">string_one</span> <span class="o">+=</span> <span class="n">string</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+  <span class="n">string_two</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+  <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">split</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="n">length</span><span class="p">):</span>
+    <span class="n">string_two</span> <span class="o">+=</span> <span class="n">string</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+  <span class="k">if</span> <span class="n">IsZero</span><span class="p">(</span><span class="n">string_one</span><span class="p">)</span> <span class="o">==</span> <span class="s2">&quot;true&quot;</span><span class="p">:</span>
+    <span class="k">return</span> <span class="n">string_two</span>
+  <span class="k">if</span> <span class="n">length</span> <span class="o">-</span> <span class="n">split</span> <span class="o">==</span> <span class="mi">1</span>
+    <span class="n">strpow</span> <span class="o">=</span> <span class="s2">&quot;two &quot;</span>
+  <span class="k">if</span> <span class="n">length</span> <span class="o">-</span> <span class="n">split</span> <span class="o">==</span> <span class="mi">2</span>
+    <span class="n">strpow</span> <span class="o">=</span> <span class="s2">&quot;four &quot;</span>
+  <span class="k">if</span> <span class="n">length</span> <span class="o">-</span> <span class="n">split</span> <span class="o">==</span> <span class="mi">4</span>
+    <span class="n">strpow</span> <span class="o">=</span> <span class="s2">&quot;hex &quot;</span>
+  <span class="k">if</span> <span class="n">length</span> <span class="o">-</span> <span class="n">split</span> <span class="o">==</span> <span class="mi">8</span>
+    <span class="n">strpow</span> <span class="o">=</span> <span class="s2">&quot;byte &quot;</span>
+  <span class="k">if</span> <span class="n">IsOne</span><span class="p">(</span><span class="n">string_one</span><span class="p">)</span> <span class="o">==</span> <span class="s2">&quot;true&quot;</span><span class="p">:</span>
+    <span class="k">return</span> <span class="n">strpow</span> <span class="o">+</span> <span class="n">string_two</span>
+  <span class="k">return</span> <span class="n">string_one</span> <span class="o">+</span> <span class="n">strpow</span> <span class="o">+</span> <span class="n">string_two</span>
+</code></pre></div>
+
+<h3 id="alternitave-numbers">alternitave numbers<a class="headerlink" href="#alternitave-numbers" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span><code><span class="k">def</span> <span class="nf">SmallestPrimeDivisor</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+  <span class="n">k</span> <span class="o">=</span> <span class="mi">2</span>
+  <span class="k">while</span> <span class="n">n</span> <span class="o">%</span> <span class="n">k</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
+    <span class="n">k</span> <span class="o">+=</span> <span class="mi">1</span>
+  <span class="k">return</span> <span class="n">k</span>
+</code></pre></div>
+
+<div class="codehilite"><pre><span></span><code><span class="k">def</span> <span class="nf">AlmostNumber</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">threshold</span><span class="p">):</span>
+  <span class="k">if</span> <span class="n">n</span> <span class="o">&lt;=</span> <span class="n">threshold</span> <span class="ow">and</span> <span class="n">n</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+    <span class="n">isPrime</span> <span class="o">=</span> <span class="s2">&quot;false&quot;</span>
+    <span class="k">return</span> <span class="nb">str</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
+  <span class="k">if</span> <span class="n">SmallestPrimeDivisor</span><span class="p">(</span><span class="n">n</span><span class="p">)</span> <span class="o">==</span> <span class="n">n</span><span class="p">:</span>
+    <span class="n">isPrime</span> <span class="o">=</span> <span class="s2">&quot;true&quot;</span>
+    <span class="k">return</span> <span class="s2">&quot;((&quot;</span> <span class="o">+</span> <span class="n">AlmostNumber</span><span class="p">(</span><span class="n">n</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;)+1)&quot;</span>
+  <span class="k">else</span><span class="p">:</span>
+    <span class="n">isPrime</span> <span class="o">=</span> <span class="s2">&quot;false&quot;</span>
+  <span class="n">string</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+  <span class="n">k</span> <span class="o">=</span> <span class="n">n</span>
+  <span class="k">while</span> <span class="n">k</span> <span class="o">!=</span> <span class="mi">1</span><span class="p">:</span>
+    <span class="n">spdk</span> <span class="o">=</span> <span class="n">SmallestPrimeDivisor</span><span class="p">(</span><span class="n">k</span><span class="p">)</span>
+    <span class="n">string</span> <span class="o">+=</span> <span class="n">AlmostBase</span><span class="p">(</span><span class="n">spdk</span><span class="p">)</span>
+    <span class="n">k</span> <span class="o">/=</span> <span class="n">spdk</span>
+  <span class="k">return</span> <span class="n">string</span>
+</code></pre></div>
+
+<div class="codehilite"><pre><span></span><code><span class="k">def</span> <span class="nf">number</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">threshold</span><span class="p">):</span>
+  <span class="k">if</span> <span class="n">isPrime</span> <span class="o">==</span> <span class="s2">&quot;false&quot;</span><span class="p">:</span>
+    <span class="k">return</span> <span class="n">AlmostNumber</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">threshold</span><span class="p">)</span>
+  <span class="n">result</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+  <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">AlmostNumber</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">threshold</span><span class="p">))</span> <span class="o">-</span> <span class="mi">1</span><span class="p">):</span>
+    <span class="n">result</span> <span class="o">+=</span> <span class="n">AlmostNumber</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">threshold</span><span class="p">)[</span><span class="n">i</span><span class="p">]</span>
+  <span class="k">return</span> <span class="n">result</span>
+</code></pre></div>
+
+<h3 id="magic-sequences">magic sequences<a class="headerlink" href="#magic-sequences" title="Permanent link">&para;</a></h3>
+<p><a href="https://www.youtube.com/watch?v=rDDaEVcwIJM&amp;t=2420s">magic sequences</a></p>
+<div class="codehilite"><pre><span></span><code><span class="k">def</span> <span class="nf">MagiSeq</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+  <span class="n">MagicSequence</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+  <span class="n">MagicNext</span> <span class="o">=</span> <span class="mi">1</span>
+  <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span> <span class="o">-</span> <span class="mi">1</span><span class="p">):</span>
+    <span class="n">MagicNext</span> <span class="o">*=</span> <span class="mi">2</span>
+    <span class="n">MagicNext</span> <span class="o">%=</span> <span class="n">n</span>
+    <span class="n">MagicSequence</span> <span class="o">+=</span> <span class="p">[</span><span class="n">MagicNext</span><span class="p">]</span>
+    <span class="k">if</span> <span class="n">MagicNext</span> <span class="ow">in</span> <span class="n">MagicSequence</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">]:</span>
+      <span class="k">return</span> <span class="n">MagicSequence</span>
+</code></pre></div>
+
+<h3 id="the-apocalyptic-numbers">The Apocalyptic Numbers<a class="headerlink" href="#the-apocalyptic-numbers" title="Permanent link">&para;</a></h3>
+<p><a href="https://www.youtube.com/watch?v=0LkBwCSMsX4">The Apocalyptic Numbers</a></p>
+<div class="codehilite"><pre><span></span><code><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1000</span><span class="p">):</span>
+  <span class="n">power</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="mi">2</span> <span class="o">**</span> <span class="n">i</span><span class="p">)</span>
+  <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">power</span><span class="p">)):</span>
+    <span class="k">if</span> <span class="n">power</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;6&quot;</span><span class="p">:</span>
+      <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">power</span><span class="p">)</span> <span class="o">&gt;=</span> <span class="n">j</span> <span class="o">+</span> <span class="mi">2</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">power</span><span class="p">[</span><span class="n">j</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;6&quot;</span><span class="p">:</span>
+          <span class="k">if</span> <span class="n">power</span><span class="p">[</span><span class="n">j</span> <span class="o">+</span> <span class="mi">2</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;6&quot;</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">power</span><span class="p">[</span><span class="n">j</span> <span class="o">+</span> <span class="mi">3</span><span class="p">]</span> <span class="o">!=</span> <span class="s2">&quot;6&quot;</span><span class="p">:</span>
+              <span class="n">result</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+              <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">j</span><span class="p">):</span>
+                <span class="n">result</span> <span class="o">+=</span> <span class="n">power</span><span class="p">[</span><span class="n">k</span><span class="p">]</span>
+              <span class="n">result</span> <span class="o">+=</span> <span class="s2">&quot;  666  &quot;</span>
+              <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">j</span> <span class="o">+</span> <span class="mi">3</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">power</span><span class="p">)):</span>
+                <span class="n">result</span> <span class="o">+=</span> <span class="n">power</span><span class="p">[</span><span class="n">k</span><span class="p">]</span>
+              <span class="k">if</span> <span class="n">i</span> <span class="o">!=</span> <span class="mi">157</span><span class="p">:</span>
+                <span class="nb">print</span><span class="p">()</span>
+              <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s2">, 2^</span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s2"> = </span><span class="si">{</span><span class="n">result</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</code></pre></div>
+
+<h3 id="nsuemtb-etrh-etohreyory">nsuemtb etrh etohreyo#r#y<a class="headerlink" href="#nsuemtb-etrh-etohreyory" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span><code><span class="k">def</span> <span class="nf">SmallestPrimeDivisor</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+  <span class="n">k</span> <span class="o">=</span> <span class="mi">2</span>
+  <span class="k">while</span> <span class="n">n</span> <span class="o">%</span> <span class="n">k</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
+    <span class="n">k</span> <span class="o">+=</span> <span class="mi">1</span>
+  <span class="k">return</span> <span class="n">k</span>
+</code></pre></div>
+
+<div class="codehilite"><pre><span></span><code><span class="n">N</span> <span class="o">=</span> <span class="mi">100</span>
+</code></pre></div>
+
+<div class="codehilite"><pre><span></span><code><span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">N</span><span class="p">):</span>
+  <span class="n">L</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="s2">&quot;</span><span class="si">{}</span><span class="s2">&quot;</span><span class="p">]</span>
+  <span class="k">if</span> <span class="n">SmallestPrimeDivisor</span><span class="p">(</span><span class="n">n</span><span class="p">)</span> <span class="o">==</span> <span class="n">n</span><span class="p">:</span>
+    <span class="n">L</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;{&quot;</span> <span class="o">+</span> <span class="n">L</span><span class="p">[</span><span class="n">n</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="s2">&quot;}&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;{&quot;</span> <span class="o">+</span> <span class="n">L</span><span class="p">[</span><span class="n">n</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="s2">&quot;}&quot;</span><span class="p">)</span>
+  <span class="n">string</span> <span class="o">=</span> <span class="s2">&quot;{&quot;</span>
+  <span class="n">k</span> <span class="o">=</span> <span class="n">n</span>
+  <span class="k">while</span> <span class="n">k</span> <span class="o">!=</span> <span class="mi">1</span><span class="p">:</span>
+    <span class="n">spdk</span> <span class="o">=</span> <span class="n">SmallestPrimeDivisor</span><span class="p">(</span><span class="n">k</span><span class="p">)</span>
+    <span class="n">string</span> <span class="o">+=</span> <span class="n">L</span><span class="p">[</span><span class="n">spdk</span><span class="p">]</span>
+    <span class="n">k</span> <span class="o">/=</span> <span class="n">spdk</span>
+  <span class="n">L</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">string</span> <span class="o">+</span> <span class="s2">&quot;}&quot;</span><span class="p">)</span>
+  <span class="nb">print</span><span class="p">(</span><span class="n">string</span> <span class="o">+</span> <span class="s2">&quot;}&quot;</span><span class="p">)</span>
+</code></pre></div>
+
+<h3 id="big-numbers-and-transfinite-ordinals">Big numbers and Transfinite ordinals<a class="headerlink" href="#big-numbers-and-transfinite-ordinals" title="Permanent link">&para;</a></h3>
+<h4 id="fast-growing-hierachies">fast-growing hierachies<a class="headerlink" href="#fast-growing-hierachies" title="Permanent link">&para;</a></h4>
+<div class="codehilite"><pre><span></span><code><span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
+  <span class="k">if</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+    <span class="k">return</span> <span class="n">x</span> <span class="o">+</span> <span class="mi">1</span>
+  <span class="k">if</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+    <span class="k">return</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">x</span>
+  <span class="k">if</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">2</span><span class="p">:</span>
+    <span class="k">return</span> <span class="n">x</span> <span class="o">*</span> <span class="mi">2</span> <span class="o">**</span> <span class="n">x</span>
+  <span class="n">k</span> <span class="o">=</span> <span class="n">x</span>
+  <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+    <span class="n">k</span> <span class="o">=</span> <span class="n">f</span><span class="p">(</span><span class="n">n</span> <span class="o">-</span> <span class="mi">1</span><span class="p">,</span> <span class="n">k</span><span class="p">)</span>
+  <span class="k">return</span> <span class="n">k</span>
+</code></pre></div>
+
+<h4 id="omega">omega<a class="headerlink" href="#omega" title="Permanent link">&para;</a></h4>
+<div class="codehilite"><pre><span></span><code><span class="k">def</span> <span class="nf">omega_function</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+  <span class="k">return</span> <span class="n">f</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
+</code></pre></div>
+
+<h4 id="epsilon">epsilon<a class="headerlink" href="#epsilon" title="Permanent link">&para;</a></h4>
+<div class="codehilite"><pre><span></span><code><span class="k">def</span> 
+</code></pre></div>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": ".", "features": [], "search": "assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="assets/javascripts/bundle.fe8b6f2b.min.js"></script>
+      
+        <script src="javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
