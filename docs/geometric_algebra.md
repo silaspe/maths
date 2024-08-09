@@ -534,4 +534,4 @@ $$ \text{First, I don't know what any of it means, but here's the un-simplified 
 $$ \vec{\nabla} \cdot \vec{E} = \frac{\rho}{\epsilon_0} $$
 
 And cut! This page has reached the maximum LaTeX limit, continue at [Geometric algebra 2!](
-geomatric_algebra_2.md)
+geometric_algebra_2.md)
