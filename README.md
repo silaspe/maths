@@ -21,7 +21,7 @@ sum rule, chain rule, product rule, multiplication by constant, exponent rule, i
 * [The infamous "arctan puzzle"](arctan.md) - the other puzzle that I was working on in the vacation
 * [Modular arithmetic](mod.md) - if you restart counting after $10$, $5$, or $7$
 * [Brainstorming a new page](brainstorm.md) - pretty self explanatory
-* [Secretly clifford algebra](geomatric_algebra.md) - Yes, you can multiply two vectors.
+* [Secretly clifford algebra](geometric_algebra.md) - Yes, you can multiply two vectors.
 
 PS you don't get a vector
 
@@ -29,7 +29,7 @@ PS you don't get a vector
 * [NOOOOOOOOOO](streak.md) - I lost evereything.
 * [Code repo](actual_repo.md) - Pretty self explanatory. Also, the idea for both this page and the one above it did not originate in the brainstorm page.
 * [My way to count](binary.md) - why YOU should use binary
-* [Geometric algebra 2](geomatric_algebra_2.md) - the first part (this page will not make sense without it) crashed
+* [Geometric algebra 2](geometric_algebra_2.md) - the first part (this page will not make sense without it) crashed
 * [Lambda calculus](lambda.md) - an exploration of lambda calculus based off of [this](https://www.youtube.com/watch?v=3VQ382QG-y4) and [this](https://www.youtube.com/watch?v=pAnLQ9jwN-E)
 * [Random thoughts](rand.md) - The half of the brainstorm page that had nothing to do with math, and everything to do with what was happening at the time.
 * [Summer of Math Exposition 4](some4.md) - my submission to [SoME4](https://www.youtube.com/watch?v=ojjzXyQCzso) (he didn't have a video for SoME $2$ through $4$)
