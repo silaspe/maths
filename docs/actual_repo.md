@@ -495,7 +495,7 @@ for n in range(N):
 #### fast-growing hierachies
 
 ```py
-def f(n, x):
+def f(x, n):
   if n == 0:
     return x + 1
   if n == 1:
@@ -511,12 +511,43 @@ def f(n, x):
 #### omega
 
 ```py
-def omega_function(x):
+def omega(x):
   return f(x, x)
 ```
 
 #### epsilon
 
 ```py
-def 
+def epsilon_subscript(x, n):
+  if n == 0:
+    result = x
+    for i in range(x - 1):
+      result = x ** result
+    return result
+  result = epsilon_subscript(x, n - 1)
+  for i in range(x - 1):
+    result = epsilon_subscript(x, n - 1) ** result
+  return result
+```
+
+```py
+def epsilon(x, n):
+  return f(x, epsilon_subscript(x, n))
+```
+
+#### phi
+
+```py
+def veblen(n, x, y):
+  if n == 0:
+    return x ** y
+  if n == 1:
+    return epsilon_subscript(x, y)
+  if y == 0:
+    k = 0
+    for i in range(x):
+      k = veblen(n - 1, x, k)
+  k = veblen(n, x, y - 1)
+  for i in range(x - 1):
+
 ```
