@@ -547,7 +547,13 @@ def veblen(n, x, y):
     k = 0
     for i in range(x):
       k = veblen(n - 1, x, k)
+    return k
   k = veblen(n, x, y - 1)
+  m = k
   for i in range(x - 1):
-
+    k = m ** k
+  for j in range(1, n):
+    for l in range(x - 1):
+      k = veblen(j, x, k)
+  return k
 ```
