@@ -538,7 +538,7 @@ def epsilon(x, n):
 #### phi
 
 ```py
-def veblen(n, x, y):
+def veblen_subscript(n, x, y):
   if n == 0:
     return x ** y
   if n == 1:
@@ -546,14 +546,35 @@ def veblen(n, x, y):
   if y == 0:
     k = 0
     for i in range(x):
-      k = veblen(n - 1, x, k)
+      k = veblen_subscript(n - 1, x, k)
     return k
-  k = veblen(n, x, y - 1)
+  k = veblen_subscript(n, x, y - 1)
   m = k
   for i in range(x - 1):
     k = m ** k
   for j in range(1, n):
     for l in range(x - 1):
-      k = veblen(j, x, k)
+      k = veblen_subscript(j, x, k)
   return k
+```
+
+```py
+def veblen(n, x, y):
+  return f(x, veblen_subscript(n, x, y))
+```
+
+##### gamma
+
+```py
+def gamma(x):
+  k = 0
+  for i in range(x):
+    k = veblen_subscript(k, x, 0)
+  return f(x, k + 1729)
+```
+
+### essentially virus #3 (it goes without saying, so I'm not going to)
+
+```py
+x = gamma(10 ** 100)
 ```
