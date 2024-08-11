@@ -563,7 +563,7 @@ def veblen(n, x, y):
   return f(x, veblen_subscript(n, x, y))
 ```
 
-##### gamma
+#### gamma
 
 ```py
 def gamma(x):
