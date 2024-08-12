@@ -14,7 +14,7 @@ Lambda calculus is a really tiny symbol manipulation framework, a calculus is ju
 
 ### chapter $4$: I'm tired of this, here's a crash course on lambda calculus.
 
-Functions (aka combinators) act on other functions, each one has a single letter abbreviation, and an alias. For the $2$ example functions, they are written " $M$ " and " $K$ ", and called "The Mockingbird" and "The Kestrel". Now, how it's defined in lambda calculus is " $M = : \lambda a. aa$ " and " $K = : \lambda x. \lambda y. x$ ". Now, this is where it starts to get complicated (that's a family meme). First, there's a $\lambda$ (aka lambda), which means: defining inputs (functions). Then, it defines an input ($a$), then, there's a $.$, which means: stop defining inputs. (Right here in the other one, there's another $\lambda$, so, define inputs again.) Then, there's an $a a$ (which is actually $a(a)$, it's just auto-parenthesized). The $a$ being a function is explaind by when I said "inputs (functions)", but then, there's another question: why is $a$ also an input? One or the other, right? Well, no, it is explaind by when I said "Functions act on other functions". Putting it all together, The Mockingbird function takes in one input, and evaluates it on itself, and The Kestrel takes in two inputs, and just does the first one.
+Functions (aka combinators) act on other functions, each one has a single letter abbreviation, and an alias. For the $2$ example functions, they are written " $M$ " and " $K$ ", and called "The Mockingbird" and "The Kestrel". Now, how it's defined in lambda calculus is " $M = : \lambda a. a a$ " and " $K = : \lambda x. \lambda y. x$ ". Now, this is where it starts to get complicated (that's a family meme). First, there's a $\lambda$ (aka lambda), which means: defining inputs (functions). Then, it defines an input ($a$), then, there's a $.$, which means: stop defining inputs. (Right here in the other one, there's another $\lambda$, so, define inputs again.) Then, there's an $a a$ (which is actually $a(a)$, it's just auto-parenthesized). The $a$ being a function is explaind by when I said "inputs (functions)", but then, there's another question: why is $a$ also an input? One or the other, right? Well, no, it is explaind by when I said "Functions act on other functions". Putting it all together, The Mockingbird function takes in one input, and evaluates it on itself, and The Kestrel takes in two inputs, and just does the first one.
 
 ### chapter $5$: Big numbers and Transfinite ordinals
 
@@ -131,28 +131,54 @@ Now, you can go over to [my repo](https://silaspe.github.io/maths/actual_repo.ht
 
 #### logic
 
+Feel free to skip this part if you just want to see the big number in lambda calculus.
+
 $$ K = \text{Kestrel} = \lambda x. \lambda y. x = : \text{True} = \text{T} $$
 
 $$ Ki = \text{Kite} = \lambda x. \lambda y. y = : \text{False} = \text{F} $$
 
 $$ \text{And} = : \lambda pq. p(q(\text{T}, \text{F}), q(\text{F}, \text{F})) = \lambda pq. p(q, \text{F}) = \lambda pq. p(q, p) $$
 
-$$ \text{And} = \lambda pq. pqp $$
+$$ \text{And} = \lambda pq. p q p $$
 
 $$ \text{Or} = : \lambda pq. p(q(\text{T}, \text{T}), q(\text{T}, F)) = \lambda pq. p(\text{T}, q) = \lambda pq. p(p, q) $$
 
-$$ \text{Or} = \lambda pq. ppq $$
+$$ \text{Or} = \lambda pq. p p q $$
 
 $$ \text{Not} = : \lambda p. p(\text{F}, \text{T}) $$
 
-#### church numerals
+$$ \text{Not} = \lambda p. p \text{F} \text{T} $$
 
-$$ 0 = \lambda f. \lambda x. x \text{ } ( = \text{False}) $$
+### chapter $7$: currying operations, numbers, operations, groupings, subtraction, and the biggest (codable) number
 
-$$ 1 = \lambda f. \lambda x. fx $$
+$$ \text{First: currying. How I think of it is like this (this entire next line):} $$
 
-$$ 2 = \lambda f. \lambda x. f(fx) $$
+$$ \text{A function can have as many (or as few) inputs as possible. If the function is, say, The Kestrel (} 2 \text{ inputs), you can easily define the } 2 \text{ input version, and the no input version would just always return itself. Three is harder, but doable, and everything bigger has the same idea (one of two ideas both refered to as currying), it requires the first half of currying: } f(a, b) \text{ for single input function } f \text{ is equal to } f(a)(b) \text{. But for } 1 \text{ input, it is much harder. New function: addition (yes, number addition) (specificly the } 2 \text{ input one). If you only give it } 1 \text{ input (} 1 \text{ for example), you get the add } 1 \text{ function. So that's the second rule of currying!} $$
 
-$$ 3 = \lambda f. \lambda x. f(f(fx)) $$
+$$ \text{So basicly, currying is when you give a function the incorrect amount of inputs, and it either waits for more, or evaluates the function on the next input.} $$
 
-$$ \vdots $$
+$$ \text{you can also combine these to get } f(a, b) = f(a)(b) \text{ for } 2 \text{ inpt function } f \text{, making the comma redundant.} $$
+
+$$ \text{Next: numbers (church numerals).} $$
+
+$$ n0 = \lambda f. \lambda x. x \text{ } ( = \text{False}) $$
+
+$$ n1 = \lambda f. \lambda x. f x $$
+
+$$ n2 = \lambda f. \lambda x. f(f x) $$
+
+$$ n3 = \lambda f. \lambda x. f(f(f x)) $$
+
+$$ \text{So, } 1 \text{ equals once, } 2 \text{ equals twice, } 3 \text{ equals thrice, and so on.} $$
+
+$$ \text{Next: successor!} $$
+
+$$ \text{Successor} (n2) = n3 $$
+
+$$ \text{Successor} (f(f x)) = f(f(f x)) $$
+
+$$ \text{Successor} (n) = f(n) $$
+
+$$ Succ = \lambda n. \lambda f. \lambda x. f(n(f, x)) $$
+
+$$ Succ = \lambda n. \lambda f. \lambda x. f(n f x) $$
