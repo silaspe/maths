@@ -153,11 +153,11 @@ $$ \text{Not} = \lambda p. p \text{F} \text{T} $$
 
 $$ \text{First: currying. How I think of it is like this (this entire next line):} $$
 
-$$ \text{A function can have as many (or as few) inputs as possible. If the function is, say, The Kestrel (} 2 \text{ inputs), you can easily define the } 2 \text{ input version, and the no input version would just always return itself. Three is harder, but doable, and everything bigger has the same idea (one of two ideas both refered to as currying), it requires the first half of currying: } f(a, b) \text{ for single input function } f \text{ is equal to } f(a)(b) \text{. But for } 1 \text{ input, it is much harder. New function: addition (yes, number addition) (specificly the } 2 \text{ input one). If you only give it } 1 \text{ input (} 1 \text{ for example), you get the add } 1 \text{ function. So that's the second rule of currying!} $$
+$$ \text{A function can have as many (or as few) inputs as possible. If the function is, say, The Kestrel (} 2 \text{ inputs), you can easily define the } 2 \text{ input version, and the no input version would just always return itself. Three is harder, but doable, and everything bigger has the same idea (one of two ideas both refered to as currying), it requires the first half of currying: } f(a, b) \text{ for single input function } f \text{ is equal to } (f(a))(b) \text{. But for } 1 \text{ input, it is much harder. New function: addition (yes, number addition) (specificly the } 2 \text{ input one). If you only give it } 1 \text{ input (} 1 \text{ for example), you get the add } 1 \text{ function. So that's the second rule of currying!} $$
 
 $$ \text{So basicly, currying is when you give a function the incorrect amount of inputs, and it either waits for more, or evaluates the function on the next input.} $$
 
-$$ \text{you can also combine these to get } f(a, b) = f(a)(b) \text{ for } 2 \text{ inpt function } f \text{, making the comma redundant.} $$
+$$ \text{you can also combine these to get } f(a, b) = f(a)(b) \text{ for } 2 \text{ input function } f \text{, making the comma redundant.} $$
 
 $$ \text{Next: numbers (church numerals).} $$
 
@@ -169,7 +169,7 @@ $$ n2 = \lambda f. \lambda x. f(f x) $$
 
 $$ n3 = \lambda f. \lambda x. f(f(f x)) $$
 
-$$ \text{So, } 1 \text{ equals once, } 2 \text{ equals twice, } 3 \text{ equals thrice, and so on.} $$
+$$ \text{So, } 1 \text{ equals once, } 2 \text{ equals twice, } 3 \text{ equals thrice, } 4 \text{ equals fourfold, and so on.} $$
 
 $$ \text{Next: successor!} $$
 
