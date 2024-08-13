@@ -149,7 +149,9 @@ $$ \text{Not} = : \lambda p. p(\text{F}, \text{T}) $$
 
 $$ \text{Not} = \lambda p. p \text{F} \text{T} $$
 
-### chapter $7$: currying operations, numbers, operations, groupings, subtraction, and the biggest (codable) number
+### chapter $7$: currying operations, numbers, arithmetic operations, groupings, subtraction, and the biggest (codable) number
+
+$$ \text{By the way, everything else that I had learned (other than this page's main plot of the biggest (codable) number) while writing this (currying operations, arithmetic operations, groupings, and subtraction) (that I learned via actually watching through the videos) was going to be in a post credit scene, but they were actually required for the code (e.g. I nedded an exponent function for the `for i in range(x - 1): result = x ** result` on lines $4$ - $5$ of the epsilon subscript function).} $$
 
 $$ \text{First: currying. How I think of it is like this (this entire next line):} $$
 
