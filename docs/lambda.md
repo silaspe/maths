@@ -195,4 +195,4 @@ $$ \text{Addition} (2, 3) = 2 + 1 + 1 + 1 = 3( + 1, 2) $$
 
 $$ Add = \lambda nk. n(Succ, k) $$
 
-$$ Add = \lambda nfx. n \text{} Succ \text{} k $$
+$$ Add = \lambda nk. n \text{} Succ \text{} k $$
