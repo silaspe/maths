@@ -20,6 +20,8 @@ Functions (aka combinators) act on other functions, each one has a single letter
 
 This chapter dosen't have much lambda calculus, it's just what I have been doing for the past week. [This](https://www.youtube.com/watch?v=b-Bb_TyhC1A&t=1449s), [this](https://www.youtube.com/watch?v=Mzgw6zMtipQ&t=465s), and [this](https://www.youtube.com/watch?v=0X9DYRLmTNY&t=486s) were my only evinence (in that order) (you should watch them anyways, they're really cool videos), I knew enough about the fast-growing hierachies, but very little about the infinite ordinals.
 
+Also, that second video had a preatty cool premise of "biggest textible number" (the video went into more detail on that), so I'm gonna steal it.
+
 $$ f_0 (x) = : x + 1 $$
 
 $$ f_{n + 1} (x) = : f_n(f_n(f_n(...(f_n(x)))))... = f_n^x(x) $$
@@ -181,6 +183,16 @@ $$ \text{Successor} (f(f x)) = f(f(f x)) $$
 
 $$ \text{Successor} (n) = f(n) $$
 
-$$ Succ = \lambda n. \lambda f. \lambda x. f(n(f, x)) $$
+$$ Succ = \lambda nfx. f(n(f, x)) $$
 
-$$ Succ = \lambda n. \lambda f. \lambda x. f(n f x) $$
+$$ Succ = \lambda nfx. f(n f x) $$
+
+$$ \text{Next: addition!} $$
+
+$$ \text{Addition} (n2, n3) = n5 $$
+
+$$ \text{Addition} (2, 3) = 2 + 1 + 1 + 1 = 3( + 1, 2) $$
+
+$$ Add = \lambda nk. n(Succ, k) $$
+
+$$ Add = \lambda nfx. n Succ k $$
