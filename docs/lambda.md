@@ -14,7 +14,7 @@ Lambda calculus is a really tiny symbol manipulation framework, a calculus is ju
 
 ### chapter $4$: I'm tired of this, here's a crash course on lambda calculus.
 
-Functions (aka combinators) act on other functions, each one has a single letter abbreviation, and an alias. For the $2$ example functions, they are written " $M$ " and " $K$ ", and called "The Mockingbird" and "The Kestrel". Now, how it's defined in lambda calculus is " $M = : \lambda a. a a$ " and " $K = : \lambda x. \lambda y. x$ ". Now, this is where it starts to get complicated (that's a family meme). First, there's a $\lambda$ (aka lambda), which means: defining inputs (functions). Then, it defines an input ($a$), then, there's a $.$, which means: stop defining inputs. (Right here in the other one, there's another $\lambda$, so, define inputs again.) Then, there's an $a a$ (which is actually $a(a)$, it's just auto-parenthesized). The $a$ being a function is explaind by when I said "inputs (functions)", but then, there's another question: why is $a$ also an input? One or the other, right? Well, no, it is explaind by when I said "Functions act on other functions". Putting it all together, The Mockingbird function takes in one input, and evaluates it on itself, and The Kestrel takes in two inputs, and just does the first one.
+Functions (aka combinators) act on other functions, each one has a single letter abbreviation, and an alias. For the $2$ example functions, they are written " $M$ " and " $K$ ", and called "The Mockingbird" and "The Kestrel". Now, how it's defined in lambda calculus is " $M = : \lambda a. a \text{ } a$ " and " $K = : \lambda x. \lambda y. x$ ". Now, this is where it starts to get complicated (that's a family meme). First, there's a $\lambda$ (aka lambda), which means: defining inputs (functions). Then, it defines an input ($a$), then, there's a $.$, which means: stop defining inputs. (Right here in the other one, there's another $\lambda$, so, define inputs again.) Then, there's an $a \text{ } a$ (which is actually $a(a)$, it's just auto-parenthesized). The $a$ being a function is explaind by when I said "inputs (functions)", but then, there's another question: why is $a$ also an input? One or the other, right? Well, no, it is explaind by when I said "Functions act on other functions". Putting it all together, The Mockingbird function takes in one input, and evaluates it on itself, and The Kestrel takes in two inputs, and just does the first one.
 
 ### chapter $5$: Big numbers and Transfinite ordinals
 
@@ -96,10 +96,10 @@ $$ \text{*The term "tower" is exclusive to exponents, the term for subscripts is
 
 $$ \zeta_n^{\zeta_n^{\zeta_n^{\zeta_n^{.^{.^.}}}}} = : \epsilon_{\zeta_n + 1} $$
 
-$$ \zeta_{n + 1} = : \epsilon_{\epsilon_{\epsilon_{\epsilon_\ddots}}} \text{ Where the final epsilon is an } \epsilon_{\zeta_n + 1} \text{.} $$
-
 
 $100$ lines.
+
+$$ \zeta_{n + 1} = : \epsilon_{\epsilon_{\epsilon_{\epsilon_\ddots}}} \text{ Where the final epsilon is an } \epsilon_{\zeta_n + 1} \text{.} $$
 
 $$ \zeta_\omega $$
 
@@ -185,7 +185,7 @@ $$ \text{Successor} (n) = f(n) $$
 
 $$ Succ = \lambda nfx. f(n(f, x)) $$
 
-$$ Succ = \lambda nfx. f(n f x) $$
+$$ Succ = \lambda nfx. f(n \text{ } f \text{ } x) $$
 
 $$ \text{Next: addition!} $$
 
@@ -196,3 +196,41 @@ $$ \text{Addition} (2, 3) = 2 + 1 + 1 + 1 = 3( + 1, 2) $$
 $$ Add = \lambda nk. n(Succ, k) $$
 
 $$ Add = \lambda nk. n \text{ } Succ \text{ } k $$
+
+$200$ Lines.
+
+$$ \text{Next: multiplication!} $$
+
+$$ Mult \text{ } n2 \text{ } n3 = n6 $$
+
+$$ \text{Before I expand that, I would like to say that } f f f f f f x \text{ is interpreted as } f(f, f, f, f, f, x) \text{, because of currying, so I'll say that } (f ∘ f ∘ f ∘ f ∘ f ∘ f) x \text{ is equal to } f(f(f(f(f(f x))))) \text{.} $$
+
+$$ Mult n2 n3 f x = (f ∘ f ∘ f ∘ f ∘ f ∘ f) (x) $$
+
+$$ \text{By the way, that's a curried function on the left.} $$
+
+$$ \text{But, compasition is associative (Which is a word that he used } 6 \text{ times) (a function like } + \text{ is associative if and only if } a + (b + c) = (a + b) + c \text{), so you can write it like this:} $$
+
+$$ Mult \text{ } n2 \text{ } n3 \text{ } f \text{ } x = ((f ∘ f ∘ f) ∘ (f ∘ f ∘ f)) (x) $$
+
+$$ \text{you can kinda replace the } f ∘ f ∘ f \text{ with an } n3(f) \text{, but be careful, it's a curried function, so it will wait for an input, and then do } (f ∘ f ∘ f) (x) \text{. But the function is kinda already waiting for an input, so} $$
+
+$$ Mult \text{ } n2 \text{ } n3 \text{ } f \text{ } x = ((n3(f)) ∘ (n3(f)) (x) $$
+
+$$ \text{And we can use the same trick now to get} $$
+
+$$ Mult \text{ } n2 \text{ } n3 \text{ } f \text{ } x = n2(n3(f)) (x) $$
+
+$$ \text{But, because it's a curried function on the left, the } x \text{ on the right, and the fact that if } f(x) = g(x) \text{, than } f = g \text{, I can say that} $$
+
+$$ Mult \text{ } n2 \text{ } n3 \text{ } f = n2(n3(f)) $$
+
+$$ Mult = \lambda nkf. n(k(f)) $$
+
+$$ Mult = \lambda nkf. n(k \text{ } f) $$
+
+$$ \text{Now, I'm just gonna say, multiplication is just function composition, represented as The Bluebird combinator.} $$
+
+$$ B = \lambda fgx. f(g \text{ } x) $$
+
+$$ Mult = B $$
