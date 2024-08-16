@@ -205,7 +205,7 @@ $$ Mult \text{ } n2 \text{ } n3 = n6 $$
 
 $$ \text{Before I expand that, I would like to say that } f f f f f f x \text{ is interpreted as } f(f, f, f, f, f, x) \text{, because of currying, so I'll say that } (f ∘ f ∘ f ∘ f ∘ f ∘ f) x \text{ is equal to } f(f(f(f(f(f x))))) \text{.} $$
 
-$$ Mult n2 n3 f x = (f ∘ f ∘ f ∘ f ∘ f ∘ f) (x) $$
+$$ Mult \text{ } n2 \text{ } n3 \text{ } f \text{ } x = (f ∘ f ∘ f ∘ f ∘ f ∘ f) (x) $$
 
 $$ \text{By the way, that's a curried function on the left.} $$
 
@@ -229,8 +229,22 @@ $$ Mult = \lambda nkf. n(k(f)) $$
 
 $$ Mult = \lambda nkf. n(k \text{ } f) $$
 
-$$ \text{Now, I'm just gonna say, multiplication is just function composition, represented as The Bluebird combinator.} $$
+$$ \text{Now, I'm just gonna say, multiplication is just function composition, represented with The Bluebird combinator.} $$
 
 $$ B = \lambda fgx. f(g \text{ } x) $$
 
 $$ Mult = B $$
+
+$$ \text{Next: exponents!} $$
+
+$$ Pow \text{ } n2 \text{ } n3 = n8 $$
+
+$$ Pow n2 n3 f x = (f ∘ f ∘ f ∘ f ∘ f ∘ f ∘ f ∘ f) (x) $$
+
+$$ Pow n2 n3 f = f ∘ f ∘ f ∘ f ∘ f ∘ f ∘ f ∘ f = ((f ∘ f) ∘ (f ∘ f)) ∘ ((f ∘ f) ∘ (f ∘ f)) = ((n2(f)) ∘ (n2(f))) ∘ ((n2(f)) ∘ (n2(f))) = (n2(n2(f))) ∘ (n2(n2(f))) = n2(n2(n2(f))) = n3(n2, f) = n3(n2)(f) $$
+
+$$ Pow n2 n3 = n3(n2) $$
+
+$$ Pow = \lambda nk. k(n) $$
+
+$$ Pow = \lambda nk. k \text{ } n $$
