@@ -237,13 +237,13 @@ $$ Mult = B $$
 
 $$ \text{Next: exponents!} $$
 
-$$ Pow \text{ } n2 \text{ } n3 = n8 $$
+$$ Pow \text{ } n2 \text{ } n4 = n16 $$
 
-$$ Pow \text{ } n2 \text{ } n3 \text{ } f \text{ } x = (f ∘ f ∘ f ∘ f ∘ f ∘ f ∘ f ∘ f) (x) $$
+$$ Pow \text{ } n2 \text{ } n4 \text{ } f \text{ } x = (f ∘ f ∘ f ∘ f ∘ f ∘ f ∘ f ∘ f ∘ f ∘ f ∘ f ∘ f ∘ f ∘ f ∘ f ∘ f) (x) $$
 
-$$ Pow \text{ } n2 \text{ } n3 \text{ } f = f ∘ f ∘ f ∘ f ∘ f ∘ f ∘ f ∘ f = ((f ∘ f) ∘ (f ∘ f)) ∘ ((f ∘ f) ∘ (f ∘ f)) = ((n2(f)) ∘ (n2(f))) ∘ ((n2(f)) ∘ (n2(f))) = (n2(n2(f))) ∘ (n2(n2(f))) = n2(n2(n2(f))) = n3(n2, f) = n3(n2)(f) $$
+$$ Pow \text{ } n2 \text{ } n3 \text{ } f = f ∘ f ∘ f ∘ f ∘ f ∘ f ∘ f ∘ f ∘ f ∘ f ∘ f ∘ f ∘ f ∘ f ∘ f ∘ f = (((f ∘ f) ∘ (f ∘ f)) ∘ ((f ∘ f) ∘ (f ∘ f))) ∘ (((f ∘ f) ∘ (f ∘ f)) ∘ ((f ∘ f) ∘ (f ∘ f))) = ((n2(f) ∘ n2(f)) ∘ (n2(f) ∘ n2(f))) ∘ ((n2(f) ∘ n2(f)) ∘ (n2(f) ∘ n2(f))) = (n2(n2(f)) ∘ n2(n2(f))) ∘ (n2(n2(f)) ∘ n2(n2(f))) = n2(n2(n2(f))) ∘ n2(n2(n2(f))) = n2(n2(n2(n2(f))))) = n4(n2, f) = n4(n2)(f) $$
 
-$$ Pow \text{ } n2 \text{ } n3 = n3(n2) $$
+$$ Pow \text{ } n2 \text{ } n4 = n4(n2) $$
 
 $$ Pow = \lambda nk. k(n) $$
 
