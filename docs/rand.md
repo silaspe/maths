@@ -133,7 +133,7 @@ I'm gonna see my cousins! (I've still been working every day.)
 
 by the way...
 
-The amount of commits between now and $500$ is (well, I forgot $2$ and $3$) $1$... $0!$, this is the $500$'th commit.
+The amount of commits between now and $500$ is (well, I forgot $3$ and $2$) $1$... $0!$, this is the $500$'th commit to this branch (whatever that means).
 
 .
 
