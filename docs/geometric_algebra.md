@@ -253,7 +253,7 @@ $$ \vec{v} ∧ \vec{u} = \begin{bmatrix}  & (\hat{x} \hat{y}) v_1 u_2 & (\hat{x}
 
 $$ \vec{v} ∧ \vec{u} = - \vec{u} ∧ \vec{v} $$
 
-Also, halfway through (well, more like mostly through), if I added one more $\hat{w}$, it would be "unabe to render expression". By the way, $2 \cdot 2 \cdot 2 \cdot 2 \cdot 2 \cdot 2 \cdot 2 \cdot 2$ lines.
+Also, halfway through (well, more like mostly through), if I added one more $\hat{w}$, it would be "unable to render expression". By the way, $2 \cdot 2 \cdot 2 \cdot 2 \cdot 2 \cdot 2 \cdot 2 \cdot 2$ lines.
 
 $$ \vec{v} \vec{u} = \vec{u} \cdot \vec{v} - \vec{u} ∧ \vec{v} $$
 
