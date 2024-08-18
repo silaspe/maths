@@ -14,7 +14,7 @@ Lambda calculus is a really tiny symbol manipulation framework, a calculus is ju
 
 ### chapter $4$: I'm tired of this, here's a crash course on lambda calculus.
 
-Functions (aka combinators) act on other functions, each one has a single letter abbreviation, and an alias. For the $2$ example functions, they are written " $M$ " and " $K$ ", and called "The Mockingbird" and "The Kestrel". Now, how it's defined in lambda calculus is " $M = : \lambda a. a \text{ } a$ " and " $K = : \lambda x. \lambda y. x$ ". Now, this is where it starts to get complicated (that's a family meme). First, there's a $\lambda$ (aka lambda), which means: defining inputs (functions). Then, it defines an input ($a$), then, there's a $.$, which means: stop defining inputs. (Right here in the other one, there's another $\lambda$, so, define inputs again.) Then, there's an $a \text{ } a$ (which is actually $a(a)$, it's just auto-parenthesized). The $a$ being a function is explaind by when I said "inputs (functions)", but then, there's another question: why is $a$ also an input? One or the other, right? Well, no, it is explaind by when I said "Functions act on other functions". Putting it all together, The Mockingbird function takes in one input, and evaluates it on itself, and The Kestrel takes in two inputs, and just does the first one.
+Functions (aka combinators) act on other functions, each one has a single letter abbreviation, and an alias. For the $2$ example functions, they are written " $M$ " and " $K$ ", and called "The Mockingbird" and "The Kestrel". Now, how it's defined in lambda calculus is " $M = : \lambda a. aa$ " and " $K = : \lambda x. \lambda y. x$ ". Now, this is where it starts to get complicated (that's a family meme). First, there's a $\lambda$ (aka lambda), which means: defining inputs (functions). Then, it defines an input ($a$), then, there's a $.$, which means: stop defining inputs. (Right here in the other one, there's another $\lambda$, so, define inputs again.) Then, there's an $aa$ (which is actually $a(a)$, it's just auto-parenthesized). The $a$ being a function is explaind by when I said "inputs (functions)", but then, there's another question: why is $a$ also an input? One or the other, right? Well, no, it is explaind by when I said "Functions act on other functions". Putting it all together, The Mockingbird function takes in one input, and evaluates it on itself, and The Kestrel takes in two inputs, and just does the first one.
 
 ### chapter $5$: Big numbers and Transfinite ordinals
 
@@ -32,7 +32,7 @@ $$ f_2 (x) = x \cdot 2^x $$
 
 $$ f_3 (3) > 10^{100} \times \text{The american national debt.} $$
 
-$$ f_\omega (x) = : f_x (x) \text{} $$
+$$ f_\omega (x) = : f_x (x) $$
 
 $$ \text{Yes, that omega is a transfinite ordinal, but there's nothing infinate about it, it just grows faster than any finite number would (e.g. } f_{1000} (x) < f_\omega (x) \text{ because for all } x > 1000 \text{, the subscript would be bigger, thus it would grow faster), it's just notational shorthand, because if the input is really long to write, you would have to write it twice. But there is a connection between transfinite ordinals and these functions (which have a connection to big numbers, hence the name: Big numbers and Transfinite ordinals) that I will explain after I get to the largest ordinal that I know.} $$
 
@@ -141,11 +141,11 @@ $$ Ki = \text{Kite} = \lambda x. \lambda y. y = : \text{False} = \text{F} $$
 
 $$ \text{And} = : \lambda pq. p(q(\text{T}, \text{F}), q(\text{F}, \text{F})) = \lambda pq. p(q, \text{F}) = \lambda pq. p(q, p) $$
 
-$$ \text{And} = \lambda pq. p q p $$
+$$ \text{And} = \lambda pq. pqp $$
 
 $$ \text{Or} = : \lambda pq. p(q(\text{T}, \text{T}), q(\text{T}, F)) = \lambda pq. p(\text{T}, q) = \lambda pq. p(p, q) $$
 
-$$ \text{Or} = \lambda pq. p p q $$
+$$ \text{Or} = \lambda pq. ppq $$
 
 $$ \text{Not} = : \lambda p. p(\text{F}, \text{T}) $$
 
@@ -185,6 +185,8 @@ $$ \text{Successor} (n) = f(n) $$
 
 $$ Succ = \lambda nfx. f(n(f, x)) $$
 
+$$ \text{And the auto-parenthesized one:} $$
+
 $$ Succ = \lambda nfx. f(n \text{ } f \text{ } x) $$
 
 $$ \text{Next: addition!} $$
@@ -195,11 +197,15 @@ $$ \text{Addition} (2, 3) = 2 + 1 + 1 + 1 = 3( + 1, 2) $$
 
 $$ Add = \lambda nk. n(Succ, k) $$
 
+$$ \text{And the auto-parenthesized one:} $$
+
 $$ Add = \lambda nk. n \text{ } Succ \text{ } k $$
 
 $200$ Lines.
 
-$$ \text{Next: multiplication!} $$
+$$ \text{Next: NOT subtraction, multiplication instead!} $$
+
+$$ \text{because subtraction is so hard, it's going into the groupings subchapter.} $$
 
 $$ Mult \text{ } n2 \text{ } n3 = n6 $$
 
@@ -227,6 +233,8 @@ $$ Mult \text{ } n2 \text{ } n3 \text{ } f = n2(n3(f)) $$
 
 $$ Mult = \lambda nkf. n(k(f)) $$
 
+$$ \text{And the auto-parenthesized one:} $$
+
 $$ Mult = \lambda nkf. n(k \text{ } f) $$
 
 $$ \text{Now, I'm just gonna say, multiplication is just function composition, represented with The Bluebird combinator.} $$
@@ -245,6 +253,54 @@ $$ Pow \text{ } n2 \text{ } n3 \text{ } f = f ∘ f ∘ f ∘ f ∘ f ∘ f ∘ 
 
 $$ Pow \text{ } n2 \text{ } n4 = n4(n2) $$
 
+$2 \cdot 2 \cdot 2 \cdot 2 \cdot 2 \cdot 2 \cdot 2 \cdot 2$ Lines!
+
 $$ Pow = \lambda nk. k(n) $$
 
+$$ \text{And the auto-parenthesized one:} $$
+
 $$ Pow = \lambda nk. k \text{ } n $$
+
+$$ \text{Next: groupings!} $$
+
+$$ \text{This subchapter is about the smallest data structure in lambda calculus, The Vireo (} V \text{), here's it's definition:} $$
+
+$$ V = \lambda abf. f(a, b) $$
+
+$$ \text{And the auto-parenthesized one:} $$
+
+$$ V = \lambda abf. fab) $$
+
+$$ \text{This function mainly works with the second rule of currying, you see, The Vireo can do this:} $$
+
+$$ V(a, b) (f) = f(a, b) $$
+
+$$ \text{but what happens to the } V(a, b) \text{ before the } f \text{? Solution: } a \text{ and } b \text{ are paired together.} $$
+
+$$ \text{By the way, because it is used so much (and this just makes sense), } V(a, b) = (a, b) \text{.} $$
+
+$$ \text{Now, when you want to evaluate a regular function } f \text{ on a pair } p \text{, than that would be } p(f) \text{, but if you wanted a function that evaluates more like } f(p) \text{ than } p(f) \text{, then you need a pairwise function (not to be confused with piecewise function, as it is the only result when you google "pairwise function", and piecewise functions don't actually exist in lambda calculus) (e.g. a function that inputs a pair, and outpts the first thing in that pair) actually, that second thing would be really usefull, I'm gonna try to derive it (as well as a function that inputs a pair, and outpts the second thing in that pair).} $$
+
+$$ Fst((a, b)) = a $$
+
+$$ \text{And because this is the first pairwise function that I'm gonna derive, it has to use regular functions, so} $$
+
+$$ Fst((a, b)) = (a, b)(f) = f(a, b) = a $$
+
+$$ \text{Hmm... } f(a, b) = a \text{, sounds like The Kestril!} $$
+
+$$ Fst = \lambda p. p (\text{T}) $$
+
+$$ \text{And the auto-parenthesized one:} $$
+
+$$ Fst = \lambda p. p \text{ } \text{T} $$
+
+$$ text{And, because } \text{F} \text{ is like the opposite of } \text{T} \text{ (in that it does the second and not the first), } Snd \text{ should just be } \lambda p. p \text{ } \text{F} \text{!} $$
+
+$300$ Lines.
+
+$$ \text{Ok, fine, I'll prove it (the } Snd = \lambda p. p \text{ } \text{F} \text{ thing).} $$
+
+$$ (a, b)(\text{F}) = \text{F}(a, b) = b $$
+
+$$ \text{And that's exactly what you'd expect, proof complete!} $$
