@@ -269,7 +269,7 @@ $$ V = \lambda abf. f(a, b) $$
 
 $$ \text{And the auto-parenthesized one:} $$
 
-$$ V = \lambda abf. fab) $$
+$$ V = \lambda abf. fab $$
 
 $$ \text{This function mainly works with the second rule of currying, you see, The Vireo can do this:} $$
 
@@ -283,7 +283,7 @@ $$ \text{Now, when you want to evaluate a regular function } f \text{ on a pair 
 
 $$ Fst((a, b)) = a $$
 
-$$ \text{And because this is the first pairwise function that I'm gonna derive, it has to use regular functions, so} $$
+$$ \text{And because this is the first pairwise function that I'm gonna derive, it has to use regular functions in it's definition, so} $$
 
 $$ Fst((a, b)) = (a, b)(f) = f(a, b) = a $$
 
@@ -303,4 +303,4 @@ $$ \text{Ok, fine, I'll prove it (the } Snd = \lambda p. p \text{ } \text{F} \te
 
 $$ (a, b)(\text{F}) = \text{F}(a, b) = b $$
 
-$$ \text{And that's exactly what you'd expect, proof complete!} $$
+$$ \text{And that's exactly what you'd expect (from a function that inputs a pair, and outpts the second thing in that pair), proof complete!} $$
