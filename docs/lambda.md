@@ -295,7 +295,7 @@ $$ \text{And the auto-parenthesized one:} $$
 
 $$ Fst = \lambda p. p \text{ } \text{T} $$
 
-$$ text{And, because } \text{F} \text{ is like the opposite of } \text{T} \text{ (in that it does the second and not the first), } Snd \text{ should just be } \lambda p. p \text{ } \text{F} \text{!} $$
+$$ \text{And, because } \text{F} \text{ is like the opposite of } \text{T} \text{ (in that it does the second and not the first), } Snd \text{ should just be } \lambda p. p \text{ } \text{F} \text{!} $$
 
 $300$ Lines.
 
