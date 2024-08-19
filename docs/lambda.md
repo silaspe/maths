@@ -207,7 +207,7 @@ $$ Add = \lambda nk. n \text{ } Succ \text{ } k $$
 
 $$ \text{Next: NOT subtraction, multiplication instead!} $$
 
-$$ \text{because subtraction is so hard, it's going into the groupings subchapter.} $$
+$$ \text{because subtraction is so hard, it's going into it's own subchapter.} $$
 
 $$ Mult \text{ } n2 \text{ } n3 = n6 $$
 
