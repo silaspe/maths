@@ -125,6 +125,8 @@ $$ \varphi_\omega (0) = \varphi_{\varphi_0 (1)} (0) $$
 
 $$ \varphi_{\varphi_{\varphi_0 (1)} (0)} (0) $$
 
+$2 \cdot 2 \cdot 2 \cdot 2 \cdot 2 \cdot 2 \cdot 2$ Lines!
+
 $$ \varphi_{\varphi_{\varphi_{\varphi_\ddots (0)} (0)} (0)} (0) = : \Gamma_0 = \varphi_{\Gamma_0} (0) $$
 
 $$ \text{Ok, here's the connection: Let's say that we want to turn an infinate ordinal (} \epsilon_0 \text{) into a function. First, the function will be } f_{\epsilon_0} (x) \text{, but for even more notational shorthand, it is written } \epsilon_0 (x) \text{. But here's how it's defined: step } 1 \text{: write the ordinal in terms of omega (so }^\omega \omega \text{), maybe easier said that done, step } 2 \text{: replace every omega with an } x \text{ (so, }^x x \text{), step } 3 \text{: make it a subscript for } f \text{ and evaluate it on } x \text{ (so } f_{^x x} (x) \text{).} $$
@@ -151,7 +153,7 @@ $$ \text{Not} = : \lambda p. p(\text{F}, \text{T}) $$
 
 $$ \text{Not} = \lambda p. p \text{F} \text{T} $$
 
-### chapter $7$: currying operations, numbers, arithmetic operations, groupings, subtraction, and the biggest (codable) number
+### chapter $7$: currying operations, numbers, arithmetic operations, groupings, subtraction, is $0$, inequalities, equalities, and the biggest (codable) number
 
 $$ \text{By the way, everything else that I had learned (other than this page's main plot of the biggest (codable) number) while writing this (currying operations, arithmetic operations, groupings, and subtraction) (that I learned via actually watching through the videos) was going to be in a post credit scene, but they were actually required for the code (e.g. I nedded an exponent function for the `for i in range(x - 1): result = x ** result` on lines $4$ - $5$ of the epsilon subscript function).} $$
 
@@ -187,7 +189,7 @@ $$ Succ = \lambda nfx. f(n(f, x)) $$
 
 $$ \text{And the auto-parenthesized one:} $$
 
-$$ Succ = \lambda nfx. f(n \text{ } f \text{ } x) $$
+$$ Succ = \lambda nfx. f(nfx) $$
 
 $$ \text{Next: addition!} $$
 
@@ -195,13 +197,13 @@ $$ \text{Addition} (n2, n3) = n5 $$
 
 $$ \text{Addition} (2, 3) = 2 + 1 + 1 + 1 = 3( + 1, 2) $$
 
+$200$ Lines.
+
 $$ Add = \lambda nk. n(Succ, k) $$
 
 $$ \text{And the auto-parenthesized one:} $$
 
 $$ Add = \lambda nk. n \text{ } Succ \text{ } k $$
-
-$200$ Lines.
 
 $$ \text{Next: NOT subtraction, multiplication instead!} $$
 
@@ -235,11 +237,11 @@ $$ Mult = \lambda nkf. n(k(f)) $$
 
 $$ \text{And the auto-parenthesized one:} $$
 
-$$ Mult = \lambda nkf. n(k \text{ } f) $$
+$$ Mult = \lambda nkf. n(kf) $$
 
 $$ \text{Now, I'm just gonna say, multiplication is just function composition, represented with The Bluebird combinator.} $$
 
-$$ B = \lambda fgx. f(g \text{ } x) $$
+$$ B = \lambda fgx. f(gx) $$
 
 $$ Mult = B $$
 
@@ -251,15 +253,15 @@ $$ Pow \text{ } n2 \text{ } n4 \text{ } f \text{ } x = (f ∘ f ∘ f ∘ f ∘ 
 
 $$ Pow \text{ } n2 \text{ } n3 \text{ } f = f ∘ f ∘ f ∘ f ∘ f ∘ f ∘ f ∘ f ∘ f ∘ f ∘ f ∘ f ∘ f ∘ f ∘ f ∘ f = (((f ∘ f) ∘ (f ∘ f)) ∘ ((f ∘ f) ∘ (f ∘ f))) ∘ (((f ∘ f) ∘ (f ∘ f)) ∘ ((f ∘ f) ∘ (f ∘ f))) = ((n2(f) ∘ n2(f)) ∘ (n2(f) ∘ n2(f))) ∘ ((n2(f) ∘ n2(f)) ∘ (n2(f) ∘ n2(f))) = (n2(n2(f)) ∘ n2(n2(f))) ∘ (n2(n2(f)) ∘ n2(n2(f))) = n2(n2(n2(f))) ∘ n2(n2(n2(f))) = n2(n2(n2(n2(f))))) = n4(n2, f) = n4(n2)(f) $$
 
-$$ Pow \text{ } n2 \text{ } n4 = n4(n2) $$
-
 $2 \cdot 2 \cdot 2 \cdot 2 \cdot 2 \cdot 2 \cdot 2 \cdot 2$ Lines!
+
+$$ Pow \text{ } n2 \text{ } n4 = n4(n2) $$
 
 $$ Pow = \lambda nk. k(n) $$
 
 $$ \text{And the auto-parenthesized one:} $$
 
-$$ Pow = \lambda nk. k \text{ } n $$
+$$ Pow = \lambda nk. kn $$
 
 $$ \text{Next: groupings!} $$
 
@@ -295,12 +297,90 @@ $$ \text{And the auto-parenthesized one:} $$
 
 $$ Fst = \lambda p. p \text{ } \text{T} $$
 
-$$ \text{And, because } \text{F} \text{ is like the opposite of } \text{T} \text{ (in that it does the second and not the first), } Snd \text{ should just be } \lambda p. p \text{ } \text{F} \text{!} $$
-
 $300$ Lines.
+
+$$ \text{And, because } \text{F} \text{ is like the opposite of } \text{T} \text{ (in that it does the second and not the first), } Snd \text{ should just be } \lambda p. p \text{ } \text{F} \text{!} $$
 
 $$ \text{Ok, fine, I'll prove it (the } Snd = \lambda p. p \text{ } \text{F} \text{ thing).} $$
 
 $$ (a, b)(\text{F}) = \text{F}(a, b) = b $$
 
 $$ \text{And that's exactly what you'd expect (from a function that inputs a pair, and outpts the second thing in that pair), proof complete!} $$
+
+$$ \text{Next: (it might not seem obvius why, but) I want to tell you about The Phi Combinator!} $$
+
+$$ \Phi = \lambda p. V(Snd(p))(Succ(Snd(p))) $$
+
+$$ \text{And the auto-parenthesized one:} $$
+
+$$ \Phi = \lambda p. V(Snd \text{ } p)(Succ(Snd \text{ } p)) $$
+
+$$ \text{And the pair notation one:} $$
+
+$$ \Phi = \lambda p. (Snd(p), Succ(Snd(p))) $$
+
+$$ \text{And the auto-parenthesized and pair notation one:} $$
+
+$$ \Phi = \lambda p. (Snd \text{ } p, Succ(Snd \text{ } p)) $$
+
+$$ \Phi((\text{doesn't matter what the first thing is}, n0)) = (n0, n1) $$
+
+$$ \Phi((n0, n1)) = \Phi(\Phi((\text{doesn't matter what the first thing is}, n0))) = (n1, n2) $$
+
+$$ \Phi((n1, n2)) = \Phi(\Phi(\Phi((\text{doesn't matter what the first thing is}, n0)))) = (n2, n3) $$
+
+$$ \vdots $$
+
+$$ \Phi((n6, n7)) = \Phi(\Phi(\Phi(\Phi(\Phi(\Phi(\Phi(\Phi((\text{doesn't matter what the first thing is}, n0))))))))) = n8(\Phi, (\text{doesn't matter what the first thing is}, n0)) = (n7, n8) $$
+
+$$ Fst(n8(\Phi, (\text{doesn't matter what the first thing is}, n0))) = Fst((n7, n8)) $$
+
+$$ Fst(n8(\Phi, (\text{doesn't matter what the first thing is}, n0))) = n7 $$
+
+$$ Pred = \lambda n. Fst(n(\Phi, V(\text{doesn't matter what the first thing is}, n0))) $$
+
+$$ \text{And the auto-parenthesized one:} $$
+
+$$ Pred = \lambda n. Fst(n \text{ } \Phi \text{ } (V \text{ doesn't matter what the first thing is } n0)) $$
+
+$$ \text{And the pair notation one:} $$
+
+$$ Pred = \lambda n. Fst(n(\Phi, (\text{doesn't matter what the first thing is}, n0))) $$
+
+$$ \text{And the auto-parenthesized and pair notation one:} $$
+
+$$ Pred = \lambda n. Fst(n \text{ } \Phi \text{ } (\text{doesn't matter what the first thing is}, n0)) $$
+
+$$ \text{Before we do subtraction, what is } Pred(n0) \text{?} $$
+
+$$ Pred(n0) = Fst(n0(\Phi, (\text{doesn't matter what the first thing is}, n0))) $$
+
+$$ n0(\Phi, (\text{doesn't matter what the first thing is}, n0)) = (\text{doesn't matter what the first thing is}, n0) $$
+
+$$ Fst((\text{doesn't matter what the first thing is}, n0)) = \text{doesn't matter what the first thing is} $$
+
+$$ \text{I'll just choose } n0 \text{.} $$
+
+$$ \text{This also means that I have to redo the predecessor function.} $$
+
+$$ Pred = \lambda n. Fst(n(\Phi, V(n0, n0))) $$
+
+$$ \text{And the auto-parenthesized one:} $$
+
+$$ Pred = \lambda n. Fst(n \text{ } \Phi \text{ } (V \text{ } n0 \text{ } n0)) $$
+
+$$ \text{And the pair notation one:} $$
+
+$$ Pred = \lambda n. Fst(n(\Phi, (n0, n0))) $$
+
+$$ \text{And the auto-parenthesized and pair notation one:} $$
+
+$$ Pred = \lambda n. Fst(n \text{ } \Phi \text{ } (n0, n0)) $$
+
+$$ \text{Next: subtraction!} $$
+
+$$ Sub = \lambda nk. n(Pred, k) $$
+
+$$ \text{And the auto-parenthesized one:} $$
+
+$$ Sub = \lambda nk. n \text{ } Pred \text{ } k $$
