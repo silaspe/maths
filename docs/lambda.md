@@ -2,7 +2,7 @@ Ok, so, lambda calculus, I'll be following along with [the first part](https://w
 
 ### Chapter $1$: Introduction
 
-Ok, so, it looks like he's starting off with a function (written as $I$) that he calls "the identity". Now, what do you think $I(1)$ is? * Man in the backround says " same value! "*, and that is correct, $I(1) = 1$, $I(2) = 2$, what about $I(I)$? * No one awnsers*, yeah, it's $I$. (By the way, functions in lambda calculus are also called "combinators", each one has a function name (e.g. $I$), a more descriptive function name (e.g. identity), and an alias (which is always a bird for some reason) (e.g. Idiot bird.)) (Also by the way, I'll be copying what he's saying for the rest of this page, and putting my thoughts in between parenthases.) And then he uses some fancy notation " $\lambda a. a$ ". It takes in ($\lambda$) a value ($a$), and outputs ($.$) that same value ($a$). So, $I(x) = x$ for any $x$. As you saw, you can use functions as arguments (which is why they are called "combinators". Also, to me, this is the heart of lambda calculus), verbs are nouns and nouns are verbs. 
+Ok, so, it looks like he's starting off with a function (written as $I$) that he calls "the identity". Now, what do you think $I(1)$ is? * Man in the backround says " same value! "*, and that is correct, $I(1) = 1$, $I(2) = 2$, what about $I(I)$? * No one awnsers*, yeah, it's $I$. (By the way, functions in lambda calculus are also called "combinators", each one has a function name (e.g. $I$), a more descriptive function name (e.g. identity), and an alias (which is always a bird for some reason) (e.g. Idiot bird.)) (Also by the way, I'll be copying what he's saying for the rest of this page, and putting my thoughts in between parenthases.) And then he uses some fancy notation " $\lambda a. a$ ". It takes in ($\lambda$) a value ($a$), and outputs ($.$) that same value ($a$). So, $I(x) = x$ for any $x$. As you saw, you can use functions as arguments (which is why they are called "combinators". Also, to me, this is the heart of lambda calculus), erbs are nouns and nouns are erbs. 
 
 #### chapter $2$: What is this $\lambda$?
 
@@ -265,21 +265,21 @@ $$ Pow = \lambda nk. kn $$
 
 $$ \text{Next: groupings!} $$
 
-$$ \text{This subchapter is about the smallest data structure in lambda calculus, The Vireo (} V \text{), here's it's definition:} $$
+$$ \text{This subchapter is about the smallest data structure in lambda calculus, The Vireo (V), here's it's definition:} $$
 
-$$ V = \lambda abf. f(a, b) $$
+$$ \text{V} = \lambda abf. f(a, b) $$
 
 $$ \text{And the auto-parenthesized one:} $$
 
-$$ V = \lambda abf. fab $$
+$$ \text{V} = \lambda abf. fab $$
 
 $$ \text{This function mainly works with the second rule of currying, you see, The Vireo can do this:} $$
 
-$$ V(a, b) (f) = f(a, b) $$
+$$ \text{V} (a, b) (f) = f(a, b) $$
 
-$$ \text{but what happens to the } V(a, b) \text{ before the } f \text{? Solution: } a \text{ and } b \text{ are paired together.} $$
+$$ \text{but what happens to the V} (a, b) \text{ before the } f \text{? Solution: } a \text{ and } b \text{ are paired together.} $$
 
-$$ \text{By the way, because it is used so much (and this just makes sense), } V(a, b) = (a, b) \text{.} $$
+$$ \text{By the way, because it is used so much (and this just makes sense), V} (a, b) = (a, b) \text{.} $$
 
 $$ \text{Now, when you want to evaluate a regular function } f \text{ on a pair } p \text{, than that would be } p(f) \text{, but if you wanted a function that evaluates more like } f(p) \text{ than } p(f) \text{, then you need a pairwise function (not to be confused with piecewise function, as it is the only result when you google "pairwise function", and piecewise functions don't actually exist in lambda calculus) (e.g. a function that inputs a pair, and outpts the first thing in that pair) actually, that second thing would be really usefull, I'm gonna try to derive it (as well as a function that inputs a pair, and outpts the second thing in that pair).} $$
 
@@ -309,11 +309,11 @@ $$ \text{And that's exactly what you'd expect (from a function that inputs a pai
 
 $$ \text{Next: (it might not seem obvius why, but) I want to tell you about The Phi Combinator!} $$
 
-$$ \Phi = \lambda p. V(Snd(p))(Succ(Snd(p))) $$
+$$ \Phi = \lambda p. \text{V} (Snd(p))(Succ(Snd(p))) $$
 
 $$ \text{And the auto-parenthesized one:} $$
 
-$$ \Phi = \lambda p. V(Snd \text{ } p)(Succ(Snd \text{ } p)) $$
+$$ \Phi = \lambda p. \text{V} (Snd \text{ } p)(Succ(Snd \text{ } p)) $$
 
 $$ \text{And the pair notation one:} $$
 
@@ -337,11 +337,11 @@ $$ Fst(n8(\Phi, (\text{doesn't matter what the first thing is}, n0))) = Fst((n7,
 
 $$ Fst(n8(\Phi, (\text{doesn't matter what the first thing is}, n0))) = n7 $$
 
-$$ Pred = \lambda n. Fst(n(\Phi, V(\text{doesn't matter what the first thing is}, n0))) $$
+$$ Pred = \lambda n. Fst(n(\Phi, \text{V} (\text{doesn't matter what the first thing is}, n0))) $$
 
 $$ \text{And the auto-parenthesized one:} $$
 
-$$ Pred = \lambda n. Fst(n \text{ } \Phi \text{ } (V \text{ doesn't matter what the first thing is } n0)) $$
+$$ Pred = \lambda n. Fst(n \text{ } \Phi \text{ } (\text{V} \text{ doesn't matter what the first thing is } n0)) $$
 
 $$ \text{And the pair notation one:} $$
 
@@ -363,11 +363,11 @@ $$ \text{I'll just choose } n0 \text{.} $$
 
 $$ \text{This also means that I have to redo the predecessor function.} $$
 
-$$ Pred = \lambda n. Fst(n(\Phi, V(n0, n0))) $$
+$$ Pred = \lambda n. Fst(n(\Phi, \text{V} (n0, n0))) $$
 
 $$ \text{And the auto-parenthesized one:} $$
 
-$$ Pred = \lambda n. Fst(n \text{ } \Phi \text{ } (V \text{ } n0 \text{ } n0)) $$
+$$ Pred = \lambda n. Fst(n \text{ } \Phi \text{ } ( \text{V } n0 \text{ } n0)) $$
 
 $$ \text{And the pair notation one:} $$
 
