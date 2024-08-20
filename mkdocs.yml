@@ -47,9 +47,6 @@ use_directory_urls: false
 
 plugins:
   - search
-  # - with-pdf
-  # - with-pdf:
-  #     render_js: true
 
 markdown_extensions:
   - toc:
