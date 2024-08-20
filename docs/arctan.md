@@ -10,7 +10,7 @@ $$ a = rcos(\theta) $$
 
 $$ b = rsin(\theta) $$
 
-Good, you can convert from polar to cartesian coordinates, but what about back from cartesian to polar? ($r$ Is the distance from the origin at $0$, and $\theta$ is the angle counerclockwise from the positave $x$ axis. I'm saying this, because either I didn't say it earlier, or as a reminder) You would probably use the pythagorian therom to prove this, but this website dosen't heve illustrations, so I will prove the pythagorian therom without geometry. First, take the complex conjegate.
+Good, you can convert from polar to cartesian coordinates, but what about back from cartesian to polar? ($r$ Is the distance from the origin at $0$, and $\theta$ is the angle counerclockwise from the positave $x$ axis. I'm saying this, because either I didn't say it earlier, or as a reminder) You would probably use the pythagorian therom to prove this, but this website doesn't heve illustrations, so I will prove the pythagorian therom without geometry. First, take the complex conjegate.
 
 $$ a - bi = rcos(\theta) - irsin(\theta) $$
 
@@ -54,7 +54,7 @@ That's $r$, but what about $\theta$?
 
 $$ \frac{b}{a} = \frac{rsin(\theta)}{rcos(\theta)} = \frac{sin(\theta)}{cos(\theta)} = tan(\theta) $$
 
-$$ \text{Good, } r \text{ dosen't change } \theta! $$
+$$ \text{Good, } r \text{ doesn't change } \theta! $$
 
 $$ \theta = arctan(\frac{b}{a}) = ? $$
 
