@@ -646,3 +646,5 @@ def vec(n):
 $$ \vec{u} + \vec{v} = \vec{u \cdot v} $$
 
 $$ c \cdot \vec{v} = \vec{v^c} $$
+
+### geometric sieries, p-adic numbers (existance), $-\frac{1}{12}$, and the axiom of convegence
