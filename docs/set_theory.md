@@ -52,6 +52,10 @@ $$ → \text{ Is technically called the if then sign, but it is pronounced "impl
 
 $$ \text{I don't think that I need to explain the } < \text{sign.} $$
 
+$$ ℝ \text{ Is pronounced "the set of all real numbers" and means, well, the set of all real numbers.} $$
+
+$$ ℕ \text{ Is pronounced "the set of all natural numbers" and means "the set of all positave integers", it's debatable weather or not it includes } 0 \text{.} $$
+
 ### definitions
 
 $$ ¬ \exists (x) \cdot x \in Ø $$
@@ -147,6 +151,20 @@ $$ ∀(a) \cdot a \in G: \exists (b) \cdot b \in G ∩ a + b = e ∩ b + a = e $
 Because of negataves and them looping back arround, this holds true for modular addition. (Also, modular multiplication almost works, but it fails at this step because there is no $\frac{1}{0}$.)
 
 Thus, the set of numbers $0$ - $4$ under modular addition is a group.
+
+#### limits
+
+$$ \lim_{n \to \infty} f(n) = x \iff ∀(y) \cdot y \in ℝ ∩ y \ne x: \exists (n) \cdot n \in ℕ ∩ ∀(k) \cdot k \in ℕ ∩ k ≥ n: |f(k) - x| < |f(k) - y| $$
+
+$$ \lim_{n \to \infty} f(n) \to \infty \iff ∀(y) \cdot y \in ℝ: \exists (n) \cdot n \in ℕ ∩ ∀(k) \cdot k \in ℕ ∩ k ≥ n: f(k) > y $$
+
+$$ \lim_{n \to \infty} f(n) \to -\infty \iff ∀(y) \cdot y \in ℝ: \exists (n) \cdot n \in ℕ ∩ ∀(k) \cdot k \in ℕ ∩ k ≥ n: f(k) < y $$
+
+$$ \lim_{n \to \infty} f(n) = 0 \iff ∀(y) \cdot y \in ℝ ∩ y \ne 0: \exists (n) \cdot n \in ℕ ∩ ∀(k) \cdot k \in ℕ ∩ k ≥ n: |f(k)| < |y| $$
+
+$$ \lim_{n \to \infty} f(n) = x^{+} \iff ∀(y) \cdot y \in ℝ ∩ y \ne x: \exists (n) \cdot n \in ℕ ∩ ∀(k) \cdot k \in ℕ ∩ k ≥ n: |f(k) - x| < |f(k) - y| ∩ f(k) > x $$
+
+$$ \lim_{n \to \infty} f(n) = x^{-} \iff ∀(y) \cdot y \in ℝ ∩ y \ne x: \exists (n) \cdot n \in ℕ ∩ ∀(k) \cdot k \in ℕ ∩ k ≥ n: |f(k) - x| < |f(k) - y| ∩ f(k) < x $$
 
 ### set theory proofs?
 
