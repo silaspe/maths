@@ -475,4 +475,10 @@ $$ I \text{ } M \text{ } K / \text{T} \text{ } Ki / \text{F} \text{ } \text{And}
 
 $$ \text{Finally, the thing you've all been waiting for (final boss music starts playing), the biggest (codable) number} $$
 
-$$ Fgh = \lambda nx. is0(n)(Succ(x), Eq(n, n1)(Mult(n2, x), Eq(n, n2)(Mult(x, Pow(2, x)), x(f(n - 1), x)))) $$
+$$ Fgh = \lambda nx. is0(n)(Succ(x), Eq(n, n1)(Mult(n2, x), Eq(n, n2)(Mult(x, Pow(2, x)), x(f(Pred(n)), x)))) $$
+
+$$ \text{Next: I'm skipping omega, because there already an omega combinator (even though it's a capital omega), and it's equivilant to } M(M) \text{. So, epsilon next} $$
+
+$$ Epss = \lambda xn. is0(n)(Pred(x)(Pow(x), x), Pred(x)(Pow(Epss(x, Pred(n))), Epss(x, Pred(n)))) $$
+
+$$ Eps = \lambda xn. Fgh(Epss(x, n), x) $$
