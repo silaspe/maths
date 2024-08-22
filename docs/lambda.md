@@ -384,3 +384,51 @@ $$ Sub = \lambda nk. n(Pred, k) $$
 $$ \text{And the auto-parenthesized one:} $$
 
 $$ Sub = \lambda nk. n \text{ } Pred \text{ } k $$
+
+$$ \text{Next: is } 0 \text{!} $$
+
+$$ f(n0) = \text{T} $$
+
+$$ f(n) = \text{F } (n > 0) $$
+
+$$ f(n) = n(g, x) $$
+
+$$ f(n0) = n0(g, x) = x = \text{T} $$
+
+$$ x = \text{T} $$
+
+$400$ Lines.
+
+$$ f(n) = n(g, \text{T}) $$
+
+$$ f(n1) = n1(g, \text{T}) = g(\text{T}) = \text{F} $$
+
+$$ g(\text{T}) = \text{F} $$
+
+$$ g = \text{Not???} $$
+
+$$ f(n2) = n2(g, \text{T}) = g(g(\text{T})) = g(\text{F}) = \text{F} $$
+
+$$ g(\text{F}) = \text{F} $$
+
+$$ g(p) = \text{F} $$
+
+$$ g = h(y) $$
+
+$$ h(y)(p) = \text{F} $$
+
+$$ h(y, p) = \text{F} $$
+
+$$ y = \text{F} $$
+
+$$ h = K $$
+
+$$ g = K(\text{F}) $$
+
+$$ f(n) = n(K(\text{F}), \text{T}) $$
+
+$$ i0 = \lambda n. n(K(\text{F}))(\text{T}) $$
+
+$$ \text{And the auto-parenthesized one:} $$
+
+$$ i0 = \lambda n. n (K \text{F}) \text{T} $$
