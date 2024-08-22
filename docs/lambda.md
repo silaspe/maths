@@ -469,16 +469,18 @@ $$ \text{Next: } \ne \text{!} $$
 
 $$ Neq = \text{Not} (Eq) $$
 
-$$ \text{before we do the biggest (codable) number, let's write down evrey function that we know in one line.} $$
+$$ \text{before we do the biggest (codable) number, let's write down every function that we know in one line.} $$
 
 $$ I \text{ } M \text{ } K / \text{T} \text{ } Ki / \text{F} \text{ } \text{And} \text{ } \text{Or} \text{ } \text{Not} \text{ } n0 \text{ } n1 \text{ } n2 \text{ } n3 \text{ } Succ \text{ } Add \text{ } Mult \text{ } B \text{ } Pow \text{ } \text{V} \text{ } Fst \text{ } Snd \text{ } \Phi \text{ } Pred \text{ } Sub \text{ } is0 \text{ } Leq \text{ } Geq \text{ } Gt \text{ } Lt \text{ } Eq \text{ } Neq $$
 
 $$ \text{Finally, the thing you've all been waiting for (final boss music starts playing), the biggest (codable) number} $$
 
-$$ Fgh = \lambda nx. is0(n)(Succ(x), Eq(n, n1)(Mult(n2, x), Eq(n, n2)(Mult(x, Pow(2, x)), x(f(Pred(n)), x)))) $$
+$$ Fgh = \lambda nx. is0(n)(Succ(x), Eq(n, n1)(Mult(n2, x), Eq(n, n2)(Mult(x, Pow(2, x)), x(Fgh(Pred(n)), x)))) $$
 
-$$ \text{Next: I'm skipping omega, because there already an omega combinator (even though it's a capital omega), and it's equivilant to } M(M) \text{. So, epsilon next} $$
+$$ \text{Next: I'm skipping omega, because there's already an omega combinator (even though it's a capital omega), and it's equivilant to } M(M) \text{. So, epsilon next} $$
 
 $$ Epss = \lambda xn. is0(n)(Pred(x)(Pow(x), x), Pred(x)(Pow(Epss(x, Pred(n))), Epss(x, Pred(n)))) $$
 
 $$ Eps = \lambda xn. Fgh(Epss(x, n), x) $$
+
+$$ \varphi_s = \lambda nxy. is0(n)(Pow(x, y), Eq(n, n1)(Epss(x, y), is0(y)(x(\varphi_s (Pred(n), x), 0), Pred(x)(Pow(\varphi_s (n, x, Pred(y))), x)))) $$
