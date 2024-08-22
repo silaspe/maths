@@ -427,8 +427,52 @@ $$ g = K(\text{F}) $$
 
 $$ f(n) = n(K(\text{F}), \text{T}) $$
 
-$$ i0 = \lambda n. n(K(\text{F}))(\text{T}) $$
+$$ is0 = \lambda n. n(K(\text{F}))(\text{T}) $$
 
 $$ \text{And the auto-parenthesized one:} $$
 
-$$ i0 = \lambda n. n (K \text{F}) \text{T} $$
+$$ is0 = \lambda n. n \text{ } (K \text{F}) \text{ } \text{T} $$
+
+$$ \text{Next: I'll keep it a mystery, 'cause the question is:} $$
+
+$$ \text{When is } n - k \text{ equal to } 0 \text{? (Well, } n0 \text{ actually.)} $$
+
+$$ \text{Well, there's obvius awnser of when } n \text{is equal to } k \text{, but remember when I said that the predecessor of } n0 \text{ is } n0 \text{? So, any time } n \text{ is less than } k \text{, } n - k = n0 \text{. So} $$
+
+$$ Leq = \lambda nk. is0(Sub(n, k)) $$
+
+$$ \text{And the auto-parenthesized one:} $$
+
+$$ Leq = \lambda nk. is0(Sub \text{ } n \text{ } k)) $$
+
+$$ \text{Next: } ≥ \text{!} $$
+
+$$ Geq = \lambda nk. is0(Sub(k, n)) $$
+
+$$ \text{And the auto-parenthesized one:} $$
+
+$$ Geq = \lambda nk. is0(Sub \text{ } k \text{ } n)) $$
+
+$$ \text{Next: } > \text{!} $$
+
+$$ Gt = \text{Not} (Leq) $$
+
+$$ \text{Next: } < \text{!} $$
+
+$$ Lt = \text{Not} (Geq) $$
+
+$$ \text{Next: } = \text{!} $$
+
+$$ Eq = \text{And} (Leq, Geq) $$
+
+$$ \text{Next: } \ne \text{!} $$
+
+$$ Neq = \text{Not} (Eq) $$
+
+$$ \text{before we do the biggest (codable) number, let's write down evrey function that we know in one line.} $$
+
+$$ I \text{ } M \text{ } K / \text{T} \text{ } Ki / \text{F} \text{ } \text{And} \text{ } \text{Or} \text{ } \text{Not} \text{ } n0 \text{ } n1 \text{ } n2 \text{ } n3 \text{ } Succ \text{ } Add \text{ } Mult \text{ } B \text{ } Pow \text{ } \text{V} \text{ } Fst \text{ } Snd \text{ } \Phi \text{ } Pred \text{ } Sub \text{ } is0 \text{ } Leq \text{ } Geq \text{ } Gt \text{ } Lt \text{ } Eq \text{ } Neq $$
+
+$$ \text{Finally, the thing you've all been waiting for (final boss music starts playing), the biggest (codable) number} $$
+
+$$ Fgh = \lambda nx. is0(n)(Succ(x), Eq(n, n1)(Mult(n2, x), Eq(n, n2)(Mult(x, Pow(2, x)), x(f(n - 1), x)))) $$
