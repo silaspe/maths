@@ -249,7 +249,7 @@ def frac(n, b):
 
 also, this is the $400$'th commit to this branch.
 
-### virus (DO NOT RUN THIS CODE)
+### crash (DO NOT RUN THIS CODE)
 
 ```py
 def crash(exponent):
@@ -263,7 +263,7 @@ def crash(exponent):
 print(crash(crash(crash(crash(crash(crash(crash(crash(crash(crash(10000)))))))))))
 ```
 
-### virus #2 (it goes without saying at this point)
+### crash #2 (it goes without saying at this point)
 
 ```py
 result = "1"
@@ -573,7 +573,7 @@ def gamma(x):
   return f(x, k + 1729)
 ```
 
-### essentially virus #3 (it goes without saying, so I'm not going to)
+### essentially crash #3 (it goes without saying, so I'm not going to)
 
 ```py
 x = gamma(10 ** 100)
