@@ -1,3 +1,7 @@
+If you were wondering, the first line is always the title.
+
+.
+
 That one puzzle
 
 $$ \frac{\partial (x^2 + y^2)}{\partial (x + y)} = ? $$
@@ -205,12 +209,22 @@ scratch that, I went to atlanta, then to texas
 
 .
 
-April $1$st
+April $1$'st
 
 Aha! I fooled you, by making you think that I fooled you.
 
-(It's not actually April $1$st)
+(It's not actually April $1$'st)
 
 .
 
 I have a fever :(
+
+.
+
+I no longer have a fever :)
+
+.
+
+By the way...
+
+I am trying to build a computer... Within a computer!.. Again!.. In python (I'll put it on the repo if/when I'm done).
