@@ -673,7 +673,7 @@ def LU(B1, B2, b1):
 import numpy as np
 ```
 
-$$ \text{Here's some code that my dad wrote:} $$
+$$ \text{Here's some code that my dad (and ChatGPT) wrote:} $$
 
 ```py
 class BitArray(np.ndarray):
@@ -699,6 +699,8 @@ class BitArray(np.ndarray):
     return self.__repr__()
 ```
 
+$700+$ (So, 702) lines!
+
 $$ \text{Back to my code.} $$
 
 ```py
@@ -713,6 +715,25 @@ RAM_data = BitArray((256, 8))
 def numfy(b0, b1, b2, b3, b4, b5, b6, b7):
     return b0 * 128 + b1 * 64 + b2 * 32 + b3 * 16 + b4 * 8 + b5 * 4 + b6 * 2 + b7 * 1
 ```
+
+So, how you use the code is this (entire next line):
+
+if you want to input some data (which has to be a number (which has to be encoded as the binary equivilant with a comma between every bit)) (call it $D$) at some address (call it $a$), run the code `RAM_data[numfy(a)] = D`. However, if you want to run code, then store the corrasponding opcode (that you can get from the table below) (with a comma between every bit of coarse) $O$ into line $n$ with `RAM_opcodes[numfy(n)] = O` (that's an o, not a zero).
+
+| Instruction | Description | Opcode  |
+|-------------|-----|-------------|
+| halt | stops the program | 0000 |
+| orm | outputs RAM | 0001 |
+| rtr (optional) | stores from RAM into RAM | 0010 |
+| ria | stores from RAM into register a | 0011 |
+| rib | stores from RAM into register b | 0100 |
+| sad | stores addition of a and b into RAM | 0101 |
+| ssu | stores subtraction of a and b into RAM | 0110 |
+| jump | jump to a different line of code | 0111 |
+| jin | jump if the negative flag (of the LU) is on | 1000 |
+| jil | jump if the NOZ (negaitve or zero) flag (of the LU) is on (l for low) | 1001 |
+| biz | branch (aka jump) if the zero flag (of the LU) is on | 1010 |
+
 
 ```py
 
