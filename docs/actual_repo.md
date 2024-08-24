@@ -570,11 +570,120 @@ def gamma(x):
   k = 0
   for i in range(x):
     k = veblen_subscript(k, x, 0)
-  return f(x, k + 1729)
+  return k
 ```
 
 ### essentially crash #3 (it goes without saying, so I'm not going to)
 
 ```py
-x = gamma(10 ** 100)
+x = f(x, gamma(x) + 1729)
+```
+
+### computer within a computer
+
+```py
+def AND(b1, b2):
+  if b1 == 0:
+    return 0
+  return b2
+```
+
+```py
+def OR(b1, b2):
+  if b1 == 1:
+    return 1
+  return b2
+```
+
+```py
+def NOT(b1):
+  if b1 == 0:
+    return 1
+  return 0
+```
+
+```py
+def bnot(b1, b2):
+  return AND(b1, NOT(b2))
+```
+
+```py
+def XOR(b1, b2):
+  return OR(bnot(b1, b2), bnot(b2, b1))
+```
+
+```py
+def half(b1, b2):
+  return AND(b1, b2),XOR(b1, b2)
+```
+
+```py
+def full(b1, b2, c):
+  i1 = half(b1, b2)
+  i2 = half(i1[1], c)
+  return OR(i1[0], i2[0]),i2[1]
+```
+
+```py
+def cadd(B1, B2, c):
+  i7 = full(B1[7], B2[7], c)
+  i6 = full(B1[6], B2[6], i7[0])
+  i5 = full(B1[5], B2[5], i6[0])
+  i4 = full(B1[4], B2[4], i5[0])
+  i3 = full(B1[3], B2[3], i4[0])
+  i2 = full(B1[2], B2[2], i3[0])
+  i1 = full(B1[1], B2[1], i2[0])
+  i0 = full(B1[0], B2[0], i1[0])
+  return i0[1],i1[1],i2[1],i3[1],i4[1],i5[1],i6[1],i7[1]
+```
+
+```py
+def add(B1, B2):
+  return cadd((B1, B2, 0))
+```
+
+```py
+def sub(B1, B2):
+  return cadd(B1, (NOT(B2[0]),NOT(B2[1]),NOT(B2[2]),NOT(B2[3]),NOT(B2[4]),NOT(B2[5]),NOT(B2[6]),NOT(B2[7])), 1)
+```
+
+```py
+def mini_MUX(b1, b2, b3):
+  return OR(bnot(b1, b3), AND(b2, b3))
+```
+
+```py
+def MUX(B1, B2, b1):
+  return mini_MUX(B1[0], B2[0], b3),mini_MUX(B1[1], B2[1], b3),mini_MUX(B1[2], B2[2], b3),mini_MUX(B1[3], B2[3], b3),mini_MUX(B1[4], B2[4], b3),mini_MUX(B1[5], B2[5], b3),mini_MUX(B1[6], B2[6], b3),mini_MUX(B1[7], B2[7], b3)
+```
+
+```py
+def AU(B1, B2, b1):
+  return MUX(add(B1, B2), sub(B1, B2), b1)
+```
+
+```py
+def LU(B1, B2, b1):
+  i1 = AU(B1, B2, b1)
+  i2 = NOT(OR(OR(OR(i1[0], i1[1]), OR(i1[2], i1[3])), OR(OR(i1[4], i1[5]), OR(i1[6], i1[7]))))
+  return i1[0],OR(i1[0], i2),i2
+```
+
+```py
+def sr(o, s, r):
+  return bnot(OR(o, s), r)
+```
+
+```py
+def ds(o, d, s):
+  return sr(o, AND(s, d), bnot(s, d))
+```
+
+```py
+def dsr(o, d, s, r):
+  return ds(o, bnot(d, r), OR(s, r))
+```
+
+```py
+
 ```
