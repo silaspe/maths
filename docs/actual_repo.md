@@ -670,20 +670,5 @@ def LU(B1, B2, b1):
 ```
 
 ```py
-def sr(o, s, r):
-  return bnot(OR(o, s), r)
-```
-
-```py
-def ds(o, d, s):
-  return sr(o, AND(s, d), bnot(s, d))
-```
-
-```py
-def dsr(o, d, s, r):
-  return ds(o, bnot(d, r), OR(s, r))
-```
-
-```py
 
 ```
