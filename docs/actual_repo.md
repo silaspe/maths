@@ -670,5 +670,50 @@ def LU(B1, B2, b1):
 ```
 
 ```py
+import numpy as np
+```
+
+$$ \text{Here's some code that my dad wrote:} $$
+
+```py
+class BitArray(np.ndarray):
+  def __new__(cls, shape):
+    # Create an array of the given shape, initialized to False (0)
+    obj = np.zeros(shape, dtype=np.bool_).view(cls)
+    return obj
+
+  def __array_finalize__(self, obj):
+    if obj is None: return
+
+  def __repr__(self):
+    # Convert the boolean array to an integer array for display
+    int_array = self.astype(int)
+    # Use numpy's array2string function to format the output
+    try:
+      return '\n'.join(f"{i:3d}  "  + ' '.join([str(v) for v in val]) for i, val in enumerate(int_array))
+    except:
+      return ' '.join([str(v) for v in int_array])
+    #return np.array2string(int_array, separator=' ')
+
+  def __str__(self):
+    return self.__repr__()
+```
+
+$$ \text{Back to my code.} $$
+
+```py
+RAM_opcodes = BitArray((256, 4))
+```
+
+```py
+RAM_data = BitArray((256, 8))
+```
+
+```py
+def numfy(b0, b1, b2, b3, b4, b5, b6, b7):
+    return b0 * 128 + b1 * 64 + b2 * 32 + b3 * 16 + b4 * 8 + b5 * 4 + b6 * 2 + b7 * 1
+```
+
+```py
 
 ```
