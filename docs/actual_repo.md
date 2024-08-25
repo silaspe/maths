@@ -718,21 +718,24 @@ def numfy(b0, b1, b2, b3, b4, b5, b6, b7):
 
 So, how you use the code is this (entire next line):
 
-if you want to input some data (which has to be a number (which has to be encoded as the binary equivilant with a comma between every bit)) (call it $D$) at some address (call it $a$), run the code `RAM_data[numfy(a)] = D`. However, if you want to run code, then store the corrasponding opcode (that you can get from the table below) (with a comma between every bit of coarse) $O$ into line $n$ with `RAM_opcodes[numfy(n)] = O` (that's an o, not a zero).
+if you want to input some data (which has to be a number (which has to be encoded as the binary equivilant with a comma between every bit)) (call it $D$) at some address (call it $a$), run the code `RAM_data[numfy(a)] = D`. However, if you want to run code, then store the corrasponding opcode (that you can get from the table below) (with a comma between every bit of coarse) $O$ into line $n$ with `RAM_opcodes[numfy(n)] = O` (that's an o, not a zero). And, if there are any other numbers that go with the opcode (e.g. ssu requires an address), put those numbers after the opcode.
 
-| Instruction | Description | Opcode  |
-|-------------|-----|-------------|
-| halt | stops the program | 0000 |
-| orm | outputs RAM | 0001 |
-| rtr (optional) | stores from RAM into RAM | 0010 |
-| ria | stores from RAM into register a | 0011 |
-| rib | stores from RAM into register b | 0100 |
-| sad | stores addition of a and b into RAM | 0101 |
-| ssu | stores subtraction of a and b into RAM | 0110 |
-| jump | jump to a different line of code | 0111 |
-| jin | jump if the negative flag (of the LU) is on | 1000 |
-| jil | jump if the NOZ (negaitve or zero) flag (of the LU) is on (l for low) | 1001 |
-| biz | branch (aka jump) if the zero flag (of the LU) is on | 1010 |
+| Instruction | Stands for | Description | Opcode  |
+|-------------|-----|-----|-------------|
+| halt | halt | stops the program | 0000 |
+| ldi | load immediate | stores directly into RAM | 0001 |
+| orm | output RAM | outputs RAM | 0010 |
+| rtr (optional) | RAM to RAM | stores from RAM into RAM | 0011 |
+| lia | load immediate a | stores directly into register a | 0100 |
+| lib | load immediate b | stores directly into register b | 0101 |
+| ria | RAM into a | stores from RAM into register a | 0110 |
+| rib | RAM into b | stores from RAM into register b | 0111 |
+| sad | store addition | stores addition of a and b into RAM | 1000 |
+| ssu | store subtraction | stores subtraction of a and b into RAM | 1001 |
+| jump | jump | jump to a different line of code | 1010 |
+| jin | jump if negative | jump if the negative flag (of the LU) is on | 1011 |
+| jil | jump if low | jump if the NOZ (negaitve or zero) flag (of the LU) is on | 1100 |
+| biz | branch (aka jump) if zero | branch if the zero flag (of the LU) is on | 1101 |
 
 
 ```py
