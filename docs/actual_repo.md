@@ -704,11 +704,11 @@ $700+$ (So, 702) lines, this is the new longest page on the website.
 $$ \text{Back to my code.} $$
 
 ```py
-RAM_opcodes = BitArray((256, 20))
+code_lines = BitArray((256, 20))
 ```
 
 ```py
-RAM_data = BitArray((256, 8))
+RAM = BitArray((256, 8))
 ```
 
 ```py
@@ -718,7 +718,7 @@ def numfy(b0, b1, b2, b3, b4, b5, b6, b7):
 
 So, how you use the code is this (entire next line):
 
-if you want to input some data (which has to be a number (which has to be encoded as the binary equivilant with a comma between every bit)) (call it $D$) at some address (call it $a$), run the code `RAM_data[numfy(a)] = D`. However, if you want to run code, then store the corrasponding opcode (that you can get from the table below) (with a comma between every bit of coarse) $O$ into line $n$ with `RAM_opcodes[numfy(n)] = O` (that's an o, not a zero). And, if there are any other numbers that go with the opcode (e.g. ssu requires an address), put those numbers after the opcode.
+if you want to input some data (which has to be a number (which has to be encoded as the binary equivilant with a comma between every bit)) (call it $D$) at some address (call it $a$), run the code `RAM[numfy(a)] = D`. However, if you want to run code, then store the corrasponding opcode (that you can get from the table below) (with a comma between every bit of coarse) $O$ with corrasponding numbers that go with the opcode (e.g. ssu requires an address to store the subtraction) $n1$ and $n2$ into line $n$ with `code_lines[numfy(n)] = O + n1 + n2` (that's an o, not a zero).
 
 | Instruction | Stands for | Description | Opcode  |
 |-------------|------------|-------------|---------|
@@ -735,6 +735,16 @@ if you want to input some data (which has to be a number (which has to be encode
 | jin | jump if negative | jump if the negative flag (of the LU) is on | 1010 |
 | jil | jump if low | jump if the NOZ (negaitve or zero) flag (of the LU) is on | 1011 |
 | biz | branch (aka jump) if zero | branch if the zero flag (of the LU) is on | 1100 |
+
+
+```py
+reg_a = 0,0,0,0,0,0,0,0
+```
+
+
+```py
+reg_b = 0,0,0,0,0,0,0,0
+```
 
 
 ```py
