@@ -744,43 +744,61 @@ reg_a = 0,0,0,0,0,0,0,0
 reg_b = 0,0,0,0,0,0,0,0
 ```
 
+```py
+halt = 0,0,0,0
+ldi = 0,0,0,1
+rtr = 0,0,1,0
+lia = 0,0,1,1
+lib = 0,1,0,0
+ria = 0,1,0,1
+rib = 0,1,1,0
+sad = 0,1,1,1
+ssu = 1,0,0,0
+jump = 1,0,0,1
+jin = 1,0,1,0
+jil = 1,0,1,1
+biz = 1,1,0,0
+```
+
 $$ \text{Now, this is where the code is run, so, if you want to store a program, or some data, put it here.} $$
 
 ```py
 instr_addr_reg = 0,0,0,0,0,0,0,0
-while true:
-  program = code_lines[numfy(instr_addr_reg)]
-  opcode = program[0] + program[1] + program[2] + program[3]
-  n1 = program[4] + program[5] + program[6] + program[7] + program[8] + program[9] + program[10] + program[11]
-  n2 = program[12] + program[13] + program[14] + program[15] + program[16] + program[17] + program[18] + program[19]
-  if opcode == 0,0,0,1:
+while True:
+  program = code_lines[numfy(*instr_addr_reg)]
+  opcode = program[0],program[1],program[2],program[3]
+  n1 = program[4],program[5],program[6],program[7],program[8],program[9],program[10],program[11]
+  n2 = program[12],program[13],program[14],program[15],program[16],program[17],program[18],program[19]
+  if opcode == halt:
+    break
+  elif opcode == ldi:
     RAM[numfy(n2)] = n1
-  if opcode == 0,0,1,0:
+  elif opcode == rtr:
     RAM[numfy(n2)] = RAM[numfy(n1)]
-  if opcode == 0,0,1,1:
+  elif opcode == lia:
     reg_a = n1
-  if opcode == 0,1,0,0:
+  elif opcode == lib:
     reg_b = n1
-  if opcode == 0,1,0,1:
+  elif opcode == ria:
     reg_a = RAM[numfy(n1)]
-  if opcode == 0,1,1,0:
+  elif opcode == rib:
     reg_b = RAM[numfy(n1)]
-  if opcode == 0,1,1,1:
+  elif opcode == sad:
     RAM[numfy(n1)] = add(reg_a, reg_b)
-  if opcode == 1,0,0,0:
+  elif opcode == ssu:
     RAM[numfy(n1)] = sub(reg_a, reg_b)
-  if opcode == 1,0,0,1:
+  elif opcode == jump:
     instr_addr_reg = n1
-  if opcode == 1,0,1,0:
+  elif opcode == jin:
     if LU(reg_a, reg_b, 1)[0] == 1:
       instr_addr_reg = n1
-  if opcode == 1,0,1,1:
+  elif opcode == jil:
     if LU(reg_a, reg_b, 1)[1] == 1:
       instr_addr_reg = n1
-  if opcode == 1,1,0,0:
+  elif opcode == biz:
     if LU(reg_a, reg_b, 1)[2] == 1:
       instr_addr_reg = n1
-  if opcode == 0,0,0,0 or opcode == 1,1,0,1 or opcode == 1,1,1,0 or opcode == 1,1,1,1:
+  else:
     break
   instr_addr_reg = add(instr_addr_reg, 0,0,0,0,0,0,0,1)
 ```
