@@ -712,13 +712,13 @@ RAM = BitArray((256, 8))
 ```
 
 ```py
-def numfy(b0, b1, b2, b3, b4, b5, b6, b7):
-    return b0 * 128 + b1 * 64 + b2 * 32 + b3 * 16 + b4 * 8 + b5 * 4 + b6 * 2 + b7 * 1
+def numfy(B1):
+  return B1[0] * 128 + B1[1] * 64 + B1[2] * 32 + B1[3] * 16 + B1[4] * 8 + B1[5] * 4 + B1[6] * 2 + B1[7] * 1
 ```
 
 So, how you use the code is this (entire next line):
 
-if you want to input some data (which has to be a number (which has to be encoded as the binary equivilant with a comma between every bit)) (call it $D$) at some address (call it $a$), run the code `RAM[numfy(a)] = D`. However, if you want to run code, then store the corrasponding opcode (that you can get from the table below) (with a comma between every bit of coarse) $O$ with corrasponding numbers that go with the opcode (e.g. ssu requires an address to store the subtraction) $n1$ and $n2$ into line $n$ with `code_lines[numfy(n)] = O + n1 + n2` (that's an o, not a zero).
+if you want to input some data (which has to be a number (which has to be encoded as the binary equivilant with a comma between every bit)) (call it $D$) at some address (call it $a$), run the code `RAM[numfy(a)] = D`. However, if you want to run code, then store the corrasponding opcode (that you can get from the table below) $O$ with corrasponding numbers that go with the opcode (e.g. ssu requires an address to store the subtraction) $n1$ and $n2$ into line $n$ with `code_lines[n] = O + n1 + n2` (that's an o, not a zero).
 
 | Instruction | Stands for | Description | Opcode  |
 |-------------|------------|-------------|---------|
@@ -737,14 +737,6 @@ if you want to input some data (which has to be a number (which has to be encode
 | biz | branch (aka jump) if zero | branch if the zero flag (of the LU) is on | 1100 |
 
 ```py
-reg_a = 0,0,0,0,0,0,0,0
-```
-
-```py
-reg_b = 0,0,0,0,0,0,0,0
-```
-
-```py
 halt = 0,0,0,0
 ldi = 0,0,0,1
 rtr = 0,0,1,0
@@ -760,12 +752,31 @@ jil = 1,0,1,1
 biz = 1,1,0,0
 ```
 
+```py
+t0 = 0,0,0,0,0,0,0,0
+```
+
+```py
+def yfmun(n):
+  i7 = n % 2
+  i6 = (n % 4) // 2
+  i5 = (n % 8) // 4
+  i4 = (n % 16) // 8
+  i3 = (n % 32) // 16
+  i2 = (n % 64) // 32
+  i1 = (n % 128) // 64
+  i0 = n // 128
+  return i0,i1,i2,i3,i4,i5,i6,i7
+```
+
 $$ \text{Now, this is where the code is run, so, if you want to store a program, or some data, put it here.} $$
 
 ```py
-instr_addr_reg = 0,0,0,0,0,0,0,0
+instr_addr_reg = t0
+reg_a = t0
+reg_b = t0
 while True:
-  program = code_lines[numfy(*instr_addr_reg)]
+  program = code_lines[numfy(instr_addr_reg)]
   opcode = program[0],program[1],program[2],program[3]
   n1 = program[4],program[5],program[6],program[7],program[8],program[9],program[10],program[11]
   n2 = program[12],program[13],program[14],program[15],program[16],program[17],program[18],program[19]
@@ -800,5 +811,29 @@ while True:
       instr_addr_reg = n1
   else:
     break
-  instr_addr_reg = add(instr_addr_reg, 0,0,0,0,0,0,0,1)
+  instr_addr_reg = add(instr_addr_reg, yfmun(1))
+```
+
+$$ \text{here's an example instruction:} $$
+
+```py
+code_lines[0] = ldi + yfmun(0) + yfmun(2)
+code_lines[1] = rtr + yfmun(0) + yfmun(3)
+code_lines[2] = ria + yfmun(3) + t0
+code_lines[3] = rib + yfmun(1) + t0
+code_lines[4] = ssu + yfmun(3) + t0
+code_lines[5] = ria + yfmun(2) + t0
+code_lines[6] = lib + yfmun(1) + t0
+code_lines[7] = sad + yfmun(2) + t0
+code_lines[8] = ria + yfmun(3) + t0
+code_lines[9] = lib + yfmun(0) + t0
+code_lines[10] = jin + yfmun(12) + t0
+code_lines[11] = jump + yfmun(2) + t0
+code_lines[12] = ria + yfmun(3) + t0
+code_lines[13] = rib + yfmun(1) + t0
+code_lines[14] = sad + yfmun(3) + t0
+code_lines[15] = ria + yfmun(2) + t0
+code_lines[16] = lib + yfmun(1) + t0
+code_lines[17] = ssu + yfmun(2) + t0
+code_lines[18] = halt + t0 + t0
 ```
