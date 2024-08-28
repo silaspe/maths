@@ -736,17 +736,51 @@ if you want to input some data (which has to be a number (which has to be encode
 | jil | jump if low | jump if the NOZ (negaitve or zero) flag (of the LU) is on | 1011 |
 | biz | branch (aka jump) if zero | branch if the zero flag (of the LU) is on | 1100 |
 
-
 ```py
 reg_a = 0,0,0,0,0,0,0,0
 ```
-
 
 ```py
 reg_b = 0,0,0,0,0,0,0,0
 ```
 
+$$ \text{Now, this is where the code is run, so, if you want to store a program, or some data, put it here.} $$
 
 ```py
-
+instr_addr_reg = 0,0,0,0,0,0,0,0
+while true:
+  program = code_lines[numfy(instr_addr_reg)]
+  opcode = program[0] + program[1] + program[2] + program[3]
+  n1 = program[4] + program[5] + program[6] + program[7] + program[8] + program[9] + program[10] + program[11]
+  n2 = program[12] + program[13] + program[14] + program[15] + program[16] + program[17] + program[18] + program[19]
+  if opcode == 0,0,0,1:
+    RAM[numfy(n2)] = n1
+  if opcode == 0,0,1,0:
+    RAM[numfy(n2)] = RAM[numfy(n1)]
+  if opcode == 0,0,1,1:
+    reg_a = n1
+  if opcode == 0,1,0,0:
+    reg_b = n1
+  if opcode == 0,1,0,1:
+    reg_a = RAM[numfy(n1)]
+  if opcode == 0,1,1,0:
+    reg_b = RAM[numfy(n1)]
+  if opcode == 0,1,1,1:
+    RAM[numfy(n1)] = add(reg_a, reg_b)
+  if opcode == 1,0,0,0:
+    RAM[numfy(n1)] = sub(reg_a, reg_b)
+  if opcode == 1,0,0,1:
+    instr_addr_reg = n1
+  if opcode == 1,0,1,0:
+    if LU(reg_a, reg_b, 1)[0] == 1:
+      instr_addr_reg = n1
+  if opcode == 1,0,1,1:
+    if LU(reg_a, reg_b, 1)[1] == 1:
+      instr_addr_reg = n1
+  if opcode == 1,1,0,0:
+    if LU(reg_a, reg_b, 1)[2] == 1:
+      instr_addr_reg = n1
+  if opcode == 0,0,0,0 or opcode == 1,1,0,1 or opcode == 1,1,1,0 or opcode == 1,1,1,1:
+    break
+  instr_addr_reg = add(instr_addr_reg, 0,0,0,0,0,0,0,1)
 ```
