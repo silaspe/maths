@@ -21,7 +21,7 @@ sum rule, chain rule, product rule, multiplication by constant, exponent rule, i
 * [The infamous "arctan puzzle"](arctan.md) - the other puzzle that I was working on in the vacation
 * [Modular arithmetic](mod.md) - if you restart counting after $10$, $5$, or $7$
 * [Brainstorming a new page](brainstorm.md) - pretty self explanatory
-* [Secretly clifford algebra](geometric_algebra.md) - Yes, you can multiply two vectors.
+* [Geometric algebra](geometric_algebra.md) - (secretly clifford algebra) Yes, you can multiply two vectors.
 
 PS you don't get a vector
 
