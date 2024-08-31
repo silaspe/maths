@@ -22,25 +22,15 @@ $$ ¬ \text{ Is pronounced "is not" or "does not" as in "there does not exist } 
 
 $$ \in \text{ Is pronounced "is an element of" where an element of a set is a singular object that is contained in that set.} $$
 
-$$ Ø \text{ Is pronounced "the empty set" and means "the set of which is empty inside".} $$
-
-$$ x, y, \text{ And } z \text{ are pronounced "} x, y, \text{ And } z \text{" and they all mean "a thing that could  be an element of a set".} $$
-
-$$ ⊆ \text{ Is pronounced "is a subset of" and I'll get to the meaning of that in the next chapter.} $$
+$$ x, y, \text{ And } z \text{ are pronounced "} x, y, \text{ And } z \text{" and they all mean "a thing that could be an element of a set".} $$
 
 $$ \text{capital letters are sets.} $$
 
 $$ \iff \text{ Is pronounced "if and only if" as in "if statement } a \text{ is true, statement } b \text{ is true, and if statement } a \text{ is false, statement } b \text{ is false".} $$
 
-$$ pow \text{ Is pronounced "the power set of" as in "} pow(S) \text{" and I'll get to the meaning in the next chapter.} $$
-
-$$ ∩ \text{ Is pronounced "and" and means "} a ∩ b \text{ is true if and only if statement } a \text{ is true and } b \text{ is true", it can also mean the intersection of two sets, in that case, it is pronounced "intersectioned with", but I'll get to it's formal meaning in the next next next next chapter..} $$
-
 $$ = : \text{ Is pronounced "equals by definition" and means "define the thing on the left as the thing on the right", or was it the other wat around?} $$
 
-$$ = \text{ Is pronounced "is the same as" and I'll get to it's formal meaning in the next chapter.} $$
-
-$$ \in^S \text{ Is pronounced "is a super element of" (} S \text{ for super) and I'll get to it's meaning in the next chapter.} $$
+$$ \in ^ S \text{ Is pronounced "is a super element of" (} S \text{ for super) and I'll get to it's meaning in the next chapter.} $$
 
 $$ ∨ \text{ Is pronounced "or" and means "} a ∨ b \text{ is true if statement } a \text{ is true or } b \text{ is true... Or both!", it can also mean the union of two sets, in that case, it is pronounced "unioned with", but I'll get to it's formal meaning in the next chapter.} $$
 
@@ -58,11 +48,19 @@ $$ ℕ \text{ Is pronounced "the set of all natural numbers" and means "the set 
 
 ### definitions
 
+$$ Ø \text{ Is pronounced "the empty set" and means "the set of which is empty inside", but here that is in set theory:} $$
+
 $$ ¬ \exists (x) \cdot x \in Ø $$
+
+$$ ⊆ \text{ Is pronounced "is a subset of", and the meaning of that is:} $$
 
 $$ A ⊆ B \iff ∀(x) \cdot x \in A: x \in B $$
 
+$$ pow \text{ Is pronounced "the power set of" as in "} pow(S) \text{", and the meaning of that is:} $$
+
 $$ ∀(P) \cdot ∀(U) \cdot U ⊆ S: U \in P ∩ ∀(T) \cdot T ¬ ⊆ S: T ¬ \in P: P = : pow(S) $$
+
+$$ = \text{ Is pronounced "is the same as" or "is equal to", and the meaning of that is:} $$
 
 $$ A = B \iff A ⊆ B ∩ B ⊆ A $$
 
@@ -86,7 +84,7 @@ $$ x \in^{a + b} S \iff \exists (U) \cdot U \in^a S ∩ x \in^b U $$
 
 $$ x \in^{a + b} S \text{ can also be written as } x \in^a \in^b S $$
 
-$$ x \in^S S \iff x \in S ∨ \exists (U) \cdot U \in S ∩ x \in^S U $$
+$$ x \in ^ S S \iff x \in S ∨ \exists (U) \cdot U \in S ∩ x \in ^ S U $$
 
 ###### .
 
@@ -104,11 +102,13 @@ $$ x \in A ∨ B \iff x \in A ∨ x \in B $$
 
 $$ ∀(S) \cdot E \in S ∩ ∀(T) \cdot T ¬= E: T ¬ \in S: S = : set(E) $$
 
-$$ \text{Around } 100 \text{ lines?? (I might add another definition, but at the time of typing this, this is on } 95 \text{ lines.)} $$
+$$ \text{Around } 100 \text{ lines?? (I might add or remove another definition, but at the time of typing this, this is on } 95 \text{ lines.)} $$
 
 $$ \text{succ} (n) = : set(n) ∨ n $$
 
 ### back to definitions
+
+$$ ∩ \text{ Is pronounced "and" and means "} a ∩ b \text{ is true if and only if statement } a \text{ is true and } b \text{ is true", it can also mean the intersection of two sets, in that case, it is pronounced "intersectioned with", but} $$
 
 $$ x \in A ∩ B \iff x \in A ∩ x \in B $$
 
