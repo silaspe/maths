@@ -8,7 +8,7 @@ But the thing is, using some symbols, you can describe almost all of math. These
 
 $$ ∀ \text{ Is pronounced "for any" or "for all" (but I prefer "for any") and means what it says. It than has an open parentheses, a thing (or sometimes multiple things separated by a comma) (} x, y, z, \text{ or a set) that I will call } x \text{ for now, a closed parentheses (parenthese is not a word), a } \cdot \text{, a statement that implies something about } x \text{, a colon, and finish it off with a statement including } x. $$
 
-$$ ( \text{ and } ) \text{ are not pronounced.} $$
+$$ \text{left and right parentheses are not pronounced.} $$
 
 $$ \cdot \text{ Is pronounced "such that" and it's only used in two contexts: "for any } x \text{ such that..." and "there exists } x \text{ such that...".} $$
 
@@ -28,15 +28,13 @@ $$ \text{capital letters are sets.} $$
 
 $$ \iff \text{ Is pronounced "if and only if" as in "if statement } a \text{ is true, statement } b \text{ is true, and if statement } a \text{ is false, statement } b \text{ is false".} $$
 
-$$ = : \text{ Is pronounced "equals by definition" and means "define the thing on the left as the thing on the right", or was it the other wat around?} $$
+$$ ∩ \text{ Is pronounced "and" and means "} a ∩ b \text{ is true if and only if statement } a \text{ is true and } b \text{ is true", it can also mean the intersection of two sets, in that case, it is pronounced "intersectioned with", but I'll get to it's formal meaning in the next chapter.} $$
 
-$$ \in ^ S \text{ Is pronounced "is a super element of" (} S \text{ for super) and I'll get to it's meaning in the next chapter.} $$
+$$ = : \text{ Is pronounced "equals by definition" and means "define the thing on the left as the thing on the right", or was it the other wat around?} $$
 
 $$ ∨ \text{ Is pronounced "or" and means "} a ∨ b \text{ is true if statement } a \text{ is true or } b \text{ is true... Or both!", it can also mean the union of two sets, in that case, it is pronounced "unioned with", but I'll get to it's formal meaning in the next chapter.} $$
 
 $$ \text{succ Is pronounced "the immediate successor of" and means "that number } + 1 \text{".} $$
-
-$$ set \text{ Is pronounced "the set containing" as in "} set(S) \text{" and I'll get to it's formal meaning in the next chapter.} $$
 
 $$ → \text{ Is technically called the if then sign, but it is pronounced "implies" and means "statement } a → b \text{ is true if statement } a \text{ being true implies statement } b \text{ is true", so } a → b \text{ is true if statement } a \text{ is true and statement } b \text{ is true, or if statement } a \text{ is false and statement } b \text{ is false, or if statement } a \text{ is true and statement } b \text{ is false, but not if statement } a \text{ is false and statement } b \text{ is true. Also, if there was an element sign two spaces behind, pronounce it "being an element of" as oppose to  "is an element of".} $$
 
@@ -84,7 +82,9 @@ $$ x \in^{a + b} S \iff \exists (U) \cdot U \in^a S ∩ x \in^b U $$
 
 $$ x \in^{a + b} S \text{ can also be written as } x \in^a \in^b S $$
 
-$$ x \in ^ S S \iff x \in S ∨ \exists (U) \cdot U \in S ∩ x \in ^ S U $$
+$$ \in^S \text{ Is pronounced "is a super element of" (} S \text{ for super), and the definition is:} $$
+
+$$ x \in^S S \iff x \in S ∨ \exists (U) \cdot U \in S ∩ x \in^S U $$
 
 ###### .
 
@@ -99,6 +99,8 @@ $$ 0 = Ø $$
 $$ \text{succ} (n) \text{ (Which mathematicly equals } n + 1 \text{) Is how you would usually define numbers, so I'll define numbers that way, I'll say that succ} (n) \text{ is the set that contains all numbers } 0 \text{-} n \text{. But first: the union of two sets, denoted as an } ∨ \text{ sign.} $$
 
 $$ x \in A ∨ B \iff x \in A ∨ x \in B $$
+
+$$ set \text{ Is pronounced "the set containing" as in "} set(S) \text{", and} $$
 
 $$ ∀(S) \cdot E \in S ∩ ∀(T) \cdot T ¬= E: T ¬ \in S: S = : set(E) $$
 
