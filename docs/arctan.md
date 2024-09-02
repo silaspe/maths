@@ -46,7 +46,7 @@ $$ a^2 + b^2 = r^2 $$
 
 Okay, that is the pythagonian therom done, bou I was looking for $r$.
 
-$$ r \text{ (Incert is greater than or equal to symbol here.) } 0 $$
+$$ r \text{ (Insert is greater than or equal to symbol here.) } 0 $$
 
 $$ r = \sqrt{a^2 + b^2} $$
 
