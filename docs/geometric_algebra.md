@@ -156,7 +156,7 @@ $$ \vec{v} \vec{v} = (v_1 v_1 + v_2 v_2 + v_3 v_3 + v_4 v_4 + \dots + v_d v_d) +
 -(\hat{x} e_d) v_d v_1 & -(\hat{y} e_d) v_d v_2 & -(\hat{z} e_d) v_d v_3 & -(\hat{w} e_d) v_d v_4 & \dots &  \\ \end{bmatrix} $$
 
 
-(incert filler text here)
+(insert filler text here)
 
 $$ \text{By the way, } \hat{\hat{\hat{\hat{\hat{\hat{\hat{\hat{\hat{\hat{\hat{\hat{\hat{\hat{\hat{\hat{\hat{\hat{\hat{\hat{\hat{\hat{\hat{\hat{\hat{\hat{\hat{\hat{\hat{\hat{w}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}. $$
 
@@ -319,7 +319,7 @@ $$ \text{I just realized that this isn't a code repo(sitory). It was my instinct
 
 $$ \text{complexify} (v_x \hat{x} + v_y \hat{y}) = v_x + v_y i $$
 
-(incert filler text here)
+(insert filler text here)
 
 $$ \text{complexify} (\vec{v} i) = i \text{ complexify} (\vec{v}) $$
 
