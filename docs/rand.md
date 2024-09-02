@@ -228,3 +228,9 @@ I no longer have a fever :)
 By the way...
 
 I am trying to build a computer... Within a computer!.. Again!.. In python (I'll put it on the repo if/when I'm done).
+
+.
+
+union/labor day
+
+(Insert protest here)! (Insert protest here)! (Insert protest here)! (Insert protest here)! (Insert protest here)!=
