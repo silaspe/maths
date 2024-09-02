@@ -66,11 +66,11 @@ There was a power outage today :(
 
 .
 
-(incert work here)
+(insert work here)
 
 .
 
-(incert work here)
+(insert work here)
 
 .
 
@@ -205,7 +205,7 @@ scratch that, I went to atlanta, then to texas
 
 .
 
-(incert work here)
+(insert work here)
 
 .
 
@@ -233,4 +233,4 @@ I am trying to build a computer... Within a computer!.. Again!.. In python (I'll
 
 union/labor day
 
-(Insert protest here)! (Insert protest here)! (Insert protest here)! (Insert protest here)! (Insert protest here)!=
+(Insert protest here)! (Insert protest here)! (Insert protest here)! (Insert protest here)! (Insert protest here)!
