@@ -2,7 +2,7 @@ The equations below are the beginning of pages that may or may not get added to 
 
 ### galois theory/field theory/group theory?
 
-A field of numbers is a collection of numbers where you can add, subtract, multiply, and even sometimes divide two numbers (as long as you don't divide by zero) in that field to get another number in that field. For example, the rationals, the reals and the complex numbers ane all fields that are infinate and you can divide them. The complex lattice points (which are complex numbers of the form $integer + integer \cdot i$ ), the matrixes (incert joke here), and the integers, are all in the infinate but can not always be divided. I know what you might be thinking: "what the (abbreviation that I am allowed to say for a curse word that I am not allowed to say) is a non-infinate field?". A non-infinite field or finite field is something like the [modulo numbers](https://silaspe.github.io/maths/mod.html). You might not be able to divide in a non-prime base, but you can do it in a prime base. So that completes the venn diagram!
+A field of numbers is a collection of numbers where you can add, subtract, multiply, and even sometimes divide two numbers (as long as you don't divide by zero) in that field to get another number in that field. For example, the rationals, the reals and the complex numbers ane all fields that are infinate and you can divide them. The complex lattice points (which are complex numbers of the form $integer + integer \cdot i$ ), the matrixes (insert joke here), and the integers, are all in the infinate but can not always be divided. I know what you might be thinking: "what the (abbreviation that I am allowed to say for a curse word that I am not allowed to say) is a non-infinate field?". A non-infinite field or finite field is something like the [modulo numbers](https://silaspe.github.io/maths/mod.html). You might not be able to divide in a non-prime base, but you can do it in a prime base. So that completes the venn diagram!
 
 Today, I want to show you an infinate field where you can not divide, I'm talking (well, typing) about numbers of the form
 
@@ -80,13 +80,21 @@ $$ \vec{u} \vec{v} = \begin{pmatrix} (xx)(u_x v_x) + (xy)(u_x v_y) + (xz)(u_x v_
 
 $$ \text{But now, I need to turn a bivector into a vector, I'll use that } U \text{ thing for that.} $$
 
-(incert text here)
+(insert text here)
 
-(incert text here)
+(insert text here)
 
-(incert text here)
+(insert text here)
 
-(incert text here)
+(insert text here)
+
+(insert text here)
+
+(insert text here)
+
+(insert text here)
+
+(insert text here)
 
 
 $100$ Lines btw.
@@ -177,13 +185,15 @@ $$ \vec{v} \cdot c \vec{v} = || \vec{v} || \cdot || c \vec{v} || =  c || \vec{v}
 
 $$ c = \frac{1}{|| \vec{v} ||^2} $$
 
-(incert text here)
+(insert text here)
 
-(incert text here)
+(insert text here)
 
-(incert text here)
+(insert text here)
 
-(incert text here)
+(insert text here)
+
+(insert text here)
 
 $$ \frac{1}{\vec{v}} = \frac{\vec{v}}{|| \vec{v} ||^2} $$
 
@@ -286,8 +296,6 @@ $$ \text{if } a = 0 \text{, then the square root of } \frac{0}{0} \text{ is stil
 
 $$ x = \frac{0}{a} $$
 
-(incert text here)
-
 
 $300$ Lines.
 
@@ -371,23 +379,23 @@ $2$ d
 
 $$ (u_1 + u_2 x + u_3 y + u_4 xy)(v_1 + v_2 x + v_3 y + v_4 xy) = (u_1 v_1 + u_2 v_2 + u_3 v_3 - u_4 v_4) + (u_1 v_2 + u_2 v_1 - u_3 v_4 + u_4 v_3)x + (u_1 v_3 + u_2 v_4 + u_3 v_1 - u_4 v_2)y + (u_1 v_4 + u_2 v_3 - u_3 v_2 + u_4 v_1)xy $$
 
-(incert text here)
+(insert text here)
 
-(incert text here)
+(insert text here)
 
-(incert text here)
+(insert text here)
 
-(incert text here)
+(insert text here)
 
-(incert text here)
+(insert text here)
 
-(incert text here)
+(insert text here)
 
-(incert text here)
+(insert text here)
 
-(incert text here)
+(insert text here)
 
-(incert text here)
+(insert text here)
 
 $400$ lines.
 
@@ -507,9 +515,9 @@ No.
 
 #### there was a power outage today :(
 
-#### (incert work here)
+#### (insert work here)
 
-#### (incert work here)
+#### (insert work here)
 
 #### one twig
 
@@ -565,29 +573,29 @@ $$ \vec{\nabla} \cdot B = \text{a trivector} $$
 
 $$ \text{And on the right hand side:} $$
 
-(incert text here)
+(insert text here)
 
-(incert text here)
+(insert text here)
 
-(incert text here)
+(insert text here)
 
-(incert text here)
+(insert text here)
 
-(incert text here)
+(insert text here)
 
-(incert text here)
+(insert text here)
 
-(incert text here)
+(insert text here)
 
-(incert text here)
+(insert text here)
 
-(incert text here)
+(insert text here)
 
-(incert text here)
+(insert text here)
 
-(incert text here)
+(insert text here)
 
-(incert text here)
+(insert text here)
 
 $600$ lines.
 
