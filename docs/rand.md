@@ -234,3 +234,7 @@ I am trying to build a computer... Within a computer!.. Again!.. In python (I'll
 union/labor day
 
 (Insert protest here)! (Insert protest here)! (Insert protest here)! (Insert protest here)! (Insert protest here)!
+
+.
+
+shoutout to Dr. Katz!
