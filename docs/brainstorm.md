@@ -654,3 +654,63 @@ def vec(n):
 $$ \vec{u} + \vec{v} = \vec{u \cdot v} $$
 
 $$ c \cdot \vec{v} = \vec{v^c} $$
+
+#### lambda simplification
+
+$$ f(x) = g(x) → f = g $$
+
+$$ (f ∘ g)(x) = f(g(x)) $$
+
+$$ C(f)(a)(b) = f(b)(a) $$
+
+$$ T_h (x)(f) = f(x) $$
+
+$$ T_h = C(I) $$
+
+$$ I = C ∘ C $$
+
+$$ V(a)(b)(c) = c(a)(b) = T_h (b)(c(a)) = T_h (b)(T_h (a)(c)) = T_h (b)(T_h (a)(c)) = B(T_h (b))(T_h (a))(c) $$
+
+$$ V(a)(b)(c) = B(T_h (b))(T_h (a))(c) $$
+
+$$ V(a)(b) = B(T_h (b))(T_h (a)) = C(B)(T_h (a))(T_h (b)) = B(C(B)(T_h (a)))(T_h)(b) $$
+
+$$ V(a)(b) = B(C(B)(T_h (a)))(T_h)(b) $$
+
+$$ V(a) = B(C(B)(T_h (a)))(T_h) = C(B)(T_h)(C(B)(T_h (a))) = (C(B)(T_h) ∘ C(B) ∘ T_h)(a) $$
+
+$$ V(a) = (C(B)(T_h) ∘ C(B) ∘ T_h)(a) $$
+
+$$ V = (C(B)(T_h) ∘ C(B) ∘ T_h) $$
+
+$$ V = (C(B)(C(I)) ∘ C(B) ∘ C(I)) $$
+
+$$ V = (C(B)(C(C ∘ C)) ∘ C(B) ∘ C(C ∘ C)) $$
+
+$$ e(a)(b) = a(b(a)) = B(a)(b)(a) = C(B(a))(a)(b) $$
+
+$$ e(a)(b) = C(B(a))(a)(b) $$
+
+$$ e(a) = C(B(a))(a) = (C ∘ B)(a)(a) $$
+
+$$ W(f)(x) = f(x)(x) $$
+
+$$ e(a) = W(C ∘ B)(a) $$
+
+$700$ lines, this page might beat the code repo page and become the new longest page on the website.
+
+$$ e = W(C ∘ B) $$
+
+$$ \text{Different approach!} $$
+
+$$ e(a)(b) = a(b(a)) = a(T_h (a)(b)) = B(a)(T_h (a))(b) $$
+
+$$ e(a)(b) = B(a)(T_h (a))(b) $$
+
+$$ e(a) = B(a)(T_h (a)) = B(B(a))(T_h)(a) = C(B)(T_h)(B(a))(a) = (C(B)(T_h) ∘ B)(a)(a) = W(C(B)(T_h) ∘ B)(a) $$
+
+$$ e(a) = W(C(B)(T_h) ∘ B)(a) $$
+
+$$ e = W(C(B)(T_h) ∘ B) $$
+
+$$ e = W(C(B)(C(C ∘ C)) ∘ B) $$
