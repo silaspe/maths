@@ -715,7 +715,7 @@ $$ e = W(C(B)(T_h) ∘ B) $$
 
 $$ e = W(C(B)(C(C ∘ C)) ∘ B) $$
 
-### (unfinished) cogputer
+#### (unfinished) cogputer
 
 [finished cogputer](https://www.youtube.com/watch?v=e1Kw3yJoNxw)
 
@@ -733,7 +733,7 @@ $$ e = W(C(B)(C(C ∘ C)) ∘ B) $$
 | 80 | 00 | 00 | 00 | 00 | 00 | 00 | 00 | 00 | 00 | 00 |
 | 90 | 00 | 00 | 00 | 00 | 00 | 00 | 00 | 00 | 00 | 00 |
 
-### logic to set theory
+### logic to set theory?
 
 $$ \text{T} $$
 
@@ -746,8 +746,6 @@ $$ \text{F} ∩ \text{T} = \text{F} $$
 $$ \text{T} ∩ \text{F} = \text{F} $$
 
 $$ \text{T} ∩ \text{T} = \text{T} $$
-
-$$ (p = q = r) = (p = q) ∩ (q = r) $$
 
 $$ p ∩ q ∩ r = p ∩ (q ∩ r) $$
 
@@ -773,6 +771,12 @@ $$ \text{T} → \text{F} = \text{F} $$
 
 $$ \text{T} → \text{T} = \text{T} $$
 
+$$ (p = q = r) = (p = q) ∩ (q = r) $$
+
 $$ (p \iff q) = (p = q) = (p → q) ∩ (q → p) $$
 
-$$ \text{Order of operations: } ¬ > ∩ > ∨/→ > =/ \iff \text{.} $$
+$$ \text{Order of operations: } ¬ > ∩ > ∨/→ > = > \iff \text{.} $$
+
+$$ E \text{E} (x; p(x)) = \text{ The extention of } p(x) \text{, the set of all } x \text{ such that } p(x) \text{ (is true) (the function } p(x) \text{ inputs, well, anything, and outputs a boolean (true or false) (e.g. is } x \text{ an odd number?)).} $$
+
+$$ \text{The extention of that particular function is the set of all odd numbers.} $$
