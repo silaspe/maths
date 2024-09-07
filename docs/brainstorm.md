@@ -717,7 +717,7 @@ $$ e = W(C(B)(C(C ∘ C)) ∘ B) $$
 
 ### (unfinished) cogputer
 
-[cogputer](https://www.youtube.com/watch?v=e1Kw3yJoNxw)
+[finished cogputer](https://www.youtube.com/watch?v=e1Kw3yJoNxw)
 
 | $0 \to $ | $1 \to 0$ | $2 \to 1$ | $3 \to 7$ | $4 \to 2$ | $5 \to $ | $6 \to 8$ | $7 \to $ | $8 \to 3$ | $9 \to 14$ |
 |----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|------------|
@@ -732,3 +732,47 @@ $$ e = W(C(B)(C(C ∘ C)) ∘ B) $$
 | 70 | 00 | 00 | 00 | 00 | 00 | 00 | 00 | 00 | 00 | 00 |
 | 80 | 00 | 00 | 00 | 00 | 00 | 00 | 00 | 00 | 00 | 00 |
 | 90 | 00 | 00 | 00 | 00 | 00 | 00 | 00 | 00 | 00 | 00 |
+
+### logic to set theory
+
+$$ \text{T} $$
+
+$$ \text{F} $$
+
+$$ \text{F} ∩ \text{F} = \text{F} $$
+
+$$ \text{F} ∩ \text{T} = \text{F} $$
+
+$$ \text{T} ∩ \text{F} = \text{F} $$
+
+$$ \text{T} ∩ \text{T} = \text{T} $$
+
+$$ (p = q = r) = (p = q) ∩ (q = r) $$
+
+$$ p ∩ q ∩ r = p ∩ (q ∩ r) $$
+
+$$ \text{F} ∨ \text{F} = \text{F} $$
+
+$$ \text{F} ∨ \text{T} = \text{T} $$
+
+$$ \text{T} ∨ \text{F} = \text{T} $$
+
+$$ \text{T} ∨ \text{T} = \text{T} $$
+
+$$ p ∨ q ∨ r = p ∨ (q ∨ r) $$
+
+$$ ¬ \text{F} = \text{T} $$
+
+$$ ¬ \text{T} = \text{F} $$
+
+$$ \text{F} → \text{F} = \text{T} $$
+
+$$ \text{F} → \text{T} = \text{T} $$
+
+$$ \text{T} → \text{F} = \text{F} $$
+
+$$ \text{T} → \text{T} = \text{T} $$
+
+$$ (p \iff q) = (p = q) = (p → q) ∩ (q → p) $$
+
+$$ \text{Order of operations: } ¬ > ∩ > ∨/→ > \iff/= \text{.} $$
