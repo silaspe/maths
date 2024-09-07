@@ -775,4 +775,4 @@ $$ \text{T} → \text{T} = \text{T} $$
 
 $$ (p \iff q) = (p = q) = (p → q) ∩ (q → p) $$
 
-$$ \text{Order of operations: } ¬ > ∩ > ∨/→ > \iff/= \text{.} $$
+$$ \text{Order of operations: } ¬ > ∩ > ∨/→ > =/ \iff \text{.} $$
