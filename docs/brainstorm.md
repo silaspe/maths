@@ -777,6 +777,8 @@ $$ (p \iff q) = (p = q) = (p → q) ∩ (q → p) $$
 
 $$ \text{Order of operations: } ¬ > ∩ > ∨/→ > = > \iff \text{.} $$
 
-$$ \text{E} (x; p(x)) = \text{ The extention of } p(x) \text{, the set of all } x \text{ such that } p(x) \text{ (is true) (the function } p(x) \text{ inputs, well, anything, and outputs a boolean (true or false) (e.g. is } x \text{ an odd number?)).} $$
+$$ \text{E} (x; p(x)) = \text{ The extention of } p(x) \text{, the set of all } x \text{ such that } p(x) \text{ (is true) (the function } p(x) \text{ inputs, well, anything, and outputs a boolean (true or false) (e.g. is } x \text{ an odd number?)), and this is how I'm going to define sets.} $$
 
 $$ \text{The extention of that particular function is the set of all odd numbers.} $$
+
+$$ x \in \text{E} (y; p(y)) \iff p(x) \text{ ( } = \text{ T)} $$
