@@ -782,3 +782,9 @@ $$ \text{E} (x; p(x)) = \text{ The extention of } p(x) \text{, the set of all } 
 $$ \text{The extention of that particular function is the set of all odd numbers.} $$
 
 $$ x \in \text{E} (y; p(y)) \iff p(x) \text{ (} = \text{T)} $$
+
+$$ ∀(x) \cdot p(x) \text{ (} = \text{T)}: q(x) \text{ (} = \text{T)} \iff p(x) → q(x) $$
+
+$$ Ø = \text{E} (x; \text{F}) $$
+
+$$ \exists (x) \cdot p(x) \text{ (} = \text{T)} \iff ¬(\text{E} (x; p(x)) = Ø) $$
