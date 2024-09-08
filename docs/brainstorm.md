@@ -781,4 +781,4 @@ $$ \text{E} (x; p(x)) = \text{ The extention of } p(x) \text{, the set of all } 
 
 $$ \text{The extention of that particular function is the set of all odd numbers.} $$
 
-$$ x \in \text{E} (y; p(y)) \iff p(x) \text{ ( } = \text{ T)} $$
+$$ x \in \text{E} (y; p(y)) \iff p(x) \text{ (} = \text{T)} $$
