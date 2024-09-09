@@ -785,11 +785,9 @@ $$ x \in \text{E} (y; p(y)) \iff p(x) \text{ (} = \text{T)} $$
 
 $$ ∀(x) \cdot p(x) \text{ (} = \text{T)}: q(x) \text{ (} = \text{T)} \iff p(x) → q(x) $$
 
-$$ Ø = \text{E} (x; \text{F}) $$
-
 $$ \exists (x) \cdot p(x) \text{ (} = \text{T)} \iff ¬(p(x) = \text{F}) $$
 
-$$ 0 = Ø $$
+$$ 0 = Ø = \text{E} (x; \text{F}) $$
 
 $$ \text{succ} (x) = \text{E} (y; y = x) $$
 
