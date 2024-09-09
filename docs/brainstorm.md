@@ -804,3 +804,5 @@ $$ \text{succ} (2) = 3 $$
 $$ 0 \in ℕ $$
 
 $$ x \in ℕ → \text{succ} (x) \in ℕ $$
+
+$$ ℕ = \text{E} (x; (x = 0) ∨ \exists (y) \cdot (\text{succ} (y) = x) ∩ y \in ℕ) = \text{E} (x; (x = 0) ∨ ¬(((\text{succ} (y) = x) ∩ y \in ℕ) = \text{F})) $$
