@@ -787,4 +787,20 @@ $$ ∀(x) \cdot p(x) \text{ (} = \text{T)}: q(x) \text{ (} = \text{T)} \iff p(x)
 
 $$ Ø = \text{E} (x; \text{F}) $$
 
-$$ \exists (x) \cdot p(x) \text{ (} = \text{T)} \iff ¬(\text{E} (x; p(x)) = Ø) $$
+$$ \exists (x) \cdot p(x) \text{ (} = \text{T)} \iff ¬(p(x) = \text{F}) $$
+
+$$ 0 = Ø $$
+
+$$ \text{succ} (x) = \text{E} (y; y = x) $$
+
+$$ \text{succ} (0) = 1 $$
+
+$$ \text{succ} (1) = 2 $$
+
+$800$ Lines.
+
+$$ \text{succ} (2) = 3 $$
+
+$$ 0 \in ℕ $$
+
+$$ x \in ℕ → \text{succ} (x) \in ℕ $$
