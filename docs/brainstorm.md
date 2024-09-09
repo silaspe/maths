@@ -1,4 +1,4 @@
-The equations below are the beginning of pages that may or may not get added to my website. All pages after Modular arithmetic and this one started here in the brainstorm page. I got these from copying things from a piece of paper that has potential to become a digital page. And finaly, the titles have a question mark if they are my best guss for the titles of the page, no question mark if I made the page and know the title, a question mark if I never published the page, but still want the world to see it, and extra small if is just one puzzle, but didn't fit anywhere and/or was worth making a dedicated page. Also, happy eclipse day! The eclipse was worth the $10$ (total) hours of driving.
+The equations below are the beginning of pages that may or may not get added to my website. All pages after Modular arithmetic and this one started here in the brainstorm page. I got (almost all of) these from copying things from a piece of paper (actually, just the one below) that had potential to become a digital page. And finaly, the titles have a question mark if they are my best guss for the titles of the page, no question mark if I made the page and know the title, a question mark if I never published the page, but still want the world to see it, and extra small if is just one puzzle, but didn't fit anywhere and/or was worth making a dedicated page. Also, happy eclipse day! The eclipse was worth the $10$ (total) hours of driving.
 
 ### galois theory/field theory/group theory?
 
@@ -12,13 +12,13 @@ for integers $a$ and $b$.
 
 Side note! A number of this form can only be written in one way. Not because $\sqrt{7}$ is an imaginary number, but because $\sqrt{7}$ is irrational. End of side note.
 
-You can probably take my word for it that you can add, subtract, and multiply these numbers, but here's a proof (which was the only thing on that was on the paper that inspired this (digital) page. *Other than division and square roots).
+You can probably take my word for it that you can add, subtract, and multiply these numbers to get another one, but here's a proof (which was the only* thing on that was on the paper that inspired this (digital) page. *Other than division and square roots).
 
 $$ (a + b \sqrt{7}) + (c + d \sqrt{7}) = a + b \sqrt{7} + c + d \sqrt{7} $$
 
 $$ (a + b \sqrt{7}) - (c + d \sqrt{7}) = a + b \sqrt{7} - c - d \sqrt{7} $$
 
-$$ (a + b \sqrt{7}) \cdot (c + d \sqrt{7}) = ac + a d \sqrt{7} + b \sqrt{7} c + b \sqrt{7} d \sqrt{7} $$
+$$ (a + b \sqrt{7}) \cdot (c + d \sqrt{7}) = ac + ad \sqrt{7} + b \sqrt{7} c + b \sqrt{7} d \sqrt{7} $$
 
 .
 
@@ -806,3 +806,11 @@ $$ 0 \in ℕ $$
 $$ x \in ℕ → \text{succ} (x) \in ℕ $$
 
 $$ ℕ = \text{E} (x; (x = 0) ∨ \exists (y) \cdot (\text{succ} (y) = x) ∩ y \in ℕ) = \text{E} (x; (x = 0) ∨ ¬(((\text{succ} (y) = x) ∩ y \in ℕ) = \text{F})) $$
+
+$$ R = \text{E} (x; ¬(x \in x)) $$
+
+$$ \text{Now, the question is, is } R \in R \text{? Because if } ¬(R \in R) \text{, than } ¬(x \in x) \text{ would be true (for } x \text{ equal to } R \text{), but then, } R \text{ would be an element of } R \text{, but if } R \in R \text{, than } ¬(x \in x) \text{ would be false (for } x \text{ equal to } R \text{), but then, } R \text{ wouldn't be an element of } R \text{, paradox! (Actually, one of the most popular paradoxes, russel's paradox.)} $$
+
+$$ x \in \text{E} (y; p(y)) = \text{N (} \ne ℕ \text{)} \iff (¬(x \in \text{E} (y; p(y))) → p(x) = \text{T}) ∩ ((x \in \text{E} (y; p(y))) → p(x) = \text{F}) $$
+
+$$ R \in R = \text{N} $$
