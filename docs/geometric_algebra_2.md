@@ -18,7 +18,7 @@ $$ \text{A.P. (For privacy reasons, I won't say his full name.) He helped someti
 
 $$ \text{Sudgy (that's just his username) who made a great introduction to geometric algebra.} $$
 
-$$ \text{Silaspe (me) did evereything else.} $$
+$$ \text{Silaspe (me) did everything else.} $$
 
 #### JK
 
