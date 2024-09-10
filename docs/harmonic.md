@@ -30,7 +30,7 @@ but $f(n,2) = f(n)$ and $? = f(\infty)$
 
 so, $? = f(\infty,2) = ln(2)$
 
-so $1 - \frac{1}{2} + \frac{1}{3} - \frac{1}{4} + \frac{1}{5}$ FOREVER $ = ln(2)$
+so $1 - \frac{1}{2} + \frac{1}{3} - \frac{1}{4} + \frac{1}{5}$ FOREVER $= ln(2)$
 
 yay!
 
