@@ -775,7 +775,7 @@ $$ (p = q = r) = (p = q) ∩ (q = r) $$
 
 $$ (p \iff q) = (p = q) = (p → q) ∩ (q → p) $$
 
-$$ \text{Order of operations: } ¬ > ∩ > ∨/→ > = > \iff \text{.} $$
+$$ \text{Order of operations: } ¬ > ∩ > ∨ > = > → > \iff \text{.} $$
 
 $$ \text{E} (x; p(x)) = \text{ The extention of } p(x) \text{, the set of all } x \text{ such that } p(x) \text{ (is true) (the function } p(x) \text{ inputs, well, anything, and outputs a boolean (true or false) (e.g. is } x \text{ an odd number?)), and this is how I'm going to define sets.} $$
 
@@ -812,3 +812,17 @@ $$ \text{Now, the question is, is } R \in R \text{? Because if } ¬(R \in R) \te
 $$ x \in \text{E} (y; p(y)) = \text{N (} \ne ℕ \text{)} \iff (¬(x \in \text{E} (y; p(y))) → p(x) = \text{T}) ∩ ((x \in \text{E} (y; p(y))) → p(x) = \text{F}) $$
 
 $$ R \in R = \text{N} $$
+
+$$ p(a, b, c,...) = p(a) ∩ (p(b) ∩ (p(c) ∩ (... $$
+
+$$ x1, x2, x3, x4, x5,... \in \text{E} (x; \text{T}) $$
+
+$$ x1 = x $$
+
+$$ x2 = y $$
+
+$$ x3 = z $$
+
+$$ a, b \in ℕ $$
+
+$$ \overline{d} $$
