@@ -2,7 +2,7 @@ This page dosen't require seeing the set theory page, but you can see it anyways
 
 The idea behind this page is that you can derive all of set theory from logic, so $\text{T}$ is true, and $\text{F}$ is false.
 
-Tools: $\text{T}$, $\text{F}, $=*$, and another thing that will be defined later.
+Tools: $\text{T}$, $\text{F}$, $=$*, and another thing that will be defined later.
 
 *Returns true if the two things are the same, and false if they are not.
 
