@@ -513,16 +513,6 @@ No.
 
 [.](https://www.youtube.com/watch?v=HZGCoVF3YvM)
 
-#### there was a power outage today :(
-
-#### (insert work here)
-
-#### (insert work here)
-
-#### one twig
-
-One twig is a unit of distance, but first, y'know how one meter is one light second (the amount light traveles in one second) divided by $299,792,458$? Well, I was thinking: can't I just make a unit of measurement defined as one light second divided by $300,000,000$? Well, that would be decimal-centric! (I'd rather use binary.) So, I defined one twig (or one absolute unit) as one light second divided by $2^{30}$, so just under one foot, coming in at $10.99$ inches. Using twig-ic (I just came up with that name) is a lot like using metric (I was too lazy to invent an imperial like system (even though I'm 'murican) because I could only invent one unit), I was gonna use a binary based systen, but octal was better as it is closer to $10$ and is the amount of fingers on a cartoon character. If you divide a twig into $8$, you get $1$ unotwig, after that, $1$ duotwig, then $1$ triotwig, then $1$ quadtwig, then $1$ pentatwig, then $1$ hexatwig, then $1$ heptatwig, then $1$ octotwig, then $1$ nonatwig, then $1$ decatwig, then $1$ elatwig, but at that point, it is smaller than $1/10$'th of a nanometer, better stop there (also, the prefix is equal to the power of $8$ that you are dividing it by). If you want to get bigger units, add the prefix "nega", but when you get to one negaelatwig, it's the size of $8$ lightseconds. So that is the measurement system that I created last night.
-
 ### counting in binary
 
 Binary is a way to count where instead of the places: $1$, $10$, $100$, $1,000$, and so on, you use the $1$, $2$, $4$, $8$, $16$, $32$, $64$, $128$, $256$, $512$, $1,024$, $2,048$, $4,096$, $8,192$, $16,384$, $32,768$, $65,536$, $131,072$,  $262,144$, and so on for place names. (Also, if you were using binary to begin with, those would be $1$, $10$, $100$ and so on.) So the numbers $1-10$ would be $|$, $|.$, $||$, $|..$, $|.|$, $||.$, $|||$, $|...$, $|..|$, $|.|.$ (Period.) But how would you pronounce this?
