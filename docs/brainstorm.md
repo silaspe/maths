@@ -563,6 +563,16 @@ $$ \vec{\nabla} \cdot B = \text{a trivector} $$
 
 $$ \text{And on the right hand side:} $$
 
+$$ \frac{\rho}{c \epsilon_0} = \text{A scalar} $$
+
+$$ \frac{\vec{J}}{c \epsilon_0} = \text{a vector.} $$
+
+$$ \vec{\nabla} \cdot \vec{E} = \frac{\rho}{c \epsilon_0} $$
+
+$$ \frac{D \vec{E}}{Dt} + \vec{\nabla} ∧ B = \frac{\vec{J}}{c \epsilon_0} $$
+
+$$ \vec{\nabla} ∧ \vec{E} + \frac{DB}{Dt} = 0 $$
+
 (insert text here)
 
 (insert text here)
@@ -588,16 +598,6 @@ $$ \text{And on the right hand side:} $$
 (insert text here)
 
 $600$ lines.
-
-$$ \frac{\rho}{c \epsilon_0} = \text{A scalar} $$
-
-$$ \frac{\vec{J}}{c \epsilon_0} = \text{a vector.} $$
-
-$$ \vec{\nabla} \cdot \vec{E} = \frac{\rho}{c \epsilon_0} $$
-
-$$ \frac{D \vec{E}}{Dt} + \vec{\nabla} ∧ B = \frac{\vec{J}}{c \epsilon_0} $$
-
-$$ \vec{\nabla} ∧ \vec{E} + \frac{DB}{Dt} = 0 $$
 
 $$ \vec{\nabla} \cdot B = 0 $$
 
@@ -687,8 +687,6 @@ $$ W(f)(x) = f(x)(x) $$
 
 $$ e(a) = W(C ∘ B)(a) $$
 
-$700$ lines, this page might beat the code repo page and become the new longest page on the website.
-
 $$ e = W(C ∘ B) $$
 
 $$ \text{Different approach!} $$
@@ -698,6 +696,8 @@ $$ e(a)(b) = a(b(a)) = a(T_h (a)(b)) = B(a)(T_h (a))(b) $$
 $$ e(a)(b) = B(a)(T_h (a))(b) $$
 
 $$ e(a) = B(a)(T_h (a)) = B(B(a))(T_h)(a) = C(B)(T_h)(B(a))(a) = (C(B)(T_h) ∘ B)(a)(a) = W(C(B)(T_h) ∘ B)(a) $$
+
+$700$ lines, this page might beat the code repo page and become the new longest page on the website.
 
 $$ e(a) = W(C(B)(T_h) ∘ B)(a) $$
 
@@ -785,8 +785,6 @@ $$ \text{succ} (0) = 1 $$
 
 $$ \text{succ} (1) = 2 $$
 
-$800$ Lines.
-
 $$ \text{succ} (2) = 3 $$
 
 $$ 0 \in ℕ $$
@@ -798,6 +796,8 @@ $$ ℕ = \text{E} (x; (x = 0) ∨ \exists (y) \cdot (\text{succ} (y) = x) ∩ y 
 $$ R = \text{E} (x; ¬(x \in x)) $$
 
 $$ \text{Now, the question is, is } R \in R \text{? Because if } ¬(R \in R) \text{, than } ¬(x \in x) \text{ would be true (for } x \text{ equal to } R \text{), but then, } R \text{ would be an element of } R \text{, but if } R \in R \text{, than } ¬(x \in x) \text{ would be false (for } x \text{ equal to } R \text{), but then, } R \text{ wouldn't be an element of } R \text{, paradox! (Actually, one of the most popular paradoxes, russell's paradox.)} $$
+
+$800$ Lines.
 
 $$ x \in \text{E} (y; p(y)) = \text{N (} \ne ℕ \text{)} \iff (¬(x \in \text{E} (y; p(y))) → p(x) = \text{T}) ∩ ((x \in \text{E} (y; p(y))) → p(x) = \text{F}) $$
 
@@ -816,3 +816,11 @@ $$ x3 = z $$
 $$ a, b \in ℕ $$
 
 $$ \overline{d} $$
+
+### projective geometry?
+
+Yes, I know, the last one was added literally $4$ days ago, but I thougt of something else to talk about.
+
+Lets say that a point $(a: b)$ (as opposed to $(a, b)$) is equal to $(ca: cb)$ $(c \ne 0)$, so every* (and that's a big asterisk) point $(a: b)$ can be scaled onto $(\frac{a}{b}: 1)$, a kind of number line.
+
+*unless $b = 0$, then we add this kind of "point at infinity" to our number line (it's a point because the point $(a: 0)$ can be scaled to $(1: 0)$ (aka the point atinfinity), that is, of coarse, unless $a = 0$, but that point isn't really aloud for the same reason as $\frac{0}{0}$) making it the real projective line or $ℝP^1$.
