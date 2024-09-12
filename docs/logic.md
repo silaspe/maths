@@ -48,15 +48,15 @@ $$ (p = q) \iff (p → q) ∩ (q → p) $$
 
 $$ \text{Order of operations: } ¬ > ∩ > ∨ > = > → > \iff \text{.} $$
 
-$$ {x| p(x)} = \text{ The extention of } p(x) \text{ (and the secret } 4 \text{th tool), the set of all } x \text{ such that } p(x) \text{ (is true), and this is how I'm going to define sets. This function } p(x) \text{ inputs, well, anything, and outputs a boolean (true or false) (e.g. is } x \text{ an odd number?).} $$
+$$ [x| p(x)] = \text{ The extention of } p(x) \text{ (and the secret } 4 \text{th tool) (curly braces didn't work for rendering reasons), the set of all } x \text{ such that } p(x) \text{ (is true), and this is how I'm going to define sets. This function } p(x) \text{ inputs, well, anything, and outputs a boolean (true or false) (e.g. is } x \text{ an odd number?).} $$
 
 $$ \text{The extention of that particular function is the set of all odd numbers.} $$
 
 You can also derive the membership or element sign like this:
 
-$$ x \in {y| p(y)} \iff p(x) \text{ (} = \text{T)} $$
+$$ x \in [y| p(y)] \iff p(x) \text{ (} = \text{T)} $$
 
-which goes somewhere in between not and and in the order of operations.
+which goes somewhere in between and and not in the order of operations.
 
 And just for fun, I'll also derive the for any and there exists signs like this:
 
@@ -64,7 +64,9 @@ $$ \text{I'll start with the general form for the for any sign: } ∀(x) \cdot p
 
 $$ \text{And that example in logic: } p(x) → q(x) \text{, at least, I think.} $$
 
-$$ \text{I think that you can see why I won't be using this one.} $$
+$$ \text{Yeah, it dosen't work, different values for } x \text{ would give different outputs.} $$
+
+$$ \text{But, there's a simple trick, take the and over all values for } x \text{, so } (p(x) → q(x)) = \text{T} \text{.} $$
 
 $$ \text{And the general form for the there exists sign: } \exists (x) \cdot p(x) \text{ (} = \text{T)} $$
 
@@ -74,9 +76,9 @@ $$ \text{Maybe I'll use it.} $$
 
 Next stop: numbers!
 
-$$ 0 = Ø = {x| \text{F})} $$
+$$ 0 = Ø = [x| \text{F})] $$
 
-$$ \text{succ} (x) = {y| y = x} $$
+$$ \text{succ} (x) = [y| y = x] $$
 
 $$ \text{succ} (0) = 1 $$
 
@@ -88,21 +90,35 @@ $$ 0 \in ℕ $$
 
 $$ x \in ℕ → \text{succ} (x) \in ℕ $$
 
-$$ ℕ = {x| (x = 0) ∨ \exists (y) \cdot (\text{succ} (y) = x) ∩ y \in ℕ} = {x| (x = 0) ∨ ¬(((\text{succ} (y) = x) ∩ y \in ℕ) = \text{F})} $$
+$$ ℕ = [x| (x = 0) ∨ \exists (y) \cdot (\text{succ} (y) = x) ∩ y \in ℕ] = [x| (x = 0) ∨ ¬(((\text{succ} (y) = x) ∩ y \in ℕ) = \text{F})] $$
 
 Next stop: Russell's paradox!
 
-$$ R = {x| ¬(x \in x)} $$
-
-$$ \text{Now, the question is, is } R \in R \text{? Because if } ¬(R \in R) \text{, than } ¬(x \in x) \text{ would be true (for } x \text{ equal to } R \text{), but then, } R \text{ would be an element of } R \text{, but if } R \in R \text{, than } ¬(x \in x) \text{ would be false (for } x \text{ equal to } R \text{), but then, } R \text{ wouldn't be an element of } R \text{, paradox!)} $$
+$$ R = [x| ¬(x \in x)] $$
 
 
 $100$ Lines.
 
-$$ x \in {y| p(y)} = \text{N (} \ne ℕ \text{)} \iff (¬(x \in {y| p(y)}) → p(x) = \text{T}) ∩ ((x \in {y| p(y)}) → p(x) = \text{F}) $$
+$$ \text{Now, the question is, is } R \in R \text{? Because if } ¬(R \in R) \text{, than } ¬(x \in x) \text{ would be true (for } x \text{ equal to } R \text{), but then, } R \text{ would be an element of } R \text{, but if } R \in R \text{, than } ¬(x \in x) \text{ would be false (for } x \text{ equal to } R \text{), but then, } R \text{ wouldn't be an element of } R \text{, paradox!)} $$
+
+$$ x \in [y| p(y)] = \text{N (} \ne ℕ \text{)} \iff (¬(x \in [y| p(y)]) → p(x) = \text{T}) ∩ ((x \in [y| p(y)]) → p(x) = \text{F}) $$
 
 $$ R \in R = \text{N} $$
 
-Now, I'll define an infinate set of things $x1, x2, x3, x4, x5,...$ that are all in ${x| \text{T}}$
+Now, I'll define an infinate set of things $x1, x2, x3,...$ that are all in $[x| \text{T}]$.
+
+And define $x1, x2, x3 \in S$ as $x1 \in S ∩ x2 \in S ∩ x3 \in S$.
+
+And, I probably should have said this earlier, if I say $p(x) = \text{T}$ or $p(x) = \text{F}$, then, unless it's $4$ lines ago, that means it's true for all $x$ or false for all $x$.
+
+And that, if a statement involves $x1$ or $x2$ or $x3$ and so on, then it's true for any value $x1, x2, x3,...$.
 
 Next stop: arithmetic!
+
+$$ \text{I already defined the successor, what about addition?} $$
+
+$$ x1, x2 \in ℕ → x1 + succ(x2) = succ(x1 + x2) $$
+
+$$ x1 \in ℕ → x1 + 0 = x1 $$
+
+$$ \text{Now, subtraction!} $$
