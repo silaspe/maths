@@ -60,19 +60,31 @@ which goes somewhere in between and and not in the order of operations.
 
 And just for fun, I'll also derive the for any and there exists signs like this:
 
+$$ p(x) ≡ \text{T} \text{ Means } p(x) = \text{T} \text{ for all values of } x \text{, same thing for } p(x) ≡ \text{F} \text{ and } p(x) ≡ q(x) \text{.} $$
+
+$$ \text{And it goes in between or and equals in the order of operations.} $$
+
 $$ \text{I'll start with the general form for the for any sign: } ∀(x) \cdot p(x) \text{ (} = \text{T)}: q(x) \text{ (} = \text{T)} $$
 
 $$ \text{And that example in logic: } p(x) → q(x) \text{, at least, I think.} $$
 
 $$ \text{Yeah, it dosen't work, different values for } x \text{ would give different outputs.} $$
 
-$$ \text{But, there's a simple trick, take the and over all values for } x \text{, so } (p(x) → q(x)) = \text{T} \text{.} $$
+$$ \text{But, there's a simple trick, take the and over all values for } x \text{, so } (p(x) → q(x)) ≡ \text{T} \text{.} $$
 
 $$ \text{And the general form for the there exists sign: } \exists (x) \cdot p(x) \text{ (} = \text{T)} $$
 
-$$ \text{And that example in logic: } ¬(p(x) = \text{F}) $$
+$$ \text{And that example in logic: } ¬(p(x) ≡ \text{F}) $$
 
 $$ \text{Maybe I'll use it.} $$
+
+$$ \text{There's also the highlander function, it's general form is} $$
+
+$$ ! \exists (x) \cdot p(x) \text{ (} = \text{T)}  $$
+
+$$ \text{And that example in logic: } ¬(p(x) ≡ \text{F}) ∩ (p(x) → (¬(y = x) → p(y) = \text{F})) $$
+
+$$ \text{Alternative: } ¬(p(x) ≡ \text{F}) ∩ (p(x) ∩ ¬(y = x) → p(y) = \text{F}) $$
 
 Next stop: numbers!
 
@@ -84,20 +96,20 @@ $$ \text{succ} (0) = 1 $$
 
 $$ \text{succ} (1) = 2 $$
 
+
+$100$ Lines.
+
 $$ \text{succ} (2) = 3 $$
 
 $$ 0 \in ℕ $$
 
 $$ x \in ℕ → \text{succ} (x) \in ℕ $$
 
-$$ ℕ = [x| (x = 0) ∨ \exists (y) \cdot (\text{succ} (y) = x) ∩ y \in ℕ] = [x| (x = 0) ∨ ¬(((\text{succ} (y) = x) ∩ y \in ℕ) = \text{F})] $$
+$$ ℕ = [x| (x = 0) ∨ \exists (y) \cdot (\text{succ} (y) = x) ∩ y \in ℕ] = [x| (x = 0) ∨ ¬(((\text{succ} (y) = x) ∩ y \in ℕ) ≡ \text{F})] $$
 
 Next stop: Russell's paradox!
 
 $$ R = [x| ¬(x \in x)] $$
-
-
-$100$ Lines.
 
 $$ \text{Now, the question is, is } R \in R \text{? Because if } ¬(R \in R) \text{, than } ¬(x \in x) \text{ would be true (for } x \text{ equal to } R \text{), but then, } R \text{ would be an element of } R \text{, but if } R \in R \text{, than } ¬(x \in x) \text{ would be false (for } x \text{ equal to } R \text{), but then, } R \text{ wouldn't be an element of } R \text{, paradox!)} $$
 
