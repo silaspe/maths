@@ -878,7 +878,7 @@ while True:
       break
 ```
 
-### all the groups
+### all the groups (run at your own risk)
 
 ```py
 import itertools
@@ -894,34 +894,20 @@ def permutation(n):
 ```
 
 ```py
-class BitArray(np.ndarray):
-  def __new__(cls, shape):
-    # Create an array of the given shape, initialized to False (0)
-    obj = np.zeros(shape, dtype=np.bool_).view(cls)
-    return obj
-
-  def __array_finalize__(self, obj):
-    if obj is None: return
-
-  def __repr__(self):
-    # Convert the boolean array to an integer array for display
-    int_array = self.astype(int)
-    # Use numpy's array2string function to format the output
-    try:
-      return '\n'.join(f"{i:3d}  "  + ' '.join([str(v) for v in val]) for i, val in enumerate(int_array))
-    except:
-      return ' '.join([str(v) for v in int_array])
-    #return np.array2string(int_array, separator=' ')
-
-  def __str__(self):
-    return self.__repr__()
+from itertools import chain, combinations
 ```
 
 ```py
-def binarys(n):
-  shape = 2**n, n
-  ba = BitArray(shape)
-  for i, value in enumerate(np.arange(2**n)):
-      ba[i,:] = np.array(list(f"{value:0{n}b}")).astype(bool)
-  return ba
+def powerlist(L):
+  """generate power set from iterable input"""
+  (list(subset) for subset in chain.from_iterable(combinations(L, r) for r in range(len(L) + 1)))
+```
+
+```py
+
+```
+
+```py
+def mult(p, L):
+  return L[p]
 ```
