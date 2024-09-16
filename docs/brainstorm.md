@@ -819,6 +819,8 @@ $$ \overline{d} $$
 
 ### projective geometry?
 
+Credit (even if it is very small): [The two points that lie on every circle (???) #SoME3](https://www.youtube.com/watch?v=iUUm0sKLoiE), and [Putting Algebraic Curves in Perspective](https://www.youtube.com/watch?v=XXzhqStLG-4).
+
 Yes, I know, the last one was added literally $4$ days ago, but I thougt of something else to talk about.
 
 Lets say that a point $(a: b)$ (as opposed to $(a, b)$) is equal to $(ca: cb)$ $(c \ne 0)$, so every* (and that's a big asterisk) point $(a: b)$ can be scaled onto $(\frac{a}{b}: 1)$, a kind of number line.
@@ -829,4 +831,4 @@ The reason why it's at infinity is because, if you consider the point $(1: 1)$, 
 
 Stepping a dimension up, you get the real projective plane or $ℝ \text{P}^2$, $(a: b: c) = (da: db: dc)$, most numbers going to $(\frac{a}{c}: \frac{b}{c}: 1)$, some becoming $(\frac{a}{b}: 1: 0)$, less becoming $(1: 0: 0)$, the point at infinity becomes a line at infinity (more of a circle, but $1$ degree of freedom), and the number line becomes a space of all points.
 
-There is a problem though (that is big enough to be on a line by itself), you could imagine the same process that I used to prove the unsigned infinity thing but in $ℝ \text{P}^2$ to get the unsuprising result of $(a: b: 0) = (-a: -b: 0)$. This does mean that, when drawing the regular or affine plane, and drawing a circle around it (to represent the line at infinity of coarse), if you wanted to draw, say, the point $(1: 1: 0)$, it would need to be at both the very top right, or the very bottom left of the circle.
+There is a problem though (that is big enough to be explained on a line by itself), you could imagine the same process that I used to prove the unsigned infinity thing but in $ℝ \text{P}^2$ to get the unsuprising result of $(a: b: 0) = (-a: -b: 0)$. This does mean that, when drawing the regular or affine plane, and drawing a circle around it (to represent the line at infinity of coarse), if you wanted to draw, say, the point $(1: 1: 0)$, it would need to be at both the very top right, and the very bottom left of the circle.
