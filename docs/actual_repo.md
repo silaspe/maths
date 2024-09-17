@@ -878,7 +878,7 @@ while True:
       break
 ```
 
-### all the groups (run at your own risk)
+### all the groups (run at your own (computer's)) risk)
 
 ```py
 import itertools
@@ -904,10 +904,16 @@ def powerlist(L):
 ```
 
 ```py
+def mult(p, L):
+  return L[p]
+```
+
+Do not run this next code for an input more than $4$.
+
+```py
 
 ```
 
 ```py
-def mult(p, L):
-  return L[p]
+
 ```
