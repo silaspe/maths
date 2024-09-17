@@ -878,7 +878,7 @@ while True:
       break
 ```
 
-### all the groups (run at your own (computer's)) risk)
+### all the groups (run at your own (computer's) risk)
 
 ```py
 import itertools
