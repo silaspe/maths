@@ -819,7 +819,7 @@ $$ \overline{d} $$
 
 ### projective geometry?
 
-Credit (even if it is very small): [The two points that lie on every circle (???) #SoME3](https://www.youtube.com/watch?v=iUUm0sKLoiE), and [Putting Algebraic Curves in Perspective](https://www.youtube.com/watch?v=XXzhqStLG-4).
+Credit (even if it is very small): [The two points that lie on every circle (???) #SoME3](https://www.youtube.com/watch?v=iUUm0sKLoiE), [Putting Algebraic Curves in Perspective](https://www.youtube.com/watch?v=XXzhqStLG-4), and [Extraordinary Conics: The Most Difficult Math Problem I Ever Solved](https://www.youtube.com/watch?v=X83vac2uTUs).
 
 Yes, I know, the last one was added literally $4$ days ago, but I thougt of something else to talk about.
 
