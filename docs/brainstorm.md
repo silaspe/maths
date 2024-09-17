@@ -834,3 +834,9 @@ Stepping a dimension up, you get the real projective plane or $ℝ \text{P}^2$, 
 There is a problem though (that is big enough to be explained on a line by itself), you could imagine the same process that I used to prove the unsigned infinity thing but in $ℝ \text{P}^2$ to get the unsuprising result of $(a: b: 0) = (-a: -b: 0)$. This does mean that, when drawing the regular or affine plane, and drawing a circle around it (to represent the line at infinity of coarse), if you wanted to draw, say, the point $(1: 1: 0)$, it would need to be at both the very top right, and the very bottom left of the circle.
 
 To see why this double counting thing makes sense, I'll project onto a unit sphere, so, if $r = \sqrt{a^2 + b^2 + c^2}$, the point $(a: b: c)$ maps to $(\frac{a}{r}: \frac{b}{r}: \frac{c}{r})$. You might see the problem though, it also maps to $(-\frac{a}{r}: -\frac{b}{r}: -\frac{c}{r})$, because it's also on the unit sphere. So, if you just consider the top half of the sphere (includineg the equator so that points at infinity are acounted for), it counts almost every point once, and points at infinity twice, kinda like the one where we projected onto the plane paralel to and one unit above the $xy$ plane. So, to fix this problem, and give every point the same treatment, you (counterintuitavely) count every point twice by using the entire sphere, kinda like giving every line in $2d$ an angle instead of a slope to fix the vertical lines problem, at the cost of there being two angles for every line.
+
+[Here's a desmos graph](https://www.desmos.com/3d/zzoajkphnn).
+
+Yes, I know, the plane is placed one unit below the sphere instead of one above, but it is only like that for the sake of demonstration.
+
+### dualtity?
