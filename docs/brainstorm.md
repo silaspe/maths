@@ -837,6 +837,10 @@ To see why this double counting thing makes sense, I'll project onto a unit sphe
 
 [Here's a desmos graph](https://www.desmos.com/3d/zzoajkphnn).
 
-Yes, I know, the plane is placed one unit below the sphere instead of one above, but it is only like that for the sake of demonstration.
+Yes, I know, the plane is placed one unit below the sphere instead of one above, but it's only like that for the sake of demonstration.
 
 ### dualtity?
+
+It's hard to explain how points dual to lines, but an example would be the origin and the line at infinity, or on the sphere, the equator and the north and south poles (remember, two solutions). the more general definition would be something like this: the two points on a sphere, a point on the dual line, and the point $90°$ away but still on the dual line are all mutually perpindicular. By the way, points on the plane project to antipodal points on the sphere, and lines on the plane project to great circles on the sphere.
+
+Also fun fact: the duals of every point on a line would all pass through the dual point, and the duals of every line that passes through a point would all lie on the dual line.
