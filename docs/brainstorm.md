@@ -773,6 +773,9 @@ $$ \text{The extention of that particular function is the set of all odd numbers
 
 $$ x \in \text{E} (y; p(y)) \iff p(x) \text{ (} = \text{T)} $$
 
+
+$777$ Lines.
+
 $$ ∀(x) \cdot p(x) \text{ (} = \text{T)}: q(x) \text{ (} = \text{T)} \iff p(x) → q(x) $$
 
 $$ \exists (x) \cdot p(x) \text{ (} = \text{T)} \iff ¬(p(x) = \text{F}) $$
@@ -793,11 +796,12 @@ $$ x \in ℕ → \text{succ} (x) \in ℕ $$
 
 $$ ℕ = \text{E} (x; (x = 0) ∨ \exists (y) \cdot (\text{succ} (y) = x) ∩ y \in ℕ) = \text{E} (x; (x = 0) ∨ ¬(((\text{succ} (y) = x) ∩ y \in ℕ) = \text{F})) $$
 
+
+$800$ Lines.
+
 $$ R = \text{E} (x; ¬(x \in x)) $$
 
 $$ \text{Now, the question is, is } R \in R \text{? Because if } ¬(R \in R) \text{, than } ¬(x \in x) \text{ would be true (for } x \text{ equal to } R \text{), but then, } R \text{ would be an element of } R \text{, but if } R \in R \text{, than } ¬(x \in x) \text{ would be false (for } x \text{ equal to } R \text{), but then, } R \text{ wouldn't be an element of } R \text{, paradox! (Actually, one of the most popular paradoxes, russell's paradox.)} $$
-
-$800$ Lines.
 
 $$ x \in \text{E} (y; p(y)) = \text{N (} \ne ℕ \text{)} \iff (¬(x \in \text{E} (y; p(y))) → p(x) = \text{T}) ∩ ((x \in \text{E} (y; p(y))) → p(x) = \text{F}) $$
 
@@ -844,3 +848,40 @@ Yes, I know, the plane is placed one unit below the sphere instead of one above,
 It's hard to explain how points dual to lines, but an example would be the origin and the line at infinity, or on the sphere, the equator and the north and south poles (remember, two solutions). the more general definition would be something like this: the two points on a sphere, a point on the dual line, and the point $90°$ away but still on the dual line are all mutually perpindicular. By the way, points on the plane project to antipodal points on the sphere, and lines on the plane project to great circles on the sphere.
 
 Also fun fact: the duals of every point on a line would all pass through the dual point, and the duals of every line that passes through a point would all lie on the dual line.
+
+### linear algebra, complex numbers, and $3d$ complex numbers
+
+$$ \text{Let's say that a vector } \vec{v} \text{ is an ordered set of numbers } \begin{bmatrix} v_x \\
+v_y \\ \end{bmatrix} \text{, or } v_x \hat{x} + v_y \hat{y} \text{, or a point } (v_x, v_y) \text{, or an arrow with it's tip at } (v_x, v_y) \text{, and tail at } (0, 0) \text{. They can be scaled (that is, multiplied by a scalar or real number) (} c \vec{v} = c(v_x \hat{x} + v_y \hat{y}) = c v_x \hat{x} + c v_y \hat{y}) = \begin{bmatrix} c v_x \\
+c v_y \\ \end{bmatrix} \text{), added (} \vec{u} + \vec{v} = u_x \hat{x} + u_y \hat{y} + v_x \hat{x} + v_y \hat{y} = (u_x + v_x) \hat{x} + (u_y + v_y) \hat{y} = \begin{bmatrix} u_x + v_x \\
+u_y + v_y \\ \end{bmatrix} \text{), and with just those two, any vector can be made from } \begin{bmatrix} 1 \\
+0 \\ \end{bmatrix} \text{ and } \begin{bmatrix} 0 \\
+1 \\ \end{bmatrix} \text{ (that is, } 1 \hat{x} + 0 \hat{y} \text{ and } 0 \hat{x} + 1 \hat{y} \text{ (that is, } \hat{x} \text{ and } \hat{y} \text{)), and that's pprreeaattyy much it.} $$
+
+$$ \text{Let's say that a matrix } A \text{ is an ordered set of numbers arranged in a square: } \begin{bmatrix} a_{11} & a_{21} \\
+a_{12} & a_{22} \\ \end{bmatrix} \text{ that denotes a linear transformation (every linear transformation has a corrasponding matrix, and every matrix has a corrasponding linear transformation), a type of function that, among other things, acts on vectors. ( A matrix } A \text{ applied to a vector } \vec{v} \text{ is denoted as }  A \vec{v} \text{ btw.) Matrix operations are linear (the linear part of linear algebra), that is, } A(c \vec{v}) = c(A \vec{v}) \text{, and } A(\vec{u} + \vec{v}) = A \vec{u} + A \vec{v} \text{. So all you need to describe a linear transformation is how it affects the basis vectors (} \hat{x} \text{ and } \hat{y} \text{), thankfully, it's right there in the columns, } \begin{bmatrix} a_{11} & a_{21} \\
+a_{12} & a_{22} \\ \end{bmatrix} \hat{x} = \begin{bmatrix} a_{11} \\
+a_{12} \\ \end{bmatrix} \text{, and } \begin{bmatrix} a_{11} & a_{21} \\
+a_{12} & a_{22} \\ \end{bmatrix} \hat{y} = \begin{bmatrix} a_{21} \\
+a_{22} \\ \end{bmatrix} \text{.} $$
+
+$$ \text{Now, I can derive a formula for matrix vector multiplication!} $$
+
+$$ A \vec{v} = \begin{bmatrix} a & b \\
+c & d \\ \end{bmatrix} (v_x \hat{x} + v_y \hat{y}) = \begin{bmatrix} a & b \\
+c & d \\ \end{bmatrix} (v_x \hat{x}) + \begin{bmatrix} a & b \\
+c & d \\ \end{bmatrix} (v_y \hat{y}) = v_x \begin{bmatrix} a & b \\
+c & d \\ \end{bmatrix} \hat{x} + v_y \begin{bmatrix} a & b \\
+c & d \\ \end{bmatrix} \hat{y} = v_x \begin{bmatrix} a \\
+c \\ \end{bmatrix} + v_y \begin{bmatrix} b \\
+d \\ \end{bmatrix} \hat{y} $$
+
+$$ \begin{bmatrix} a & b \\
+c & d \\ \end{bmatrix} \begin{bmatrix} v_x \\
+v_y \\ \end{bmatrix} = \begin{bmatrix} v_x a \\
+v_x c \\ \end{bmatrix} + \begin{bmatrix} v_y b \\
+v_y d \\ \end{bmatrix} $$
+
+$$ \text{Next, matrix multiplication!} $$
+
+$$ \text{I'll define } AB \text{ like this: } (AB) \vec{v} = A(B \vec{v}) \text{, and I'll derive the formula like this:} $$
