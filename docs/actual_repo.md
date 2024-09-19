@@ -908,10 +908,25 @@ def mult(p, L):
   return L[p]
 ```
 
-Do not run this next code for an input more than $4$.
+Do not run this next code that my dad wrote for an input more than $4$.
 
 ```py
-
+for _ in powerlist(permutation(4)):
+  if len(_) == 0:
+    continue
+  b = True
+  for i in _:
+    for j in _:
+      k = list(mult(np.array(i), np.array(j)))
+      if not k in _:
+        b = False
+#         print(f'found {k} not in {_}')
+        break
+    if not b:
+      break
+  if b:
+    print(f'{_}')
+    print()
 ```
 
 ```py
