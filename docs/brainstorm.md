@@ -858,6 +858,8 @@ u_y + v_y \\ \end{bmatrix} \text{), and with just those two, any vector can be m
 0 \\ \end{bmatrix} \text{ and } \begin{bmatrix} 0 \\
 1 \\ \end{bmatrix} \text{ (that is, } 1 \hat{x} + 0 \hat{y} \text{ and } 0 \hat{x} + 1 \hat{y} \text{ (that is, } \hat{x} \text{ and } \hat{y} \text{)), and that's pprreeaattyy much it.} $$
 
+You can also multiply vectors, but tht's a [story for another day](https://silaspe.github.io/maths/geometric_algebra.html).
+
 $$ \text{Let's say that a matrix } A \text{ is an ordered set of numbers arranged in a square: } \begin{bmatrix} a_{11} & a_{21} \\
 a_{12} & a_{22} \\ \end{bmatrix} \text{ that denotes a linear transformation (every linear transformation has a corrasponding matrix, and every matrix has a corrasponding linear transformation), a type of function that, among other things, acts on vectors. ( A matrix } A \text{ applied to a vector } \vec{v} \text{ is denoted as }  A \vec{v} \text{ btw.) Matrix operations are linear (the linear part of linear algebra), that is, } A(c \vec{v}) = c(A \vec{v}) \text{, and } A(\vec{u} + \vec{v}) = A \vec{u} + A \vec{v} \text{. So all you need to describe a linear transformation is how it affects the basis vectors (} \hat{x} \text{ and } \hat{y} \text{), thankfully, it's right there in the columns, } \begin{bmatrix} a_{11} & a_{21} \\
 a_{12} & a_{22} \\ \end{bmatrix} \hat{x} = \begin{bmatrix} a_{11} \\
@@ -874,14 +876,43 @@ c & d \\ \end{bmatrix} (v_y \hat{y}) = v_x \begin{bmatrix} a & b \\
 c & d \\ \end{bmatrix} \hat{x} + v_y \begin{bmatrix} a & b \\
 c & d \\ \end{bmatrix} \hat{y} = v_x \begin{bmatrix} a \\
 c \\ \end{bmatrix} + v_y \begin{bmatrix} b \\
-d \\ \end{bmatrix} \hat{y} $$
+d \\ \end{bmatrix} \hat{y} = \begin{bmatrix} v_x a \\
+v_x c \\ \end{bmatrix} + \begin{bmatrix} v_y b \\
+v_y d \\ \end{bmatrix} $$
 
 $$ \begin{bmatrix} a & b \\
 c & d \\ \end{bmatrix} \begin{bmatrix} v_x \\
-v_y \\ \end{bmatrix} = \begin{bmatrix} v_x a \\
-v_x c \\ \end{bmatrix} + \begin{bmatrix} v_y b \\
-v_y d \\ \end{bmatrix} $$
+v_y \\ \end{bmatrix} = \begin{bmatrix} v_x a + v_y b \\
+v_x c + v_y d \\ \end{bmatrix} $$
 
 $$ \text{Next, matrix multiplication!} $$
 
 $$ \text{I'll define } AB \text{ like this: } (AB) \vec{v} = A(B \vec{v}) \text{, and I'll derive the formula like this:} $$
+
+$$ \text{Actually, too hard.} $$
+
+$$ \text{And if you were wondering, this also works in } 3d \text{ or higher, with } \hat{z} \text{, } \hat{w} \text{, and so on.} $$
+
+$$ \text{Next, complex numbers!} $$
+
+Complex numbers are, if I'm gonna quote Morphocular in [this video](https://www.youtube.com/watch?v=4KlvI_uK9zs&t=470s), the language of $2d$ rotation. I'll desribe them in an unusual way:
+
+$900$ Lines.
+
+$$ \text{Let's say that I want to rotate a vector } \vec{v} \text{ or } \begin{bmatrix} v_x \\
+v_y \\ \end{bmatrix} \text{ by an angle } \theta \text{ in the plane, well, there's only one plane, and from } \hat{x} \text{ to } \hat{y} \text{, the result is } \begin{bmatrix} v_x cos(\theta) - v_y sin(\theta) \\
+v_x sin(\theta) + v_y cos(\theta) \\ \end{bmatrix} \text{, which happens to equal } \begin{bmatrix} cos(\theta) & -sin(\theta) \\
+sin(\theta) & cos(\theta) \\ \end{bmatrix} \vec{v} \text{.} $$
+
+$$ \text{I'll take a simple rotation like } \theta = 90° \text{, and give it a name: } i \text{ (yes, complex numbers } i \text{), so } i = \begin{bmatrix} cos(90°) & - sin(90°) \\
+sin(90°) & cos(90°) \\ \end{bmatrix} = \begin{bmatrix} 0 & -1 \\
+1 & 0 \\ \end{bmatrix} \text{, let's see what happens if we square } i $$
+
+$$ i^2 \vec{v} = (ii) \vec{v} = i(i \vec{v}) = i(i \begin{bmatrix} v_x \\
+v_y \\ \end{bmatrix}) = i \begin{bmatrix} -v_y \\
+v_x \\ \end{bmatrix} = \begin{bmatrix} -v_x \\
+-v_y \\ \end{bmatrix} $$
+
+$$ i^2 \vec{v} = -\vec{v} $$
+
+$$ i^2 = -1 ?!?!?! $$
