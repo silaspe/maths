@@ -863,7 +863,7 @@ u_y + v_y \\ \end{bmatrix} \text{), and with just those two, any vector can be m
 
 You can also multiply vectors, but that's a [story for another day](https://silaspe.github.io/maths/geometric_algebra.html).
 
-$$ \text{Let's say that a matrix } A \text{ is an ordered set of numbers arranged in a square: } \begin{bmatrix} a_{11} & a_{21} \\
+$$ \text{Let's say that a matrix } A \text{ is also an ordered set of numbers arranged in a square: } \begin{bmatrix} a_{11} & a_{21} \\
 a_{12} & a_{22} \\ \end{bmatrix} \text{ that denotes a linear transformation (every linear transformation has a corrasponding matrix, and every matrix has a corrasponding linear transformation), a type of function that, among other things, acts on vectors. ( A matrix } A \text{ applied to a vector } \vec{v} \text{ is denoted as }  A \vec{v} \text{ btw.) Matrix operations are linear (the linear part of linear algebra), that is, } A(c \vec{v}) = c(A \vec{v}) \text{, and } A(\vec{u} + \vec{v}) = A \vec{u} + A \vec{v} \text{. So all you need to describe a linear transformation is how it affects the basis vectors (} \hat{x} \text{ and } \hat{y} \text{), thankfully, it's right there in the columns, } \begin{bmatrix} a_{11} & a_{21} \\
 a_{12} & a_{22} \\ \end{bmatrix} \hat{x} = \begin{bmatrix} a_{11} \\
 a_{12} \\ \end{bmatrix} \text{, and } \begin{bmatrix} a_{11} & a_{21} \\
@@ -896,13 +896,14 @@ $$ \text{I'll define } AB \text{ like this: } (AB) \vec{v} = A(B \vec{v}) \text{
 
 $$ \text{Actually, too hard.} $$
 
+
+$900$ Lines.
+
 $$ \text{And if you were wondering, this also works in } 3d \text{ or higher, with } \hat{z} \text{, } \hat{w} \text{, and so on.} $$
 
 $$ \text{Next, complex numbers!} $$
 
 Complex numbers are, if I'm gonna quote Morphocular in [this video](https://www.youtube.com/watch?v=4KlvI_uK9zs&t=470s), the language of $2d$ rotation. I'll desribe them in an unusual way:
-
-$900$ Lines.
 
 $$ \text{Let's say that I want to rotate a vector } \vec{v} \text{ or } \begin{bmatrix} v_x \\
 v_y \\ \end{bmatrix} \text{ by an angle } \theta \text{ in the plane, well, there's only one plane, and from } \hat{x} \text{ to } \hat{y} \text{, the result is } \begin{bmatrix} v_x cos(\theta) - v_y sin(\theta) \\
@@ -923,3 +924,22 @@ $$ i^2 \vec{v} = -\vec{v} $$
 $$ i^2 = -1 ?!?!?! $$
 
 $$ \text{Ok, you might have seen that one comming.} $$
+
+$$ \text{Time for euler's identity!} $$
+
+$$ e^{i \theta} = cos(\theta) + isin(\theta) $$
+
+$$ \text{I know what you're thinking: Why? And how? Well, first, if you have two matrices } A \text{ and } B \text{, } A + B \text{ is equal to the termwise sum of } A \text{ and } B \text{. And, you'll have to trust me on this, but } (A + B) \vec{v} = A \vec{v} + B \vec{v} \text{. And second, the matrix } \begin{bmatrix} 1 & 0 \\
+0 & 1 \\ \end{bmatrix} \text{ (aka } I \text{) is equal to } 1 \text{ (} 1 \text{ times anything is that thing, and } I \text{ times anything is that thing, hence, } I = 1 \text{). Now time to figure out what } e^{i \theta} \text{ is.} $$
+
+$$ cos(\theta) + isin(\theta) = \begin{bmatrix} 1 & 0 \\
+0 & 1 \\ \end{bmatrix} cos(\theta) + \begin{bmatrix} 0 & -1 \\
+1 & 0 \\ \end{bmatrix} sin(\theta) = \begin{bmatrix} cos(\theta) & 0 \\
+0 & cos(\theta) \\ \end{bmatrix} + \begin{bmatrix} 0 & -sin(\theta) \\
+sin(\theta) & 0 \\ \end{bmatrix} = \begin{bmatrix} cos(\theta) & -sin(\theta) \\
+sin(\theta) & cos(\theta) \\ \end{bmatrix} $$
+
+$$ e^{i \theta} = \begin{bmatrix} cos(\theta) & -sin(\theta) \\
+sin(\theta) & cos(\theta) \\ \end{bmatrix} $$
+
+$$ \text{So, if you want to rotate a vector } \vec{v} \text{ with an angle } \theta \text{ from } \hat{x} \text{ to } \hat{y} \text{, it's just } e^{i \theta} \vec{v} \text{!} $$
