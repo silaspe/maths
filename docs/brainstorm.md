@@ -849,16 +849,19 @@ It's hard to explain how points dual to lines, but an example would be the origi
 
 Also fun fact: the duals of every point on a line would all pass through the dual point, and the duals of every line that passes through a point would all lie on the dual line.
 
-### linear algebra, complex numbers, and $3d$ complex numbers
+### linear algebra, complex numbers, and higher dimensional complex numbers
 
 $$ \text{Let's say that a vector } \vec{v} \text{ is an ordered set of numbers } \begin{bmatrix} v_x \\
-v_y \\ \end{bmatrix} \text{, or } v_x \hat{x} + v_y \hat{y} \text{, or a point } (v_x, v_y) \text{, or an arrow with it's tip at } (v_x, v_y) \text{, and tail at } (0, 0) \text{. They can be scaled (that is, multiplied by a scalar or real number) (} c \vec{v} = c(v_x \hat{x} + v_y \hat{y}) = c v_x \hat{x} + c v_y \hat{y}) = \begin{bmatrix} c v_x \\
-c v_y \\ \end{bmatrix} \text{), added (} \vec{u} + \vec{v} = u_x \hat{x} + u_y \hat{y} + v_x \hat{x} + v_y \hat{y} = (u_x + v_x) \hat{x} + (u_y + v_y) \hat{y} = \begin{bmatrix} u_x + v_x \\
+v_y \\ \end{bmatrix} \text{, or } v_x \hat{x} + v_y \hat{y} \text{, or a point } (v_x, v_y) \text{, or an arrow with it's tip at } (v_x, v_y) \text{, and tail at } (0, 0) \text{. They can be scaled (that is, multiplied by a scalar or real number) (} c \begin{bmatrix} v_x \\
+v_y \\ \end{bmatrix} = c(v_x \hat{x} + v_y \hat{y} = c v_x \hat{x} + c v_y \hat{y}) = \begin{bmatrix} c v_x \\
+c v_y \\ \end{bmatrix} \text{), added (} \begin{bmatrix} u_x \\
+u_y \\ \end{bmatrix} + \begin{bmatrix} v_x \\
+v_y \\ \end{bmatrix} = u_x \hat{x} + u_y \hat{y} + v_x \hat{x} + v_y \hat{y} = (u_x + v_x) \hat{x} + (u_y + v_y) \hat{y} = \begin{bmatrix} u_x + v_x \\
 u_y + v_y \\ \end{bmatrix} \text{), and with just those two, any vector can be made from } \begin{bmatrix} 1 \\
 0 \\ \end{bmatrix} \text{ and } \begin{bmatrix} 0 \\
 1 \\ \end{bmatrix} \text{ (that is, } 1 \hat{x} + 0 \hat{y} \text{ and } 0 \hat{x} + 1 \hat{y} \text{ (that is, } \hat{x} \text{ and } \hat{y} \text{)), and that's pprreeaattyy much it.} $$
 
-You can also multiply vectors, but tht's a [story for another day](https://silaspe.github.io/maths/geometric_algebra.html).
+You can also multiply vectors, but that's a [story for another day](https://silaspe.github.io/maths/geometric_algebra.html).
 
 $$ \text{Let's say that a matrix } A \text{ is an ordered set of numbers arranged in a square: } \begin{bmatrix} a_{11} & a_{21} \\
 a_{12} & a_{22} \\ \end{bmatrix} \text{ that denotes a linear transformation (every linear transformation has a corrasponding matrix, and every matrix has a corrasponding linear transformation), a type of function that, among other things, acts on vectors. ( A matrix } A \text{ applied to a vector } \vec{v} \text{ is denoted as }  A \vec{v} \text{ btw.) Matrix operations are linear (the linear part of linear algebra), that is, } A(c \vec{v}) = c(A \vec{v}) \text{, and } A(\vec{u} + \vec{v}) = A \vec{u} + A \vec{v} \text{. So all you need to describe a linear transformation is how it affects the basis vectors (} \hat{x} \text{ and } \hat{y} \text{), thankfully, it's right there in the columns, } \begin{bmatrix} a_{11} & a_{21} \\
@@ -869,7 +872,9 @@ a_{22} \\ \end{bmatrix} \text{.} $$
 
 $$ \text{Now, I can derive a formula for matrix vector multiplication!} $$
 
-$$ A \vec{v} = \begin{bmatrix} a & b \\
+$$ \begin{bmatrix} a & b \\
+c & d \\ \end{bmatrix} \begin{bmatrix} v_x \\
+v_x \\ \end{bmatrix} = \begin{bmatrix} a & b \\
 c & d \\ \end{bmatrix} (v_x \hat{x} + v_y \hat{y}) = \begin{bmatrix} a & b \\
 c & d \\ \end{bmatrix} (v_x \hat{x}) + \begin{bmatrix} a & b \\
 c & d \\ \end{bmatrix} (v_y \hat{y}) = v_x \begin{bmatrix} a & b \\
@@ -916,3 +921,5 @@ v_x \\ \end{bmatrix} = \begin{bmatrix} -v_x \\
 $$ i^2 \vec{v} = -\vec{v} $$
 
 $$ i^2 = -1 ?!?!?! $$
+
+$$ \text{Ok, you might have seen that one comming.} $$
