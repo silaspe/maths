@@ -943,3 +943,11 @@ $$ e^{i \theta} = \begin{bmatrix} cos(\theta) & -sin(\theta) \\
 sin(\theta) & cos(\theta) \\ \end{bmatrix} $$
 
 $$ \text{So, if you want to rotate a vector } \vec{v} \text{ with an angle } \theta \text{ from } \hat{x} \text{ to } \hat{y} \text{, it's just } e^{i \theta} \vec{v} \text{!} $$
+
+$$ \text{And this would technically also work in } 3d \text{ or higher. You could say that } i = \begin{bmatrix} 0 & -1 & 0 \\
+1 & 0 & 0 \\
+0 & 0 & 1 \\ \end{bmatrix} \text{, } j = \begin{bmatrix} 0 & 0 & -1 \\
+0 & 1 & 0 \\
+1 & 0 & 0 \\ \end{bmatrix} \text{, } k = \begin{bmatrix} 1 & 0 & 0 \\
+0 & 0 & -1 \\
+0 & 1 & 0 \\ \end{bmatrix} \text{, then you would have } e^{i \theta} \text{, } e^{j \theta} \text{, and } e^{k \theta} \text{ for the } xy \text{, } xz \text{, and } yz \text{ planes respectively.} $$
