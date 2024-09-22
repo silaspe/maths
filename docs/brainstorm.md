@@ -951,3 +951,5 @@ $$ \text{And this would technically also work in } 3d \text{ or higher. You coul
 1 & 0 & 0 \\ \end{bmatrix} \text{, } k = \begin{bmatrix} 1 & 0 & 0 \\
 0 & 0 & -1 \\
 0 & 1 & 0 \\ \end{bmatrix} \text{, then you would have } e^{i \theta} \text{, } e^{j \theta} \text{, and } e^{k \theta} \text{ for the } xy \text{, } xz \text{, and } yz \text{ planes respectively.} $$
+
+If you want a better rotation formula, [here](https://www.youtube.com/watch?v=Y1gOYtQYRXo) [it is!](https://www.youtube.com/watch?v=i0cp3iQXSk8)
