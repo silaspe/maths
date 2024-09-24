@@ -849,7 +849,7 @@ It's hard to explain how points dual to lines, but an example would be the origi
 
 Also fun fact: the duals of every point on a line would all pass through the dual point, and the duals of every line that passes through a point would all lie on the dual line.
 
-### linear algebra, complex numbers, and higher dimensional complex numbers
+### linear algebra, complex numbers, and higher dimensional complex numbers?
 
 $$ \text{Let's say that a vector } \vec{v} \text{ is an ordered set of numbers } \begin{bmatrix} v_x \\
 v_y \\ \end{bmatrix} \text{, or } v_x \hat{x} + v_y \hat{y} \text{, or a point } (v_x, v_y) \text{, or an arrow with it's tip at } (v_x, v_y) \text{, and tail at } (0, 0) \text{. They can be scaled (that is, multiplied by a scalar or real number) (} c \begin{bmatrix} v_x \\
@@ -953,3 +953,43 @@ $$ \text{And this would technically also work in } 3d \text{ or higher. You coul
 0 & 1 & 0 \\ \end{bmatrix} \text{, then you would have } e^{i \theta} \text{, } e^{j \theta} \text{, and } e^{k \theta} \text{ for the } xy \text{, } xz \text{, and } yz \text{ planes respectively.} $$
 
 If you want a better rotation formula, [here](https://www.youtube.com/watch?v=Y1gOYtQYRXo) [it is!](https://www.youtube.com/watch?v=i0cp3iQXSk8)
+
+### homogenization?
+
+Homogenization is a method of interpolation from equations on the affine plane (non-projective plane) to equations on the projective plane (so, adding the line at infinity), but I think it would be better if I just showed how to do it.
+
+Lets say that I have these equations for describing my line:
+
+$$ y = mx + b $$
+
+$$ z = 1 $$
+
+so, we have this equation:
+
+$$ (x: y: z) = (x: mx + b: 1) $$
+
+$$ (x, y, z) = (cx, cmx + cb, c) $$
+
+and from those, I have this new equation for describing my line:
+
+$$ y = mx + bz $$
+
+now, the equation is homogeneous $^1$.
+
+In (this $(x, y, z) = (cx, cmx + cb, c)$) equation for a line, $z$ could not equal $0$, but now, $z$ can equal $0$, and if $z = 0$, then it's at the line at infinity, so these $z = 0$ solutions snuck in as a result of homogenization, mission success!
+
+$^1$ That is, a polynomial where each term has the same degree. There is a much easier way of doing this called homogenization: you take each term whose degree is not the max, and add factors of $z$ to bring the degree up to the max.
+
+But what are these solutions at the line at infinity?
+
+$$ z = 0 $$
+
+$$ y = mx + bz $$
+
+$$ y = mx $$
+
+$$ (x: y: z) = (x: mx: 0) $$
+
+$$ (1: m: 0) $$
+
+This has some pprreeaattyy cool implications, but I'll do that tomorrow.
