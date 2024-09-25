@@ -859,7 +859,7 @@ u_y \\ \end{bmatrix} + \begin{bmatrix} v_x \\
 v_y \\ \end{bmatrix} = u_x \hat{x} + u_y \hat{y} + v_x \hat{x} + v_y \hat{y} = (u_x + v_x) \hat{x} + (u_y + v_y) \hat{y} = \begin{bmatrix} u_x + v_x \\
 u_y + v_y \\ \end{bmatrix} \text{), and with just those two, any vector can be made from } \begin{bmatrix} 1 \\
 0 \\ \end{bmatrix} \text{ and } \begin{bmatrix} 0 \\
-1 \\ \end{bmatrix} \text{ (that is, } 1 \hat{x} + 0 \hat{y} \text{ and } 0 \hat{x} + 1 \hat{y} \text{ (that is, } \hat{x} \text{ and } \hat{y} \text{)), and that's pprreeaattyy much it.} $$
+1 \\ \end{bmatrix} \text{ (that is, } 1 \hat{x} + 0 \hat{y} \text{ and } 0 \hat{x} + 1 \hat{y} \text{ (that is, } \hat{x} \text{ and } \hat{y} \text{)), and that's pretty much it.} $$
 
 You can also multiply vectors, but that's a [story for another day](https://silaspe.github.io/maths/geometric_algebra.html).
 
@@ -992,4 +992,11 @@ $$ (x: y: z) = (x: mx: 0) $$
 
 $$ (1: m: 0) $$
 
-This has some pprreeaattyy cool implications, but I'll do that tomorrow.
+This has some pretty cool implications, but I'll do that tomorrow.
+
+Oh, look, it's tomorrow, time to tell you the implications.
+
+
+$1000$ Lines, wow.
+
+Y'know how any two distinct points on the affine plane have a line through them? And how (almost) any two distinct lines on the affine plane have a point on both? That is, of coarse, unless the lines are paralell. Solution: homogenization. A homogenized line with slope $m$ has the point $(1: m: 0)$ (and $(0: 1: 0)$ if the line is vertical). So, if two lines have the same slope $m$ (and are distinct), then they don't meet normally, and they intersect at $(1: m: 0)$. If they have different slopes, then they do meet normally, and they don't intersect at the line at infinity. But what about the "any two distinct points have a line through them" rule? If you have a normal point and a point at infinity $(1: m: 0)$, they have the line with slope $m$ going through the first one. But what if you have two points on the line at infinity? This (among other things) is why it's called the line at infinity, a line that all points at infinity lie on.
