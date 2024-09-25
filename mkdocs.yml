@@ -33,6 +33,7 @@ nav:
   - Random thoughts: rand.md
   - Summer of Math Exposition 4: some4.md
   - Set theory II: logic.md
+  - Projective geometry: projective_geometry.md
 theme:
   name: material
   palette:
