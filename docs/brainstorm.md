@@ -821,7 +821,7 @@ $$ a, b \in ℕ $$
 
 $$ \overline{d} $$
 
-### projective geometry?
+### projective geometry
 
 Credit (even if it is very small): [The two points that lie on every circle (???) #SoME3](https://www.youtube.com/watch?v=iUUm0sKLoiE), [Putting Algebraic Curves in Perspective](https://www.youtube.com/watch?v=XXzhqStLG-4), and [Extraordinary Conics: The Most Difficult Math Problem I Ever Solved](https://www.youtube.com/watch?v=X83vac2uTUs).
 
@@ -843,7 +843,7 @@ To see why this double counting thing makes sense, I'll project onto a unit sphe
 
 Yes, I know, the plane is placed one unit below the sphere instead of one above, but it's only like that for the sake of demonstration.
 
-### dualtity?
+### dualtity
 
 It's hard to explain how points dual to lines, but an example would be the origin and the line at infinity, or on the sphere, the equator and the north and south poles (remember, two solutions). the more general definition would be something like this: the two points on a sphere, a point on the dual line, and the point $90°$ away but still on the dual line are all mutually perpindicular. By the way, points on the plane project to antipodal points on the sphere, and lines on the plane project to great circles on the sphere.
 
@@ -954,7 +954,7 @@ $$ \text{And this would technically also work in } 3d \text{ or higher. You coul
 
 If you want a better rotation formula, [here](https://www.youtube.com/watch?v=Y1gOYtQYRXo) [it is!](https://www.youtube.com/watch?v=i0cp3iQXSk8)
 
-### homogenization?
+### homogenization
 
 Homogenization is a method of interpolation from equations on the affine plane (non-projective plane) to equations on the projective plane (so, adding the line at infinity), but I think it would be better if I just showed how to do it.
 
