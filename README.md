@@ -34,3 +34,4 @@ PS you don't get a vector
 * [Random thoughts](rand.md) - The half of the brainstorm page that had nothing to do with math, and everything to do with what was happening at the time.
 * [Summer of Math Exposition 4](some4.md) - my submission to [SoME4](https://www.youtube.com/watch?v=ojjzXyQCzso) (he didn't have a video for SoME $2$ through $4$)
 * [Set theory: logic edition](logic.md) - the set theory page, but derived from the ground up using logic and extentions.
+* [Projective geometry](projective_geometry.md) - an introduction to projective geometry where parallel cross, and there are two points that lie on every circle.
