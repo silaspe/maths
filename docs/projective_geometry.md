@@ -16,12 +16,6 @@ To see why this double counting thing makes sense, I'll project onto a unit sphe
 
 Yes, I know, the plane is placed one unit below the sphere instead of one above, but it's only like that for the sake of demonstration.
 
-### dualtity
-
-It's hard to explain how points dual to lines, but an example would be the origin and the line at infinity, or on the sphere, the equator and the north and south poles (remember, two solutions). the more general definition would be something like this: the two points on a sphere, a point on the dual line, and the point $90°$ away but still on the dual line are all mutually perpindicular. By the way, points on the plane project to antipodal points on the sphere, and lines on the plane project to great circles on the sphere.
-
-Also fun fact: the duals of every point on a line would all pass through the dual point, and the duals of every line that passes through a point would all lie on the dual line.
-
 ### homogenization
 
 Homogenization is a method of interpolation from equations on the affine plane (non-projective plane) to equations on the projective plane (so, adding the line at infinity), but I think it would be better if I just showed how to do it.
@@ -65,3 +59,15 @@ This has some pretty cool implications, but I'll do that tomorrow.
 Oh, look, it's tomorrow, time to tell you the implications.
 
 Y'know how any two distinct points on the affine plane have a line through them? And how (almost) any two distinct lines on the affine plane have a point on both? That is, of coarse, unless the lines are parallel. Solution: homogenization. A homogenized line with slope $m$ has the point $(1: m: 0)$ (and $(0: 1: 0)$ if the line is vertical). So, if two lines have the same slope $m$ (and are distinct), then they don't meet normally, and they intersect at $(1: m: 0)$. If they have different slopes, then they do meet normally, and they don't intersect at the line at infinity. But what about the "any two distinct points have a line through them" rule? If you have a normal point and a point at infinity $(1: m: 0)$, they have the line with slope $m$ going through the first one. But what if you have two points on the line at infinity? This (among other things) is why it's called the line at infinity, a line that all points at infinity lie on.
+
+Also, I'm gonna swich from $y = mx + b$ to $ax + by + c = 0$, to deal with vertical lines, and because I'm gonna use a variation of this to describe quadratics.
+
+### dualtity
+
+It's hard to explain how points dual to lines, but an example would be that they are both defined by three numbers, they are considered the same if you scale all three by the same amount, throw an error if all three are zero, the origin and the line at infinity are duals, or on the sphere, the equator and the north and south poles (remember, two solutions). The more general definition would be something like this: the two points on a sphere, a point on the dual line, and the point $90°$ away but still on the dual line are all mutually perpindicular. By the way, points on the plane project to antipodal points on the sphere, and lines on the plane project to great circles on the sphere.
+
+Also fun fact: the duals of every point on a line would all pass through the dual point, and the duals of every line that passes through a point would all lie on the dual line.
+
+$$ \text{Formula: the dual of point } (a: b: c) \text{ is the homogenized line } $ax + by + cz = 0$ \text{.} $$
+
+#### conics
