@@ -71,3 +71,9 @@ Also fun fact: the duals of every point on a line would all pass through the dua
 $$ \text{Formula: the dual of point } (a: b: c) \text{ is the homogenized line } $ax + by + cz = 0$ \text{.} $$
 
 #### conics
+
+surprisingly, every conic is a hyperbola or elipse (circles are just perfect elipses, and parabolas are right in between elipses and hyperbolas), and each one has this form:
+
+$$ ax^2 + bxy + cy^2 + dx + ey + f = 0 $$
+
+(Not calculus $dx$ and $e$)
