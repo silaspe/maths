@@ -929,6 +929,10 @@ for _ in powerlist(permutation(4)):
     print()
 ```
 
+### project mu
+
+Mine is project mu, my dad's is project nu, and together, it is project kappa, a project that should be able to do lambda calculus. I know what you're thinking: why can't you just use the built-in words `lambda` and `:`? 'Cause that's boring! (Also, get it? $\kappa \lambda \mu \nu$.)
+
 ```py
 
 ```
