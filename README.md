@@ -30,8 +30,9 @@ PS you don't get a vector
 * [Code repo](actual_repo.md) - Pretty self explanatory. Also, the idea for both this page and the one above it did not originate in the brainstorm page.
 * [My way to count](binary.md) - why YOU should use binary
 * [Geometric algebra 2](geometric_algebra_2.md) - the first part (this page will not make sense without it) crashed
-* [Lambda calculus](lambda.md) - an exploration of lambda calculus based off of [this](https://www.youtube.com/watch?v=3VQ382QG-y4) and [this](https://www.youtube.com/watch?v=pAnLQ9jwN-E)
+* [Lambda calculus](lambda.md) - an exploration of lambda calculus, the smallest programing language where "functional programing language" is an understatement (based off of [this](https://www.youtube.com/watch?v=3VQ382QG-y4) and [this](https://www.youtube.com/watch?v=pAnLQ9jwN-E))
 * [Random thoughts](rand.md) - The half of the brainstorm page that had nothing to do with math, and everything to do with what was happening at the time.
 * [Summer of Math Exposition 4](some4.md) - my submission to [SoME4](https://www.youtube.com/watch?v=ojjzXyQCzso) (he didn't have a video for SoME $2$ through $4$)
 * [Set theory: logic edition](logic.md) - the set theory page, but derived from the ground up using logic and extentions.
 * [Projective geometry](projective_geometry.md) - an introduction to projective geometry where parallel lines cross, and there are two points that lie on every circle.
+* [Lambda calculus revisited](lcr.md) - (Lcr) the lambda calculus page, but with my current understanding of things (based off of [this](https://www.youtube.com/watch?v=3VQ382QG-y4), [this](https://www.youtube.com/watch?v=pAnLQ9jwN-E), and [this](https://arxiv.org/pdf/0804.3434) (Warning: the videos are ~ $1 \text{H}$ long, and the paper has (exactly) $120$ pages.))
