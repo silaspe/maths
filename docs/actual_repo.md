@@ -931,7 +931,27 @@ for _ in powerlist(permutation(4)):
 
 ### project mu
 
-Mine is project mu, my dad's is project nu, and together, it is project kappa, a project that should be able to do lambda calculus. I know what you're thinking: why can't you just use the built-in words `lambda` and `:`? 'Cause that's boring! (Also, get it? $\kappa \lambda \mu \nu$.)
+Mine is project mu ($\mu$), my dad's is project nu ($\nu$) (he's been working on is pretty much all weekend), and together, it is project kappa ($\kappa$), a project that should be able to do lambda calculus. I know what you're thinking: why can't you just use the built-in words `lambda` and `:`? 'Cause that's boring! (Also, get it? $\kappa \lambda \mu \nu$?)
+
+Syntax: $f(x)$ is denoted as $[f,x]$
+
+```py
+combinators = {}
+```
+
+```py
+def expand1(string):
+  c = ""
+  b = False
+  for i in range(len(string)):
+    if b:
+      continue
+    if (string[i] == "l"):
+      b = True
+    if (string[i] == "."):
+      b = False
+    if (string[i] != "(") and (string[i] != ")") and (string[i] != "[") and (string[i] != "]") and (string[i] != ",")
+```
 
 ```py
 
