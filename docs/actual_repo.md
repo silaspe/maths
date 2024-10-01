@@ -940,17 +940,37 @@ combinators = {}
 ```
 
 ```py
-def expand1(string):
-  c = ""
-  b = False
+def unlambda(string):
+  newstring = ""
+  b = True
   for i in range(len(string)):
-    if b:
-      continue
-    if (string[i] == "l"):
-      b = True
-    if (string[i] == "."):
+    term = string[i]
+    if term == "λ":
       b = False
-    if (string[i] != "(") and (string[i] != ")") and (string[i] != "[") and (string[i] != "]") and (string[i] != ",")
+    if b:
+      newstring += term
+    if term == ".":
+      b = True
+  return newstring
+```
+
+```py
+def expand(string):
+  newstring = ""
+  comb = ""
+  for i in range(len(string)):
+    term = string[i]
+    if term in ["[", "]", ",", " "]:
+      if comb != "":
+        if comb in combinators:
+          newstring += unlambda(combinators[comb])
+        else:
+          newstring += comb
+        comb = ""
+      newstring += term
+    else:
+      comb += term
+  return newstring
 ```
 
 ```py
