@@ -77,3 +77,5 @@ surprisingly, every conic is a hyperbola or elipse (circles are just perfect eli
 $$ ax^2 + bxy + cy^2 + dx + ey + f = 0 $$
 
 (Not calculus $dx$ and $e$)
+
+Also, if you dual every point on a conic, they are all tangent to another conic, the dual conic.
