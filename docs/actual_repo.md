@@ -936,41 +936,54 @@ Mine is project mu ($\mu$), my dad's is project nu ($\nu$) (he's been working on
 Syntax: $f(x)$ is denoted as $[f,x]$
 
 ```py
-combinators = {}
-```
-
-```py
-def unlambda(string):
-  newstring = ""
-  b = True
+def reduce(string):
   for i in range(len(string)):
-    term = string[i]
-    if term == "λ":
-      b = False
-    if b:
-      newstring += term
-    if term == ".":
-      b = True
-  return newstring
-```
-
-```py
-def expand(string):
-  newstring = ""
-  comb = ""
-  for i in range(len(string)):
-    term = string[i]
-    if term in ["[", "]", ",", " "]:
-      if comb != "":
-        if comb in combinators:
-          newstring += unlambda(combinators[comb])
+    if string[i] == "[" and string[i + 1] == "λ":
+      bound_varable = string[i + 2]
+      j = i + 4
+      runc = 0
+      s1 = ""
+      s2 = ""
+      split = False
+      while True:
+        term = string[j]
+        if term == "[":
+          runc += 1
+        if term == "]":
+          runc -= 1
+          if runc == -1:
+            break
+        if runc == 0 and term == " ":
+          split = True
+          si = j
         else:
-          newstring += comb
-        comb = ""
-      newstring += term
-    else:
-      comb += term
-  return newstring
+          if not split:
+            s1 += term
+          else:
+            s2 += term
+        j += 1
+      result = ""
+      for k in range(0, i):
+        result += string[k]
+      for k in range(i + 4, si):
+        if string[k] == bound_varable:
+          result += s2
+        else:
+          result += string[k]
+      for k in range(j + 1, len(string)):
+        result += string[k]
+      return [result, "needs another!"]
+  return [string, "done!"]
+```
+
+```py
+def fullreduce(string):
+  print(string)
+  result = reduce(string)
+  while result[1] == "needs another!":
+    print(result[0])
+    result = reduce(result[0])
+  return result[0]
 ```
 
 ```py
