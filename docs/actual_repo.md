@@ -933,7 +933,7 @@ for _ in powerlist(permutation(4)):
 
 Mine is project mu ($\mu$), my dad's is project nu ($\nu$) (he's been working on is pretty much all weekend), and together, it is project kappa ($\kappa$), a project that should be able to do lambda calculus. I know what you're thinking: why can't you just use the built-in words `lambda` and `:`? 'Cause that's boring! (Also, get it? $\kappa \lambda \mu \nu$?)
 
-Syntax: $f(x)$ is denoted as $[f,x]$
+Syntax: $f(x)$ is denoted as `[f x]`
 
 ```py
 def reduce(string):
@@ -985,6 +985,10 @@ def fullreduce(string):
     result = reduce(result[0])
   return result[0]
 ```
+
+But there's a problem: caapture of free variables. I'll explin with an example:
+
+$$ \text{[} \lambda f. \lambda g. \lambda x. \text{[} f \text{ } \text{[} g \text{ } x \text{]} \text{]} \text{ } g \text{]} = \lambda g. \lambda x. \text{[} g \text{ } \text{[} g \text{ } x \text{]} \text{]} $$
 
 ```py
 
