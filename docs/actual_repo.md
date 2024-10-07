@@ -209,7 +209,7 @@ for n in range(101):
     print("binary")
   if SmallestPrimeDivisor(n) == n:
     L.append("un" + L[n - 1] + "sna")
-    print("un" + AlmostBase(n - 1) + "snanary")
+    print("un" + L[n - 1] + "snanary")
   string = ""
   k = n
   while k != 1:
