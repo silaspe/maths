@@ -986,7 +986,7 @@ def fullreduce(string):
   return result[0]
 ```
 
-But there's a problem: caapture of free variables. I'll explin with an example:
+But there's a problem: capture of free variables. I'll explin with an example:
 
 $$ \text{[} \lambda f. \lambda g. \lambda x. \text{[} f \text{ } \text{[} g \text{ } x \text{]} \text{]} \text{ } g \text{]} = \lambda g. \lambda x. \text{[} g \text{ } \text{[} g \text{ } x \text{]} \text{]} $$
 
