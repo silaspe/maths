@@ -213,7 +213,7 @@ $$ -3 = 5 \cdot (-1) + 2 ⊜ 2 $$
 
 So, because $0$ $1$ $i$ $-i$ and $-1$ would multiplty to get another one of $0$ $1$ $i$ $-i$ and $-1$. This means that if you want to multiply numbers mod $5$, just use the beautiful angle addition of the complex plane. Let's try to fnd the mod $7$ equivilant using last monday's work. That took all day. First, the times tables mod $7$
 
-$$ \begin{bmatrix} x \quad 0 & 1 & 2 & 3 & 4 & 5 & 6 \\
+$$ \begin{bmatrix} \times \quad 0 & 1 & 2 & 3 & 4 & 5 & 6 \\
 0 \quad 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
 1 \quad 0 & 1 & 2 & 3 & 4 & 5 & 6 \\
 2 \quad 0 & 2 & 4 & 6 & 1 & 3 & 5 \\
@@ -222,7 +222,7 @@ $$ \begin{bmatrix} x \quad 0 & 1 & 2 & 3 & 4 & 5 & 6 \\
 5 \quad 0 & 5 & 3 & 1 & 6 & 4 & 2 \\
 6 \quad 0 & 6 & 5 & 4 & 3 & 2 & 1 \\ \end{bmatrix} $$
 
-So, iI would want numbers $2$ - $5$ to corraspond with letters $a$ - $d$. And no letter for $6$, because it is already equal to $-1$ mod $7$. So the puzzle is to solve for complex numbers $a$ $b$ $c$ and $d$ with the following times table:
+So, I would want numbers $2$ - $5$ to corraspond with letters $a$ - $d$. And no letter for $6$, because it is already equal to $-1$ mod $7$. So the puzzle is to solve for complex numbers $a$ $b$ $c$ and $d$ with the following times table:
 
 $$ \begin{bmatrix} x \quad 0 & 1 & a & b & c & d & -1 \\
 0 \quad 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
