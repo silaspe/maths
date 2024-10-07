@@ -243,7 +243,7 @@ $$ 2 = j $$
 
 $$ 3 = k $$
 
-$$ \text{back to mod } 7 \text{ with a more flattened out times table without multiplication by } 0 \text{ or } 1 \text{, because that is preatty self explanitory.} $$
+$$ \text{back to mod } 7 \text{ with a more flattened out times table without multiplication by } 0 \text{ or } 1 \text{, because that is pretty self explanitory.} $$
 
 $$ aa = c $$
 
