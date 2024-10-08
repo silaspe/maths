@@ -84,7 +84,7 @@ $$ \text{Maybe I'll use it.} $$
 
 $$ \text{There's also the highlander function, it's general form is} $$
 
-$$ ! \exists (x) \cdot p(x) \text{ (} = \text{T)}  $$
+$$ \exists ! (x) \cdot p(x) \text{ (} = \text{T)}  $$
 
 $$ \text{And that example in logic: } ¬(p(x) ≡ \text{F}) ∩ (p(x) → (¬(y = x) → p(y) = \text{F})) $$
 
@@ -138,3 +138,13 @@ $$ x1 \in ℕ → x1 + 0 = x1 $$
 ### mappings
 
 A mapping $f$ is, well, first pick a domain $X$ and codomain $Y$. Then, um, I gotta the set theory text book.
+
+Ok, I got out The real number system, in an algebraic setting, by J. B. Roberts. A gift from my grandpa.
+
+A mapping $f$ is kinda like a function, (a mapping $f$ from domain $X$ and codomain $Y$ is denoted as $f: X → Y$) if you pick an $x$ in $X$, is it $tied$ $to$ some $y$ in $Y$. The particular value of $y$ for given $x$ is denoted as $f(x)$, but for a given $y$ in $Y$, there could be $0$, $1$, or more values of $x$ (e.g. The absolute value function). How you represent a mapping would be something like $f(x) = x^2$, $x ↦ x^2$, or $\lambda x. x^2$. And finally, the image of $f$ is
+
+$$ [y| y \in Y ∩ \exists (x) \cdot x \in X ∩ f(x) = y] $$
+
+So
+
+$$ [y| y \in Y ∩ ¬((x \in X ∩ f(x) = y) ≡ \text{F})] $$
