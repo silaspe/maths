@@ -6,7 +6,7 @@ Ok, so, it looks like he's starting off with a function (written as $I$) that he
 
 #### chapter $2$: What is this $\lambda$?
 
-Ok, so, what was this $\lambda$ stuff from earlier? (Finally he explains it.) So, lambda is a signafier, it's a way to indicate that we are starting the definition of a function. So, we can read this (this $\lambda a. a$) as: we're starting the definition of a function ($\lambda$), which takes a single input ($a$), or parameter (The $.$ signafies that we are no longer writing down the parameters, and now), and returns some expression ($a$). This whole thing is called a lambda abstraction in lambda calculus.
+Ok, so, what was this $\lambda$ stuff from earlier? (Finally he explains it.) So, lambda is a signafier, it's a way to indicate that we are starting the definition of a function. So, we can read this (this $\lambda a. a$) as: we're starting the definition of a function ($\lambda$), which takes a single input ($a$), or parameter (The $.$ signafies that we are no longer writing down the parameters), and returns some expression ($a$). This whole thing is called a lambda abstraction in lambda calculus.
 
 ### chapter $3$: What is Lambda Calculus?
 
