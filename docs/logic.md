@@ -6,6 +6,8 @@ Tools: $\text{T}$, $\text{F}$, $=$*, and another thing that will be defined late
 
 *Returns true if the two things are the same, and false if they are not.
 
+### boolean operations
+
 I can derive the and operation like this:
 
 $$ \text{F} ∩ \text{F} = \text{F} $$
@@ -48,6 +50,8 @@ $$ (p = q) \iff (p → q) ∩ (q → p) $$
 
 $$ \text{Order of operations: } ¬ > ∩ > ∨ > = > → > \iff \text{.} $$
 
+### extntions
+
 $$ [x| p(x)] = \text{ The extention of } p(x) \text{ (and the secret } 4 \text{th tool) (curly braces didn't work for rendering reasons), the set of all } x \text{ such that } p(x) \text{ (is true), and this is how I'm going to define sets. This function } p(x) \text{ inputs, well, anything, and outputs a boolean (true or false) (e.g. is } x \text{ an odd number?).} $$
 
 $$ \text{The extention of that particular function is the set of all odd numbers.} $$
@@ -60,7 +64,7 @@ which goes somewhere in between and and not in the order of operations.
 
 And just for fun, I'll also derive the for any and there exists signs like this:
 
-$$ p(x) ≡ \text{T} \text{ Means } p(x) = \text{T} \text{ for all values of } x \text{, same thing for } p(x) ≡ \text{F} \text{ and } p(x) ≡ q(x) \text{.} $$
+$$ \text{But first, } p(x) ≡ \text{T} \text{ Means } p(x) = \text{T} \text{ for all values of } x \text{, same thing for } p(x) ≡ \text{F} \text{ and } p(x) ≡ q(x) \text{.} $$
 
 $$ \text{And it goes in between or and equals in the order of operations.} $$
 
@@ -86,18 +90,18 @@ $$ \text{And that example in logic: } ¬(p(x) ≡ \text{F}) ∩ (p(x) → (¬(y 
 
 $$ \text{Alternative: } ¬(p(x) ≡ \text{F}) ∩ (p(x) ∩ ¬(y = x) → p(y) = \text{F}) $$
 
-Next stop: numbers!
+### numbers
 
 $$ 0 = Ø = [x| \text{F})] $$
 
 $$ \text{succ} (x) = [y| y = x] $$
 
+
+$100$ Lines.
+
 $$ \text{succ} (0) = 1 $$
 
 $$ \text{succ} (1) = 2 $$
-
-
-$100$ Lines.
 
 $$ \text{succ} (2) = 3 $$
 
@@ -107,7 +111,7 @@ $$ x \in ℕ → \text{succ} (x) \in ℕ $$
 
 $$ ℕ = [x| (x = 0) ∨ \exists (y) \cdot (\text{succ} (y) = x) ∩ y \in ℕ] = [x| (x = 0) ∨ ¬(((\text{succ} (y) = x) ∩ y \in ℕ) ≡ \text{F})] $$
 
-Next stop: Russell's paradox!
+### Russell's paradox
 
 $$ R = [x| ¬(x \in x)] $$
 
@@ -121,11 +125,9 @@ Now, I'll define an infinate set of things $x1, x2, x3,...$ that are all in $[x|
 
 And define $x1, x2, x3 \in S$ as $x1 \in S ∩ x2 \in S ∩ x3 \in S$.
 
-And, I probably should have said this earlier, if I say $p(x) = \text{T}$ or $p(x) = \text{F}$, then, unless it's $4$ lines ago, that means it's true for all $x$ or false for all $x$.
-
 And that, if a statement involves $x1$ or $x2$ or $x3$ and so on, then it's true for any value $x1, x2, x3,...$.
 
-Next stop: arithmetic!
+### arithmetic
 
 $$ \text{I already defined the successor, what about addition?} $$
 
@@ -133,4 +135,6 @@ $$ x1, x2 \in ℕ → x1 + succ(x2) = succ(x1 + x2) $$
 
 $$ x1 \in ℕ → x1 + 0 = x1 $$
 
-$$ \text{Now, subtraction!} $$
+### mappings
+
+A mapping $f$ is, well, first pick a domain $X$ and codomain $Y$. Then, um, I gotta the set theory text book.
