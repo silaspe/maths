@@ -1003,10 +1003,11 @@ Y'know how any two distinct points on the affine plane have a line through them?
 
 #### greek letters
 
-| Alpha | Beta | Gamma | Delta | Epsilon | Zeta | Eta | Theta | Iota | Kappa | Lambda | Mu | Nu | Xi | Omicron | Pi | Rho | Sigma | Tau | Phi | Chi | Psi | Omega |
-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|
-| $\alpha$ | $\beta$ | $\gamma$ | $\delta$ | $\epsilon$ | $\zeta$ | $\eta$ | $\theta$ | $\iota$ | $\kappa$ | $\lambda$ | $\mu$ | $\nu$ | $\xi$ | $\omicron$ | $\pi$ | $\rho$ | $\sigma$ | $\tau$ | $\phi$ | $\chi$ | $\psi$ | $\omega$ |
-| $\Alpha$ | $\Beta$ | $\Gamma$ | $\Delta$ | $\Epsilon$ | $\Zeta$ | $\Eta$ | $\Theta$ | $\Iota$ | $\Kappa$ | $\Lambda$ | $\Mu$ | $\Nu$ | $\Xi$ | $\Omicron$ | $\Pi$ | $\Rho$ | $\Sigma$ | $\Tau$ | $\Phi$ | $\Chi$ | $\Psi$ | $\Omega$ |
+| Alpha | Beta | Gamma | Delta | Epsilon | Zeta | Eta | Theta | Iota | Kappa | Lambda | Mu | Nu | Xi | Omicron | Pi | Rho | Sigma | Tau | Upsilon | Phi | Chi | Psi | Omega |
+|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|
+| $\alpha$ | $\beta$ | $\gamma$ | $\delta$ | $\epsilon$ | $\zeta$ | $\eta$ | $\theta$ | $\iota$ | $\kappa$ | $\lambda$ | $\mu$ | $\nu$ | $\xi$ | $\omicron$ | $\pi$ | $\rho$ | $\sigma$ | $\tau$ | $\upsilon$ | $\phi$ | $\chi$ | $\psi$ | $\omega$ |
+| $\Alpha$ | $\Beta$ | $\Gamma$ | $\Delta$ | $\Epsilon$ | $\Zeta$ | $\Eta$ | $\Theta$ | $\Iota$ | $\Kappa$ | $\Lambda$ | $\Mu$ | $\Nu$ | $\Xi$ | $\Omicron$ | $\Pi$ | $\Rho$ | $\Sigma$ | $\Tau$ | $\Upsilon$ | $\Phi$ | $\Chi$ | $\Psi$ | $\Omega$ |
+| A | B |  |  | E | Z | H |  | I | K |  | M | N |  | O |  | P |  | T |  |  | X |  |  |
 
 #### cursed math
 
