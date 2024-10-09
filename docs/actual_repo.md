@@ -978,17 +978,64 @@ def reduce(string):
 
 ```py
 def fullreduce(string):
-  print(string)
+  prev_result = string
   result = reduce(string)
-  while result[1] == "needs another!":
-    print(result[0])
-    result = reduce(result[0])
-  return result[0]
+  for i in range(100):
+    if result == prev_result:
+       return result
+    prev_result = result
+    result = reduce(result)
+  print(f"recursion depth limit exceeded, the furthest I got was {result}")
+  return result
 ```
 
 But there's a problem: capture of free variables. I'll explin with an example:
 
 $$ \text{[} \lambda f. \lambda g. \lambda x. \text{[} f \text{ } \text{[} g \text{ } x \text{]} \text{]} \text{ } g \text{]} = \lambda g. \lambda x. \text{[} g \text{ } \text{[} g \text{ } x \text{]} \text{]} $$
+
+### project xi
+
+Apparently, I just found another method for doing lambda calculus is python, so I subdivided again into project mu ($\mu$) and project xi ($\xi$).
+
+$1000$ Lines, wow.
+
+(Get it? $\kappa \lambda \mu \nu \xi$?)
+
+The method supports functions as arguments, currying, and even (I think) capture of free variables. I'll explin with some examples:
+
+```py
+def mult(x):
+  def mult1(y):
+    return x * y
+  return mult1
+```
+
+```py
+mult(1)(2)
+```
+
+```py
+def B(f):
+  def B1(g):
+    def B2(x):
+      return f(g(x))
+    return B2
+  return B1
+```
+
+```py
+def inc(x):
+  return x + 1
+```
+
+```py
+def dec(x):
+  return x - 1
+```
+
+```py
+B(inc)(dec)(5)
+```
 
 ```py
 
