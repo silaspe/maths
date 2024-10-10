@@ -1049,6 +1049,10 @@ def B(f):
 ```
 
 ```py
+comp = B
+```
+
+```py
 def C(f):
   def C1(x):
     def C2(y):
@@ -1058,10 +1062,22 @@ def C(f):
 ```
 
 ```py
+swap = C
+```
+
+```py
 def K(x):
   def K1(y):
     return x
   return K1
+```
+
+```py
+fstin = K
+```
+
+```py
+const = K
 ```
 
 ```py
@@ -1084,11 +1100,19 @@ Ki = K(I)
 ```
 
 ```py
+sndin = Ki
+```
+
+```py
 T = K
 ```
 
 ```py
 F = Ki
+```
+
+```py
+xibool = C(Th("T / K"))("F / Ki")
 ```
 
 ```py
@@ -1188,6 +1212,11 @@ snd = Th(Ki)
 ```
 
 ```py
+def xipair(p):
+  return f"({fst(p)}, {snd(p)})"
+```
+
+```py
 Phi = W(C(B(B)(B(pair)(snd)))(B(inc)(snd))
 ```
 
@@ -1220,11 +1249,14 @@ lt = C(gt)
 ```
 
 ```py
-
+def eq(n):
+  def eq1(k):
+    return AND(leq(n)(k))(geq(n)(k))
+  return eq1
 ```
 
 ```py
-
+neq = dcomp(NOT)(eq)
 ```
 
 ```py
