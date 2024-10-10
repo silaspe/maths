@@ -1037,6 +1037,196 @@ def dec(x):
 B(inc)(dec)(5)
 ```
 
+### xi
+
+```py
+def B(f):
+  def B1(g):
+    def B2(x):
+      return f(g(x))
+    return B2
+  return B1
+```
+
+```py
+def C(f):
+  def C1(x):
+    def C2(y):
+      return f(y)(x)
+    return C2
+  return C1
+```
+
+```py
+def K(x):
+  def K1(y):
+    return x
+  return K1
+```
+
+```py
+def W(f):
+  def W1(x):
+    return f(x)(x)
+  return W1
+```
+
+```py
+I = B(C)(C)
+```
+
+```py
+Th = c(I)
+```
+
+```py
+Ki = K(I)
+```
+
+```py
+T = K
+```
+
+```py
+F = Ki
+```
+
+```py
+AND = W(C)
+```
+
+```py
+OR = W(I)
+```
+
+```py
+NOT = C
+```
+
+```py
+beq = B(W)(B(C(B)(C))(C))
+```
+
+```py
+n0 = Ki
+```
+
+```py
+n1 = I
+```
+
+```py
+n2 = W(B)
+```
+
+```py
+n3 = W(B(B)(W(B)))
+```
+
+```py
+n4 = W(B(B)(W(B(B)(W(B)))))
+```
+
+```py
+n5 = W(B(B)(W(B(B)(W(B(B)(W(B)))))))
+```
+
+```py
+n6 = W(B(B)(W(B(B)(W(B(B)(W(B(B)(W(B)))))))))
+```
+
+```py
+n7 = W(B(B)(W(B(B)(W(B(B)(W(B(B)(W(B(B)(W(B)))))))))))
+```
+
+```py
+n8 = W(B(B)(W(B(B)(W(B(B)(W(B(B)(W(B(B)(W(B(B)(W(B)))))))))))))
+```
+
+```py
+n9 = W(B(B)(W(B(B)(W(B(B)(W(B(B)(W(B(B)(W(B(B)(W(B(B)(W(B)))))))))))))))
+```
+
+```py
+n10 = W(B(B)(W(B(B)(W(B(B)(W(B(B)(W(B(B)(W(B(B)(W(B(B)(W(B(B)(W(B)))))))))))))))))
+```
+
+```py
+xinum = C(Th(lambda x: x + 1))(0)
+```
+
+```py
+inc = B(W)(B(B))
+```
+
+```py
+add = B(B(W))(B(C)(B(B(B))(B(B))))
+```
+
+```py
+mult = B
+```
+
+```py
+exp = Th
+```
+
+```py
+is0 = C(Th(K(F)))(T)
+```
+
+```py
+pair = B(C)(Th)
+```
+
+```py
+fst = Th(K)
+```
+
+```py
+snd = Th(Ki)
+```
+
+```py
+Phi = W(C(B(B)(B(pair)(snd)))(B(inc)(snd))
+```
+
+```py
+dec = B(fst)(C(Th(Phi))(pair(n0)(n0)))
+```
+
+```py
+sub = Th(dec)
+```
+
+```py
+dcomp = B(B)(B)
+```
+
+```py
+leq = dcomp(is0)(sub)
+```
+
+```py
+geq = C(leq)
+```
+
+```py
+gt = dcomp(NOT)(leq)
+```
+
+```py
+lt = C(gt)
+```
+
+```py
+
+```
+
+```py
+
+```
+
 ```py
 
 ```
