@@ -186,7 +186,7 @@ $$ [x| p(x)] ∨ [x| q(x)] = [x| p(x) ∨ q(x)] $$
 
 $$ [x| p(x)] ∩ [x| q(x)] = [x| p(x) ∩ q(x)] $$
 
-$$ S \times T \text{Is pronounced "the cartesian product of } S \text{ and } T \text{".} $$
+$$ S \times T \text{ is pronounced "the cartesian product of } S \text{ and } T \text{".} $$
 
 $$ [x| p(x)] \times [x| q(x)] = [l| l \text{ is a list of size } 2 ∩ (p(l(1)) ∩ q(l(2)))] $$
 
