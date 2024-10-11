@@ -170,3 +170,9 @@ $$ \text{The cardinality of } S \text{ is denoted as hashtag } S \text{, but has
 $$ (\exists (n) \cdot n \in ℕ ∩ (S = [k| k < n])) → C(S) = n $$
 
 $$ C(S) = C(T) \iff \exists (f) \cdot f \text{ Is a mapping } ∩ f: S → T ∩ ∀(t) \cdot t \in T: \exists ! (s) \cdot f(s) = t $$
+
+### mappings (again)
+
+A definition that I thought of for mappings (that dosent imply a domain or codomain) uses a new thing to define axiomatioly (i.e. A thing that I have to define that it exists, and hasn't been seen before (e.g. How sets and extensions are not booleans)) (e.g. The $\text{N}$ in the Russell's paradox section): $→$ (Yes, another arrow (that makes $4$ (boolean arrow $→$, mapping arrow $→$, fancy functional arrow $↦$, and new arrow $→$))). I'll explain with an example: the function $x ↦ x^2$ would be denoted as the set containing $0 → 0$, $1 → 1$, $2 → 4$, $3 → 9$, $4 → 16$, $5 → 25$, and so on.
+
+You can also define ordered sets as mappings from natural numbers greater than $0$ (or from all natural numbers if you want it to be confusing like in every single programming language exept fortran) (this is why I didn't use ordered lists last time, because, they are defined with mappings) (I gotta go ice skating now, bye!)
