@@ -173,6 +173,21 @@ $$ C(S) = C(T) \iff \exists (f) \cdot f \text{ Is a mapping } ∩ f: S → T ∩
 
 ### mappings (again)
 
-A definition that I thought of for mappings (that dosent imply a domain or codomain) uses a new thing to define axiomatioly (i.e. A thing that I have to define that it exists, and hasn't been seen before (e.g. How sets and extensions are not booleans)) (e.g. The $\text{N}$ in the Russell's paradox section): $→$ (Yes, another arrow (that makes $4$ (boolean arrow $→$, mapping arrow $→$, fancy functional arrow $↦$, and new arrow $→$))). I'll explain with an example: the function $x ↦ x^2$ would be denoted as the set containing $0 → 0$, $1 → 1$, $2 → 4$, $3 → 9$, $4 → 16$, $5 → 25$, and so on.
+A definition that I thought of for mappings (that dosent imply a domain or codomain) uses a new thing to define axiomatioly (i.e. A thing that I have to define that it exists, and hasn't been seen before (e.g. How sets and extensions are not booleans)) (e.g. The $\text{N}$ in the Russell's paradox section): $→$ (Yes, another arrow (that makes $4$ (boolean arrow $→$, mapping arrow $→$, fancy functional arrow $↦$, and new arrow $→$))). I'll explain with an example: the function $x ↦ x^2$ would be denoted as the set containing $0 → 0$, $1 → 1$, $2 → 4$, $3 → 9$, $4 → 16$, $5 → 25$, and so on. ($(x → y)[1] = x$, And $(x → y)[2] = y$.)
 
-You can also define ordered sets as mappings from natural numbers greater than $0$ (or from all natural numbers if you want it to be confusing like in every single programming language exept fortran) (this is why I didn't use ordered lists last time, because, they are defined with mappings) (I gotta go ice skating now, bye!)
+You can also define ordered sets as mappings from natural numbers greater than $0$ (or from all natural numbers if you want it to be confusing like in every single programming language exept fortran) (this is why I didn't use ordered lists last time, because, they are defined with mappings) (I gotta go ice skating now, bye!) (I'm back and it's been $2$ hours).
+
+$$ f(x) = \begin{Bmatrix} ¬ \exists(t) \cdot t \in f ∩ (t[1] = x): \text{N} \\
+\exists(t) \cdot t \in f ∩ (t[1] = x): t[2] \\ \end{Bmatrix} $$
+
+### other random stuff
+
+$$ [x| p(x)] ∨ [x| q(x)] = [x| p(x) ∨ q(x)] $$
+
+$$ [x| p(x)] ∩ [x| q(x)] = [x| p(x) ∩ q(x)] $$
+
+$$ S \times T \text{Is pronounced "the cartesian product of } S \text{ and } T \text{".} $$
+
+$$ [x| p(x)] \times [x| q(x)] = [l| l \text{ is a list of size } 2 ∩ (p(l(1)) ∩ q(l(2)))] $$
+
+$$ S \times T = [l| l \text{ is a list of size } 2 ∩ (l(1) \in S ∩ l(2) \in T)] $$
