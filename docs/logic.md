@@ -191,3 +191,5 @@ $$ S \times T \text{ is pronounced "the cartesian product of } S \text{ and } T 
 $$ [x| p(x)] \times [x| q(x)] = [l| l \text{ is a list of size } 2 ∩ (p(l(1)) ∩ q(l(2)))] $$
 
 $$ S \times T = [l| l \text{ is a list of size } 2 ∩ (l(1) \in S ∩ l(2) \in T)] $$
+
+The reason why it's called "the cartesian product" is (at least, I think) because $ℝ \times ℝ$ ($ℝ$ is the set of all real numbers) is the set of all ordered pairs of real numbers. That is, the set of all points on the cartesian plane
