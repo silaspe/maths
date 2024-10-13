@@ -169,7 +169,7 @@ $$ \text{The cardinality of } S \text{ is denoted as hashtag } S \text{, but has
 
 $$ (\exists (n) \cdot n \in ℕ ∩ (S = [k| k < n])) → C(S) = n $$
 
-$$ C(S) = C(T) \iff \exists (f) \cdot f \text{ Is a mapping } ∩ f: S → T ∩ ∀(t) \cdot t \in T: \exists ! (s) \cdot f(s) = t $$
+$$ C(S) = C(T) \iff \exists (f: S → T) \cdot ∀(t) \cdot t \in T: \exists ! (s) \cdot f(s) = t $$
 
 ### mappings (again)
 
@@ -193,3 +193,10 @@ $$ [x| p(x)] \times [x| q(x)] = [l| l \text{ is a list of size } 2 ∩ (p(l(1)) 
 $$ S \times T = [l| l \text{ is a list of size } 2 ∩ (l(1) \in S ∩ l(2) \in T)] $$
 
 The reason why it's called "the cartesian product" is (at least, I think) because $ℝ \times ℝ$ ($ℝ$ is the set of all real numbers) is the set of all ordered pairs of real numbers. That is, the set of all points on the cartesian plane.
+
+The actual axiom of choice:
+
+
+$200$ Lines.
+
+$$ ∀(S) \cdot S \text{ Is a set of sets}: \exists(f: S → [x| \exists(T) \cdot x \in T ∩ T \in S]) \cdot ∀(T) \cdot T \in S: f(T) \in T $$
