@@ -6,9 +6,9 @@ That one puzzle
 
 $$ \frac{\partial (x^2 + y^2)}{\partial (x + y)} = ? $$
 
-$$ \text{Okay, fine, yes, that one was a joke. But it took me a whole weekend to solve.} $$
+$$ \text{Okay, fine, yes, that one was a joke. But it took me a whole weekend to solve it.} $$
 
-$$ \text{Not that every day isn't a weekend for me, but I remember solving it on sunday and posing it the day before.} $$
+$$ \text{Not that every day isn't a weekend for me, but I remember solving it on Sunday and posing it the day before.} $$
 
 .
 
@@ -24,7 +24,7 @@ Or today.
 
 .
 
-It's bitcoin halfing day today!!!
+It's bitcoin halving day today!!!
 
 .
 
@@ -44,7 +44,7 @@ $$ \text{I'm sorry that this got shoved in your face. Just scroll up.} $$
 
 <iframe src="https://www.geogebra.org/calculator/ysw94mwz?embed" width="800" height="600" allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;" frameborder="0"></iframe>
 
-This used to be a page on the website until I deleted it. The page the page still exists and you can find it by replacing the `rand` in the URL link above with `hyperbolic`, I think you can see why I deleted it.
+This used to be a page on the website until I deleted it. The page still exists and you can find it by replacing the `rand` in the URL link above with `hyperbolic`, I think you can see why I deleted it.
 
 .
 
@@ -80,11 +80,11 @@ One twig is a unit of distance, but first, y'know how one meter is one light sec
 
 .
 
-happy father's day! (Weekend)
+Happy Father's day! (Weekend)
 
 .
 
-happy father's day! (Actual)
+Happy Father's day! (Actual)
 
 .
 
@@ -123,7 +123,7 @@ I'm gonna see my grandparents!.. For real this time.
 
 .
 
-goodbye grandparents. (I've still been working every day.)
+Goodbye grandparents. (I've still been working every day.)
 
 .
 
@@ -135,13 +135,13 @@ I'm gonna see my cousins! (I've still been working every day.)
 
 .
 
-by the way...
+By the way...
 
 The amount of commits between now and $500$ is (well, I forgot $3$ and $2$) $1$... $0!$, this is the $500$'th commit to this branch (whatever that means).
 
 .
 
-goodbye cousins. I'll see them next saturday
+Goodbye cousins. I'll see them next saturday
 
 .
 
@@ -161,7 +161,7 @@ I'm gonna see my (other) cousins!
 
 .
 
-by the way...
+By the way...
 
 Illuminati
 
