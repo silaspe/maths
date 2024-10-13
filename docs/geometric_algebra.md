@@ -20,7 +20,7 @@ $$ (\hat{k} \hat{i})(u_z v_x) + (\hat{k} \hat{j})(u_z v_y) + (\hat{k} \hat{k})(u
 
 ## geometric algebra
 
-WARNING! This page requires knowing [linear algebra](https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab), mostly just vectors, and the first part of [A Swift Introduction to Geometric Algebra](https://www.youtube.com/watch?v=60z_hpEAtD8&t=179s) (literally, that was the name) to know what a $k$-vector and a [multivector](https://www.youtube.com/watch?v=60z_hpEAtD8&t=705s) is (stop at 12:20). (Also, it's where these ideas come from (at least in this chapter and the [complex numbers chapter](https://silaspe.github.io/maths/geomatric_algebra.html#complex-numbers) coming soon... And the Maxwell's equation chapter at the end).) Here is the definition for the product of basis vectors: The prodct of a basis vector $e_i$ and it self is $1$, and the product of two basis vectors $e_i$ and $e_j$ equals $-e_j e_i (i \ne j)$. This means that you can do this at any point in the product of basis vectors (this should make sense). By the way, $U = \hat{i} \hat{j} \hat{k}$
+WARNING! This page requires knowing [linear algebra](https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab), mostly just vectors, and the first part of [A Swift Introduction to Geometric Algebra](https://www.youtube.com/watch?v=60z_hpEAtD8&t=179s) (literally, that was the name) to know what a $k$-vector and a [multivector](https://www.youtube.com/watch?v=60z_hpEAtD8&t=705s) is (stop at 12:20). (Also, it's where these ideas come from (at least in this chapter and the [complex numbers chapter](https://silaspe.github.io/maths/geomatric_algebra.html#complex-numbers) coming soon... And the Maxwell's equation chapter at the end).) Here is the definition for the product of basis vectors: The product of a basis vector $e_i$ and it self is $1$, and the product of two basis vectors $e_i$ and $e_j$ equals $-e_j e_i (i \ne j)$. This means that you can do this at any point in the product of basis vectors (this should make sense). By the way, $U = \hat{i} \hat{j} \hat{k}$
 
 $$ \hat{i} = \hat{x} $$
 
@@ -76,7 +76,7 @@ $$ \hat{y} \hat{z} = \hat{y} \hat{z} \hat{x} \hat{x} = -\hat{y} \hat{x} \hat{z} 
 
 $$ \hat{z} \hat{x} = \hat{z} \hat{x} \hat{y} \hat{y} = -\hat{z} \hat{y} \hat{x} \hat{y} = -(-U) \hat{y} = U \hat{y} $$
 
-$$ \text{Yes! Now I can finaly solve the puzzle.} $$
+$$ \text{Yes! Now I can finally solve the puzzle.} $$
 
 $$ \vec{u} \vec{v} = \vec{u} \cdot \vec{v} + \begin{pmatrix} (U \hat{z})(u_x v_y - u_y v_x) +  \\
 (U \hat{x})(u_y v_z - u_z v_y) + \\
@@ -94,7 +94,7 @@ $$ \vec{u} \vec{v} = \vec{u} \cdot \vec{v} + \hat{x} \hat{y} \hat{z} \text{ } \v
 
 $$ \vec{u} \vec{v} = \vec{u} \cdot \vec{v} + \vec{u} \times \vec{v} \text{ } i $$
 
-Also, the cross product only works in $3d$ while this $U \text{ } \vec{u} \times \vec{v}$ thing works in any dimention. This operator actually has a name (well, two names), the outer product (as oppose to the dot product sometimes refered to as the inner product) or wedge product for it's apperance as a wedge unicode character. This more genaral cross product is written $\vec{u} ∧ \vec{v}$. (While we're on the topic of products, $\vec{u} \vec{v}$ is known as the geometric product of $\vec{u}$ and $\vec{v}$.) Also, I have to interrupt this for...
+Also, the cross product only works in $3d$ while this $U \text{ } \vec{u} \times \vec{v}$ thing works in any dimension. This operator actually has a name (well, two names), the outer product (as opposed to the dot product sometimes referred to as the inner product) or wedge product for its appearance as a wedge unicode character. This more general cross product is written $\vec{u} ∧ \vec{v}$. (While we're on the topic of products, $\vec{u} \vec{v}$ is known as the geometric product of $\vec{u}$ and $\vec{v}$.) Also, I have to interrupt this for...
 
 
 $100$ lines! But
@@ -103,7 +103,7 @@ $$ \vec{u} \vec{v} = \vec{u} \cdot \vec{v} + \vec{u} ∧ \vec{v}. $$
 
 ### $\frac{1}{\vec{v}}$ (and $\vec{v}^2$)
 
-$$ \text{Lets say that we are in dimension } d \text{. First, basis vectors} $$
+$$ \text{Let's say that we are in dimension } d \text{. First, basis vectors} $$
 
 $$ e_1 = \hat{i} = \hat{x} $$
 
@@ -168,8 +168,8 @@ $$ || \vec{v} || = \sqrt{v_1^2 + v_2^2 + v_3^2 + v_4^2 + \dots + v_d^2} $$
 
 $$ || \vec{v} ||^2 = || v_1^2 + v_2^2 + v_3^2 + v_4^2 + \dots + v_d^2 || $$
 
-$$ \text{But the square of a number is always positave (this is VGA (vannila geomatric algebra), not CGA (
-complex geomatric algebra (the term CGA actually means conformal geomatric algebra)) also, the square of the square root of itself, and } i^2 \text{ is still } -1 \text{, I think that I was confusing the square of the square root with the square root of the square), and the sum of positave numbers is positave, and the absolute value of a positave number is positave, so...} $$
+$$ \text{But the square of a number is always positive (this is VGA (vanilla geometric algebra), not CGA (
+complex geometric algebra (the term CGA actually means conformal geometric algebra)) also, the square of the square root of itself, and } i^2 \text{ is still } -1 \text{, I think that I was confusing the square of the square root with the square root of the square), and the sum of positive numbers is positive, and the absolute value of a positive number is positive, so...} $$
 
 $$ || \vec{v} ||^2 = v_1^2 + v_2^2 + v_3^2 + v_4^2 + \dots + v_d^2 $$
 
@@ -177,7 +177,7 @@ $$ \vec{v} \cdot \vec{v} = v_1^2 + v_2^2 + v_3^2 + v_4^2 + \dots + v_d^2 $$
 
 $$ || \vec{v} ||^2 = \vec{v} \cdot \vec{v} $$
 
-$$ \text{But then I realized, this if halfway to the square of a vector.} $$
+$$ \text{But then I realized, this is halfway to the square of a vector.} $$
 
 $$ \vec{v}^2 = \vec{v} \cdot \vec{v} + \vec{v} ∧ \vec{v} = || \vec{v} ||^2 + \vec{v} ∧ \vec{v} $$
 
@@ -207,7 +207,7 @@ $$ \vec{v} = \frac{|| \vec{v} ||^2}{\vec{v}} $$
 
 $$ \frac{1}{\vec{v}} = \frac{\vec{v}}{|| \vec{v} ||^2} $$
 
-$$ \text{I had this proof that } \frac{1}{\frac{1}{\vec{v}}} = \vec{v} \text{ that I would put right here, but I accedentally deleted that one (and it is now an exersize for the veiwer). In conclution:} $$
+$$ \text{I had this proof that } \frac{1}{\frac{1}{\vec{v}}} = \vec{v} \text{ that I would put right here, but I accidentally deleted that one (and it is now an exercise for the viewer). In conclusion:} $$
 
 $$ \vec{v}^2 = || \vec{v} ||^2 $$
 
@@ -259,7 +259,7 @@ $$ \vec{v} \vec{u} = \vec{u} \cdot \vec{v} - \vec{u} ∧ \vec{v} $$
 
 ### complex numbers
 
-$$ \text{complex numbers (surprisingly in geomatric algebra) come from } 2d \text{ geomatric algebra. So time to re-derive that! (And use } i \text{ this time instead of } U \text{.) (I thought that } i \text{ should have a hat, but that wouldn't work.) Here's the definitions and link to the complex numbers page:} $$
+$$ \text{complex numbers (surprisingly in geometric algebra) come from } 2d \text{ geometric algebra. So time to re-derive that! (And use } i \text{ this time instead of } U \text{.) (I thought that } i \text{ should have a hat, but that wouldn't work.) Here's the definitions and link to the complex numbers page:} $$
 
 [.](https://silaspe.github.io/maths/complex.html)
 
@@ -302,9 +302,9 @@ $300$ Lines!
 $$ \vec{u} ∧ \vec{v} = i \cdot Det \begin{bmatrix} u_x & u_y \\
 v_x & v_y \\ \end{bmatrix} $$
 
-Here's a [determinat video](https://www.youtube.com/watch?v=Ip3X9LOh2dk) and [linear algebra playlist](https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab) for context (make sure to skip the cross product video) (also, that determinant is probably the only matrix on this page. I'll come back here when I finish the page and put the awnser here: ). ( $\text{ }$ : ) $\text{ }$ Btw.)
+Here's a [determinant video](https://www.youtube.com/watch?v=Ip3X9LOh2dk) and [linear algebra playlist](https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab) for context (make sure to skip the cross product video) (also, that determinant is probably the only matrix on this page. I'll come back here when I finish the page and put the answer here: ). ( $\text{ }$ : ) $\text{ }$ Btw.)
 
-$$  \text{Text over time! (As oppose to voice over, it's a font swich.) What's something that veiwers of this website would want from geomatric algebra? I think I have an idea: rotate a vector by the angle between two other vectors. I'l do it in } 20 \text{ minutes.} $$
+$$  \text{Text over time! (As opposed to voice over, it's a font switch.) What's something that viewers of this website would want from geometric algebra? I think I have an idea: rotate a vector by the angle between two other vectors. I'll do it in } 20 \text{ minutes.} $$
 
 $$ \text{It's the next day.} $$
 
@@ -355,7 +355,7 @@ $$ \vec{u} \text{ complexify} (\vec{v}) = \text{vectorize} (\text{complexify} (\
 
 $$ \vec{v} z = \text{vectorize} (\text{complexify} (\vec{v}) z) $$
 
-Wait a minute! (Which was the catch phrase of sudgy (pronounced soo-gey) in the quick introduction that I mentioned earlier.) If multiplying a vector by a complex number acts like comlex number multiplication (rotating and scaling) (exempt it returns a vector, not a complex number), and a vector times a vector is a complex number, that what rotation is that? (Well, the rotation and scaling of a complex number scales by the magnitude and rotates by the angle counterclockwise from the positave $x$ axis.)
+Wait a minute! (Which was the catchphrase of sudgy (pronounced soo-gey) in the quick introduction that I mentioned earlier.) If multiplying a vector by a complex number acts like complex number multiplication (rotating and scaling) (exempt it returns a vector, not a complex number), and a vector times a vector is a complex number, then what rotation is that? (Well, the rotation and scaling of a complex number scales by the magnitude and rotates by the angle counterclockwise from the positive $x$ axis.)
 
 $$ \text{By the way, } \vec{v} \vec{u} = \text{ccong} (\vec{u} \vec{v}) $$
 
@@ -381,13 +381,13 @@ $$ \vec{u} \vec{v} = || \vec{u} || \text{ } || \vec{v} || e^{i \theta} $$
 
 $$ \theta = \text{ The angle counterclockwise from } \vec{u} \text{ towards } \vec{v}. $$
 
-$$ \text{By the way, with this can derive two new equations! (But you probably know the first.)} $$
+$$ \text{By the way, with this we can derive two new equations! (But you probably know the first.)} $$
 
 $$ \vec{u} \cdot \vec{v} = || \vec{u} || \text{ } || \vec{v} ||  cos(\theta) $$
 
 $$ \vec{u} ∧ \vec{v} = || \vec{u} || \text{ } || \vec{v} ||sin(\theta) i $$
 
-But what I wanted was that $\theta!$ But I know that it is ([almost](https://silaspe.github.io/maths/arctan.html)) impossible to find $\theta$ when all you know is $e^{i \theta}$. Wait a minute! If a complex number of the form $e^{i \theta}$ is just a rotation, and if multiplying a vector by a complex number acts like they were both complex numbers (exempt it returns a vector), than you can rotate a vecor $\vec{w}$ by the angle between two unit vectors (or just ones with inverse magnitude, but normalizing them is easier) without having to even know about complex numbers!
+But what I wanted was that $\theta!$ But I know that it is ([almost](https://silaspe.github.io/maths/arctan.html)) impossible to find $\theta$ when all you know is $e^{i \theta}$. Wait a minute! If a complex number of the form $e^{i \theta}$ is just a rotation, and if multiplying a vector by a complex number acts like they were both complex numbers (exempt it returns a vector), than you can rotate a vector $\vec{w}$ by the angle between two unit vectors (or just ones with inverse magnitude, but normalizing them is easier) without having to even know about complex numbers!
 
 $$ \hat{u} = \frac{\vec{u}}{|| \vec{u} ||} $$
 
@@ -423,7 +423,7 @@ $$ \vec{w} \vec{u} \vec{v} = \vec{w} \text{ Scaled by the length of } \vec{u} \t
 
 ### Rotors
 
-A rotor is a way to rotate a vector by any angle $\theta$ in any plane (Yes, plane. I think it makes the same if not more sense to rotate in a plane. I also think that this is simalar to the ∧ v.s. $\times$ Product.) in any dimention. Let's start with the simplest possible rotor I can think of, in $3d$, $90$°, $\hat{x}$ - $\hat{y}$ plane. (I'll call $\vec{v}$ rotated by the name of $\vec{v} \prime$)
+A rotor is a way to rotate a vector by any angle $\theta$ in any plane (Yes, plane. I think it makes the same if not more sense to rotate in a plane. I also think that this is similar to the ∧ v.s. $\times$ Product.) in any dimension. Let's start with the simplest possible rotor I can think of, in $3d$, $90$°, $\hat{x}$ - $\hat{y}$ plane. (I'll call $\vec{v}$ rotated by the name of $\vec{v} \prime$)
 
 $$ \vec{v} = v_x \hat{x} + v_y \hat{y} + v_z \hat{z} $$
 
@@ -449,7 +449,7 @@ $$ \hat{y} \hat{x} v_z \hat{z} \hat{x} \hat{y} = v_z \hat{z} $$
 
 $$ \hat{y} \hat{x} \vec{v} \hat{x} \hat{y} = - v_x \hat{x} - v_y \hat{y} + v_z \hat{z} $$
 
-$$ \text{ The } z \text{ coordinate is correct! Success! But the } x \text{ and } y \text{ got messed up, of coarse they did, we rotated twice. (Once for } \hat{y} \hat{x} \text{ on the left, and once for } \hat{x} \hat{y} \text{ on the right.) let's add back in that angle } \theta \text{ to prove that we did rotate twice.} $$
+$$ \text{ The } z \text{ coordinate is correct! Success! But the } x \text{ and } y \text{ got messed up, of course they did, we rotated twice. (Once for } \hat{y} \hat{x} \text{ on the left, and once for } \hat{x} \hat{y} \text{ on the right.) Let's add back in that angle } \theta \text{ to prove that we did rotate twice.} $$
 
 Do you remember [euler's identity](https://silaspe.github.io/maths/complex.html), $e^{i \theta} = cos(\theta) + isin(\theta)$ right? Well, this actually for any $i$ whose square is $-1$, the thing is that $(\hat{x} \hat{y})^2 = \hat{x} \hat{y} \hat{x} \hat{y} = -\hat{x} \hat{x} \hat{y} \hat{y} = -1$, so
 
@@ -525,11 +525,11 @@ $$ \text{Yesssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
 
 $$ \vec{v} \prime = e^{-\hat{x} \hat{y} \frac{\theta}{2}} \vec{v} e^{\hat{x} \hat{y} \frac{\theta}{2}} $$
 
-$$ \text{And there it is, } \vec{v} \text{ in it's prime.} $$
+$$ \text{And there it is, } \vec{v} \text{ in its prime.} $$
 
 ### Maxwell's equation (singular) (#spoilers)
 
-$$ \text{First, I don't know what any of it means, but here's the un-simplified Maxwell's equations (in the order of Gauss's law, Ampere's law, Faraday's law, and, I dunno, Gauss's law for magnitism I guss.):} $$
+$$ \text{First, I don't know what any of it means, but here's the un-simplified Maxwell's equations (in the order of Gauss's law, Ampere's law, Faraday's law, and, I dunno, Gauss's law for magnetism I guess.):} $$
 
 $$ \vec{\nabla} \cdot \vec{E} = \frac{\rho}{\epsilon_0} $$
 
