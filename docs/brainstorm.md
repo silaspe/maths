@@ -1,10 +1,10 @@
-The equations below are the beginning of pages that may or may not get added to my website. All pages after Modular arithmetic and this one started here in the brainstorm page. I got (almost all of) these from copying things from a piece of paper (actually, just the one below) that had potential to become a digital page. And finaly, the titles have a question mark if they are my best guss for the titles of the page, no question mark if I made the page and know the title, a question mark if I never published the page, but still want the world to see it, and extra small if is just one puzzle, but didn't fit anywhere and/or was worth making a dedicated page. Also, happy eclipse day! The eclipse was worth the $10$ (total) hours of driving.
+The equations below are the beginning of pages that may or may not get added to my website. All pages after Modular arithmetic and this one started here in the brainstorm page. I got (almost all of) these from copying things from a piece of paper (actually, just the one below) that had potential to become a digital page. And finally, the titles have a question mark if they are my best guess for the titles of the page, no question mark if I made the page and know the title, a question mark if I never published the page, but still want the world to see it, and extra small if is just one puzzle, but didn't fit anywhere and/or was worth making a dedicated page. Also, happy eclipse day! The eclipse was worth the $10$ (total) hours of driving.
 
 ### galois theory/field theory/group theory?
 
-A field of numbers is a collection of numbers where you can add, subtract, multiply, and even sometimes divide two numbers (as long as you don't divide by zero) in that field to get another number in that field. For example, the rationals, the reals and the complex numbers ane all fields that are infinate and you can divide them. The complex lattice points (which are complex numbers of the form $integer + integer \cdot i$ ), the matracies (insert joke here), and the integers, are all in the infinate but can not always be divided. I know what you might be thinking: "what the (abbreviation that I am allowed to say for a curse word that I am not allowed to say) is a non-infinate field?". A non-infinite field or finite field is something like the [modulo numbers](https://silaspe.github.io/maths/mod.html). You might not be able to divide in a non-prime base, but you can do it in a prime base. So that completes the venn diagram!
+A field of numbers is a collection of numbers where you can add, subtract, multiply, and even sometimes divide two numbers (as long as you don't divide by zero) in that field to get another number in that field. For example, the rationals, the reals and the complex numbers are all fields that are infinite and you can divide them. The complex lattice points (which are complex numbers of the form $integer + integer \cdot i$ ), the matrices (insert joke here), and the integers, are all infinite but can not always be divided. I know what you might be thinking: "what the (abbreviation that I am allowed to say for a curse word that I am not allowed to say) is a non-infinite field?". A non-infinite field or finite field is something like the [modulo numbers](https://silaspe.github.io/maths/mod.html). You might not be able to divide in a non-prime base, but you can do it in a prime base. So that completes the venn diagram!
 
-Today, I want to show you an infinate field where you can not divide, I'm talking (well, typing) about numbers of the form
+Today, I want to show you an infinite field where you can not divide, I'm talking (well, typing) about numbers of the form
 
 $$ a + b \sqrt{7} $$
 
@@ -56,7 +56,7 @@ $$ \text{Because there is no way that this is a vector. Anyways, ending 2, } $$
 
 ### geometric algebra
 
-Yeah, I forgot all endings to multiplying vectors, so I came up with the previous one. Well, I guss I had this one, but I would rather make it into it's own page. After waching [A Swift Introduction to Geometric Algebra](https://www.youtube.com/watch?v=60z_hpEAtD8) (litteraly, that was the name), I thought that (if it is a scalar plus a bivector), than it is just a scalar plus a vector times $i$ (or $-i$, I am not sure yet), but I will call it $U$ instead. But first, here's the definition of multiplying two basis vectors (all the alternitave endings probably just had alternitave definitions for this. I think that I remember the definition that multiplication was anticomutative, which would lead me to the cross product): The prodct of a basis vector $e_1$ and it self is $0$, and the product of two basis vectors $e_1$ and $e_2$ equals $-e_2 e_1$ equals $e_3$. This means that you can do this at any point in the product of basis vectors.
+Yeah, I forgot all the endings to multiplying vectors, so I came up with the previous one. Well, I guess I had this one, but I would rather make it into its own page. After watching [A Swift Introduction to Geometric Algebra](https://www.youtube.com/watch?v=60z_hpEAtD8) (literally, that was the name), I thought that (if it is a scalar plus a bivector), than it is just a scalar plus a vector times $i$ (or $-i$, I am not sure yet), but I will call it $U$ instead. But first, here's the definition of multiplying two basis vectors (all the alternative endings probably just had alternative definitions for this. I think that I remember the definition that multiplication was anticommutative, which would lead me to the cross product): The product of a basis vector $e_1$ and it self is $0$, and the product of two basis vectors $e_1$ and $e_2$ equals $-e_2 e_1$ equals $e_3$. This means that you can do this at any point in the product of basis vectors.
 
 $$ \hat{i} = x $$
 
@@ -135,7 +135,7 @@ $$ yz = yzxx = -yxzx = xyzx = Ux $$
 
 $$ zx = zxyy = -zyxy = -(-U)y = Uy $$
 
-$$ \text{Yes! Now I can finaly solve the puzzle.} $$
+$$ \text{Yes! Now I can finally solve the puzzle.} $$
 
 $$ \vec{u} \vec{v} = \vec{u} \cdot \vec{v} + \begin{pmatrix} (Uz)(u_x v_y - u_y v_x) +  \\
 (Ux)(u_y v_z - u_z v_y) + \\
@@ -153,7 +153,7 @@ $$ \vec{u} \vec{v} = \vec{u} \cdot \vec{v} + \hat{i} \hat{j} \hat{k} \text{ } \v
 
 $$ \vec{u} \vec{v} = \vec{u} \cdot \vec{v} + \vec{u} \times \vec{v} \text{ } i $$
 
-Also, the cross product only works in $3d$ while this $\hat{i} \hat{j} \hat{k} \text{ } \vec{u} \times \vec{v}$ thing works in any dimention. This operator actually has a name (well, two names), the outer product (as oppose to the dot product sometimes refered to as the inner product) or wedge product for it's apperance as a wedge unicode character. This more genaral cross product is written $\vec{u} ∧ \vec{v}$
+Also, the cross product only works in $3d$ while this $\hat{i} \hat{j} \hat{k} \text{ } \vec{u} \times \vec{v}$ thing works in any dimension. This operator actually has a name (well, two names), the outer product (as opposed to the dot product sometimes referred to as the inner product) or wedge product for its appearance as a wedge unicode character. This more general cross product is written $\vec{u} ∧ \vec{v}$
 
 $$ \vec{u} \vec{v} = \vec{u} \cdot \vec{v} + \vec{u} ∧ \vec{v} $$
 
@@ -203,7 +203,7 @@ $$ \frac{1}{\frac{1}{\vec{v}}} = \frac{\frac{1}{\vec{v}}}{|| \frac{1}{\vec{v}} |
 
 $$ \text{But that is only in } 3d \text{, what about } 4d \text{ and beyond? I remember telling my sister the other day "what happens when you multiply two vectors? In } 4 \text{ dimensions!" (Both gasp).} $$
 
-$$ \text{Lets say that we are in dimension } d \text{. First, basis vectors} $$
+$$ \text{Let's say that we are in dimension } d \text{. First, basis vectors} $$
 
 $$ e_1 = \hat{i} = x $$
 
@@ -407,7 +407,7 @@ $$ \text{I think I'm too lazy to finish this.} $$
 
 ### set theory/logic (definitions)
 
-$$ \text{A set is a well defined collection of objects, a set could contain the two shoes on you feet, or the } 5 \text{ peices of chese on this cutting board (that I'm going to pretend exists), sets can even contain other sets, but sets can not contain themselfes, because tis would lead to a paradox: would the set that contains every set that doesn't contain itsef contain itself?" this also means that there isn't a set that contains everything.} $$
+$$ \text{A set is a well defined collection of objects, a set could contain the two shoes on you feet, or the } 5 \text{ pieces of cheese on this cutting board (that I'm going to pretend exists), sets can even contain other sets, but sets can not contain themselves, because it would lead to a paradox: would the set that contains every set that doesn't contain itself contain itself?" this also means that there isn't a set that contains everything.} $$
 
 $$ \text{But the thing is, using some symbols, you can describe almost all of math. These symbols can just be pronounced as words, and it would make a sentence, such as "} ¬ \exists (x): |x| < 0 \text{" as "there does not exist } x \text{ such that the absolute value of } x \text{ is strictly less than } 0 \text{". Time to rapidfire through each one's pronunciation and meaning.} $$
 
@@ -441,17 +441,17 @@ $$ pow \text{ Is pronounced "the power set of" as in "} pow(S) \text{" and I'll 
 
 $$ ∩ \text{ Is pronounced "and" and means "} a ∩ b \text{ is true if and only if statement } a \text{ is true and } b \text{ is true".} $$
 
-$$ = : \text{ Is pronounced "equals by definition" and means "define the thing on the left as the thing on the right", or was it the other wat around?} $$
+$$ = : \text{ Is pronounced "equals by definition" and means "define the thing on the left as the thing on the right", or was it the other way around?} $$
 
-$$ = \text{ Is pronounced "is the same as" and I'll get to it's formal meaning in the next chapter.} $$
+$$ = \text{ Is pronounced "is the same as" and I'll get to its formal meaning in the next chapter.} $$
 
-$$ \in^S \text{ Is pronounced "is a super element of" (} S \text{ for super) and I'll get to it's meaning in the next chapter.} $$
+$$ \in^S \text{ Is pronounced "is a super element of" (} S \text{ for super) and I'll get to its meaning in the next chapter.} $$
 
-$$ ∨ \text{ Is pronounced "or" and means "} a ∨ b \text{ is true if statement } a \text{ is true or } b \text{ is true... Or both!", it can also mean the union of two sets, in that case, it is pronounced "unioned with", but I'll get to it's formal meaning in the next chapter.} $$
+$$ ∨ \text{ Is pronounced "or" and means "} a ∨ b \text{ is true if statement } a \text{ is true or } b \text{ is true... Or both!", it can also mean the union of two sets, in that case, it is pronounced "unioned with", but I'll get to its formal meaning in the next chapter.} $$
 
 $$ \text{succ Is pronounced "the immediate successor of" and means "that number } + 1 \text{".} $$
 
-$$ set \text{ Is pronounced "the set containing" as in "} set(S) \text{" and I'll get to it's formal meaning in the next chapter.} $$
+$$ set \text{ Is pronounced "the set containing" as in "} set(S) \text{" and I'll get to its formal meaning in the next chapter.} $$
 
 ### set theory (definitions from those definitions)?
 
@@ -493,7 +493,7 @@ Was [recursion](https://silaspe.github.io/maths/brainstorm.html#_1) in the rule 
 
 $$ 0 = Ø $$
 
-$$ \text{succ} (n) \text{ (Which mathematicly equals } n + 1 \text{) Is how you would usually define numbers, so I'll define numbers that way, I'll say that succ} (n) \text{ is the set that contains all numbers } 0 \text{-} n \text{. But first: the union of two sets, denoted as an } ∨ \text{ sign.} $$
+$$ \text{succ} (n) \text{ (Which mathematically equals } n + 1 \text{) Is how you would usually define numbers, so I'll define numbers that way, I'll say that succ} (n) \text{ is the set that contains all numbers } 0 \text{-} n \text{. But first: the union of two sets, denoted as an } ∨ \text{ sign.} $$
 
 $$ x \in A ∨ B \iff x \in A ∨ x \in B $$
 
@@ -535,13 +535,13 @@ $$ |.^{|......} = \text{ Long} $$
 
 $$ |.^{|.......} = \text{ Overlong} $$
 
-$$ \text{And finaly,} $$
+$$ \text{And finally,} $$
 
 $$ |.^{|........} = |.^{Byte} = \text{ Byteplex or sha (for sha } 256 \text{)} $$
 
 $$ \text{And then, for the other powers of two, combine the names, so } |... = |.. \text{ } \cdot \text{ } |. = \text{ Four } + \text{ Two } = \text{ Four Two. Then, to get things that are other than powers of two, combine the names of all of the powers of two that sum to it, largest to smallest. (Also, } . = \text{Zero.)} $$
 
-$$ \text{So, } |..| = |... + | = \text{ Four two } + \text{ One } = \text{ Four Two One. But the thing is, } ||| \text{ is also pronounced "Four Two One". Okay, so, if something like that happens where the first part of the next digit is smaller that the last part of the previous digit, then... Um...} $$
+$$ \text{So, } |..| = |... + | = \text{ Four two } + \text{ One } = \text{ Four Two One. But the thing is, } ||| \text{ is also pronounced "Four Two One". Okay, so, if something like that happens where the first part of the next digit is smaller than the last part of the previous digit, then... Um...} $$
 
 #### here's a thing that I worked on for hours, but did not want to delete
 
@@ -603,11 +603,11 @@ $$ \vec{\nabla} \cdot B = 0 $$
 
 #### ncuomdbee rr etphoe#o#r#y#
 
-$$ \text{This chapter is about writing numbers as infinate dimentional vectors (if the vector components are } 3 \text{, } 4 \text{, } 5 \text{ and then infinite } 0 \text{'s, than it would be written as } [3 \text{, } 4 \text{, } 5 \text{, } 0 \text{, } 0 \text{, } 0...] \text{), this is how:} $$
+$$ \text{This chapter is about writing numbers as infinite dimensional vectors (if the vector components are } 3 \text{, } 4 \text{, } 5 \text{ and then infinite } 0 \text{'s, than it would be written as } [3 \text{, } 4 \text{, } 5 \text{, } 0 \text{, } 0 \text{, } 0...] \text{), this is how:} $$
 
 $$ 2025000 = 2^3 \cdot 3^4 \cdot 5^5 \cdot 7^0 \cdot 11^0 \cdot 13^0 \cdot ... \rightarrow \vec{2025000} = [3 \text{, } 4 \text{, } 5 \text{, } 0 \text{, } 0 \text{, } 0...] $$
 
-$$ \text{Before we do vector addition and scalar multiplcation, here's some code:} $$
+$$ \text{Before we do vector addition and scalar multiplication, here's some code:} $$
 
 ```py
 def SmallestPrimeDivisor(n):
@@ -767,9 +767,9 @@ $$ (p \iff q) = (p = q) = (p → q) ∩ (q → p) $$
 
 $$ \text{Order of operations: } ¬ > ∩ > ∨ > = > → > \iff \text{.} $$
 
-$$ \text{E} (x; p(x)) = \text{ The extention of } p(x) \text{, the set of all } x \text{ such that } p(x) \text{ (is true) (the function } p(x) \text{ inputs, well, anything, and outputs a boolean (true or false) (e.g. is } x \text{ an odd number?)), and this is how I'm going to define sets.} $$
+$$ \text{E} (x; p(x)) = \text{ The extension of } p(x) \text{, the set of all } x \text{ such that } p(x) \text{ (is true) (the function } p(x) \text{ inputs, well, anything, and outputs a boolean (true or false) (e.g. is } x \text{ an odd number?)), and this is how I'm going to define sets.} $$
 
-$$ \text{The extention of that particular function is the set of all odd numbers.} $$
+$$ \text{The extension of that particular function is the set of all odd numbers.} $$
 
 $$ x \in \text{E} (y; p(y)) \iff p(x) \text{ (} = \text{T)} $$
 
@@ -827,25 +827,25 @@ Credit (even if it is very small): [The two points that lie on every circle (???
 
 Yes, I know, the last one was added literally $4$ days ago, but I thougt of something else to talk about.
 
-Lets say that a point $(a: b)$ (as opposed to $(a, b)$) is equal to $(ca: cb)$ $(c \ne 0)$, so every* (and that's a big asterisk) point $(a: b)$ can be scaled onto $(\frac{a}{b}: 1)$, a kind of number line.
+Let's say that a point $(a: b)$ (as opposed to $(a, b)$) is equal to $(ca: cb)$ $(c \ne 0)$, so every* (and that's a big asterisk) point $(a: b)$ can be scaled onto $(\frac{a}{b}: 1)$, a kind of number line.
 
 *unless $b = 0$, then we add this kind of "point at infinity" to our number line (it's a single point because the point $(a: 0)$ can be scaled to $(1: 0)$ (aka the point at infinity), that is, of coarse, unless $a = 0$, but that point isn't really aloud for the same reason as $\frac{0}{0}$) making it the real projective line or $ℝ \text{P}^1$.
 
-The reason why it's at infinity is because, if you consider the point $(1: 1)$, it falls onto $1$ on the number line, the point $(1: \frac{1}{2})$ falls onto $2$, the point $(1: \frac{1}{4})$ falls onto $4$, the point $(1: \frac{1}{8})$ falls onto $8$, and as the second number gets smaller, the point on the number line gets bigger aproaching infinity, hence the name "point at infinity". But, if you instead do this from the other direction, it approaches negative infinity. You can imagine a number line that curves down as it goes along, consecutave integers getting closer and closer, and an unsigned infinity at the bottom where the line meets itself.
+The reason why it's at infinity is because, if you consider the point $(1: 1)$, it falls onto $1$ on the number line, the point $(1: \frac{1}{2})$ falls onto $2$, the point $(1: \frac{1}{4})$ falls onto $4$, the point $(1: \frac{1}{8})$ falls onto $8$, and as the second number gets smaller, the point on the number line gets bigger approaching infinity, hence the name "point at infinity". But, if you instead do this from the other direction, it approaches negative infinity. You can imagine a number line that curves down as it goes along, consecutive integers getting closer and closer, and an unsigned infinity at the bottom where the line meets itself.
 
 Stepping a dimension up, you get the real projective plane or $ℝ \text{P}^2$, $(a: b: c) = (da: db: dc)$, most numbers going to $(\frac{a}{c}: \frac{b}{c}: 1)$, some becoming $(\frac{a}{b}: 1: 0)$, less becoming $(1: 0: 0)$, the point at infinity becomes a line at infinity (more of a circle, but $1$ degree of freedom, so it's a line), and the number line becomes a space of all points.
 
-There is a problem though (that is big enough to be explained on a line by itself), you could imagine the same process that I used to prove the unsigned infinity thing but in $ℝ \text{P}^2$ to get the unsuprising result of $(a: b: 0) = (-a: -b: 0)$. This does mean that, when drawing the regular or affine plane, and drawing a circle around it (to represent the line at infinity of coarse), if you wanted to draw, say, the point $(1: 1: 0)$, it would need to be at both the very top right, and the very bottom left of the circle.
+There is a problem though (that is big enough to be explained on a line by itself), you could imagine the same process that I used to prove the unsigned infinity thing but in $ℝ \text{P}^2$ to get the unsurprising result of $(a: b: 0) = (-a: -b: 0)$. This does mean that, when drawing the regular or affine plane, and drawing a circle around it (to represent the line at infinity of coarse), if you wanted to draw, say, the point $(1: 1: 0)$, it would need to be at both the very top right, and the very bottom left of the circle.
 
-To see why this double counting thing makes sense, I'll project onto a unit sphere, so, if $r = \sqrt{a^2 + b^2 + c^2}$, the point $(a: b: c)$ maps to $(\frac{a}{r}: \frac{b}{r}: \frac{c}{r})$. You might see the problem though, it also maps to $(-\frac{a}{r}: -\frac{b}{r}: -\frac{c}{r})$, because it's also on the unit sphere. So, if you just consider the top half of the sphere (includineg the equator so that points at infinity are acounted for), it counts almost every point once, and points at infinity twice, kinda like the one where we projected onto the plane paralel to and one unit above the $xy$ plane. So, to fix this problem, and give every point the same treatment, you (counterintuitavely) count every point twice by using the entire sphere, kinda like giving every line in $2d$ an angle instead of a slope to fix the vertical lines problem, at the cost of there being two angles for every line.
+To see why this double counting thing makes sense, I'll project onto a unit sphere, so, if $r = \sqrt{a^2 + b^2 + c^2}$, the point $(a: b: c)$ maps to $(\frac{a}{r}: \frac{b}{r}: \frac{c}{r})$. You might see the problem though, it also maps to $(-\frac{a}{r}: -\frac{b}{r}: -\frac{c}{r})$, because it's also on the unit sphere. So, if you just consider the top half of the sphere (including the equator so that points at infinity are accounted for), it counts almost every point once, and points at infinity twice, kinda like the one where we projected onto the plane parallel to and one unit above the $xy$ plane. So, to fix this problem, and give every point the same treatment, you (counterintuitively) count every point twice by using the entire sphere, kinda like giving every line in $2d$ an angle instead of a slope to fix the vertical lines problem, at the cost of there being two angles for every line.
 
 [Here's a desmos graph](https://www.desmos.com/3d/zzoajkphnn).
 
 Yes, I know, the plane is placed one unit below the sphere instead of one above, but it's only like that for the sake of demonstration.
 
-### dualtity
+### duality
 
-It's hard to explain how points dual to lines, but an example would be the origin and the line at infinity, or on the sphere, the equator and the north and south poles (remember, two solutions). the more general definition would be something like this: the two points on a sphere, a point on the dual line, and the point $90°$ away but still on the dual line are all mutually perpindicular. By the way, points on the plane project to antipodal points on the sphere, and lines on the plane project to great circles on the sphere.
+It's hard to explain how points are dual to lines, but an example would be the origin and the line at infinity, or on the sphere, the equator and the north and south poles (remember, two solutions). The more general definition would be something like this: the two points on a sphere, a point on the dual line, and the point $90°$ away but still on the dual line are all mutually perpendicular. By the way, points on the plane project to antipodal points on the sphere, and lines on the plane project to great circles on the sphere.
 
 Also fun fact: the duals of every point on a line would all pass through the dual point, and the duals of every line that passes through a point would all lie on the dual line.
 
@@ -903,7 +903,7 @@ $$ \text{And if you were wondering, this also works in } 3d \text{ or higher, wi
 
 $$ \text{Next, complex numbers!} $$
 
-Complex numbers are, if I'm gonna quote Morphocular in [this video](https://www.youtube.com/watch?v=4KlvI_uK9zs&t=470s), the language of $2d$ rotation. I'll desribe them in an unusual way:
+Complex numbers are, if I'm gonna quote Morphocular in [this video](https://www.youtube.com/watch?v=4KlvI_uK9zs&t=470s), the language of $2d$ rotation. I'll describe them in an unusual way:
 
 $$ \text{Let's say that I want to rotate a vector } \vec{v} \text{ or } \begin{bmatrix} v_x \\
 v_y \\ \end{bmatrix} \text{ by an angle } \theta \text{ in the plane, well, there's only one plane, and from } \hat{x} \text{ to } \hat{y} \text{, the result is } \begin{bmatrix} v_x cos(\theta) - v_y sin(\theta) \\
@@ -923,7 +923,7 @@ $$ i^2 \vec{v} = -\vec{v} $$
 
 $$ i^2 = -1 ?!?!?! $$
 
-$$ \text{Ok, you might have seen that one comming.} $$
+$$ \text{Ok, you might have seen that one coming.} $$
 
 $$ \text{Time for euler's identity!} $$
 
@@ -958,7 +958,7 @@ If you want a better rotation formula, [here](https://www.youtube.com/watch?v=Y1
 
 Homogenization is a method of interpolation from equations on the affine plane (non-projective plane) to equations on the projective plane (so, adding the line at infinity), but I think it would be better if I just showed how to do it.
 
-Lets say that I have these equations for describing my line:
+Let's say that I have these equations for describing my line:
 
 $$ y = mx + b $$
 
@@ -974,7 +974,7 @@ and from those, I have this new equation for describing my line:
 
 $$ y = mx + bz $$
 
-now, the equation is homogeneous $^1$.
+Now, the equation is homogeneous $^1$.
 
 In (this $(x, y, z) = (cx, cmx + cb, c)$) equation for a line, $z$ could not equal $0$, but now, $z$ can equal $0$, and if $z = 0$, then it's at the line at infinity, so these $z = 0$ solutions snuck in as a result of homogenization, mission success!
 
@@ -999,7 +999,7 @@ Oh, look, it's tomorrow, time to tell you the implications.
 
 $1000$ Lines, wow.
 
-Y'know how any two distinct points on the affine plane have a line through them? And how (almost) any two distinct lines on the affine plane have a point on both? That is, of coarse, unless the lines are parallel. Solution: homogenization. A homogenized line with slope $m$ has the point $(1: m: 0)$ (and $(0: 1: 0)$ if the line is vertical). So, if two lines have the same slope $m$ (and are distinct), then they don't meet normally, and they intersect at $(1: m: 0)$. If they have different slopes, then they do meet normally, and they don't intersect at the line at infinity. But what about the "any two distinct points have a line through them" rule? If you have a normal point and a point at infinity $(1: m: 0)$, they have the line with slope $m$ going through the first one. But what if you have two points on the line at infinity? This (among other things) is why it's called the line at infinity, a line that all points at infinity lie on.
+Y'know how any two distinct points on the affine plane have a line through them? And how (almost) any two distinct lines on the affine plane have a point on both? That is, of course, unless the lines are parallel. Solution: homogenization. A homogenized line with slope $m$ has the point $(1: m: 0)$ (and $(0: 1: 0)$ if the line is vertical). So, if two lines have the same slope $m$ (and are distinct), then they don't meet normally, and they intersect at $(1: m: 0)$. If they have different slopes, then they do meet normally, and they don't intersect at the line at infinity. But what about the "any two distinct points have a line through them" rule? If you have a normal point and a point at infinity $(1: m: 0)$, they have the line with slope $m$ going through the first one. But what if you have two points on the line at infinity? This (among other things) is why it's called the line at infinity, a line that all points at infinity lie on.
 
 #### greek letters
 
