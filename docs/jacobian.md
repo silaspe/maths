@@ -95,15 +95,15 @@ dy\end{bmatrix} $$
 $$ f\prime (z) = \begin{bmatrix}  \frac{\partial u}{\partial x} \quad \frac{\partial u}{\partial y} \\
 \frac{\partial v}{\partial x} \quad \frac{\partial v}{\partial y}\end{bmatrix} $$
 
-#### clarification and cauchy-reimann equations
+#### clarification and cauchy-riemann equations
 
-technicaly a term like $\partial u_y$ seems like the change in $u$ when $z$ adds $dy$, but actually it is the change in $u$ when $z$ moves up by $dyi$, but this is just $x + yi + dyi$, so $x + (y + dy)i$ which means that it is a change in $u$ when $y$ increses
+technically a term like $\partial u_y$ seems like the change in $u$ when $z$ adds $dy$, but actually it is the change in $u$ when $z$ moves up by $dyi$, but this is just $x + yi + dyi$, so $x + (y + dy)i$ which means that it is a change in $u$ when $y$ increases
 
-in short, $\partial u_y$ is not the change in $u$ when $z$ adds $dy$, but the change of $u$ when you increse $y$
+in short, $\partial u_y$ is not the change in $u$ when $z$ adds $dy$, but the change of $u$ when you increase $y$
 
-on another note, the equation or jacobian matrix is a matrix, but as you know, evry complex number has a corrasponding matrix but not every matrix has a corrasponding complex number, so to  find out if the jacobian matrix is a complex number or just a matrix, or said another way, if complex function $f(z)$ has a derivitave, we need the cauchy-reimann equations, lets go derive them!
+on another note, the equation or jacobian matrix is a matrix, but as you know, every complex number has a corresponding matrix but not every matrix has a corresponding complex number, so to  find out if the jacobian matrix is a complex number or just a matrix, or said another way, if complex function $f(z)$ has a derivative, we need the cauchy-riemann equations, lets go derive them!
 
-so, if the jacobian matrix is a complex number $a + bi$ which I have been saving for something like this, than the corrasponding matrix is:
+so, if the jacobian matrix is a complex number $a + bi$ which I have been saving for something like this, than the corresponding matrix is:
 
 $$ \begin{bmatrix} a & -b \\
 b & a\end{bmatrix} $$
@@ -114,11 +114,11 @@ $$ \begin{bmatrix}  \frac{\partial u}{\partial x} \quad \frac{\partial u}{\parti
 \frac{\partial v}{\partial x} \quad \frac{\partial v}{\partial y}\end{bmatrix} = \begin{bmatrix} a & -b \\
 b & a\end{bmatrix} $$
 
-well, what makes a matrix of that form?
+Well, what makes a matrix of that form?
 
 for one, the top left equals the bottom right equals the real part
 
-and for another, the top right equals the negatave of the bottom left equals the negatave of the imaginary part
+and for another, the top right equals the negative of the bottom left equals the negative of the imaginary part
 
 ### in conclusion...
 
@@ -176,4 +176,4 @@ $$ 0 = 0 $$
 $$ f\prime (z) = \begin{bmatrix}  1 & 0 \\
 0 & -1 \end{bmatrix} $$
 
-in conclution, $z^2$ has a derivitave, and $\text{ccong} (z)$ does not.
+In conclusion, $z^2$ has a derivative, and $\text{ccong} (z)$ does not.
