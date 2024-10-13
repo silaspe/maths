@@ -48,4 +48,4 @@ $$ rou_n = : rou_{1, n} $$
 
 $$ rou_{m, n} = rou_n^m $$
 
-this also looks kind of like notation, but it is just a power.
+This also looks kind of like notation, but it is just a power.
