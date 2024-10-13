@@ -18,7 +18,7 @@ fifty houses on that side of the street, but not so many
 
 as five hundred."
 
-just to clarify, there are no houses on the other side of the street, and the house numbers don't skip any. To solve the puzzle, you find the number of his house, and the total number of houses on the street / number of the last house on the street, and that one is in between $50$ and $500$. For future reference, I will call those unknowns $x$ and $y$ respectively. When someone gave ramanujan (I'm a big fan of him by the way), he (supposedly) solved it in under $10$ seconds.
+Just to clarify, there are no houses on the other side of the street, and the house numbers don't skip any. To solve the puzzle, you find the number of his house, and the total number of houses on the street / number of the last house on the street, and that one is between $50$ and $500$. For future reference, I will call those unknowns $x$ and $y$ respectively. When someone gave ramanujan (I'm a big fan of him by the way), he (supposedly) solved it in under $10$ seconds.
 
 ### calculation
 
@@ -116,13 +116,13 @@ $$ \sum\limits_{k = 0}^{n} k = \frac{n (n + 1)}{2} $$
 
 ### back to the strand puzzle or whatever I was doing because I don't remember
 
-now I can find formulas for the sums of house numbers and say that they are equal. The first starts at $1$ and stops at $x - 1$, so the formula is:
+Now I can find formulas for the sums of house numbers and say that they are equal. The first starts at $1$ and stops at $x - 1$, so the formula is:
 
 $$ \frac{(x - 1) x}{2} $$
 
-Now, for the second formula, there are two methods. If I say "ao!", then forget the last $2$ lines, if i say "oa!", than remember them. With that being said...
+Now, for the second formula, there are two methods. If I say "ao!", then forget the last $2$ lines, if I say "oa!", then remember them. With that being said...
 
-one method is to pull out an $x$ at each of the $y - x$ steps, which amounts to an addded $x(y - x)$, so it is:
+one method is to pull out an $x$ at each of the $y - x$ steps, which amounts to an added $x(y - x)$, so it is:
 
 $$ \frac{(y - x) (y - x + 1)}{2} + x(y - x) = \frac{1}{2}((y - x) (y - x + 1) + 2x(y - x)) = \frac{1}{2}(y^2 - xy + y - xy + x^2 - x + 2xy - 2x^2) = \frac{1}{2}(y^2 + y - x^2 - x) = \frac{y (y + 1)}{2} - \frac{x (x + 1)}{2} $$
 
@@ -174,7 +174,7 @@ $$ (\frac{Y}{X})^2 \approx 2 $$
 
 $$ \frac{Y}{X} \approx \sqrt{2} $$
 
-But that is besides the point. The pell equation can be rearanged into $Y = \sqrt{2X^2 + 1}$, then plug in values for $X$ until $Y$ is an integer. Doing this, (and remembering to divide by $2$ and take the floor), I'll list the solutions that we get.
+But that is besides the point. The pell equation can be rearranged into $Y = \sqrt{2X^2 + 1}$, then plug in values for $X$ until $Y$ is an integer. Doing this, (and remembering to divide by $2$ and take the floor), I'll list the solutions that we get.
 
 $$ 6 \quad 8 $$
 
@@ -186,26 +186,26 @@ $$ 204 \quad 288 $$
 
 There it is!
 
-### in genaral
+### in general
 
-the real soluion would be a formula for the $n$'th solution to the strand puzzle droppng the second rule, it is a bit tedious to check using this method and someone probably would have used the formula and this wouldn't work. I usually don't tell you [the video](https://www.youtube.com/watch?v=V2BybLCmUzs) that this page is built on, but this time, you would notice that it takes a completely different method. So yes, I built the rest of this page from the ground up.
+The real solution would be a formula for the $n$'th solution to the strand puzzle dropping the second rule, it is a bit tedious to check using this method and someone probably would have used the formula and this wouldn't work. I usually don't tell you [the video](https://www.youtube.com/watch?v=V2BybLCmUzs) that this page is built on, but this time, you would notice that it takes a completely different method. So yes, I built the rest of this page from the ground up.
 
-Something that is easy to notice but hard to prove is that the bigger the $X$ and $Y$, the better the approxamation of $\sqrt{2}$, so I will conjecture the following: Any ratio $\frac{Y}{X}$ for $X$ and $Y$ solving the pell equation*, is closer to $\sqrt{2}$ than any other fraction with denominator less than or equal to $X$.
+Something that is easy to notice but hard to prove is that the bigger the $X$ and $Y$, the better the approximation of $\sqrt{2}$, so I will conjecture the following: Any ratio $\frac{Y}{X}$ for $X$ and $Y$ solving the pell equation*, is closer to $\sqrt{2}$ than any other fraction with denominator less than or equal to $X$.
 
-*The numbers $X$ and $Y$ could solve the alternitave $Y^2 - 2X^2 = - 1$ that alternates with the pell equation as $X$ and $Y$ get bigger, so instead of the pell equation, from now on, it is more like $|Y^2 - 2X^2| = 1$.
+*The numbers $X$ and $Y$ could solve the alternative $Y^2 - 2X^2 = - 1$ that alternates with the pell equation as $X$ and $Y$ get bigger, so instead of the pell equation, from now on, it is more like $|Y^2 - 2X^2| = 1$.
 
-By the way, the conjecture was an "I'll leave this as an exersize for the veiwer", and I made up the proof as I went.
+By the way, the conjecture was an "I'll leave this as an exercise for the viewer", and I made up the proof as I went.
 
-Proof (by contradiction): Let's say that there is a fraction $\frac{b}{a}$ that is a better approxamation of $\sqrt{2}$ than $\frac{Y}{X}$ with $a$ strictly* less than $X$. $X$ and $Y$ solve $|Y^2 - 2X^2| = 1$, and $X$ is the next biggest solution than $a$. Well, what is $|b^2 - 2a^2|$? By the thing that is easy to notice but hard to prove, even if $|b^2 - 2a^2| = 1$, it still dosen't work, so $|b^2 - 2a^2| \neq 1$, and by the fact that $\sqrt{2}$ is irrational** (I'll prove that later), $|b^2 - 2a^2| \neq 0$, and by the fact that $a$ and $b$ are integers, $|b^2 - 2a^2| = an$ $integer$. So $|b^2 - 2a^2|$ is an integer, does not equal $0$, and does not equal $1$. But the closer to $1$, the better the approxamation (unless the numbers are is bigger). Thus, the proof is complete!
+Proof (by contradiction): Let's say that there is a fraction $\frac{b}{a}$ that is a better approximation of $\sqrt{2}$ than $\frac{Y}{X}$ with $a$ strictly* less than $X$. $X$ and $Y$ solve $|Y^2 - 2X^2| = 1$, and $X$ is the next biggest solution than $a$. Well, what is $|b^2 - 2a^2|$? By the thing that is easy to notice but hard to prove, even if $|b^2 - 2a^2| = 1$, it still doesn't work, so $|b^2 - 2a^2| \neq 1$, and by the fact that $\sqrt{2}$ is irrational** (I'll prove that later), $|b^2 - 2a^2| \neq 0$, and by the fact that $a$ and $b$ are integers, $|b^2 - 2a^2| = an$ $integer$. So $|b^2 - 2a^2|$ is an integer, does not equal $0$, and does not equal $1$. But the closer to $1$, the better the approximation (unless the numbers are bigger). Thus, the proof is complete!
 
-*If $a = X$, than $|b^2 - 2a^2| = |b^2 - 2X^2|$. If $b = Y$, than I can ignore that case because $\frac{Y}{X}$ cannot be a better approxamation of $\sqrt{2}$ than $\frac{Y}{X}$. So if $b < Y$, $b^2 < Y^2$ * *, so $|b^2 - 2X^2|$ also is not $1$.
+*If $a = X$, than $|b^2 - 2a^2| = |b^2 - 2X^2|$. If $b = Y$, than I can ignore that case because $\frac{Y}{X}$ cannot be a better approximation of $\sqrt{2}$ than $\frac{Y}{X}$. So if $b < Y$, $b^2 < Y^2$ * *, so $|b^2 - 2X^2|$ also is not $1$.
 
 
-(* *) If $a$, $b$, $X$, and $Y$ are all negatave, than $b^2 > Y^2$. But for one, if they are both negatave, then they are not in reduced fractions. And for another, if one is negatave, than the whole thing is negatave, and $\sqrt{2}$ is not. Also if $b > Y$ (yes, it was only a constraint on $a$ and not $b$), than it still wouldn't work.
+(* *) If $a$, $b$, $X$, and $Y$ are all negative, then $b^2 > Y^2$. But for one, if they are both negative, then they are not in reduced fractions. And for another, if one is negative, then the whole thing is negative, and $\sqrt{2}$ is not. Also if $b > Y$ (yes, it was only a constraint on $a$ and not $b$), then it still wouldn't work.
 
-** Warning! I will swap $a$ and $b$ in this proof: Note that an even number is two times an integer, if the square of a number is even, than the number that is being squared is even, and a ratio of two even numbers is not in reduced form. You can derive these because I am too busy writing this proof down. Lets say that a fraction $\frac{a}{b}$ in lowest terms (that will be important in the contradiction part of proof by contradiction) that equals $\sqrt{2}$. Going back, this means that $a^2 = 2b^2$. But $b^2$ is an integer, so $a^2$ is even, so $a$ is even. if $a$ is even, than lets say that $a = 2m$ for some integer $m$, $a^2 = 4m^2$, so $4m^2 = 2b^2$, so $2m^2 = b^2$. But $m^2$ is an integer, so $b^2$ is even, so $b$ is even, so $a$ and $b$ are both even, but if they are both even, (and if you remembered), this is a contradiction!
+** Warning! I will swap $a$ and $b$ in this proof: Note that an even number is two times an integer, if the square of a number is even, than the number that is being squared is even, and a ratio of two even numbers is not in reduced form. You can derive these because I am too busy writing this proof down. Let's say that a fraction $\frac{a}{b}$ in lowest terms (that will be important in the contradiction part of proof by contradiction) that equals $\sqrt{2}$. Going back, this means that $a^2 = 2b^2$. But $b^2$ is an integer, so $a^2$ is even, so $a$ is even. if $a$ is even, than let's say that $a = 2m$ for some integer $m$, $a^2 = 4m^2$, so $4m^2 = 2b^2$, so $2m^2 = b^2$. But $m^2$ is an integer, so $b^2$ is even, so $b$ is even, so $a$ and $b$ are both even, but if they are both even, (and if you remembered), this is a contradiction!
 
-Side note! With this proof, you can prove the thing that is easy to notice but hard to prove, but this would be a circular argument, because we need it to be true for it to be true. To this day, I haven't found a proof of this fact. But if I do, then you know the drill by now, I'll write the proof here and put this in quotation marks.
+Side note! With this proof, you can prove the thing that is easy to notice but hard to prove, but this would be a circular argument, because we need it to be true for it to be true. To this day, I haven't found any proof of this fact. But if I do, then you know the drill by now, I'll write the proof here and put this in quotation marks.
 
 Now, the proof is finally complete! Where was I again?
 
@@ -233,9 +233,9 @@ $$ Y_N^2 - 2X_N^2 = 1 $$
 
 So like I said, solutions for the pell equation and inverse pell equation alternate.
 
-Okay, this actially happend: I was soving the strand puzzle and got up to this point. I met someone new, and naturally, I opened with how I got here and where I was with the strand puzzle. She said "can you prove that this is the next solution to the pell equation", and I said "I'm too tired fot that". My point is that you shold just run with it.
+Okay, this actually happened: I was solving the strand puzzle and got up to this point. I met someone new, and naturally, I opened with how I got here and where I was with the strand puzzle. She said "can you prove that this is the next solution to the pell equation", and I said "I'm too tired for that". My point is that you should just run with it.
 
-From now on, $X$ will be replaced with $X_n$, $Y$ will be replaced with $Y_n$, $\hat{X}$ will be replaced with $X_{n + 1}$, $\hat{Y}$ will be replaced with $Y_{n + 1}$, $X_N$ will be replaced with $X_{n + 2}$, and $Y_N$ will be replaced with $Y_{n + 2}$. this is because it will look more like a formula on $n$ when you solve for $Y_n$ as appose to $Y$. Also these can be solutions to the inverse pell equation. For the pell equation, I want to have a $2n$, so it has to be the inverse pell equation first, an easy answer is
+From now on, $X$ will be replaced with $X_n$, $Y$ will be replaced with $Y_n$, $\hat{X}$ will be replaced with $X_{n + 1}$, $\hat{Y}$ will be replaced with $Y_{n + 1}$, $X_N$ will be replaced with $X_{n + 2}$, and $Y_N$ will be replaced with $Y_{n + 2}$. this is because it will look more like a formula on $n$ when you solve for $Y_n$ as opposed to $Y$. Also these can be solutions to the inverse pell equation. For the pell equation, I want to have a $2n$, so it has to be the inverse pell equation first, an easy answer is
 
 $$ X_1 = 1 $$
 
@@ -247,7 +247,7 @@ $$ X_2 = 2 $$
 
 $$ Y_2 = 3 $$
 
-and because of the recurance...
+and because of the recurrence...
 
 $$ X_{n + 1} = X_n + Y_n $$
 
@@ -261,9 +261,9 @@ $$ X_n = 2X_{n - 1} + X_{n - 2} $$
 
 $$ Y_n = 2Y_{n - 1} + Y_{n - 2} $$
 
-### The final dash in the silaspe marithon (yes, that is a referance to mathologer marithon)
+### The final dash in the silaspe marathon (yes, that is a reference to mathologer marathon)
 
-For now, I will just copy some text from the [fibbonacci](https://silaspe.github.io/maths/fibbonacci.html) page, and minipulate it.
+For now, I will just copy some text from the [fibonacci](https://silaspe.github.io/maths/fibbonacci.html) page, and manipulate it.
 
 $$ z^2 = z + 1 $$
 
@@ -322,7 +322,7 @@ $$ c^n - d^n = X_n c + X_{n - 1} - X_n d - X_{n - 1} = (c - d) X_n = (1 + \sqrt{
 
 $$ X_n = \frac{c^n - d^n}{2\sqrt{2}} = \frac{c^n - d^n}{c - d} $$
 
-$$ \text{On a different note, rearanging the reccurance, we get} $$
+$$ \text{On a different note, rearranging the recurrence, we get} $$
 
 $$ X_{n - 2} = X_n - 2X_{n - 1} $$
 
@@ -354,7 +354,7 @@ $$ X_2 + X_{2 - 1} = X_2 + X_1 = 2 + 1 $$
 
 $$ X_2 + X_{2 - 1} = 3 $$
 
-$$ \text{Sound familiar? If not, I'll write down the formlas that we have just derived along with the formulas for } Y. $$
+$$ \text{Sound familiar? If not, I'll write down the formulas that we have just derived along with the formulas for } Y. $$
 
 $$ (X_{(n)} + X_{(n) - 1}) = 2(X_{(n - 1)} + X_{(n - 1) - 1}) + (X_{(n - 2)} + X_{(n - 2) - 1}) $$
 
@@ -390,11 +390,11 @@ $$ -cd = 1 $$
 
 $$ Y_n = \frac{c^n + d^n}{2} $$
 
-### The final step in the silaspe marithon
+### The final step in the silaspe marathon
 
-You might recognize these two formulas from the mathologer video thit I showed you earlier. Around half of the page after and including the "in genaral" chapter was improv, including things like "the proof". The only things that weren't improv were the result for $X_n$, the proof was using*, the other thing was the reccurance relation, I used a reccurance relation that went backwards, but it still counts. You can use these formulas (that I'll write down) for solutions for $x_n$ and $y_n$ (I bet that you forgot about them). I forgot to tell you that $x_n$ and $y_n$ are the $n$'th solutions to the strand puzzle respecively. Another thing to notice is that on the [github repo](https://github.com/silaspe/maths/blob/main/docs/the_strand_puzzle.md), this is the $395$'th line, this is already the longest page so far, but from now on, if I reach $400$ lines, I'll write down "$400$ lines!!".
+You might recognize these two formulas from the mathologer video that I showed you earlier. Around half of the page after and including the "in general" chapter was improv, including things like "the proof". The only things that weren't improv were the result for $X_n$, the proof was using*, the other thing was the recurrence relation, I used a recurrence relation that went backwards, but it still counts. You can use these formulas (that I'll write down) for solutions for $x_n$ and $y_n$ (I bet that you forgot about them). I forgot to tell you that $x_n$ and $y_n$ are the $n$'th solutions to the strand puzzle respectively. Another thing to notice is that on the [github repo](https://github.com/silaspe/maths/blob/main/docs/the_strand_puzzle.md), this is the $395$'th line, this is already the longest page so far, but from now on, if I reach $400$ lines, I'll write down "$400$ lines!!".
 
-*Bunnymatics, a study of the population of immortal bunies. They can be a child, or an adult. Each day, the child bunnies turn into adult bunnies, and the adult bunnies asexually reproduce and then clone themselves (probably an adult thing). Day one, there is one adult bunny. if you give the bunnies price of $1$ for child bunnies and price $c$ for adult bunnies, one more day is multiplying the price by $c$
+*Bunnymatics, a study of the population of immortal bunnies. They can be a child, or an adult. Each day, the child bunnies turn into adult bunnies, and the adult bunnies asexually reproduce and then clone themselves (probably an adult thing). Day one, there is one adult bunny. if you give the bunnies price of $1$ for child bunnies and price $c$ for adult bunnies, one more day is multiplying the price by $c$
 
 
 $400$ lines!!!!!!
