@@ -1,4 +1,4 @@
-This page dosen't require seeing the set theory page, but you can see it anyways.
+This page doesn't require seeing the set theory page, but you can see it anyways.
 
 The idea behind this page is that you can derive all of set theory from logic, so $\text{T}$ is true, and $\text{F}$ is false.
 
@@ -50,11 +50,11 @@ $$ (p = q) \iff (p → q) ∩ (q → p) $$
 
 $$ \text{Order of operations: } ¬ > ∩ > ∨ > = > → > \iff \text{.} $$
 
-#### extntions
+#### extensions
 
-$$ [x| p(x)] = \text{ The extention of } p(x) \text{ (and the secret } 4 \text{th tool) (curly braces didn't work for rendering reasons), the set of all } x \text{ such that } p(x) \text{ (is true), and this is how I'm going to define sets. This function } p(x) \text{ inputs, well, anything, and outputs a boolean (true or false) (e.g. is } x \text{ an odd number?).} $$
+$$ [x| p(x)] = \text{ The extension of } p(x) \text{ (and the secret } 4 \text{th tool) (curly braces didn't work for rendering reasons), the set of all } x \text{ such that } p(x) \text{ (is true), and this is how I'm going to define sets. This function } p(x) \text{ inputs, well, anything, and outputs a boolean (true or false) (e.g. is } x \text{ an odd number?).} $$
 
-$$ \text{The extention of that particular function is the set of all odd numbers.} $$
+$$ \text{The extension of that particular function is the set of all odd numbers.} $$
 
 ### other things from set theory
 
@@ -74,7 +74,7 @@ $$ \text{I'll start with the general form for the for any sign: } ∀(x) \cdot p
 
 $$ \text{And that example in logic: } p(x) → q(x) \text{, at least, I think.} $$
 
-$$ \text{Yeah, it dosen't work, different values for } x \text{ would give different outputs.} $$
+$$ \text{Yeah, it doesn't work, different values for } x \text{ would give different outputs.} $$
 
 $$ \text{But, there's a simple trick, take the and over all values for } x \text{, so } (p(x) → q(x)) ≡ \text{T} \text{.} $$
 
@@ -129,7 +129,7 @@ $$ ¬ \text{N} = \text{N} $$
 
 $$ R \in R = \text{N} $$
 
-Now, I'll define an infinate set of things $x1, x2, x3,...$ that are all in $[x| \text{T}]$.
+Now, I'll define an infinite set of things $x1, x2, x3,...$ that are all in $[x| \text{T}]$.
 
 And define $x1, x2, x3 \in S$ as $x1 \in S ∩ x2 \in S ∩ x3 \in S$.
 
@@ -145,7 +145,7 @@ $$ x1 \in ℕ → x1 + 0 = x1 $$
 
 ### mappings
 
-A mapping $f$ is, well, first pick a domain $X$ and codomain $Y$. Then, um, I gotta the set theory text book.
+A mapping $f$ is, well, first pick a domain $X$ and codomain $Y$. Then, um, I gotta get out the set theory textbook.
 
 Ok, I got out The real number system, in an algebraic setting, by J. B. Roberts. A gift from my grandpa.
 
