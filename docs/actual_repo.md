@@ -5,15 +5,15 @@ This page is not on the website (yet), because it is entirely pseudo-code and py
 ### asterisk operator (pseudo)
 ```
 define Asterisk(x,y,n)
-  (coment) if n is 1, it is adding x and y
-  (coment) if n is 2, it is multiplying x and y
-  (coment) if n is 3, it is it is taking x to the power of y
-  (coment) and so on.
+  (comment) if n is 1, it is adding x and y
+  (comment) if n is 2, it is multiplying x and y
+  (comment) if n is 3, it is it is taking x to the power of y
+  (comment) and so on.
   
   if n = 1
     return x + y
 
-  (coment) because I said that earlier.
+  (comment) because I said that earlier.
 
   else if y = 1
     return x
@@ -23,7 +23,7 @@ define Asterisk(x,y,n)
   else 
     return Asterisk(x,Asterisk(x,y - 1,n),n - 1)
 
-  (coment) this makes sense if you think about it.
+  (comment) this makes sense if you think about it.
 ```
 ### asterisk operator (python)
 
@@ -989,7 +989,7 @@ def fullreduce(string):
   return result
 ```
 
-But there's a problem: capture of free variables. I'll explin with an example:
+But there's a problem: capture of free variables. I'll explain with an example:
 
 $$ \text{[} \lambda f. \lambda g. \lambda x. \text{[} f \text{ } \text{[} g \text{ } x \text{]} \text{]} \text{ } g \text{]} = \lambda g. \lambda x. \text{[} g \text{ } \text{[} g \text{ } x \text{]} \text{]} $$
 
@@ -1001,7 +1001,7 @@ $1000$ Lines, wow.
 
 (Get it? $\kappa \lambda \mu \nu \xi$?)
 
-The method supports functions as arguments, currying, and even (I think) capture of free variables. I'll explin with some examples:
+The method supports functions as arguments, currying, and even (I think) capture of free variables. I'll explain with some examples:
 
 ```py
 def mult(x):
