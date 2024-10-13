@@ -13,7 +13,7 @@ $$ \begin{bmatrix} a & 0 & 0 & \dots \\
 0 & 0 & c & \dots \\
 \vdots & \vdots & \vdots & \ddots \\ \end{bmatrix} $$
 
-or because I am assuming $A$ is a $2 \times 2$ matrix, its probably more like
+or because I am assuming $A$ is a $2 \times 2$ matrix, it's probably more like
 
 $$ \begin{bmatrix} a & 0 \\
 0 & b \\ \end{bmatrix}$$
@@ -24,27 +24,27 @@ $$ \begin{bmatrix} a^n & 0 \\
 0 & b^n \\ \end{bmatrix}$$
 
 but if $A$ is not diagonal, than just switch to a basis (in particular, an eigenbasis that I will dedicate the rest of the page or)
-the eigenvector as it is called, is also just usefull in other cases lke when you need to find the next [fibbonacci number](https://silaspe.github.io/maths/fibonacci.md), or find the flow in a population of foxes and rabbits (even if you need to see the entire second video) which I will do both of thoes at the end of the page
+the eigenvector as it is called, is also just useful in other cases like when you need to find the next [fibonacci number](https://silaspe.github.io/maths/fibonacci.md), or find the flow in a population of foxes and rabbits (even if you need to see the entire second video) which I will do both of those at the end of the page
 
-so the top question is...
+So the top question is...
 
 ### what even is an eigenvector?
 
-an eigenvector is really a set of vectors (that I will refer to from now on as an eigenset) that are all multiples of each other can be defined as the slope of the line that connects the tips of vectors in said eigenset, and an eigenvector is defined as a vector within said eigenset, unfortunately the slope is not the corrasponding eigenvalue, but that this slope can also be $\frac{1}{0}$ if it is pointing straight up, also on the note of eigensets, there can be two (two slopes, not two vectors) with any given matrix, I'll give you an example
+an eigenvector is really a set of vectors (that I will refer to from now on as an eigenset) that are all multiples of each other can be defined as the slope of the line that connects the tips of vectors in said eigenset, and an eigenvector is defined as a vector within said eigenset, unfortunately the slope is not the corresponding eigenvalue, but that this slope can also be $\frac{1}{0}$ if it is pointing straight up, also on the note of eigensets, there can be two (two slopes, not two vectors) with any given matrix, I'll give you an example
 
 but you are probably just waiting for the definition, and here it is:
 
-under multiplication by matrix $A$, most vectors are rotated and scaled, but any eigenvector (or vector within the eigenset) is just scaled, and it makes sense that $2$ times the eigenvector isn't scaled either, thus every vector within the eigenset is an eigenvector, and the eigenvalue? that corrasponds to how much each vector is scaled, and two differend eigensets usually have different eigenvalues.
+under multiplication by matrix $A$, most vectors are rotated and scaled, but any eigenvector (or vector within the eigenset) is just scaled, and it makes sense that $2$ times the eigenvector isn't scaled either, thus every vector within the eigenset is an eigenvector, and the eigenvalue? that corresponds to how much each vector is scaled, and two different eigensets usually have different eigenvalues.
 
 But you are probably just waiting for the example, and here it is:
 
 a matrix with a [determinant](https://www.youtube.com/watch?v=Ip3X9LOh2dk0) of $0$, and a [rank](https://www.youtube.com/watch?v=uQhTuRlWMxw) of $1$ has eigensets of the line that it squishes space onto, and the null space of the matrix.
 
-Anyways, on to my favorate part! (And reason I made this page)
+Anyways, on to my favorite part! (And reason I made this page)
 
-### how to find the eigenvetors and eigenvalues
+### how to find the eigenvectors and eigenvalues
 
-$$ \text{eigenvetor} = \vec{v} = \begin{bmatrix} v_x \\
+$$ \text{eigenvector} = \vec{v} = \begin{bmatrix} v_x \\
 v_y \\ \end{bmatrix} $$
 
 $$ \text{eigenvalue} = \lambda $$
@@ -144,15 +144,15 @@ $$ -r = \frac{a^{\star}}{b^{\star}} = \frac{c^{\star}}{d^{\star}} $$
 
 $$ r = -\frac{a^{\star}}{b^{\star}} = -\frac{c^{\star}}{d^{\star}} = -\frac{a - \lambda}{b} = -\frac{c}{d - \lambda} $$
 
-another thing that is important is if an eigenset is stable equilibrium (sorry, I coudn't find a good video), the eigenvector is an equilibrium.
+Another thing that is important is that if an eigenset is stable equilibrium (sorry, I couldn't find a good video), the eigenvector is an equilibrium.
 
 So if vectors will slowly drift towards the eigenset as you apply the transformation, then it is convergent, but if vectors will slowly drift away from the eigenset as you apply the transformation, then it is divergent.
 
-I wanted to prove how to compute this, but than I had to find out the point to line distance forula, which requiers the inverse pythagorean theorem, which requiers the pythagorean theorem, and I don't know how to prove that without geometry
+I wanted to prove how to compute this, but then I had to find out the point to line distance formula, which requires the inverse pythagorean theorem, which requires the pythagorean theorem, and I don't know how to prove that without geometry
 
 so I will just tell you if an eigenset is convergent or not in the next part which I said I would do eventually... 
 
-### fibbonacci
+### fibonacci
 
 $$ F_n = F_{n - 1} + F_{n - 2} $$
 
@@ -181,17 +181,17 @@ The $\phi$ one is convergent, the $\psi$ one is not.
 
 $$ r = \frac{1}{\phi}, r =\frac{1}{\psi}  $$
 
-once again, the $\phi$ one is convergent, the $\psi$ one is not.
+Once again, the $\phi$ one is convergent, the $\psi$ one is not.
 
-but, if it is convergent when making the next fibbonacci number, then all possible starting conditions* will eventually approach the $\frac{F_n}{F_{n - 1}} = \phi$, but if that is true than...
+but, if it is convergent when making the next fibonacci number, then all possible starting conditions* will eventually approach the $\frac{F_n}{F_{n - 1}} = \phi$, but if that is true then...
 
-*even if it is not stable, if the starting conditions lie directly the alternitave line, the ratio of terms dosen't approach, but always is $\psi$, but that is irrational, so an easy fix is to make both of the enitial conditions integers. Anyways...
+*Even if it is not stable, if the starting conditions lie directly on the alternative line, the ratio of terms doesn't approach, but always is $\psi$, but that is irrational, so an easy fix is to make both of the initial conditions integers. Anyways...
 
 $$ \frac{F_{n + 1}}{F_n} \to \phi $$
 
 $$ F_{n + 1} \approx \phi F_n $$
 
-okay, I have the next fibonacci number, onto foxes and rabitts
+okay, I have the next fibonacci number, onto foxes and rabbits
 
 ### which one would win in a boxing match, the fox or the rabbit?
 
