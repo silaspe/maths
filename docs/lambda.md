@@ -2,11 +2,11 @@ Ok, so, lambda calculus, I'll be following along with [the first part](https://w
 
 ### Chapter $1$: Introduction
 
-Ok, so, it looks like he's starting off with a function (written as $I$) that he calls "the identity". Now, what do you think $I(1)$ is? * Man in the backround says " same value! "*, and that is correct, $I(1) = 1$, $I(2) = 2$, what about $I(I)$? * No one awnsers*, yeah, it's $I$. (By the way, functions in lambda calculus are also called "combinators", each one has a function name (e.g. $I$), a more descriptive function name (e.g. identity), and an alias (which is always a bird for some reason) (e.g. Idiot bird.)) (Also by the way, I'll be copying what he's saying for the rest of this page, and putting my thoughts in between parenthases.) And then he uses some fancy notation " $\lambda a. a$ ". It takes in ($\lambda$) a value ($a$), and outputs ($.$) that same value ($a$). So, $I(x) = x$ for any $x$. As you saw, you can use functions as arguments (which is why they are called "combinators". Also, to me, this is the heart of lambda calculus), erbs are nouns and nouns are erbs. 
+Ok, so, it looks like he's starting off with a function (written as $I$) that he calls "the identity". Now, what do you think $I(1)$ is? * Man in the background says " same value! "*, and that is correct, $I(1) = 1$, $I(2) = 2$, what about $I(I)$? * No one answers*, yeah, it's $I$. (By the way, functions in lambda calculus are also called "combinators", each one has a function name (e.g. $I$), a more descriptive function name (e.g. identity), and an alias (which is always a bird for some reason) (e.g. Idiot bird.)) (Also by the way, I'll be copying what he's saying for the rest of this page, and putting my thoughts in between parentheses.) And then he uses some fancy notation " $\lambda a. a$ ". It takes in ($\lambda$) a value ($a$), and outputs ($.$) that same value ($a$). So, $I(x) = x$ for any $x$. As you saw, you can use functions as arguments (which is why they are called "combinators". Also, to me, this is the heart of lambda calculus), erbs are nouns and nouns are erbs. 
 
 #### chapter $2$: What is this $\lambda$?
 
-Ok, so, what was this $\lambda$ stuff from earlier? (Finally he explains it.) So, lambda is a signafier, it's a way to indicate that we are starting the definition of a function. So, we can read this (this $\lambda a. a$) as: we're starting the definition of a function ($\lambda$), which takes a single input ($a$), or parameter (The $.$ signafies that we are no longer writing down the parameters), and returns some expression ($a$). This whole thing is called a lambda abstraction in lambda calculus.
+Ok, so, what was this $\lambda$ stuff from earlier? (Finally he explains it.) So, lambda is a signafier, it's a way to indicate that we are starting the definition of a function. So, we can read this (this $\lambda a. a$) as: we're starting the definition of a function ($\lambda$), which takes a single input ($a$), or parameter (The $.$ signifies that we are no longer writing down the parameters), and returns some expression ($a$). This whole thing is called a lambda abstraction in lambda calculus.
 
 ### chapter $3$: What is Lambda Calculus?
 
@@ -18,9 +18,9 @@ Functions (aka combinators) act on other functions, each one has a single letter
 
 ### chapter $5$: Big numbers and Transfinite ordinals
 
-This chapter dosen't have much lambda calculus, it's just what I have been doing for the past week. [This](https://www.youtube.com/watch?v=b-Bb_TyhC1A&t=1449s), [this](https://www.youtube.com/watch?v=Mzgw6zMtipQ&t=465s), and [this](https://www.youtube.com/watch?v=0X9DYRLmTNY&t=486s) were my only evinence (in that order) (you should watch them anyways, they're really cool videos), I knew enough about the fast-growing hierachies, but very little about the infinite ordinals.
+This chapter doesn't have much lambda calculus, it's just what I have been doing for the past week. [This](https://www.youtube.com/watch?v=b-Bb_TyhC1A&t=1449s), [this](https://www.youtube.com/watch?v=Mzgw6zMtipQ&t=465s), and [this](https://www.youtube.com/watch?v=0X9DYRLmTNY&t=486s) were my only evidence (in that order) (you should watch them anyways, they're really cool videos), I knew enough about the fast-growing hierarchies, but very little about the infinite ordinals.
 
-Also, that second video had a preatty cool premise of "biggest textible number" (the video went into more detail on that), so I'm gonna steal it.
+Also, that second video had a pretty cool premise of "biggest textable number" (the video went into more detail on that), so I'm gonna steal it.
 
 $$ f_0 (x) = : x + 1 $$
 
@@ -34,7 +34,7 @@ $$ f_3 (3) > 10^{100} \times \text{The american national debt.} $$
 
 $$ f_\omega (x) = : f_x (x) $$
 
-$$ \text{Yes, that omega is a transfinite ordinal, but there's nothing infinate about it, it just grows faster than any finite number would (e.g. } f_{1000} (x) < f_\omega (x) \text{ because for all } x > 1000 \text{, the subscript would be bigger, thus it would grow faster), it's just notational shorthand, because if the input is really long to write, you would have to write it twice. But there is a connection between transfinite ordinals and these functions (which have a connection to big numbers, hence the name: Big numbers and Transfinite ordinals) that I will explain after I get to the largest ordinal that I know.} $$
+$$ \text{Yes, that omega is a transfinite ordinal, but there's nothing infinite about it, it just grows faster than any finite number would (e.g. } f_{1000} (x) < f_\omega (x) \text{ because for all } x > 1000 \text{, the subscript would be bigger, thus it would grow faster), it's just notational shorthand, because if the input is really long to write, you would have to write it twice. But there is a connection between transfinite ordinals and these functions (which have a connection to big numbers, hence the name: Big numbers and Transfinite ordinals) that I will explain after I get to the largest ordinal that I know.} $$
 
 $$ \text{For ordinals, there are three rules, } 1 \text{: you start with omega (} \omega \text{), } 2 \text{: you can add } 1 \text{, } 3 \text{: you can repeat 'til infinity*} $$
 
@@ -111,7 +111,7 @@ $$ \zeta_{\zeta_{\zeta_{\zeta_\ddots}}} = : \eta_0 = : \varphi_3 (0) $$
 
 #### chapter $6$: THE VEBLEN HIERARCHY
 
-First, if there's any confusion, the veblen hierarchey is this $\varphi$ thing.
+First, if there's any confusion, the veblen hierarchy is this $\varphi$ thing.
 
 $$ \varphi_0 (\alpha) = : \omega^\alpha $$
 
@@ -129,7 +129,7 @@ $2 \cdot 2 \cdot 2 \cdot 2 \cdot 2 \cdot 2 \cdot 2$ Lines!
 
 $$ \varphi_{\varphi_{\varphi_{\varphi_\ddots (0)} (0)} (0)} (0) = : \Gamma_0 = \varphi_{\Gamma_0} (0) $$
 
-$$ \text{Ok, here's the connection: Let's say that we want to turn an infinate ordinal (} \epsilon_0 \text{) into a function. First, the function will be } f_{\epsilon_0} (x) \text{, but for even more notational shorthand, it is written } \epsilon_0 (x) \text{. But here's how it's defined: step } 1 \text{: write the ordinal in terms of omega (so }^\omega \omega \text{), maybe easier said that done, step } 2 \text{: replace every omega with an } x \text{ (so, }^x x \text{), step } 3 \text{: make it a subscript for } f \text{ and evaluate it on } x \text{ (so } f_{^x x} (x) \text{).} $$
+$$ \text{Ok, here's the connection: Let's say that we want to turn an infinite ordinal (} \epsilon_0 \text{) into a function. First, the function will be } f_{\epsilon_0} (x) \text{, but for even more notational shorthand, it is written } \epsilon_0 (x) \text{. But here's how it's defined: step } 1 \text{: write the ordinal in terms of omega (so }^\omega \omega \text{), maybe easier said than done, step } 2 \text{: replace every omega with an } x \text{ (so, }^x x \text{), step } 3 \text{: make it a subscript for } f \text{ and evaluate it on } x \text{ (so } f_{^x x} (x) \text{).} $$
 
 Now, you can go over to [my repo](https://silaspe.github.io/maths/actual_repo.html#big-numbers-and-transfinite-ordinals) to see how to do it in python.
 
@@ -155,13 +155,13 @@ $$ \text{Not} = \lambda p. p \text{F} \text{T} $$
 
 ### chapter $7$: currying operations, numbers, arithmetic operations, groupings, subtraction, is $0$, inequalities, equalities, and the biggest (codable) number
 
-$$ \text{By the way, everything else that I had learned (other than this page's main plot of the biggest (codable) number) while writing this (currying operations, arithmetic operations, groupings, and subtraction) (that I learned via actually watching through the videos) was going to be in a post credit scene, but they were actually required for the code (e.g. I nedded an exponent function for the `for i in range(x - 1): result = x ** result` on lines $4$ - $5$ of the epsilon subscript function).} $$
+$$ \text{By the way, everything else that I had learned (other than this page's main plot of the biggest (codable) number) while writing this (currying operations, arithmetic operations, groupings, and subtraction) (that I learned via actually watching through the videos) was going to be in a post credit scene, but they were actually required for the code (e.g. I needed an exponent function for the `for i in range(x - 1): result = x ** result` on lines $4$ - $5$ of the epsilon subscript function).} $$
 
 $$ \text{First: currying. How I think of it is like this (this entire next line):} $$
 
-$$ \text{A function can have as many (or as few) inputs as possible. If the function is, say, The Kestrel (} 2 \text{ inputs), you can easily define the } 2 \text{ input version, and the no input version would just always return itself. Three is harder, but doable, and everything bigger has the same idea (one of two ideas both refered to as currying), it requires the first half of currying: } f(a, b) \text{ for single input function } f \text{ is equal to } (f(a))(b) \text{. But for } 1 \text{ input, it is much harder. New function: addition (yes, number addition) (specificly the } 2 \text{ input one). If you only give it } 1 \text{ input (} 1 \text{ for example), you get the add } 1 \text{ function. So that's the second rule of currying!} $$
+$$ \text{A function can have as many (or as few) inputs as possible. If the function is, say, The Kestrel (} 2 \text{ inputs), you can easily define the } 2 \text{ input version, and the no input version would just always return itself. Three is harder, but doable, and everything bigger has the same idea (one of two ideas both referred to as currying), it requires the first half of currying: } f(a, b) \text{ for single input function } f \text{ is equal to } (f(a))(b) \text{. But for } 1 \text{ input, it is much harder. New function: addition (yes, number addition) (specifically the } 2 \text{ input one). If you only give it } 1 \text{ input (} 1 \text{ for example), you get the add } 1 \text{ function. So that's the second rule of currying!} $$
 
-$$ \text{So basicly, currying is when you give a function the incorrect amount of inputs, and it either waits for more, or evaluates the function on the next input.} $$
+$$ \text{So basically, currying is when you give a function the incorrect amount of inputs, and it either waits for more, or evaluates the function on the next input.} $$
 
 $$ \text{you can also combine these to get } f(a, b) = f(a)(b) \text{ for } 2 \text{ input function } f \text{, making the comma redundant.} $$
 
@@ -207,7 +207,7 @@ $$ Add = \lambda nk. n \text{ } Succ \text{ } k $$
 
 $$ \text{Next: NOT subtraction, multiplication instead!} $$
 
-$$ \text{because subtraction is so hard, it's going into it's own subchapter.} $$
+$$ \text{because subtraction is so hard, it's going into its own subchapter.} $$
 
 $$ Mult \text{ } n2 \text{ } n3 = n6 $$
 
@@ -217,7 +217,7 @@ $$ Mult \text{ } n2 \text{ } n3 \text{ } f \text{ } x = (f ∘ f ∘ f ∘ f ∘
 
 $$ \text{By the way, that's a curried function on the left.} $$
 
-$$ \text{But, compasition is associative (Which is a word that he used } 6 \text{ times) (a function like } + \text{ is associative if and only if } a + (b + c) = (a + b) + c \text{), so you can write it like this:} $$
+$$ \text{But, composition is associative (Which is a word that he used } 6 \text{ times) (a function like } + \text{ is associative if and only if } a + (b + c) = (a + b) + c \text{), so you can write it like this:} $$
 
 $$ Mult \text{ } n2 \text{ } n3 \text{ } f \text{ } x = ((f ∘ f ∘ f) ∘ (f ∘ f ∘ f)) (x) $$
 
@@ -281,15 +281,15 @@ $$ \text{but what happens to the V} (a, b) \text{ before the } f \text{? Solutio
 
 $$ \text{By the way, because it is used so much (and this just makes sense), V} (a, b) = (a, b) \text{.} $$
 
-$$ \text{Now, when you want to evaluate a regular function } f \text{ on a pair } p \text{, than that would be } p(f) \text{, but if you wanted a function that evaluates more like } f(p) \text{ than } p(f) \text{, then you need a pairwise function (not to be confused with piecewise function, as it is the only result when you google "pairwise function", and piecewise functions don't actually exist in lambda calculus) (e.g. a function that inputs a pair, and outpts the first thing in that pair) actually, that second thing would be really usefull, I'm gonna try to derive it (as well as a function that inputs a pair, and outpts the second thing in that pair).} $$
+$$ \text{Now, when you want to evaluate a regular function } f \text{ on a pair } p \text{, than that would be } p(f) \text{, but if you wanted a function that evaluates more like } f(p) \text{ than } p(f) \text{, then you need a pairwise function (not to be confused with piecewise function, as it is the only result when you google "pairwise function", and piecewise functions don't actually exist in lambda calculus) (e.g. a function that inputs a pair, and outputs the first thing in that pair) actually, that second thing would be really useful, I'm gonna try to derive it (as well as a function that inputs a pair, and outputs the second thing in that pair).} $$
 
 $$ Fst((a, b)) = a $$
 
-$$ \text{And because this is the first pairwise function that I'm gonna derive, it has to use regular functions in it's definition, so} $$
+$$ \text{And because this is the first pairwise function that I'm gonna derive, it has to use regular functions in its definition, so} $$
 
 $$ Fst((a, b)) = (a, b)(f) = f(a, b) = a $$
 
-$$ \text{Hmm... } f(a, b) = a \text{, sounds like The Kestril!} $$
+$$ \text{Hmm... } f(a, b) = a \text{, sounds like The Kestrel!} $$
 
 $$ Fst = \lambda p. p (\text{T}) $$
 
@@ -305,9 +305,9 @@ $$ \text{Ok, fine, I'll prove it (the } Snd = \lambda p. p \text{ } \text{F} \te
 
 $$ (a, b)(\text{F}) = \text{F}(a, b) = b $$
 
-$$ \text{And that's exactly what you'd expect (from a function that inputs a pair, and outpts the second thing in that pair), proof complete!} $$
+$$ \text{And that's exactly what you'd expect (from a function that inputs a pair, and outputs the second thing in that pair), proof complete!} $$
 
-$$ \text{Next: (it might not seem obvius why, but) I want to tell you about The Phi Combinator!} $$
+$$ \text{Next: (it might not seem obvious why, but) I want to tell you about The Phi Combinator!} $$
 
 $$ \Phi = \lambda p. \text{V} (Snd(p))(Succ(Snd(p))) $$
 
@@ -437,7 +437,7 @@ $$ \text{Next: I'll keep it a mystery, 'cause the question is:} $$
 
 $$ \text{When is } n - k \text{ equal to } 0 \text{? (Well, } n0 \text{ actually.)} $$
 
-$$ \text{Well, there's obvius awnser of when } n \text{is equal to } k \text{, but remember when I said that the predecessor of } n0 \text{ is } n0 \text{? So, any time } n \text{ is less than } k \text{, } n - k = n0 \text{. So} $$
+$$ \text{Well, there's an obvious answer of when } n \text{is equal to } k \text{, but remember when I said that the predecessor of } n0 \text{ is } n0 \text{? So, any time } n \text{ is less than } k \text{, } n - k = n0 \text{. So} $$
 
 $$ Leq = \lambda nk. is0(Sub(n, k)) $$
 
@@ -477,7 +477,7 @@ $$ \text{Finally, the thing you've all been waiting for (final boss music starts
 
 $$ Fgh = \lambda nx. is0(n)(Succ(x), Eq(n, n1)(Mult(n2, x), Eq(n, n2)(Mult(x, Pow(2, x)), x(Fgh(Pred(n)), x)))) $$
 
-$$ \text{Next: I'm skipping omega, because there's already an omega combinator (even though it's a capital omega), and it's equivilant to } M(M) \text{. So, epsilon next} $$
+$$ \text{Next: I'm skipping omega, because there's already an omega combinator (even though it's a capital omega), and it's equivalent to } M(M) \text{. So, epsilon next} $$
 
 $$ Epss = \lambda xn. is0(n)(Pred(x)(Pow(x), x), Pred(x)(Pow(Epss(x, Pred(n))), Epss(x, Pred(n)))) $$
 
