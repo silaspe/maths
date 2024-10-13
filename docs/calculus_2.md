@@ -12,7 +12,7 @@ $$ e^x = \lim_{N \to \infty} (1 + \frac{x}{N})^{N} $$
 
 $$ e^x = (1 + x dx)^{\frac{1}{dx}} $$
 
-you will see why this is usefull [here](https://silaspe.github.io/maths/complex.html#proof)
+you will see why this is useful [here](https://silaspe.github.io/maths/complex.html#proof)
 
 $$ \sum\limits_{n=0}^{\infty}C_n x^n = e^x $$
 
@@ -58,7 +58,7 @@ $$ C_n = \frac{1}{n!} $$
 
 $$ e^x = \sum\limits_{n=0}^{\infty}\frac{x^n}{n!} $$
 
-### quoteint rule
+### quotient rule
 
 $$ (\frac{f}{g})\prime = ? $$
 
