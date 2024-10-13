@@ -2,7 +2,7 @@ Credit: [Mathologer](https://www.youtube.com/watch?v=N-KXStupwsc)
 
 ## disclaimer
 
-this page uses terms like $dx$ and $e$, but these have nothing to do with calculas and are just notation, also in the $2nd$ and $4th$ chapters if this is the $1st$, I swapped $x$ for $x - \frac{b}{na}$ where $n$ is the degree of the polynomial so when pluging things in, make sure to add $\frac{b}{na}$, also I probably should have swapped the order I did this so that the quadratic came first, the last thing to warn you about is that I re-used letters like $a$, $b$, $c$, $p$, $q$, and $z$, anyways lets start strong with the...
+this page uses terms like $dx$ and $e$, but these have nothing to do with calculus and are just notation, also in the $2nd$ and $4th$ chapters if this is the $1st$, I swapped $x$ for $x - \frac{b}{na}$ where $n$ is the degree of the polynomial so when plugging things in, make sure to add $\frac{b}{na}$, also I probably should have swapped the order I did this so that the quadratic came first, the last thing to warn you about is that I re-used letters like $a$, $b$, $c$, $p$, $q$, and $z$, anyways let's start strong with the...
 
 ### quartic
 
@@ -28,7 +28,7 @@ $$ q = \frac{2b^3}{16a^3} - \frac{bc}{2a^2} + \frac{d}{a} $$
 
 $$ r = \frac{b^4}{256a^4} - \frac{b^4}{64a^3} + \frac{b^2c}{16a^3} - \frac{bd}{4a^2} + \frac{e}{a} $$
 
-### depresed quartic
+### depressed quartic
 
 $$ x^4 + px^2 + qx + r = 0 $$
 
@@ -40,13 +40,13 @@ $$ (x^2 + p)^2 = px^2 - qx - r + p^2 $$
 
 $$ (x^2 + p)^2 + 2(x^2 + p)z + z^2 = (x^2 + p + z)^2 = px^2 - qx - r + p^2 + 2zx^2 + 2pz + z^2 = (p + 2z)x^2 - qx + 2pz + z^2 - r + p^2 $$
 
-now, define z so that the right side of this equation is a perfect square. But then a quadratic is of the form $c(x - ?)(x - ?)$ or $(\something x + \something)^2$, so if it is a perfect sqare, than there is only one solution, which means that the [discriminant](https://silaspe.github.io/maths/polynomial.html#depresed-quartic-again) equals zero, so
+Now, define z so that the right side of this equation is a perfect square. But then a quadratic is of the form $c(x - ?)(x - ?)$ or $(\something x + \something)^2$, so if it is a perfect square, than there is only one solution, which means that the [discriminant](https://silaspe.github.io/maths/polynomial.html#depressed-quartic-again) equals zero, so
 
 $$ (-q)^2 - 4(p + 2z)(2pz + z^2 - r + p^2) = 0 $$
 
 expanding out, we get a cubic polynomial to solve for z. and once we do, we have that $(x^2 + p + z)^2 = (\something x + \something)^2$, so now we can solve for x with a quadratic
 
-yay! but we still have to derive the quadratic discriminate and the cubic formula in the next few chapters.
+yay! but we still have to derive the quadratic discriminant and the cubic formula in the next few chapters.
 
 ### cubic
 
@@ -70,7 +70,7 @@ $$ p = c - \frac{b^2}{3a^2} $$
 
 $$ q = \frac{b^3}{6a^3} - \frac{bc}{3a^2} + \frac{d}{a} $$
 
-### depresed cubic
+### depressed cubic
 
 $$ x^3 + px + q = 0 $$
 
@@ -126,7 +126,7 @@ $$ x = -\frac{b}{2a} \pm \frac{\sqrt{b^2 - 4ac}}{2a} = \frac{-b \pm \sqrt{b^2 - 
 
 $$ x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a} = -\frac{b}{2a} \pm \sqrt{\frac{b^2 - 4ac}{4a^2}} $$
 
-#### depresed cubic (again)
+#### depressed cubic (again)
 
 $$ y^3 = \frac{q}{2} \pm \sqrt{\frac{q^2 + 4(\frac{p}{3})^3}{4}} = \frac{q}{2} \pm \sqrt{(\frac{q}{2})^2 + (\frac{p}{3})^3} $$
 
@@ -146,7 +146,7 @@ so just plug in for $p$ and $q$ and add $\frac{b}{3a}$ and you have the cubic fo
 
 #### z (quartic)
 
-so finally, after reading the whole page, you can understand the quadratic discriminant, (either that or you just skipped to this part) but probably not. So this discriminant is the $b^2 - 4ac$ in the quadratic formula, because the square root of a positive number is positive and plus or minus a positive number has two solutions, the square root of a negatave number is undefined (unless complex numbers) and plus or minus an undefined number has zero solutions, the square root zero is zero and plus or minus zero has one solution. In total, the sign of the $b^2 - 4ac$ determins how many solutions exist, which is why it is called descriminant, so...
+So finally, after reading the whole page, you can understand the quadratic discriminant, (either that or you just skipped to this part) but probably not. So this discriminant is the $b^2 - 4ac$ in the quadratic formula, because the square root of a positive number is positive and plus or minus a positive number has two solutions, the square root of a negative number is undefined (unless complex numbers) and plus or minus an undefined number has zero solutions, the square root zero is zero and plus or minus zero has one solution. In total, the sign of the $b^2 - 4ac$ determines how many solutions exist, which is why it is called discriminant, so...
 
 $$ (-q)^2 - 4(p + 2z)(2pz + z^2 - r + p^2) = 0 $$
 
