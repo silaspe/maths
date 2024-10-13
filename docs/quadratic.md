@@ -46,4 +46,4 @@ $$ k^2 = \frac{b^2 - 4ac}{4a^2} $$
 
 $$ s = -\frac{b}{2a} \pm \sqrt{\frac{b^2 - 4ac}{4a^2}} = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a} $$
 
-And time to continue like a multiple choice book. If you want to see the other more common proof of the quadratic formula, click [here](https://silaspe.github.io/maths/polynomial.html#_1). But if you think you had enough quadratic for the day, click [here](https://silaspe.github.io/maths/polynomial.html#depresed-cubic-again)
+And time to continue like a multiple choice book. If you want to see the other more common proof of the quadratic formula, click [here](https://silaspe.github.io/maths/polynomial.html#_1). But if you think you had enough quadratic for the day, click [here](https://silaspe.github.io/maths/polynomial.html#depressed-cubic-again)
