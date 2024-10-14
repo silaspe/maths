@@ -200,3 +200,7 @@ The actual axiom of choice:
 $200$ Lines.
 
 $$ ∀(S) \cdot S \text{ Is a set of sets}: \exists(f: S → [x| \exists(T) \cdot x \in T ∩ T \in S]) \cdot ∀(T) \cdot T \in S: f(T) \in T $$
+
+$$ \text{There's also compositions denoted as } f ∘ g \text{, but that does } g \text{ first, then } f \text{ (} (f ∘ g)(x) = f(g(x)) \text{). So I'll say that } f^* g \text{ does } f \text{ first, then } g \text{ (} (f^* g)(x) = g(f(x)) \text{).} $$
+
+Here's a diagram of sets $A$, $B$, $C$, mappings $f: A → B$ and $g: B → C$, $f^* g: A → C$, and $I: [x| \text{T}] → [x| \text{T}] = x ↦ x$ [:](https://www.youtube.com/watch?v=DrldYpmwN5s&t=857s) (Just replace $\text{id}$ with $I$, and $g ∘ f$ with $f^* g$)
