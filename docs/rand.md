@@ -250,3 +250,15 @@ it's $11:25$ ish, and I just hit commit. This was the closest call since, well, 
 .
 
 (insert work here)
+
+.
+
+By the way...
+
+Only ~ $2$ weeks until halloween! (That was the day I created this website.)
+
+.
+
+i before e except after c...
+
+... Unless you're a weird beige foreign neighbor running a feisty heist!
