@@ -38,12 +38,18 @@ nav:
 theme:
   name: material
   palette:
-    # Palette toggle for dark mode
-    - media: "(prefers-color-scheme: dark)"
-      scheme: slate
+    - scheme: default
+      primary: indigo
+      accent: indigo
       toggle:
         icon: material/brightness-4
-        name: Switch to system preference
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to light mode
 
 
 use_directory_urls: false

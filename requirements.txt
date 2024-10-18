@@ -5,3 +5,4 @@ pygments
 mkdocs-material
 markdown-katex
 mkdocs-with-pdf
+rise

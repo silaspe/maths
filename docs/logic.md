@@ -199,8 +199,48 @@ The actual axiom of choice:
 
 $200$ Lines.
 
-$$ ∀(S) \cdot S \text{ Is a set of sets}: \exists(f: S → [x| \exists(T) \cdot x \in T ∩ T \in S]) \cdot ∀(T) \cdot T \in S: f(T) \in T $$
+$$ ∀(S) \cdot S \text{ Is a set of sets}: \exists (f: S → [x| \exists(T) \cdot x \in T ∩ T \in S]) \cdot ∀(T) \cdot T \in S: f(T) \in T $$
 
 $$ \text{There's also compositions denoted as } f ∘ g \text{, but that does } g \text{ first, then } f \text{ (} (f ∘ g)(x) = f(g(x)) \text{). So I'll say that } f^* g \text{ does } f \text{ first, then } g \text{ (} (f^* g)(x) = g(f(x)) \text{).} $$
 
 Here's a diagram of sets $A$, $B$, $C$, mappings $f: A → B$ and $g: B → C$, $f^* g: A → C$, and $I: [x| \text{T}] → [x| \text{T}] = x ↦ x$ [:](https://www.youtube.com/watch?v=DrldYpmwN5s&t=857s) (Just replace $\text{id}$ with $I$, and $g ∘ f$ with $f^* g$)
+
+### the $8$ axioms of Zermelo–Fraenkel set theory (ZFC)
+
+$1$: The Axiom of Extensionality:
+
+$$ ∀(S, T): (∀(x): x \in S \iff x \in T → S = T) $$
+
+$2$: The Axiom of Pairing:
+
+$$ ∀(S, T): \exists (U) \cdot U = [x| x = S ∨ x = T] $$
+
+$3$: The Axiom of Union:
+
+$$ ∀(S, T): \exists (U) \cdot U = [x| x \in S ∨ x \in T] $$
+
+$4$: The Axiom of the Power Set:
+
+$$ ∀(S): \exists (T) \cdot T = [x| x ⊆ S] $$
+
+$5$: The Axiom of Infinity:
+
+$$ \exists (S) \cdot S = [x| x = [y| \text{F}] ∨ \exists (y) \cdot y \in S ∩ x = [z| z \in y ∨ z = y]] $$
+
+$6$: The Axiom of Schema of Replacement:
+
+$$ ∀(f): \exists (S) \cdot S = [y| \exists (P) \cdot P \in f ∩ p[2] = y] $$
+
+$7$: The Axiom of Regularity:
+
+$$ ∀(A): (A \ne [x| \text{F}] → \exists (B) \cdot (B \in (A ∩ B) ∩ A = [x| \text{F}])) $$
+
+$8$: The Axiom of Schema of Separation:
+
+$$ ∀(S): \exists (T) \cdot ∀(x) \cdot x \in T: x \in S $$
+
+#### the secret $9$'th axiom of Zermelo–Fraenkel set theory (ZFC)
+
+The Axiom of Choice:
+
+$$ ∀(S) \cdot S \ne [x| x = [y| \text{F}]]: \exists (f: S): ∀(T) \cdot T \in S: f(T) \in T $$

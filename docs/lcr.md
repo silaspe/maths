@@ -198,3 +198,9 @@ Ok, to any mathematicians reading this (which is my general audience), you can s
 
 
 $200$ Lines!
+
+What is a function? Probably that "functions as graphs" thing: every function (call it $f$) has a fixed domain (call it $X$) and codomain (call it $Y$). We often say $f: X → Y$ to denote this (pronounced $f$ maps $X$ to $Y$). The function is a subset of $X \times Y$ (the set of all ordered pairs of size $2$ where the first term is in $X$ and the second in $Y$) such that if $x \in X$ there exists one and only one $y \in Y$ such that the ordered pair $(x, y) \in f$ (Side note! If both $X$ and $Y$ were the set of all real numbers, the ordered pair $(x, y)$ would not just look like a point, but would be the (well, at least, my) definition of a point. End of side note). Two functions $f, g: X → Y$ are considered equal if they are the same set, that is, giving the same inputs gives the same outputs, a.k.a. An extensional perspective.
+
+Alternitavely, there's the "functions as rules" paradigm, commonlly used in the $19$th century: each function has a rule (e.g. the square function is a rule, and you can write this rule like $x^2 = x \cdot x$, or $^2 = x ↦ x \cdot x$). Yeah, that's it. But it is as intensional view.
+
+Pop quiz/ famous unsolved problem: are $x ↦ x$ and $y ↦ y$ intensionally equal?
