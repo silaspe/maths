@@ -199,8 +199,28 @@ Ok, to any mathematicians reading this (which is my general audience), you can s
 
 $200$ Lines!
 
+###  extensional vs. intensional view of functions
+
 What is a function? Probably that "functions as graphs" thing: every function (call it $f$) has a fixed domain (call it $X$) and codomain (call it $Y$). We often say $f: X → Y$ to denote this (pronounced $f$ maps $X$ to $Y$). The function is a subset of $X \times Y$ (the set of all ordered pairs of size $2$ where the first term is in $X$ and the second in $Y$) such that if $x \in X$ there exists one and only one $y \in Y$ such that the ordered pair $(x, y) \in f$ (Side note! If both $X$ and $Y$ were the set of all real numbers, the ordered pair $(x, y)$ would not just look like a point, but would be the (well, at least, my) definition of a point. End of side note). Two functions $f, g: X → Y$ are considered equal if they are the same set, that is, giving the same inputs gives the same outputs, a.k.a. An extensional perspective.
 
 Alternitavely, there's the "functions as rules" paradigm, commonlly used in the $19$th century: each function has a rule (e.g. the square function is a rule, and you can write this rule like $x^2 = x \cdot x$, or $^2 = x ↦ x \cdot x$). Yeah, that's it. But it is as intensional view.
 
-Pop quiz/ famous unsolved problem: are $x ↦ x$ and $y ↦ y$ intensionally equal?
+Pop quiz/famous unsolved problem: are $x ↦ x$ and $y ↦ y$ intensionally equal?
+
+In this notion, you don't need to know the exact domain and codomain of a function. e.g. $f(x) = x$ has domain and codomain $X$ for any set $X$.
+
+In most of mathematics, the "functions as graphs" paradigm is the most elegant and appropriate way of dealing with functions. Graphs define a more general class of functions, because it includes functions that are not necessarily given by a rule.
+
+On the other hand, in computer science, the “functions as rules” paradigm is often more appropriate. Think of a computer program as defining a function that maps input to output. Most computer programmers (and users) do not only care about the extensional behavior of a program (which inputs are mapped to which outputs), but also about how the output is calculated: How much time does it take? How much memory and disk space is used in the process? How much communication bandwidth is used? These are intensional questions having to do with the particular way in which a function was defined.
+
+### The lambda calculus
+
+... Is a method for defining functions as rules.
+
+Time for arihmetic! Arithmetic expressions are made up from variables ($x$, $y$, $z$...), numbers ($1$, $2$, $3$,...), and operators ($+$, $-$, $\times$ etc.). An expression such as $x + y$ stands for the result of an addition (as opposed to an instruction to add, or the statement that something is being added). The great advantage of this language is that expressions can be nested without any need to mention the intermediate results explicitly (e.g. "$A = (x + y) \times z^2$" and not "let $w = x + y$, then let $u = z^2$, then let $A = w \times u$").
+
+The lambda calculus extends the idea of an expression language to include functions. Where we normally write "Let $f$ be the function x ↦ x^2. Then consider A = f(5)", in the lambda calculus we just write $A = (x ↦ x^2)(5)$. But, because I want it to look more fancy, it is written $A = (\lambda x. x^2)(5)$. The expression $\lambda x. x^2$ stands for the function that maps $x$ to $x^2$ (as opposed to the statement that $x$ is being mapped to $x^2$). As in arithmetic, we use parentheses to group terms.
+
+It is understood that the variable $x$ is a local variable in the term $\lambda x. x^2$. Thus, it does not make any difference if we write $\lambda y. y^2$ instead. A local variable is also called a bound variable.
+
+One advantage of the lambda notation is that it allows us to easily talk about higher-order functions, i.e., functions whose inputs and/or outputs are themselves functions. An example is the operation $f ↦ f ∘ f$ in mathematics, which takes a function $f$ and maps it to $f ∘ f$, the composition of f with itself. In the lambda calculus, $f ∘ f$ is written as $\lambda x. f(f(x))$, and the operation that maps $f$ to $f ∘ f$ is written as $\lambda f. \lambda x. f(f(x))$.
