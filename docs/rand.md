@@ -96,6 +96,11 @@ Because tomorrow starts a month-long vacation, I'm going to go from working ever
 
 .
 
+
+$100$ Lines.
+
+.
+
 vacation to h#suhr#x# has started!
 
 If you were wondering, this is one year after [the strand puzzle](https://silaspe.github.io/maths/the_strand_puzzle.html) and [the arctan puzzle](https://silaspe.github.io/maths/arctan.html)
@@ -189,6 +194,13 @@ Goin' to e#pw#a#nl
 
 .
 
+
+
+
+$200$ Lines.
+
+.
+
 the car's license plate said "DNAX"
 
 .
@@ -262,3 +274,11 @@ Only ~ $2$ weeks until halloween! (That was the day I created this website.)
 i before e except after c...
 
 ... Unless you're a weird beige foreign neighbor running a feisty heist!
+
+.
+
+(insert work here)
+
+.
+
+I am making a slideshow for a talk on the lambda calculus in ~$1$ week.
