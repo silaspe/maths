@@ -282,3 +282,23 @@ i before e except after c...
 .
 
 I am making a slideshow for a talk on the lambda calculus in ~$1$ week.
+
+.
+
+#### road trip!
+
+First stop: my sister
+
+.
+
+leaving in $15$ minutes
+
+.
+
+
+
+$300$ Lines.
+
+.
+
+we are now at our next stop: new orleans.
