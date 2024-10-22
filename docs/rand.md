@@ -301,4 +301,12 @@ $300$ Lines.
 
 .
 
-we are now at our next stop: new orleans.
+we're now at our next stop: new orleans.
+
+.
+
+Next stop: the beach!
+
+.
+
+Actually, I went to mississippi, then alabama, then florida, then a restaraunt.
