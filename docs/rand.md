@@ -310,3 +310,10 @@ Next stop: the beach!
 .
 
 Actually, I went to mississippi, then alabama, then florida, then a restaraunt.
+
+.
+
+Yess, I spelled "restaraunt" first try
+.
+
+We are back in alabama, and we are finaly going to tabconf.
