@@ -322,3 +322,7 @@ We are back in alabama, and we are finaly going to tabconf.
 .
 
 False alarm, that's today. Plus, tabconf is in georgia
+
+.
+
+I'm doing my talk in $45$ (ish) minutes
