@@ -243,4 +243,12 @@ $$ ∀(S): \exists (T) \cdot ∀(x) \cdot x \in T: x \in S $$
 
 The Axiom of Choice:
 
-$$ ∀(S) \cdot S \ne [x| x = [y| \text{F}]]: \exists (f: S): ∀(T) \cdot T \in S: f(T) \in T $$
+$$ ∀(S) \cdot S \ne [x| x = [y| \text{F}]]: \exists (f): ∀(T) \cdot T \in S ∩ T \ne [x| \text{F}]: f(T) \in T $$
+
+### comparosins
+
+| My old notation         | Standard notation  | My new notation              |
+| ------------------------| ------------------ | ---------------------------- |
+| $∀(x) \cdot p(x): q(x)$ | $∀x. p(x) → q(x)$ | $(p(x) → q(x)) =_x \text{T}$ |
+| $∀(x): p(x)$            | $∀x. p(x)$        | $p(x) =_x \text{T}$          |
+| $∀(S) \cdot S \ne [x| x = [y| \text{F}]]: \exists (f: S): ∀(T) \cdot T \in S ∩ T \ne [x| \text{F}]: f(T) \in T$ | $∀S. S \ne [x| x = Ø] → \exists f. ∀T. T \in S ∩ T \ne [x| \text{F}] → f(T) \in T$ | ERR |

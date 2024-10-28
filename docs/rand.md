@@ -325,8 +325,22 @@ False alarm, that's today. Plus, tabconf is in georgia
 
 .
 
-I'm doing my talk in $45$ (ish) minutes
+I'm doing my first talk in $45$ (ish) minutes
 
 .
 
-I'm doing my other talk in $3$ (ish) hours
+The talk did good, and here it is[:]() that is, when it comes out.
+
+.
+
+It's the next day and I'm doing my other talk in $3$ (ish) hours
+
+.
+
+It did good and shorter then expected[.]() (I'll put in the link when the video comes out.)
+
+.
+
+Announcement
+
+It's the next day again and, because both the talk that I've been waiting $1$ year for (the second one) and the one I've been spending all my free time on for the last week (the first one), I can now come back to working on my website instead of doing daily edits to this page. One of the things that I've wanted to do but can't is set theory.
