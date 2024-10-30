@@ -301,7 +301,7 @@ $300$ Lines.
 
 .
 
-we're now at our next stop: new orleans.
+We're now at our next stop: new orleans.
 
 .
 
@@ -344,3 +344,19 @@ It did good and shorter then expected[.]() (I'll put in the link when the video 
 Announcement
 
 It's the next day again and, because both the talk that I've been waiting $1$ year for (the second one) and the one I've been spending all my free time on for the last week (the first one), I can now come back to working on my website instead of doing daily edits to this page. One of the things that I've wanted to do but can't is set theory.
+
+.
+
+We are back in alabama
+
+.
+
+We are going back to florida
+
+.
+
+We are back in alabama
+
+.
+
+Next stop: new orleans!

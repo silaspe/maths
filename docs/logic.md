@@ -243,12 +243,17 @@ $$ ∀(S): \exists (T) \cdot ∀(x) \cdot x \in T: x \in S $$
 
 The Axiom of Choice:
 
-$$ ∀(S) \cdot S \ne [x| x = [y| \text{F}]]: \exists (f): ∀(T) \cdot T \in S ∩ T \ne [x| \text{F}]: f(T) \in T $$
+$$ ∀(S): \exists (f) \cdot ∀(T) \cdot T \in S ∩ T \ne [x| \text{F}]: f(T) \in T $$
 
 ### comparosins
 
-| My old notation         | Standard notation  | My new notation              |
-| ------------------------| ------------------ | ---------------------------- |
-| $∀(x) \cdot p(x): q(x)$ | $∀x. p(x) → q(x)$ | $(p(x) → q(x)) =_x \text{T}$ |
-| $∀(x): p(x)$            | $∀x. p(x)$        | $p(x) =_x \text{T}$          |
-| $∀(S) \cdot S \ne [x| x = [y| \text{F}]]: \exists (f: S): ∀(T) \cdot T \in S ∩ T \ne [x| \text{F}]: f(T) \in T$ | $∀S. S \ne [x| x = Ø] → \exists f. ∀T. T \in S ∩ T \ne [x| \text{F}] → f(T) \in T$ | ERR |
+| My old notation          | Standard notation  | My new notation              |
+| -------------------------| ------------------ | ---------------------------- |
+| $∀(x) \cdot p(x): q(x)$  | $∀x. p(x) → q(x)$ | $(p(x) → q(x)) =_x \text{T}$ |
+| $∀(x): p(x)$             | $∀x. p(x)$        | $p(x) =_x \text{T}$          |
+| $\exists (x) \cdot p(x)$ | $\exists x. p(x)$  | $¬p(x) =_x \text{F}$          |
+| $∀(A): \exists (f) \cdot ∀(B) \cdot B \in A ∩ ¬B = [x \| \text{F}]: f(B) \in B$ | $∀A. \exists f. ∀B. B \in A ∩ B \ne Ø → f(B) \in B$ | $((B^S \in A^S ∩ ¬B = [x \| \text{F}] → f(B) \in B) =_f \text{F}) =_{A, B} \text{F}$ |
+
+### my new notation
+
+The $=_x$ sign is pronounced "is equal to, for all values of $x$". Also, I (kinda) wrote $\exists (x) \cdot p(x)$ as $¬(∀(x): p(x) = \text{F}$), because the statement "there exists an $x$ where $p(x)$ is true" is just the inversion of the statemment "$p(x)$ is, for all values of $x$, equal to false". Then I realized that the for any sign takes the and over all values of $x$ and that the there exists sign takes the or over all values of $x$. So that $¬(∀(x): p(x) = \text{F})$ thing is just DeMorgan's laws: $¬(¬p ∩ ¬q) = p ∨ q$ and $¬(¬p ∨ ¬q) = p ∩ q$. So the equuivalent statement for the for any sign is $¬(\exists (x) \cdot p(x) = \text{F})$
