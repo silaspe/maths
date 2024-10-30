@@ -360,3 +360,11 @@ We are back in alabama
 .
 
 Next stop: new orleans!
+
+.
+
+We are heading back on Oct $30$ (today)
+
+.
+
+yesterday's commit was $18$ mins after midnight
