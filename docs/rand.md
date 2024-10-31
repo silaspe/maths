@@ -368,3 +368,7 @@ We are heading back on Oct $30$ (today)
 .
 
 yesterday's commit was $18$ mins after midnight
+
+#### end of road trip.
+
+Ok, I'm gonna do this first thing in the morning (after texting my dad), I've been planning this since Oct $17$th ish. The amount of commits to this website (after I hit commit) between now and $800$ is $3$...
