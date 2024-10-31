@@ -374,3 +374,7 @@ yesterday's commit was $18$ mins after midnight
 Happy halloween!
 
 Ok, I'm gonna do this first thing in the morning (after texting my dad), I've been planning this since Oct $17$th (ish). The amount of commits to this website (after I hit commit) between now and $800$ is $3$... $2$... $1$... $0$! This will be the $800$th commit on the one year anniversery of my website.
+
+.
+
+I'm trick or treating in ~$1H$
