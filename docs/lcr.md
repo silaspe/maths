@@ -224,3 +224,7 @@ The lambda calculus extends the idea of an expression language to include functi
 It is understood that the variable $x$ is a local variable in the term $\lambda x. x^2$. Thus, it does not make any difference if we write $\lambda y. y^2$ instead. A local variable is also called a bound variable.
 
 One advantage of the lambda notation is that it allows us to easily talk about higher-order functions, i.e., functions whose inputs and/or outputs are themselves functions. An example is the operation $f ↦ f ∘ f$ in mathematics, which takes a function $f$ and maps it to $f ∘ f$, the composition of f with itself. In the lambda calculus, $f ∘ f$ is written as $\lambda x. f(f(x))$, and the operation that maps $f$ to $f ∘ f$ is written as $\lambda f. \lambda x. f(f(x))$.
+
+### just read the paper.
+
+## coder's perspective
