@@ -1003,7 +1003,7 @@ Y'know how any two distinct points on the affine plane have a line through them?
 
 #### greek letters
 
-| Alpha | Beta | Gamma | Delta | Epsilon | Zeta | Eta | Theta | Iota | Kappa | Lambda | Mu | Nu | Xi | Omicron | Pi | Rho | Sigma (yes, this is an actual greek letter) | Tau | Upsilon | Phi | Chi | Psi | Omega |
+| Alpha | Beta | Gamma | Delta | Epsilon | Zeta | Eta | Theta | Iota | Kappa | Lambda | Mu | Nu | Xi | Omicron | Pi | Rho | Sigma (yes, actualy) | Tau | Upsilon | Phi | Chi | Psi | Omega |
 |-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|
 | $\alpha$ | $\beta$ | $\gamma$ | $\delta$ | $\epsilon$ | $\zeta$ | $\eta$ | $\theta$ | $\iota$ | $\kappa$ | $\lambda$ | $\mu$ | $\nu$ | $\xi$ | $\omicron$ | $\pi$ | $\rho$ | $\sigma$ | $\tau$ | $\upsilon$ | $\phi$ | $\chi$ | $\psi$ | $\omega$ |
 | $\Alpha$ | $\Beta$ | $\Gamma$ | $\Delta$ | $\Epsilon$ | $\Zeta$ | $\Eta$ | $\Theta$ | $\Iota$ | $\Kappa$ | $\Lambda$ | $\Mu$ | $\Nu$ | $\Xi$ | $\Omicron$ | $\Pi$ | $\Rho$ | $\Sigma$ | $\Tau$ | $\Upsilon$ | $\Phi$ | $\Chi$ | $\Psi$ | $\Omega$ |
@@ -1028,3 +1028,9 @@ $$ \Theta = A(A) $$
 $$ A = \lambda xy. y(x(x)(y)) $$
 
 $$ \Theta (f) = A(A)(f) = (\lambda xy. y(x(x)(y)))(A)(f) = f(A(A)(f)) = f(\Theta (f)) $$
+
+$$ \Theta (f) = f(\Theta (f)) $$
+
+But this challenge of making your own fixed point combinator is really easy (I'll use the Theta combinator as an example): first, we need a combinator that reduces to itself, a self referential combinator (such as $\Omega$ or $\text{M} (\text{M})$ or $(\lambda x. x(x))(\lambda x. x(x))$, they're all the same thing. Actually, I'm gonna re derive The Omega). And for that, we need a form, where a form has some $f$s, maybe $x$s and $y$s where it is $f$ of single things (so no $f(x(y))$s), one of which is another $f$. The one that I'm gonna use (and the simplest one) is $f(f)$. To make a self referential combinator out of this, we're gonna need to make a combinator $A$ where $A(A)$ reduces to itself. That is, $A$ of all the given inputs (just $A$) returns $A(A)$. So $A$, if you exaluate it on $A$, you get $A(A)$. So $A$ must be the self application combinator $\lambda x. x(x)$. To turn this self referential combinator into a fixed point combinator, you just need to make $A(A)(f)$ equal to $A(A)(f)$. But, to avoid confusion with the original $A$ (not the one in the turing fixed point combinator), I'll call it $B$. First, as a starting point, $B = A^*$
+
+*
