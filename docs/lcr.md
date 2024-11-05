@@ -2,7 +2,7 @@
 
 ### Introduction
 
-Let's start out with a function $I$ equal to $\lambda x. x$. If I plug in $1$ to this function, what do I get back? What is $I(1)$? Yeah, $I(1) = 1$, $I(2) = 2$, what about $I(I)$? Yeah, it's $I$.
+Let's start out with a function $I$ equal to $\lambda x. x$. If I plug in $1$ to this function, what do I get back? What is $\text{I} (1)$? Yeah, $\text{I} (1) = 1$, $\text{I} (2) = 2$, what about $\text{I} (\text{I})$? Yeah, it's $\text{I}$.
 
 So, the identity combinator takes in an input $x$, and returns an output, also $x$. So the identity of any $x$ is $x$, and as seen before, we can use functions as arguments, verbs are nouns and nouns are verbs, so the identity of identity is itself.
 
@@ -10,7 +10,7 @@ So, the identity combinator takes in an input $x$, and returns an output, also $
 
 So, you might've seen this lambda stuff ($\lambda x. x$) earlier and wondered what it ment, so I'll break it down into small parts. Lambda ($\lambda$) is a signifier, a notation that I'm gonna use, to indicate that we're starting the definition of a function.
 
-So we can read this as: we're starting to define a function ($\lambda$), that takes a single input ($x$), or parameter, and returns some expression, some body ($x$). This whole thing is called a lambda abstraction in the lambda calculus, but it just means that it's a unary (takes a single input) anonymous function
+So we can read this as: we're starting to define a function ($\lambda$), that takes a single input ($x$), or parameter, and returns some expression, some body ($x$) (the part after rhe dot). This whole thing is called a lambda abstraction in the lambda calculus, but it just means that it's a unary (takes a single input) anonymous function
 
 ### What is The Lambda Calculus?
 
