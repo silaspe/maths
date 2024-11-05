@@ -1003,7 +1003,7 @@ Y'know how any two distinct points on the affine plane have a line through them?
 
 #### greek letters
 
-| Alpha | Beta | Gamma | Delta | Epsilon | Zeta | Eta | Theta | Iota | Kappa | Lambda | Mu | Nu | Xi | Omicron | Pi | Rho | Sigma | Tau | Upsilon | Phi | Chi | Psi | Omega |
+| Alpha | Beta | Gamma | Delta | Epsilon | Zeta | Eta | Theta | Iota | Kappa | Lambda | Mu | Nu | Xi | Omicron | Pi | Rho | Sigma (yes, this is an actual greek letter) | Tau | Upsilon | Phi | Chi | Psi | Omega |
 |-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|
 | $\alpha$ | $\beta$ | $\gamma$ | $\delta$ | $\epsilon$ | $\zeta$ | $\eta$ | $\theta$ | $\iota$ | $\kappa$ | $\lambda$ | $\mu$ | $\nu$ | $\xi$ | $\omicron$ | $\pi$ | $\rho$ | $\sigma$ | $\tau$ | $\upsilon$ | $\phi$ | $\chi$ | $\psi$ | $\omega$ |
 | $\Alpha$ | $\Beta$ | $\Gamma$ | $\Delta$ | $\Epsilon$ | $\Zeta$ | $\Eta$ | $\Theta$ | $\Iota$ | $\Kappa$ | $\Lambda$ | $\Mu$ | $\Nu$ | $\Xi$ | $\Omicron$ | $\Pi$ | $\Rho$ | $\Sigma$ | $\Tau$ | $\Upsilon$ | $\Phi$ | $\Chi$ | $\Psi$ | $\Omega$ |
@@ -1011,4 +1011,20 @@ Y'know how any two distinct points on the affine plane have a line through them?
 
 #### cursed math
 
-$$ \int i dt = \iota $$
+$$ \int i \text{ } dt = \iota $$
+
+#### fixed point combinators
+
+When I say "fixed point combinator", what I really mean is a combinator $p$ such that $f(p(f)) = p(f)$. The term "fixed point" just means: $x$ is a fixed point of $f$ if and only if $f(x) = x$. The puzzle of constucting your own fixed point combinator is a puzzle found in the lambda paper after showing you the $\text{Y}$ combinator and the older turing fixed point combinator $\Theta$. In both of them, $p(f)$ reduces to $f(p(f))$. Here's a proof:
+
+$$ \text{Y} = \lambda f. (\lambda x. f(x(x)))(\lambda x. f(x(x))) $$
+
+$$ \text{Y} (f) = (\lambda f. (\lambda x. f(x(x)))(\lambda x. f(x(x))))(f) = (\lambda x. f(x(x)))(\lambda x. f(x(x))) = f((\lambda x. f(x(x)))(\lambda x. f(x(x)))) = f((\lambda f. (\lambda x. f(x(x)))(\lambda x. f(x(x))))(f)) = f(\text{Y} (f)) $$
+
+$$ \text{Y} (f) = f(\text{Y} (f)) $$
+
+$$ \Theta = A(A) $$
+
+$$ A = \lambda xy. y(x(x)(y)) $$
+
+$$ \Theta (f) = A(A)(f) = (\lambda xy. y(x(x)(y)))(A)(f) = f(A(A)(f)) = f(\Theta (f)) $$
