@@ -1047,11 +1047,11 @@ x_3 \\
 \vdots \\
 x_n \\ \end{bmatrix} $$
 
-$$ \vec{v} = \begin{bmatriv} v_1 \\
+$$ \vec{v} = \begin{bmatrix} v_1 \\
 v_2 \\
 v_3 \\
 \vdots \\
-v_n \\ \end{bmatriv} $$
+v_n \\ \end{bmatrix} $$
 
 $$ A \vec{x} = \vec{v} $$
 
@@ -1061,7 +1061,7 @@ $$ A \vec{x} = A \begin{bmatrix} x_1 \\
 x_2 \\
 x_3 \\
 \vdots \\
-x_n \\ \end{bmatrix} = A (x_1 \hat{x} + x_2 \hat{y} + x_3 \hat{z} + \vdots + x_n \hat{\omega}) = A x_1 \hat{x} + A x_2 \hat{y} + A x_3 \hat{z} + \vdots + A x_n \hat{\omega} = x_1 A \hat{x} + x_2 A \hat{y} + x_3 A \hat{z} + \vdots + x_n A \hat{\omega} = x_1 \begin{bmatrix} a_{11} \\
+x_n \\ \end{bmatrix} = A (x_1 \hat{x} + x_2 \hat{y} + x_3 \hat{z} + \dots + x_n \hat{\omega}) = A x_1 \hat{x} + A x_2 \hat{y} + A x_3 \hat{z} + \dots + A x_n \hat{\omega} = x_1 A \hat{x} + x_2 A \hat{y} + x_3 A \hat{z} + \dots + x_n A \hat{\omega} = x_1 \begin{bmatrix} a_{11} \\
 a_{21} \\
 a_{31} \\
 \vdots \\
@@ -1073,7 +1073,7 @@ a_{n2} \\ \end{bmatrix} + x_3 \begin{bmatrix} a_{13} \\
 a_{23} \\
 a_{33} \\
 \vdots \\
-a_{n3} \\ \end{bmatrix} + \vdots + x_n \begin{bmatrix} a_{1n} \\
+a_{n3} \\ \end{bmatrix} + \dots + x_n \begin{bmatrix} a_{1n} \\
 a_{2n} \\
 a_{3n} \\
 \vdots \\
@@ -1089,7 +1089,7 @@ x_2 a_{n2} \\ \end{bmatrix} + \begin{bmatrix} x_3 a_{13} \\
 x_3 a_{23} \\
 x_3 a_{33} \\
 \vdots \\
-x_3 a_{n3} \\ \end{bmatrix} + \vdots + \begin{bmatrix} x_n a_{1n} \\
+x_3 a_{n3} \\ \end{bmatrix} + \dots + \begin{bmatrix} x_n a_{1n} \\
 x_n a_{2n} \\
 x_n a_{3n} \\
 \vdots \\
@@ -1109,11 +1109,11 @@ $$ \begin{bmatrix} x_1 a_{11} + x_2 a_{12} + x_3 a_{13} + \dots + x_n a_{1n} \\
 x_1 a_{21} + x_2 a_{22} + x_3 a_{23} + \dots + x_n a_{2n} \\
 x_1 a_{31} + x_2 a_{32} + x_3 a_{33} + \dots + x_n a_{3n} \\
 \vdots \\
-x_1 a_{n1} + x_2 a_{n2} + x_3 a_{n3} + \dots + x_n a_{nn} \\ \end{bmatrix} = \begin{bmatriv} v_1 \\
+x_1 a_{n1} + x_2 a_{n2} + x_3 a_{n3} + \dots + x_n a_{nn} \\ \end{bmatrix} = \begin{bmatrix} v_1 \\
 v_2 \\
 v_3 \\
 \vdots \\
-v_n \\ \end{bmatriv} $$
+v_n \\ \end{bmatrix} $$
 
 $$ x_1 a_{11} + x_2 a_{12} + x_3 a_{13} + \dots + x_n a_{1n} = v_1 $$
 
