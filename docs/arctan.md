@@ -86,25 +86,25 @@ So, all that we have proved is that $\theta = \theta$. Yay!
 
 Ok, so that's the end of that train of thought. I googled "derivitave of arctan" for the result. When I found the awnser $\frac{1}{1 + x^2}$, I diden't find an awnser why. So, of course I asked ChatGPT, the proof went something like this:
 
-Actually, I forgot it and this is my best guess, with $\frac{}{f}$ as the inverse of $f$:
+Actually, I forgot it and this is my best guess, with $\overline{f}$ as the inverse of $f$:
 
 ### derivitave of arctan
 
-$$ f(\frac{}{f} (x)) = : x $$
+$$ f(\overline{f} (x)) = : x $$
 
-$$ \frac{d}{dx} f(\frac{}{{}^f} (x)) = f\prime (\frac{}{f} (x)) \frac{}{f}\prime (x) = 1 $$
+$$ \frac{d}{dx} f(\overline{{}^f} (x)) = f\prime (\overline{f} (x)) \overline{f}\prime (x) = 1 $$
 
-$$ \frac{}{f}\prime (x) = \frac{1}{f\prime (\frac{}{f} (x))} $$
+$$ \overline{f}\prime (x) = \frac{1}{f\prime (\overline{f} (x))} $$
 
 $$ f(x) = tan(x) $$
 
-$$ \frac{}{f} = arctan(x) $$
+$$ \overline{f} = arctan(x) $$
 
-$$ arctan\prime (x) = \frac{1}{tan\prime (arctan(x))} $$
+$$ arctan \prime (x) = \frac{1}{tan \prime (arctan(x))} $$
 
 $$ \text{Oh! I forgot to tell you about (well, for one, it's pi day today) the other trigonometric functions other than } \text{sin} \text{ pronounced "sine", and } cos \text{ pronounced "cosine" or "cos", but I prefer cosine, theres } tan = \frac{sin}{cos} \text{ pronounced "tan" or "tangent", which I use interchangibly in real life, and it's inverse } arctan \text{ pronounced execly how it is spelled, but theres also } sec = \frac{1}{cos} \text{ pronounced "secant" or "sec", but I prefer secant, but theres also } csc = \frac{1}{sin} \text{ counterintuitivly, but it's pronounced "cosec" or "cosecant", but I prefer cosec. You can also square any of these for a } 2 \text{ superscript in front of the function instead of the parenthasies} $$
 
-$$ tan\prime (x) = (\frac{sin(x)}{cos(x)}) \prime = \frac{sin\prime (x) cos(x) - sin(x) cos\prime (x)}{cos^2(x)} = \frac{cos(x) cos(x) + sin(x) sin(x)}{cos^2(x)} $$
+$$ tan \prime (x) = (\frac{sin(x)}{cos(x)}) \prime = \frac{sin\prime (x) cos(x) - sin(x) cos\prime (x)}{cos^2(x)} = \frac{cos(x) cos(x) + sin(x) sin(x)}{cos^2(x)} $$
 
 $$ \text{Okay, we have } cos^2 + sin^2 \text{. Eccept, I still have to derive that.} $$
 
@@ -124,9 +124,9 @@ $$ cos^2 (\theta) + sin^2 (\theta) = 1 $$
 
 $$ \text{Okay, time to keep going.} $$
 
-$$ tan\prime (x) = \frac{1}{cos^2(x)} $$
+$$ tan \prime (x) = \frac{1}{cos^2(x)} $$
 
-$$ tan\prime (x) = sec^2 (x) $$
+$$ tan \prime (x) = sec^2 (x) $$
 
 $$ tan^2 (x) = \frac{sin^2 (x)}{cos^2 (x)} = \frac{sin^2 (x) + cos^2 (x) - cos^2 (x)}{cos^2 (x)} = \frac{sin^2 (x) + cos^2 (x)}{cos^2 (x)} - \frac{cos^2 (x)}{cos^2 (x)} $$
 

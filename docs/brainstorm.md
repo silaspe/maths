@@ -1032,3 +1032,95 @@ $$ \Theta (f) = A(A)(f) = (\lambda xy. y(x(x)(y)))(A)(f) = f(A(A)(f)) = f(\Theta
 $$ \Theta (f) = f(\Theta (f)) $$
 
 But this challenge of making your own fixed point combinator is really easy (I'll use the Theta combinator as an example): first, we need a combinator that reduces to itself, a self referential combinator (such as $\Omega$ or $\text{M} (\text{M})$ or $(\lambda x. x(x))(\lambda x. x(x))$, they're all the same thing. Actually, I'm gonna re derive The Omega). And for that, we need a form, where a form has some $f$s, maybe $x$s and $y$s where it is $f$ of single things (so no $f(x(y))$s), one of which is another $f$. The one that I'm gonna use (and the simplest one) is $f(f)$. To make a self referential combinator out of this, we're gonna need to make a combinator $A$ where $A(A)$ reduces to itself. That is, $A$ of all the given inputs (just $A$) returns $A(A)$. So $A$, if you exaluate it on $A$, you get $A(A)$. So $A$ must be the self application combinator $\lambda x. x(x)$. To turn this self referential combinator into a fixed point combinator, you just need to make $A(A)(f)$ equal to $A(A)(f)$. But, to avoid confusion with the original $A$ (not the one in the turing fixed point combinator), I'll call it $B$. First, as a starting point, $B$ should equal $A$ but with one more input (so $B = \lambda xy. x(x)(y)$). And, now that $B$ can factor in $f$, we can make $B$ of $B$ and $f$ output $f(B(B)(f))$. But this is easy, just change the definition of $B$ to $\lambda xy. y(x(x)(y))$. And we now have $\Theta$.
+
+#### linear systems of equations
+
+$$ A = \begin{bmatrix} a_{11} & a_{12} & a_{13} & \dots & a_{1n} \\
+a_{21} & a_{22} & a_{23} & \dots & a_{2n} \\
+a_{31} & a_{32} & a_{33} & \dots & a_{3n} \\
+\vdots & \vdots & \vdots & \ddots & \vdots \\
+a_{n1} & a_{n2} & a_{n3} & \dots & a_{nn} \\ \end{bmatrix} $$
+
+$$ \vec{x} = \begin{bmatrix} x_1 \\
+x_2 \\
+x_3 \\
+\vdots \\
+x_n \\ \end{bmatrix} $$
+
+$$ \vec{v} = \begin{bmatrix} v_1 \\
+v_2 \\
+v_3 \\
+\vdots \\
+v_n \\ \end{bmatrix} $$
+
+$$ A \vec{x} = \vec{v} $$
+
+$$ \vec{x} = ? $$
+
+$$ A \vec{x} = A \begin{bmatrix} x_1 \\
+x_2 \\
+x_3 \\
+\vdots \\
+x_n \\ \end{bmatrix} = A (x_1 \hat{x} + x_2 \hat{y} + x_3 \hat{z} + \dots + x_n \hat{\omega}) = A x_1 \hat{x} + A x_2 \hat{y} + A x_3 \hat{z} + \dots + A x_n \hat{\omega} = x_1 A \hat{x} + x_2 A \hat{y} + x_3 A \hat{z} + \dots + x_n A \hat{\omega} = x_1 \begin{bmatrix} a_{11} \\
+a_{21} \\
+a_{31} \\
+\vdots \\
+a_{n1} \\ \end{bmatrix} + x_2 \begin{bmatrix} a_{12} \\
+a_{22} \\
+a_{32} \\
+\vdots \\
+a_{n2} \\ \end{bmatrix} + x_3 \begin{bmatrix} a_{13} \\
+a_{23} \\
+a_{33} \\
+\vdots \\
+a_{n3} \\ \end{bmatrix} + \dots + x_n \begin{bmatrix} a_{1n} \\
+a_{2n} \\
+a_{3n} \\
+\vdots \\
+a_{nn} \\ \end{bmatrix} = \begin{bmatrix} x_1 a_{11} \\
+x_1 a_{21} \\
+x_1 a_{31} \\
+\vdots \\
+x_1 a_{n1} \\ \end{bmatrix} + \begin{bmatrix} x_2 a_{12} \\
+x_2 a_{22} \\
+x_2 a_{32} \\
+\vdots \\
+x_2 a_{n2} \\ \end{bmatrix} + \begin{bmatrix} x_3 a_{13} \\
+x_3 a_{23} \\
+x_3 a_{33} \\
+\vdots \\
+x_3 a_{n3} \\ \end{bmatrix} + \dots + \begin{bmatrix} x_n a_{1n} \\
+x_n a_{2n} \\
+x_n a_{3n} \\
+\vdots \\
+x_n a_{nn} \\ \end{bmatrix} = \begin{bmatrix} x_1 a_{11} + x_2 a_{12} + x_3 a_{13} + \dots + x_n a_{1n} \\
+x_1 a_{21} + x_2 a_{22} + x_3 a_{23} + \dots + x_n a_{2n} \\
+x_1 a_{31} + x_2 a_{32} + x_3 a_{33} + \dots + x_n a_{3n} \\
+\vdots \\
+x_1 a_{n1} + x_2 a_{n2} + x_3 a_{n3} + \dots + x_n a_{nn} \\ \end{bmatrix} $$
+
+$$ \begin{bmatrix} x_1 a_{11} + x_2 a_{12} + x_3 a_{13} + \dots + x_n a_{1n} \\
+x_1 a_{21} + x_2 a_{22} + x_3 a_{23} + \dots + x_n a_{2n} \\
+x_1 a_{31} + x_2 a_{32} + x_3 a_{33} + \dots + x_n a_{3n} \\
+\vdots \\
+x_1 a_{n1} + x_2 a_{n2} + x_3 a_{n3} + \dots + x_n a_{nn} \\ \end{bmatrix} = \vec{v} $$
+
+$$ \begin{bmatrix} x_1 a_{11} + x_2 a_{12} + x_3 a_{13} + \dots + x_n a_{1n} \\
+x_1 a_{21} + x_2 a_{22} + x_3 a_{23} + \dots + x_n a_{2n} \\
+x_1 a_{31} + x_2 a_{32} + x_3 a_{33} + \dots + x_n a_{3n} \\
+\vdots \\
+x_1 a_{n1} + x_2 a_{n2} + x_3 a_{n3} + \dots + x_n a_{nn} \\ \end{bmatrix} = \begin{bmatrix} v_1 \\
+v_2 \\
+v_3 \\
+\vdots \\
+v_n \\ \end{bmatrix} $$
+
+$$ x_1 a_{11} + x_2 a_{12} + x_3 a_{13} + \dots + x_n a_{1n} = v_1 $$
+
+$$ x_1 a_{21} + x_2 a_{22} + x_3 a_{23} + \dots + x_n a_{2n} = v_2 $$
+
+$$ x_1 a_{31} + x_2 a_{32} + x_3 a_{33} + \dots + x_n a_{3n} = v_3 $$
+
+$$ \vdots $$
+
+$$ x_1 a_{n1} + x_2 a_{n2} + x_3 a_{n3} + \dots + x_n a_{nn} = v_n $$
