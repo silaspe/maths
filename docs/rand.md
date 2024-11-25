@@ -381,6 +381,12 @@ I'm trick or treating in ~$1H$
 
 .
 
-The new president of the USA is (and I'm typing this before I actually know)...
+The new president of the USA will be (and I'm typing this before I actually know)...
 
-Donald Trump! He's gonna be the president of the USA for at least $8$ years of my life
+Donald Trump! He's gonna be the president of the USA for at least $8$ years of my life.
+
+.
+
+You might've noticed that...
+
+I've been working a lot less recently, but I'm gonna try to work every day for all of december and (most of) $2025$
