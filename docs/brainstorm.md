@@ -1124,3 +1124,57 @@ $$ x_1 a_{31} + x_2 a_{32} + x_3 a_{33} + \dots + x_n a_{3n} = v_3 $$
 $$ \vdots $$
 
 $$ x_1 a_{n1} + x_2 a_{n2} + x_3 a_{n3} + \dots + x_n a_{nn} = v_n $$
+
+### linear algebra?
+
+This will be a series of subchapters about linear algebra. In particular, the more general mathmetician's version. But if you want some more intuition about how it works, each subchapter will have a corrasponding part in [this playlist](https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab). The first thing to do in linear algebra is to...
+
+#### choose your fighte- vector space!
+
+As you might know, the main thing in linear algebra is the vector. so, to make this as general as possible, I'm gonna let you make your own vector space (space in which vectors live). Something important that defines a vector is that there's a sense of vector $\vec{u} + \vec{v}$ (for vectors $\vec{u}$ and $\vec{v}$) and there's a sense of vector $c \vec{v}$ (for vector $\vec{v}$ and scalar (real number) $c$). But, for something to quallify as a vector space, there are some more rules/axioms it has to follow: (assume that your vector space is denoted as $\text{V}$ with vectors $\vec{u}$, $\vec{v}$, $\vec{w}$ and scalars $x$, $y$, and $z$)
+
+Rule #$1$:
+
+$\vec{u} + (\vec{v} + \vec{w}) = (\vec{u} + \vec{v}) + \vec{w}$
+
+Rule #$2$:
+
+$\vec{u} + \vec{v} = \vec{v} + \vec{u}$
+
+Rule #$3$ with words:
+
+There is a vector $\vec{0}$ aka "the zero vector" such that $\vec{v} + \vec{0} = \vec{v}$ for all $\vec{v}$
+
+Rule #$3$ with set theory:
+
+$\exists \vec{0} \in \text{V}. ∀ \vec{v} \in \text{V}. \vec{v} + \vec{0} = \vec{v}$
+
+Rule #$4$ with words:
+
+For any $\vec{v}$ there is a $-\vec{v}$ such that $\vec{v} + (-\vec{v}) = \vec{0}$ for all $\vec{v}$
+
+Rule #$4$ with set theory:
+
+$∀ \vec{v} \in \text{V}. \exists -\vec{v} \in \text{V}. \vec{v} + (-\vec{v}) = \vec{0}$
+
+Rule #$5$:
+
+$x(y \vec{v}) = (xy) \vec{v}$
+
+Rule #$6$:
+
+$1 \vec{v} = \vec{v}$
+
+Rule #$7$:
+
+$x(\vec{u} + \vec{v}) = x \vec{u} + x \vec{v}$
+
+Rule #$8$:
+
+$(x + y) \vec{v} = x \vec{v} + y \vec{v}$
+
+The vector space that (at least to me) makes all of the intuition click is arrows in space where it's the same if it has the same length and direction (hence the little arrow over every vector). The result of adding two of them is putting the base of the second on the tip of the first and drawing a new arrow from the base of the first to the tip of the second. The result of multiplying one of these by a number is scaling the length by a factor of the number (hence the name) and flipping the vector and scaling the length by a factor of the absolute value of the number if it is negative.
+
+another commonly used definition of a vector is that of lists of numbers. The result of adding two of them is adding them term by term and the result of multiplying one of these by a number is multiplying each term by said number.
+
+Now that you have chosen a vector space, we can now move onto...
