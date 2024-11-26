@@ -1099,6 +1099,8 @@ x_1 a_{31} + x_2 a_{32} + x_3 a_{33} + \dots + x_n a_{3n} \\
 \vdots \\
 x_1 a_{n1} + x_2 a_{n2} + x_3 a_{n3} + \dots + x_n a_{nn} \\ \end{bmatrix} $$
 
+$1102$ Lines.
+
 $$ \begin{bmatrix} x_1 a_{11} + x_2 a_{12} + x_3 a_{13} + \dots + x_n a_{1n} \\
 x_1 a_{21} + x_2 a_{22} + x_3 a_{23} + \dots + x_n a_{2n} \\
 x_1 a_{31} + x_2 a_{32} + x_3 a_{33} + \dots + x_n a_{3n} \\
@@ -1129,9 +1131,9 @@ $$ x_1 a_{n1} + x_2 a_{n2} + x_3 a_{n3} + \dots + x_n a_{nn} = v_n $$
 
 This will be a series of subchapters about linear algebra. In particular, the more general mathmetician's version. But if you want some more intuition about how it works, each subchapter will have a corrasponding part in [this playlist](https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab). The first thing to do in linear algebra is to...
 
-#### choose your fighte- vector space!
+#### part $1$: choose your fighte- vector space!
 
-As you might know, the main thing in linear algebra is the vector. so, to make this as general as possible, I'm gonna let you make your own vector space (space in which vectors live). Something important that defines a vector is that there's a sense of vector $\vec{u} + \vec{v}$ (for vectors $\vec{u}$ and $\vec{v}$) and there's a sense of vector $c \vec{v}$ (for vector $\vec{v}$ and scalar (real number) $c$). But, for something to quallify as a vector space, there are some more rules/axioms it has to follow: (assume that your vector space is denoted as $\text{V}$ with vectors $\vec{u}$, $\vec{v}$, $\vec{w}$ and scalars $x$, $y$, and $z$)
+As you might know, the main thing in linear algebra is the vector. so, to make this as general as possible, I'm gonna let you make your own vector space (space in which vectors live). Something important that defines a vector is that there's a sense of vector $\vec{u} + \vec{v}$ (for vectors $\vec{u}$ and $\vec{v}$) and there's a sense of vector $c \vec{v}$ (for vector $\vec{v}$ and scalar (real number) $c$). But, you cannot (necessarily) multiply vectors or add vectors and scalars (unless you use geometric algebra). But, for something to quallify as a vector space, there are some more rules/axioms it has to follow: (assume that your vector space is denoted as $\text{V}$ with vectors $\vec{u}$, $\vec{v}$, $\vec{w}$ and scalars $x$, $y$, and $z$)
 
 Rule #$1$:
 
@@ -1173,8 +1175,52 @@ Rule #$8$:
 
 $(x + y) \vec{v} = x \vec{v} + y \vec{v}$
 
-The vector space that (at least to me) makes all of the intuition click is arrows in space where it's the same if it has the same length and direction (hence the little arrow over every vector). The result of adding two of them is putting the base of the second on the tip of the first and drawing a new arrow from the base of the first to the tip of the second. The result of multiplying one of these by a number is scaling the length by a factor of the number (hence the name) and flipping the vector and scaling the length by a factor of the absolute value of the number if it is negative.
+The vector space that (at least to me) makes all of the intuition click is arrows in space where it's the same if it has the same length and direction (hence the little arrow over every vector). The result of adding two of them is putting the base of the second on the tip of the first and drawing a new arrow from the base of the first to the tip of the second. The result of multiplying one of these by a number is scaling the length by a factor of the number (hence the name) and flipping the vector and scaling the length by a factor of the absolute value of the number if it is negative. You can convince yourself that this is a vector space. Also, these sorts of vectors are usually rooted at the origin.
 
-another commonly used definition of a vector is that of lists of numbers. The result of adding two of them is adding them term by term and the result of multiplying one of these by a number is multiplying each term by said number.
+another commonly used definition of a vector is that of lists of numbers. The result of adding two of them is adding them term by term and the result of multiplying one of these by a number is multiplying each term by said number. You can convince yourself that this is a vector space.
 
-Now that you have chosen a vector space, we can now move onto...
+You can convert from the first definition to the second by making a list of the vector's coordinates and doing the opposite to convert from a list of numbers to an arrow.
+
+Now that you have chosen a vector space, we can now move on to...
+
+#### part $2$: linear combinations, span, and basis vectors
+
+In $2d$ (arrows of length $1$ or list of two numbers) there are vectors that will prove to be very important. The first being called $\hat{x}$ (x hat), the unit vector pointing to the right (in the direction in the $x$ axis) or the list of numbers $\begin{bmatrix} 1 \\
+0 \\ \end{bmatrix}$ (vectors that are of length $1$ are denoted with a hat) and $\hat{y}$ (y hat) the unit vector pointing up (in the direction in the $y$ axis). AKA the list of numbers $\begin{bmatrix} 0 \\
+1 \\ \end{bmatrix}$.
+
+If you think about it, any $2d$ vector $\begin{bmatrix} x \\
+y \\ \end{bmatrix}$ can be written in terms of $\hat{x}$ and $\hat{y}$ (i.e. $x \begin{bmatrix} 1 \\
+0 \\ \end{bmatrix} = \begin{bmatrix} x \\
+0 \\ \end{bmatrix}$, $y \begin{bmatrix} 0 \\
+1 \\ \end{bmatrix} = \begin{bmatrix} 0 \\
+y \\ \end{bmatrix}$, $\begin{bmatrix} x \\
+0 \\ \end{bmatrix} + \begin{bmatrix} 0 \\
+y \\ \end{bmatrix} = \begin{bmatrix} x \\
+y \\ \end{bmatrix}$).
+
+$1200$ Lines.
+
+Alternatively (and you might need a grid for this) you can take the unit vector in the x direction and scale it until it's tip is on the same vertical line as the tip of your vector and the same thing with the y direction. And, when you add them up, (you can deduce that) you get your original vector. This can be used as another way to go back and forth between the two definitions of a vector.
+
+By the way, this is called a linear combination of $\hat{x}$ and $\hat{y}$ (linear because if you fix one and vary the other, it traces out a line if you look at the tip of the result).
+
+For this reason that every $2d$ vector can be made out of $\hat{x}$ and $\hat{y}$, they are called the basis vectors.
+
+Also, Every Vector that can be formed by adding and scaling $\hat{x}$, $\hat{y}, and any other vector formed in this way is of the form $a \hat{x} + b \hat{y}$, and the reason why is because $(a \hat{x} + b \hat{y}) + c \hat{x} + d \hat{y} = (a + c) \hat{x} + (b + d) \hat{y}$ and $c(a \hat{x} + b \hat{y}) = (a) \hat{x} + (cb) \hat{y}$.
+
+Also by the way, $a \vec{u} + b \vec{v}$ is called a linear combination of $\vec{u}$ and $\vec{v}$.
+
+But this begs the question: we could've used any other two basis vectors and we would've gotten another completely sensible way of going back and forth between the two definitions of a vector. That is, of course, unless the two vectors that are aligned with each other (or are both the zero vector).
+
+By the way, the set of all the vectors that can be made with a linear combination of two vectors is called the span of those two vectors. This idea of using different basis vectors, aka a different basis, is something that I'll go much more in detail about later.
+
+Also, if you have just one vector, think of it as an arrow, but if you have many vectors, think of each of them as a point where the point lies at the tip of the vector.
+
+But, things get more interesting in $3d$, now it's $a \vec{u} + b \vec{v} + c \vec{w}$ for scalars $a$, $b$, $c$. And if the third is in the span of the other two, it doesn't change the span and it's still a flat sheet cutting through the origin.
+
+You can imagine the first two forming a plane and then the third one moving the plane around sweeping it through space. Another intuition is that you're using all three scalars to your advantage, you can't replace one of them with the other two.
+
+Whenever you can remove a vector without changing its span it is also known as linearly dependent, but $\hat{z}$ signed the declaration of independence ~$250$ years ago, so they span all of $3d$ space.
+
+So, the more formal definition of a basis is a set of linearly independent vectors that span all of space.
