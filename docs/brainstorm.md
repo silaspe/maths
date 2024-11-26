@@ -1224,3 +1224,25 @@ You can imagine the first two forming a plane and then the third one moving the 
 Whenever you can remove a vector without changing its span it is also known as linearly dependent, but $\hat{z}$ signed the declaration of independence ~$250$ years ago, so they span all of $3d$ space.
 
 So, the more formal definition of a basis is a set of linearly independent vectors that span all of space.
+
+#### part $4$: matrices and linear transformations
+
+
+Let's start off this part with a quote:
+
+
+$1234$ lines.
+
+No one really understands The Matrix, you just have to see for yourself
+
+-Morpheus
+
+Jokes Aside, for this part I'm going to be talking about linear transformations. Transformation is just a fancy word for function (In this context, it's a function that inputs and outputs vectors), but what makes it linear is that it preserves the two operations of vector addition and scalar multiplication, that is, $L(\vec{u} + \vec{v}) = L(\vec{u}) + L(\vec{v})$ and $L(c \vec{v}) = c L(\vec{v})$ (I'll explain why the word linear is used later).
+
+But, if you were given one of these guys, how would you describe it numerically? What is $L(\vec{v})$?
+
+Well, describe $\vec{v}$ as a linear combination of $\hat{x}$ and $\hat{y}$, so $v_x \hat{x} + v_y \hat{y}$
+
+$$ L(\vec{v}) = L(v_x \hat{x} + v_y \hat{y}) = L(v_x \hat{x}) + L(v_y \hat{y}) = v_x L(\hat{x}) + v_y L(\hat{y}) $$
+
+This is why it's called a linear transformation, $L(\vec{v})$ is a linear combination of $L(\hat{x})$ and $L(\hat{y})$
