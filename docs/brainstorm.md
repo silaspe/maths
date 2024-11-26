@@ -1127,6 +1127,28 @@ $$ \vdots $$
 
 $$ x_1 a_{n1} + x_2 a_{n2} + x_3 a_{n3} + \dots + x_n a_{nn} = v_n $$
 
+#### solutions to said linear systems of equations
+
+$$ x_1 a_{11} + x_2 a_{12} + x_3 a_{13} + \dots + x_n a_{1n} = v_1 $$
+
+$$ x_1 a_{11} = v_1 - x_2 a_{12} - x_3 a_{13} - \dots - x_n a_{1n} $$
+
+$$ x_1 = \frac{v_1 - x_2 a_{12} - x_3 a_{13} - \dots - x_n a_{1n}}{a_{11}} = \frac{v_1}{a_{11}} - \frac{x_2 a_{12}}{a_{11}} - \frac{x_3 a_{13}}{a_{11}} - \dots - \frac{x_n a_{1n}}{a_{11}} = \frac{v_1}{a_{11}} - x_2 \frac{a_{12}}{a_{11}} - x_3 \frac{a_{13}}{a_{11}} - \dots - x_n \frac{a_{1n}}{a_{11}} $$
+
+$$ x_1 = (\frac{v_1}{a_{11}}) + (-\frac{a_{12}}{a_{11}}) x_2 + (-\frac{a_{13}}{a_{11}}) x_3 + \dots + (-\frac{a_{1n}}{a_{11}}) x_n $$
+
+$$ ((\frac{v_1}{a_{11}}) + (-\frac{a_{12}}{a_{11}}) x_2 + (-\frac{a_{13}}{a_{11}}) x_3 + \dots + (-\frac{a_{1n}}{a_{11}}) x_n) a_{21} + x_2 a_{22} + x_3 a_{23} + \dots + x_n a_{2n} = v_2 $$
+
+$$ (\frac{v_1 a_{21}}{a_{11}}) + (-\frac{a_{12} a_{21}}{a_{11}}) x_2 + (-\frac{a_{13} a_{21}}{a_{11}}) x_3 + \dots + (-\frac{a_{1n} a_{21}}{a_{11}}) x_n + x_2 a_{22} + x_3 a_{23} + \dots + x_n a_{2n} = v_2 $$
+
+$$ (a_{22} - \frac{a_{12} a_{21}}{a_{11}}) x_2 + (a_{23} - \frac{a_{13} a_{21}}{a_{11}}) x_3 + \dots + (a_{2n} - \frac{a_{1n} a_{21}}{a_{11}}) x_n = v_2 - (\frac{v_1 a_{21}}{a_{11}}) $$
+
+$$ (a_{32} - \frac{a_{12} a_{31}}{a_{11}}) x_2 + (a_{33} - \frac{a_{13} a_{31}}{a_{11}}) x_3 + \dots + (a_{3n} - \frac{a_{1n} a_{31}}{a_{11}}) x_n = v_2 - (\frac{v_1 a_{31}}{a_{11}}) $$
+
+$$ \vdots $$
+
+$$ (a_{n2} - \frac{a_{12} a_{n1}}{a_{11}}) x_2 + (a_{n3} - \frac{a_{13} a_{n1}}{a_{11}}) x_3 + \dots + (a_{nn} - \frac{a_{1n} a_{n1}}{a_{11}}) x_n = v_2 - (\frac{v_1 a_{n1}}{a_{11}}) $$
+
 ### linear algebra?
 
 This will be a series of subchapters about linear algebra. In particular, the more general mathmetician's version. But if you want some more intuition about how it works, each subchapter will have a corrasponding part in [this playlist](https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab). The first thing to do in linear algebra is to...
