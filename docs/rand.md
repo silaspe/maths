@@ -390,3 +390,11 @@ Donald Trump! He's gonna be the president of the USA for at least $8$ years of m
 You might've noticed that...
 
 I've been working a lot less recently, but I'm gonna try to work every day for all of december and (most of) $2025$
+
+.
+
+Happy thanksgiving!
+
+.
+
+$400$ Lines.
