@@ -1223,7 +1223,7 @@ y \\ \end{bmatrix}$).
 
 $1200$ Lines.
 
-Alternatively (and you might need a grid for this) you can take the unit vector in the x direction and scale it until it's tip is on the same vertical line as the tip of your vector and the same thing with the y direction. And, when you add them up, (you can deduce that) you get your original vector. This can be used as another way to go back and forth between the two definitions of a vector.
+Alternatively (and you might need a grid for this), you can take the unit vector in the x direction and scale it until it's tip is on the same vertical line as the tip of your vector and the same thing with the y direction. And, when you add them up, (you can deduce that) you get your original vector. This can be used as another way to go back and forth between the two definitions of a vector.
 
 By the way, this is called a linear combination of $\hat{x}$ and $\hat{y}$ (linear because if you fix one and vary the other, it traces out a line if you look at the tip of the result).
 
@@ -1268,3 +1268,71 @@ Well, describe $\vec{v}$ as a linear combination of $\hat{x}$ and $\hat{y}$, so 
 $$ L(\vec{v}) = L(v_x \hat{x} + v_y \hat{y}) = L(v_x \hat{x}) + L(v_y \hat{y}) = v_x L(\hat{x}) + v_y L(\hat{y}) $$
 
 This is why it's called a linear transformation, $L(\vec{v})$ is a linear combination of $L(\hat{x})$ and $L(\hat{y})$
+
+So, literally all you need to define a ($2d$) linear transformation is where $\hat{x}$ and $\hat{y}$ each go.
+
+Here's a concrete example: let's say that the transformation applied to $\hat{x}$ is $\begin{bmatrix} 1 \\
+-2 \\ \end{bmatrix}$ and the transformation applied to $\hat{y}$ is $\begin{bmatrix} 3 \\
+0 \\ \end{bmatrix}$, then the transformation applied to $-1 \hat{x} + 2 \hat{y}$ should be $-1 \begin{bmatrix} 1 \\
+-2 \\ \end{bmatrix} + 2 \begin{bmatrix} 3 \\
+0 \\ \end{bmatrix} = \begin{bmatrix} (-1)(1) + (2)(3) \\
+(-1)(-2) + (2)(0) \\ \end{bmatrix} = \begin{bmatrix} 5 \\
+2 \\ \end{bmatrix}$
+
+Ok, got all that?
+
+In general, this transformation applied to $\begin{bmatrix} x \\
+y \\ \end{bmatrix}$ is $\begin{bmatrix} 1x + 3y \\
+-2x + 0y$. You give me any vector and I tell you the output vector.
+
+What I'm saying is that the linear transformation $L$ is completely determined by four numbers: the $x$ coordinate of the transformed $\hat{x}$, the y coordinate of the transformed $\hat{x}$, the $x$ coordinate of the transformed $\hat{y}$, and the y coordinate of the transformed $\hat{y}$.
+
+Usually how you write a linear transformation is with a $2x2$ group of numbers, also called a called a $2x2$ matrix. You can read off the first column as where $\hat{x}$ goes and the second as where $\hat{y}$ goes.
+
+By the way, a matrix $A$ times a vector $\vec{v}$
+
+If you're given a matrix describing a linear transformation and you're also given some specific vector and you want to compute the linear transformation evaluated on said vector, you multiply the coordinates of the vector by the columns of the matrix and adding up the results.
+
+Here's a concrete example:
+
+$$ \begin{bmatrix} 3 & 2 \\
+-2 & 1 \\ \end{bmatrix} \begin{bmatrix} 5 \\
+7 \\ \end{bmatrix} = 5 \begin{bmatrix} 3 \\
+-2 \\ \end{bmatrix} + 7 \begin{bmatrix} 2 \\
+1 \\ \end{bmatrix} = 5 \begin{bmatrix} 3 \\
+-2 \\ \end{bmatrix} + 7 \begin{bmatrix} 2 \\
+1 \\ \end{bmatrix} = \dots = \begin{bmatrix} 29 \\
+-3 \\ \end{bmatrix} $$
+
+What about the most general possible example of matrix vector multiplication:
+
+$$ \begin{bmatrix} a & b \\
+c & d \\ \end{bmatrix} \begin{bmatrix} x \\
+y \\ \end{bmatrix} = x \begin{bmatrix} a \\
+c \\ \end{bmatrix} + y \begin{bmatrix} b \\
+d \\ \end{bmatrix} = \begin{bmatrix} ax \\
+cx \\ \end{bmatrix} + \begin{bmatrix} by \\
+dy \\ \end{bmatrix} $$
+
+$$ \begin{bmatrix} a & b \\
+c & d \\ \end{bmatrix} \begin{bmatrix} x \\
+y \\ \end{bmatrix} = \begin{bmatrix} ax + by \\
+cx + dy \\ \end{bmatrix} $$
+
+You could even use this formula as a definition. And then you could teach it to high schoolers worldwide and not teach them the key intuition that makes it intuitive ($x \begin{bmatrix} a \\
+c \\ \end{bmatrix} + y \begin{bmatrix} b \\
+d \\ \end{bmatrix}$)
+
+Isn't it better to think of the columns of the matrix as where $\hat{x}$ and $\hat{y}$ each go and the result of multiplying a matrix by a vector as the appropriate linear combination?
+
+How would you describe a linear transformation like a 90° counterclockwise rotation? (Yes, that is a linear transformation.) Well, $\hat{x}$ gets shifted up towards $\begin{bmatrix} 0 \\
+1 \\ \end{bmatrix}$ ($\hat{y}$) and $\hat{y}$ gets rotated down towards $\begin{bmatrix} -1 \\
+0 \\ \end{bmatrix}$ ($-\hat{x}$). So the result should be the matrix $\begin{bmatrix} 0 & -1 \\
+1 & 0$, and if you want to rotate any vector clockwise by 90 degrees, just multiply it by the matrix $\begin{bmatrix} 0 & -1 \\
+1 & 0$.
+
+On the other hand, if the two columns are linearly dependent, the transformation squishes all of space onto one line, the span of the two linearly dependent columns.
+
+Summary:
+
+linear transformations are those that preserve the operations of vector addition and scalar multiplication, of which you can think of as transformations of space that keep the grid lines parallel and evenly spaced with the origin remaining fixed. But to describe your linear transformation, you only need a handful of numbers: the coordinates of where the basis vectors land. matrices give us a language for linear transformations: just read off the columns and you'll know where the basis vectors land. And matrix vector multiplication just tells you what the linear transformation does to a given vector.
