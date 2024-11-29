@@ -127,7 +127,7 @@ Ok, got all that?
 
 In general, this transformation applied to $\begin{bmatrix} x \\
 y \\ \end{bmatrix}$ is $\begin{bmatrix} 1x + 3y \\
--2x + 0y$. You give me any vector and I tell you the output vector.
+-2x + 0y \\ \end{bmatrix}$. You give me any vector and I tell you the output vector.
 
 What I'm saying is that the linear transformation $L$ is completely determined by four numbers: the $x$ coordinate of the transformed $\hat{x}$, the y coordinate of the transformed $\hat{x}$, the $x$ coordinate of the transformed $\hat{y}$, and the y coordinate of the transformed $\hat{y}$.
 
@@ -172,8 +172,8 @@ Isn't it better to think of the columns of the matrix as where $\hat{x}$ and $\h
 How would you describe a linear transformation like a 90° counterclockwise rotation? (Yes, that is a linear transformation.) Well, $\hat{x}$ gets shifted up towards $\begin{bmatrix} 0 \\
 1 \\ \end{bmatrix}$ ($\hat{y}$) and $\hat{y}$ gets rotated down towards $\begin{bmatrix} -1 \\
 0 \\ \end{bmatrix}$ ($-\hat{x}$). So the result should be the matrix $\begin{bmatrix} 0 & -1 \\
-1 & 0$, and if you want to rotate any vector clockwise by 90 degrees, just multiply it by the matrix $\begin{bmatrix} 0 & -1 \\
-1 & 0$.
+1 & 0 \\ \end{bmatrix}$, and if you want to rotate any vector clockwise by 90 degrees, just multiply it by the matrix $\begin{bmatrix} 0 & -1 \\
+1 & 0 \\ \end{bmatrix}$.
 
 On the other hand, if the two columns are linearly dependent, the transformation squishes all of space onto one line, the span of the two linearly dependent columns.
 
