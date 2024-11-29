@@ -35,6 +35,7 @@ nav:
   - Set theory II: logic.md
   - Projective geometry: projective_geometry.md
   - Lambda Calculus revisited: lcr.md
+  - Linear algebra: linear.md
 theme:
   name: material
   palette:
