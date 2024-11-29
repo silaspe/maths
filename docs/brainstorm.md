@@ -1149,11 +1149,11 @@ $$ \vdots $$
 
 $$ (a_{n2} - \frac{a_{12} a_{n1}}{a_{11}}) x_2 + (a_{n3} - \frac{a_{13} a_{n1}}{a_{11}}) x_3 + \dots + (a_{nn} - \frac{a_{1n} a_{n1}}{a_{11}}) x_n = v_2 - (\frac{v_1 a_{n1}}{a_{11}}) $$
 
-### linear algebra?
+### linear algebra
 
 This will be a series of subchapters about linear algebra. In particular, the more general mathmetician's version. But if you want some more intuition about how it works, each subchapter will have a corrasponding part in [this playlist](https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab). The first thing to do in linear algebra is to...
 
-#### part $1$: choose your fighte- vector space!
+### part $1$: choose your fighte- vector space!
 
 As you might know, the main thing in linear algebra is the vector. so, to make this as general as possible, I'm gonna let you make your own vector space (space in which vectors live). Something important that defines a vector is that there's a sense of vector $\vec{u} + \vec{v}$ (for vectors $\vec{u}$ and $\vec{v}$) and there's a sense of vector $c \vec{v}$ (for vector $\vec{v}$ and scalar (real number) $c$). But, you cannot (necessarily) multiply vectors or add vectors and scalars (unless you use geometric algebra). But, for something to quallify as a vector space, there are some more rules/axioms it has to follow: (assume that your vector space is denoted as $\text{V}$ with vectors $\vec{u}$, $\vec{v}$, $\vec{w}$ and scalars $x$, $y$, and $z$)
 
@@ -1205,7 +1205,7 @@ You can convert from the first definition to the second by making a list of the 
 
 Now that you have chosen a vector space, we can now move on to...
 
-#### part $2$: linear combinations, span, and basis vectors
+### part $2$: linear combinations, span, and basis vectors
 
 In $2d$ (arrows of length $1$ or list of two numbers) there are vectors that will prove to be very important. The first being called $\hat{x}$ (x hat), the unit vector pointing to the right (in the direction in the $x$ axis) or the list of numbers $\begin{bmatrix} 1 \\
 0 \\ \end{bmatrix}$ (vectors that are of length $1$ are denoted with a hat) and $\hat{y}$ (y hat) the unit vector pointing up (in the direction in the $y$ axis). AKA the list of numbers $\begin{bmatrix} 0 \\
@@ -1247,7 +1247,7 @@ Whenever you can remove a vector without changing its span it is also known as l
 
 So, the more formal definition of a basis is a set of linearly independent vectors that span all of space.
 
-#### part $4$: matrices and linear transformations
+### part $3$: matrices and linear transformations
 
 
 Let's start off this part with a quote:
@@ -1332,6 +1332,9 @@ How would you describe a linear transformation like a 90° counterclockwise rota
 1 & 0$.
 
 On the other hand, if the two columns are linearly dependent, the transformation squishes all of space onto one line, the span of the two linearly dependent columns.
+
+
+$1337$ lines
 
 Summary:
 
