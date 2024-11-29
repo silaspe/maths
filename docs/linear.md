@@ -92,18 +92,22 @@ Whenever you can remove a vector without changing its span it is also known as l
 
 So, the more formal definition of a basis is a set of linearly independent vectors that span all of space.
 
-### part $4$: matrices and linear transformations
+### part $3$: matrices and linear transformations
 
-Let's start off this part with a quote:
+This is probably the most important chapter in this course.
 
 
 $100$ Lines.
 
-No one really understands The Matrix, you just have to see for yourself
+Let's start off this part with a quote:
+
+No one really understands The Matrix, you just have to see for yourself.
 
 -Morpheus
 
-Jokes Aside, for this part I'm going to be talking about linear transformations. Transformation is just a fancy word for function (In this context, it's a function that inputs and outputs vectors), but what makes it linear is that it preserves the two operations of vector addition and scalar multiplication, that is, $L(\vec{u} + \vec{v}) = L(\vec{u}) + L(\vec{v})$ and $L(c \vec{v}) = c L(\vec{v})$ (I'll explain why the word linear is used later).
+Jokes Aside, for this part I'm going to be talking about linear transformations. Transformation is just a fancy word for function (In this context, it's a function that inputs and outputs vectors), but what makes it linear is that it preserves the two operations of vector addition and scalar multiplication, that is, $L(\vec{u} + \vec{v}) = L(\vec{u}) + L(\vec{v})$ and $L(c \vec{v}) = c L(\vec{v})$ (I'll explain why the word linear is used later). You can also think of them as transformations of space that keep the grid lines parallel and evenly spaced with the origin remaining fixed
+
+
 
 But, if you were given one of these guys, how would you describe it numerically? What is $L(\vec{v})$?
 
@@ -145,8 +149,7 @@ $$ \begin{bmatrix} 3 & 2 \\
 -2 \\ \end{bmatrix} + 7 \begin{bmatrix} 2 \\
 1 \\ \end{bmatrix} = 5 \begin{bmatrix} 3 \\
 -2 \\ \end{bmatrix} + 7 \begin{bmatrix} 2 \\
-1 \\ \end{bmatrix} = \dots = \begin{bmatrix} 29 \\
--3 \\ \end{bmatrix} $$
+1 \\ \end{bmatrix} $$
 
 What about the most general possible example of matrix vector multiplication:
 
@@ -167,7 +170,7 @@ You could even use this formula as a definition. And then you could teach it to 
 c \\ \end{bmatrix} + y \begin{bmatrix} b \\
 d \\ \end{bmatrix}$)
 
-Isn't it better to think of the columns of the matrix as where $\hat{x}$ and $\hat{y}$ each go and the result of multiplying a matrix by a vector as the appropriate linear combination?
+Isn't it better to think of the columns of the matrix as where $\hat{x}$ and $\hat{y}$ each go? And the result of multiplying a matrix by a vector as the appropriate linear combination?
 
 How would you describe a linear transformation like a 90° counterclockwise rotation? (Yes, that is a linear transformation.) Well, $\hat{x}$ gets shifted up towards $\begin{bmatrix} 0 \\
 1 \\ \end{bmatrix}$ ($\hat{y}$) and $\hat{y}$ gets rotated down towards $\begin{bmatrix} -1 \\
@@ -180,3 +183,70 @@ On the other hand, if the two columns are linearly dependent, the transformation
 Summary:
 
 linear transformations are those that preserve the operations of vector addition and scalar multiplication, of which you can think of as transformations of space that keep the grid lines parallel and evenly spaced with the origin remaining fixed. But to describe your linear transformation, you only need a handful of numbers: the coordinates of where the basis vectors land. matrices give us a language for linear transformations: just read off the columns and you'll know where the basis vectors land. And matrix vector multiplication just tells you what the linear transformation does to a given vector.
+
+Ok, got all that?
+
+### part $4$: matrix multiplication
+
+What happens if you want to apply more than one linear transformation to a given vector? How do you do that?
+
+If you want to apply $\begin{bmatrix} 0 & -1 \\
+1 & 0 \\ \end{bmatrix}$ (aka a 90° counterclockwise rotation), then $\begin{bmatrix} 1 & 1 \\
+0 & 1 \\ \end{bmatrix}$ (commonly called the shear)? You get a new matrix, commonly called the composition of the other two.
+
+Here's a quick proof that the result is indeed a linear transformation:
+
+
+$200$ Lines.
+
+$$ C(\vec{v}) = L(M(\vec{v})) $$
+
+$$ C(\vec{u} + \vec{v}) = L(M(\vec{u} + \vec{v})) = L(M(\vec{u}) + M(\vec{v})) = L(M(\vec{u})) + L(M(\vec{v})) = C(\vec{u}) + C(\vec{v}) $$
+
+$$ C(c \vec{v}) = L(M(c \vec{v})) = L(c M(\vec{v})) = c L(M(\vec{v})) = c C(\vec{v}) $$
+
+Side note!
+
+if you apply $A$ to $\vec{v}$, then you apply $B$ to that, it's actually written as $BA \vec{v}$ (because $B(A \vec{v})$).
+
+End of side note.
+
+We can find the columns of this new composition matrix like this:
+
+$$ A \hat{x} = \begin{bmatrix} ? & ? \\
+? & ? \\ \end{bmatrix} \hat{x} = \begin{bmatrix} 1 & 1 \\
+0 & 1 \\ \end{bmatrix} (\begin{bmatrix} 0 & -1 \\
+1 & 0 \\ \end{bmatrix} \hat{x}) : = \begin{bmatrix} 1 & 1 \\
+0 & 1 \\ \end{bmatrix} \begin{bmatrix} 0 \\
+1 \\ \end{bmatrix} = \begin{bmatrix} (1)(0) + (1)(1) \\
+(0)(0) + (1)(1) \\ \end{bmatrix} $$
+
+$$ \begin{bmatrix} ? & ? \\
+? & ? \\ \end{bmatrix} \hat{x} = \begin{bmatrix} 1 \\
+1 \\ \end{bmatrix} $$
+
+$$ A \hat{y} = \begin{bmatrix} 1 & ? \\
+1 & ? \\ \end{bmatrix} \hat{y} = \begin{bmatrix} 1 & 1 \\
+0 & 1 \\ \end{bmatrix} (\begin{bmatrix} 0 & -1 \\
+1 & 0 \\ \end{bmatrix} \hat{y}) : = \begin{bmatrix} 1 & 1 \\
+0 & 1 \\ \end{bmatrix} \begin{bmatrix} -1 \\
+0 \\ \end{bmatrix} = \begin{bmatrix} (1)(-1) + (1)(0) \\
+(0)(-1) + (1)(0) \\ \end{bmatrix} $$
+
+$$ \begin{bmatrix} 1 & ? \\
+1 & ? \\ \end{bmatrix} \hat{y} = \begin{bmatrix} -1 \\
+0 \\ \end{bmatrix} $$
+
+$$ A = \begin{bmatrix} 1 & -1 \\
+1 & 0 \\ \end{bmatrix} $$
+
+This new matrix encapsulates the idea of applying a rotation, then a shear, but with just one action.
+
+$\begin{bmatrix} 1 & 1 \\
+0 & 1 \\ \end{bmatrix} (\begin{bmatrix} 0 & -1 \\
+1 & 0 \\ \end{bmatrix} \vec{v}) = \begin{bmatrix} 1 & -1 \\
+1 & 0 \\ \end{bmatrix} \vec{v}$
+
+And if I'm assuming that matrix vector multiplication is associative (i.e. $x \star (y \star z) = (x \star y) \star z$), then $A(B \vec{v}) = (AB) \vec{v}$.
+
+For this reason, the composition of $A$ and $B$ is usually denoted as $AB$.
