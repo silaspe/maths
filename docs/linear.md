@@ -84,20 +84,24 @@ By the way, the set of all the vectors that can be made with a linear combinatio
 
 Also, if you have just one vector, think of it as an arrow, but if you have many vectors, think of each of them as a point where the point lies at the tip of the vector.
 
-But, things get more interesting in $3d$, now it's $a \vec{u} + b \vec{v} + c \vec{w}$ for scalars $a$, $b$, $c$. And if the third is in the span of the other two, it doesn't change the span and it's still a flat sheet cutting through the origin.
+But, things get more interesting in $3d$, now $a \vec{u} + b \vec{v}$ is a flat sheet cutting through the origin.
 
-You can imagine the first two forming a plane and then the third one moving the plane around sweeping it through space. Another intuition is that you're using all three scalars to your advantage, you can't replace one of them with the other two.
+But what about the span of $3$ vectors in $3d$, Now it's $a \vec{u} + b \vec{v} + c \vec{w}$ for scalars $a$, $b$, $c$. And if the third is in the span of the other two, it doesn't change the span and it's still a flat sheet cutting through the origin.
+
+You can imagine the first two forming a plane, and then the third one moving the plane around, sweeping it through space. Another intuition is that you're using all three scalars to your advantage, you can't replace one of them with the other two.
 
 Whenever you can remove a vector without changing its span it is also known as linearly dependent, but $\hat{z}$ signed the declaration of independence ~$250$ years ago, so they span all of $3d$ space.
 
 So, the more formal definition of a basis is a set of linearly independent vectors that span all of space.
 
-### part $3$: matrices and linear transformations
-
-This is probably the most important chapter in this course.
+Some of you might have seen the definition of linear independence as "The only solution to $a \vec{u} + b \vec{v} + c \vec{w} = 0$ is $a = b = c = 0$". But I think you should instead think of it as "There isn't any $a$, $b$ such that $\vec{w} = a \vec{u} + b \vec{v}$"
 
 
 $100$ Lines.
+
+### part $3$: matrices and linear transformations
+
+This is probably the most important part in this course.
 
 Let's start off this part with a quote:
 
@@ -105,9 +109,17 @@ No one really understands The Matrix, you just have to see for yourself.
 
 -Morpheus
 
-Jokes Aside, for this part I'm going to be talking about linear transformations. Transformation is just a fancy word for function (In this context, it's a function that inputs and outputs vectors), but what makes it linear is that it preserves the two operations of vector addition and scalar multiplication, that is, $L(\vec{u} + \vec{v}) = L(\vec{u}) + L(\vec{v})$ and $L(c \vec{v}) = c L(\vec{v})$ (I'll explain why the word linear is used later). You can also think of them as transformations of space that keep the grid lines parallel and evenly spaced with the origin remaining fixed
+Jokes Aside, for this part I'm going to be talking about linear transformations.
 
+Transformation is just a fancy word for function (In this context, it's a function that inputs and outputs vectors), but what makes it linear is that it preserves the two operations of vector addition and scalar multiplication.
 
+That is, $L(\vec{u} + \vec{v}) = L(\vec{u}) + L(\vec{v})$, and $L(c \vec{v}) = c L(\vec{v})$ (I'll explain why the word linear is used later).
+
+You can picture moving every vector to the corresponding output vector. And, if you remember what I told you the last part, that should mean transforming the grid itself, stretching and morphing it.
+
+But linear algebra limits itself to a very specific type of transformation: transformations of space that keep the grid lines parallel and evenly spaced with the origin remaining fixed.
+
+You can convince yourself that these two are the same.
 
 But, if you were given one of these guys, how would you describe it numerically? What is $L(\vec{v})$?
 
@@ -135,11 +147,13 @@ y \\ \end{bmatrix}$ is $\begin{bmatrix} 1x + 3y \\
 
 What I'm saying is that the linear transformation $L$ is completely determined by four numbers: the $x$ coordinate of the transformed $\hat{x}$, the y coordinate of the transformed $\hat{x}$, the $x$ coordinate of the transformed $\hat{y}$, and the y coordinate of the transformed $\hat{y}$.
 
-Usually how you write a linear transformation is with a $2x2$ group of numbers, also called a called a $2x2$ matrix. You can read off the first column as where $\hat{x}$ goes and the second as where $\hat{y}$ goes.
+Usually how you write a linear transformation is with a $2x2$ group of numbers, also called a called a $2x2$ matrix. You can read off the first column as where $\hat{x}$ goes, and the second as where $\hat{y}$ goes.
 
-By the way, a matrix $A$ times a vector $\vec{v}$
+By the way, linear transformations are usually denoted with an $L$ ($L$ for linear), but matrices are usually denoted as capital letters.
 
-If you're given a matrix describing a linear transformation and you're also given some specific vector and you want to compute the linear transformation evaluated on said vector, you multiply the coordinates of the vector by the columns of the matrix and adding up the results.
+Also by the way, if you're applying a linear transformation to a vector and the linear transformation is written as a matrix, $A(\vec{v})$ is usually just denoted as $A \vec{v}$  and called "matrix vector multiplication".
+
+If you're given a matrix describing a linear transformation, and you're also given some specific vector, and you want to compute the linear transformation evaluated on said vector, you multiply the coordinates of the vector by the columns of the matrix and adding up the results.
 
 Here's a concrete example:
 
@@ -173,7 +187,7 @@ d \\ \end{bmatrix}$)
 Isn't it better to think of the columns of the matrix as where $\hat{x}$ and $\hat{y}$ each go? And the result of multiplying a matrix by a vector as the appropriate linear combination?
 
 How would you describe a linear transformation like a 90° counterclockwise rotation? (Yes, that is a linear transformation.) Well, $\hat{x}$ gets shifted up towards $\begin{bmatrix} 0 \\
-1 \\ \end{bmatrix}$ ($\hat{y}$) and $\hat{y}$ gets rotated down towards $\begin{bmatrix} -1 \\
+1 \\ \end{bmatrix}$ ($\hat{y}$), and $\hat{y}$ gets rotated down towards $\begin{bmatrix} -1 \\
 0 \\ \end{bmatrix}$ ($-\hat{x}$). So the result should be the matrix $\begin{bmatrix} 0 & -1 \\
 1 & 0 \\ \end{bmatrix}$, and if you want to rotate any vector clockwise by 90 degrees, just multiply it by the matrix $\begin{bmatrix} 0 & -1 \\
 1 & 0 \\ \end{bmatrix}$.
@@ -181,6 +195,9 @@ How would you describe a linear transformation like a 90° counterclockwise rota
 On the other hand, if the two columns are linearly dependent, the transformation squishes all of space onto one line, the span of the two linearly dependent columns.
 
 Summary:
+
+
+$200$ Lines.
 
 linear transformations are those that preserve the operations of vector addition and scalar multiplication, of which you can think of as transformations of space that keep the grid lines parallel and evenly spaced with the origin remaining fixed. But to describe your linear transformation, you only need a handful of numbers: the coordinates of where the basis vectors land. matrices give us a language for linear transformations: just read off the columns and you'll know where the basis vectors land. And matrix vector multiplication just tells you what the linear transformation does to a given vector.
 
@@ -191,13 +208,10 @@ Ok, got all that?
 What happens if you want to apply more than one linear transformation to a given vector? How do you do that?
 
 If you want to apply $\begin{bmatrix} 0 & -1 \\
-1 & 0 \\ \end{bmatrix}$ (aka a 90° counterclockwise rotation), then $\begin{bmatrix} 1 & 1 \\
-0 & 1 \\ \end{bmatrix}$ (commonly called the shear)? You get a new matrix, commonly called the composition of the other two.
+1 & 0 \\ \end{bmatrix}$ (aka rotate the plane 90° counterclockwise), then $\begin{bmatrix} 1 & 1 \\
+0 & 1 \\ \end{bmatrix}$ (commonly called a shear (?)) You get a new matrix, commonly called the composition of the other two.
 
 Here's a quick proof that the result is indeed a linear transformation:
-
-
-$200$ Lines.
 
 $$ C(\vec{v}) = L(M(\vec{v})) $$
 
@@ -208,6 +222,10 @@ $$ C(c \vec{v}) = L(M(c \vec{v})) = L(c M(\vec{v})) = c L(M(\vec{v})) = c C(\vec
 Side note!
 
 if you apply $A$ to $\vec{v}$, then you apply $B$ to that, it's actually written as $BA \vec{v}$ (because $B(A \vec{v})$).
+
+This stems from how functions are written, because if you have something like $f(g(x))$, then was really saying is apply $g$ first, then $f$, you have to read it right to left.
+
+Good for the Hebrew eaters (?), bad news for the rest of us.
 
 End of side note.
 
@@ -240,7 +258,9 @@ $$ \begin{bmatrix} 1 & ? \\
 $$ A = \begin{bmatrix} 1 & -1 \\
 1 & 0 \\ \end{bmatrix} $$
 
-This new matrix encapsulates the idea of applying a rotation, then a shear, but with just one action.
+Here's a new way to think about the composition matrix: if you were to take your vector and apply the rotation to it, and then the shear. The long way of doing this is to first multiply it on the left by the rotation matrix, and then by the shear. But the short way of doing it is just multiplying it by this new composition matrix.
+
+This should work no matter what the initial vector was, because this new matrix should be able to capture the idea of the "rotation then shear" action
 
 $\begin{bmatrix} 1 & 1 \\
 0 & 1 \\ \end{bmatrix} (\begin{bmatrix} 0 & -1 \\
@@ -250,3 +270,37 @@ $\begin{bmatrix} 1 & 1 \\
 And if I'm assuming that matrix vector multiplication is associative (i.e. $x \star (y \star z) = (x \star y) \star z$), then $A(B \vec{v}) = (AB) \vec{v}$.
 
 For this reason, the composition of $A$ and $B$ is usually denoted as $AB$.
+
+Imagine this new composition matrix of $A$ and $B$ as transforming all of space with the $B$ transformation, and then transforming it again with the $A$ transformation after that.
+
+Let's look at another example (but this time I'll be explaining it): let's say that $M_1 = \begin{bmatrix} 1 & -2 \\
+1 & 0 \\ \end{bmatrix}$ and $M_2 = \begin{bmatrix} 0 & 2 \\
+1 & 0 \\ \end{bmatrix}$. The composition of $M1$ and $M2$ should be a new matrix (call it $M_c$), let's find it!
+
+To find the first Column of $M_c$, we need to figure out what happens when we apply it to $\hat{x}$.
+
+But $M_c$ of $\hat{x}$ must just be $M_2 M_1 \hat{x}$.
+
+But, because $M_1$ is the $\begin{bmatrix} 1 & -2 \\
+1 & 0 \\ \end{bmatrix}$ matrix, $M_1 \hat{x}$ is defined to equal $\begin{bmatrix} 1 \\
+1 \\ \end{bmatrix}$
+
+Now, the question becomes: what is $M_2 \begin{bmatrix} 1 \\
+1 \\ \end{bmatrix}$?
+
+Well, $M_2 \begin{bmatrix} 1 \\
+1 \\ \end{bmatrix} = \begin{bmatrix} 0 & 2 \\
+1 & 0 \\ \end{bmatrix} \begin{bmatrix} 0 & 2 \\
+1 & 0 \\ \end{bmatrix} = 1 \begin{bmatrix} 0 \\
+1 \\ \end{bmatrix} + 1 \begin{bmatrix} 2 \\
+0 \\ \end{bmatrix} = \begin{bmatrix} 0 \\
+1 \\ \end{bmatrix} + \begin{bmatrix} 2 \\
+0 \\ \end{bmatrix} = \begin{bmatrix} 0 \\
+1 \\ \end{bmatrix} + \begin{bmatrix} 2 \\
+0 \\ \end{bmatrix} = \begin{bmatrix} 2 \\
+1 \\ \end{bmatrix}$
+
+$303$ Lines.
+
+So, $M_c = \begin{bmatrix} 2 & ? \\
+1 & ? \\ \end{bmatrix}$
