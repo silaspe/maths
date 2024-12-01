@@ -1423,7 +1423,7 @@ $$ a_{m1} (\frac{v_1}{a_{11}} - \sum\limits_{k = 2}^{n} \frac{a_{1k}}{a_{11}} x_
 
 $$ a_{m1} \frac{v_1}{a_{11}} - a_{m1} \sum\limits_{k = 2}^{n} \frac{a_{1k}}{a_{11}} x_k + \sum\limits_{k = 2}^{n} a_{mk} x_k = v_m $$
 
-$$ \frac{a_{m1} v_1}{a_{11}} - \sum\limits_{k = 2}^{n} a_{m1} \frac{a_{1k}}{a_{11}} x_k + \sum\limits_{k = 2}^{n} a_{mk} x_k = v_m $$
+$$ \frac{a_{m1} v_1}{a_{11}} - \sum\limits_{k = 2}^{n} \frac{a_{m1} a_{1k}}{a_{11}} x_k + \sum\limits_{k = 2}^{n} a_{mk} x_k = v_m $$
 
 $$ -\sum\limits_{k = 2}^{n} \frac{a_{m1} a_{1k}}{a_{11}} x_k + \sum\limits_{k = 2}^{n} a_{mk} x_k = v_m - \frac{a_{m1} v_1}{a_{11}} $$
 
@@ -1468,7 +1468,9 @@ a_{k1} v_1 - a_{11} v_k \\
 \vdots \\
 a_{n1} v_1 - a_{11} v_n \\ \end{bmatrix} $$
 
-#### conclution
+#### conclutions
+
+conclution #1:
 
 $$ \begin{bmatrix} a_{11} & a_{12} & a_{13} & \dots & a_{1k} & \dots & a_{1n} \\
 a_{21} & a_{22} & a_{23} & \dots & a_{2k} & \dots & a_{2n} \\
@@ -1494,7 +1496,7 @@ $$ \Downarrow $$
 
 $$ x_1 = \frac{v_1}{a_{11}} - \sum\limits_{k = 2}^{n} \frac{a_{1k}}{a_{11}} x_k $$
 
-$$ \and $$
+$$ \text{And And} $$
 
 $$ \begin{bmatrix} a_{21} a_{12} + a_{11} a_{22} & a_{21} a_{12} + a_{11} a_{22} & \dots & a_{21} a_{1k} + a_{11} a_{2k} & \dots & a_{21} a_{1n} + a_{11} a_{2n} \\
 a_{31} a_{12} + a_{11} a_{32} & a_{31} a_{13} + a_{11} a_{33} & \dots & a_{31} a_{1k} + a_{11} a_{3k} & \dots & a_{31} a_{1n} + a_{11} a_{3n} \\
@@ -1513,7 +1515,7 @@ a_{k1} v_1 - a_{11} v_k \\
 \vdots \\
 a_{n1} v_1 - a_{11} v_n \\ \end{bmatrix} $$
 
-$$ \and \and $$
+conclution #2:
 
 $$ \begin{bmatrix} a_{11} \\ \end{bmatrix} \begin{bmatrix} x_1 \\ \end{bmatrix} = \begin{bmatrix} v_1 \\ \end{bmatrix} $$
 
