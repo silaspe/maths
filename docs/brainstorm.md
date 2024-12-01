@@ -1061,7 +1061,7 @@ $$ A \vec{x} = A \begin{bmatrix} x_1 \\
 x_2 \\
 x_3 \\
 \vdots \\
-x_n \\ \end{bmatrix} = A (x_1 \hat{x} + x_2 \hat{y} + x_3 \hat{z} + \dots + x_n \hat{\omega}) = A x_1 \hat{x} + A x_2 \hat{y} + A x_3 \hat{z} + \dots + A x_n \hat{\omega} = x_1 A \hat{x} + x_2 A \hat{y} + x_3 A \hat{z} + \dots + x_n A \hat{\omega} = x_1 \begin{bmatrix} a_{11} \\
+x_n \\ \end{bmatrix} = A (x_1 \hat{x} + x_2 \hat{y} + x_3 \hat{z} + \dots + x_n \hat{\omega}) = A x_1 \hat{x} + A x_2 \hat{y} + A x_3 \hat{z} + \dots + A x_n \hat{\omega} = x_1 A \hat{x} + x_2 A \hat{y} + x_3 A \hat{z} + \dots + x_n A \hat{\omega} : = x_1 \begin{bmatrix} a_{11} \\
 a_{21} \\
 a_{31} \\
 \vdots \\
@@ -1297,6 +1297,8 @@ c & d \\ \end{bmatrix} \begin{bmatrix} x \\
 y \\ \end{bmatrix} = \begin{bmatrix} ax + by \\
 cx + dy \\ \end{bmatrix} $$
 
+$1300$ Lines.
+
 You could even use this formula as a definition. And then you could teach it to high schoolers worldwide and not teach them the key intuition that makes it intuitive ($x \begin{bmatrix} a \\
 c \\ \end{bmatrix} + y \begin{bmatrix} b \\
 d \\ \end{bmatrix}$)
@@ -1320,9 +1322,201 @@ linear transformations are those that preserve the operations of vector addition
 $$ A = \begin{bmatrix} a_{11} & a_{12} & a_{13} & \dots & a_{1k} & \dots & a_{1n} \\
 a_{21} & a_{22} & a_{23} & \dots & a_{2k} & \dots & a_{2n} \\
 a_{31} & a_{32} & a_{33} & \dots & a_{3k} & \dots & a_{3n} \\
-\vdots & \vdots & \vdots & \ddots & \vdots & \ddots & \vdots \\
+\vdots & \vdots & \vdots & \ddots & \vdots &  & \vdots \\
 a_{k1} & a_{k2} & a_{k3} & \dots & a_{kk} & \dots & a_{kn} \\
-\vdots & \vdots & \vdots & \ddots & \vdots & \ddots & \vdots \\
+\vdots & \vdots & \vdots &  & \vdots & \ddots & \vdots \\
 a_{n1} & a_{n2} & a_{n3} & \dots & a_{nk} & \dots & a_{nn} \\ \end{bmatrix} $$
 
+$$ \vec{x} = \begin{bmatrix} x_1 \\
+x_2 \\
+x_3 \\
+\vdots \\
+x_k \\
+\vdots \\
+x_n \\ \end{bmatrix} $$
+
+$$ \vec{v} = \begin{bmatrix} v_1 \\
+v_2 \\
+v_3 \\
+\vdots \\
+v_k \\
+\vdots \\
+v_n \\ \end{bmatrix} $$
+
+$$ A \vec{x} = \vec{v} $$
+
+$$ \vec{x} = ? $$
+
+$$ A \vec{x} = A \begin{bmatrix} x_1 \\
+x_2 \\
+x_3 \\
+\vdots \\
+x_k \\
+\vdots \\
+x_n \\ \end{bmatrix} = A(\sum\limits_{k = 1}^{n} x_k e_k) = \sum\limits_{k = 1}^{n} A x_k e_k = \sum\limits_{k = 1}^{n} x_k A e_k : = \sum\limits_{k = 1}^{n} x_k \begin{bmatrix} a_{1k} \\
+a_{2k} \\
+a_{3k} \\
+\vdots \\
+a_{mk} \\
+\vdots \\
+a_{nk} \\ \end{bmatrix} = \sum\limits_{k = 1}^{n} \begin{bmatrix} x_k a_{1k} \\
+x_k a_{2k} \\
+x_k a_{3k} \\
+\vdots \\
+x_k a_{mk} \\
+\vdots \\
+x_k a_{nk} \\ \end{bmatrix} = \begin{bmatrix} \sum\limits_{k = 1}^{n} x_k a_{1k} \\
+\sum\limits_{k = 1}^{n} x_k a_{2k} \\
+\sum\limits_{k = 1}^{n} x_k a_{3k} \\
+\vdots \\
+\sum\limits_{k = 1}^{n} x_k a_{mk} \\
+\vdots \\
+\sum\limits_{k = 1}^{n} x_k a_{nk} \\ \end{bmatrix} $$
+
+$$ \begin{bmatrix} \sum\limits_{k = 1}^{n} x_k a_{1k} \\
+\sum\limits_{k = 1}^{n} x_k a_{2k} \\
+\sum\limits_{k = 1}^{n} x_k a_{3k} \\
+\vdots \\
+\sum\limits_{k = 1}^{n} x_k a_{mk} \\
+\vdots \\
+\sum\limits_{k = 1}^{n} x_k a_{nk} \\ \end{bmatrix} = \begin{bmatrix} v_1 \\
+v_2 \\
+v_3 \\
+\vdots \\
+v_k \\
+\vdots \\
+v_n \\ \end{bmatrix} $$
+
+$$ \sum\limits_{k = 1}^{n} a_{1k} x_k = v_1 $$
+
+$$ \sum\limits_{k = 1}^{n} a_{2k} x_k = v_2 $$
+
+$$ \sum\limits_{k = 1}^{n} a_{3k} x_k = v_3 $$
+
+$$ \vdots $$
+
+$$ \sum\limits_{k = 1}^{n} a_{mk} x_k = v_m $$
+
+$1400$ lines.
+
+$$ \vdots $$
+
+$$ \sum\limits_{k = 1}^{n} a_{nk} x_k = v_n $$
+
 #### solutions to said linear systems of equations
+
+$$ \sum\limits_{k = 1}^{n} a_{1k} x_k = v_1 $$
+
+$$ x_1 a_{11} + \sum\limits_{k = 2}^{n} a_{1k} x_k = v_1 $$
+
+$$ x_1 a_{11} = v_1 - \sum\limits_{k = 2}^{n} a_{1k} x_k $$
+
+$$ x_1 = \frac{v_1 - \sum\limits_{k = 2}^{n} a_{1k} x_k}{a_{11}} = \frac{v_1}{a_{11}} - \frac{\sum\limits_{k = 2}^{n} a_{1k} x_k}{a_{11}} = \frac{v_1}{a_{11}} - \sum\limits_{k = 2}^{n} \frac{a_{1k} x_k}{a_{11}} $$
+
+$$ x_1 = \frac{v_1}{a_{11}} - \sum\limits_{k = 2}^{n} \frac{a_{1k}}{a_{11}} x_k $$
+
+$$ \sum\limits_{k = 1}^{n} a_{mk} x_k = v_m $$
+
+$$ a_{m1} x_1 + \sum\limits_{k = 2}^{n} a_{mk} x_k = v_m $$
+
+$$ a_{m1} (\frac{v_1}{a_{11}} - \sum\limits_{k = 2}^{n} \frac{a_{1k}}{a_{11}} x_k) + \sum\limits_{k = 2}^{n} a_{mk} x_k = v_m $$
+
+$$ a_{m1} \frac{v_1}{a_{11}} - a_{m1} \sum\limits_{k = 2}^{n} \frac{a_{1k}}{a_{11}} x_k + \sum\limits_{k = 2}^{n} a_{mk} x_k = v_m $$
+
+$$ \frac{a_{m1} v_1}{a_{11}} - \sum\limits_{k = 2}^{n} a_{m1} \frac{a_{1k}}{a_{11}} x_k + \sum\limits_{k = 2}^{n} a_{mk} x_k = v_m $$
+
+$$ -\sum\limits_{k = 2}^{n} \frac{a_{m1} a_{1k}}{a_{11}} x_k + \sum\limits_{k = 2}^{n} a_{mk} x_k = v_m - \frac{a_{m1} v_1}{a_{11}} $$
+
+$$ \sum\limits_{k = 2}^{n} \frac{a_{m1} a_{1k}}{a_{11}} x_k + \sum\limits_{k = 2}^{n} a_{mk} x_k = \frac{a_{m1} v_1}{a_{11}} - v_m $$
+
+$$ \sum\limits_{k = 2}^{n} \frac{a_{m1} a_{1k}}{a_{11}} x_k + a_{mk} x_k = \frac{a_{m1} v_1}{a_{11}} - \frac{a_{11} v_m}{a_{11}} $$
+
+$$ \sum\limits_{k = 2}^{n} (\frac{a_{m1} a_{1k}}{a_{11}} + a_{mk}) x_k = \frac{a_{m1} v_1 - a_{11} v_m}{a_{11}} $$
+
+$$ \sum\limits_{k = 2}^{n} (\frac{a_{m1} a_{1k}}{a_{11}} + \frac{a_{11} a_{mk}}{a_{11}}) x_k = \frac{a_{m1} v_1 - a_{11} v_m}{a_{11}} $$
+
+$$ \sum\limits_{k = 2}^{n} (\frac{a_{m1} a_{1k} + a_{11} a_{mk}}{a_{11}}) x_k = \frac{a_{m1} v_1 - a_{11} v_m}{a_{11}} $$
+
+$$ \sum\limits_{k = 2}^{n} (a_{m1} a_{1k} + a_{11} a_{mk}) x_k = a_{m1} v_1 - a_{11} v_m $$
+
+$$ \sum\limits_{k = 2}^{n} (a_{21} a_{1k} + a_{11} a_{2k}) x_k = a_{21} v_1 - a_{11} v_2 $$
+
+$$ \sum\limits_{k = 2}^{n} (a_{31} a_{1k} + a_{11} a_{3k}) x_k = a_{31} v_1 - a_{11} v_3 $$
+
+$$ \vdots $$
+
+$$ \sum\limits_{k = 2}^{n} (a_{m1} a_{1k} + a_{11} a_{mk}) x_k = a_{m1} v_1 - a_{11} v_m $$
+
+$$ \vdots $$
+
+$$ \sum\limits_{k = 2}^{n} (a_{n1} a_{1k} + a_{11} a_{nk}) x_k = a_{n1} v_1 - a_{11} v_n $$
+
+$$ \begin{bmatrix} a_{21} a_{12} + a_{11} a_{22} & a_{21} a_{12} + a_{11} a_{22} & \dots & a_{21} a_{1k} + a_{11} a_{2k} & \dots & a_{21} a_{1n} + a_{11} a_{2n} \\
+a_{31} a_{12} + a_{11} a_{32} & a_{31} a_{13} + a_{11} a_{33} & \dots & a_{31} a_{1k} + a_{11} a_{3k} & \dots & a_{31} a_{1n} + a_{11} a_{3n} \\
+\vdots & \vdots & \ddots & \vdots &  & \vdots \\
+a_{21} a_{1k} + a_{11} a_{k2} & a_{31} a_{1k} + a_{11} a_{k3} & \dots & a_{k1} a_{1k} + a_{11} a_{kk} & \dots & a_{n1} a_{1k} + a_{11} a_{kn} \\
+\vdots & \vdots &  & \vdots & \ddots & \vdots \\
+a_{n1} a_{12} + a_{11} a_{n2} & a_{n1} a_{13} + a_{11} a_{n3} & \dots & a_{n1} a_{1k} + a_{11} a_{nk} & \dots & a_{n1} a_{1n} + a_{11} a_{nn} \\ \end{bmatrix} \begin{bmatrix} x_2 \\
+x_3 \\
+\vdots \\
+x_k \\
+\vdots \\
+x_n \\ \end{bmatrix} = \begin{bmatrix} a_{21} v_1 - a_{11} v_2 \\
+a_{31} v_1 - a_{11} v_3 \\
+\vdots \\
+a_{k1} v_1 - a_{11} v_k \\
+\vdots \\
+a_{n1} v_1 - a_{11} v_n \\ \end{bmatrix} $$
+
+#### conclution
+
+$$ \begin{bmatrix} a_{11} & a_{12} & a_{13} & \dots & a_{1k} & \dots & a_{1n} \\
+a_{21} & a_{22} & a_{23} & \dots & a_{2k} & \dots & a_{2n} \\
+a_{31} & a_{32} & a_{33} & \dots & a_{3k} & \dots & a_{3n} \\
+\vdots & \vdots & \vdots & \ddots & \vdots &  & \vdots \\
+a_{k1} & a_{k2} & a_{k3} & \dots & a_{kk} & \dots & a_{kn} \\
+\vdots & \vdots & \vdots &  & \vdots & \ddots & \vdots \\
+a_{n1} & a_{n2} & a_{n3} & \dots & a_{nk} & \dots & a_{nn} \\ \end{bmatrix} \begin{bmatrix} x_1 \\
+x_2 \\
+x_3 \\
+\vdots \\
+x_k \\
+\vdots \\
+x_n \\ \end{bmatrix} = \begin{bmatrix} v_1 \\
+v_2 \\
+v_3 \\
+\vdots \\
+v_k \\
+\vdots \\
+v_n \\ \end{bmatrix} $$
+
+$$ \Downarrow $$
+
+$$ x_1 = \frac{v_1}{a_{11}} - \sum\limits_{k = 2}^{n} \frac{a_{1k}}{a_{11}} x_k $$
+
+$$ \and $$
+
+$$ \begin{bmatrix} a_{21} a_{12} + a_{11} a_{22} & a_{21} a_{12} + a_{11} a_{22} & \dots & a_{21} a_{1k} + a_{11} a_{2k} & \dots & a_{21} a_{1n} + a_{11} a_{2n} \\
+a_{31} a_{12} + a_{11} a_{32} & a_{31} a_{13} + a_{11} a_{33} & \dots & a_{31} a_{1k} + a_{11} a_{3k} & \dots & a_{31} a_{1n} + a_{11} a_{3n} \\
+\vdots & \vdots & \ddots & \vdots &  & \vdots \\
+a_{21} a_{1k} + a_{11} a_{k2} & a_{31} a_{1k} + a_{11} a_{k3} & \dots & a_{k1} a_{1k} + a_{11} a_{kk} & \dots & a_{n1} a_{1k} + a_{11} a_{kn} \\
+\vdots & \vdots &  & \vdots & \ddots & \vdots \\
+a_{n1} a_{12} + a_{11} a_{n2} & a_{n1} a_{13} + a_{11} a_{n3} & \dots & a_{n1} a_{1k} + a_{11} a_{nk} & \dots & a_{n1} a_{1n} + a_{11} a_{nn} \\ \end{bmatrix} \begin{bmatrix} x_2 \\
+x_3 \\
+\vdots \\
+x_k \\
+\vdots \\
+x_n \\ \end{bmatrix} = \begin{bmatrix} a_{21} v_1 - a_{11} v_2 \\
+a_{31} v_1 - a_{11} v_3 \\
+\vdots \\
+a_{k1} v_1 - a_{11} v_k \\
+\vdots \\
+a_{n1} v_1 - a_{11} v_n \\ \end{bmatrix} $$
+
+$$ \and \and $$
+
+$$ \begin{bmatrix} a_{11} \\ \end{bmatrix} \begin{bmatrix} x_1 \\ \end{bmatrix} = \begin{bmatrix} v_1 \\ \end{bmatrix} $$
+
+$$ \Downarrow $$
+
+$$ x_1 = \frac{v_1}{a_{11}} $$
