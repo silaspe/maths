@@ -1127,28 +1127,6 @@ $$ \vdots $$
 
 $$ x_1 a_{n1} + x_2 a_{n2} + x_3 a_{n3} + \dots + x_n a_{nn} = v_n $$
 
-#### solutions to said linear systems of equations
-
-$$ x_1 a_{11} + x_2 a_{12} + x_3 a_{13} + \dots + x_n a_{1n} = v_1 $$
-
-$$ x_1 a_{11} = v_1 - x_2 a_{12} - x_3 a_{13} - \dots - x_n a_{1n} $$
-
-$$ x_1 = \frac{v_1 - x_2 a_{12} - x_3 a_{13} - \dots - x_n a_{1n}}{a_{11}} = \frac{v_1}{a_{11}} - \frac{x_2 a_{12}}{a_{11}} - \frac{x_3 a_{13}}{a_{11}} - \dots - \frac{x_n a_{1n}}{a_{11}} = \frac{v_1}{a_{11}} - x_2 \frac{a_{12}}{a_{11}} - x_3 \frac{a_{13}}{a_{11}} - \dots - x_n \frac{a_{1n}}{a_{11}} $$
-
-$$ x_1 = (\frac{v_1}{a_{11}}) + (-\frac{a_{12}}{a_{11}}) x_2 + (-\frac{a_{13}}{a_{11}}) x_3 + \dots + (-\frac{a_{1n}}{a_{11}}) x_n $$
-
-$$ ((\frac{v_1}{a_{11}}) + (-\frac{a_{12}}{a_{11}}) x_2 + (-\frac{a_{13}}{a_{11}}) x_3 + \dots + (-\frac{a_{1n}}{a_{11}}) x_n) a_{21} + x_2 a_{22} + x_3 a_{23} + \dots + x_n a_{2n} = v_2 $$
-
-$$ (\frac{v_1 a_{21}}{a_{11}}) + (-\frac{a_{12} a_{21}}{a_{11}}) x_2 + (-\frac{a_{13} a_{21}}{a_{11}}) x_3 + \dots + (-\frac{a_{1n} a_{21}}{a_{11}}) x_n + x_2 a_{22} + x_3 a_{23} + \dots + x_n a_{2n} = v_2 $$
-
-$$ (a_{22} - \frac{a_{12} a_{21}}{a_{11}}) x_2 + (a_{23} - \frac{a_{13} a_{21}}{a_{11}}) x_3 + \dots + (a_{2n} - \frac{a_{1n} a_{21}}{a_{11}}) x_n = v_2 - (\frac{v_1 a_{21}}{a_{11}}) $$
-
-$$ (a_{32} - \frac{a_{12} a_{31}}{a_{11}}) x_2 + (a_{33} - \frac{a_{13} a_{31}}{a_{11}}) x_3 + \dots + (a_{3n} - \frac{a_{1n} a_{31}}{a_{11}}) x_n = v_2 - (\frac{v_1 a_{31}}{a_{11}}) $$
-
-$$ \vdots $$
-
-$$ (a_{n2} - \frac{a_{12} a_{n1}}{a_{11}}) x_2 + (a_{n3} - \frac{a_{13} a_{n1}}{a_{11}}) x_3 + \dots + (a_{nn} - \frac{a_{1n} a_{n1}}{a_{11}}) x_n = v_2 - (\frac{v_1 a_{n1}}{a_{11}}) $$
-
 ### linear algebra
 
 This will be a series of subchapters about linear algebra. In particular, the more general mathmetician's version. But if you want some more intuition about how it works, each subchapter will have a corrasponding part in [this playlist](https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab). The first thing to do in linear algebra is to...
@@ -1333,9 +1311,18 @@ How would you describe a linear transformation like a 90° counterclockwise rota
 
 On the other hand, if the two columns are linearly dependent, the transformation squishes all of space onto one line, the span of the two linearly dependent columns.
 
-
-$1337$ lines
-
 Summary:
 
 linear transformations are those that preserve the operations of vector addition and scalar multiplication, of which you can think of as transformations of space that keep the grid lines parallel and evenly spaced with the origin remaining fixed. But to describe your linear transformation, you only need a handful of numbers: the coordinates of where the basis vectors land. matrices give us a language for linear transformations: just read off the columns and you'll know where the basis vectors land. And matrix vector multiplication just tells you what the linear transformation does to a given vector.
+
+#### linear systems of equations (but with sum notation)
+
+$$ A = \begin{bmatrix} a_{11} & a_{12} & a_{13} & \dots & a_{1k} & \dots & a_{1n} \\
+a_{21} & a_{22} & a_{23} & \dots & a_{2k} & \dots & a_{2n} \\
+a_{31} & a_{32} & a_{33} & \dots & a_{3k} & \dots & a_{3n} \\
+\vdots & \vdots & \vdots & \ddots & \vdots & \ddots & \vdots \\
+a_{k1} & a_{k2} & a_{k3} & \dots & a_{kk} & \dots & a_{kn} \\
+\vdots & \vdots & \vdots & \ddots & \vdots & \ddots & \vdots \\
+a_{n1} & a_{n2} & a_{n3} & \dots & a_{nk} & \dots & a_{nn} \\ \end{bmatrix} $$
+
+#### solutions to said linear systems of equations
