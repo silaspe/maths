@@ -1496,8 +1496,6 @@ $$ \Downarrow $$
 
 $$ x_1 = \frac{v_1}{a_{11}} - \sum\limits_{k = 2}^{n} \frac{a_{1k}}{a_{11}} x_k $$
 
-$$ \text{And And} $$
-
 $$ \begin{bmatrix} a_{21} a_{12} + a_{11} a_{22} & a_{21} a_{12} + a_{11} a_{22} & \dots & a_{21} a_{1k} + a_{11} a_{2k} & \dots & a_{21} a_{1n} + a_{11} a_{2n} \\
 a_{31} a_{12} + a_{11} a_{32} & a_{31} a_{13} + a_{11} a_{33} & \dots & a_{31} a_{1k} + a_{11} a_{3k} & \dots & a_{31} a_{1n} + a_{11} a_{3n} \\
 \vdots & \vdots & \ddots & \vdots &  & \vdots \\
@@ -1515,6 +1513,8 @@ a_{k1} v_1 - a_{11} v_k \\
 \vdots \\
 a_{n1} v_1 - a_{11} v_n \\ \end{bmatrix} $$
 
+$1516$ Lines
+
 conclution #2:
 
 $$ \begin{bmatrix} a_{11} \\ \end{bmatrix} \begin{bmatrix} x_1 \\ \end{bmatrix} = \begin{bmatrix} v_1 \\ \end{bmatrix} $$
@@ -1522,3 +1522,71 @@ $$ \begin{bmatrix} a_{11} \\ \end{bmatrix} \begin{bmatrix} x_1 \\ \end{bmatrix} 
 $$ \Downarrow $$
 
 $$ x_1 = \frac{v_1}{a_{11}} $$
+
+#### general matrix multiplication
+
+$$ A = \begin{bmatrix} a_{11} & a_{12} & a_{13} & \dots & a_{1n} \\
+a_{21} & a_{22} & a_{23} & \dots & a_{2n} \\
+a_{31} & a_{32} & a_{33} & \dots & a_{3n} \\
+\vdots & \vdots & \vdots & \ddots & \vdots \\
+a_{n1} & a_{n2} & a_{n3} & \dots & a_{nn} \\ \end{bmatrix} $$
+
+$$ B = \begin{bmatrix} b_{11} & b_{12} & b_{13} & \dots & b_{1n} \\
+b_{21} & b_{22} & b_{23} & \dots & b_{2n} \\
+b_{31} & b_{32} & b_{33} & \dots & b_{3n} \\
+\vdots & \vdots & \vdots & \ddots & \vdots \\
+b_{n1} & b_{n2} & b_{n3} & \dots & b_{nn} \\ \end{bmatrix} $$
+
+$$ AB = \begin{bmatrix} ? & ? & ? & \dots & ? \\
+? & ? & ? & \dots & ? \\
+? & ? & ? & \dots & ? \\
+\vdots & \vdots & \vdots & \ddots & \vdots \\
+? & ? & ? & \dots & ? \\ \\ \end{bmatrix} $$
+
+$$ (AB) e_x = A(B e_x) $$
+
+$$ B e_x : = \begin{bmatrix} b_{1x} \\
+b_{2x} \\
+b_{3x} \\
+\vdots \\
+b_{nx} \\ \end{bmatrix} $$
+
+$$ A(B e_x) = A \begin{bmatrix} b_{1x} \\
+b_{2x} \\
+b_{3x} \\
+\vdots \\
+b_{nx} \\ \end{bmatrix} = \begin{bmatrix} a_{11} & a_{12} & a_{13} & \dots & a_{1n} \\
+a_{21} & a_{22} & a_{23} & \dots & a_{2n} \\
+a_{31} & a_{32} & a_{33} & \dots & a_{3n} \\
+\vdots & \vdots & \vdots & \ddots & \vdots \\
+a_{n1} & a_{n2} & a_{n3} & \dots & a_{nn} \\ \end{bmatrix} \begin{bmatrix} b_{1x} \\
+b_{2x} \\
+b_{3x} \\
+\vdots \\
+b_{nx} \\ \end{bmatrix} = \begin{bmatrix} \sum\limits_{i = 1}^{n} b_{ix} a_{1i} \\
+\sum\limits_{i = 1}^{n} b_{ix} a_{2i} \\
+\sum\limits_{i = 1}^{n} b_{ix} a_{3i} \\
+\vdots \\
+\sum\limits_{i = 1}^{n} b_{ix} a_{ni} \\ \end{bmatrix} $$
+
+$$ AB = \begin{bmatrix} \sum\limits_{i = 1}^{n} b_{i1} a_{1i} & \sum\limits_{i = 1}^{n} b_{i2} a_{1i} & \sum\limits_{i = 1}^{n} b_{i3} a_{1i} & \dots & \sum\limits_{i = 1}^{n} b_{in} a_{1i} \\
+\sum\limits_{i = 1}^{n} b_{i1} a_{2i} & \sum\limits_{i = 1}^{n} b_{i2} a_{2i} & \sum\limits_{i = 1}^{n} b_{i3} a_{2i} & \dots & \sum\limits_{i = 1}^{n} b_{in} a_{2i} \\
+\sum\limits_{i = 1}^{n} b_{i1} a_{3i} & \sum\limits_{i = 1}^{n} b_{i2} a_{3i} & \sum\limits_{i = 1}^{n} b_{i3} a_{3i} & \dots & \sum\limits_{i = 1}^{n} b_{in} a_{3i} \\
+\vdots & \vdots & \vdots & \ddots & \vdots \\
+\sum\limits_{i = 1}^{n} b_{i1} a_{ni} & \sum\limits_{i = 1}^{n} b_{i2} a_{ni} & \sum\limits_{i = 1}^{n} b_{i3} a_{ni} & \dots & \sum\limits_{i = 1}^{n} b_{in} a_{ni} \\ \end{bmatrix} $$
+
+$$ \sum\limits_{i = 1}^{n} b_{iy} a_{xi} = \begin{bmatrix} b_{1y} \\
+b_{2y} \\
+b_{3y} \\
+\vdots \\
+b_{ny} \\ \end{bmatrix} \cdot \begin{bmatrix} a_{x1} \\
+a_{x2} \\
+a_{x3} \\
+\vdots \\
+a_{xn} \\ \end{bmatrix} = B e_y \cdot A^T e_x $$
+
+$$ AB = \begin{bmatrix} B \hat{x} \cdot A^T \hat{x} & B \hat{y} \cdot A^T \hat{x} & B \hat{z} \cdot A^T \hat{x} & \dots & B \hat{\omega} \cdot A^T \hat{x} \\
+B \hat{x} \cdot A^T \hat{y} & B \hat{y} \cdot A^T \hat{y} & B \hat{z} \cdot A^T \hat{y} & \dots & B \hat{\omega} \cdot A^T \hat{y} \\
+B \hat{x} \cdot A^T \hat{z} & B \hat{y} \cdot A^T \hat{z} & B \hat{z} \cdot A^T \hat{z} & \dots & B\hat{\omega} \cdot A^T \hat{z} \\
+\vdots & \vdots & \vdots & \ddots & \vdots \\
+B \hat{x} \cdot A^T \hat{\omega} & B \hat{y} \cdot A^T \hat{\omega} & B \hat{\omega} \cdot A^T \hat{z} & \dots & B \hat{\omega} \cdot A^T \hat{\omega} \\ \\ \end{bmatrix} $$
