@@ -1541,7 +1541,7 @@ $$ AB = \begin{bmatrix} ? & ? & ? & \dots & ? \\
 ? & ? & ? & \dots & ? \\
 ? & ? & ? & \dots & ? \\
 \vdots & \vdots & \vdots & \ddots & \vdots \\
-? & ? & ? & \dots & ? \\ \\ \end{bmatrix} $$
+? & ? & ? & \dots & ? \\ \end{bmatrix} $$
 
 $$ (AB) e_x = A(B e_x) $$
 
@@ -1589,4 +1589,4 @@ $$ AB = \begin{bmatrix} B \hat{x} \cdot A^T \hat{x} & B \hat{y} \cdot A^T \hat{x
 B \hat{x} \cdot A^T \hat{y} & B \hat{y} \cdot A^T \hat{y} & B \hat{z} \cdot A^T \hat{y} & \dots & B \hat{\omega} \cdot A^T \hat{y} \\
 B \hat{x} \cdot A^T \hat{z} & B \hat{y} \cdot A^T \hat{z} & B \hat{z} \cdot A^T \hat{z} & \dots & B\hat{\omega} \cdot A^T \hat{z} \\
 \vdots & \vdots & \vdots & \ddots & \vdots \\
-B \hat{x} \cdot A^T \hat{\omega} & B \hat{y} \cdot A^T \hat{\omega} & B \hat{\omega} \cdot A^T \hat{z} & \dots & B \hat{\omega} \cdot A^T \hat{\omega} \\ \\ \end{bmatrix} $$
+B \hat{x} \cdot A^T \hat{\omega} & B \hat{y} \cdot A^T \hat{\omega} & B \hat{\omega} \cdot A^T \hat{z} & \dots & B \hat{\omega} \cdot A^T \hat{\omega} \\ \end{bmatrix} $$
