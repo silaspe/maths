@@ -161,8 +161,6 @@ $$ \begin{bmatrix} 3 & 2 \\
 -2 & 1 \\ \end{bmatrix} \begin{bmatrix} 5 \\
 7 \\ \end{bmatrix} = 5 \begin{bmatrix} 3 \\
 -2 \\ \end{bmatrix} + 7 \begin{bmatrix} 2 \\
-1 \\ \end{bmatrix} = 5 \begin{bmatrix} 3 \\
--2 \\ \end{bmatrix} + 7 \begin{bmatrix} 2 \\
 1 \\ \end{bmatrix} $$
 
 What about the most general possible example of matrix vector multiplication:
@@ -267,7 +265,7 @@ $\begin{bmatrix} 1 & 1 \\
 1 & 0 \\ \end{bmatrix} \vec{v}) = \begin{bmatrix} 1 & -1 \\
 1 & 0 \\ \end{bmatrix} \vec{v}$
 
-And if I'm assuming that matrix vector multiplication is associative (i.e. $x \star (y \star z) = (x \star y) \star z$), then $A(B \vec{v}) = (AB) \vec{v}$.
+And if I'm assuming that matrix vector multiplication is associative (i.e. $x^\star (y^\star z) = (x^\star y)^\star z$), then $A(B \vec{v}) = (AB) \vec{v}$.
 
 For this reason, the composition of $A$ and $B$ is usually denoted as $AB$.
 
@@ -275,9 +273,9 @@ Imagine this new composition matrix of $A$ and $B$ as transforming all of space 
 
 Let's look at another example (but this time I'll be explaining it): let's say that $M_1 = \begin{bmatrix} 1 & -2 \\
 1 & 0 \\ \end{bmatrix}$ and $M_2 = \begin{bmatrix} 0 & 2 \\
-1 & 0 \\ \end{bmatrix}$. The composition of $M1$ and $M2$ should be a new matrix (call it $M_c$), let's find it!
+1 & 0 \\ \end{bmatrix}$. The composition of $M_1$ and $M_2$ should be a new matrix (call it $M_c$), let's find it!
 
-To find the first Column of $M_c$, we need to figure out what happens when we apply it to $\hat{x}$.
+To find the first column of $M_c$, we need to figure out what happens when we apply it to $\hat{x}$.
 
 But $M_c$ of $\hat{x}$ must just be $M_2 M_1 \hat{x}$.
 
@@ -290,8 +288,8 @@ Now, the question becomes: what is $M_2 \begin{bmatrix} 1 \\
 
 Well, $M_2 \begin{bmatrix} 1 \\
 1 \\ \end{bmatrix} = \begin{bmatrix} 0 & 2 \\
-1 & 0 \\ \end{bmatrix} \begin{bmatrix} 0 & 2 \\
-1 & 0 \\ \end{bmatrix} = 1 \begin{bmatrix} 0 \\
+1 & 0 \\ \end{bmatrix} \begin{bmatrix} 1 \\
+1 \\ \end{bmatrix} = 1 \begin{bmatrix} 0 \\
 1 \\ \end{bmatrix} + 1 \begin{bmatrix} 2 \\
 0 \\ \end{bmatrix} = \begin{bmatrix} 0 \\
 1 \\ \end{bmatrix} + \begin{bmatrix} 2 \\
@@ -304,3 +302,67 @@ $303$ Lines.
 
 So, $M_c = \begin{bmatrix} 2 & ? \\
 1 & ? \\ \end{bmatrix}$
+
+To find the second column of $M_c$, we need to figure out what happens when we apply it to $\hat{y}$.
+
+But $M_c$ of $\hat{y}$ must just be $M_2 M_1$ $\hat{y}$.
+
+But, because $M_1$ is the $\begin{bmatrix} 1 & -2 \\
+1 & 0 \\ \end{bmatrix}$ matrix, $M_1$ $\hat{y}$ is defined to equal $\begin{bmatrix} -2 \\
+0 \\ \end{bmatrix}$
+
+Now, the question becomes: what is $M_2 \begin{bmatrix} 1 \\
+1 \\ \end{bmatrix}$?
+
+Well, $M_2 \begin{bmatrix} -2 \\
+0 \\ \end{bmatrix} = \begin{bmatrix} 0 & 2 \\
+1 & 0 \\ \end{bmatrix} \begin{bmatrix} -2 \\
+0 \\ \end{bmatrix} = -2 \begin{bmatrix} 0 \\
+1 \\ \end{bmatrix} + 0 \begin{bmatrix} 2 \\
+0 \\ \end{bmatrix} = \begin{bmatrix} 0 \\
+-2 \\ \end{bmatrix}$
+
+So, $M_c = \begin{bmatrix} 2 & 0 \\
+1 & -2 \\ \end{bmatrix}$
+
+Let's drive the most general possible formula for $2x2$ matrix multiplication.
+
+$$ A = \begin{bmatrix} a & b \\
+c & d \\ \end{bmatrix} $$
+
+$$ B = \begin{bmatrix} e & f \\
+g & h \\ \end{bmatrix} $$
+
+$$ AB = \begin{bmatrix} ? & ? \\
+? & ? \\ \end{bmatrix} $$
+
+$$ (AB) \hat{x} = A(B \hat{x}) $$
+
+$$ B \hat{x} : = \begin{bmatrix} e \\
+g \\ \end{bmatrix} $$
+
+$$ A(B \hat{x}) = A \begin{bmatrix} e \\
+g \\ \end{bmatrix} = \begin{bmatrix} a & b \\
+c & d \\ \end{bmatrix} \begin{bmatrix} e \\
+g \\ \end{bmatrix} = e \begin{bmatrix} a \\
+c \\ \end{bmatrix} + g \begin{bmatrix} b \\
+d \\ \end{bmatrix} = \begin{bmatrix} ae + bg \\
+ce + dg \\ \end{bmatrix} $$
+
+$$ (AB) \hat{y} = A(B \hat{y}) $$
+
+$$ B \hat{y} : = \begin{bmatrix} f \\
+h \\ \end{bmatrix} $$
+
+$$ A(B \hat{y}) = A \begin{bmatrix} f \\
+h \\ \end{bmatrix} = \begin{bmatrix} a & b \\
+c & d \\ \end{bmatrix} \begin{bmatrix} f \\
+h \\ \end{bmatrix} = f \begin{bmatrix} a \\
+c \\ \end{bmatrix} + h \begin{bmatrix} b \\
+d \\ \end{bmatrix} = \begin{bmatrix} af + bh \\
+cf + dh \\ \end{bmatrix} $$
+
+$$ AB = \begin{bmatrix} ae + bg & af + bh \\
+ce + dg & cf + dh \\ \end{bmatrix} $$
+
+We just derived the formula that you (probably) learned in school. Isn't that satisfying? 
