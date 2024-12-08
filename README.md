@@ -26,7 +26,6 @@ sum rule, chain rule, product rule, multiplication by constant, exponent rule, i
 PS you don't get a vector
 
 * [Set theory](set_theory.md) - definitions of the subset, empty set, power set, and so on.
-* [NOOOOOOOOOO](streak.md) - I lost everything.
 * [Code repo](actual_repo.md) - Pretty self explanatory. Also, the idea for both this page and the one above it did not originate in the brainstorm page.
 * [My way to count](binary.md) - why YOU should use binary
 * [Geometric algebra 2](geometric_algebra_2.md) - the first part (this page will not make sense without it) crashed
