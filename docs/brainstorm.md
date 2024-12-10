@@ -1627,6 +1627,6 @@ $1600$ Lines
 
 "Yes!" Said person #$1$.
 
-"So $1$ is the set of all empty sets, of which there are only one" Said person #$2$ "am I understanding this correctly?" Said person #$2$¬∃y.y \in x$." Said person #$2$
+"So $1$ is the set of all empty sets, of which there are only one" Said person #$2$ "am I understanding this correctly?" Said person #$2$
 
 "Yes!" Said person #$1$.
