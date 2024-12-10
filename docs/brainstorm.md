@@ -1590,3 +1590,43 @@ B \hat{x} \cdot A^T \hat{y} & B \hat{y} \cdot A^T \hat{y} & B \hat{z} \cdot A^T 
 B \hat{x} \cdot A^T \hat{z} & B \hat{y} \cdot A^T \hat{z} & B \hat{z} \cdot A^T \hat{z} & \dots & B\hat{\omega} \cdot A^T \hat{z} \\
 \vdots & \vdots & \vdots & \ddots & \vdots \\
 B \hat{x} \cdot A^T \hat{\omega} & B \hat{y} \cdot A^T \hat{\omega} & B \hat{\omega} \cdot A^T \hat{z} & \dots & B \hat{\omega} \cdot A^T \hat{\omega} \\ \end{bmatrix} $$
+
+### $1 + 1$ and the foundations of modern mathematics?
+
+Before I start, none of this was scripted.
+
+What I want to do here is prove that $1 + 1 = 2$. But most of the time, you find yourself in a loop of defining things. For example: what is $1$? $1$ is the successor of $0$. What is the successor operation? The successor operation is the function that-
+
+$1600$ Lines
+
+"Stop right there!" Said person #$2$, "What is a function?".
+
+"Okay, fine!" Said person #$1$, "I'll instead say that $1$ is the set that contains $0$." (written $\{ 0 \}$.)
+
+"That's better, but can you express $\{ 0 \}$ more formally?" Said person #$2$.
+
+"Well, what I mean by that is: $∀x.x \in \{ 0 \} \iff x = 0$." Said person #$1$. (For any/all $x$, $x$ is within $\{ 0 \}$ precisely when $x = 0$.)
+
+"But what is $=$?" Said person #$2$.
+
+"Axiom #$1$ of ZFC: the axiom of extensionality" said person #$1$, "it states that $S = T$ precisely when for any $s \in S$, $s \in T$, and for any $t \in T$, $t \in S$"
+
+"Okay, so what you're saying is that $∀x.x \in 1 \iff (∀y.y \in x → y \in 0) ∧ (∀y.y \in 0 → y \in x)$." Said person #$2$.
+
+"Yes. Is there anything else left undefined?" Said person #$1$.
+
+"Yes, always!" Said person #$2$. "What is $0$?"
+
+"Are you really gonna make me answer that?" Said person #$1$.
+
+"Yes!" Said person #$2$.
+
+"Okay, fine!" Person #$1$ said with frustration. "$0$ is Ø" (the empty set) "is the set with nothing in it, so $¬∃x.x \in Ø$."
+
+"So, what you really meant by $∀x.x \in 1 \iff (∀y.y \in x → y \in 0) ∧ (∀y.y \in 0 → y \in x)$ was $∀x.x \in 1 \iff ¬∃y.y \in x$." Said person #$2$
+
+"Yes!" Said person #$1$.
+
+"So $1$ is the set of all empty sets, of which there are only one" Said person #$2$ "am I understanding this correctly?" Said person #$2$¬∃y.y \in x$." Said person #$2$
+
+"Yes!" Said person #$1$.
