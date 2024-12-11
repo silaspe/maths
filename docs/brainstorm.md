@@ -1633,8 +1633,8 @@ $1600$ Lines
 
 I'm tired of this conversation between a mathematician and probably a mathematical snob who only accepts the truest logical statements crafted from pure mathematical set theory.
 
-$$ ∀x_1.(∀x_2.x_2 \in x_1 \iff ¬∃x_3.x_3 \in x_2) → x_1 + x_1 = 2 \text{ For any variabe (call it } x_1 \text{), that variable being } 1 \text{ implies that adding it to itself results in } 2 \text{.} $$
+$$ ∀x_1.(∀x_2.x_2 \in x_1 \iff ¬∃x_3.x_3 \in x_2) → x_1 + x_1 = 2 \text{ (For any variabe (call it } x_1 \text{), that variable being } 1 \text{ implies that adding it to itself results in } 2 \text{)} $$
 
-$$ ∀x_1.x_1 \in 2 \iff (∀x_2.x_2 \in x_1 \iff ¬∃x_3.x_3 \in x_2) $$
+$$ ∀x_1.x_1 \in 2 \iff (∀x_2.x_2 \in x_1 \iff ¬∃x_3.x_3 \in x_2) \text{ (For any variabe (call it } x_1 \text{), } x_1 \in 2 \text{ implies that it is } 1 \text{, that is, for any variabe (call it } x_2 \text{), } x_2 \in 1 \text{ implies that it is } 0 \text{, that is, there is not an } x_3 \in x_2 \text{)} $$
 
 $$ ∀x_1.∀x_2.(∀x_3.x_3 \in x_1 \iff ¬∃x_4.x_4 \in x_3) ∧ (∀x_3.x_3 \in x_2 \iff (∀x_4.x_4 \in x_3 \iff ¬∃x_5.x_5 \in x_5)) → ∀x_3.x_3 \in x_1 + x_1 \iff x_3 \in x_2) $$
