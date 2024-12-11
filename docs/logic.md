@@ -94,7 +94,7 @@ $$ \text{Alternative: } ¬(p(x) ≡ \text{F}) ∩ (p(x) ∩ ¬(y = x) → p(y) =
 
 #### numbers
 
-$$ 0 = Ø = \{ x| \text{F}) \} $$
+$$ 0 = Ø = \{ x| \text{F} \} $$
 
 $$ \text{succ} (x) = \{ y| y = x \} $$
 
