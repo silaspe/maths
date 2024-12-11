@@ -52,7 +52,7 @@ $$ \text{Order of operations: } ¬ > ∩ > ∨ > = > → > \iff \text{.} $$
 
 #### extensions
 
-$$ [x| p(x)] = \text{ The extension of } p(x) \text{ (and the secret } 4 \text{th tool) (curly braces didn't work for rendering reasons), the set of all } x \text{ such that } p(x) \text{ (is true), and this is how I'm going to define sets. This function } p(x) \text{ inputs, well, anything, and outputs a boolean (true or false) (e.g. is } x \text{ an odd number?).} $$
+$$ \{ x| p(x) \} = \text{ The extension of } p(x) \text{ (and the secret } 4 \text{th tool) (curly braces didn't work for rendering reasons), the set of all } x \text{ such that } p(x) \text{ (is true), and this is how I'm going to define sets. This function } p(x) \text{ inputs, well, anything, and outputs a boolean (true or false) (e.g. is } x \text{ an odd number?).} $$
 
 $$ \text{The extension of that particular function is the set of all odd numbers.} $$
 
@@ -60,7 +60,7 @@ $$ \text{The extension of that particular function is the set of all odd numbers
 
 You can also derive the membership or element sign like this:
 
-$$ x \in [y| p(y)] \iff p(x) \text{ (} = \text{T)} $$
+$$ x \in \{ y| p(y) \} \iff p(x) \text{ (} = \text{T)} $$
 
 which goes somewhere in between and and not in the order of operations.
 
@@ -94,9 +94,9 @@ $$ \text{Alternative: } ¬(p(x) ≡ \text{F}) ∩ (p(x) ∩ ¬(y = x) → p(y) =
 
 #### numbers
 
-$$ 0 = Ø = [x| \text{F})] $$
+$$ 0 = Ø = \{ x| \text{F}) \} $$
 
-$$ \text{succ} (x) = [y| y = x] $$
+$$ \text{succ} (x) = \{ y| y = x \} $$
 
 
 $100$ Lines.
@@ -111,15 +111,15 @@ $$ 0 \in ℕ $$
 
 $$ x \in ℕ → \text{succ} (x) \in ℕ $$
 
-$$ ℕ = [x| (x = 0) ∨ \exists (y) \cdot (\text{succ} (y) = x) ∩ y \in ℕ] = [x| (x = 0) ∨ ¬(((\text{succ} (y) = x) ∩ y \in ℕ) ≡ \text{F})] $$
+$$ ℕ = \{ x| (x = 0) ∨ \exists (y) \cdot (\text{succ} (y) = x) ∩ y \in ℕ \} = \{ x| (x = 0) ∨ ¬(((\text{succ} (y) = x) ∩ y \in ℕ) ≡ \text{F}) \} $$
 
 #### Russell's paradox
 
-$$ R = [x| ¬(x \in x)] $$
+$$ R = \{ x| ¬(x \in x) \} $$
 
 $$ \text{Now, the question is, is } R \in R \text{? Because if } ¬(R \in R) \text{, than } ¬(x \in x) \text{ would be true (for } x \text{ equal to } R \text{), but then, } R \text{ would be an element of } R \text{, but if } R \in R \text{, than } ¬(x \in x) \text{ would be false (for } x \text{ equal to } R \text{), but then, } R \text{ wouldn't be an element of } R \text{, paradox!)} $$
 
-$$ x \in [y| p(y)] = \text{N (} \ne ℕ \text{)} \iff (¬(x \in [y| p(y)]) → p(x) = \text{T}) ∩ ((x \in [y| p(y)]) → p(x) = \text{F}) $$
+$$ x \in \{ y| p(y) \} = \text{N (} \ne ℕ \text{)} \iff (¬(x \in \{ y| p(y) \}) → p(x) = \text{T}) ∩ ((x \in \{ y| p(y) \}) → p(x) = \text{F}) $$
 
 $$ \text{N} ∩ \text{Anything} = \text{N} $$
 
@@ -129,7 +129,7 @@ $$ ¬ \text{N} = \text{N} $$
 
 $$ R \in R = \text{N} $$
 
-Now, I'll define an infinite set of things $x1, x2, x3,...$ that are all in $[x| \text{T}]$.
+Now, I'll define an infinite set of things $x1, x2, x3,...$ that are all in $\{ x| \text{T} \}$.
 
 And define $x1, x2, x3 \in S$ as $x1 \in S ∩ x2 \in S ∩ x3 \in S$.
 
@@ -151,23 +151,23 @@ Ok, I got out The real number system, in an algebraic setting, by J. B. Roberts.
 
 A mapping $f$ is kinda like a function or a dictionary in python, (a mapping $f$ from domain $X$ and codomain $Y$ is denoted as $f: X → Y$) if you pick an $x$ in $X$, is it $tied$ $to$ some $y$ in $Y$. The particular value of $y$ for given $x$ is denoted as $f(x)$, but for a given $y$ in $Y$, there could be $0$, $1$, or more values of $x$ (e.g. The absolute value function). How you represent a mapping would be something like $f(x) = x^2$, $x ↦ x^2$, or $\lambda x. x^2$ [.](https://silaspe.github.io/maths/lambda.html). $f(x)$ for $¬(x \in X)$ is $\text{N}$ ($\text{N}$ stands for neither, but it can also br interpreted an NoneType from python). And finally, the image of $f$ is ($I(f)$):
 
-$$ I(f) = [y| y \in Y ∩ \exists (x) \cdot x \in X ∩ f(x) = y] $$
+$$ I(f) = \{ y| y \in Y ∩ \exists (x) \cdot x \in X ∩ f(x) = y \} $$
 
 So
 
-$$ I(f) = [y| y \in Y ∩ ¬((x \in X ∩ f(x) = y) ≡ \text{F})] $$
+$$ I(f) = \{ y| y \in Y ∩ ¬((x \in X ∩ f(x) = y) ≡ \text{F}) \} $$
 
 But if you don't like domains and codomains, here's the versions without them:
 
-$$ I(f) = [y| ¬(y = \text{N}) ∩ \exists (x) \cdot f(x) = y] $$
+$$ I(f) = \{ y| ¬(y = \text{N}) ∩ \exists (x) \cdot f(x) = y \} $$
 
-$$ I(f) = [y| ¬(y = \text{N}) ∩ ¬((f(x) = y) ≡ \text{F})] $$
+$$ I(f) = \{ y| ¬(y = \text{N}) ∩ ¬((f(x) = y) ≡ \text{F}) \} $$
 
 #### cardinality
 
 $$ \text{The cardinality of } S \text{ is denoted as hashtag } S \text{, but hashtags aren't allowed in git, so it's } C(S) \text{ instead.} $$
 
-$$ (\exists (n) \cdot n \in ℕ ∩ (S = [k| k < n])) → C(S) = n $$
+$$ (\exists (n) \cdot n \in ℕ ∩ (S = \{ k| k < n \})) → C(S) = n $$
 
 $$ C(S) = C(T) \iff \exists (f: S → T) \cdot ∀(t) \cdot t \in T: \exists ! (s) \cdot f(s) = t $$
 
@@ -182,15 +182,15 @@ $$ f(x) = \begin{Bmatrix} ¬ \exists(t) \cdot t \in f ∩ (t[1] = x): \text{N} \
 
 ### other random stuff
 
-$$ [x| p(x)] ∨ [x| q(x)] = [x| p(x) ∨ q(x)] $$
+$$ \{ x| p(x)] ∨ \{ x| q(x)] = \{ x| p(x) ∨ q(x)] $$
 
-$$ [x| p(x)] ∩ [x| q(x)] = [x| p(x) ∩ q(x)] $$
+$$ \{ x| p(x)] ∩ \{ x| q(x)] = \{ x| p(x) ∩ q(x)] $$
 
 $$ S \times T \text{ is pronounced "the cartesian product of } S \text{ and } T \text{".} $$
 
-$$ [x| p(x)] \times [x| q(x)] = [l| l \text{ is a list of size } 2 ∩ (p(l(1)) ∩ q(l(2)))] $$
+$$ \{ x| p(x)] \times \{ x| q(x)] = \{ l| l \text{ is a list of size } 2 ∩ (p(l(1)) ∩ q(l(2)))] $$
 
-$$ S \times T = [l| l \text{ is a list of size } 2 ∩ (l(1) \in S ∩ l(2) \in T)] $$
+$$ S \times T = \{ l| l \text{ is a list of size } 2 ∩ (l(1) \in S ∩ l(2) \in T)] $$
 
 The reason why it's called "the cartesian product" is (at least, I think) because $ℝ \times ℝ$ ($ℝ$ is the set of all real numbers) is the set of all ordered pairs of real numbers. That is, the set of all points on the cartesian plane.
 
@@ -199,11 +199,11 @@ The actual axiom of choice:
 
 $200$ Lines.
 
-$$ ∀(S) \cdot S \text{ Is a set of sets}: \exists (f: S → [x| \exists(T) \cdot x \in T ∩ T \in S]) \cdot ∀(T) \cdot T \in S: f(T) \in T $$
+$$ ∀(S) \cdot S \text{ Is a set of sets}: \exists (f: S → \{ x| \exists(T) \cdot x \in T ∩ T \in S]) \cdot ∀(T) \cdot T \in S: f(T) \in T $$
 
 $$ \text{There's also compositions denoted as } f ∘ g \text{, but that does } g \text{ first, then } f \text{ (} (f ∘ g)(x) = f(g(x)) \text{). So I'll say that } f^* g \text{ does } f \text{ first, then } g \text{ (} (f^* g)(x) = g(f(x)) \text{).} $$
 
-Here's a diagram of sets $A$, $B$, $C$, mappings $f: A → B$ and $g: B → C$, $f^* g: A → C$, and $I: [x| \text{T}] → [x| \text{T}] = x ↦ x$ [:](https://www.youtube.com/watch?v=DrldYpmwN5s&t=857s) (Just replace $\text{id}$ with $I$, and $g ∘ f$ with $f^* g$)
+Here's a diagram of sets $A$, $B$, $C$, mappings $f: A → B$ and $g: B → C$, $f^* g: A → C$, and $I: \{ x| \text{T}] → \{ x| \text{T}] = x ↦ x$ [:](https://www.youtube.com/watch?v=DrldYpmwN5s&t=857s) (Just replace $\text{id}$ with $I$, and $g ∘ f$ with $f^* g$)
 
 ### the $8$ axioms of Zermelo–Fraenkel set theory (ZFC)
 
@@ -213,27 +213,27 @@ $$ ∀(S, T): (∀(x): x \in S \iff x \in T → S = T) $$
 
 $2$: The Axiom of Pairing:
 
-$$ ∀(S, T): \exists (U) \cdot U = [x| x = S ∨ x = T] $$
+$$ ∀(S, T): \exists (U) \cdot U = \{ x| x = S ∨ x = T] $$
 
 $3$: The Axiom of Union:
 
-$$ ∀(S, T): \exists (U) \cdot U = [x| x \in S ∨ x \in T] $$
+$$ ∀(S, T): \exists (U) \cdot U = \{ x| x \in S ∨ x \in T] $$
 
 $4$: The Axiom of the Power Set:
 
-$$ ∀(S): \exists (T) \cdot T = [x| x ⊆ S] $$
+$$ ∀(S): \exists (T) \cdot T = \{ x| x ⊆ S] $$
 
 $5$: The Axiom of Infinity:
 
-$$ \exists (S) \cdot S = [x| x = [y| \text{F}] ∨ \exists (y) \cdot y \in S ∩ x = [z| z \in y ∨ z = y]] $$
+$$ \exists (S) \cdot S = \{ x| x = \{ y| \text{F}] ∨ \exists (y) \cdot y \in S ∩ x = \{ z| z \in y ∨ z = y]] $$
 
 $6$: The Axiom of Schema of Replacement:
 
-$$ ∀(f): \exists (S) \cdot S = [y| \exists (P) \cdot P \in f ∩ p[2] = y] $$
+$$ ∀(f): \exists (S) \cdot S = \{ y| \exists (P) \cdot P \in f ∩ p[2] = y] $$
 
 $7$: The Axiom of Regularity:
 
-$$ ∀(A): (A \ne [x| \text{F}] → \exists (B) \cdot (B \in (A ∩ B) ∩ A = [x| \text{F}])) $$
+$$ ∀(A): (A \ne \{ x| \text{F}] → \exists (B) \cdot (B \in (A ∩ B) ∩ A = \{ x| \text{F}])) $$
 
 $8$: The Axiom of Schema of Separation:
 
@@ -243,7 +243,7 @@ $$ ∀(S): \exists (T) \cdot ∀(x) \cdot x \in T: x \in S $$
 
 The Axiom of Choice:
 
-$$ ∀(S): \exists (f) \cdot ∀(T) \cdot T \in S ∩ T \ne [x| \text{F}]: f(T) \in T $$
+$$ ∀(S): \exists (f) \cdot ∀(T) \cdot T \in S ∩ T \ne \{ x| \text{F}]: f(T) \in T $$
 
 ### comparosins
 
@@ -252,7 +252,7 @@ $$ ∀(S): \exists (f) \cdot ∀(T) \cdot T \in S ∩ T \ne [x| \text{F}]: f(T) 
 | $∀(x) \cdot p(x): q(x)$  | $∀x. p(x) → q(x)$ | $(p(x) → q(x)) =_x \text{T}$ |
 | $∀(x): p(x)$             | $∀x. p(x)$        | $p(x) =_x \text{T}$          |
 | $\exists (x) \cdot p(x)$ | $\exists x. p(x)$  | $¬p(x) =_x \text{F}$          |
-| $∀(A): \exists (f) \cdot ∀(B) \cdot B \in A ∩ ¬B = [x \| \text{F}]: f(B) \in B$ | $∀A. \exists f. ∀B. B \in A ∩ B \ne Ø → f(B) \in B$ | $((B^S \in A^S ∩ ¬B = [x \| \text{F}] → f(B) \in B) =_f \text{F}) =_{A, B} \text{F}$ |
+| $∀(A): \exists (f) \cdot ∀(B) \cdot B \in A ∩ ¬B = \{ x \| \text{F}]: f(B) \in B$ | $∀A. \exists f. ∀B. B \in A ∩ B \ne Ø → f(B) \in B$ | $((B^S \in A^S ∩ ¬B = \{ x \| \text{F}] → f(B) \in B) =_f \text{F}) =_{A, B} \text{F}$ |
 
 ### my new notation
 
