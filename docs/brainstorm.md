@@ -1651,6 +1651,6 @@ $$ S(n) = n + 1 $$
 
 $$ A(m, S(n)) = S(A(m, n)) $$
 
-$$ ∀m.∀n.n = S(m) \iff ∀x.x \in n \iff x = m $$
+$$ ∀m.∀n.n = S(m) \iff (∀x.x \in n \iff x = m) $$
 
-$$ ∀m.∀n.n = S(m) \iff ∀x_1.x_1 \in n \iff ∀x_2.x_2 \in x_1 \iff x_2 \in m $$
+$$ ∀m.∀n.n = S(m) \iff (∀x_1.x_1 \in n \iff (∀x_2.x_2 \in x_1 \iff x_2 \in m)) $$
