@@ -1642,3 +1642,15 @@ $$ ∀x_1.x_1 \in 2 \iff (∀x_2.x_2 \in x_1 \iff ¬∃x_3.x_3 \in x_2) $$
 $$ \text{"For any variable (call it } x_1 \text{), } x_1 \in 2 \text{ implies that } x_1 = 1 \text{, that is, for any variable (call it } x_2 \text{), } x_2 \in 1 \text{ precisely when } x_2 = 0 \text{, that is, there is not an } x_3 \in x_2 \text{"} $$
 
 $$ ∀x_1.∀x_2.(∀x_3.x_3 \in x_1 \iff ¬∃x_4.x_4 \in x_3) ∧ (∀x_3.x_3 \in x_2 \iff (∀x_4.x_4 \in x_3 \iff ¬∃x_5.x_5 \in x_4)) → ∀x_3.x_3 \in x_1 + x_1 \iff x_3 \in x_2 $$
+
+$$ A(m, n) = m + n $$
+
+$$ A(n, 0) = n $$
+
+$$ S(n) = n + 1 $$
+
+$$ A(m, S(n)) = S(A(m, n)) $$
+
+$$ ∀m.∀n.n = S(m) \iff ∀x.x \in n \iff x = m $$
+
+$$ ∀m.∀n.n = S(m) \iff ∀x_1.x_1 \in n \iff ∀x_2.x_2 \in x_1 \iff x_2 \in m $$
