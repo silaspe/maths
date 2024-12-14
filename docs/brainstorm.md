@@ -1655,6 +1655,12 @@ $$ ∀m.∀n.n = S(m) \iff (∀x.x \in n \iff x = m) $$
 
 $$ ∀m.∀n.n = S(m) \iff (∀x_1.x_1 \in n \iff (∀x_2.x_2 \in x_1 \iff x_2 \in m)) $$
 
-I feel like doing something else, how about the first Axiom of set theory? it states that two sets are equal if they have the same elements, but I think it actually means that if two sets are equal (i.e. they have the same elements), a set cannot contain just one of them, it has to contain either both or neither.
+I feel like doing something else, how about Russel's paradox? It states that there is no set that conain only sets that don't contain themselves.
 
-$$ ∀x_1.∀x_2.∀x_3.(∀x_4.x_4 \in x_1 \iff x_4 \in x_2) → (x_1 \in x_3 \iff x_2 \in x_3) $$
+$$ ¬∃x_1.∀x_2.x_2 \in x_1 \iff ¬x_2 \in x_2 $$
+
+Next, how about the first Axiom of set theory? it states that two sets are equal if they have the same elements, but I think it actually means that if two sets are equal (i.e. they have the same elements), a set cannot contain just one of them, it has to contain either both or neither of the sets.
+
+$$ ∀x_1.∀x_2.x_1 = x_2 → ∀x_3.x_1 \in x_3 \iff x_2 \in x_3 $$
+
+$$ ∀x_1.∀x_2.(∀x_3.x_3 \in x_1 \iff x_3 \in x_2) → ∀x_3.x_1 \in x_3 \iff x_2 \in x_3 $$
