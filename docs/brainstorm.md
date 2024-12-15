@@ -1659,8 +1659,18 @@ I feel like doing something else, how about Russel's paradox? It states that the
 
 $$ ¬∃x_1.∀x_2.x_2 \in x_1 \iff ¬x_2 \in x_2 $$
 
-Next, how about the first Axiom of set theory? it states that two sets are equal if they have the same elements, but I think it actually means that if two sets are equal (i.e. they have the same elements), a set cannot contain just one of them, it has to contain either both or neither of the sets.
+Next: the first axiom of set theory (The Axiom of Extensionality). It states that two sets are equal if they have the same elements, but I think it actually means that if two sets are equal (i.e. they have the same elements), a set cannot contain just one of them, it has to contain either both or neither of the sets.
 
 $$ ∀x_1.∀x_2.x_1 = x_2 → ∀x_3.x_1 \in x_3 \iff x_2 \in x_3 $$
 
 $$ ∀x_1.∀x_2.(∀x_3.x_3 \in x_1 \iff x_3 \in x_2) → ∀x_3.x_1 \in x_3 \iff x_2 \in x_3 $$
+
+Next: the second axiom of set theory (The Axiom of Foundation). It states that every set must have an element disjoint from itself (i.e. an element where the union of that element and the original set is empty (i.e. they don't have any common elements)).
+
+$$ ∀x_1.x_1 \ne Ø → ∃x_2.x_2 \in x_1 ∧ x_2 ∩ x_1 = Ø $$
+
+$$ ∀x_1.¬x_1 = Ø → ∃x_2.x_2 \in x_1 ∧ ¬∃x_3.x_3 \in x_1 ∧ x_3 \in x_2 $$
+
+$$ ∀x_1.x_1 = Ø ∨ ∃x_2.x_2 \in x_1 ∧ ¬∃x_3.x_3 \in x_1 ∧ x_3 \in x_2 $$
+
+$$ ∀x_1.¬(∃x_2.x_2 \in x_1) ∨ ∃x_2.x_2 \in x_1 ∧ ¬∃x_3.x_3 \in x_1 ∧ x_3 \in x_2 $$
