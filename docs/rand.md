@@ -273,7 +273,7 @@ Only ~ $2$ weeks until halloween! (That was the day I created this website.)
 
 i before e except after c...
 
-... Unless you're a weird beige foreign sovereign budweiser drinking neighbor running a feisty heist!
+... Unless you're a weird beige foreign, either sovereign or budweiser drinking neighbor, running a feisty heist!
 
 .
 
