@@ -1674,3 +1674,9 @@ $$ ∀x_1.¬x_1 = Ø → ∃x_2.x_2 \in x_1 ∧ ¬∃x_3.x_3 \in x_1 ∧ x_3 \in
 $$ ∀x_1.x_1 = Ø ∨ ∃x_2.x_2 \in x_1 ∧ ¬∃x_3.x_3 \in x_1 ∧ x_3 \in x_2 $$
 
 $$ ∀x_1.¬(∃x_2.x_2 \in x_1) ∨ ∃x_2.x_2 \in x_1 ∧ ¬∃x_3.x_3 \in x_1 ∧ x_3 \in x_2 $$
+
+Next: the third axiom of set theory (The Axiom of Pairing). Actually, I'm not going to use the axiom of pairing, I'm going to use the closely related singleton axiom, It states that if you have a set then there exists the set containing that set, as opposed to the axiom of pairing which says that if you have two sets then there is a set containing both of them. These two statements are equivalent, but I prefer the first one.
+
+Also I realized that this axiom makes the axiom a regularity redundant. Let's say that $S = \{ S \}$. then you would say that $S$ is a set because it is equal to the set containing $S$. So we would also need to assume that $S$ is a set for that to work, so that would mean that we need to prove that $S$ is a set, so that would mean that we need to prove that $S$ is a set, you just never get to the bottom of it and you can never declare that $S$ is a set.
+
+Also this is a weird kind of axiom because it doesn't always make the set containing a set into a set, you still have to prove it with the other rules. So we just knocked out two axioms of set theory with one stone.
