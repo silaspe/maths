@@ -1597,7 +1597,7 @@ Before I start, none of this was scripted.
 
 What I want to do here is prove that $1 + 1 = 2$. But most of the time, you find yourself in a loop of defining things. For example: what is $1$? $1$ is the successor of $0$. What is the successor operation? The successor operation is the function that-
 
-$1600$ Lines
+$1600$ Lines.
 
 "Stop right there!" Said person #$2$, "What is a function?".
 
@@ -1714,6 +1714,6 @@ Here's a chart of each permutation multiplied by each other permutation of four 
 | (1, 4, 2, 3) | (1, 4, 2, 3) |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
 | (1, 4)(2, 3) | (1, 4)(2, 3) |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
 
-$1717$  Lines.
+$1717$ Lines.
 
 I don't feel like filling out the rest of the $529$ entries of this table. Instead I'll ask my dad to write some code to do it for me, and then use that information to create a new times table.
