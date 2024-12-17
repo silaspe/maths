@@ -1680,3 +1680,38 @@ Next: the third axiom of set theory (The Axiom of Pairing). Actually, I'm not go
 Also I realized that this axiom makes the axiom a regularity redundant. Let's say that $S = \{ S \}$. then you would say that $S$ is a set because it is equal to the set containing $S$. So we would also need to assume that $S$ is a set for that to work, so that would mean that we need to prove that $S$ is a set, so that would mean that we need to prove that $S$ is a set, you just never get to the bottom of it and you can never declare that $S$ is a set.
 
 Also this is a weird kind of axiom because it doesn't always make the set containing a set into a set, you still have to prove it with the other rules. So we just knocked out two axioms of set theory with one stone.
+
+### group theory?
+
+I'm going to use a notation and this is how it works: I will notate $(1, 2, 3)(4, 5)$ as the function on a string that brings the first term to the second place in the string, the second term to the third place in the string, and the third thing back to the first term in the string. And then also swapping the fourth and fifth terms. And also I'm going to do composition from left to right instead of from right to left, so the composition of $f$ and $g$ does $f$ first then $g$.
+
+Here's a chart of each permutation multiplied by each other permutation of four elements:
+
+| $\times$     | ()           | (1, 2)       | (2, 3)       | (1, 2, 3)    | (1, 3, 2)    | (1, 3)       | (3, 4)       | (1, 2)(3, 4) | (2, 3, 4)    | (1, 2, 3, 4) | (1, 3, 4, 2) | (1, 3, 4)    | (2, 4, 3)    | (1, 2, 4, 3) | (2, 4)       | (1, 2, 4)    | (1, 3)(2, 4) | (1, 3, 2, 4) | (1, 4, 3, 2) | (1, 4, 3)    | (1, 4, 2)    | (1, 4)       | (1, 4, 2, 3) | (1, 4)(2, 3) |
+| ------------ | ------------ | ------------ | ------------ | ------------ | ------------ | ------------ | ------------ | ------------ | ------------ | ------------ | ------------ | ------------ | ------------ | ------------ | ------------ | ------------ | ------------ | ------------ | ------------ | ------------ | ------------ | ------------ | ------------ | ------------ |
+| ()           | ()           | (1, 2)       | (2, 3)       | (1, 2, 3)    | (1, 3, 2)    | (1, 3)       | (3, 4)       | (1, 2)(3, 4) | (2, 3, 4)    | (1, 2, 3, 4) | (1, 3, 4, 2) | (1, 3, 4)    | (2, 4, 3)    | (1, 2, 4, 3) | (2, 4)       | (1, 2, 4)    | (1, 3)(2, 4) | (1, 3, 2, 4) | (1, 4, 3, 2) | (1, 4, 3)    | (1, 4, 2)    | (1, 4)       | (1, 4, 2, 3) | (1, 4)(2, 3) |
+| (1, 2)       | (1, 2)       |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| (2, 3)       | (2, 3)       |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| (1, 2, 3)    | (1, 2, 3)    |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| (1, 3, 2)    | (1, 3, 2)    |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| (1, 3)       | (1, 3)       |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| (3, 4)       | (3, 4)       |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| (1, 2)(3, 4) | (1, 2)(3, 4) |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| (2, 3, 4)    | (2, 3, 4)    |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| (1, 2, 3, 4) | (1, 2, 3, 4) |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| (1, 3, 4, 2) | (1, 3, 4, 2) |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| (1, 3, 4)    | (1, 3, 4)    |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| (2, 4, 3)    | (2, 4, 3)    |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| (1, 2, 4, 3) | (1, 2, 4, 3) |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| (2, 4)       | (2, 4)       |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| (1, 2, 4)    | (1, 2, 4)    |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| (1, 3)(2, 4) | (1, 3)(2, 4) |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| (1, 3, 2, 4) | (1, 3, 2, 4) |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| (1, 4, 3, 2) | (1, 4, 3, 2) |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| (1, 4, 3)    | (1, 4, 3)    |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| (1, 4, 2)    | (1, 4, 2)    |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| (1, 4)       | (1, 4)       |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| (1, 4, 2, 3) | (1, 4, 2, 3) |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| (1, 4)(2, 3) | (1, 4)(2, 3) |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+
+$1717$  Lines.
