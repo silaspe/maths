@@ -273,7 +273,7 @@ Only ~ $2$ weeks until halloween! (That was the day I created this website.)
 
 i before e except after c...
 
-... Unless you're a weird beige foreign neighbor running a feisty heist!
+... Unless you're one of eight weird beige foreign, either sovereign or budweiser drinking neighbors, running a feisty heist to seize the height of modern technology!
 
 .
 
@@ -398,3 +398,11 @@ Happy thanksgiving!
 .
 
 $400$ Lines.
+
+.
+
+(insert work here)
+
+.
+
+Happy friday the $13$th!

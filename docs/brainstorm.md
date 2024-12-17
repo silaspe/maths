@@ -1590,3 +1590,130 @@ B \hat{x} \cdot A^T \hat{y} & B \hat{y} \cdot A^T \hat{y} & B \hat{z} \cdot A^T 
 B \hat{x} \cdot A^T \hat{z} & B \hat{y} \cdot A^T \hat{z} & B \hat{z} \cdot A^T \hat{z} & \dots & B\hat{\omega} \cdot A^T \hat{z} \\
 \vdots & \vdots & \vdots & \ddots & \vdots \\
 B \hat{x} \cdot A^T \hat{\omega} & B \hat{y} \cdot A^T \hat{\omega} & B \hat{\omega} \cdot A^T \hat{z} & \dots & B \hat{\omega} \cdot A^T \hat{\omega} \\ \end{bmatrix} $$
+
+### $1 + 1$ and the foundations of modern mathematics
+
+Before I start, none of this was scripted.
+
+What I want to do here is prove that $1 + 1 = 2$. But most of the time, you find yourself in a loop of defining things. For example: what is $1$? $1$ is the successor of $0$. What is the successor operation? The successor operation is the function that-
+
+$1600$ Lines.
+
+"Stop right there!" Said person #$2$, "What is a function?".
+
+"Okay, fine!" Said person #$1$, "I'll instead say that $1$ is the set that contains $0$." (written $\{ 0 \}$.)
+
+"That's better, but can you express $\{ 0 \}$ more formally?" Said person #$2$.
+
+"Well, what I mean by that is: $∀x.x \in \{ 0 \} \iff x = 0$." Said person #$1$. (For any/all $x$, $x$ is within $\{ 0 \}$ precisely when $x = 0$.)
+
+"But what is $=$?" Said person #$2$.
+
+"Axiom #$1$ of ZFC: the axiom of extensionality" said person #$1$, "it states that $S = T$ precisely when for any $s \in S$, $s \in T$, and for any $t \in T$, $t \in S$"
+
+"Okay, so what you're saying is that $∀x.x \in 1 \iff (∀y.y \in x → y \in 0) ∧ (∀y.y \in 0 → y \in x)$." Said person #$2$.
+
+"Yes. Is there anything else left undefined?" Said person #$1$.
+
+"Yes, always!" Said person #$2$. "What is $0$?"
+
+"Are you really gonna make me answer that?" Said person #$1$.
+
+"Yes!" Said person #$2$.
+
+"Okay, fine!" Person #$1$ said with frustration. "$0$ is Ø" (the empty set) "is the set with nothing in it, so $¬∃x.x \in Ø$."
+
+"So, what you really meant by $∀x.x \in 1 \iff (∀y.y \in x → y \in 0) ∧ (∀y.y \in 0 → y \in x)$ was $∀x.x \in 1 \iff ¬∃y.y \in x$." Said person #$2$
+
+"Yes!" Said person #$1$.
+
+"So $1$ is the set of all empty sets, of which there are only one" Said person #$2$ "am I understanding this correctly?" Said person #$2$
+
+"Yes!" Said person #$1$.
+
+I'm tired of this conversation between a mathematician and probably a mathematical snob who only accepts the truest logical statements crafted from pure mathematical set theory.
+
+$$ ∀x_1.(∀x_2.x_2 \in x_1 \iff ¬∃x_3.x_3 \in x_2) → x_1 + x_1 = 2 $$
+
+$$ \text{"For any variable (call it } x_1 \text{), that variable being } 1 \text{ implies that adding it to itself results in } 2 \text{, that is, there is not an } x_3 \in x_2 \text{"} $$
+
+$$ ∀x_1.x_1 \in 2 \iff (∀x_2.x_2 \in x_1 \iff ¬∃x_3.x_3 \in x_2) $$
+
+$$ \text{"For any variable (call it } x_1 \text{), } x_1 \in 2 \text{ implies that } x_1 = 1 \text{, that is, for any variable (call it } x_2 \text{), } x_2 \in 1 \text{ precisely when } x_2 = 0 \text{, that is, there is not an } x_3 \in x_2 \text{"} $$
+
+$$ ∀x_1.∀x_2.(∀x_3.x_3 \in x_1 \iff ¬∃x_4.x_4 \in x_3) ∧ (∀x_3.x_3 \in x_2 \iff (∀x_4.x_4 \in x_3 \iff ¬∃x_5.x_5 \in x_4)) → ∀x_3.x_3 \in x_1 + x_1 \iff x_3 \in x_2 $$
+
+$$ A(m, n) = m + n $$
+
+$$ A(n, 0) = n $$
+
+$$ S(n) = n + 1 $$
+
+$$ A(m, S(n)) = S(A(m, n)) $$
+
+$$ ∀m.∀n.n = S(m) \iff (∀x.x \in n \iff x = m) $$
+
+$$ ∀m.∀n.n = S(m) \iff (∀x_1.x_1 \in n \iff (∀x_2.x_2 \in x_1 \iff x_2 \in m)) $$
+
+I feel like doing something else, how about Russel's paradox? It states that there is no set that conain only sets that don't contain themselves.
+
+$$ ¬∃x_1.∀x_2.x_2 \in x_1 \iff ¬x_2 \in x_2 $$
+
+Next: the first axiom of set theory (The Axiom of Extensionality). It states that two sets are equal if they have the same elements, but I think it actually means that if two sets are equal (i.e. they have the same elements), a set cannot contain just one of them, it has to contain either both or neither of the sets.
+
+$$ ∀x_1.∀x_2.x_1 = x_2 → ∀x_3.x_1 \in x_3 \iff x_2 \in x_3 $$
+
+$$ ∀x_1.∀x_2.(∀x_3.x_3 \in x_1 \iff x_3 \in x_2) → ∀x_3.x_1 \in x_3 \iff x_2 \in x_3 $$
+
+Next: the second axiom of set theory (The Axiom of Foundation). It states that every set must have an element disjoint from itself (i.e. an element where the union of that element and the original set is empty (i.e. they don't have any common elements)).
+
+$$ ∀x_1.x_1 \ne Ø → ∃x_2.x_2 \in x_1 ∧ x_2 ∩ x_1 = Ø $$
+
+$$ ∀x_1.¬x_1 = Ø → ∃x_2.x_2 \in x_1 ∧ ¬∃x_3.x_3 \in x_1 ∧ x_3 \in x_2 $$
+
+$$ ∀x_1.x_1 = Ø ∨ ∃x_2.x_2 \in x_1 ∧ ¬∃x_3.x_3 \in x_1 ∧ x_3 \in x_2 $$
+
+$$ ∀x_1.¬(∃x_2.x_2 \in x_1) ∨ ∃x_2.x_2 \in x_1 ∧ ¬∃x_3.x_3 \in x_1 ∧ x_3 \in x_2 $$
+
+Next: the third axiom of set theory (The Axiom of Pairing). Actually, I'm not going to use the axiom of pairing, I'm going to use the closely related singleton axiom, It states that if you have a set then there exists the set containing that set, as opposed to the axiom of pairing which says that if you have two sets then there is a set containing both of them. These two statements are equivalent, but I prefer the first one.
+
+Also I realized that this axiom makes the axiom a regularity redundant. Let's say that $S = \{ S \}$. then you would say that $S$ is a set because it is equal to the set containing $S$. So we would also need to assume that $S$ is a set for that to work, so that would mean that we need to prove that $S$ is a set, so that would mean that we need to prove that $S$ is a set, you just never get to the bottom of it and you can never declare that $S$ is a set.
+
+Also this is a weird kind of axiom because it doesn't always make the set containing a set into a set, you still have to prove it with the other rules. So we just knocked out two axioms of set theory with one stone.
+
+### group theory?
+
+I'm going to use a notation and this is how it works: I will notate $(1, 2, 3)(4, 5)$ as the function on a string that brings the first term to the second place in the string, the second term to the third place in the string, and the third thing back to the first term in the string. And then also swapping the fourth and fifth terms. And also I'm going to do composition from left to right instead of from right to left, so the composition of $f$ and $g$ does $f$ first then $g$.
+
+Here's a chart of each permutation multiplied by each other permutation of four elements:
+
+| $\times$     | ()           | (1, 2)       | (2, 3)       | (1, 2, 3)    | (1, 3, 2)    | (1, 3)       | (3, 4)       | (1, 2)(3, 4) | (2, 3, 4)    | (1, 2, 3, 4) | (1, 3, 4, 2) | (1, 3, 4)    | (2, 4, 3)    | (1, 2, 4, 3) | (2, 4)       | (1, 2, 4)    | (1, 3)(2, 4) | (1, 3, 2, 4) | (1, 4, 3, 2) | (1, 4, 3)    | (1, 4, 2)    | (1, 4)       | (1, 4, 2, 3) | (1, 4)(2, 3) |
+| ------------ | ------------ | ------------ | ------------ | ------------ | ------------ | ------------ | ------------ | ------------ | ------------ | ------------ | ------------ | ------------ | ------------ | ------------ | ------------ | ------------ | ------------ | ------------ | ------------ | ------------ | ------------ | ------------ | ------------ | ------------ |
+| ()           | ()           | (1, 2)       | (2, 3)       | (1, 2, 3)    | (1, 3, 2)    | (1, 3)       | (3, 4)       | (1, 2)(3, 4) | (2, 3, 4)    | (1, 2, 3, 4) | (1, 3, 4, 2) | (1, 3, 4)    | (2, 4, 3)    | (1, 2, 4, 3) | (2, 4)       | (1, 2, 4)    | (1, 3)(2, 4) | (1, 3, 2, 4) | (1, 4, 3, 2) | (1, 4, 3)    | (1, 4, 2)    | (1, 4)       | (1, 4, 2, 3) | (1, 4)(2, 3) |
+| (1, 2)       | (1, 2)       |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| (2, 3)       | (2, 3)       |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| (1, 2, 3)    | (1, 2, 3)    |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| (1, 3, 2)    | (1, 3, 2)    |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| (1, 3)       | (1, 3)       |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| (3, 4)       | (3, 4)       |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| (1, 2)(3, 4) | (1, 2)(3, 4) |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| (2, 3, 4)    | (2, 3, 4)    |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| (1, 2, 3, 4) | (1, 2, 3, 4) |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| (1, 3, 4, 2) | (1, 3, 4, 2) |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| (1, 3, 4)    | (1, 3, 4)    |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| (2, 4, 3)    | (2, 4, 3)    |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| (1, 2, 4, 3) | (1, 2, 4, 3) |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| (2, 4)       | (2, 4)       |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| (1, 2, 4)    | (1, 2, 4)    |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| (1, 3)(2, 4) | (1, 3)(2, 4) |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| (1, 3, 2, 4) | (1, 3, 2, 4) |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| (1, 4, 3, 2) | (1, 4, 3, 2) |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| (1, 4, 3)    | (1, 4, 3)    |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| (1, 4, 2)    | (1, 4, 2)    |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| (1, 4)       | (1, 4)       |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| (1, 4, 2, 3) | (1, 4, 2, 3) |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| (1, 4)(2, 3) | (1, 4)(2, 3) |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+
+$1717$ Lines.
+
+I don't feel like filling out the rest of the $529$ entries of this table. Instead I'll ask my dad to write some code to do it for me, and then use that information to create a new times table.
