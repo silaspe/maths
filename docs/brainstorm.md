@@ -1591,7 +1591,7 @@ B \hat{x} \cdot A^T \hat{z} & B \hat{y} \cdot A^T \hat{z} & B \hat{z} \cdot A^T 
 \vdots & \vdots & \vdots & \ddots & \vdots \\
 B \hat{x} \cdot A^T \hat{\omega} & B \hat{y} \cdot A^T \hat{\omega} & B \hat{\omega} \cdot A^T \hat{z} & \dots & B \hat{\omega} \cdot A^T \hat{\omega} \\ \end{bmatrix} $$
 
-### $1 + 1$ and the foundations of modern mathematics?
+### $1 + 1$ and the foundations of modern mathematics
 
 Before I start, none of this was scripted.
 
