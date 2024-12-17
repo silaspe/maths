@@ -1715,3 +1715,5 @@ Here's a chart of each permutation multiplied by each other permutation of four 
 | (1, 4)(2, 3) | (1, 4)(2, 3) |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
 
 $1717$  Lines.
+
+I don't feel like filling out the rest of the $529$ entries of this table. Instead I'll ask my dad to write some code to do it for me, and then use that information to create a new times table.
