@@ -1,6 +1,6 @@
 # Silas Maths
 
-All derivations here are painstakingly authored by Silas Pembroke, with a little help from his Dad.
+All derivations here are painstakingly authored by the $11$ yo Silas Pembroke, with a little help from his Dad.
 
 * [Calculus](derivatives.md) - derivative formulas from first principles:
 sum rule, chain rule, product rule, multiplication by constant, exponent rule, introduction to $e$, logarithmic derivative, power rule
