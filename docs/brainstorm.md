@@ -1740,4 +1740,28 @@ $$ d + e + f = g + h + i = b + e + h = c + f + i = m $$
 
 $$ b + c = d + g $$
 
+#### a puzzle
+
+Okay, here's the puzzle: you are greeted by $10$ boxes that contain a random number from $0$ to $1$ and you want to get the biggest one. So what you can do is you open the first box and you can either choose to take it or leave it, and if you leave it, then you can never come back to it. What is your strategy for getting the highest number? And how does that strategy scale for more or fewer boxes?
+
+According to a veritasium video about the number $37$, the answer is to check the first $37$%, rejects all of those, and then after that you choose one that's bigger than the biggest one in those first $37$%, choose that one, and if those first $37$% contained the biggest one (which happens 37% of the time), then tough luck!
+
+I thought: what if you didn't choose some boxes to reject always and then choose the best one after that? Then I was thinking: what is the perfect strategy?
+
+Well, for one box it's really obvious: just choose that box. For two boxes, it also seems kind of obvious: if the first one is more than one half, then do it, and if it's less than one half, pass it.
+
+What about three boxes? Well, I know that if I somehow get down to two, then I know a strategy. So at what threshold $t$ should I keep it? Well, what's the expected value for two of them? Half of the time it's less than $\frac{1}{2}$ and you have to skip it, with an average value for the other one being $\frac{1}{2}$, but half of the time it's more than $\frac{1}{2}$ and the average is $\frac{3}{4}$. So if you compute $\frac{1}{2} \frac{1}{2} + \frac{1}{2} \frac{3}{4} = \frac{1}{4} + \frac{3}{8} = \frac{2}{8} + \frac{3}{8} = \frac{5}{8}$. So the value in the first box is more than $\frac{5}{8}$, then keep it, and if it's less, skip it.
+
+But what about a more general case? If I have $n$ boxes then what is the threshold (call it $f(n)$) where if it's more than that, I should keep it, and if it's less than that, I should leave it, and if it's exactly that, then either one.
+
+Well, I know that it's equal to the expected score for $n - 1$ boxes (denoted $\text{ES} (n - 1)$), and $\text{ES} (n)$ must be equal to the probability that a random number from $0$ to $1$ is less than $f(n)$ (that is, $f(n)$ itself), multiplied by $\text{ES} (n - 1)$, plus the probability that it is more than $f(n)$ (that is, $1 - f(n)$), and in that case, the expected value is $\frac{1 + f(n)}{2} = \frac{1}{2} + \frac{f(n)}{2}$. So the expected score (and hence $f(n + 1)$) is given by:
+
+$$ f(n + 1) = f(n) \text{ES} (n - 1) + (1 - f(n)) (\frac{1}{2} + \frac{f(n)}{2}) = f(n) f(n) + 1 \frac{1}{2} + 1 \frac{f(n)}{2} - f(n) \frac{1}{2} - f(n) \frac{f(n)}{2} = f(n)^2 + \frac{1}{2} + \frac{f(n)}{2} - \frac{f(n)}{2} - \frac{f(n)^2}{2} $$
+
+$$ f(n + 1) = \frac{f(n)^2}{2} + \frac{1}{2} $$
+
+And coupled with the results that there is no threshold for one box I eat the threshold is 0 we don't have an inductive formula for the perfect strategy.
+
+So, the answer to the original question for $n = 10$ is: If the first one is more than about $0.849$, then keep it, if not, then pass it. And if the second one is more than about $0.836$, then keep it, if not, then pass it. And if the third one is more than about $0.82$, then keep it, if not, then pass it. And if the fourth one is more than about $0.8$, then keep it, if not, then pass it. And if the fifth one is more than about $0.775$, then keep it, if not, then pass it. And if the sixth one is more than about $0.741$, then keep it, if not, then pass it. And if the seventh one is more than about $0.695$, then keep it, if not, then pass it. And if the eighth one is more than $0.625$, then keep it, if not, then pass it. And if the nineth one is more than $\frac{1}{2}$, then keep it, if not, then pass it.
+
 $1776$ Lines.
