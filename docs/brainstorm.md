@@ -1717,3 +1717,27 @@ Here's a chart of each permutation multiplied by each other permutation of four 
 $1717$ Lines.
 
 I don't feel like filling out the rest of the $529$ entries of this table. Instead I'll ask my dad to write some code to do it for me, and then use that information to create a new times table.
+
+#### magic squares
+
+If you don't know, a magic square is a square of numbers, typically $3x3$, where the sum, for the sum of each row, each column, and the two diagonals are all equal. Particularly, what I would like to do here is find how many numbers it takes to define an affine magic square. That is, one without the diagonal requirement, because then if you rotate it, or move the first column to the end, or the first row to the end, or swap to rows or two columns, then it will still work.
+
+$$ \begin{bmatrix} a & b & c \\
+d & e & f \\
+g & h & i \\ \end{bmatrix} $$
+
+$$ a + b + c = d + e + f = g + h + i = a + d + g = b + e + h = c + f + i = m $$
+
+$$ a + b + c = m $$
+
+$$ a = m - b - c $$
+
+$$ a + b + c = a + d + g $$
+
+$$ b + c = d + g $$
+
+$$ d + e + f = g + h + i = b + e + h = c + f + i = m $$
+
+$$ b + c = d + g $$
+
+$1776$ Lines.
