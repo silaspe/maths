@@ -1750,7 +1750,7 @@ I thought: what if you didn't choose some boxes to reject always and then choose
 
 Well, for one box it's really obvious: just choose that box. For two boxes, it also seems kind of obvious: if the first one is more than one half, then do it, and if it's less than one half, pass it.
 
-What about three boxes? Well, I know that if I somehow get down to two, then I know a strategy. So at what threshold $t$ should I keep it? Well, what's the expected value for two of them? Half of the time it's less than $\frac{1}{2}$ and you have to skip it, with an average value for the other one being $\frac{1}{2}$, but half of the time it's more than $\frac{1}{2}$ and the average is $\frac{3}{4}$. So if you compute $\frac{1}{2} \frac{1}{2} + \frac{1}{2} \frac{3}{4} = \frac{1}{4} + \frac{3}{8} = \frac{2}{8} + \frac{3}{8} = \frac{5}{8}$. So the value in the first box is more than $\frac{5}{8}$, then keep it, and if it's less, skip it.
+What about three boxes? Well, I know that if I somehow get down to two, then I know a strategy. So at what threshold $t$ should I keep it? Well, what's the expected value for two of them? Half of the time it's less than $\frac{1}{2}$ and you have to skip it, with an average value for the other one being $\frac{1}{2}$, but half of the time it's more than $\frac{1}{2}$ and the average is $\frac{3}{4}$. So if you compute $\frac{1}{2} \frac{1}{2} + \frac{1}{2} \frac{3}{4} = \frac{1}{4} + \frac{3}{8} = \frac{2}{8} + \frac{3}{8} = \frac{5}{8}$. So if the value in the first box is more than $\frac{5}{8}$, then keep it, and if it's less, skip it.
 
 But what about a more general case? If I have $n$ boxes then what is the threshold (call it $f(n)$) where if it's more than that, I should keep it, and if it's less than that, I should leave it, and if it's exactly that, then either one.
 
@@ -1760,7 +1760,7 @@ $$ f(n + 1) = f(n) \text{ES} (n - 1) + (1 - f(n)) (\frac{1}{2} + \frac{f(n)}{2})
 
 $$ f(n + 1) = \frac{f(n)^2}{2} + \frac{1}{2} $$
 
-And coupled with the results that there is no threshold for one box I eat the threshold is 0 we don't have an inductive formula for the perfect strategy.
+And coupled with the results that there is no threshold for one box (i.e. the threshold is $0$), we now have an inductive formula for the perfect strategy.
 
 So, the answer to the original question for $n = 10$ is: If the first one is more than about $0.849$, then keep it, if not, then pass it. And if the second one is more than about $0.836$, then keep it, if not, then pass it. And if the third one is more than about $0.82$, then keep it, if not, then pass it. And if the fourth one is more than about $0.8$, then keep it, if not, then pass it. And if the fifth one is more than about $0.775$, then keep it, if not, then pass it. And if the sixth one is more than about $0.741$, then keep it, if not, then pass it. And if the seventh one is more than about $0.695$, then keep it, if not, then pass it. And if the eighth one is more than $0.625$, then keep it, if not, then pass it. And if the nineth one is more than $\frac{1}{2}$, then keep it, if not, then pass it.
 
