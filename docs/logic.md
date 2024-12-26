@@ -258,7 +258,7 @@ $$ ∀(S): \exists (f) \cdot ∀(T) \cdot T \in S ∩ T \ne \{ x| \text{F}]: f(T
 
 The $=_x$ sign is pronounced "is equal to, for all values of $x$". Also, I (kinda) wrote $\exists (x) \cdot p(x)$ as $¬(∀(x): p(x) = \text{F}$), because the statement "there exists an $x$ where $p(x)$ is true" is just the inversion of the statemment "$p(x)$ is, for all values of $x$, equal to false". Then I realized that the for any sign takes the and over all values of $x$ and that the there exists sign takes the or over all values of $x$. So that $¬(∀(x): p(x) = \text{F})$ thing is just DeMorgan's laws: $¬(¬p ∩ ¬q) = p ∨ q$ and $¬(¬p ∨ ¬q) = p ∩ q$. So the equuivalent statement for the for any sign is $¬(\exists (x) \cdot p(x) = \text{F})$
 
-### pure logic
+### my newer notation
 
 All the symbols we need are: $∧$ (and), $∨$ (or), $¬$ (not), $→$ (implies), $\iff$ (if and only if/precisely when), $($ (open parentheses), $)$(close parentheses), $∀$ (for any/all), $∃$ (there exists), $\in$ (is an element) of, a separator (such as a dot), and none of the above (so literally anything else, I'll choose $x$). These are all of the symbols you need to describe all of set theory, and hence, all of modern mathematics.
 
@@ -362,3 +362,23 @@ Next: the third axiom of set theory (The Axiom of Pairing). Actually, I'm not go
 Also I realized that this axiom makes the axiom a regularity redundant. Let's say that $S = \{ S \}$. then you would say that $S$ is a set because it is equal to the set containing $S$. So we would also need to assume that $S$ is a set for that to work, so that would mean that we need to prove that $S$ is a set, so that would mean that we need to prove that $S$ is a set, you just never get to the bottom of it and you can never declare that $S$ is a set.
 
 Also this is a weird kind of axiom because it doesn't always make the set containing a set into a set, you still have to prove it with the other rules. So we just knocked out two axioms of set theory with one stone.
+
+Also, at around this point I would like to tell you something about existence that you can tell someone to cocktail party.
+
+First, I have to think of a property. How about even-ness? Okay, now that we have a property, I can tell you what the problem is.
+
+The statement "there does not exist $x$ where $x$ is odd" is the same as the statement "for all $x$, $x$ is even". The statement "there does not exist $x$ where $x$ is even" is the same as the statement "for all $x$, $x$ is odd". The statement "there exists $x$ where $x$ is odd" is just the inversion of the statement "for all $x$, $x$ is even". And the statement "there exists $x$ where $x$ is even" is just the inversion of the statement "for all $x$, $x$ is odd".
+
+If you put it that way, the $∃$ seems kind of redundant.
+
+This for all/their exists thing is a consequence of De Morgan's laws.
+
+Didn't I already say this? Anyways, before we continue with the axioms have set theory. I'm goind to do the axioms of proof theory. Of which I'm going to take from [this course by bri the math guy](https://youtu.be/3czgfHULZCs?t=644s) (the actual series didn't exist, only the full movie), using the statements $x \in S$ and $y \in S$ (yes) instead of $p$ and $q$.
+
+Modes Ponens: If $p$ is true and $p$ implies $q$, then $q$ is true. It's like the consequence of an implication.
+
+$$ ∀S.∀x.∀y.x \in S ∧ (x \in S → y \in S) → y \in S $$
+
+Modes Tollens: If $q$ is false and $p$ implies $q$, then $q$ is false. It's like an implication turned on its head.
+
+$$ ∀S.∀x.∀y.x \in S ∧ (x \in S → y \in S) → y \in S $$
