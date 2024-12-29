@@ -1768,14 +1768,14 @@ So, the answer to the original question for $n = 10$ is: If the first one is mor
 
 Last time I tried this it was too much data and my dad still hasn't finished that code. So I'm going to make a multiplication table of a more manageable size, then find all of its symmetric beauty.
 
-| $\times$  |   | ()        | (1, 2)    | (2, 3)    | (1, 2, 3) | (1, 3, 2) | (1, 3)    |
-| --------- | - | --------- | --------- | --------- | --------- | --------- | --------- |
-| ()        |   | ()        | (1, 2)    | (2, 3)    | (1, 2, 3) | (1, 3, 2) | (1, 3)    |
-| (1, 2)    |   | (1, 2)    | ()        | (1, 3, 2) | (1, 3)    | (2, 3)    | (1, 2, 3) |
-| (2, 3)    |   | (2, 3)    | (1, 2, 3) | ()        | (1, 2)    | (1, 3)    | (1, 3, 2) |
-| (1, 2, 3) |   | (1, 2, 3) | (2, 3)    | (1, 3)    | (1, 3, 2) | ()        | (1, 2)    |
-| (1, 3, 2) |   | (1, 3, 2) | (1, 3)    | (1, 2)    | ()        | (1, 2, 3) | (2, 3)    |
-| (1, 3)    |   | (1, 3)    | (1, 3, 2) | (1, 2, 3) | (2, 3)    | (1, 2)    | ()        |
+| $\times$  | ()        | (1, 2)    | (2, 3)    | (1, 2, 3) | (1, 3, 2) | (1, 3)    |
+| --------- | --------- | --------- | --------- | --------- | --------- | --------- |
+| ()        | ()        | (1, 2)    | (2, 3)    | (1, 2, 3) | (1, 3, 2) | (1, 3)    |
+| (1, 2)    | (1, 2)    | ()        | (1, 3, 2) | (1, 3)    | (2, 3)    | (1, 2, 3) |
+| (2, 3)    | (2, 3)    | (1, 2, 3) | ()        | (1, 2)    | (1, 3)    | (1, 3, 2) |
+| (1, 2, 3) | (1, 2, 3) | (2, 3)    | (1, 3)    | (1, 3, 2) | ()        | (1, 2)    |
+| (1, 3, 2) | (1, 3, 2) | (1, 3)    | (1, 2)    | ()        | (1, 2, 3) | (2, 3)    |
+| (1, 3)    | (1, 3)    | (1, 3, 2) | (1, 2, 3) | (2, 3)    | (1, 2)    | ()        |
 
 $1776 + 4$ Lines.
 
@@ -1783,13 +1783,13 @@ I feel a bit tired from swapping around pieces of paper labeled $1$, $2$, and $3
 
 So now I'm going to swap out the swaps with letters of the alphabet, and remove the trivial first row and first column.
 
-| $\times$  |   | a  | b  | c  | d  | e  |
-| --------- | - | -- | -- | -- | -- | -- |
-| a         |   | id | d  | e  | b  | c  |
-| b         |   | c  | id | a  | e  | d  |
-| c         |   | b  | e  | d  | id | a  |
-| d         |   | e  | a  | id | c  | b  |
-| e         |   | d  | c  | b  | a  | id |
+| $\times$  | a  | b  | c  | d  | e  |
+| --------- | -- | -- | -- | -- | -- |
+| a         | id | d  | e  | b  | c  |
+| b         | c  | id | a  | e  | d  |
+| c         | b  | e  | d  | id | a  |
+| d         | e  | a  | id | c  | b  |
+| e         | d  | c  | b  | a  | id |
 
 Notice any patterns? Well, the first thing that jumped out to me a few months ago was the string of $id$s across the diagonal, interrupted by $c$ and $d$.
 
