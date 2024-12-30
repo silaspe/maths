@@ -1779,7 +1779,15 @@ Last time I tried this it was too much data and my dad still hasn't finished tha
 
 $1776 + 4$ Lines.
 
-I feel a bit tired from swapping around pieces of paper labeled $1$, $2$, and $3$, doing another swap, and looking at my table of what the answer should be based on the pieces of paper, and then repeating that $25$ times.
+Process: swap around pieces of paper labeled $1$, $2$, and $3$, doing another swap, and looking at the table of what the answer should be based on the pieces of paper (see table below), and then repeating that $25$ times.
+
+| $123$ | ()        |
+| ----- | --------- |
+| $213$ | (1, 2)    |
+| $132$ | (2, 3)    |
+| $312$ | (1, 2, 3) |
+| $231$ | (1, 3, 2) |
+| $321$ | (1, 3)    |
 
 So now I'm going to swap out the swaps with letters of the alphabet, and remove the trivial first row and first column.
 
