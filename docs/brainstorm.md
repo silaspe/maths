@@ -1791,13 +1791,17 @@ Process: swap around pieces of paper labeled $1$, $2$, and $3$, doing another sw
 
 So now I'm going to swap out the swaps with letters of the alphabet, and remove the trivial first row and first column.
 
-| $\times$  | a  | b  | c  | d  | e  |
-| --------- | -- | -- | -- | -- | -- |
-| a         | id | d  | e  | b  | c  |
-| b         | c  | id | a  | e  | d  |
-| c         | b  | e  | d  | id | a  |
-| d         | e  | a  | id | c  | b  |
-| e         | d  | c  | b  | a  | id |
+| $\times$  | $a$  | $b$  | $c$  | $d$  | $e$  |
+| --------- | ---- | ---- | ---- | ---- | ---- |
+| $a$       | $id$ | $d$  | $e$  | $b$  | $c$  |
+| $b$       | $c$  | $id$ | $a$  | $e$  | $d$  |
+| $c$       | $b$  | $e$  | $d$  | $id$ | $a$  |
+| $d$       | $e$  | $a$  | $id$ | $c$  | $b$  |
+| $e$       | $d$  | $c$  | $b$  | $a$  | $id$ |
+
+$1802$ Lines.
+
+If you were wondering, I'm not using $i$ for the identity, because in group theory, you use an $e$. But $e$ was already taken, so instead of using $i$, I used $id$, which is the standard category theory notation.
 
 Notice any patterns? Well, the first thing that jumped out to me a few months ago was the string of $id$s across the diagonal, interrupted by $c$ and $d$.
 
