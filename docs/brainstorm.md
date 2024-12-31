@@ -1806,5 +1806,3 @@ If you were wondering, I'm not using $i$ for the identity, because in group theo
 Notice any patterns? Well, the first thing that jumped out to me a few months ago was the string of $id$s across the diagonal, interrupted by $c$ and $d$.
 
 The reason why was because my first encounter with this group was an equivalent group $D_3$ (the dihedral group of order $3$ or the group of all rotations and reflections of a triangle that leave the corners looking the same), as opposed to $\text{Symm}_3$, which is the group of all ways to arrange three objects. What I noticed was that $a$, $b$, and $e$ were reflections, so of course doing them twice would result in the same thing.
-
-(Insert work here)
