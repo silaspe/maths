@@ -425,12 +425,16 @@ Decorating the tree
 
 .
 
-I wish you a merry christmas eve!.. Eve!
+I wish you a Merry Christmas eve!.. Eve!
 
 .
 
-I wish you a merry christmas eve!
+I wish you a Merry Christmas eve!
 
 .
 
-I wish you a merry christmas!..
+I wish you a Merry Christmas...
+
+.
+
+... And a happy New Year!
