@@ -1,4 +1,4 @@
-The equations below are the beginning of pages that may or may not get added to my website. All pages after Modular arithmetic and this one started here in the brainstorm page. I got (almost all of) these from copying things from a piece of paper (actually, just the one below) that had potential to become a digital page. And finally, the titles have a question mark if they are my best guess for the titles of the page, no question mark if I made the page and know the title, a question mark if I never published the page, but still want the world to see it, and extra small if is just one puzzle, but didn't fit anywhere and/or was worth making a dedicated page. Also, happy eclipse day! The eclipse was worth the $10$ (total) hours of driving.
+The equations below are the beginning of pages that may or may not get added to my website. All pages after Modular arithmetic and this one started here in the brainstorm page. I got (almost none of) these from copying things from a piece of paper (actually, just the one below) that had potential to become a digital page. And finally, the titles have a question mark if they are my best guess for the titles of the page, no question mark if I made the page and know the title, a question mark if I never published the page, but still want the world to see it, and extra small if is just one puzzle, but didn't fit anywhere and/or was worth making a dedicated page. Also, happy eclipse day! The eclipse was worth the $10$ (total) hours of driving.
 
 ### galois theory/field theory/group theory?
 
@@ -1806,3 +1806,13 @@ If you were wondering, I'm not using $i$ for the identity, because in group theo
 Notice any patterns? Well, the first thing that jumped out to me a few months ago was the string of $id$s across the diagonal, interrupted by $c$ and $d$.
 
 The reason why was because my first encounter with this group was an equivalent group $D_3$ (the dihedral group of order $3$ or the group of all rotations and reflections of a triangle that leave the corners looking the same), as opposed to $\text{Symm}_3$, which is the group of all ways to arrange three objects. What I noticed was that $a$, $b$, and $e$ were reflections, so of course doing them twice would result in the same thing.
+
+#### extreme SIR model
+
+$$ f_1 (0) = 1 $$
+
+$$ f_n (0) = 0 $$
+
+$$ \frac{df_1}{dt} = -f_2 (t) $$
+
+$$ \frac{df_n}{dt} = f_{n - 1} (t) - f_{n + 1} (t) $$
