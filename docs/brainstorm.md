@@ -1807,12 +1807,26 @@ Notice any patterns? Well, the first thing that jumped out to me a few months ag
 
 The reason why was because my first encounter with this group was an equivalent group $D_3$ (the dihedral group of order $3$ or the group of all rotations and reflections of a triangle that leave the corners looking the same), as opposed to $\text{Symm}_3$, which is the group of all ways to arrange three objects. What I noticed was that $a$, $b$, and $e$ were reflections, so of course doing them twice would result in the same thing.
 
+#### SIR model
+
+$$ \text{S} (0) = 1 $$
+
+$$ \frac{d \text{S}}{dt} = -ln(R_0) \text{I} (t) $$
+
+$$ \text{I} (0) = dt $$
+
+$$ \frac{d \text{I}}{dt} = (ln(R_0) - c) \text{I} (t) $$
+
+$$ \text{R} (0) = dt $$
+
+$$ \frac{d \text{R}}{dt} = c \text{I} (t) $$
+
 #### extreme SIR model
 
 $$ f_1 (0) = 1 $$
 
 $$ f_n (0) = 0 $$
 
-$$ \frac{df_1}{dt} = -f_2 (t) $$
+$$ \frac{df_1}{dt} = -x_1 f_1 (t) $$
 
-$$ \frac{df_n}{dt} = f_{n - 1} (t) - f_{n + 1} (t) $$
+$$ \frac{df_n}{dt} = x_{n - 1} f_{n - 1} (t) - x_n f_n (t) $$
