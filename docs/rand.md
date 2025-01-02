@@ -438,3 +438,17 @@ I wish you a Merry Christmas...
 .
 
 ... And a happy New Year!
+
+.
+
+New Year's goals I'll make this year:
+
+None
+
+New Year's goals I made last year:
+
+None
+
+New Year's goals I made last year of which I have completed:
+
+None, so technically all of them.
