@@ -379,6 +379,28 @@ Modes Ponens: If $p$ is true and $p$ implies $q$, then $q$ is true. It's like th
 
 $$ ∀S.∀x.∀y.x \in S ∧ (x \in S → y \in S) → y \in S $$
 
-Modes Tollens: If $q$ is false and $p$ implies $q$, then $q$ is false. It's like an implication turned on its head.
+Modes Tollens: If $q$ is false and $p$ implies $q$, then $p$ is false. It's like an implication turned on its head.
 
-$$ ∀S.∀x.∀y.x \in S ∧ (x \in S → y \in S) → y \in S $$
+$$ ∀S.∀x.∀y.¬y \in S ∧ (x \in S → y \in S) → ¬x \in S $$
+
+Hypothetical Syllogism: If $p$ implies $q$ and $q$ implies $r$, then $p$ implies $r$. i.e. you can chain implications.
+
+$$ ∀S.∀x.∀y.∀z.(x \in S → y \in S) ∧ (y \in S → z \in S) → (x \in S → z \in S) $$
+
+Disjunctive Syllogism: If $p$ is false and $p$ or $q$ is true, then $q$ is false. It has to be one or the other! (Or both, but that's irrelevant.)
+
+$$ ∀S.∀x.∀y.¬x \in S ∧ (x \in S ∨ y \in S) → y \in S $$
+
+Addition: If $p$ is true, then $p$ or $q$ is true. The more, the marrier!
+
+$$ ∀S.∀x.∀y.x \in S → (x \in S ∨ y \in S) $$
+
+Simplification: If $p$ and $q$ are true, then $p$ is true. They must both be true!
+
+$400$ Lines.
+
+$$ ∀S.∀x.∀y.(x \in S ∧ y \in S) → x \in S $$
+
+Conjunction: If $p$ is true and $q$ is true, then $p$ and $q$ are true. Litterally just $p$ implies $p$.
+
+$$ ∀S.∀x.∀y.(x \in S ∧ y \in S) → (x \in S ∧ y \in S) $$
