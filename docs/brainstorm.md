@@ -1817,7 +1817,7 @@ $$ \text{I} (0) = dt $$
 
 $$ \frac{d \text{I}}{dt} = (ln(R_0) - c) \text{I} (t) $$
 
-$$ \text{R} (0) = dt $$
+$$ \text{R} (0) = 0 $$
 
 $$ \frac{d \text{R}}{dt} = c \text{I} (t) $$
 
