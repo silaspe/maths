@@ -1833,7 +1833,7 @@ $$ \frac{df_n}{dt} = x_{n - 1} f_{n - 1} (t) - x_n f_n (t) $$
 
 $$ f_1 (t) = C e^{-x_1 t} $$
 
-$$ f_1 (0) = 1 = C e^{-x_1 0} = C e^{0} = 1C = C $$
+$$ f_1 (0) = 1 = C e^{-x_1 0} = C e^0 = 1C = C $$
 
 $$ C = 1 $$
 
@@ -1841,6 +1841,20 @@ $$ f_1 (t) = e^{-x_1 t} $$
 
 $$ f_2 (0) = 0 $$
 
-$$ \frac{df_2}{dt} = x_{1} f_{1} (t) - x_2 f_2 (t) $$
+$$ \frac{df_2}{dt} = x_1 f_{1} (t) - x_2 f_2 (t) $$
 
-$$ \frac{df_2}{dt} = x_{1} e^{-x_1 t} - x_2 f_2 (t) $$
+$$ \frac{df_2}{dt} = x_1 e^{-x_1 t} - x_2 f_2 (t) $$
+
+$$ \text{And after plugging this into a differential equation solver (shout out to Symbolab), I have a solution.} $$
+
+$$ f_2 (t) = \frac{x_1}{(x_2 - x_1) e^{x_1 t}} + \frac{C}{e^{x_2 t}} $$
+
+$$ f_2 (0) = 0 = \frac{x_1}{(x_2 - x_1) e^{x_1 0}} + \frac{C}{e^{x_2 0}} = \frac{x_1}{(x_2 - x_1) e^0} + \frac{C}{e^0} = \frac{x_1}{1 (x_2 - x_1)} + \frac{C}{1} = \frac{x_1}{x_2 - x_1} + C $$
+
+$$ \frac{x_1}{x_2 - x_1} + C = 0 $$
+
+$$ C = -\frac{x_1}{x_2 - x_1} $$
+
+$$ f_2 (t) = \frac{x_1}{(x_2 - x_1) e^{x_1 t}} - \frac{\frac{x_1}{x_2 - x_1}}{e^{x_2 t}} = \frac{x_1}{(x_2 - x_1) e^{x_1 t}} - \frac{x_1}{(x_2 - x_1) e^{x_2 t}} = \frac{x_1}{(x_2 - x_1)} e^{-x_1 t} - \frac{x_1}{(x_2 - x_1)} e^{-x_2 t} $$
+
+$$ f_2 (t) = \frac{x_1}{(x_2 - x_1)} (e^{-x_1 t} - e^{-x_2 t}) $$
