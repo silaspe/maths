@@ -1857,7 +1857,7 @@ $$ C = -\frac{x_1}{x_2 - x_1} $$
 
 $$ f_2 (t) = \frac{x_1}{(x_2 - x_1) e^{x_1 t}} - \frac{\frac{x_1}{x_2 - x_1}}{e^{x_2 t}} = \frac{x_1}{(x_2 - x_1) e^{x_1 t}} - \frac{x_1}{(x_2 - x_1) e^{x_2 t}} = \frac{x_1}{(x_2 - x_1)} e^{-x_1 t} - \frac{x_1}{(x_2 - x_1)} e^{-x_2 t} $$
 
-$$ f_2 (t) = \frac{x_1}{(x_2 - x_1)} (e^{-x_1 t} - e^{-x_2 t}) $
+$$ f_2 (t) = \frac{x_1}{(x_2 - x_1)} (e^{-x_1 t} - e^{-x_2 t}) $$
 
 #### $\text{Symm}_4$ attempt $2$?
 
