@@ -1919,4 +1919,6 @@ And then I'll use `ctrl + f` $24$ times to swap out the lists with letters.
 | $v$  | $v$  | $p$  | $t$  | $j$  | $n$  | $h$  | $w$  | $q$  | $r$  | $d$  | $l$  | $b$  | $u$  | $k$  | $s$  | $e$  | $f$  | $id$ | $o$  | $i$  | $m$  | $c$  | $g$  | $a$  |
 | $w$  | $w$  | $q$  | $u$  | $k$  | $o$  | $i$  | $v$  | $p$  | $s$  | $e$  | $m$  | $c$  | $t$  | $j$  | $r$  | $d$  | $g$  | $a$  | $n$  | $h$  | $l$  | $b$  | $f$  | $id$ |
 
-$1920$ Lines.
+$1922$ Lines.
+
+Notice any patterns? Me neither.
