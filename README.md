@@ -1,6 +1,6 @@
 # Silas Maths
 
-All derivations here are painstakingly authored by the $11$ yo Silas Pembroke, with a little help from his Dad.
+All derivations here are painstakingly authored by the $11$ yo Silas Pembroke, with a little help from his Dad. He was- I'm all ready tired of talking in the $3$rd person. I am a boy who loves mathematics and would like to share my math with the world.
 
 * [Calculus](derivatives.md) - derivative formulas from first principles:
 sum rule, chain rule, product rule, multiplication by constant, exponent rule, introduction to $e$, logarithmic derivative, power rule
@@ -39,4 +39,4 @@ PS you don't get a vector
 * [Projective geometry](projective_geometry.md) - an introduction to projective geometry where parallel lines cross, and there are two points that lie on every circle.
 * [Lambda calculus revisited](lcr.md) - (Lcr) I gave up on this one, but then I came back! It is still heavily based off of [this](https://www.youtube.com/watch?v=3VQ382QG-y4), [this](https://www.youtube.com/watch?v=pAnLQ9jwN-E), and even more heavily based off of [this](https://arxiv.org/pdf/0804.3434) (Warning: the videos are ~ $1 \text{H}$ long, and the paper has (exactly) $120$ pages).
 * [Linear algebra](linear.md) - A course about the more general mathematician's version of linear algebra, the study of vectors (like the strange man with a bowl cut and an orange suit) and matrices (like the fake AI generated simulated reality). But if you want some more intuition about how it works, each chapter will have a corresponding part in [this playlist](https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab)
-* [Group theory](group_theory.md) - A page about group theory, an attempt at a grand unified theory of mathematics. I'll be covering things like dihedral groups, symmetric groups, subgroups, cosets, isomorphism, and maybe even the $196,883$ dimentional monster.
+* [Group theory](group_theory.md) - A page about group theory, an attempt at a grand unified theory of mathematics. I'll be covering things like dihedral groups, symmetric groups, subgroups, cosets, isomorphism, and maybe even the $196,883$ dimensional monster.
