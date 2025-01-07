@@ -35,6 +35,7 @@ nav:
   - Projective geometry: projective_geometry.md
   - Lambda Calculus revisited: lcr.md
   - Linear algebra: linear.md
+  - Group theory: group_theory.md
 theme:
   name: material
   palette:
