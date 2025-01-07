@@ -1,12 +1,12 @@
-### group theory?
-
-I am finally making this page to celebrate the up upcoming $2000$th line on the brainstorm page.
+I am finally making this page to celebrate the upcoming $2000$th line on the brainstorm page.
 
 Here's some great videos about the subject that should get at least some credit: [Group theory, abstraction, and the 196,883-dimensional monster](https://www.youtube.com/watch?v=mH0oCDa74tE), [What is Group Theory? — Group Theory Ep. 1](https://www.youtube.com/watch?v=KufsL2VgELo) (Yes, I know, there's a part two. But I decided not to watch it because I was worried that if I watched it then I would just copy some of it), [This playlist by Another Roof](https://www.youtube.com/playlist?list=PLsdeQ7TnWVm_KATm7HjPoZ-q0UaQNjYrC) (I've only seen the third part).
 
 I'll start off with the textbook definition of a group:
 
 PS I don't have a group theory textbook.
+
+#### textbook definitions
 
 It is a set or collection of things together with a binary operation (e.g. addition or multiplication because they input two things and output one thing) (this binary operation is usually denoted with a composition circle (this thing: ∘) so that is the notation that I will use) such that...
 
@@ -28,7 +28,7 @@ For example, now the inverses rule makes sense because if you rotate clockwise t
 
 An example of a group is the integers with the operation of addition, but not the integers with an operation of multiplication because only $1$ and $-1$ have an inverse. The rational numbers under multiplication (excluding $0$) also form a group and so can the rationals under addition. Also of course, the real numbers with addition and multiplication (excluding $0$).
 
-#### proofs
+### proofs
 
 Proof number one: there's only one identity element.
 
@@ -84,4 +84,4 @@ Because these are both the inverse of $a^2$ and because of proof number four, th
 
 QED!
 
-#### subgroups & cosets
+### subgroups & cosets
