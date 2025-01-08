@@ -30,7 +30,7 @@ For example, now the inverses rule makes sense because if you rotate clockwise t
 
 An example of a group is the integers with the operation of addition.
 
-Adding two integers would result in another integer. Addition is associative and there is only one $a + b + c$. There is of course an identity element of which is zero. And the inverse was would of course be the negative.
+Adding two integers would result in another integer. Addition is associative and there is only one $a + b + c$. There is of course an identity element of which is zero. And the inverse would of course be the negative.
 
 Thus, it is a group! And the symbol is $ℤ$.
 
@@ -42,7 +42,7 @@ Thus this is not a group :(
 
 This is also why it's written $ℤ$ and not $ℤ^+$
 
-But this does hint that the rationals with the operation of multiplication form a group (as long as you exclude zero because it dosen't have an inverse), and that is correct!
+But this does hint that the rationals with the operation of multiplication form a group (as long as you exclude zero because it doesn't have an inverse), and that is correct!
 
 And the symbol is $ℚ^\times$.
 
@@ -151,7 +151,7 @@ But notice, the odd integers don't form a group because of the closure axiom, Ad
 
 ##### notation
 
-But there are better ways to form and notate subgroups then to just guess and check. For example, the rotations can be formed by repeatedly applying the $120$° rotation. And an example of a subgroup of a modular group is the $0$, $3$, $6$ group within $ℤ_9$ (which is isomorphic to $ℤ_3$, but will get to isomorphism later).
+But there are better ways to form and notate subgroups than to just guess and check. For example, the rotations can be formed by repeatedly applying the $120$° rotation. And an example of a subgroup of a modular group is the $0$, $3$, $6$ group within $ℤ_9$ (which is isomorphic to $ℤ_3$, but will get to isomorphism later).
 
 Something these all have in common is that they are formed by starting at the identity and then checking everything that is formed by repeatedly ∘ing with a thing.
 
@@ -159,13 +159,13 @@ There is a notation for this: $⟨a⟩$ represents the sets of all powers of $a$
 
 The system is closed because a power of $a$ ∘ a power of $a$ is a power of $a$.
 
-And this is indeed a group even for finite groups. Because if it's a finite group then repeatedly operating a on it should eventually go through all of the elements and loop back around to itself. So the one before $a$ has to be the identity.
+And this is indeed a group even for finite groups. Because if it's a finite group then repeatedly operating $a$ on it should eventually go through all of the elements and loop back around to itself. So the one before $a$ has to be the identity.
 
 Also, if $e = a^8$, then the inverse of $a^n$ is just $a^{8 - n}$.
 
 I know you might be thinking: why does it have to loop back around to the identity? What if $a^n$ were equal to $a$? Well, then ∘ing both sides by the inverse of $a$, you would get $a^8$ ∘ $a^{-1}$, which is of course equal to $a^7$. However, on the right of the equation, you get $a$ ∘ $a^{-1}$ which is of course the identity. So then $a^7$ would be the identity.
 
-However, this argument doesn't necessarily work for integers as the group is infinately large, and $⟨2⟩$ would only result in $2$, $4$, $6$, $8$, and so on, and not all of the even integers.
+However, this argument doesn't necessarily work for integers as the group is infinitely large, and $⟨2⟩$ would only result in $2$, $4$, $6$, $8$, and so on, and not all of the even integers.
 
 Just going to say: this is still valid notation even if it isn't a group.
 
@@ -187,11 +187,11 @@ Also, because of notation like $⟨a⟩$ ∘ $e$, subgroups are a type of coset.
 
 Also, within the dihedral group, the reflections are cosets. The reason why is because if you do a reflection then a rotation, then it just rotates the reflection line.
 
-You can do the same thing the other way around with the identity and a flip with the shift being a rotation, and you get another case of perfect symmetry of a subgroup and it's corresponding cosets perfectly filling op the group. I feel like this is building up to something big!
+You can do the same thing the other way around with the identity and a flip with the shift being a rotation, and you get another case of perfect symmetry of a subgroup and its corresponding cosets perfectly filling up the group. I feel like this is building up to something big!
 
 #### Lagrange's theorem
 
-Lagrange's therom (or at least something equivalent to it) states that if you pick a subgroup, then every element of the group will be covered once and only once by that subgroup and it's cosets.
+Lagrange's theorem (or at least something equivalent to it) states that if you pick a subgroup, then every element of the group will be covered once and only once by that subgroup and its cosets.
 
 Let's say that the group has $16$ elements and that the elements of the subgroup are $e$, $a$, $b$, and $c$.
 
@@ -203,7 +203,7 @@ You can take this as either a subgroup or a proof that everything in the group i
 
 Now, we have elements: $e$, $a$, $b$, $c$, $x$, $x$ ∘ $a$, $x$ ∘ $b$, and $x$ ∘ $c$
 
-Also, now I would like to convince you that the cosets is of course the same size.
+Also, now I would like to convince you that the cosets are of course the same size.
 
 Because if the code set is bigger than there must have been an extra term you ∘ by to get to it.
 
@@ -213,7 +213,7 @@ But, you might still be thinking: what if the cosets overlap? Well, this is very
 
 Because of the inverse property for the subgroup, $a^{-1}$ is also within the subgroup. And because of the closure property for the subgroup, $b$ ∘ $a^{-1}$ is in the subgroup.
 
-Thus, $x$ must be within the subgroup. And shifting by something within the subgroup doesn't really change anything, so subgroup and cosets can't overlap.
+Thus, $x$ must be within the subgroup. And shifting by something within the subgroup doesn't really change anything, so subgroups and cosets can't overlap.
 
 However, you can technically define $x$ ∘ $a$ as $(x$ ∘ $y^{-1})$ ∘ $(y$ ∘ $a)$, so you can convince yourself that they can't overlap.
 
@@ -225,7 +225,7 @@ For any group $G$ and subgroup $H$, the size of $G$ is divisible by the size of 
 
 This theorem is also known as Lagrange's theorem (Which Lagrange knew nothing about).
 
-We've been building up to this for the entire chapter! We have seen that the reflections and the rotations are both of size $n$! We have seen that the $0$, $3$, $6$ group is of size $3$ and $ℤ_9$ is of size $9$! We... actually have seen actually no other examples for this because this only works for finite groups.
+We've been building up to this for the entire chapter! We have seen that the reflections and the rotations are both of size $n$! We have seen that the $0$, $3$, $6$ group is of size $3$ and $ℤ_9$ is of size $9$! We... actually have seen no other examples for this because this only works for finite groups.
 
 Here's one way to think about it: if the size of a group is a prime number (like $7$), then the only possible size is of subgroups are of size $1$ (which is clearly just the set containing the identity (yes, it is a group)) and the whole thing itself. So if you take any term $a$ in the group and you keep ∘ing by it, then you will eventually form a subgroup.
 
