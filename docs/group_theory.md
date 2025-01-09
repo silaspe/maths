@@ -237,7 +237,7 @@ Then we realize that every single group of which its size is prime number $p$, t
 
 ### isomorphism
 
-First, let's just parse this term "isomorphic" (by the way, isomorphic and homeomorphic mean the same thing. But isomorphic is used in group theory and category theory, while homeomorphic is used in topology) two things are isomorphic if they are related via homeomorphism (that's a direct quote from ChatGPT). homeo means same, and morphic means what you think it means. So homeomorphic means you can morph one into the other and they still look the same (as you do in topology, and it's kind of the same thing in group theory) and a homeomorphism is a method of doing just that.
+First, let's just parse this term "isomorphic" (by the way, isomorphic and homomorphic mean the same thing. But isomorphic is used in group theory and category theory, while homeomorphic is used in topology) two things are isomorphic if they are related via homeomorphism (that's a direct quote from ChatGPT). homo means the same, and morphic means what you think it means. So homeomorphic means you can morph one into the other and they still look the same (as you do in topology, and it's kind of the same thing in group theory) and a homeomorphism is a method of doing just that.
 
 Long story short, two groups are isomorphic when they have the same general structure.
 
@@ -263,7 +263,7 @@ $$ ∀a, b \in G. \varphi (a \cdot b) = \varphi (a) * \varphi (b) $$
 
 (If you pick $a$ and $b$ in $G$, then $\varphi (a \cdot b) = \varphi (a) * \varphi (b)$)
 
-It shouldn't be too hard to convince yourself that these two are the same. $\varphi (a)$ is $E$, $\varphi (b)$ is $f$, $a \cdot b$ is $c$, $\varphi (x)$ is the corrasponding term in $H$ to the term $x$ in $G$, and then, if you substitute those in, you get $\varphi (c) = E * f$.
+It shouldn't be too hard to convince yourself that these two are the same. $\varphi (a)$ is $E$, $\varphi (b)$ is $f$, $a \cdot b$ is $c$, $\varphi (x)$ is the corresponding term in $H$ to the term $x$ in $G$, and then, if you substitute those in, you get $\varphi (c) = E * f$.
 
 And that's actually a Silas original definition, intuition, and example! (Well, apart from the ChatGPT part.)
 
@@ -279,4 +279,4 @@ $$ e^{x + y} = e^x e^y $$
 
 Thus, $ℝ^+ \cong ℝ^\times$.
 
-Okay, now I'm going to watch the video by Nemean.
+Okay, now I'm going to watch the [video by Nemean](https://youtu.be/VZiLpYC0t5E).
