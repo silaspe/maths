@@ -86,7 +86,7 @@ Every element has an inverse. So, by definition, the inverse has an inverse.
 
 Let's operate all of these together and see what happens.
 
-$$ a \text{∘} a^{-1} \text{∘} (a^{-1})^{-1} $$
+$$ a ∘ a^{-1} ∘ (a^{-1})^{-1} $$
 
 This should of course equal $a$ because $a^{-1}$ times its inverse should cancel out. But also this should equal $(a^{-1})^{-1}$ because $a$ and its inverse should cancel out. Thus, because they are both equal to the same thing, they themselves must be equal.
 
@@ -99,7 +99,7 @@ The term $a^{-1}$ ∘ $a$ can also be simplified. Because $a$ is equal to $(a^{-
 
 $100$ Lines.
 
-$$ a^{-1} \text{∘} a = a^{-1} \text{∘} (a^{-1})^{-1} = e $$
+$$ a^{-1} ∘ a = a^{-1} ∘ (a^{-1})^{-1} = e $$
 
 QED!
 
@@ -109,7 +109,7 @@ This one uses the same general strategy as proof number one. Let's assume that t
 
 Let's see what happens when you ∘ both sides on the left by $a^{-1}_2$.
 
-$$ a^{-1}_2 \text{∘} a \text{∘} a^{-1}_1 = a^{-1}_2 \text{∘} e $$
+$$ a^{-1}_2 ∘ a ∘ a^{-1}_1 = a^{-1}_2 ∘ e $$
 
 Then $a^{-1}_2$ and $a$ would cancel out resulting in $a^{-1}_1$ on the left. But on the other side, the identity element cancels out resulting in $a^{-1}_2$. Thus, because they are both equal to the same thing, they themselves must be equal.
 
@@ -117,9 +117,9 @@ QED!
 
 #### Proof number five: $(a^2)^{-1} = (a^{-1})^2$ and they can both be denoted as $a^{-2}$.
 
-$$ a^2 \text{∘} (a^2)^{-1} = e $$
+$$ a^2 ∘ (a^2)^{-1} = e $$
 
-$$ a^2 \text{\text{∘}} (a^{-1})^2 = a \text{∘} a \text{∘} a^{-1} \text{∘} a^{-1} = a \text{∘} a^{-1} = e $$
+$$ a^2 ∘ (a^{-1})^2 = a ∘ a ∘ a^{-1} ∘ a^{-1} = a ∘ a^{-1} = e $$
 
 Because these are both the inverse of $a^2$ and because of proof number four, they must both be the same.
 
@@ -148,8 +148,6 @@ And yeah, I think that that's pretty intuitive of a definition, you can take jus
 Some examples of a subgroup are: the even integers for $ℤ$, the integers for $ℚ^+$, just the rotations from the dihedral groups (Which by the way are just the modular groups), or if the base is composite then the dihedral group from any of its factors, or the same thing for the modular group.
 
 But notice, the odd integers don't form a group because of the closure axiom, Adding two odd integers forms an even integer.
-
-##### notation
 
 But there are better ways to form and notate subgroups than to just guess and check. For example, the rotations can be formed by repeatedly applying the $120$° rotation. And an example of a subgroup of a modular group is the $0$, $3$, $6$ group within $ℤ_9$ (which is isomorphic to $ℤ_3$, but will get to isomorphism later).
 
@@ -238,3 +236,47 @@ Then what if we just label $e$ as zero, $a$ as one, $a^2$ as 2, and so on, also 
 Then we realize that every single group of which its size is prime number $p$, the group is actually just $ℤ_p$ and disguise!
 
 ### isomorphism
+
+First, let's just parse this term "isomorphic" (by the way, isomorphic and homeomorphic mean the same thing. But isomorphic is used in group theory and category theory, while homeomorphic is used in topology) two things are isomorphic if they are related via homeomorphism (that's a direct quote from ChatGPT). homeo means same, and morphic means what you think it means. So homeomorphic means you can morph one into the other and they still look the same (as you do in topology, and it's kind of the same thing in group theory) and a homeomorphism is a method of doing just that.
+
+Long story short, two groups are isomorphic when they have the same general structure.
+
+I'll take the example of $\text{V}_4$ (what I called the $2x2$ sudoku group (long story), then the rock paper scissors group, then it's formal name), then there's an identity element, if you take two non-identity ones that are themselves distinct and you ∘ them, you get the third one, and if you take two of the same one and you ∘ them, you get the identity.
+
+If a group $G$ has the same structure, then we write:
+
+$$ G \cong \text{V}_4 $$
+
+($G$ is isomorphic to $\text{V}_4$)
+
+Now, how do we formally define this "isomorphism"? Well, I have a definition, except it's kind of long. It is:
+
+If you have groups $G$ and $H$ and $G$ has operation $\cdot$ while $H$ has operation $*$, then they are isomorphic if you can find an isomorphism (which is a type of one to one correspondence) between them. But, it has to do the following: if you pick $a$ and $b$ that are within $G$, then if $a \cdot b$ is equal to $c$, then with the corresponding $E$ ($e$ was taken) and $f$ in $H$, you get that $E * f$ is the corresponding term to $c$.
+
+Okay, that definition was terrible. Here's a definition that was given to me by ChatGPT:
+
+$$ \varphi : G → H $$
+
+(A mapping $\varphi$ from $G$ to $H$)
+
+$$ ∀a, b \in G. \varphi (a \cdot b) = \varphi (a) * \varphi (b) $$
+
+(If you pick $a$ and $b$ in $G$, then $\varphi (a \cdot b) = \varphi (a) * \varphi (b)$)
+
+It shouldn't be too hard to convince yourself that these two are the same. $\varphi (a)$ is $E$, $\varphi (b)$ is $f$, $a \cdot b$ is $c$, $\varphi (x)$ is the corrasponding term in $H$ to the term $x$ in $G$, and then, if you substitute those in, you get $\varphi (c) = E * f$.
+
+And that's actually a Silas original definition, intuition, and example! (Well, apart from the ChatGPT part.)
+
+Now, let's look at another example of isomorphism: the real numbers with the operation of addition ($ℝ^+$), and the real numbers with the operation of multiplication (excluding zero) ($ℝ^\times$) (This example was found in a three blue and brown video about group theory, except I don't remember which one. Just search "three blue brown group theory").
+
+If we're trying to find an isomorphism between $ℝ^+$ and $ℝ^\times$, then what function would work?
+
+$$ f(x + y) = f(x)f(y) $$
+
+Does this equation look familiar to anyone? This function $f$ not only exists, but it's an exponential function!
+
+$$ e^{x + y} = e^x e^y $$
+
+Thus, $ℝ^+ \cong ℝ^\times$.
+
+Okay, now I'm going to watch the video by Nemean.
