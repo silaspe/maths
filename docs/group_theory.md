@@ -235,9 +235,11 @@ Then what if we just label $e$ as zero, $a$ as one, $a^2$ as 2, and so on, also 
 
 Then we realize that every single group of which its size is prime number $p$, the group is actually just $ℤ_p$ and disguise!
 
-### isomorphism
+### isomorphic groups and homomorphisms
 
-First, let's just parse this term "isomorphic" (by the way, isomorphic and homomorphic mean the same thing. But isomorphic is used in group theory and category theory, while homeomorphic is used in topology) two things are isomorphic if they are related via homeomorphism (that's a direct quote from ChatGPT). homo means the same, and morphic means what you think it means. So homeomorphic means you can morph one into the other and they still look the same (as you do in topology, and it's kind of the same thing in group theory) and a homeomorphism is a method of doing just that.
+#### isomorphic groups
+
+First, let's just parse this term "isomorphic" (by the way, I think isomorphic and homomorphic mean the same thing. But isomorphic is used in group theory and category theory, while homeomorphic is used in topology) two things are isomorphic if they are related via homeomorphism (that's a direct quote from ChatGPT). homo means the same, and morphic means what you think it means. So homeomorphic means you can morph one into the other and they still look the same (as you do in topology, and it's kind of the same thing in group theory) and a homeomorphism is a method of doing just that.
 
 Long story short, two groups are isomorphic when they have the same general structure.
 
@@ -259,7 +261,7 @@ $$ \varphi : G → H $$
 
 (A mapping $\varphi$ from $G$ to $H$)
 
-$$ ∀a, b \in G. \varphi (a \cdot b) = \varphi (a) * \varphi (b) $$
+$$ \varphi (a \cdot b) = \varphi (a) * \varphi (b) $$
 
 (If you pick $a$ and $b$ in $G$, then $\varphi (a \cdot b) = \varphi (a) * \varphi (b)$)
 
@@ -280,3 +282,141 @@ $$ e^{x + y} = e^x e^y $$
 Thus, $ℝ^+ \cong ℝ^\times$.
 
 Okay, now I'm going to watch the [video by Nemean](https://youtu.be/VZiLpYC0t5E).
+
+#### homomorphisms
+
+I got $9$ minutes and $46$ seconds into the video and I already have so many ideas.
+
+First, I got the terminology wrong. ChatGPT didn't misspeak when it said "two things are isomorphic if they're related via homomorphism".
+
+But let's explore this idea of a homomorphism more. First, it might only take a few elements to define the homomorphism. Kind of like how a linear transformation only needs the two basis vectors to determine what it is for all outputs, in group theory, this ($\varphi (a$ ∘ $b) = \varphi (a)$ ∘ $\varphi (b)$) relation of the homomorphism acts in kind of the same way, only needing a few outputs to define the whole thing. (In fact, I think that linear algebra is part of abstract algebra which group theory is a part of.)
+
+Also homomorphisms can go between the groups of different sizes, but I don't think that that means that they're isomorphic because they don't feel the same, they aren't bijections, they're surjections.
+
+Here's an example: if I want to map from $ℤ_6$ to $ℤ_3$, I only need one output, which is $\varphi (1)$. Let me explain.
+
+$$ \varphi (1) = 1 $$
+
+$$ \varphi (2) = \varphi (1 \cdot 1) = \varphi (1) * \varphi (1) = 1 * 1 = 2 $$
+
+$300$ Lines.
+
+$$ \varphi (2) = 2 $$
+
+$$ \varphi (3) = \varphi (2 \cdot 1) = \varphi (2) * \varphi (1) = 2 * 1 = 0 $$
+
+$$ \varphi (3) = 0 $$
+
+$$ \varphi (4) = \varphi (3 \cdot 1) = \varphi (3) * \varphi (1) = 0 * 1 = 1 $$
+
+$$ \varphi (4) = 1 $$
+
+$$ \varphi (5) = \varphi (4 \cdot 1) = \varphi (4) * \varphi (1) = 1 * 1 = 2 $$
+
+$$ \varphi (5) = 2 $$
+
+$$ \varphi (0) = \varphi (5 \cdot 1) = \varphi (5) * \varphi (1) = 2 * 1 = 0 $$
+
+$$ \varphi (0) = 0 $$
+
+If you know that $\cdot$ loops around every six and $*$ loops around every three, this should make sense.
+
+More importantly, we just derived what all of the outputs should be for a given input using only one example.
+
+##### parity
+
+By the way, I came up with pretty much this entire sub-subchapter at the ice skating rink today.
+
+We can find more examples of homomorphism. For example, a homomorphism between $ℤ$ and $ℤ_2$.
+
+$ℤ_2$ is a small group (in fact, the second smallest possible group), one containing only two elements, one where if you operate the non-identity element (that will henceforth be called $a$) with itself, you get the identity element.
+
+$a$ to the power of any number $n$ is $a$ if $n$ is odd and the identity elements if $n$ is even. This can capture the idea of even or odd-ness, a.k.a. parody. So we can define the map $\varphi$ as just $a$ raised to the power of the input number.
+
+No we get an important fact I would rather show than tell:
+
+$$ \varphi (n + k) = \varphi (n) ∘ \varphi (k) $$
+
+What it was saying is that the parody of $n + k$ is determined by the parody of $n$ and the parody of $k$ in exactly the way you'd expect. Even plus even is even, even plus odd is odd, odd plus even is odd, and odd plus odd is even. The same way how ∘ works in $ℤ_2$: $e$ ∘ $e = e$, $e$ ∘ $a = a$, $a$ ∘ $e = a$, and $a$ ∘ $a = e$.
+
+But there are more examples of a homomorphism from a group to $ℤ_2$ (a.k.a. a parody homomorphism).
+
+Case in point: this one time I was talking to ChatGPT about all of the subgroups of $S_4$ (which is the group of all of the ways to arrange four things) (the reason why was because my code was so inefficient that after waiting for a solid $30$ seconds, it only had the trivial group because it had to loop through every single combination of the $24$ inputs which is very slow).
+
+The results given to me by ChatGPT were the things I expected: the trivial group, variations of $ℤ_2$, variations of $ℤ_4$, even the group $V_4$ which was a pleasant surprise, and the group $D_4$ (which by the way ChatGPT called the dihedral group of order $8$).
+
+But there was one that I didn't expect (but in hindsight it makes sense): $A_4$, A group described by three blue and brown as permutations of four things that preserve a certain parody.
+
+This does kind of make sense as you could define a homomorphism $\varphi$ from the group $S_4$ to the group $ℤ_2$. And if you plug in the numbers...
+
+$$ \varphi (p ∘ q) = \varphi (p) ∘ \varphi (q) $$
+
+Suppose that both $p$ and $q$ have even parody. Then even parity ∘ even parity would of course be even parody. Thus, $p$ ∘ $q$ has even parody. So, this system is completely closed, and hence, this group has a name: $A_4$.
+
+By the way, the parody is if it takes an even or odd amount of $2$-swaps to get to it from the identity.
+
+Also by the way, there's a great [mathologer video about the parity or permutations](https://www.youtube.com/watch?v=w0mxdo5ur_A).
+
+Now that I think about it, this should mean that there's a general theorem. The theorem is as follows:
+
+##### theorem
+
+If you have a mapping $\varphi$ from a group $G$ to a group $H$, then all of the elements where the output of $\varphi$ is the identity element in $H$, those elements themselves form a subgroup of $G$.
+
+I actually just came up with this theorem while I was writing this, and I'm going to ask ChatGPT if this is a well-known theorem.
+
+The answer is of course yes, and the theorem is known as the Kernel theorem as the set of all elements where the output is the identity is known as the kernel of $\varphi$.
+
+ChatGPT also provided a sketch of a proof:
+
+1. Closure. I've already done this proof, but I'll say it again.
+
+$$ a, b \in \text{ker} (\varphi) $$
+
+$$ \varphi (a) = \varphi (b) = e $$
+
+$$ \varphi (a \cdot b) = \varphi (a) * \varphi (b) = e * e = e $$
+
+$$ \varphi (a \cdot b) = e $$
+
+$$ a \cdot b \in \text{ker} (\varphi) $$
+
+2. Associativity. This one is a given as a subgroup has the same operation as the original, and thus, you don't need to prove that it is associative.
+
+3. Identity. This one is a proof by contradiction strategy. First, let's assume that $\varphi (e) \ne e$
+
+$$ \varphi (a \cdot e) = \varphi (a) * \varphi (e) = e * \text{not } e = \text{not } e $$
+
+$$ a \cdot e = e $$
+
+$$ \varphi (a) \ne e $$
+
+Contradiction!
+
+4. Inverses. As there is only one inverse for a given term, I'll have to prove that the one inverse is within $\text{ker} (\varphi)$
+
+$$ \varphi (a) = \varphi (a) $$
+
+$400$ lines.
+
+$$ \varphi (a \cdot a) = \varphi (a) * \varphi (a) $$
+
+$$ \varphi (a \cdot a \cdot a) = \varphi (a) * \varphi (a) * \varphi (a) $$
+
+$$ \vdots $$
+
+$$ \varphi (a \cdot a \cdot a \cdot \dots \cdot a) = \varphi (a) * \varphi (a) * \varphi (a) * \dots * \varphi (a) $$
+
+$$ \varphi (a^n) = \varphi (a)^n $$
+
+Assuming that $G$ is finite, I can plug $-1$ into this equation.
+
+$$ \varphi (a^{-1}) = (\varphi (a))^{-1} = e^{-1} = e $$
+
+$$ \varphi (a^{-1}) = e $$
+
+$$ a^{-1} \in \text{ker} (\varphi) $$
+
+$420$ Lines. (I'm a kid, can you blame me?)
+
+This completes the proof.
