@@ -289,17 +289,19 @@ I got $9$ minutes and $46$ seconds into the video and I already have so many ide
 
 First, I got the terminology wrong. ChatGPT didn't misspeak when it said "two things are isomorphic if they're related via homomorphism".
 
-But let's explore this idea of a homomorphism more. First, it might only take a few elements to define the homomorphism. Kind of like how a linear transformation only needs the two basis vectors to determine what it is for all outputs, in group theory, this ($\varphi (a$ ∘ $b) = \varphi (a)$ ∘ $\varphi (b)$) relation of the homomorphism acts in kind of the same way, only needing a few outputs to define the whole thing. (In fact, I think that linear algebra is part of abstract algebra which group theory is a part of.)
+But let's explore this idea of a homomorphism more. First, it might only take a few elements to define the homomorphism. Kind of like how a linear transformation only needs the two basis vectors to determine what it is for all outputs.
 
-Also homomorphisms can go between the groups of different sizes, but I don't think that that means that they're isomorphic because they don't feel the same, they aren't bijections, they're surjections.
+In group theory, this ($\varphi (a$ ∘ $b) = \varphi (a)$ ∘ $\varphi (b)$) relation of the homomorphism acts in kind of the same way, only needing a few outputs to define the whole thing. (In fact, I think that linear algebra is part of abstract algebra, of which group theory is a part of.)
+
+Also, homomorphisms can go between groups of different sizes, but I don't think that that means that they're isomorphic because they don't feel the same, they aren't bijections, they're surjections.
 
 Here's an example: if I want to map from $ℤ_6$ to $ℤ_3$, I only need one output, which is $\varphi (1)$. Let me explain.
+
+$300$ Lines.
 
 $$ \varphi (1) = 1 $$
 
 $$ \varphi (2) = \varphi (1 \cdot 1) = \varphi (1) * \varphi (1) = 1 * 1 = 2 $$
-
-$300$ Lines.
 
 $$ \varphi (2) = 2 $$
 
@@ -331,31 +333,31 @@ We can find more examples of homomorphism. For example, a homomorphism between $
 
 $ℤ_2$ is a small group (in fact, the second smallest possible group), one containing only two elements, one where if you operate the non-identity element (that will henceforth be called $a$) with itself, you get the identity element.
 
-$a$ to the power of any number $n$ is $a$ if $n$ is odd and the identity elements if $n$ is even. This can capture the idea of even or odd-ness, a.k.a. parody. So we can define the map $\varphi$ as just $a$ raised to the power of the input number.
+$a$ to the power of any number $n$ is $a$ if $n$ is odd and the identity elements if $n$ is even. This can capture the idea of even or odd-ness, a.k.a. parity. So we can define the map $\varphi$ as just $a$ raised to the power of the input number.
 
-No we get an important fact I would rather show than tell:
+No we get an important fact that I would rather show than tell:
 
 $$ \varphi (n + k) = \varphi (n) ∘ \varphi (k) $$
 
-What it was saying is that the parody of $n + k$ is determined by the parody of $n$ and the parody of $k$ in exactly the way you'd expect. Even plus even is even, even plus odd is odd, odd plus even is odd, and odd plus odd is even. The same way how ∘ works in $ℤ_2$: $e$ ∘ $e = e$, $e$ ∘ $a = a$, $a$ ∘ $e = a$, and $a$ ∘ $a = e$.
+What it was saying is that the parity of $n + k$ is determined by the parity of $n$ and the parity of $k$ in exactly the way you'd expect. Even plus even is even, even plus odd is odd, odd plus even is odd, and odd plus odd is even. The same way how ∘ works in $ℤ_2$: $e$ ∘ $e = e$, $e$ ∘ $a = a$, $a$ ∘ $e = a$, and $a$ ∘ $a = e$.
 
-But there are more examples of a homomorphism from a group to $ℤ_2$ (a.k.a. a parody homomorphism).
+But there are more examples of a homomorphism from a group to $ℤ_2$ (a.k.a. a parity homomorphism).
 
-Case in point: this one time I was talking to ChatGPT about all of the subgroups of $S_4$ (which is the group of all of the ways to arrange four things) (the reason why was because my code was so inefficient that after waiting for a solid $30$ seconds, it only had the trivial group because it had to loop through every single combination of the $24$ inputs which is very slow).
+Case in point: this one time I was talking to ChatGPT about all of the subgroups of $\text{S}_4$ (which is the group of all of the ways to arrange four things) (the reason why was because my code was so inefficient that after waiting for a solid $30$ seconds, it only had the trivial group because it had to loop through every single combination of the $24$ inputs which is very slow).
 
-The results given to me by ChatGPT were the things I expected: the trivial group, variations of $ℤ_2$, variations of $ℤ_4$, even the group $V_4$ which was a pleasant surprise, and the group $D_4$ (which by the way ChatGPT called the dihedral group of order $8$).
+The results given to me by ChatGPT were the things I expected: the trivial group, variations of $ℤ_2$, variations of $ℤ_3$, variations of $ℤ_4$, even the group $\text{V}_4$ which was a pleasant surprise, and the group $\text{D}_4$ (which by the way ChatGPT called the dihedral group of order $8$).
 
-But there was one that I didn't expect (but in hindsight it makes sense): $A_4$, A group described by three blue and brown as permutations of four things that preserve a certain parody.
+But there was one that I didn't expect (but in hindsight it makes sense): $\text{A}_4$, A group described by three blue one brown as permutations of four things that preserve a certain parity.
 
-This does kind of make sense as you could define a homomorphism $\varphi$ from the group $S_4$ to the group $ℤ_2$. And if you plug in the numbers...
+This does kind of make sense as you could define a homomorphism $\varphi$ from the group $\text{S}_4$ to the group $ℤ_2$. And if you plug in the numbers...
 
 $$ \varphi (p ∘ q) = \varphi (p) ∘ \varphi (q) $$
 
-Suppose that both $p$ and $q$ have even parody. Then even parity ∘ even parity would of course be even parody. Thus, $p$ ∘ $q$ has even parody. So, this system is completely closed, and hence, this group has a name: $A_4$.
+Suppose that both $p$ and $q$ have even parity. Then even parity ∘ even parity would of course be even parity. Thus, $p$ ∘ $q$ has even parity. So, this system is completely closed, and hence, this group has a name: $\text{A}_4$.
 
-By the way, the parody is if it takes an even or odd amount of $2$-swaps to get to it from the identity.
+By the way, the parity is if it takes an even or odd amount of $2$-swaps to get to it from the identity.
 
-Also by the way, there's a great [mathologer video about the parity or permutations](https://www.youtube.com/watch?v=w0mxdo5ur_A).
+Also by the way, there's a great [mathologer video about the parity of permutations](https://www.youtube.com/watch?v=w0mxdo5ur_A).
 
 Now that I think about it, this should mean that there's a general theorem. The theorem is as follows:
 
@@ -369,7 +371,7 @@ The answer is of course yes, and the theorem is known as the Kernel theorem as t
 
 ChatGPT also provided a sketch of a proof:
 
-1. Closure. I've already done this proof, but I'll say it again.
+$1$. Closure. I've already done this proof, but I'll say it again.
 
 $$ a, b \in \text{ker} (\varphi) $$
 
@@ -381,9 +383,9 @@ $$ \varphi (a \cdot b) = e $$
 
 $$ a \cdot b \in \text{ker} (\varphi) $$
 
-2. Associativity. This one is a given as a subgroup has the same operation as the original, and thus, you don't need to prove that it is associative.
+$2$. Associativity. This one is a given as a subgroup has the same operation as the original, and thus, you don't need to prove that it is associative.
 
-3. Identity. This one is a proof by contradiction strategy. First, let's assume that $\varphi (e) \ne e$
+$3$. Identity. This one uses a proof by contradiction strategy. First, let's assume that $\varphi (e) \ne e$
 
 $$ \varphi (a \cdot e) = \varphi (a) * \varphi (e) = e * \text{not } e = \text{not } e $$
 
@@ -393,11 +395,11 @@ $$ \varphi (a) \ne e $$
 
 Contradiction!
 
-4. Inverses. As there is only one inverse for a given term, I'll have to prove that the one inverse is within $\text{ker} (\varphi)$
-
-$$ \varphi (a) = \varphi (a) $$
+$4$. Inverses. As there is only one inverse for a given term, I'll have to prove that the one inverse is within $\text{ker} (\varphi)$
 
 $400$ lines.
+
+$$ \varphi (a) = \varphi (a) $$
 
 $$ \varphi (a \cdot a) = \varphi (a) * \varphi (a) $$
 
@@ -415,8 +417,8 @@ $$ \varphi (a^{-1}) = (\varphi (a))^{-1} = e^{-1} = e $$
 
 $$ \varphi (a^{-1}) = e $$
 
-$$ a^{-1} \in \text{ker} (\varphi) $$
-
 $420$ Lines. (I'm a kid, can you blame me?)
+
+$$ a^{-1} \in \text{ker} (\varphi) $$
 
 This completes the proof.
