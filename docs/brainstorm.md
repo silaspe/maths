@@ -1764,7 +1764,7 @@ And coupled with the results that there is no threshold for one box (i.e. the th
 
 So, the answer to the original question for $n = 10$ is: If the first one is more than about $0.849$, then keep it, if not, then pass it. And if the second one is more than about $0.836$, then keep it, if not, then pass it. And if the third one is more than about $0.82$, then keep it, if not, then pass it. And if the fourth one is more than about $0.8$, then keep it, if not, then pass it. And if the fifth one is more than about $0.775$, then keep it, if not, then pass it. And if the sixth one is more than about $0.741$, then keep it, if not, then pass it. And if the seventh one is more than about $0.695$, then keep it, if not, then pass it. And if the eighth one is more than $0.625$, then keep it, if not, then pass it. And if the nineth one is more than $\frac{1}{2}$, then keep it, if not, then pass it.
 
-#### $\text{Symm}_3$?
+#### $\text{Symm}_3$
 
 Last time I tried this it was too much data and my dad still hasn't finished that code. So I'm going to make a multiplication table of a more manageable size, then find all of its symmetric beauty.
 
@@ -1859,7 +1859,7 @@ $$ f_2 (t) = \frac{x_1}{(x_2 - x_1) e^{x_1 t}} - \frac{\frac{x_1}{x_2 - x_1}}{e^
 
 $$ f_2 (t) = \frac{x_1}{(x_2 - x_1)} (e^{-x_1 t} - e^{-x_2 t}) $$
 
-#### $\text{Symm}_4$ attempt $2$?
+#### $\text{Symm}_4$ attempt $2$
 
 Status update: my dad still hasn't finished the code so I wrote my own code. The original output is:
 
