@@ -422,3 +422,13 @@ $420$ Lines. (I'm a kid, can you blame me?)
 $$ a^{-1} \in \text{ker} (\varphi) $$
 
 This completes the proof.
+
+I also found in the video a simple reproof that $\varphi (e) = e$:
+
+$$ \varphi (a \cdot e) = \varphi (a) * \varphi (e) $$
+
+$$ \varphi (a \cdot e) = \varphi (a) $$
+
+$$ \varphi (a) = \varphi (a) * \varphi (e) $$
+
+And as there's only one identity element, this completes the proof.
