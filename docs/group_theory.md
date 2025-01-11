@@ -444,3 +444,5 @@ $$ \varphi (a \cdot a^{-1}) = \varphi (e) = e $$
 $$ \varphi (a) * \varphi (a^{-1}) = e $$
 
 And as there's only one inverse element, this completes the proof.
+
+You know the thing I said about how homomorphisms sometimes mapping to smaller groups? Well, I got the terminology wrong again, and ChatGPT got the terminology wrong. If the homomorphism maps from from one group to another group where they're the same size, then it's called an isomorphism.
