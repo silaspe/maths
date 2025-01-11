@@ -353,9 +353,11 @@ This does kind of make sense as you could define a homomorphism $\varphi$ from t
 
 $$ \varphi (p ∘ q) = \varphi (p) ∘ \varphi (q) $$
 
-Suppose that both $p$ and $q$ have even parity. Then even parity ∘ even parity would of course be even parity. Thus, $p$ ∘ $q$ has even parity. So, this system is completely closed, and hence, this group has a name: $\text{A}_4$.
+Suppose that both $p$ and $q$ have even parity. Then even parity ∘ even parity would of course be even parity. Thus, $p$ ∘ $q$ has even parity (this is explained better in the next sub-subchapter). So, this system is completely closed, and hence, this group has a name: $\text{A}_4$.
 
 By the way, the parity is if it takes an even or odd amount of $2$-swaps to get to it from the identity.
+
+Also by the way, Along with the whole group $\text{S}_4$, this completes ChatGPT's list.
 
 Also by the way, there's a great [mathologer video about the parity of permutations](https://www.youtube.com/watch?v=w0mxdo5ur_A).
 
@@ -445,4 +447,24 @@ $$ \varphi (a) * \varphi (a^{-1}) = e $$
 
 And as there's only one inverse element, this completes the proof.
 
-You know the thing I said about how homomorphisms sometimes mapping to smaller groups? Well, I got the terminology wrong again, and ChatGPT got the terminology wrong. If the homomorphism maps from from one group to another group where they're the same size, then it's called an isomorphism.
+#### isomorphisms
+
+You know the thing I said about how homomorphisms sometimes mapping to smaller groups? Well, I got the terminology wrong again, and ChatGPT got the terminology wrong. If the homomorphism maps from one group to another group where they're the same size, then it's called an isomorphism.
+
+By the way, if there's an isomorphism $\varphi$ from a group $G$ to a group $H$, then there's an isomorphism $\varphi^{-1}$ from $H$ to $G$
+
+He also said [here](https://youtu.be/VZiLpYC0t5E?t=1329s) that it was crazy that if you use multiplication for the modular groups instead of addition, then $ℤ^{\times}_p = ℤ_{p - 1}$, and I already knew this fact because one: computer, two: modular arithmetic $10$ months ago.
+
+He also said [here](https://youtu.be/VZiLpYC0t5E?t=1349s) that there is no pattern, but it's literally just an exponential function.
+
+#### automorphisms
+
+An automorphism is an isomorphism from a group to itself, and I remember calling this one a self-homomorphism.
+
+Here's an example: if you swap any of the non-identity elements in $\text{V}_4$, it's still the same.
+
+Also, right now we stumble upon a sort of meta group theory (which to me is more similar to category theory): if you have a given group, then all of its automorphisms form a group with the operation of composition.
+
+Now that I'm done with pretty much the entire page, I can finally copy over work that I did on the brainstorm page that never made it into the story.
+
+### Some of my favorite groups
