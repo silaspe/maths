@@ -432,3 +432,15 @@ $$ \varphi (a \cdot e) = \varphi (a) $$
 $$ \varphi (a) = \varphi (a) * \varphi (e) $$
 
 And as there's only one identity element, this completes the proof.
+
+I also found a proof in the video about the inverse rule:
+
+$$ a \in \text{ker} (\varphi) $$
+
+$$ \varphi (a \cdot a^{-1}) = \varphi (a) * \varphi (a^{-1}) $$
+
+$$ \varphi (a \cdot a^{-1}) = \varphi (e) = e $$
+
+$$ \varphi (a) * \varphi (a^{-1}) = e $$
+
+And as there's only one inverse element, this completes the proof.
