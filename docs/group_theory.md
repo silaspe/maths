@@ -367,7 +367,7 @@ If you have a mapping $\varphi$ from a group $G$ to a group $H$, then all of the
 
 I actually just came up with this theorem while I was writing this, and I'm going to ask ChatGPT if this is a well-known theorem.
 
-The answer is of course yes, and the theorem is known as the Kernel theorem as the set of all elements where the output is the identity is known as the kernel of $\varphi$.
+The answer is of course yes, and the theorem is known as the Kernel theorem. The reason why is because the set of all elements where the output is the identity is known as the kernel of $\varphi$.
 
 ChatGPT also provided a sketch of a proof:
 
