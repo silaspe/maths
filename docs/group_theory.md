@@ -469,7 +469,7 @@ Now that I'm done with pretty much the entire page, I can finally copy over work
 
 ### finite groups
 
-Because the story of the pages already complete and you should already understand the concepts, this is where I'll put my group theory work from now on.
+Because the story of the pages is already complete and you should already understand the concepts, this is where I'll put my group theory work from now on.
 
 When I talk about all of these group categories, it really makes you think: what are all of the groups? (Or at least finite groups.) I will answer this question with at least the first few groups (ranked by size), and once I reach one of my favorites, I'll talk about it.
 
@@ -483,7 +483,7 @@ So, let's start with...
 
 #### groups of size $0$
 
-As the set not having any elements doen't have an identity element, this breaks the identity rule.
+As the set not having any elements doesn't have an identity element, this breaks the identity rule.
 
 By the way, the empty group is closed as not having elements means it's impossible to ∘ two of them to get outside the group.
 
@@ -607,7 +607,7 @@ QED!
 
 Because $\text{V}_4$ is my favorite group (and because this is the best time to talk about it), I would like to tell you why I gave it the nickname "the $2x2$ sudoku group":
 
-One day many years ago I played a game of two by two sudoku with a completely blank board, I went through each term within a square, then throughout all four of the squares, always picking the smallest number that would still follow the rules. You quickly run into a contradiction with a board of size $3$, but when I did it with a board of size $2$, I always got the same pattern. With any square there was a repeating pattern and it was the same for each row and each column. The pattern was $1$ $2$ $3$ $4$, $3$ $4$ $1$ $2$, $2$ $1$ $4$ $3$, and $4$ $3$ $2$ $1$. Time went by, and then I eventually asked "do all of these swaps for my group?" The answer is yes, and that is the story of why I always called it "the $2x2$ sudoku group"
+One day many years ago I played a game of two by two sudoku with a completely blank board. I went through each term within a square, then throughout all four of the squares, always picking the smallest number that would still follow the rules. You quickly run into a contradiction with a board of size $3$, but when I did it with a board of size $2$, I always got the same pattern. With any square there was a repeating pattern and it was the same for each row and each column. The pattern was $1$ $2$ $3$ $4$, $3$ $4$ $1$ $2$, $2$ $1$ $4$ $3$, and $4$ $3$ $2$ $1$. Time went by, and then I eventually asked "do all of these swaps for my group?" The answer is yes, and that is the story of why I always called it "the $2x2$ sudoku group"
 
 By the way, $\text{V}_4$ is the only group that uses the letter $\text{V}$ because it's just that special.
 
@@ -642,4 +642,4 @@ What I realized was that I saw the same pattern again in all of the rows: in the
 
 So of course ∘ing on the left by $b$, then by $a$ is just ∘ing on the left by their product. Thus, these swaps are isomorphic to the original.
 
-I also plan to make a T-shirt about group theory as I did for [Modular Arithmeic](https://silaspe.github.io/maths/mod.html) and [The Lambda Calculus](https://silaspe.github.io/maths/lambda.html), and this is just a thing for that! 
+I also plan to make a T-shirt about group theory as I did for [Modular Arithmeic](https://silaspe.github.io/maths/mod.html) and [The Lambda Calculus](https://silaspe.github.io/maths/lambda.html), and this is just the thing for that!
