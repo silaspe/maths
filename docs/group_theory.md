@@ -68,19 +68,19 @@ There's also the integers with the operation of addition, and it loops back arou
 
 ### proofs
 
-#### Proof number one: there's only one identity element.
+#### Proof number $1$: there's only $1$ identity element.
 
-This proof uses a proof by contradiction strategy. Let's say that there are more than one identity element. So I'm going to choose the first two being $e_1$ and $e_2$.
+This proof uses a proof by contradiction strategy. Let's say that there are more than $1$ identity element. So I'm going to choose the first two being $e_1$ and $e_2$.
 
 Now, I ask of you, what is $e_1$ ∘ $e_2$? Because on the one hand, it should equal $e_2$ because $e_1$ times anything is that thing. But on the other hand, it should equal $e_1$ because anything times $e_2$ is that thing.
 
-Thus, because they are both equal to $e_1$ ∘ $e_2$, they must themselves be equal. Thus there is only one identity element.
+Thus, because they are both equal to $e_1$ ∘ $e_2$, they must themselves be equal. Thus there is only $1$ identity element.
 
-And you can keep going with this logic, doing the same thing with the next one, and the next one, until there is only one left.
+And you can keep going with this logic, doing the same thing with the next one, and the next one, until there is only $1$ left.
 
 QED!
 
-#### Proof number two: The inverse of the inverse is the original.
+#### Proof number $2$: The inverse of the inverse is the original.
 
 Every element has an inverse. So, by definition, the inverse has an inverse.
 
@@ -92,7 +92,7 @@ This should of course equal $a$ because $a^{-1}$ times its inverse should cancel
 
 QED!
 
-#### Proof number three: The inverse can cancel out from either side.
+#### Proof number $3$: The inverse can cancel out from either side.
 
 The term $a^{-1}$ ∘ $a$ can also be simplified. Because $a$ is equal to $(a^{-1})^{-1}$, I can cancel $a^{-1}$ with its inverse, resulting in the identity.
 
@@ -103,9 +103,9 @@ $$ a^{-1} ∘ a = a^{-1} ∘ (a^{-1})^{-1} = e $$
 
 QED!
 
-#### Proof number four: There's only one inverse for a given term.
+#### Proof number $4$: There's only $1$ inverse for a given term.
 
-This one uses the same general strategy as proof number one. Let's assume that there were multiple inverses, denoted $a^{-1}_1$ and $a^{-1}_2$. Then of course, $a$ ∘ $a^{-1}_1 = e$.
+This one uses the same general strategy as proof number $1$. Let's assume that there were multiple inverses, denoted $a^{-1}_1$ and $a^{-1}_2$. Then of course, $a$ ∘ $a^{-1}_1 = e$.
 
 Let's see what happens when you ∘ both sides on the left by $a^{-1}_2$.
 
@@ -115,7 +115,7 @@ Then $a^{-1}_2$ and $a$ would cancel out resulting in $a^{-1}_1$ on the left. Bu
 
 QED!
 
-#### Proof number five: $(a^2)^{-1} = (a^{-1})^2$ and they can both be denoted as $a^{-2}$.
+#### Proof number $5$: $(a^2)^{-1} = (a^{-1})^2$ and they can both be denoted as $a^{-2}$.
 
 $$ a^2 ∘ (a^2)^{-1} = e $$
 
@@ -125,9 +125,9 @@ Because these are both the inverse of $a^2$ and because of proof number four, th
 
 QED!
 
-Using the example of the integers, we have just proved that: there's only one zero, $-(-3) = 3$, $3 + (-3) = (-3) + 3 = 0$, and there's only one $-3$
+Using the example of the integers, we have just proved that: there's only $1$ zero, $-(-3) = 3$, $3 + (-3) = (-3) + 3 = 0$, and there's only $1$ $-3$
 
-At the same time, we have just proved that: there's only one one, $\frac{1}{\frac{1}{3}} = 3$, $3 \frac{1}{3} = \frac{1}{3} 3 = 1$, and there's only one $\frac{1}{3}$
+At the same time, we have just proved that: there's only one $1$, $\frac{1}{\frac{1}{3}} = 3$, $3 \frac{1}{3} = \frac{1}{3} 3 = 1$, and there's only one $\frac{1}{3}$
 
 They're all connected! They're all secretly the same! Group theory (or, more generally abstract algebra) really is the grand unified theory of algebraic systems! 
 
@@ -195,9 +195,9 @@ Let's say that the group has $16$ elements and that the elements of the subgroup
 
 If I have any element $x$, then it is not too hard to cover it with a subgroup. Just shift it over by $x$, and the corresponding term to the identity element will cover it as $x$ ∘ $e = x$.
 
-$200$ Lines.
+You can take this as either a subgroup or a proof that everything in the group is covered by at least one coset.
 
-You can take this as either a subgroup or a proof that everything in the group is covered by at least one coset
+$200$ Lines.
 
 Now, we have elements: $e$, $a$, $b$, $c$, $x$, $x$ ∘ $a$, $x$ ∘ $b$, and $x$ ∘ $c$
 
@@ -231,7 +231,7 @@ Except, the size of the subgroup is either $1$ or $7$, and if it's $1$, then cle
 
 But if it's anything else, then the size has to be $7$ as $a$, not being the identity, wouldn't have an identity element. And if it's of size $7$, that must be the whole group, so you can just label each term as $e$, $a$, $a^2$, $a^3$, $a^4$, $a^5$, and $a^6$.
 
-Then what if we just label $e$ as zero, $a$ as one, $a^2$ as 2, and so on, also ∘ as $+$.
+Then what if we just label $e$ as zero, $a$ as $1$, $a^2$ as 2, and so on, also ∘ as $+$.
 
 Then we realize that every single group of which its size is prime number $p$, the group is actually just $ℤ_p$ and disguise!
 
@@ -295,7 +295,7 @@ In group theory, this ($\varphi (a$ ∘ $b) = \varphi (a)$ ∘ $\varphi (b)$) re
 
 Also, homomorphisms can go between groups of different sizes, but I don't think that that means that they're isomorphic because they don't feel the same, they aren't bijections, they're surjections.
 
-Here's an example: if I want to map from $ℤ_6$ to $ℤ_3$, I only need one output, which is $\varphi (1)$. Let me explain.
+Here's an example: if I want to map from $ℤ_6$ to $ℤ_3$, I only need $1$ output, which is $\varphi (1)$. Let me explain.
 
 $300$ Lines.
 
@@ -323,7 +323,7 @@ $$ \varphi (0) = 0 $$
 
 If you know that $\cdot$ loops around every six and $*$ loops around every three, this should make sense.
 
-More importantly, we just derived what all of the outputs should be for a given input using only one example.
+More importantly, we just derived what all of the outputs should be for a given input using only $1$ example.
 
 ##### parity
 
@@ -347,7 +347,7 @@ Case in point: this one time I was talking to ChatGPT about all of the subgroups
 
 The results given to me by ChatGPT were the things I expected: the trivial group, variations of $ℤ_2$, variations of $ℤ_3$, variations of $ℤ_4$, even the group $\text{V}_4$ which was a pleasant surprise, and the group $\text{D}_4$ (which by the way ChatGPT called the dihedral group of order $8$).
 
-But there was one that I didn't expect (but in hindsight it makes sense): $\text{A}_4$, A group described by three blue one brown as permutations of four things that preserve a certain parity.
+But there was one that I didn't expect (but in hindsight it makes sense): $\text{A}_4$, A group described by $3$ blue $1$ brown as permutations of four things that preserve a certain parity.
 
 This does kind of make sense as you could define a homomorphism $\varphi$ from the group $\text{S}_4$ to the group $ℤ_2$. And if you plug in the numbers...
 
@@ -467,4 +467,179 @@ Also, right now we stumble upon a sort of meta group theory (which to me is more
 
 Now that I'm done with pretty much the entire page, I can finally copy over work that I did on the brainstorm page that never made it into the story.
 
-### Some of my favorite groups
+### finite groups
+
+Because the story of the pages already complete and you should already understand the concepts, this is where I'll put my group theory work from now on.
+
+When I talk about all of these group categories, it really makes you think: what are all of the groups? (Or at least finite groups.) I will answer this question with at least the first few groups (ranked by size), and once I reach one of my favorites, I'll talk about it.
+
+At every step of the way. there is of course the cyclic group of that size, which is when you can repeatedly ∘ by one term to go all the way around.
+
+These are kind of boring (at least to me).
+
+By the definition of a set (of which a group is a type of set), the amount of elements within it have to be a positive integer (including zero).
+
+So, let's start with...
+
+#### groups of size $0$
+
+As the set not having any elements doen't have an identity element, this breaks the identity rule.
+
+By the way, the empty group is closed as not having elements means it's impossible to ∘ two of them to get outside the group.
+
+It is associative, and I'll prove that to you by going through all of the possibilities:
+
+with all the elements, we need every element to have an inverse. But as there are no elements, we don't need to add extra inverses.
+
+But anyways, every group of size zero fumbles at the identity rule. Time for...
+
+#### groups of size $1$
+
+Of course, because of the identity rule, the one element has to be the identity element, and this is a group as:
+
+$1$. It is closed, as $e$ ∘ $e = e$
+
+$500$ Lines.
+
+$2$. It is associative, and I'll prove that to you by going through all of the possibilities: $(e$ ∘ $e)$ ∘ $e = e$ ∘ $e = e$. But also: $e$ ∘ $(e$ ∘ $e) = e$ ∘ $e = e$. Because they're both equal to the identity, they themselves must be equal, and because we have clearly exhausted all other possibilities, this group must have an associative operation.
+
+And yeah, that's kind of it, the group containing the identity is the only $1$ element group, and all other $1$ element groups are just isomorphic to it, with their own identity element and own operation.
+
+Time for...
+
+#### groups of size $2$
+
+As we have proved in the Lagrange's theorem subchapter, every group who sizes a prime number must be isomorphic to each other and to the corresponding cyclic group. Thus, the only group of size $2$ is $ℤ_2$, and as this is a cyclic group, I'll say that it's already proved that it is a group.
+
+I didn't really feel like doing this argument for the last subchapter.
+
+Everything I liked about this group was discussed in the parity sub-subchapter.
+
+And yeah, that's kind of it, $ℤ_2$ is the only $2$ element group, and all other $2$ element groups are just isomorphic to it, with their own identity element and own operation.
+
+Time for...
+
+#### groups of size $3$
+
+By the same logic there can only be one $3$ element group.
+
+I never really thought about this group too hard.
+
+And yeah, I'm kind of tired of repeatedly copying and pasting the same thing. But $ℤ_3$ is the only $3$ element group.
+
+Time for...
+
+#### groups of size $4$
+
+What I would like to prove to you is that the only $4$ element groups are $ℤ_4$ and $\text{V}_4$.
+
+By the way, I thought of (almost) this whole proof last night.
+
+Let's say you pick an element $a$ and you keep ∘ing by it until you form a subgroup. By Lagrange's theorem, the size of the subgroup is either $1$, $2$ or $4$.
+
+If it's $1$, you clearly just picked the identity element. If it's $4$, it's just the cyclic group, and the only other possibility is that it's $2$. If it is $2$, then $a$ must be its own inverse.
+
+Let's do the same with another term $b$. Once again, if the size is $1$, you clearly just picked the identity, and if the size is $4$, it's clearly just the cyclic group. (and this is the only part that I didn't figure out last night.) But this is still consistent as $b^2$ must equal $a$, then that term squared must have been the identity.
+
+Anyways, the point is that $b$ must be its own inverse if the group isn't just the cyclic group.
+
+Let's pick the final element $c$. You know the drill by now, so I won't go over it again.
+
+But what's worth noting is that  this subgroup can't be of size $4$, because if it was, then it would just be the cyclic group, but it can't be the cyclic group as the cyclic group only has one non-identity term that squares to the identity.
+
+Anyways we now know that any cyclic group with non-identity elements $a$, $b$, and $c$ has to have the following equality:
+
+$$ a^2 = b^2 = c^2 = e $$
+
+The proof is almost complete, I just have to ask the question: what is $a$ ∘ $b$? It can't be the identity because of the following, it can't be $a$ because of the following after that, it can't be $b$ because of the one after that, so the only possibility is that it is $c$. he same argument works even when you swap out $a$ and $b$ for something else.
+
+$$ a ∘ b = e $$
+
+$$ b ∘ b = e $$
+
+$$ a ∘ b = b ∘ b $$
+
+$$ a ∘ b ∘ b^{-1} = b ∘ b ∘ b^{-1} $$
+
+$$ a ∘ e = b ∘ e $$
+
+$$ a = b $$
+
+.
+
+$$ a ∘ b = a $$
+
+$$ a ∘ e = a $$
+
+$$ a ∘ b = a ∘ e $$
+
+$$ a^{-1} ∘ a ∘ b = a^{-1} ∘ a ∘ e $$
+
+$$ e ∘ b = e ∘ e $$
+
+$$ b = e $$
+
+.
+
+$$ a ∘ b = b $$
+
+$$ e ∘ b = b $$
+
+$$ a ∘ b = e ∘ b $$
+
+$$ a ∘ b ∘ b^{-1} = e ∘ b ∘ b^{-1} $$
+
+$$ a ∘ e = e ∘ e $$
+
+$$ a = e $$
+
+.
+
+Note: you can swap $a$ and $b$ in this argument, meaning that the operation is also commutative.
+
+$600$ Lines.
+
+Now, let's look at the evidence we have for what this non-cyclic group is: it's a $4$ element group where every term squared is the identity, it has a commutative operation, and multiplying two non-identity terms results in the third.
+
+The only group that fits this description is $\text{V}_4$.
+
+QED!
+
+Because $\text{V}_4$ is my favorite group (and because this is the best time to talk about it), I would like to tell you why I gave it the nickname "the $2x2$ sudoku group":
+
+One day many years ago I played a game of two by two sudoku with a completely blank board, I went through each term within a square, then throughout all four of the squares, always picking the smallest number that would still follow the rules. You quickly run into a contradiction with a board of size $3$, but when I did it with a board of size $2$, I always got the same pattern. With any square there was a repeating pattern and it was the same for each row and each column. The pattern was $1$ $2$ $3$ $4$, $3$ $4$ $1$ $2$, $2$ $1$ $4$ $3$, and $4$ $3$ $2$ $1$. Time went by, and then I eventually asked "do all of these swaps for my group?" The answer is yes, and that is the story of why I always called it "the $2x2$ sudoku group"
+
+By the way, $\text{V}_4$ is the only group that uses the letter $\text{V}$ because it's just that special.
+
+Also, $\text{V}_4$ is the first composite group. This is an actual definition that I just guessed one day well in a bath: $G \times H$ is a group where the elements of it are ordered pairs of things from $G$ and $H$. The operation is to just do it with each individual term.
+
+I just thought it would be cool for there to be a product of two groups, and then ChatGPT gave me a definition.
+
+If you're curious, $\text{V}_4$ is equal to $ℤ_2 \times ℤ_2$, kind of like how $4$ is the first composite number because it's equal to $2 \times 2$
+
+Time for...
+
+#### groups of size $5$
+
+By the same logic I used before, there can only be one $5$ element group.
+
+And I'll stop here. Here's my table:
+
+| group size | groups with that size |
+| ---------- | --------------------- |
+| $0$        |                       |
+| $1$        | $\{ e \}$             |
+| $2$        | $ℤ_2$                 |
+| $3$        | $ℤ_3$                 |
+| $4$        | $ℤ_4$, $\text{V}_4$   |
+| $5$        | $ℤ_5$                 |
+
+#### misc
+
+Also, because now is the best time to talk about it, I made a ∘ table, but instead of symbols, I used colors. I first had this idea while I was trying to visualize the group $\text{S}_4$, but I made one for the trivial group, one for $\text{D}_3$, one for $ℤ_2$, and one for $\text{V}_4$.
+
+What I realized was that I saw the same pattern again in all of the rows: in the right order, then swap the first two along with the second two, then you swap the first two with the second two, then you put everything in reverse. The idea of the swaps being isomorphic to the original group does kind of make sense as these swaps encapsulate the idea of ∘ing on the left by your thing.
+
+So of course ∘ing on the left by $b$, then by $a$ is just ∘ing on the left by their product. Thus, these swaps are isomorphic to the original.
+
+I also plan to make a T-shirt about group theory as I did for [Modular Arithmeic](https://silaspe.github.io/maths/mod.html) and [The Lambda Calculus](https://silaspe.github.io/maths/lambda.html), and this is just a thing for that! 
