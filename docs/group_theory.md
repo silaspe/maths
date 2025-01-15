@@ -665,3 +665,5 @@ On the left column is the first term with each color corresponding to a term. On
 By the way, the background color is black.
 
 It's the first idea that came to mind when I thought about how to display the underlying structure of a group that would be the same for all isomorphic groups.
+
+Also, this is the first time I've imported an image into my website.
