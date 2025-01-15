@@ -497,11 +497,19 @@ But anyways, every group of size zero fumbles at the identity rule. Time for...
 
 Of course, because of the identity rule, the one element has to be the identity element, and this is a group as:
 
-$1$. It is closed, as $e$ ∘ $e = e$
-
 $500$ Lines.
 
-$2$. It is associative, and I'll prove that to you by going through all of the possibilities: $(e$ ∘ $e)$ ∘ $e = e$ ∘ $e = e$. But also: $e$ ∘ $(e$ ∘ $e) = e$ ∘ $e = e$. Because they're both equal to the identity, they themselves must be equal, and because we have clearly exhausted all other possibilities, this group must have an associative operation.
+$1$. It is closed, as $e$ ∘ $e = e$
+
+$2$. It is associative, and I'll prove that to you by going through all of the possibilities: $(e$ ∘ $e)$ ∘ $e = e$ ∘ $e = e$. But also: $e$ ∘ $(e$ ∘ $e) = e$ ∘ $e = e$. Because they're both equal to the identity, they themselves must be equal, and because we have comprehensively gone through all possibilities, this group must have an associative operation.
+
+$3$. it obviously has an identity element
+
+$4$ inverses. I'll go through each term along with its inverse in the following table:
+
+| element | inverse |
+| ------- | ------- |
+| e       | e       |
 
 And yeah, that's kind of it, the group containing the identity is the only $1$ element group, and all other $1$ element groups are just isomorphic to it, with their own identity element and own operation.
 
@@ -509,19 +517,19 @@ Time for...
 
 #### groups of size $2$
 
-As we have proved in the Lagrange's theorem subchapter, every group who sizes a prime number must be isomorphic to each other and to the corresponding cyclic group. Thus, the only group of size $2$ is $ℤ_2$, and as this is a cyclic group, I'll say that it's already proved that it is a group.
+As we have proved in the Lagrange's theorem subchapter, every group whose size is a prime number must be isomorphic to each other and to the corresponding cyclic group. Thus, the only group of size $2$ is $ℤ_2$, and as this is a cyclic group, I'll say that it's already proved that it is a group.
 
 I didn't really feel like doing this argument for the last subchapter.
 
 Everything I liked about this group was discussed in the parity sub-subchapter.
 
-And yeah, that's kind of it, $ℤ_2$ is the only $2$ element group, and all other $2$ element groups are just isomorphic to it, with their own identity element and own operation.
+And yeah, that's kind of it, $ℤ_2$ is the only $2$ element group, and all other $2$ element groups are just isomorphic to it, with their own operation.
 
 Time for...
 
 #### groups of size $3$
 
-By the same logic there can only be one $3$ element group.
+By the same logic, there can only be one $3$ element group.
 
 I never really thought about this group too hard.
 
@@ -537,21 +545,21 @@ By the way, I thought of (almost) this whole proof last night.
 
 Let's say you pick an element $a$ and you keep ∘ing by it until you form a subgroup. By Lagrange's theorem, the size of the subgroup is either $1$, $2$ or $4$.
 
-If it's $1$, you clearly just picked the identity element. If it's $4$, it's just the cyclic group, and the only other possibility is that it's $2$. If it is $2$, then $a$ must be its own inverse.
+If it's $1$, you clearly just picked the identity element. If it's $4$, it's just the cyclic group, and the only other possibility is that it's $2$. If it is $2$, then $a^2$ must be $e$.
 
-Let's do the same with another term $b$. Once again, if the size is $1$, you clearly just picked the identity, and if the size is $4$, it's clearly just the cyclic group. (and this is the only part that I didn't figure out last night.) But this is still consistent as $b^2$ must equal $a$, then that term squared must have been the identity.
+Let's do the same with another term $b$. Once again, if the size is $1$, you clearly just picked the identity, and if the size is $4$, it's clearly just the cyclic group. (And this is the only part that I didn't figure out last night.) But this is still consistent as $b^2$ must equal $a$, then that term squared must have been the identity.
 
-Anyways, the point is that $b$ must be its own inverse if the group isn't just the cyclic group.
+Anyways, the point is that $a^2$ must be $e$ if the group isn't just the cyclic group.
 
 Let's pick the final element $c$. You know the drill by now, so I won't go over it again.
 
 But what's worth noting is that  this subgroup can't be of size $4$, because if it was, then it would just be the cyclic group, but it can't be the cyclic group as the cyclic group only has one non-identity term that squares to the identity.
 
-Anyways we now know that any cyclic group with non-identity elements $a$, $b$, and $c$ has to have the following equality:
+Anyways, we now know that any cyclic group with non-identity elements $a$, $b$, and $c$ has to have the following equality:
 
 $$ a^2 = b^2 = c^2 = e $$
 
-The proof is almost complete, I just have to ask the question: what is $a$ ∘ $b$? It can't be the identity because of the following, it can't be $a$ because of the following after that, it can't be $b$ because of the one after that, so the only possibility is that it is $c$. he same argument works even when you swap out $a$ and $b$ for something else.
+The proof is almost complete, I just have to ask the question: what is $a$ ∘ $b$? It can't be the identity because of the following, it can't be $a$ because of the following after that, it can't be $b$ because of the one after that, so the only possibility is that it is $c$. The same argument works even when you swap out $a$ and $b$ for something else.
 
 $$ a ∘ b = e $$
 
@@ -589,6 +597,8 @@ $$ a ∘ b = e ∘ b $$
 
 $$ a ∘ b ∘ b^{-1} = e ∘ b ∘ b^{-1} $$
 
+$600$ Lines.
+
 $$ a ∘ e = e ∘ e $$
 
 $$ a = e $$
@@ -597,9 +607,7 @@ $$ a = e $$
 
 Note: you can swap $a$ and $b$ in this argument, meaning that the operation is also commutative.
 
-$600$ Lines.
-
-Now, let's look at the evidence we have for what this non-cyclic group is: it's a $4$ element group where every term squared is the identity, it has a commutative operation, and multiplying two non-identity terms results in the third.
+Now, let's look at the evidence we have for what this non-cyclic group is: it's a $4$ element group where every term squared is the identity, it has a commutative operation, and ∘ing two non-identity terms results in the third.
 
 The only group that fits this description is $\text{V}_4$.
 
@@ -607,7 +615,7 @@ QED!
 
 Because $\text{V}_4$ is my favorite group (and because this is the best time to talk about it), I would like to tell you why I gave it the nickname "the $2x2$ sudoku group":
 
-One day many years ago I played a game of two by two sudoku with a completely blank board. I went through each term within a square, then throughout all four of the squares, always picking the smallest number that would still follow the rules. You quickly run into a contradiction with a board of size $3$, but when I did it with a board of size $2$, I always got the same pattern. With any square there was a repeating pattern and it was the same for each row and each column. The pattern was $1$ $2$ $3$ $4$, $3$ $4$ $1$ $2$, $2$ $1$ $4$ $3$, and $4$ $3$ $2$ $1$. Time went by, and then I eventually asked "do all of these swaps for my group?" The answer is yes, and that is the story of why I always called it "the $2x2$ sudoku group"
+One day many years ago I played a game of $2x2$ sudoku with a completely blank board. I went through each term within a square, then throughout all four of the squares, always picking the smallest number that would still follow the rules. You quickly run into a contradiction with a board of size $3$, but when I did it with a board of size $2$, I always got the same pattern. Within any square, there was a repeating pattern, and it was the same for each row and each column. The pattern was $1$ $2$ $3$ $4$, $3$ $4$ $1$ $2$, $2$ $1$ $4$ $3$, and $4$ $3$ $2$ $1$. Time went by, and then I eventually asked "do all of these swaps for my group?" The answer is yes, and that is the story of why I always called it "the $2x2$ sudoku group"
 
 By the way, $\text{V}_4$ is the only group that uses the letter $\text{V}$ because it's just that special.
 
@@ -636,10 +644,24 @@ And I'll stop here. Here's my table:
 
 #### misc
 
-Also, because now is the best time to talk about it, I made a ∘ table, but instead of symbols, I used colors. I first had this idea while I was trying to visualize the group $\text{S}_4$, but I made one for the trivial group, one for $\text{D}_3$, one for $ℤ_2$, and one for $\text{V}_4$.
+Also, because now is the best time to talk about it, I made a ∘ table, but instead of symbols, I used colors. I first had this idea while I was trying to visualize the group $\text{S}_4$, but I made some in MS paint. One for the trivial group, one for $\text{D}_3$, one for $ℤ_2$, and one for $\text{V}_4$.
 
 What I realized was that I saw the same pattern again in all of the rows: in the right order, then swap the first two along with the second two, then you swap the first two with the second two, then you put everything in reverse. The idea of the swaps being isomorphic to the original group does kind of make sense as these swaps encapsulate the idea of ∘ing on the left by your thing.
 
 So of course ∘ing on the left by $b$, then by $a$ is just ∘ing on the left by their product. Thus, these swaps are isomorphic to the original.
 
 I also plan to make a T-shirt about group theory as I did for [Modular Arithmeic](https://silaspe.github.io/maths/mod.html) and [The Lambda Calculus](https://silaspe.github.io/maths/lambda.html), and this is just the thing for that!
+
+If you were wondering, here's the diagrams:
+
+<img width="100" alt="{e}" src="https://github.com/user-attachments/assets/224327ac-1ec0-4ed3-aedf-7f156b8be228" />
+
+<img width="100" alt="z2 2" src="https://github.com/user-attachments/assets/aef0c8d7-4648-490a-b13f-de299e625f99" />
+
+<img width="100" alt="V4" src="https://github.com/user-attachments/assets/4418657f-32c7-490b-980f-22ea30dcd5da" />
+
+On the left column is the first term with each color corresponding to a term. On the top is the second term, and if you look at The corresponding pixel color to that row and that column, that can tell you what the product is.
+
+By the way, the background color is black.
+
+It's the first idea that came to mind when I thought about how to display the underlying structure of a group that would be the same for all isomorphic groups.
