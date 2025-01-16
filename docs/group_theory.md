@@ -20,7 +20,7 @@ $4$. Inverses: If you have $a$ in the group, then there is also $a^{-1}$ in the 
 
 Notice there is no point where I say that the operation is commutative (i.e. $a$ ∘ $b = b$ ∘ $a$). If it is commutative, it is also known as an Abelian group.
 
-Also by the way, it is common to notate $a$ ∘ $a$ ∘ $a$ ∘ $\dots$ ∘ and so on $n$ times as $a^n$
+Also by the way, it is common to notate $a$ ∘ $a$ ∘ $a$ ∘ ... and so on $n$ times as $a^n$
 
 A good way to think about what some groups actually are is as sets of symmetries. This is because these four rules are exactly what you would expect rotations and reflections to do with the operation of doing one after the other.
 
@@ -467,7 +467,9 @@ Also, right now we stumble upon a sort of meta group theory (which to me is more
 
 Now that I'm done with pretty much the entire page, I can finally copy over work that I did on the brainstorm page that never made it into the story.
 
-### finite groups
+### misc
+
+#### finite groups
 
 Because the story of the pages is already complete and you should already understand the concepts, this is where I'll put my group theory work from now on.
 
@@ -481,7 +483,7 @@ By the definition of a set (of which a group is a type of set), the amount of el
 
 So, let's start with...
 
-#### groups of size $0$
+##### groups of size $0$
 
 As the set not having any elements doesn't have an identity element, this breaks the identity rule.
 
@@ -493,7 +495,7 @@ with all the elements, we need every element to have an inverse. But as there ar
 
 But anyways, every group of size zero fumbles at the identity rule. Time for...
 
-#### groups of size $1$
+##### groups of size $1$
 
 Of course, because of the identity rule, the one element has to be the identity element, and this is a group as:
 
@@ -515,7 +517,7 @@ And yeah, that's kind of it, the group containing the identity is the only $1$ e
 
 Time for...
 
-#### groups of size $2$
+##### groups of size $2$
 
 As we have proved in the Lagrange's theorem subchapter, every group whose size is a prime number must be isomorphic to each other and to the corresponding cyclic group. Thus, the only group of size $2$ is $ℤ_2$, and as this is a cyclic group, I'll say that it's already proved that it is a group.
 
@@ -527,7 +529,7 @@ And yeah, that's kind of it, $ℤ_2$ is the only $2$ element group, and all othe
 
 Time for...
 
-#### groups of size $3$
+##### groups of size $3$
 
 By the same logic, there can only be one $3$ element group.
 
@@ -537,7 +539,7 @@ And yeah, I'm kind of tired of repeatedly copying and pasting the same thing. Bu
 
 Time for...
 
-#### groups of size $4$
+##### groups of size $4$
 
 What I would like to prove to you is that the only $4$ element groups are $ℤ_4$ and $\text{V}_4$.
 
@@ -595,9 +597,9 @@ $$ e ∘ b = b $$
 
 $$ a ∘ b = e ∘ b $$
 
-$$ a ∘ b ∘ b^{-1} = e ∘ b ∘ b^{-1} $$
-
 $600$ Lines.
+
+$$ a ∘ b ∘ b^{-1} = e ∘ b ∘ b^{-1} $$
 
 $$ a ∘ e = e ∘ e $$
 
@@ -627,7 +629,7 @@ If you're curious, $\text{V}_4$ is equal to $ℤ_2 \times ℤ_2$, kind of like h
 
 Time for...
 
-#### groups of size $5$
+##### groups of size $5$
 
 By the same logic I used before, there can only be one $5$ element group.
 
@@ -668,6 +670,8 @@ It's the first idea that came to mind when I thought about how to display the un
 
 Also, this is the first time I've imported an image into my website.
 
+#### $ℤ_2 \times ℤ_n$
+
 But being able to multiply modular groups does beg the question: what is $ℤ_2 \times ℤ_n$? Well, it's the group of ordered lists of either $0$ or $1$ in the first position, and any number $0$ to $n - 1$ in the second. The group has operations you can probably guess.
 
 Note: the part where I was talking about $\text{V}_4$ earlier and the text here were originally in the same area, so that's why I would ask this question.
@@ -680,24 +684,24 @@ $$ 0(1, 1) = (0, 0) $$
 
 $$ 1(1, 1) = (1, 1) $$
 
-$$ 2(1, 1) = (1, 1) ∘ (1, 1) = (1 ∘ 1, 1 ∘ 1) = (0, 2) $$
+$$ 2(1, 1) = (1, 1) + (1, 1) = (1 + 1, 1 + 1) = (0, 2) $$
 
-$$ 3(1, 1) = 2(1, 1) ∘ (1, 1) = (0, 2) ∘ (1, 1) = (0 ∘ 1, 2 ∘ 1) = (1, 0) $$
+$$ 3(1, 1) = 2(1, 1) + (1, 1) = (0, 2) + (1, 1) = (0 + 1, 2 + 1) = (1, 0) $$
 
-$$ 4(1, 1) = 3(1, 1) ∘ (1, 1) = (1, 0) ∘ (1, 1) = (1 ∘ 1, 0 ∘ 1) = (0, 1) $$
+$$ 4(1, 1) = 3(1, 1) + (1, 1) = (1, 0) + (1, 1) = (1 + 1, 0 + 1) = (0, 1) $$
 
-$$ 5(1, 1) = 4(1, 1) ∘ (1, 1) = (0, 1) ∘ (1, 1) = (0 ∘ 1, 1 ∘ 1) = (1, 2) $$
+$$ 5(1, 1) = 4(1, 1) + (1, 1) = (0, 1) + (1, 1) = (0 + 1, 1 + 1) = (1, 2) $$
 
-$$ 6(1, 1) = 5(1, 1) ∘ (1, 1) = (1, 2) ∘ (1, 1) = (1 ∘ 1, 2 ∘ 1) = (0, 0) $$
+$$ 6(1, 1) = 5(1, 1) + (1, 1) = (1, 2) + (1, 1) = (1 + 1, 2 + 1) = (0, 0) $$
 
 $$ (0, 0) = 0(1, 1) $$
+
+
+$700$ Lines. I remember when the code repo page and brainstorm page were competing over which one would get to $700$ first, in order to be declared the largest page on the website. The reason why is because those two pages specifically (also maybe they set theory pages) don't really ever get finished, because there's always more to do. Except this page, this page (which definitely has a clear well defined story) got there. It just shows you-, it just shows $\text{me}$ how much math $\text{I}$ can do when $\text{I}$ put my mind to something.
 
 $$ (0, 1) = 4(1, 1) $$
 
 $$ (0, 2) = 2(1, 1) $$
-
-
-$700$ Lines. I remember when the code repo page and brainstorm page were competing over which one would get to $700$ first, in order to be declared the largest page on the website. The reason why is because those two pages specifically (also maybe they set theory pages) don't really ever get finished, because there's always more to do. Except this page, this page (which definitely has a clear well defined story) got there. It just shows you-, it just shows $\text{me}$ how much math $\text{I}$ can do when $\text{I}$ put my mind to something.
 
 $$ (1, 0) = 3(1, 1) $$
 
@@ -713,25 +717,72 @@ $$ 0(1, 1) = (0, 0) $$
 
 $$ 1(1, 1) = (1, 1) $$
 
-$$ 2(1, 1) = (1, 1) ∘ (1, 1) = (1 ∘ 1, 1 ∘ 1) = (0, 2) $$
+$$ 2(1, 1) = (1, 1) + (1, 1) = (1 + 1, 1 + 1) = (0, 2) $$
 
-$$ 3(1, 1) = 2(1, 1) ∘ (1, 1) = (0, 2) ∘ (1, 1) = (0 ∘ 1, 2 ∘ 1) = (1, 2) $$
-
-$$ \vdots $$
-
-$$ n(1, 1) = (n - 1)(1, 1) ∘ (1, 1) = (0, n - 1) ∘ (1, 1) = (0 ∘ 1, (n - 1) ∘ 1) = (1, 0) $$
-
-$$ (n + 1)(1, 1) = n(1, 1) ∘ (1, 1) = (1, 0) ∘ (1, 1) = (1 ∘ 1, 0 ∘ 1) = (0, 1) $$
-
-$$ (n + 2)(1, 1) = (n + 1)(1, 1) ∘ (1, 1) = (0, 1) ∘ (1, 1) = (1 ∘ 1, 1 ∘ 1) = (1, 2) $$
-
-$$ (n + 3)(1, 1) = (n + 2)(1, 1) ∘ (1, 1) = (1, 2) ∘ (1, 1) = (1 ∘ 1, 2 ∘ 1) = (0, 3) $$
+$$ 3(1, 1) = 2(1, 1) + (1, 1) = (0, 2) + (1, 1) = (0 + 1, 2 + 1) = (1, 2) $$
 
 $$ \vdots $$
 
-$$ 2n(1, 1) = (2n - 1)(1, 1) ∘ (1, 1) = (1, 2n - 1) ∘ (1, 1) = (1 ∘ 1, (n - 1) ∘ 1) = (0, 0) $$
+$$ n(1, 1) = (n - 1)(1, 1) + (1, 1) = (0, n - 1) + (1, 1) = (0 + 1, (n - 1) + 1) = (1, 0) $$
+
+$$ (n + 1)(1, 1) = n(1, 1) + (1, 1) = (1, 0) + (1, 1) = (1 + 1, 0 + 1) = (0, 1) $$
+
+$$ (n + 2)(1, 1) = (n + 1)(1, 1) + (1, 1) = (0, 1) + (1, 1) = (1 + 1, 1 + 1) = (1, 2) $$
+
+$$ (n + 3)(1, 1) = (n + 2)(1, 1) + (1, 1) = (1, 2) + (1, 1) = (1 + 1, 2 + 1) = (0, 3) $$
+
+$$ \vdots $$
+
+$$ 2n(1, 1) = (2n - 1)(1, 1) + (1, 1) = (1, 2n - 1) + (1, 1) = (1 + 1, (n - 1) + 1) = (0, 0) $$
 
 $$ (x, y) = \Begin{bmatrix} x + y = 2k: y(1, 1) \\
 x + y = 2k + 1: (y + n)(1, 1) \\ \end{Bmatrix} $$
 
 $$ \varphi (n(1, 1)) = n $$
+
+#### finite groups part $2$
+
+Also, I asked ChatGPT to make a list of all of the groups of size $10$ and under, and it delivered.
+
+Also, now I can finally answer that asterisk:
+
+*This ChatGPT conversation was the one where it said that the answer was $ℤ_6$, except what it said was that the only groups of size $6$ are $ℤ_6$ and $\text{S}_3$ / $\text{D}_3$. But in $ℤ_6$, $0$, $2$, and $4$ cubed- times $3$ results in the identity. But also, in $ℤ_2 \times ℤ_3$, $(0, 0)$, $(0, 1)$, and $(0, 2)$ all cube to the identity. But also, $0$ and $2$ all square- times $2$ is the identity, while $(0, 0)$ and $(1, 0)$ do so as well. Also, in $\text{D}_3$, there are three things that square to the identity, while in $ℤ_2 \times ℤ_3$, there are only two. From all this, I concluded that $ℤ_2 \times ℤ_3 \cong ℤ_6$*
+
+*I actually only did the $3(0) = 3(2) = 3(4) = 0$ / $3(0, 0) = 3(0, 1) = 3(0, 2) = (0, 0)$ and $2(0) = 2(3) = 0$ / $2(0, 0) = 2(1, 0) = (0, 0)$ tests.
+
+Also, you're probably wondering about the ChatGPT thing, and here's the table!:
+
+| group size | groups with that size                                                             |
+| ---------- | --------------------------------------------------------------------------------- |
+| $0$        |                                                                                   |
+| $1$        | $\{ e \}$                                                                         |
+| $2$        | $ℤ_2$                                                                             |
+| $3$        | $ℤ_3$                                                                             |
+| $4$        | $ℤ_4$, $ℤ_2 \times ℤ_2$                                                           |
+| $5$        | $ℤ_5$                                                                             |
+| $6$        | $ℤ_6$, $\text{S}_3$                                                               |
+| $7$        | $ℤ_7$                                                                             |
+| $8$        | $ℤ_8$, $ℤ_4 \times ℤ_2$, $ℤ_2 \times ℤ_2 \times ℤ_2$, $\text{D}_4$, $\text{Q}_8$  |
+| $9$        | $ℤ_9$, $ℤ_3 \times ℤ_3$                                                           |
+| $10$       | $ℤ_{10}$, $\text{D}_5$                                                            |
+
+Now, I can see why people don't call $ℤ_2 \times ℤ_n$ by the shorter $\text{V}_{2n}$
+
+Also, you're probably wondering the same thing I was wondering at the time: what is $\text{Q}_8$? Answer: it's a group of eight quaternions being $1$, $-1$, $i$, $-i$, $j$, $-j$, $k$, and $-k$ with the operation of multiplication.
+
+I remember thinking one day at the playground $1.5$ or $2.5$ years ago that these eight are closed under multiplication, but I never really thought they would be a group.
+
+Also, here's the full multiplication table:
+
+| \times | $1$  | $-1$ | $i$  | $-i$ | $j$  | $-j$ | $k$  | $-k$ |
+| ------ | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
+| $1$    | $1$  | $-1$ | $i$  | $-i$ | $j$  | $-j$ | $k$  | $-k$ |
+| $-1$   | $-1$ | $1$  | $-i$ | $i$  | $-j$ | $j$  | $-k$ | $k$  |
+| $i$    | $i$  | $-i$ | $-1$ | $1$  | $k$  | $-k$ | $-j$ | $j$  |
+| $-i$   | $-i$ | $i$  | $1$  | $-1$ | $-k$ | $k$  | $j$  | $-j$ |
+| $j$    | $j$  | $-j$ | $-k$ | $k$  | $-1$ | $1$  | $i$  | $-i$ |
+| $-j$   | $-j$ | $j$  | $k$  | $-k$ | $1$  | $-1$ | $-i$ | $i$  |
+| $k$    | $k$  | $-k$ | $j$  | $-j$ | $-i$ | $i$  | $-1$ | $1$  |
+| $-k$   | $-k$ | $k$  | $-j$ | $j$  | $i$  | $-i$ | $1$  | $-1$ |
+
+$777 + 11$ Lines.
