@@ -697,7 +697,7 @@ $$ (0, 1) = 4(1, 1) $$
 $$ (0, 2) = 2(1, 1) $$
 
 
-$700$ Lines. I remember when the code repo page and brainstorm page were competing over which one to get to $700$ first, in order to be declared the largest page on the website. The reason why is because those two pages specifically (also maybe they set theory pages) don't really ever get finished, because there's always more to do. Except this page, this page (which definitely has a clear well defind story) got there. It just shows you-, it just shows $\text{me}$ how much math $\text{I}$ can do when $\text{I}$ put my mind to something.
+$700$ Lines. I remember when the code repo page and brainstorm page were competing over which one to get to $700$ first, in order to be declared the largest page on the website. The reason why is because those two pages specifically (also maybe they set theory pages) don't really ever get finished, because there's always more to do. Except this page, this page (which definitely has a clear well defined story) got there. It just shows you-, it just shows $\text{me}$ how much math $\text{I}$ can do when $\text{I}$ put my mind to something.
 
 $$ (1, 0) = 3(1, 1) $$
 
