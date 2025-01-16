@@ -667,3 +667,44 @@ By the way, the background color is black.
 It's the first idea that came to mind when I thought about how to display the underlying structure of a group that would be the same for all isomorphic groups.
 
 Also, this is the first time I've imported an image into my website.
+
+But being able to multiply modular groups does beg the: question what is $ℤ_2 \times ℤ_n$? Well, it's the group of ordered lists of either $0$ or $1$ in the first position, and any number $0$ to $n - 1$ in the second, the group having operations you can probably guess.
+
+Note: the part where I was talking about $\text{V}_4$ earlier and the text here were originally in the same area, so that's why I would ask this question.
+
+So, what is, for example, the group $ℤ_2 \times ℤ_3$? Last night I made a full multiplication table, but then I just asked ChatGPT, and the answer was surprisingly $ℤ_6$*. I was first thinking why this is the case, but as you can see below, they are perfectly isomorphic.
+
+Also, because the operation in the modular groups is similar to addition, I'm going to replace the multiplicationy notation with more additiony notation.
+
+$$ 0(1, 1) = (0, 0) $$
+
+$$ 1(1, 1) = (1, 1) $$
+
+$$ 2(1, 1) = (1, 1) + (1, 1) = (1 + 1, 1 + 1) = (0, 2) $$
+
+$$ 3(1, 1) = 2(1, 1) + (1, 1) = (0, 2) + (1, 1) = (0 + 1, 2 + 1) = (1, 0) $$
+
+$$ 4(1, 1) = 3(1, 1) + (1, 1) = (1, 0) + (1, 1) = (1 + 1, 0 + 1) = (0, 1) $$
+
+$$ 5(1, 1) = 4(1, 1) + (1, 1) = (0, 1) + (1, 1) = (0 + 1, 1 + 1) = (1, 2) $$
+
+$$ 6(1, 1) = 5(1, 1) + (1, 1) = (1, 2) + (1, 1) = (1 + 1, 2 + 1) = (0, 0) $$
+
+$$ (0, 0) = 0(1, 1) $$
+
+$$ (0, 1) = 4(1, 1) $$
+
+$$ (0, 2) = 2(1, 1) $$
+
+
+$700$ Lines. I remember when the code repo page and brainstorm page were competing over which one to get to $700$ first, in order to be declared the largest page on the website. The reason why is because those two pages specifically (also maybe they set theory pages) don't really ever get finished, because there's always more to do. Except this page, this page (which definitely has a clear well defind story) got there. It just shows you-, it just shows $\text{me}$ how much math $\text{I}$ can do when $\text{I}$ put my mind to something.
+
+$$ (1, 0) = 3(1, 1) $$
+
+$$ (1, 1) = 1(1, 1) $$
+
+$$ (1, 2) = 5(1, 1) $$
+
+$$ \varphi (n(1, 1)) = n $$
+
+This same method of proof works as long as $n$ is an odd number as you can see below. But if $n$ is an even number, then I guess there's really no way to categorize them, other than that they are a composite group. Personally, I would denote them with the letter $\text{V}$.
