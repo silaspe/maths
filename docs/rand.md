@@ -472,3 +472,12 @@ None, so technically all of them.
 .
 
 (insert work here)
+
+.
+
+Here's an analogy for $ℤ_2$:
+
+|                  | ...my friend is... | ...my enemy is... |
+| ---------------- | ------------------ | ----------------- |
+| The friend of... | ...my friend       | ...my enemy       |
+| The enemy of...  | ...my enemy        | ...my friend      |
