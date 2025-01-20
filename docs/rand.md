@@ -475,9 +475,13 @@ None, so technically all of them.
 
 .
 
-Here's an analogy for $ℤ_2$:
+Here's an analogy for the group $ℤ_2$:
 
 |                  | ...my friend is... | ...my enemy is... |
 | ---------------- | ------------------ | ----------------- |
 | The friend of... | ...my friend       | ...my enemy       |
 | The enemy of...  | ...my enemy        | ...my friend      |
+
+.
+
+(insert work here)
