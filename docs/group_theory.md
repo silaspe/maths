@@ -735,7 +735,7 @@ $$ \vdots $$
 
 $$ 2n(1, 1) = (2n - 1)(1, 1) + (1, 1) = (1, 2n - 1) + (1, 1) = (1 + 1, (n - 1) + 1) = (0, 0) $$
 
-$$ (x, y) = \Begin{bmatrix} x + y = 2k: y(1, 1) \\
+$$ (x, y) = \Begin{Bmatrix} x + y = 2k: y(1, 1) \\
 x + y = 2k + 1: (y + n)(1, 1) \\ \end{Bmatrix} $$
 
 $$ \varphi (n(1, 1)) = n $$
