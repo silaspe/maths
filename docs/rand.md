@@ -485,3 +485,9 @@ Here's an analogy for the group $ℤ_2$:
 .
 
 (insert work here)
+
+.
+
+It's snowing today!
+
+Last time it snowed it didn't snow for very long and it didn't really stay. That was $2$ years ago. The last time it snowed before that (where it was actually a place I lived) was about $6$ years ago when I was $5$.
