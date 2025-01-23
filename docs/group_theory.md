@@ -12,7 +12,7 @@ It is a set or collection of things together with a binary operation (e.g. addit
 
 $1$. Closure: (this one is sometimes a given) If you have $a$ and $b$ in the group, then $a$ ∘ $b$ is also within the group.
 
-$2$. Associativity: If you have $a$, $b$ and $c$ in the group, then $(a$ ∘ $b)$ ∘ $c$ is equal to $a$ ∘ $(b$ ∘ $c)$. For this reason, I will be denoting both as $a$ ∘ $b$ ∘ $c$
+$2$. Associativity: If you have $a$, $b$ and $c$ in the group, then $(a$ ∘ $b)$ ∘ $c$ is equal to $a$ ∘ $(b$ ∘ $c)$. For this reason, I will be denoting both as $a$ ∘ $b$ ∘ $c$.
 
 $3$. Identity (or neutral depending on where you're from): There must always be a term in the group (call it $e$) where if you have $a$ in the group, then $a$ ∘ $e$ is equal to $e$ ∘ $a$ is equal to $a$.
 
@@ -20,7 +20,7 @@ $4$. Inverses: If you have $a$ in the group, then there is also $a^{-1}$ in the 
 
 Notice there is no point where I say that the operation is commutative (i.e. $a$ ∘ $b = b$ ∘ $a$). If it is commutative, it is also known as an Abelian group.
 
-Also by the way, it is common to notate $a$ ∘ $a$ ∘ $a$ ∘ ... and so on $n$ times as $a^n$
+Also by the way, it is common to notate $a$ ∘ $a$ ∘ $a$ ∘ ... and so on $n$ times as $a^n$.
 
 A good way to think about what some groups actually are is as sets of symmetries. This is because these four rules are exactly what you would expect rotations and reflections to do with the operation of doing one after the other.
 
@@ -60,15 +60,15 @@ Because on the one hand, it should be $n$ because that's the amount of sides it 
 
 Personally, I think that the subscript should be the amount of faces.
 
-But on the other hand, subscripts also usually denote the size and the size is always $2n$ (unless $n = 2$ or less)
+But on the other hand, subscripts also usually denote the size and the size is always $2n$ (unless $n = 2$ or less).
 
 There was this one time when I was talking to ChatGPT, and it said that $\text{D}_4$ was the dihedral group of order $8$.
 
-There's also the integers with the operation of addition, and it loops back around once you reach a certain number (These groups are also known as the [modular](https://silaspe.github.io/maths/mod.html) groups). If that number is $n$ (i.e. the elements of the group are $0$ all the way up to $n - 1$), then it is denoted $ℤ_n$
+There's also the integers with the operation of addition, and it loops back around once you reach a certain number (These groups are also known as the [modular](https://silaspe.github.io/maths/mod.html) groups). If that number is $n$ (i.e. the elements of the group are $0$ all the way up to $n - 1$), then it is denoted $ℤ_n$.
 
 ### proofs
 
-#### Proof number $1$: there's only $1$ identity element.
+#### proof number $1$: there's only $1$ identity element.
 
 This proof uses a proof by contradiction strategy. Let's say that there are more than $1$ identity element. So I'm going to choose the first two being $e_1$ and $e_2$.
 
@@ -80,7 +80,7 @@ And you can keep going with this logic, doing the same thing with the next one, 
 
 QED!
 
-#### Proof number $2$: The inverse of the inverse is the original.
+#### proof number $2$: The inverse of the inverse is the original
 
 Every element has an inverse. So, by definition, the inverse has an inverse.
 
@@ -92,7 +92,7 @@ This should of course equal $a$ because $a^{-1}$ times its inverse should cancel
 
 QED!
 
-#### Proof number $3$: The inverse can cancel out from either side.
+#### proof number $3$: The inverse can cancel out from either side
 
 The term $a^{-1}$ ∘ $a$ can also be simplified. Because $a$ is equal to $(a^{-1})^{-1}$, I can cancel $a^{-1}$ with its inverse, resulting in the identity.
 
@@ -103,7 +103,7 @@ $$ a^{-1} ∘ a = a^{-1} ∘ (a^{-1})^{-1} = e $$
 
 QED!
 
-#### Proof number $4$: There's only $1$ inverse for a given term.
+#### Proof number $4$: There's only $1$ inverse for a given term
 
 This one uses the same general strategy as proof number $1$. Let's assume that there were multiple inverses, denoted $a^{-1}_1$ and $a^{-1}_2$. Then of course, $a$ ∘ $a^{-1}_1 = e$.
 
@@ -115,7 +115,7 @@ Then $a^{-1}_2$ and $a$ would cancel out resulting in $a^{-1}_1$ on the left. Bu
 
 QED!
 
-#### Proof number $5$: $(a^2)^{-1} = (a^{-1})^2$ and they can both be denoted as $a^{-2}$.
+#### Proof number $5$: $(a^2)^{-1} = (a^{-1})^2$ and they can both be denoted as $a^{-2}$
 
 $$ a^2 ∘ (a^2)^{-1} = e $$
 
@@ -129,7 +129,9 @@ Using the example of the integers, we have just proved that: there's only $1$ ze
 
 At the same time, we have just proved that: there's only one $1$, $\frac{1}{\frac{1}{3}} = 3$, $3 \frac{1}{3} = \frac{1}{3} 3 = 1$, and there's only one $\frac{1}{3}$
 
-They're all connected! They're all secretly the same! Group theory (or, more generally abstract algebra) really is the grand unified theory of algebraic systems! 
+They're all connected! They're all secretly the same! Group theory (or, more generally abstract algebra) really is the grand unified theory of algebraic systems!
+
+Now you can pretty much skip to any other chapter you want.
 
 ### subgroups & cosets
 
@@ -195,9 +197,9 @@ Let's say that the group has $16$ elements and that the elements of the subgroup
 
 If I have any element $x$, then it is not too hard to cover it with a subgroup. Just shift it over by $x$, and the corresponding term to the identity element will cover it as $x$ ∘ $e = x$.
 
-You can take this as either a subgroup or a proof that everything in the group is covered by at least one coset.
-
 $200$ Lines.
+
+You can take this as either a subgroup or a proof that everything in the group is covered by at least one coset.
 
 Now, we have elements: $e$, $a$, $b$, $c$, $x$, $x$ ∘ $a$, $x$ ∘ $b$, and $x$ ∘ $c$
 
@@ -295,9 +297,9 @@ In group theory, this ($\varphi (a$ ∘ $b) = \varphi (a)$ ∘ $\varphi (b)$) re
 
 Also, homomorphisms can go between groups of different sizes, but I don't think that that means that they're isomorphic because they don't feel the same, they aren't bijections, they're surjections.
 
-Here's an example: if I want to map from $ℤ_6$ to $ℤ_3$, I only need $1$ output, which is $\varphi (1)$. Let me explain.
-
 $300$ Lines.
+
+Here's an example: if I want to map from $ℤ_6$ to $ℤ_3$, I only need $1$ output, which is $\varphi (1)$. Let me explain.
 
 $$ \varphi (1) = 1 $$
 
@@ -395,11 +397,11 @@ $$ a \cdot e = e $$
 
 $$ \varphi (a) \ne e $$
 
+$400$ lines.
+
 Contradiction!
 
 $4$. Inverses. As there is only one inverse for a given term, I'll have to prove that the one inverse is within $\text{ker} (\varphi)$
-
-$400$ lines.
 
 $$ \varphi (a) = \varphi (a) $$
 
@@ -495,11 +497,11 @@ with all the elements, we need every element to have an inverse. But as there ar
 
 But anyways, every group of size zero fumbles at the identity rule. Time for...
 
+$500$ Lines.
+
 ##### groups of size $1$
 
 Of course, because of the identity rule, the one element has to be the identity element, and this is a group as:
-
-$500$ Lines.
 
 $1$. It is closed, as $e$ ∘ $e = e$
 
@@ -595,9 +597,9 @@ $$ a ∘ b = b $$
 
 $$ e ∘ b = b $$
 
-$$ a ∘ b = e ∘ b $$
-
 $600$ Lines.
+
+$$ a ∘ b = e ∘ b $$
 
 $$ a ∘ b ∘ b^{-1} = e ∘ b ∘ b^{-1} $$
 
@@ -694,10 +696,10 @@ $$ 5(1, 1) = 4(1, 1) + (1, 1) = (0, 1) + (1, 1) = (0 + 1, 1 + 1) = (1, 2) $$
 
 $$ 6(1, 1) = 5(1, 1) + (1, 1) = (1, 2) + (1, 1) = (1 + 1, 2 + 1) = (0, 0) $$
 
-$$ (0, 0) = 0(1, 1) $$
-
 
 $700$ Lines. I remember when the code repo page and brainstorm page were competing over which one would get to $700$ first, in order to be declared the largest page on the website. The reason why is because those two pages specifically (also maybe they set theory pages) don't really ever get finished, because there's always more to do. Except this page, this page (which definitely has a clear well defined story) got there. It just shows you-, it just shows $\text{me}$ how much math $\text{I}$ can do when $\text{I}$ put my mind to something.
+
+$$ (0, 0) = 0(1, 1) $$
 
 $$ (0, 1) = 4(1, 1) $$
 
@@ -785,4 +787,11 @@ Also, here's the full multiplication table:
 | $k$    | $k$  | $-k$ | $j$  | $-j$ | $-i$ | $i$  | $-1$ | $1$  |
 | $-k$   | $-k$ | $k$  | $-j$ | $j$  | $i$  | $-i$ | $1$  | $-1$ |
 
-$777 + 11$ Lines.
+$777 + 13$ Lines.
+
+Here's an analogy for the group $ℤ_2$:
+
+|                  | ...my friend is... | ...my enemy is... |
+| ---------------- | ------------------ | ----------------- |
+| The friend of... | ...my friend       | ...my enemy       |
+| The enemy of...  | ...my enemy        | ...my friend      |
