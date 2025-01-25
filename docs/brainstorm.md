@@ -1997,9 +1997,9 @@ $$ a^{-1}_2 ∘ a ∘ a^{-1}_1 = a^{-1}_2 ∘ e $$
 
 Then $a^{-1}_2$ and $a$ would cancel out resulting in $a^{-1}_1$ on the left. But on the other side, the identity element cancels out resulting in $a^{-1}_2$. Thus, because they are both equal to the same thing, they themselves must be equal.
 
-QED!
-
 $2000$ Lines, wow.
+
+QED!
 
 Proof number five: $(a^2)^{-1} = (a^{-1})^2$ and they can both be denoted as $a^{-2}$.
 
@@ -2014,4 +2014,24 @@ $2013$ Lines (I was born in $2013$).
 
 QED!
 
-#### subgroups & cosets
+#### Newtonian physics
+
+I tried to just write this down on paper, but I thought it would be much more convenient to write it down over here.
+
+I'm going to try to use Newtonian physics to describe collision of spheres. Each sphere has an index $n$ with a center $c_n$, velocity $v_n$ acceleration $a_n$, and so on. If there's a property that doesn't have a subscript, then it works with any number.
+
+$$ \text{V} = \frac{4}{3} \pi r^3 $$
+
+$2025$ Lines.
+
+$$ \text{V} = \frac{4 \pi}{3} r^3 $$
+
+$$ \text{V} = \frac{2 \tau}{3} r^3 $$
+
+$$ \text{V} = \frac{2}{3} \tau r^3 $$
+
+$$ \text{D} = \frac{\text{M}}{\text{V}} $$
+
+$$ \text{M} = \text{V} \text{D} $$
+
+$$ \text{V} = \frac{\text{M}}{\text{D}} $$
