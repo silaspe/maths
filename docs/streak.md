@@ -8,3 +8,5 @@ I was on vacation, but at least, now I have an excuse to fix the typo where I sp
 It happened again.
 
 It happened again on Oct $2$nd, but it's Oct $5$ as I am writing this.
+
+It happened again.
