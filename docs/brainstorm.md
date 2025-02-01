@@ -2035,3 +2035,77 @@ $$ \text{D} = \frac{\text{M}}{\text{V}} $$
 $$ \text{M} = \text{V} \text{D} $$
 
 $$ \text{V} = \frac{\text{M}}{\text{D}} $$
+
+#### the Fibonacci part of the eigen page, but better
+
+Here's the obvious definition of the Fibonacci sequence:
+
+$$ F_0 = 0 $$
+
+$$ F_1 = 1 $$
+
+$$ F_n = F_{n - 1} + F_{n - 2} $$
+
+But then we have the following:
+
+$$ F_{n + 2} = F_{n + 1} + F_n $$
+
+$$ F_{n + 1} = F_{n + 1} $$
+
+$$ \begin{bmatrix} F_{n + 2} \\
+F_{n + 1} \\ \end{bmatrix} = \begin{bmatrix} F_{n + 1} + F_n \\
+F_{n + 1} \\ \end{bmatrix} = \begin{bmatrix} 1 F_{n + 1} + 1 F_n \\
+1 F_{n + 1} + 0 F_n \\ \end{bmatrix} $$
+
+$$ \begin{bmatrix} F_{n + 2} \\
+F_{n + 1} \\ \end{bmatrix} = \begin{bmatrix} 1 & 1 \\
+1 & 0 \\ \end{bmatrix} \begin{bmatrix} F_{n + 1} \\
+F_n \\ \end{bmatrix} $$
+
+$$ \begin{bmatrix} F_2 \\
+F_1 \\ \end{bmatrix} = \begin{bmatrix} 1 & 1 \\
+1 & 0 \\ \end{bmatrix} \begin{bmatrix} F_1 \\
+F_0 \\ \end{bmatrix} = \begin{bmatrix} 1 & 1 \\
+1 & 0 \\ \end{bmatrix} \begin{bmatrix} 1 \\
+0 \\ \end{bmatrix} $$
+
+$$ \begin{bmatrix} F_3 \\
+F_2 \\ \end{bmatrix} = \begin{bmatrix} 1 & 1 \\
+1 & 0 \\ \end{bmatrix} \begin{bmatrix} F_2 \\
+F_1 \\ \end{bmatrix} = \begin{bmatrix} 1 & 1 \\
+1 & 0 \\ \end{bmatrix} \begin{bmatrix} 1 & 1 \\
+1 & 0 \\ \end{bmatrix} \begin{bmatrix} 1 \\
+0 \\ \end{bmatrix} = \begin{bmatrix} 1 & 1 \\
+1 & 0 \\ \end{bmatrix}^2 \begin{bmatrix} 1 \\
+0 \\ \end{bmatrix} $$
+
+$$ \begin{bmatrix} F_4 \\
+F_3 \\ \end{bmatrix} = \begin{bmatrix} 1 & 1 \\
+1 & 0 \\ \end{bmatrix} \begin{bmatrix} F_3 \\
+F_2 \\ \end{bmatrix} = \begin{bmatrix} 1 & 1 \\
+1 & 0 \\ \end{bmatrix} \begin{bmatrix} 1 & 1 \\
+1 & 0 \\ \end{bmatrix}^2 \begin{bmatrix} 1 \\
+0 \\ \end{bmatrix} = \begin{bmatrix} 1 & 1 \\
+1 & 0 \\ \end{bmatrix}^3 \begin{bmatrix} 1 \\
+0 \\ \end{bmatrix} $$
+
+$$ \begin{bmatrix} F_5 \\
+F_4 \\ \end{bmatrix} = \begin{bmatrix} 1 & 1 \\
+1 & 0 \\ \end{bmatrix} \begin{bmatrix} F_4 \\
+F_3 \\ \end{bmatrix} = \begin{bmatrix} 1 & 1 \\
+1 & 0 \\ \end{bmatrix} \begin{bmatrix} 1 & 1 \\
+1 & 0 \\ \end{bmatrix}^3 \begin{bmatrix} 1 \\
+0 \\ \end{bmatrix} = \begin{bmatrix} 1 & 1 \\
+1 & 0 \\ \end{bmatrix}^4 \begin{bmatrix} 1 \\
+0 \\ \end{bmatrix} $$
+
+$2102$ Lines
+
+$$ \vdots $$
+
+$$ \begin{bmatrix} F_{n + 1} \\
+F_n \\ \end{bmatrix} = \begin{bmatrix} 1 & 1 \\
+1 & 0 \\ \end{bmatrix}^n \begin{bmatrix} 1 \\
+0 \\ \end{bmatrix} $$
+
+I know you're probably thinking: Yeah, that's a pretty nice formula. But still, how do I raise this matrix to the power of $n$? Well, to answer this question, we need a little bit of eigenvectors and eigenvalues.
