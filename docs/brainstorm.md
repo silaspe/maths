@@ -2108,4 +2108,41 @@ F_n \\ \end{bmatrix} = \begin{bmatrix} 1 & 1 \\
 1 & 0 \\ \end{bmatrix}^n \begin{bmatrix} 1 \\
 0 \\ \end{bmatrix} $$
 
-I know you're probably thinking: Yeah, that's a pretty nice formula. But still, how do I raise this matrix to the power of $n$? Well, to answer this question, we need a little bit of eigenvectors and eigenvalues
+I know you're probably thinking: Yeah, that's a pretty nice formula. But still, how do I raise this matrix to the power of $n$? Well, to answer this question, we need a little bit of eigenvectors and eigenvalues.
+
+That's enough work for one day.
+
+The eigenvectors of a matrix $A$ are vectors where if you apply the matrix's operation, that just ends up scaling the vector by some constant $\lambda$ (a.k.a. the eigenvalue). In written form, it looks like this:
+
+$$ A \vec{v} = \lambda \vec{v} $$
+
+Also, an $n \times n$ matrix usually has $n$ eigenvectors*.
+
+Side note!
+
+$$ A (c \vec{v}) = \lambda (c \vec{v}) $$
+
+*What this means is that the scaled copies of a given eigenvector are also eigenvectors and have the same eigenvalue. For this reason, scaled copies of an eigenvector are usually considered as just one.
+
+But, assuming that there are two eigenvectors, I can do something special: I can change the basis.
+
+$$ A(a \vec{u} + b \vec{v}) = A(a \vec{u}) + A(b \vec{v}) = a(A \vec{u}) + b(A \vec{v}) $$
+
+$$ A(a \vec{u} + b \vec{v}) = a \lambda_1 \vec{u} + b \lambda_2 \vec{v} $$
+
+$$ A(A(a \vec{u} + b \vec{v})) = A^2 (a \vec{u} + b \vec{v}) = A(a \lambda_1 \vec{u} + b \lambda_2 \vec{v}) = a \lambda_1^2 \vec{u} + b \lambda_2^2 \vec{v} $$
+
+$$ A^2 (a \vec{u} + b \vec{v}) = a \lambda_1^2 \vec{u} + b \lambda_2^2 \vec{v} $$
+
+$$ A(A^2 (a \vec{u} + b \vec{v})) = A^3 (a \vec{u} + b \vec{v}) = A(a \lambda_1^2 \vec{u} + b \lambda_2^2 \vec{v}) = a \lambda_1^3 \vec{u} + b \lambda_2^3 \vec{v} $$
+
+$$ A^3 (a \vec{u} + b \vec{v}) = a \lambda_1^3 \vec{u} + b \lambda_2^3 \vec{v} $$
+
+$$ \vdots $$
+
+$$ A^n (a \vec{u} + b \vec{v}) = a \lambda_1^n \vec{u} + b \lambda_2^n \vec{v} $$
+
+As you can see, this can be very useful for finding $\begin{bmatrix} 1 & 1 \\
+1 & 0 \\ \end{bmatrix}^n$. We just need to figure out the eigenvectors, eigenvalues, and how to combine them.
+
+That's enough work for now.
