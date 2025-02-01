@@ -2046,7 +2046,7 @@ $$ F_1 = 1 $$
 
 $$ F_n = F_{n - 1} + F_{n - 2} $$
 
-But then we have the following:
+Yes, I know, it normally starts at $1$ and $2$, but there's a reason why I'm starting it at $0$ and $1$. But we still have the following:
 
 $$ F_{n + 2} = F_{n + 1} + F_n $$
 
@@ -2146,3 +2146,96 @@ As you can see, this can be very useful for finding $\begin{bmatrix} 1 & 1 \\
 1 & 0 \\ \end{bmatrix}^n$. We just need to figure out the eigenvectors, eigenvalues, and how to combine them.
 
 That's enough work for now.
+
+It's been $3$ hours.
+
+$$ \varphi^2 = \varphi + 1 $$
+
+$$ \psi^2 = \psi + 1 $$
+
+$$ \varphi = \frac{1 + \sqrt{5}}{2} = 1.618... $$
+
+$$ \psi = \frac{1 - \sqrt{5}}{2} = -0.618... = -\frac{1}{\varphi} = 1 - \varphi $$
+
+$$ \begin{bmatrix} 1 & 1 \\
+1 & 0 \\ \end{bmatrix} \begin{bmatrix} \varphi \\
+1 \\ \end{bmatrix} = \begin{bmatrix} 1 \cdot \varphi + 1 \cdot 1 \\
+1 \cdot \varphi + 0 \cdot 1 \\ \end{bmatrix} = \begin{bmatrix} \varphi + 1 \\
+\varphi \\ \end{bmatrix} = \begin{bmatrix} \varphi^2 \\
+\varphi \\ \end{bmatrix} $$
+
+$$ \begin{bmatrix} 1 & 1 \\
+1 & 0 \\ \end{bmatrix} \begin{bmatrix} \varphi \\
+1 \\ \end{bmatrix} = \varphi \begin{bmatrix} \varphi \\
+1 \\ \end{bmatrix} $$
+
+$$ \begin{bmatrix} 1 & 1 \\
+1 & 0 \\ \end{bmatrix} \begin{bmatrix} \psi \\
+1 \\ \end{bmatrix} = \begin{bmatrix} 1 \cdot \psi + 1 \cdot 1 \\
+1 \cdot \psi + 0 \cdot 1 \\ \end{bmatrix} = \begin{bmatrix} \psi + 1 \\
+\psi \\ \end{bmatrix} = \begin{bmatrix} \psi^2 \\
+\psi \\ \end{bmatrix} $$
+
+$$ \begin{bmatrix} 1 & 1 \\
+1 & 0 \\ \end{bmatrix} \begin{bmatrix} \psi \\
+1 \\ \end{bmatrix} = \psi \begin{bmatrix} \psi \\
+1 \\ \end{bmatrix} $$
+
+$$ \begin{bmatrix} 1 & 1 \\
+1 & 0 \\ \end{bmatrix}^n (a \begin{bmatrix} \varphi \\
+1 \\ \end{bmatrix} + b \begin{bmatrix} \psi \\
+1 \\ \end{bmatrix}) = a \varphi^n \begin{bmatrix} \varphi \\
+1 \\ \end{bmatrix} + b \psi^n \begin{bmatrix} \psi \\
+1 \\ \end{bmatrix} $$
+
+But, now the question becomes: how do I write $\begin{bmatrix} 1 \\
+0 \\ \end{bmatrix}$ in terms of $\begin{bmatrix} \varphi \\
+1 \\ \end{bmatrix}$ and $\begin{bmatrix} \psi \\
+1 \\ \end{bmatrix}$?
+
+$$ \begin{bmatrix} 1 \\
+0 \\ \end{bmatrix} = a \begin{bmatrix} \varphi \\
+1 \\ \end{bmatrix} + b \begin{bmatrix} \psi \\
+1 \\ \end{bmatrix} $$
+
+$2201$ Lines.
+
+$$ \begin{bmatrix} a & b \\
+c & d \\ \end{bmatrix} \begin{bmatrix} x \\
+y \\ \end{bmatrix} = \begin{bmatrix} a & b \\
+c & d \\ \end{bmatrix} (x \hat{x} + y \hat{y}) = \begin{bmatrix} a & b \\
+c & d \\ \end{bmatrix} (x \hat{x}) + \begin{bmatrix} a & b \\
+c & d \\ \end{bmatrix} (y \hat{y}) = x \begin{bmatrix} a & b \\
+c & d \\ \end{bmatrix} \hat{x} + y \begin{bmatrix} a & b \\
+c & d \\ \end{bmatrix} \hat{y} $$
+
+$$ \begin{bmatrix} a & b \\
+c & d \\ \end{bmatrix} \begin{bmatrix} x \\
+y \\ \end{bmatrix} = x \begin{bmatrix} a \\
+c \\ \end{bmatrix} + y \begin{bmatrix} b \\
+d \\ \end{bmatrix} $$
+
+$$ \begin{bmatrix} \varphi & \psi \\
+1 & 1 \\ \end{bmatrix} \begin{bmatrix} a \\
+b \\ \end{bmatrix} = a \begin{bmatrix} \varphi \\
+1 \\ \end{bmatrix} + b \begin{bmatrix} \psi \\
+1 \\ \end{bmatrix} $$
+
+$2222 + 2$ Lines.
+
+$$ \begin{bmatrix} \varphi & \psi \\
+1 & 1 \\ \end{bmatrix} \begin{bmatrix} a \\
+b \\ \end{bmatrix} = \begin{bmatrix} 1 \\
+0 \\ \end{bmatrix} $$
+
+$$ \begin{bmatrix} \varphi & \psi \\
+1 & 1 \\ \end{bmatrix}^{-1} \begin{bmatrix} \varphi & \psi \\
+1 & 1 \\ \end{bmatrix} \begin{bmatrix} a \\
+b \\ \end{bmatrix} = \begin{bmatrix} \varphi & \psi \\
+1 & 1 \\ \end{bmatrix}^{-1} \begin{bmatrix} 1 \\
+0 \\ \end{bmatrix} $$
+
+$$ \begin{bmatrix} a \\
+b \\ \end{bmatrix} = \begin{bmatrix} \varphi & \psi \\
+1 & 1 \\ \end{bmatrix}^{-1} \begin{bmatrix} 1 \\
+0 \\ \end{bmatrix} $$
