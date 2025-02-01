@@ -2099,7 +2099,7 @@ F_3 \\ \end{bmatrix} = \begin{bmatrix} 1 & 1 \\
 1 & 0 \\ \end{bmatrix}^4 \begin{bmatrix} 1 \\
 0 \\ \end{bmatrix} $$
 
-$2102$ Lines
+$2102$ Lines.
 
 $$ \vdots $$
 
@@ -2108,4 +2108,4 @@ F_n \\ \end{bmatrix} = \begin{bmatrix} 1 & 1 \\
 1 & 0 \\ \end{bmatrix}^n \begin{bmatrix} 1 \\
 0 \\ \end{bmatrix} $$
 
-I know you're probably thinking: Yeah, that's a pretty nice formula. But still, how do I raise this matrix to the power of $n$? Well, to answer this question, we need a little bit of eigenvectors and eigenvalues.
+I know you're probably thinking: Yeah, that's a pretty nice formula. But still, how do I raise this matrix to the power of $n$? Well, to answer this question, we need a little bit of eigenvectors and eigenvalues
