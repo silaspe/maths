@@ -737,7 +737,7 @@ $$ \vdots $$
 
 $$ 2n(1, 1) = (2n - 1)(1, 1) + (1, 1) = (1, 2n - 1) + (1, 1) = (1 + 1, (n - 1) + 1) = (0, 0) $$
 
-$$ (x, y) = \Begin{Bmatrix} x + y = 2k: y(1, 1) \\
+$$ (x, y) = \begin{Bmatrix} x + y = 2k: y(1, 1) \\
 x + y = 2k + 1: (y + n)(1, 1) \\ \end{Bmatrix} $$
 
 $$ \varphi (n(1, 1)) = n $$
@@ -795,3 +795,6 @@ Here's an analogy for the group $ℤ_2$:
 | ---------------- | ------------------ | ----------------- |
 | The friend of... | ...my friend       | ...my enemy       |
 | The enemy of...  | ...my enemy        | ...my friend      |
+
+
+$800$ Lines.
