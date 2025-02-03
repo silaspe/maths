@@ -30,7 +30,7 @@ For example, now the inverses rule makes sense because if you rotate clockwise t
 
 An example of a group is the integers with the operation of addition.
 
-Adding two integers would result in another integer. Addition is associative and there is only one $a + b + c$. There is of course an identity element of which is zero. And the inverse would of course be the negative.
+Adding two integers would result in another integer. Addition is associative and there is only one $a + b + c$. There is of course an identity element, of which is zero. And the inverse would of course be the negative.
 
 Thus, it is a group! And the symbol is $ℤ$.
 
@@ -38,7 +38,7 @@ Let's see what happens to the integers with an operation of multiplication!
 
 Multiplying two integers would result in another integer. There is only one $a \times b \times c$. There is an identity element (i.e. $1$). But sadly, only one and $-1$ have inverses.
 
-Thus this is not a group :(
+Thus, this is not a group :(
 
 This is also why it's written $ℤ$ and not $ℤ^+$
 
@@ -121,11 +121,11 @@ $$ a^2 ∘ (a^2)^{-1} = e $$
 
 $$ a^2 ∘ (a^{-1})^2 = a ∘ a ∘ a^{-1} ∘ a^{-1} = a ∘ a^{-1} = e $$
 
-Because these are both the inverse of $a^2$ and because of proof number four, they must both be the same.
+Because these are both the inverse of $a^2$, and because of proof number four, they must both be the same.
 
 QED!
 
-Using the example of the integers, we have just proved that: there's only $1$ zero, $-(-3) = 3$, $3 + (-3) = (-3) + 3 = 0$, and there's only $1$ $-3$
+Using the example of the integers, we have just proved that: there's only $1$ zero, $-(-3) = 3$, $3 + (-3) = (-3) + 3 = 0$, and there's only one $-3$
 
 At the same time, we have just proved that: there's only one $1$, $\frac{1}{\frac{1}{3}} = 3$, $3 \frac{1}{3} = \frac{1}{3} 3 = 1$, and there's only one $\frac{1}{3}$
 
@@ -393,7 +393,7 @@ $3$. Identity. This one uses a proof by contradiction strategy. First, let's ass
 
 $$ \varphi (a \cdot e) = \varphi (a) * \varphi (e) = e * \text{not } e = \text{not } e $$
 
-$$ a \cdot e = e $$
+$$ a \cdot e = a $$
 
 $$ \varphi (a) \ne e $$
 
@@ -513,7 +513,7 @@ $4$ inverses. I'll go through each term along with its inverse in the following 
 
 | element | inverse |
 | ------- | ------- |
-| e       | e       |
+| $e$     | $e$     |
 
 And yeah, that's kind of it, the group containing the identity is the only $1$ element group, and all other $1$ element groups are just isomorphic to it, with their own identity element and own operation.
 
