@@ -555,8 +555,104 @@ The snow has melted :(
 
 a play that me and my friends made 
 
-I was at a party with my sister and some of my friends, and then we decided to make a play together. I will refer to everyone involved as me, my sister, my friend (male), my friend (female) 6-year-old #1, and 6-year-old #2. We finished the script for act $1$ scene $1$, but then we are given a 2-minute warning, so we had to improv the rest.
+I was at a party with my sister and some of my friends, and then we decided to make a play together.
+
+I will refer to everyone involved as me, my sister, my friend (male), my friend (female) 6-year-old #1, and 6-year-old #2.
+
+We finished the script for act $1$ scene $1$, but then we are given a 2-minute warning, so we had to improv the rest.
+
+We were planning on just showing it to my dad, but all of the adults ended up showing up, and we started.
+
+Now that I actually have to recording, let's start with...
 
 $$ \text{Act } 1 \text{ Scene } 1 $$
 
-Actors: Me and my sister are the parents, the two 6-year-olds are the kids.
+Actors: me and my sister are the parents, the two 6-year-olds are the kids.
+
+6-year-old #1: "When do we have to go to school? Last time we went to school we had to fight a bear!"
+
+6-year-old #2: "Plus, it's so windy outside that the wind will pick us up!"
+
+My sister: "Oh, stop it you! You can stop going to school when you turn $18$ or dinosaurs fly!"
+
+My friend (male): *Throws a dinosaur plush across the backyard*
+
+Me: "Ignore that."
+
+My sister: "Well, do you want to know how much it is you need to go to school?"
+
+6-year-old #1: "Yeah!"
+
+My sister: "Well, if you don't go to school, you won't get a job, and if you don't get a job, you'll die alone in a ditch!"
+
+Me: *Loudly whispers to her: "this wasn't in the script!"*
+
+My sister: "You know what we had to do to get to school? Well, let us show you."
+
+At this point I went into the audience because I didn't know what their plan was and I didn't think I was involved. But no one was expected what happened next.
+
+$$ \text{Act } 1 \text{ Scene } 2 $$
+
+Actors: my friend (male) and my friend (female) as the past versions of the parents.
+
+My friend (female): "I'm not doing that pop test no matter what happens!"
+
+$600$ Lines.
+
+My friend (male): "Yes."
+
+My friend (female): "Oh, my god, I've fallen over."
+
+My friend (male): *Helps her up*
+
+My friend (female): "Tell grandpa I've left the purple toquitos in the freezer!"
+
+My friend (male): Probably said something so quiet that it didn't show up in the audio.
+
+My friend (female): "Tell grandpa I've left the purple toquitos in the freezer!"
+
+My friend (female): "No, I will not march for the queen, I am my own woman!" She said whilst marching.
+
+*Pause*
+
+My friend (male): *Starts pulling her by the arm*
+
+My friend (female): "You're not taking me anywhere, you *unintelligible*!".
+
+*Pause*
+
+My friend (female): "I don't take orders from goldfish!".
+
+My friend (female): *Falls over*
+
+My friend (male): *Starts pulling her by the arm again*
+
+My friend (male): "Do you have anything to say to say to us!?"
+
+Cameo appearance: my sister as the school nurse.
+
+My sister: "What is it?"
+
+My friend (male): "Am I a mushroom, *unintelligible*!?"
+
+My sister: "All right, as the school nurse-"
+
+My friend (female): "Do you know any lavas personally" (?).
+
+My sister: "As I was saying, as the school nurse, I think we need to call $911$ for her."
+
+My friend (male): *Starts calling $911$*
+
+My friend (female): *Screams and runs away*
+
+My sister: "Stop her!"
+
+My friend (male): *Grabs her by the hand and she starts spinning around him.*
+
+My sister: *Grabs her by the other hand as she comes to a stop.*
+
+My friend (female): "I will not be contained, I am a dinosaur!"
+
+My sister: *Pulls her by the hand and says: "Sit down."*
+
+My sister: "As a dinosaur, it is important for you to rest."
