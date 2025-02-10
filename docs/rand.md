@@ -550,3 +550,13 @@ The snow has melted :(
 .
 
 (insert work here)
+
+.
+
+a play that me and my friends made 
+
+I was at a party with my sister and some of my friends, and then we decided to make a play together. I will refer to everyone involved as me, my sister, my friend (male), my friend (female) 6-year-old #1, and 6-year-old #2. We finished the script for act $1$ scene $1$, but then we are given a 2-minute warning, so we had to improv the rest.
+
+$$ \text{Act } 1 \text{ Scene } 1 $$
+
+Actors: Me and my sister are the parents, the two 6-year-olds are the kids.
