@@ -571,7 +571,7 @@ $$ \text{Act } 1 \text{ Scene } 1 $$
 
 Actors: me and my sister as the parents, the two 6-year-olds as the kids.
 
-6-year-old #1: "Whydo we have to go to school? Last time we went to school we had to fight a bear!"
+6-year-old #1: "Why do we have to go to school? Last time we went to school we had to fight a bear!"
 
 6-year-old #2: "Plus, it's so windy outside that the wind will pick us up!"
 
@@ -609,17 +609,17 @@ My friend (male): * Helps her up *
 
 My friend (female): "Tell grandpa I've left the purple toquitos in the freezer!"
 
-* Pause *
+*Pause *
 
 My friend (female): "No, I will not march for the queen, I am my own woman!" She said while marching.
 
-* Pause *
+*Pause *
 
 My friend (male): * Starts pulling her by the arm *
 
 My friend (female): "You're not taking me anywhere, you * unintelligible *!".
 
-* Pause *
+*Pause *
 
 My friend (female): "I don't take orders from goldfish!".
 
@@ -681,7 +681,7 @@ My friend (male): "There's no such thing as a-"
 
 My sister: "There is now."
 
-My friend (female): "* unintelligible *!"
+My friend (female): "* unintelligible * !"
 
 My friend (male) and my friend (female): * Start fighting for no reason *
 
@@ -707,7 +707,7 @@ My friend (female): "Neither do I."
 
 My sister: "Good."
 
-* Pause *
+*Pause *
 
 My friend (female): "Okay, fine, I'm going to-"
 
@@ -747,15 +747,15 @@ My friend (male): * Gets up *
 
 $$ \text{Act } 3 $$
 
-Actors: my friend (male) and my friend (female) as the parents, the two 6-year-olds are the kids.
+Actors: my friend (male) and my friend (female) as the parents, the two 6-year-olds as the kids.
 
 My friend (female) to my friend (male): "I still can't believe that they aren't going to school!"
 
 6-year-old #1: "We don't even have school!"
 
-My friend (female) to my friend (male): "Yes you do!"
+My friend (female): "Yes you do!"
 
-* Both parents leave *
+*Both parents leave *
 
 New actor: my sister as probably the older sister.
 
@@ -765,19 +765,19 @@ My sister: "No, summer break hasn't ended yet."
 
 6-year-old #1: "When is it gonna be school then?"
 
-My sister: "Well it'll be school next week."
+My sister: "Well, it'll be school next week."
 
 6-year-old #1: "Yeees!"
 
 6-year-old #2: "I don't like school."
 
-6-year-old #2: "Me neither."
+6-year-old #1: "Me neither."
 
 My friend (female): * Enters *
 
 My friend (female): * Too bad, cuz you have to go, or else the purple toquitos will be soggy! *
 
-* Everyone starts arguing *
+*Everyone starts arguing *
 
 The end!
 
