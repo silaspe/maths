@@ -555,7 +555,9 @@ The snow has melted :(
 
 a play that me and my friends made 
 
-I was at a party with my sister and some of my friends, and then we decided to make a play together.
+I was at a sports party the other day with my sister and some of my friends, and then we decided to make a play together.
+
+I don't remember much about the game, I think it was about Kentucky Fried Chicken vs the golden ratio (KC vs PHI)
 
 I will refer to everyone involved as me, my sister, my friend (male), my friend (female) 6-year-old #1, and 6-year-old #2.
 
@@ -567,15 +569,15 @@ Now that I actually have to recording, let's start with...
 
 $$ \text{Act } 1 \text{ Scene } 1 $$
 
-Actors: me and my sister are the parents, the two 6-year-olds are the kids.
+Actors: me and my sister as the parents, the two 6-year-olds as the kids.
 
-6-year-old #1: "When do we have to go to school? Last time we went to school we had to fight a bear!"
+6-year-old #1: "Whydo we have to go to school? Last time we went to school we had to fight a bear!"
 
 6-year-old #2: "Plus, it's so windy outside that the wind will pick us up!"
 
 My sister: "Oh, stop it you! You can stop going to school when you turn $18$ or dinosaurs fly!"
 
-My friend (male): *Throws a dinosaur plush across the backyard*
+My friend (male): * Throws a dinosaur plush across the backyard *
 
 Me: "Ignore that."
 
@@ -585,7 +587,7 @@ My sister: "Well, do you want to know how much it is you need to go to school?"
 
 My sister: "Well, if you don't go to school, you won't get a job, and if you don't get a job, you'll die alone in a ditch!"
 
-Me: *Loudly whispers to her: "this wasn't in the script!"*
+Me: * Loudly whispers to her: "this wasn't in the script!" *
 
 My sister: "You know what we had to do to get to school? Well, let us show you."
 
@@ -603,56 +605,180 @@ My friend (male): "Yes."
 
 My friend (female): "Oh, my god, I've fallen over."
 
-My friend (male): *Helps her up*
+My friend (male): * Helps her up *
 
 My friend (female): "Tell grandpa I've left the purple toquitos in the freezer!"
 
-My friend (male): Probably said something so quiet that it didn't show up in the audio.
+* Pause *
 
-My friend (female): "Tell grandpa I've left the purple toquitos in the freezer!"
+My friend (female): "No, I will not march for the queen, I am my own woman!" She said while marching.
 
-My friend (female): "No, I will not march for the queen, I am my own woman!" She said whilst marching.
+* Pause *
 
-*Pause*
+My friend (male): * Starts pulling her by the arm *
 
-My friend (male): *Starts pulling her by the arm*
+My friend (female): "You're not taking me anywhere, you * unintelligible *!".
 
-My friend (female): "You're not taking me anywhere, you *unintelligible*!".
-
-*Pause*
+* Pause *
 
 My friend (female): "I don't take orders from goldfish!".
 
-My friend (female): *Falls over*
+My friend (female): * Falls over *
 
-My friend (male): *Starts pulling her by the arm again*
+My friend (male): * Starts pulling her by the arm again *
 
 My friend (male): "Do you have anything to say to say to us!?"
 
-Cameo appearance: my sister as the school nurse.
+$$ \text{Act } 1 \text{ Scene } 3 $$
+
+New actor: my sister as the school nurse.
 
 My sister: "What is it?"
 
-My friend (male): "Am I a mushroom, *unintelligible*!?"
+My friend (male): "Am I a mushroom, * unintelligible *!?"
 
 My sister: "All right, as the school nurse-"
 
-My friend (female): "Do you know any lavas personally" (?).
+My friend (female): "Do you know any lava personally" (?).
 
-My sister: "As I was saying, as the school nurse, I think we need to call $911$ for her."
+My sister: "As I was saying: as the school nurse, I think we need to call $911$ for her."
 
-My friend (male): *Starts calling $911$*
+My friend (male): * Starts calling $911$ *
 
-My friend (female): *Screams and runs away*
+My friend (female): * Screams and runs away *
 
 My sister: "Stop her!"
 
-My friend (male): *Grabs her by the hand and she starts spinning around him.*
+My friend (male): * Grabs her by the hand and she starts spinning around him. *
 
-My sister: *Grabs her by the other hand as she comes to a stop.*
+My sister: * Grabs her by the other hand as she comes to a stop *
+
+$$ \text{Act } 1 \text{ Scene } 4 $$
 
 My friend (female): "I will not be contained, I am a dinosaur!"
 
-My sister: *Pulls her by the hand and says: "Sit down."*
+My sister: * Pulls her by the hand and says: "Sit down." *
 
 My sister: "As a dinosaur, it is important for you to rest."
+
+My friend (male) quietly: "No, it's not."
+
+My friend (female): "I am a dinosaur!"
+
+My friend (male): "I am going to * unintelligible *!?"
+
+My sister: "Okay so both of you are a dinosaur."
+
+My friend (male): "Well, no, I'm not a-"
+
+My sister: "What happened to you being a dinosaur? Are you now a panda?"
+
+My friend (male): "Hmm. Both!"
+
+My sister: "So you're a dina-panda."
+
+My friend (male): "There's no such thing as a-"
+
+My sister: "There is now."
+
+My friend (female): "* unintelligible *!"
+
+My friend (male) and my friend (female): * Start fighting for no reason *
+
+My friend (male): "* unintelligible *!"
+
+My sister: "Oh, gosh!"
+
+My friend (male) and my friend (female): * Stop fighting, cross their arms, and start arguing but are interupted by my sister *
+
+My sister: * Stands up *
+
+My sister: "You need to go to class."
+
+My friend (female): "No, we're not going to class no matter what! We have a pop test today, and y’know, I don't do well with math, so-"
+
+$700$ Lines.
+
+My sister: "Neither do I."
+
+My friend (female): * Walks up closer to her *
+
+My friend (female): "Neither do I."
+
+My sister: "Good."
+
+* Pause *
+
+My friend (female): "Okay, fine, I'm going to-"
+
+6-year-old #1: * Throws alligator plush at my friend (male)'s face *
+
+$$ \text{Act } 2 $$
+
+My friend (male): * Starts screaming *
+
+My friend (male): "Get it off!"
+
+My friend (male): * Collapses on the floor *
+
+Simultaneously...
+
+Alligator: * Latches onto my friend (female)'s hand *
+
+My friend (female): "Get it off me!"
+
+Alligator: * Falls of *
+
+My friend (female): * Turns around and sees my friend (male) on the floor *
+
+My friend (female): "Oh, he's dead!"
+
+New actors: 6-year-olds as the police that finally showed up.
+
+6-year-olds: * See someone dead on the floor *
+
+6-year-olds: * Start doing CPR on him by pushing on his stomach *
+
+6-year-old #1: * Leaves *
+
+6-year-old #2: * Continues *
+
+My friend (male): * Gets up *
+
+$$ \text{Act } 3 $$
+
+Actors: my friend (male) and my friend (female) as the parents, the two 6-year-olds are the kids.
+
+My friend (female) to my friend (male): "I still can't believe that they aren't going to school!"
+
+6-year-old #1: "We don't even have school!"
+
+My friend (female) to my friend (male): "Yes you do!"
+
+* Both parents leave *
+
+New actor: my sister as probably the older sister.
+
+My sister: * Enters *
+
+My sister: "No, summer break hasn't ended yet."
+
+6-year-old #1: "When is it gonna be school then?"
+
+My sister: "Well it'll be school next week."
+
+6-year-old #1: "Yeees!"
+
+6-year-old #2: "I don't like school."
+
+6-year-old #2: "Me neither."
+
+My friend (female): * Enters *
+
+My friend (female): * Too bad, cuz you have to go, or else the purple toquitos will be soggy! *
+
+* Everyone starts arguing *
+
+The end!
+
+And then most of us lined up and we all bowed at different times, except for me, I didn't bow.
