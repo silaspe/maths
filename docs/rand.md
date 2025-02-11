@@ -775,7 +775,7 @@ My sister: "Well, it'll be school next week."
 
 My friend (female): * Enters *
 
-My friend (female): * Too bad, cuz you have to go, or else the purple toquitos will be soggy! *
+My friend (female): "Too bad, cuz you have to go, or else the purple toquitos will be soggy!"
 
 *Everyone starts arguing *
 
