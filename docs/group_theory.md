@@ -523,7 +523,7 @@ Time for...
 
 As we have proved in the Lagrange's theorem subchapter, every group whose size is a prime number must be isomorphic to each other and to the corresponding cyclic group. Thus, the only group of size $2$ is $ℤ_2$, and as this is a cyclic group, I'll say that it's already proved that it is a group.
 
-I didn't really feel like doing this argument for the last subchapter.
+I didn't really feel like doing this argument for the last sub-subchapter.
 
 Everything I liked about this group was discussed in the parity sub-subchapter.
 
@@ -776,16 +776,16 @@ I remember thinking one day at the playground $1.5$ or $2.5$ years ago that thes
 
 Also, here's the full multiplication table:
 
-| \times | $1$  | $-1$ | $i$  | $-i$ | $j$  | $-j$ | $k$  | $-k$ |
-| ------ | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
-| $1$    | $1$  | $-1$ | $i$  | $-i$ | $j$  | $-j$ | $k$  | $-k$ |
-| $-1$   | $-1$ | $1$  | $-i$ | $i$  | $-j$ | $j$  | $-k$ | $k$  |
-| $i$    | $i$  | $-i$ | $-1$ | $1$  | $k$  | $-k$ | $-j$ | $j$  |
-| $-i$   | $-i$ | $i$  | $1$  | $-1$ | $-k$ | $k$  | $j$  | $-j$ |
-| $j$    | $j$  | $-j$ | $-k$ | $k$  | $-1$ | $1$  | $i$  | $-i$ |
-| $-j$   | $-j$ | $j$  | $k$  | $-k$ | $1$  | $-1$ | $-i$ | $i$  |
-| $k$    | $k$  | $-k$ | $j$  | $-j$ | $-i$ | $i$  | $-1$ | $1$  |
-| $-k$   | $-k$ | $k$  | $-j$ | $j$  | $i$  | $-i$ | $1$  | $-1$ |
+| ∘    | $1$  | $-1$ | $i$  | $-i$ | $j$  | $-j$ | $k$  | $-k$ |
+| ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
+| $1$  | $1$  | $-1$ | $i$  | $-i$ | $j$  | $-j$ | $k$  | $-k$ |
+| $-1$ | $-1$ | $1$  | $-i$ | $i$  | $-j$ | $j$  | $-k$ | $k$  |
+| $i$  | $i$  | $-i$ | $-1$ | $1$  | $k$  | $-k$ | $-j$ | $j$  |
+| $-i$ | $-i$ | $i$  | $1$  | $-1$ | $-k$ | $k$  | $j$  | $-j$ |
+| $j$  | $j$  | $-j$ | $-k$ | $k$  | $-1$ | $1$  | $i$  | $-i$ |
+| $-j$ | $-j$ | $j$  | $k$  | $-k$ | $1$  | $-1$ | $-i$ | $i$  |
+| $k$  | $k$  | $-k$ | $j$  | $-j$ | $-i$ | $i$  | $-1$ | $1$  |
+| $-k$ | $-k$ | $k$  | $-j$ | $j$  | $i$  | $-i$ | $1$  | $-1$ |
 
 $777 + 13$ Lines.
 
@@ -798,3 +798,53 @@ Here's an analogy for the group $ℤ_2$:
 
 
 $800$ Lines.
+
+#### Something cool about the first few groups
+
+How does subtractor will work is I go over every group that is isomorphic to the corresponding group of the chapter, and I give each element a name, and figure out how that group should work. This should give me what I wanted from group theory when I started studying it.
+
+And when I refer to "This group", what I really mean is "This group considered up to isomorphism"
+
+##### $G \cong \{ e \}$
+
+Boring!
+
+Next!
+
+##### $G \cong ℤ_2$
+
+I feel like I said all that needs to be said about this group in the start of the parity sub-subchapter and a couple lines ago. But I feel like it captures the idea of a negative times a negative is a positive, an odd plus odd is an even, and so on.
+
+Next!
+
+##### $G \cong ℤ_3$
+
+Last time I went over this, I kind of just brushed it off as "I never really thought about this group too hard", but I feel like it isn't what this group deserves.
+
+Anyways, here's the part I've been waiting to put on this website for $5$ days!
+
+As $G$ is the only group of order $3$, it has identity element $e$, as well as two non-identity elements $a$ and $b$, and here are their properties:
+
+$$ a^2 = b $$
+
+$$ b^2 = a $$
+
+$$ a ∘ b = b ∘ a = e $$
+
+And from these, we can drive several facts (including that the group is Abelian usung $x$ and $y$ in $G$)
+
+$$ x ∘ y = y ∘ x $$
+
+$$ a^3 = e $$
+
+$$ b^3 = e $$
+
+$$ a^{-1} = b $$
+
+$$ b^{-1} = a $$
+
+For all these reasons, I don't know if the elements of $ℤ_2$ or $a$ and $b$ are more like yin and yang.
+
+Next!
+
+##### $G \cong ℤ_4$
