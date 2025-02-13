@@ -801,7 +801,7 @@ $800$ Lines.
 
 #### Something cool about the first few groups
 
-How does subtractor will work is I go over every group that is isomorphic to the corresponding group of the chapter, and I give each element a name, and figure out how that group should work. This should give me what I wanted from group theory when I started studying it.
+How does subchapter will work is I go over every group that is isomorphic to the corresponding group of the chapter, and I give each element a name, and figure out how that group should work. This should give me what I wanted from group theory when I started studying it.
 
 And when I refer to "This group", what I really mean is "This group considered up to isomorphism"
 
@@ -813,13 +813,13 @@ Next!
 
 ##### $G \cong ℤ_2$
 
-I feel like I said all that needs to be said about this group in the start of the parity sub-subchapter and a couple lines ago. But I feel like it captures the idea of a negative times a negative is a positive, an odd plus odd is an even, and so on.
+I feel like I said all that needs to be said about this group in the start of the parity sub-subchapter and a couple lines ago. But I feel like it captures the idea of a negative times a negative is a positive, odd plus odd is an even, and so on.
 
 Next!
 
 ##### $G \cong ℤ_3$
 
-Last time I went over this, I kind of just brushed it off as "I never really thought about this group too hard", but I feel like it isn't what this group deserves.
+Last time I went over this, I kind of just brushed it off as "I never really thought about this group too hard", but I feel like that isn't what this group deserves.
 
 Anyways, here's the part I've been waiting to put on this website for $5$ days!
 
@@ -831,7 +831,7 @@ $$ b^2 = a $$
 
 $$ a ∘ b = b ∘ a = e $$
 
-And from these, we can drive several facts (including that the group is Abelian usung $x$ and $y$ in $G$)
+And from these, we can drive several facts. (Including that the group is Abelian usung $x$ and $y$ in $G$.)
 
 $$ x ∘ y = y ∘ x $$
 
