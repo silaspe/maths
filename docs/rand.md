@@ -441,15 +441,17 @@ I wish you a Merry Christmas...
 
 .
 
-New Year's goals I'll make this year:
+New Year's resolutions
 
-None
+New Year's resolutions I'll make this year:
 
-New Year's goals I made last year:
+None.
 
-None
+New Year's resolutions I made last year:
 
-New Year's goals I made last year of which I have completed:
+None.
+
+New Year's resolutions I made last year of which I have completed:
 
 None, so technically all of them.
 
@@ -790,3 +792,15 @@ And then most of us lined up and we all bowed at different times, except for me,
 .
 
 (insert work here)
+
+.
+
+
+
+$800$ Lines.
+
+.
+
+Happy Valentine's Day!
+
+I think I'm still too young for this. More chocolates for me then!
