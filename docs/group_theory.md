@@ -347,7 +347,7 @@ But there are more examples of a homomorphism from a group to $ℤ_2$ (a.k.a. a 
 
 Case in point: this one time I was talking to ChatGPT about all of the subgroups of $\text{S}_4$ (which is the group of all of the ways to arrange four things) (the reason why was because my code was so inefficient that after waiting for a solid $30$ seconds, it only had the trivial group because it had to loop through every single combination of the $24$ inputs which is very slow).
 
-The results given to me by ChatGPT were the things I expected: the trivial group, variations of $ℤ_2$, variations of $ℤ_3$, variations of $ℤ_4$, even the group $\text{V}_4$ which was a pleasant surprise, and the group $\text{D}_4$ (which by the way ChatGPT called the dihedral group of order $8$).
+The results given to me by ChatGPT were the things I expected: the trivial group, variations of $ℤ_2$, variations of $ℤ_3$, variations of $ℤ_4$, even the group $\text{V}_4$ which was a pleasant surprise, and the group $\text{D}_4$.
 
 But there was one that I didn't expect (but in hindsight it makes sense): $\text{A}_4$, A group described by $3$ blue $1$ brown as permutations of four things that preserve a certain parity.
 
@@ -471,9 +471,9 @@ Now that I'm done with pretty much the entire page, I can finally copy over work
 
 ### misc
 
-#### finite groups
-
 Because the story of the pages is already complete and you should already understand the concepts, this is where I'll put my group theory work from now on.
+
+#### finite groups
 
 When I talk about all of these group categories, it really makes you think: what are all of the groups? (Or at least finite groups.) I will answer this question with at least the first few groups (ranked by size), and once I reach one of my favorites, I'll talk about it.
 
