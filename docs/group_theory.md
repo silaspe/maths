@@ -803,7 +803,11 @@ $800$ Lines.
 
 How does subchapter will work is I go over every group that is isomorphic to the corresponding group of the chapter, and I give each element a name, and figure out how that group should work. This should give me what I wanted from group theory when I started studying it.
 
-And when I refer to "This group", what I really mean is "This group considered up to isomorphism"
+Also, when I refer to "This group", what I really mean is "This group considered up to isomorphism".
+
+Also, $|a|$ means "The smallest non-zero number $n$ where $a^n = e$".
+
+Also, $x$ and $y$ are in $G$.
 
 ##### $G \cong \{ e \}$
 
@@ -825,26 +829,76 @@ Anyways, here's the part I've been waiting to put on this website for $5$ days!
 
 As $G$ is the only group of order $3$, it has identity element $e$, as well as two non-identity elements $a$ and $b$, and here are their properties:
 
+$$ x ∘ y = y ∘ x $$
+
+$$ x ∘ e = x $$
+
 $$ a^2 = b $$
 
 $$ b^2 = a $$
 
 $$ a ∘ b = b ∘ a = e $$
 
-And from these, we can drive several facts. (Including that the group is Abelian usung $x$ and $y$ in $G$.)
+And here's those plus some additional ones that you can derive from them.
 
 $$ x ∘ y = y ∘ x $$
 
-$$ a^3 = e $$
+$$ x ∘ e = x $$
 
-$$ b^3 = e $$
+$$ |a| = 3 $$
 
-$$ a^{-1} = b $$
+$$ |b| = 3 $$
 
-$$ b^{-1} = a $$
+$$ a^2 = b $$
+
+$$ b^2 = a $$
+
+$$ a ∘ b = e $$
 
 For all these reasons, I don't know if the elements of $ℤ_2$ or $a$ and $b$ are more like yin and yang.
 
 Next!
 
 ##### $G \cong ℤ_4$
+
+I've been waiting to do this one for $4$ days! (I added the previous chapter $4$ days ago.)
+
+$G$ has identity element $e$, as well as two non-identity elements $a$, $b$, and $c$, and here are their properties:
+
+$$ x ∘ y = y ∘ x $$
+
+$$ x ∘ e = x $$
+
+$$ a^2 = c $$
+
+$$ c ∘ a = b $$
+
+$$ b ∘ a = e $$
+
+And here's those plus some additional ones that you can derive from them.
+
+$$ x ∘ y = y ∘ x $$
+
+$$ x ∘ e = x $$
+
+$$ |a| = 4 $$
+
+$$ |b| = 4 $$
+
+$$ c^2 = e $$
+
+$$ a^2 = c $$
+
+$$ b^2 = c $$
+
+$$ a ∘ c = b $$
+
+$$ b ∘ c = a $$
+
+$$ a ∘ b = e $$
+
+$900$ Lines.
+
+If you were wondering how I came up with these, replace the ∘ with times, $e$ with $1$, $a$ with $i$, $c$ with $-1$, and $b$ with $-i$.
+
+But if it makes more sense, replace the ∘ with doing one after the other, $e$ with a $0$° rotation, $a$ with a $90$° clockwise rotation, $c$ with a $180$° rotation, and $b$ with a $90$° counterclockwise rotation.
