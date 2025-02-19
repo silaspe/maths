@@ -820,3 +820,13 @@ I think I'm still too young for this. More chocolates for me then!
 .
 
 (insert work here)
+
+.
+
+Why was $6$ afraid of $7$?
+
+Because $7$ ate $9$
+
+But why did $7$ eat $9$?
+
+Because you have to eat $3$ square meals a day.
