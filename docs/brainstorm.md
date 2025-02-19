@@ -2239,3 +2239,45 @@ $$ \begin{bmatrix} a \\
 b \\ \end{bmatrix} = \begin{bmatrix} \varphi & \psi \\
 1 & 1 \\ \end{bmatrix}^{-1} \begin{bmatrix} 1 \\
 0 \\ \end{bmatrix} $$
+
+#### an inductive set theoretic proof (unfinished)
+
+This proof partially comes from [Another Roof](https://www.youtube.com/watch?v=rhhhUAAAh-g).
+
+Also, before I start with how addition is set theoretically defined, I have the notation $\text{S} (n)$ pronounced "the successor of $n$" which means $n + 1$, which can easily be defined within set theory.
+
+$$ n + 0 : = n $$
+
+$$ a + \text{S} (b) : = \text{S} (a + b) $$
+
+Here's an example:
+
+$$ n + 3 = n + \text{S} (2) : = \text{S} (n + 2) = \text{S} (n + \text{S} (1)) : = \text{S} (\text{S} (n + 1)) = \text{S} (\text{S} (n + \text{S} (0))) : = \text{S} (\text{S} (\text{S} (n + 0))) $$
+
+$$ n + 3 = \text{S} (\text{S} (\text{S} (n))) $$
+
+Now, how do I inductively prove that the following is true?
+
+$$ a + b = b + a $$
+
+Obviously I use induction on $b$. First, base case, set $b$ to zero.
+
+$$ a + 0 = 0 + a $$
+
+$$ a + 0 : = a $$
+
+$$ 0 + a = a $$
+
+So, of course, to figure this out, just use induction on $a$!
+
+Base case:
+
+$$ 0 + 0 = 0 $$
+
+This statement is true by definition.
+
+Inductive reasoning:
+
+$$ 0 + a = a $$
+
+$$ 0 + \text{S} (a) : = \text{S} (0 + a) = \text{S} (a) = \text{S} (a) $$
