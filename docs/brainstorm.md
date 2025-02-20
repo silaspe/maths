@@ -2281,3 +2281,32 @@ Inductive reasoning:
 $$ 0 + a = a $$
 
 $$ 0 + \text{S} (a) : = \text{S} (0 + a) = \text{S} (a) = \text{S} (a) $$
+
+### set theory 3?
+
+#### what is a set?
+
+A set is a collection of things...
+
+... Okay, fine I'll be more specific. A set can contain a certain amount of objects, so for example, I could have the set containing this mouse that I'm holding and this chair that I'm sitting on.
+
+So a set kind of means a collection or a group, but group theory is a [whole other page](https://silaspe.github.io/maths/group_theory.html).
+
+Note: the elements (that is, the things part of the set, a.k.a. the members of it) are not ordered within a set, and a set having the same element twice doesn't change the set. When you ask the question "is this thing part of your set?" I can only answer with a yes or a no.
+
+In other words, sets are only defined by their elements.
+
+
+$2300$ Lines.
+
+As for some notation, the set of all even numbers would be written as $\{ 2, 4, 6, 8 ... \}$, $\{$ number $n: n$ is even $\}$, or $\{x: x$ is a number and is even $\}$. (Pronounced "the set containing $2$, $4$, $6$, $8$ and so on", "the set of all numbers $n$ where $n$ is even", and "the set of all $x$ where $x$ is a number, and furthermore, $x$ is even" respectively.)
+
+Also, the symbol for "$x$ is a member of $S$" where $S$ is a set is $x \in S$.
+
+But sets can contain more than just things, they can contain other sets.
+
+But this leads to a paradox: would $\{S:$ not $S \in S \}$ (the set containing only the sets that don't contain themselves) contain itself? (P.S. there's [a great video on this](https://www.youtube.com/watch?v=xauCQpnbNAM).)
+
+Clearly there's a problem with this. Let's take a step back.
+
+#### what is a set, really?
