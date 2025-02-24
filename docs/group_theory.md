@@ -103,7 +103,7 @@ $$ a^{-1} ∘ a = a^{-1} ∘ (a^{-1})^{-1} = e $$
 
 QED!
 
-#### Proof number $4$: There's only $1$ inverse for a given term
+#### proof number $4$: There's only $1$ inverse for a given term
 
 This one uses the same general strategy as proof number $1$. Let's assume that there were multiple inverses, denoted $a^{-1}_1$ and $a^{-1}_2$. Then of course, $a$ ∘ $a^{-1}_1 = e$.
 
@@ -115,7 +115,7 @@ Then $a^{-1}_2$ and $a$ would cancel out resulting in $a^{-1}_1$ on the left. Bu
 
 QED!
 
-#### Proof number $5$: $(a^2)^{-1} = (a^{-1})^2$ and they can both be denoted as $a^{-2}$
+#### proof number $5$: $(a^2)^{-1} = (a^{-1})^2$ and they can both be denoted as $a^{-2}$
 
 $$ a^2 ∘ (a^2)^{-1} = e $$
 
@@ -772,13 +772,13 @@ Now, I can see why people don't call $ℤ_2 \times ℤ_n$ by the shorter $\text{
 
 Also, you're probably wondering the same thing I was wondering at the time: what is $\text{Q}_8$? Answer: it's a group of eight quaternions being $1$, $-1$, $i$, $-i$, $j$, $-j$, $k$, and $-k$ with the operation of multiplication.
 
-I remember thinking one day at the playground $1.5$ or $2.5$ years ago that these eight are closed under multiplication, but I never really thought they would be a group.
+I remember thinking one day at the playground $1.5$ or $2.5$ years ago that these eight are closed under multiplication, but I never really thought they would be a group. I even made a times table!
 
 $777$ Lines.
 
-Also, here's the full multiplication table:
+Also, here's the full ∘ table:
 
-$$ \begin{bmatrix} ∘ & 1 & -1 & i & -i & j & -j & k & -k \\
+$$ \begin{matrix} ∘ & 1 & -1 & i & -i & j & -j & k & -k \\
 1 & 1 & -1 & i & -i & j & -j & k & -k \\
 -1 & -1 & 1 & -i & i & -j & j & -k & k \\
 i & i & -i & -1 & 1 & k & -k & -j & j \\
@@ -786,7 +786,7 @@ i & i & -i & -1 & 1 & k & -k & -j & j \\
 j & j & -j & -k & k & -1 & 1 & i & -i \\
 -j & -j & j & k & -k & 1 & -1 & -i & i \\
 k & k & -k & j & -j & -i & i & -1 & 1 \\
--k & -k & k & -j & j & i & -i & 1 & -1 \\ \end{bmatrix} $$
+-k & -k & k & -j & j & i & -i & 1 & -1 \\ \end{matrix} $$
 
 Here's an analogy for the group $ℤ_2$:
 
@@ -795,10 +795,9 @@ Here's an analogy for the group $ℤ_2$:
 | The friend of... | ...my friend       | ...my enemy       |
 | The enemy of...  | ...my enemy        | ...my friend      |
 
+#### something cool about the first few groups
 
 $800$ Lines.
-
-#### Something cool about the first few groups
 
 How does subchapter will work is I go over every group that is isomorphic to the corresponding group of the chapter, and I give each element a name, and figure out how that group should work. This should give me what I wanted from group theory when I started studying it.
 
@@ -896,8 +895,32 @@ $$ b ∘ c = a $$
 
 $$ a ∘ b = e $$
 
-$900$ Lines.
-
 If you were wondering how I came up with these, replace the ∘ with times, $e$ with $1$, $a$ with $i$, $c$ with $-1$, and $b$ with $-i$.
 
+$900$ Lines.
+
 But if it makes more sense, replace the ∘ with doing one after the other, $e$ with a $0$° rotation, $a$ with a $90$° clockwise rotation, $c$ with a $180$° rotation, and $b$ with a $90$° counterclockwise rotation.
+
+#### group theory card game
+
+I came up with the rules of this game in about $10$ minutes and it has not been playtested. You have been warned.
+
+First, you pick a deck. Each deck corresponds to a different group and the cards represent the elements of the group. There may or may not be duplicate cards depending on how big or small the group is.
+
+Then you deal one of each card out, get out an object, and place it on the identity element.
+
+If there are only one of each card in the deck, then get out another deck for doing this.
+
+The card that this object sits on should be viewed by every player.
+
+Then you deal five cards to each player, deal a card into what will soon become the pile, and move the object from the identity element to that card.
+
+Note: you can choose to not do this and just start playing from here with the object still on the identity.
+
+Then you choose someone to go first. That player plays a card from their hand onto the pile, then they take the card that the object is currently sitting on and ∘s it by the card that was dealt, and of course recards.
+
+Play continues clockwise until the marker goes back on the identity, then the person who dealt the last card gets the pile. Then you do the same process again, but that person who got the pile plays the first card.
+
+Play continues until you run out of cards in the deck, then the current pile goes to no one and the game ends.
+
+Then the player with the most cards across all of their decks wins.
