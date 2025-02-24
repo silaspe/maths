@@ -909,18 +909,20 @@ First, you pick a deck. Each deck corresponds to a different group and the cards
 
 Then you deal one of each card out, get out an object, and place it on the identity element.
 
-If there are only one of each card in the deck, then get out another deck for doing this.
+If there's only one of each card in the deck, then get out another deck for doing this.
 
 The card that this object sits on should be viewed by every player.
 
-Then you deal five cards to each player, deal a card into what will soon become the pile, and move the object from the identity element to that card.
+Then you deal $5$ cards to each player, deal a card into what will soon become the pile, and move the object from the identity element to that card.
 
 Note: you can choose to not do this and just start playing from here with the object still on the identity.
 
 Then you choose someone to go first. That player plays a card from their hand onto the pile, then they take the card that the object is currently sitting on and ∘s it by the card that was dealt, and of course recards.
 
-Play continues clockwise until the marker goes back on the identity, then the person who dealt the last card gets the pile. Then you do the same process again, but that person who got the pile plays the first card.
+Play continues clockwise until the marker goes back on the identity, then the person who dealt the last card gets the pile.
+
+Then you do the same process again, but that person who got the pile plays the first card.
 
 Play continues until you run out of cards in the deck, then the current pile goes to no one and the game ends.
 
-Then the player with the most cards across all of their decks wins.
+Then the player with the most cards across all of the decks they have wins.
