@@ -903,7 +903,7 @@ But if it makes more sense, replace the ∘ with doing one after the other, $e$ 
 
 #### group theory card game
 
-I came up with the rules of this game in about $10$ minutes and it has not been playtested. You have been warned.
+I came up with the rules of this game in about $10$ minutes and it has not been playtested or even played before. You have been warned.
 
 First, you pick a deck. Each deck corresponds to a different group and the cards represent the elements of the group. There may or may not be duplicate cards depending on how big or small the group is.
 
