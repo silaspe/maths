@@ -774,20 +774,19 @@ Also, you're probably wondering the same thing I was wondering at the time: what
 
 I remember thinking one day at the playground $1.5$ or $2.5$ years ago that these eight are closed under multiplication, but I never really thought they would be a group.
 
+$777$ Lines.
+
 Also, here's the full multiplication table:
 
-| ∘    | $1$  | $-1$ | $i$  | $-i$ | $j$  | $-j$ | $k$  | $-k$ |
-| ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
-| $1$  | $1$  | $-1$ | $i$  | $-i$ | $j$  | $-j$ | $k$  | $-k$ |
-| $-1$ | $-1$ | $1$  | $-i$ | $i$  | $-j$ | $j$  | $-k$ | $k$  |
-| $i$  | $i$  | $-i$ | $-1$ | $1$  | $k$  | $-k$ | $-j$ | $j$  |
-| $-i$ | $-i$ | $i$  | $1$  | $-1$ | $-k$ | $k$  | $j$  | $-j$ |
-| $j$  | $j$  | $-j$ | $-k$ | $k$  | $-1$ | $1$  | $i$  | $-i$ |
-| $-j$ | $-j$ | $j$  | $k$  | $-k$ | $1$  | $-1$ | $-i$ | $i$  |
-| $k$  | $k$  | $-k$ | $j$  | $-j$ | $-i$ | $i$  | $-1$ | $1$  |
-| $-k$ | $-k$ | $k$  | $-j$ | $j$  | $i$  | $-i$ | $1$  | $-1$ |
-
-$777 + 13$ Lines.
+$$ \begin{bmatrix} ∘ & 1 & -1 & i & -i & j & -j & k & -k \\
+1 & 1 & -1 & i & -i & j & -j & k & -k \\
+-1 & -1 & 1 & -i & i & -j & j & -k & k \\
+i & i & -i & -1 & 1 & k & -k & -j & j \\
+-i & -i & i & 1 & -1 & -k & k & j & -j \\
+j & j & -j & -k & k & -1 & 1 & i & -i \\
+-j & -j & j & k & -k & 1 & -1 & -i & i \\
+k & k & -k & j & -j & -i & i & -1 & 1 \\
+-k & -k & k & -j & j & i & -i & 1 & -1 \\ \end{bmatrix} $$
 
 Here's an analogy for the group $ℤ_2$:
 
