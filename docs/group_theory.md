@@ -235,7 +235,7 @@ But if it's anything else, then the size has to be $7$ as $a$, not being the ide
 
 Then what if we just label $e$ as zero, $a$ as $1$, $a^2$ as 2, and so on, also ∘ as $+$.
 
-Then we realize that every single group of which its size is prime number $p$, the group is actually just $ℤ_p$ and disguise!
+Then we realize that every single group of which its size is prime number $p$, the group is actually just $ℤ_p$ in disguise!
 
 ### isomorphic groups and homomorphisms
 
@@ -748,7 +748,7 @@ Also, I asked ChatGPT to make a list of all of the groups of size $10$ and under
 
 Also, now I can finally answer that asterisk:
 
-*This ChatGPT conversation was the one where it said that the answer was $ℤ_6$, except what it said was that the only groups of size $6$ are $ℤ_6$ and $\text{S}_3$ / $\text{D}_3$. But in $ℤ_6$, $0$, $2$, and $4$ cubed- times $3$ results in the identity. But also, in $ℤ_2 \times ℤ_3$, $(0, 0)$, $(0, 1)$, and $(0, 2)$ all cube to the identity. But also, $0$ and $2$ all square- times $2$ is the identity, while $(0, 0)$ and $(1, 0)$ do so as well. Also, in $\text{D}_3$, there are three things that square to the identity, while in $ℤ_2 \times ℤ_3$, there are only two. From all this, I concluded that $ℤ_2 \times ℤ_3 \cong ℤ_6$*
+* This ChatGPT conversation was the one where it said that the answer was $ℤ_6$, except what it said was that the only groups of size $6$ are $ℤ_6$ and $\text{S}_3$ / $\text{D}_3$. But in $ℤ_6$, $0$, $2$, and $4$ cubed- times $3$ results in the identity. But also, in $ℤ_2 \times ℤ_3$, $(0, 0)$, $(0, 1)$, and $(0, 2)$ all cube to the identity. But also, $0$ and $2$ all square- times $2$ is the identity, while $(0, 0)$ and $(1, 0)$ do so as well. Also, in $\text{D}_3$, there are three things that square to the identity, while in $ℤ_2 \times ℤ_3$, there are only two. From all this, I concluded that $ℤ_2 \times ℤ_3 \cong ℤ_6$*
 
 *I actually only did the $3(0) = 3(2) = 3(4) = 0$ / $3(0, 0) = 3(0, 1) = 3(0, 2) = (0, 0)$ and $2(0) = 2(3) = 0$ / $2(0, 0) = 2(1, 0) = (0, 0)$ tests.
 
@@ -915,7 +915,7 @@ The card that this object sits on should be viewed by every player.
 
 Then you deal $5$ cards to each player, deal a card into what will soon become the pile, and move the object from the identity element to that card.
 
-Note: you can choose to not do this and just start playing from here with the object still on the identity.
+Note: you can choose to not do this and just deal $5$ cards to each player and start playing from here with the object still on the identity.
 
 Then you choose someone to go first. That player plays a card from their hand onto the pile, then they take the card that the object is currently sitting on and ∘s it by the card that was dealt, and of course recards.
 
@@ -925,4 +925,40 @@ Then you do the same process again, but that person who got the pile plays the f
 
 Play continues until you run out of cards in the deck, then the current pile goes to no one and the game ends.
 
-Then the player with the most cards across all of the decks they have wins.
+Then the player with the most cards across all of the decks wins.
+
+#### my assignment this week (well, two weeks)
+
+It all starts with having a finite group $G$ and it's center $C$, but often we'll just take $C$ to be an abelian group.
+
+The assignment is, given that the size of $C$ is divisible by prime number $p$, to prove that there's an element of $C$ of order $p$.
+
+He already partially completed this problem, and I'll work through that.
+
+He said: just pick an element at random. Call it $x$.
+
+Maybe you get lucky and the order of $x$ is $p$.
+
+Maybe you'll get kind of lucky and the order of $x$ is at least divisible by $p$.
+
+Or maybe you'll get unlucky and the order of $x$ isn't even divisible by $p$.
+
+In the first case, the problem is solved. In the second, for reasons I do not fully understand, the problem is also solved. But the third, there's something very interesting you can do.
+
+Let's call the subgroup of all powers of $x$ by the name $H$.
+
+Then the size (or commonly called the order) of $H$ is the order of $x$ is not divisible by $p$. It was at this point that I realized why the two senses of the word are used.
+
+Here's some terminology that I'm going to have to define at some point, so I'll define it here. $G / H$ is pronounced "$G$ mod $H$" and means "the set of all cosets of H".
+
+You might think that that's just $G$ because there's $1$ for each element. But no, there are only $2$ cosets of the even numbers for example (the evens and the odds).
+
+This notation is valid only for normal subgroups. I know what you're thinking: what is a normal subgroup? Well, normal subgroups are subgroups where the set of all things of form $ghg^{-1}$ for $g$ in $G$ and $h$ in $H$ is $H$ itself, just maybe with its elements shuffled.
+
+Also, fun fact! $ℤ$ mod all of the integers divisible by $n$ is actually equal to $ℤ_n$. Or written more formally, it looks like this:
+
+$$ ℤ_n : = ℤ / ⟨n⟩ $$
+
+Also, taking the coset formed by an element of the subgroup itself doesn't change it. That also means that ∘ing the thing you're taking a coset with by an element of the subgroup, it doesn't change the coset.
+
+A consequence of this is that the size of $G / H$ is the size of $G$ divided by the size of $H$.
