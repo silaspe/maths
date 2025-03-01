@@ -929,7 +929,7 @@ Then the player with the most cards across all of the decks wins.
 
 #### my assignment this week (well, two weeks)
 
-It all starts with having a finite group $G$ and it's center $C$, but often we'll just take $C$ to be an abelian group.
+It all starts with having a finite group $G$ and it's center $C$, but often we'll just take $C$ to be an Abelian group.
 
 The assignment is, given that the size of $C$ is divisible by prime number $p$, to prove that there's an element of $C$ of order $p$.
 
@@ -955,6 +955,8 @@ You might think that that's just $G$ because there's $1$ for each element. But n
 
 This notation is valid only for normal subgroups. I know what you're thinking: what is a normal subgroup? Well, normal subgroups are subgroups where the set of all things of form $ghg^{-1}$ for $g$ in $G$ and $h$ in $H$ is $H$ itself, just maybe with its elements shuffled.
 
+Notice how, three paragraphs ago, I said "the set of all cosets of $H$". Because, as you should figure out for yourself, it's the same if you do it from the left or the right.
+
 Also, fun fact! $ℤ$ mod all of the integers divisible by $n$ is actually equal to $ℤ_n$. Or written more formally, it looks like this:
 
 $$ ℤ_n : = ℤ / ⟨n⟩ $$
@@ -962,3 +964,11 @@ $$ ℤ_n : = ℤ / ⟨n⟩ $$
 Also, taking the coset formed by an element of the subgroup itself doesn't change it. That also means that ∘ing the thing you're taking a coset with by an element of the subgroup, it doesn't change the coset.
 
 A consequence of this is that the size of $G / H$ is the size of $G$ divided by the size of $H$.
+
+Also, if the group is Abelian, then every subgroup is normal.
+
+I can't believe I haven't said this before so I'll say it now. The size of a group is denoted with absolute value signs.
+
+With all of this in mind, realize that the size of $C / H$ times the size of $H$ is equal to the size of $C$ ($|C / H| \cdot |H| = |C|$). But remember, at the start I said that the size of $C$ is divisible by $p$, so if the factor of $p$ definitely didn't come from $H$, then it definitely came from $C / H$!
+
+You might not know why this is important (and neither do I), but this statement is really close to solving the problem, and for reasons that I do not fully understand, this means that $C / H$ has an element of order $p$. Now the only thing left for me to prove this week is that if $C / H$ has an element of order $p$, then so does $C$.
