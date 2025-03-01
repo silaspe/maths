@@ -972,3 +972,25 @@ I can't believe I haven't said this before so I'll say it now. The size of a gro
 With all of this in mind, realize that the size of $C / H$ times the size of $H$ is equal to the size of $C$ ($|C / H| \cdot |H| = |C|$). But remember, at the start I said that the size of $C$ is divisible by $p$, so if the factor of $p$ definitely didn't come from $H$, then it definitely came from $C / H$!
 
 You might not know why this is important (and neither do I), but this statement is really close to solving the problem, and for reasons that I do not fully understand, this means that $C / H$ has an element of order $p$. Now the only thing left for me to prove this week is that if $C / H$ has an element of order $p$, then so does $C$.
+
+I solved the problem around $20$ minutes after I wrote that down.
+
+What happened was I analyzed the coset itself. That is, the one of order $p$.
+
+I'll just take a random element of this coset and call it $c$. By definition, if you ∘ each element of $H$ by $c$ a total of $p$ times (that is, once by $c^p$), then you just shuffle around the elements of $H$.
+
+But realize: that shuffling action can be described perfectly with an element of $\text{S}_{|H|}$. That is, a permutation of $H$'s elements. Call it $\sigma$.
+
+But because $\sigma$ is a permutation of a finite number of things, it by definition has an order, and you can keep doing it $|\sigma|$ times to get back where you started.
+
+But this means that if you ∘ an element of $H$ by $c^p$ a total of $|\sigma|$ times (that is, once by ${(c^p)}^{|\sigma|}$) then you get back to where you started, which means you ∘ed by the identity. Thus, ${(c^p)}^{|\sigma|}$ is the identity.
+
+But by using the properties of exponents, we realize that ${(c^p)}^{|\sigma|} = c^{p |\sigma|} = c^{|\sigma| p} = {(c^{|\sigma|})}^p$, so ${(c^{|\sigma|})}^p$ is the identity.
+
+Because $p$ by definition has no factors, while multiplying by $(c^{|\sigma|})$ it can't have hit an earlier term and have that term as the order.
+
+Thus, $(c^{|\sigma|})$ is an element of $C$ of order $p$.
+
+QED!
+
+Clarification: the thing I said two paragraphs ago would mean that ${(c^{|\sigma|})}^p$ is the identity because $p$ is divisible by that smaller exponent, i.e. you would just repeatedly hit the identity on every multiple of said smaller exponent including $p$.
