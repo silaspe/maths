@@ -893,7 +893,7 @@ I was thinking...
 
 If ur mom jokes are about how fat she is, then ur dad jokes should be about how fast he left.
 
-My mom came up with this idea because she was tired of hearing your mom jokes from me to my sister.
+My mom came up with this idea because she was tired of hearing your mom jokes between me and my sister.
 
 Here's one that my sister came up with:
 
