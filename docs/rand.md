@@ -886,3 +886,17 @@ A thousand commits have been done, this will be the $1001$'st
 .
 
 (insert work here)
+
+.
+
+I was thinking...
+
+If ur mom jokes are about how fat she is, then ur dad jokes should be about how fast he left.
+
+My mom came up with this idea because she was tired of hearing your mom jokes from me to my sister.
+
+Here's one that my sister came up with:
+
+$900$ Lines.
+
+The reason why you look into the sky when you miss someone is because your dad reached escape velocity when he left.
