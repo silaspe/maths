@@ -987,9 +987,9 @@ But this means that if you ∘ an element of $H$ by $c^p$ a total of $|\sigma|$ 
 
 But by using the properties of exponents, we realize that ${(c^p)}^{|\sigma|} = c^{p |\sigma|} = c^{|\sigma| p} = {(c^{|\sigma|})}^p$, so ${(c^{|\sigma|})}^p$ is the identity.
 
-Because $p$ by definition has no factors, while multiplying by $(c^{|\sigma|})$ it can't have hit an earlier term and have that term as the order.
+Because $p$ by definition has no factors, while multiplying by $c^{|\sigma|}$ it can't have hit an earlier term and have that term as the order.
 
-Thus, $(c^{|\sigma|})$ is an element of $C$ of order $p$.
+Thus, $c^{|\sigma|}$ is an element of $C$ of order $p$.
 
 QED!
 
