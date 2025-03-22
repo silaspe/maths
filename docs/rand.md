@@ -88,7 +88,7 @@ Happy Father's day! (Actual)
 
 .
 
-### vacation
+#### vacation!
 
 update on working every day
 
@@ -213,7 +213,7 @@ scratch that, I went to atlanta, then to texas
 
 .
 
-### end of vacation
+### end of vacation.
 
 .
 
@@ -497,8 +497,6 @@ Last time it snowed it didn't snow for very long and it didn't really stay. That
 .
 
 
-
-
 $500$ Lines.
 
 .
@@ -555,7 +553,7 @@ The snow has melted :(
 
 .
 
-a play that me and my friends made 
+#### a play that me and my friends made 
 
 I was at a sports party the other day with my sister and some of my friends, and then we decided to make a play together.
 
@@ -599,9 +597,9 @@ $$ \text{Act } 1 \text{ Scene } 2 $$
 
 Actors: my friend (male) and my friend (female) as the past versions of the parents.
 
-My friend (female): "I'm not doing that pop test no matter what happens!"
-
 $600$ Lines.
+
+My friend (female): "I'm not doing that pop test no matter what happens!"
 
 My friend (male): "Yes."
 
@@ -785,6 +783,8 @@ The end!
 
 And then most of us lined up and we all bowed at different times, except for me, I didn't bow.
 
+### end of play.
+
 .
 
 (insert work here)
@@ -891,15 +891,17 @@ A thousand commits have been done, this will be the $1001$'st
 
 I was thinking...
 
-If ur mom jokes are about how fat she is, then ur dad jokes should be about how fast he left.
+If ur mom jokes are about how fat she is, then ur dad jokes should be about how fast he left / how he never got back with the milk.
 
-My mom came up with this idea because she was tired of hearing your mom jokes between me and my sister.
+My mom came up with this idea because she was tired of hearing ur mom jokes between me and my sister.
 
-Here's one that my sister came up with:
+.
 
 $900$ Lines.
 
-The reason why you look into the sky when you miss someone is because your dad reached escape velocity when he left.
+Here's one that my sister came up with:
+
+The reason why you look into the sky when you miss someone is because ur dad reached escape velocity when he left.
 
 .
 
