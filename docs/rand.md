@@ -986,3 +986,21 @@ Happy late St. Patrick's Day!
 .
 
 (insert work here)
+
+.
+
+If you think that you had the craziest work week or busiest schedule, think again! Here's one I found in a book:
+
+$$ \text{Sunday} $$
+
+Genesis 1:1 - 1:5
+
+On the first day, God created the heavens above the earth below, then he created the light (a.k.a. day) and blessed it, then separated it from the darkness (a.k.a. night).
+
+$1000$ Lines, wow.
+
+$$ \text{Monday} $$
+
+Genesis 1:6 - 1:8
+
+On the second day, God created the expanse (a.k.a. sky) in order to separate the water above (a.k.a. probably clouds or rain) from the water below (a.k.a. the ocean).
