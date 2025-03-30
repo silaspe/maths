@@ -989,15 +989,19 @@ Happy late St. Patrick's Day!
 
 .
 
+(insert work here)
+
+.
+
 If you think that you had the craziest work week or busiest schedule, think again! Here's one I found in a book:
 
 $$ \text{Sunday} $$
 
+$1000$ Lines, wow.
+
 Genesis 1:1 - 1:5
 
 On the first day, God created the heavens above the earth below, then he created the light (a.k.a. day) and blessed it, then separated it from the darkness (a.k.a. night).
-
-$1000$ Lines, wow.
 
 $$ \text{Monday} $$
 
