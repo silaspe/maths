@@ -993,7 +993,7 @@ Happy late St. Patrick's Day!
 
 .
 
-If you think that you had the craziest work week or busiest schedule, think again! Here's one I found in a book:
+If you think that you had the craziest work week or busiest schedule, think again! I'll try to add most of these on the corresponding day. Here's one I found in a book:
 
 $$ \text{Sunday} $$
 
@@ -1001,7 +1001,7 @@ $1000$ Lines, wow.
 
 Genesis 1:1
 
-First, God created the heavens (which are like the sky, but really just the above) and the earth.
+First, God created the heavens (up to interpretation) and the earth.
 
 Genesis 1:2
 
@@ -1023,12 +1023,34 @@ $$ \text{Monday} $$
 
 Genesis 1:6
 
-And then God planned to created an expanse to separate the water from the water.
+And then God said "let there be an expanse to separate the water from the water".
 
 Genesis 1:7
 
-And then God created an expanse to separate the water above the expanse (probably rain) from the water below it (ocean).
+And then just that happened, God created an expanse to separate the water above it (probably rain) from the water below it (ocean).
 
 Genesis 1:8
 
 God called the expanse "sky". This concludes the second day.
+
+$$ \text{Tuesday} $$
+
+Genesis 1:9
+
+But the earth still pretty much looked like a ball of water, so God gathered the water revealing dry ground.
+
+Genesis 1:10
+
+God called the dry ground "land" and the gathered waters he called "seas", and God saw that it was good.
+
+Genesis 1:11
+
+And then, on the land, God created vegetation, i.e. seed bearing plants, trees that produce fruit, etc.
+
+Genesis 1:12
+
+And then just that happened, and God saw that it was good.
+
+Genesis 1:13
+
+This concludes the third day.
