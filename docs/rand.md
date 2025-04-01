@@ -999,12 +999,36 @@ $$ \text{Sunday} $$
 
 $1000$ Lines, wow.
 
-Genesis 1:1 - 1:5
+Genesis 1:1
 
-On the first day, God created the heavens above the earth below, then he created the light (a.k.a. day) and blessed it, then separated it from the darkness (a.k.a. night).
+First, God created the heavens (which are like the sky, but really just the above) and the earth.
+
+Genesis 1:2
+
+But the Earth was still empty and didn't really have anything interesting on it.
+
+Genesis 1:3
+
+And then God created light.
+
+Genesis 1:4
+
+God saw that the light was good, and separated it from the darkness.
+
+Genesis 1:5
+
+God called the light "day" and the darkness "night". This concludes the first day.
 
 $$ \text{Monday} $$
 
-Genesis 1:6 - 1:8
+Genesis 1:6
 
-On the second day, God created the expanse (a.k.a. sky) in order to separate the water above (a.k.a. probably clouds or rain) from the water below (a.k.a. the ocean).
+And then God planned to created an expanse to separate the water from the water.
+
+Genesis 1:7
+
+And then God created an expanse to separate the water above the expanse (probably rain) from the water below it (ocean).
+
+Genesis 1:8
+
+God called the expanse "sky". This concludes the second day.
