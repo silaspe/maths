@@ -993,7 +993,7 @@ Happy late St. Patrick's Day!
 
 .
 
-If you think that you had the craziest work week or busiest schedule, think again! I'll try to add most of these on the corresponding day. Here's one I found in a book:
+If you think that you had the craziest work week or busiest schedule, think again! I'll try to add all of these after Monday on the corresponding day. Here's one I found in a book:
 
 $$ \text{Sunday} $$
 
@@ -1054,3 +1054,29 @@ And then just that happened, and God saw that it was good.
 Genesis 1:13
 
 This concludes the third day.
+
+$$ \text{Wednesday} $$
+
+Genesis 1:14
+
+And then God said "let there be lights in the sky to be able to tell day, night, days, weeks, seasons, years, etc...".
+
+Genesis 1:15
+
+And then God said "...also, they should glow".
+
+Genesis 1:16
+
+And then just that happened, two greater lights for the day and night respectively, and and aslo the stars.
+
+Genesis 1:17
+
+And God set them in the sky to give light on the earth...
+
+Genesis 1:18
+
+...To tell day from night, large time frames, etc.
+
+Genesis 1:19
+
+This concludes the fourth day.
