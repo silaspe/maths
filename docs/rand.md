@@ -1093,7 +1093,7 @@ And then God made just that, and God saw that it was good.
 
 Genesis 1:22
 
-And then God blessed them and told them to be fruitful and increase in numbers until they fill the sea and sky.
+And then God blessed them and told them to be fruitful and increase in numbers.
 
 Genesis 1:23
 
