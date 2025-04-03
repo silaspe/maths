@@ -1067,7 +1067,7 @@ And then God said "...also, they should glow".
 
 Genesis 1:16
 
-And then just that happened, two greater lights for the day and night respectively, and and aslo the stars.
+And then God made just that, two greater lights for the day and night respectively, and and aslo the stars.
 
 Genesis 1:17
 
@@ -1080,3 +1080,23 @@ Genesis 1:18
 Genesis 1:19
 
 This concludes the fourth day.
+
+$$ \text{Thursday} $$
+
+Genesis 1:20
+
+And then God said "let there be fishes in the water and birds in the air".
+
+Genesis 1:21
+
+And then God made just that, and God saw that it was good.
+
+Genesis 1:22
+
+And then God blessed them and told them to be fruitful and increase in numbers until they fill the sea and sky.
+
+Genesis 1:23
+
+$1000$ Lines.
+
+This concludes the fifth day.
