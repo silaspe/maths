@@ -993,11 +993,13 @@ Happy late St. Patrick's Day!
 
 .
 
-If you think that you had the craziest work week or busiest schedule, think again! I'll try to add all of these after Monday on the corresponding day. Here's one I found in a book:
+#### the craziest work week
 
-$$ \text{Sunday} $$
+If you think that you had the craziest work week or busiest schedule, think again! I'll try to add all of these after Monday on the corresponding day. You'll figure out why this is a work week on the $7$th day. Here's one I found in a book:
 
 $1000$ Lines, wow.
+
+$$ \text{Sunday} $$
 
 Genesis 1:1
 
@@ -1059,11 +1061,11 @@ $$ \text{Wednesday} $$
 
 Genesis 1:14
 
-And then God said "let there be lights in the sky to be able to tell day, night, days, weeks, seasons, years, etc...".
+And then God said "Let there be lights in the sky to be able to tell day, night, days, weeks, seasons, years, etc...".
 
 Genesis 1:15
 
-And then God said "...also, they should glow".
+And then God said "...Also, they should glow".
 
 Genesis 1:16
 
@@ -1085,7 +1087,7 @@ $$ \text{Thursday} $$
 
 Genesis 1:20
 
-And then God said "let there be fishes in the water and birds in the air".
+And then God said "Let there be fishes in the water and birds in the air".
 
 Genesis 1:21
 
@@ -1095,8 +1097,42 @@ Genesis 1:22
 
 And then God blessed them and told them to be fruitful and increase in numbers.
 
-Genesis 1:23
-
 $1100$ Lines.
 
+Genesis 1:23
+
 This concludes the fifth day.
+
+$$ \text{Friday} $$
+
+Genesis 1:24
+
+And then God said "Let there be livestock, wild animals, and other such creatures that move across the ground".
+
+Genesis 1:25
+
+And then God made just that, and God saw that it was good.
+
+Genesis 1:26
+
+And then God said "Let us (?) make man in our (?) own image, in our (?) own likeness, and let them rule over all of the earth".
+
+Genesis 1:27
+
+And then God made just that, humans male and female.
+
+Genesis 1:28
+
+And then God told them that they have permission to rule over the Earth.
+
+Genesis 1:29
+
+And that they can eat plants and fruit and stuff.
+
+Genesis 1:30
+
+And that God also gave the same permission to animals to eat plants and fruit.
+
+Genesis 1:31
+
+And then God looked out at everything he had created in the past $6$ days, and God saw that it was very good. This concludes the sixth day.
