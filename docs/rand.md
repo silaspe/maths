@@ -1135,4 +1135,20 @@ And that God also gave the same permission to animals to eat plants and fruit.
 
 Genesis 1:31
 
-And then God looked out at everything he had created in the past $6$ days, and God saw that it was very good. This concludes the sixth day.
+And then God looked out at everything he had created in the past $6$ days, and God saw that it was very good. This concludes the sixth day (and chapter $1$).
+
+$$ \text{Saturday} $$
+
+Genesis 2:1
+
+Now the Earth was finally complete.
+
+Genesis 2:2
+
+And then God finally took his weekend after all the work he'd been doing.
+
+Genesis 2:3
+
+And then God blessed saturday and made it holy.
+
+### end of the craziest work week.
