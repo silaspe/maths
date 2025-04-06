@@ -1149,6 +1149,10 @@ And then God finally took his weekend after all the work he'd been doing.
 
 Genesis 2:3
 
-And then God blessed saturday and made it holy.
+And then God blessed saturdays (or really just days of rest) and made them holy.
 
 ### end of the craziest work week.
+
+.
+
+(insert work here)
