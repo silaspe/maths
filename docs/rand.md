@@ -6,9 +6,9 @@ That one puzzle
 
 $$ \frac{\partial (x^2 + y^2)}{\partial (x + y)} = ? $$
 
-$$ \text{Okay, fine, yes, that one was a joke. But it took me a whole weekend to solve it.} $$
+Okay, fine, yes, that one was a joke. But it took me a whole weekend to solve it.
 
-$$ \text{Not that every day isn't a weekend for me, but I remember solving it on Sunday and posing it the day before.} $$
+Not that every day isn't a weekend for me, but I remember solving it on Sunday and posing it the day before.
 
 .
 
@@ -1162,6 +1162,10 @@ And then God blessed saturdays (or really just days of rest) and made them holy.
 The brainstorm page is officially turning $1$ year old!
 
 How do I know this? Well, partially GitHub commit history, but also because of a tradition / festival that my family celebrates once a year that happened to coincide with eclipse day last year. According to my memories, during this, I created the brainstorm page. The same thing just happened a couple of days ago (it always happens on the weekend), so that's how I know that the page is turning $1$.
+
+.
+
+(insert work here)
 
 .
 
