@@ -111,12 +111,9 @@ shoutout to Dr. Keivan!
 
 .
 
-I'm gonna see my grandparents! (I've still been working every day.)
+I'm gonna see my grandparents!
 
-.
-
-
-$100$ lines
+I've still been working every day.
 
 .
 
@@ -128,7 +125,9 @@ I'm gonna see my grandparents!.. For real this time.
 
 .
 
-Goodbye grandparents. (I've still been working every day.)
+Goodbye grandparents.
+
+I've still been working every day.
 
 .
 
@@ -136,7 +135,9 @@ new place today.
 
 .
 
-I'm gonna see my cousins! (I've still been working every day.)
+I'm gonna see my cousins!
+
+I've still been working every day.
 
 .
 
@@ -190,10 +191,9 @@ Scratch that, I saw them yesterday.
 
 .
 
-Goin' to e#pw#a#nl
+Goin' to e#pw#a#nl.
 
 .
-
 
 
 
@@ -201,15 +201,15 @@ $200$ Lines.
 
 .
 
-the car's license plate said "DNAX"
+the car's license plate said "DNAX".
 
 .
 
-Goin' back to texas
+Goin' back to texas.
 
 .
 
-scratch that, I went to atlanta, then to texas
+scratch that, I went to atlanta, then to texas.
 
 .
 
@@ -225,7 +225,7 @@ April $1$'st
 
 Aha! I fooled you, by making you think that I fooled you.
 
-(It's not actually April $1$'st)
+(P.S. it's not actually April $1$'st)
 
 .
 
@@ -273,7 +273,7 @@ Only ~ $2$ weeks until halloween! (That was the day I created this website.)
 
 i before e except after c...
 
-... Unless you're one of eight weird beige foreign, either sovereign or budweiser drinking neighbors, running a feisty heist to seize the height of modern technology!
+... Unless you're being one of eight weird beige foreign, either sovereign or budweiser drinking neighbors, running a feisty heist to seize the height of technology!
 
 .
 
@@ -313,7 +313,7 @@ Actually, I went to mississippi, then alabama, then florida, then a restaraunt.
 
 .
 
-Yess, I spelled "restaraunt" first try
+Yess, I spelled "restaraunt" first try.
 
 .
 
@@ -341,7 +341,7 @@ It did good and shorter then expected[.]() (I'll put in the link when the video 
 
 .
 
-Announcement
+Announcement!
 
 It's the next day again and, because both the talk that I've been waiting $1$ year for (the second one) and the one I've been spending all my free time on for the last week (the first one), I can now come back to working on my website instead of doing daily edits to this page. One of the things that I've wanted to do but can't is set theory.
 
