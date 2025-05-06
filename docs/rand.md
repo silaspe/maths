@@ -1274,3 +1274,9 @@ $1234$ Lines.
 May the $4$th...
 
 Just finished a new hope.
+
+.
+
+#### road trip!
+
+We left in the morning and I'm currently saying this in the night because we were busy packing up the computer.
