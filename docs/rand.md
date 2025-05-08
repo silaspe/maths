@@ -1277,16 +1277,24 @@ Just finished a new hope.
 
 .
 
-#### road trip!
-
-We left in the morning and I'm currently writing this in the night because we were busy packing up the computer.
+Day one of road trip my family left in the morning and I'm currently writing this in the night because we were busy packing up the computer.
 
 .
 
-(insert work here)
+Day two of road trip and there is nothing worth of note.
 
 .
 
 Day three and my family finally got to see a Bitcoin related thing. The main thing at the party (other than just talking to people) was there was a pool (known as the mempool) and you had to get as many beach balls as you can onto your side of the pool. Whichever team wins gets to move on to the next round. My family got second place.
 
 I was able to explain to one person how to make an 8-bit computer. I explained to someone else what an option is and he said it was the best explanation of the Black Scholes equation he's ever heard (?). And I was able to explain how cubic equations relate to the equation $(x + y)^3$ and how they relate to a certain puzzle that my family makes.
+
+.
+
+Day four and we're already leaving.
+
+.
+
+
+
+$1300$ Lines.
