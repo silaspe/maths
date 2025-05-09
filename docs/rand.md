@@ -1281,7 +1281,7 @@ Day one of road trip my family left in the morning and I'm currently writing thi
 
 .
 
-Day two of road trip and there is nothing worth of note.
+Day two of road trip and there is nothing worth of note (PS we had ice cream).
 
 .
 
@@ -1298,3 +1298,7 @@ Day four and we're already leaving.
 
 
 $1300$ Lines.
+
+.
+
+Actually, on day four we went to btc++ which was an entire bitcoin conference, and because it happened yesterday I don't even remember what the most interesting thing that happened there was, and I was not informed by my family that we were going there until after I wrote down the message, and the next time I got to use a computer was now.
