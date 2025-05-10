@@ -1302,3 +1302,7 @@ $1300$ Lines.
 .
 
 Actually, on day four we went to btc++ which was an entire bitcoin conference, and because it happened yesterday I don't even remember what the most interesting thing that happened there was, and I was not informed by my family that we were going there until after I wrote down the message, and the next time I got to use a computer was now.
+
+.
+
+(insert work here)
