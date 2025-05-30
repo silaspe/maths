@@ -1383,4 +1383,8 @@ PS It took me all morning to think of that.
 
 .
 
-Yesterday, among other things, Bitcoin conference.
+Yesterday, Bitcoin conference.
+
+.
+
+leaving today.
