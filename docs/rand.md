@@ -1388,3 +1388,11 @@ Yesterday, Bitcoin conference.
 .
 
 leaving today.
+
+.
+
+(insert work here)
+
+.
+
+(insert work here)
