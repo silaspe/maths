@@ -103,7 +103,7 @@ $100$ Lines.
 
 vacation to h#suhr#x# has started!
 
-If you were wondering, this is one year after [the strand puzzle](https://silaspe.github.io/maths/the_strand_puzzle.html) and [the arctan puzzle](https://silaspe.github.io/maths/arctan.html)
+If you were wondering, this is one year after [the strand puzzle](https://silaspe.github.io/maths/the_strand_puzzle.html) and [the arctan puzzle](https://silaspe.github.io/maths/arctan.html).
 
 .
 
@@ -1454,3 +1454,9 @@ I'm sick today :(
 .
 
 (insert work here)
+
+.
+
+#### vacation!
+
+Today, me and my family are going to puery (puh-ery). This is $1$ year after [the vacation at the start of the page](https://silaspe.github.io/maths/rand.html#vacation), [the](https://www.youtube.com/watch?v=3VQ382QG-y4) [lambda](https://www.youtube.com/watch?v=pAnLQ9jwN-E) [calc](https://silaspe.github.io/maths/lambda.html)[ulus](https://silaspe.github.io/maths/lcr.html), and [binary](https://www.youtube.com/watch?v=rDDaEVcwIJM), and this is $2$ years after I did [the stra](https://www.youtube.com/watch?v=V2BybLCmUzs)[nd puzzle](https://silaspe.github.io/maths/the_strand_puzzle.html) and [the arctan puzzle](https://silaspe.github.io/maths/arctan.html). Also, happy (late) Father's Day!
