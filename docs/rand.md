@@ -1464,3 +1464,5 @@ Today, me and my family are going to puery (puh-er-y). This is $1$ year after an
 Yesterday and today kind of Blended together, but in that time, me and my family went to the city of sirap (si  (not "see")-rap) in a country I cannot pronounce, then the city of kinwym (kin-weem) in the country of enumerj (ee-num-erzh*) where I am writing this.
 
 *Like a voiced sh or if you try to continually make a j sound.
+
+It's the next day again and I am writing this in the city of garp (gah-rp) in kilbaper cech uth.
