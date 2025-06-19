@@ -1466,3 +1466,5 @@ Yesterday and today kind of Blended together, but in that time, me and my family
 *Like a voiced sh or if you try to continually make a j sound.
 
 It's the next day again and I am writing this in the city of garp (gah-rp) in kilbapeer cech uth aka uheecech.
+
+It's the next day again and bitcoin conference today.
