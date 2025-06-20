@@ -1467,4 +1467,6 @@ Yesterday and today kind of Blended together, but in that time, me and my family
 
 It's the next day again and I am writing this in the city of garp (gah-rp) in kilbapeer cech uth aka uheecech.
 
-It's the next day again and bitcoin conference today.
+Bitcoin bar today.
+
+Bitcoin conference today.
