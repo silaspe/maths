@@ -1469,4 +1469,6 @@ It's the next day again and I am writing this in the city of garp (gah-rp) in ki
 
 Bitcoin bar today.
 
-Bitcoin conference today.
+Bitcoin conference day $1$.
+
+Bitcoin conference day $2$.
