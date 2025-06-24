@@ -1477,4 +1477,4 @@ I have to write something down today.
 
 Enamel painting today.
 
-Leaving airbnb today.
+Road trip!
