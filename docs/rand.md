@@ -1459,13 +1459,13 @@ I'm sick today :(
 
 #### vacation!
 
-Today, me and my family are going to puery (puh-er-y). This is $1$ year after and in the same location as [the vacation at the start of the page](https://silaspe.github.io/maths/rand.html#vacation), [the](https://www.youtube.com/watch?v=3VQ382QG-y4) [lambda](https://www.youtube.com/watch?v=pAnLQ9jwN-E) [calc](https://silaspe.github.io/maths/lambda.html)[ulus](https://silaspe.github.io/maths/lcr.html), and [binary](https://www.youtube.com/watch?v=rDDaEVcwIJM), and this is $2$ years after I did [the stra](https://www.youtube.com/watch?v=V2BybLCmUzs)[nd puzzle](https://silaspe.github.io/maths/the_strand_puzzle.html) and [the arctan puzzle](https://silaspe.github.io/maths/arctan.html). Also, happy (late) Father's Day!
+Today, me and my family are going to puery (puh-ery). This is $1$ year after and in the same location as [the vacation at the start of the page](https://silaspe.github.io/maths/rand.html#vacation), [the](https://www.youtube.com/watch?v=3VQ382QG-y4) [lambda](https://www.youtube.com/watch?v=pAnLQ9jwN-E) [calc](https://silaspe.github.io/maths/lambda.html)[ulus](https://silaspe.github.io/maths/lcr.html), and [binary](https://www.youtube.com/watch?v=rDDaEVcwIJM), and this is $2$ years after I did [the stra](https://www.youtube.com/watch?v=V2BybLCmUzs)[nd puzzle](https://silaspe.github.io/maths/the_strand_puzzle.html) and [the arctan puzzle](https://silaspe.github.io/maths/arctan.html). Also, happy (late) Father's Day!
 
 Yesterday and today kind of Blended together, but in that time, me and my family went to the city of sirap (si  (not "see")-rap) in a country I cannot pronounce, then the city of kinwym (kin-weem) in the country of enumerj (ee-num-erzh*) where I am writing this.
 
 *Like a voiced sh or if you try to continually make a j sound.
 
-It's the next day again and I am writing this in the city of garp (gah-rp) in kilbapeer cech uth aka uheecech.
+It's the next day again and I am writing this in the city of garp (gah-rp) in kilbapeer cech uth aka uycech (uh-ee-cech).
 
 Bitcoin bar today.
 
@@ -1476,3 +1476,5 @@ Bitcoin conference day $2$ and summer solstace.
 I have to write something down today.
 
 Enamel painting today.
+
+Leaving airbnb today.
