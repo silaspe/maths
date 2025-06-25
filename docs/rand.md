@@ -1478,3 +1478,5 @@ I have to write something down today.
 Enamel painting today.
 
 Road trip!
+
+I'm now in the city of znil in the country of uyrtso (uh-ee-erts-ah)
