@@ -1,6 +1,6 @@
 ### First, some history
 
-Before this website was even created, I was on a vacation to europe for family, and I solved at last $2$ puzzles. After that, I said that I solved the strand puzzle and the arctan puzzle. First, I solved the strand puzzle in praha, but I only solved fir $x_n$ and not $y_n$, the time that I truly solved the strand puzzle was while I was writing it down on the page. I solved the strand puzzle first by the way. I know what you might be thinking,
+Before this website was even created, I was on a vacation for family, and I solved at last $2$ puzzles. After that, I said that I solved the strand puzzle and the arctan puzzle. First, I solved the strand puzzle in praha, but I only solved fir $x_n$ and not $y_n$, the time that I truly solved the strand puzzle was while I was writing it down on the page. I solved the strand puzzle first by the way. I know what you might be thinking,
 
 ## what even is the arctan puzzle?
 
