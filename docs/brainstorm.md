@@ -1004,7 +1004,7 @@ Y'know how any two distinct points on the affine plane have a line through them?
 #### greek letters
 
 | Alpha | Beta | Gamma | Delta | Epsilon | Zeta | Eta | Theta | Iota | Kappa | Lambda | Mu | Nu | Xi | Omicron | Pi | Rho | Sigma (yes, actualy) | Tau | Upsilon | Phi | Chi | Psi | Omega |
-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|
+| - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - |
 | $\alpha$ | $\beta$ | $\gamma$ | $\delta$ | $\epsilon$ | $\zeta$ | $\eta$ | $\theta$ | $\iota$ | $\kappa$ | $\lambda$ | $\mu$ | $\nu$ | $\xi$ | $\omicron$ | $\pi$ | $\rho$ | $\sigma$ | $\tau$ | $\upsilon$ | $\phi$ | $\chi$ | $\psi$ | $\omega$ |
 | $\Alpha$ | $\Beta$ | $\Gamma$ | $\Delta$ | $\Epsilon$ | $\Zeta$ | $\Eta$ | $\Theta$ | $\Iota$ | $\Kappa$ | $\Lambda$ | $\Mu$ | $\Nu$ | $\Xi$ | $\Omicron$ | $\Pi$ | $\Rho$ | $\Sigma$ | $\Tau$ | $\Upsilon$ | $\Phi$ | $\Chi$ | $\Psi$ | $\Omega$ |
 | A | B |  |  | E | Z | H |  | I | K |  | M | N |  | O |  | P |  | T |  |  | X |  |  |
@@ -2299,7 +2299,7 @@ In other words, sets are only defined by their elements.
 
 $2300$ Lines.
 
-As for some notation, the set of all even numbers would be written as $\{ 2, 4, 6, 8 ... \}$, $\{$ number $n: n$ is even $\}$, or $\{x: x$ is a number and is even $\}$. (Pronounced "the set containing $2$, $4$, $6$, $8$ and so on", "the set of all numbers $n$ where $n$ is even", and "the set of all $x$ where $x$ is a number, and furthermore, $x$ is even" respectively.)
+As for some notation, the set of all even numbers would be written as $\{ 2, 4, 6, 8 ... \}$, $\{$ numbers $n: n$ is even $\}$, or $\{ x: x$ is a number and is even $\}$. (Pronounced "the set containing $2$, $4$, $6$, $8$ and so on", "the set of all numbers $n$ where $n$ is even", and "the set of all $x$ where $x$ is a number, and furthermore, $x$ is even" respectively.)
 
 Also, the symbol for "$x$ is a member of $S$" where $S$ is a set is $x \in S$.
 
@@ -2310,3 +2310,95 @@ But this leads to a paradox: would $\{S:$ not $S \in S \}$ (the set containing o
 Clearly there's a problem with this. Let's take a step back.
 
 #### what is a set, really?
+
+Idk. I'd rather talk about...
+
+#### ordinals
+
+$$ 0 = Ø $$
+
+$$ 1 = \{ 0 \} $$
+
+$$ 2 = \{ 1 \} $$
+
+$$ 3 = \{ 2 \} $$
+
+$$ \omega = \{ 0, 1, 2, 3 ... \} $$
+
+$$ \omega + 1 = \{ \omega \} $$
+
+$$ \omega + 2 = \{ \omega + 1 \} $$
+
+$$ \omega + 3 = \{ \omega + 2 \} $$
+
+$$ \omega + \omega = 2 \omega = \{ \omega, \omega + 1, \omega + 2, \omega + 3 ... \} $$
+
+$$ 2 \omega + 1 = \{ 2 \omega \} $$
+
+$$ 2 \omega + 2 = \{ 2 \omega + 1 \} $$
+
+$$ 2 \omega + 3 = \{ 2 \omega + 2 \} $$
+
+$$ 2 \omega + \omega = 3 \omega = \{ 2 \omega, 2 \omega + 1, 2 \omega + 2, 2 \omega + 3 ... \} $$
+
+$$ \omega \omega = \omega^2 = \{ \omega, 2 \omega, 3 \omega ... \} $$
+
+$$ \omega^2 + 1 = \{ \omega^2 \} $$
+
+$$ \omega^2 + 2 = \{ \omega^2 + 1 \} $$
+
+$$ \omega^2 + 3 = \{ \omega^2 + 2 \} $$
+
+$$ \omega^2 + \omega = \{ \omega^2, \omega^2 + 1, \omega^2 + 2, \omega^2 + 3 ... \} $$
+
+$$ \omega^2 + \omega + 1 = \{ \omega^2 + \omega \} $$
+
+$$ \omega^2 + \omega + 2 = \{ \omega^2 + \omega + 1 \} $$
+
+$$ \omega^2 + \omega + 3 = \{ \omega^2 + \omega + 2 \} $$
+
+$$ \omega^2 + \omega + \omega = \omega^2 + 2 \omega = \{ \omega^2 + \omega, \omega^2 + \omega + 1, \omega^2 + \omega + 2, \omega^2 + \omega + 3 ... \} $$
+
+$$ \omega^2 + \omega \omega = \omega^2 + \omega^2 = 2 \omega^2 = \{ \omega^2, \omega^2 + \omega, \omega^2 + 2 \omega ... \} $$
+
+$$ 2 \omega^2 + 1 = \{ 2 \omega^2 \} $$
+
+$$ 2 \omega^2 + 2 = \{ 2 \omega^2 + 1 \} $$
+
+$$ 2 \omega^2 + 3 = \{ 2 \omega^2 + 2 \} $$
+
+$$ 2 \omega^2 + \omega = \{ 2 \omega^2, 2 \omega^2 + 1, 2 \omega^2 + 2, 2 \omega^2 + 3 ... \} $$
+
+$$ 2 \omega^2 + \omega + 1 = \{ 2 \omega^2 + \omega \} $$
+
+$$ 2 \omega^2 + \omega + 2 = \{ 2 \omega^2 + \omega + 1 \} $$
+
+$$ 2 \omega^2 + \omega + 3 = \{ 2 \omega^2 + \omega + 2 \} $$
+
+$$ 2 \omega^2 + \omega + \omega = 2 \omega^2 + 2 \omega = \{ 2 \omega^2 + \omega, 2 \omega^2 + \omega + 1, 2 \omega^2 + \omega + 2, 2 \omega^2 + \omega + 3 ... \} $$
+
+$$ 2 \omega^2 + \omega \omega = 2 \omega^2 + \omega^2 = 3 \omega^2 = \{ 2 \omega^2, 2 \omega^2 + \omega, 2 \omega^2 + 2 \omega ... \} $$
+
+$$ \omega \omega^2 = \omega^3 = \{ \omega^2, 2 \omega^2, 3 \omega^2 ... \} $$
+
+$$ \omega^3 + \omega \omega^2 = \omega^3 + \omega^3 = 2 \omega^3 = \{ \omega^3, \omega^3 + \omega^2, \omega^3 + 2 \omega^2 ... \} $$
+
+$$ 2 \omega^3 + \omega \omega^2 = 2 \omega^3 + \omega^3 = 3 \omega^3 = \{ 2 \omega^3, 2 \omega^3 + \omega^2, 2 \omega^3 + 2 \omega^2 ... \} $$
+
+$$ \omega \omega^3 = \omega^4 = \{ \omega^3, 2 \omega^3, 3 \omega^3 ... \} $$
+
+$$ \omega^{\omega} = \{ \omega, \omega^2, \omega^3, \omega^4 ... \} $$
+
+$$ \omega \omega^{\omega} = \omega^{\omega + 1} = \{ \omega^{\omega}, 2 \omega^{\omega}, 3 \omega^{\omega} ... \} $$
+
+$$ \omega \omega^{\omega + 1} = \omega^{\omega + 2} = \{ \omega^{\omega + 1}, 2 \omega^{\omega + 1}, 3 \omega^{\omega + 1} ... \} $$
+
+Wait a minute! I can just do what I've already done, but in the exponents.
+
+$$ \omega^{\omega^{\omega}} = \{ \omega^{\omega}, \omega^{\omega^2}, \omega^{\omega^3} ... \} $$
+
+$2400$ Lines.
+
+$$ \omega^{\omega^{\omega^{\omega}}} = \{ \omega^{\omega^{\omega}}, \omega^{\omega^{\omega^2}}, \omega^{\omega^{\omega^3}} ... \} $$
+
+$$ \epsilon_0 = \{ \omega, \omega^{\omega}, \omega^{\omega^{\omega}}, \omega^{\omega^{\omega^{\omega}}} ... \} $$
