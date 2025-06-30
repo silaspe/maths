@@ -1483,4 +1483,4 @@ I'm now back in kinwym.
 
 I'm now in the city of togtutsh in enumerj.
 
-Happy Tau Day! $\tau > \pi$
+Happy Tau Day! $\tau > \pi$ and I missed Tau Day for the last 2 days in a row.
