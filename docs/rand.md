@@ -1483,4 +1483,8 @@ I'm now back in kinwym.
 
 I'm now in the city of togtutsh in enumerj.
 
-Happy Tau Day! $\tau > \pi$ and I missed Tau Day for the last 2 days in a row.
+Happy Tau Day! $\tau > \pi$ and I missed Tau Day for the last 2 years in a row.
+
+I'm now in an airbnb in a country I cannot pronounce.
+
+I'm now in a Monastery.
