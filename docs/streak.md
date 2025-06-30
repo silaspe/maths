@@ -18,3 +18,5 @@ I forgot to hit the button yesterday.
 It happened again.
 
 I forgot to hit the button yesterday.
+
+It happened again.
