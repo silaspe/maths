@@ -1487,6 +1487,8 @@ Happy Tau Day! $\tau > \pi$ and I missed Tau Day for the last 2 years in a row.
 
 I'm now in an airbnb in a country I cannot pronounce.
 
-I'm now in a Monastery.
+Monastery day $1$.
 
-Day 2 of being at a monastery, and I'm writing this in a McDonald's because the monastery didn't have internet.
+Monastery day $2$ and I'm writing this in a McDonald's at $3$ pm because the monastery didn't have internet.
+
+Monastery day $3$ and I'm writing this in a book store at $2$ pm.
