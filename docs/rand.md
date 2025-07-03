@@ -1492,3 +1492,5 @@ Monastery day $1$.
 Monastery day $2$ and I'm writing this in a McDonald's at $3$ pm because the monastery didn't have internet.
 
 Monastery day $3$ and I'm writing this in a book store at $2$ pm.
+
+Monastery Day 4 and I'm writing this on my dad's phone.
