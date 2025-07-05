@@ -1495,4 +1495,6 @@ Monastery day $3$ and I'm writing this in a book store at $2$ pm.
 
 Monastery Day $4$ and I'm writing this on my dad's phone.
 
-Monastery day $5$ and I'm writing this in a McDonald's at $3$ pm.
+Monastery day $5$, $4$'th of July, and I'm writing this in a McDonald's at $3$ pm.
+
+Monastery day $6$ and I finally got the internet to work.
