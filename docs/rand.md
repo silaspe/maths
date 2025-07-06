@@ -1461,9 +1461,9 @@ I'm sick today :(
 
 Today, me and my family are going to puery (puh-ery). This is $1$ year after and in the same location as [the vacation at the start of the page](https://silaspe.github.io/maths/rand.html#vacation), [the](https://www.youtube.com/watch?v=3VQ382QG-y4) [lambda](https://www.youtube.com/watch?v=pAnLQ9jwN-E) [calc](https://silaspe.github.io/maths/lambda.html)[ulus](https://silaspe.github.io/maths/lcr.html), and [binary](https://www.youtube.com/watch?v=rDDaEVcwIJM), and this is $2$ years after I did [the stra](https://www.youtube.com/watch?v=V2BybLCmUzs)[nd puzzle](https://silaspe.github.io/maths/the_strand_puzzle.html) and [the arctan puzzle](https://silaspe.github.io/maths/arctan.html). Each line will be written a day after the previous line. Also, happy (late) Father's Day!
 
-Yesterday and today kind of Blended together, but in that time, me and my family went to the city of sirap (si  (not "see")-rap) in a country I cannot pronounce, then the city of kinwym (kin-weem) in enumerj (ee-num-erj) where I am writing this.
+Yesterday and today kind of Blended together, but in that time, me and my family went to the city of sirap (sih-rap) in snarf (sn-air-f), then the city of kinwym (kin-weem) in enumerj (ee-num-erj) where I am writing this.
 
-It's the next day again and I am writing this in the city of garp (gah-rp) in kilbapeer cech uth aka uycech (uh-ee-cech).
+It's the next day again and I am writing this in the city of garp (gah-rp) in uycech (uh-ee-cech).
 
 Bitcoin bar today.
 
@@ -1471,7 +1471,7 @@ Bitcoin conference day $1$.
 
 Bitcoin conference day $2$ and summer solstice.
 
-I have to write something down today.
+I have to write something down for today.
 
 Enamel painting today.
 
@@ -1483,9 +1483,9 @@ I'm now back in kinwym.
 
 I'm now in the city of togtutsh in enumerj.
 
-Happy Tau Day! $\tau > \pi$ and I missed Tau Day for the last 2 years in a row.
+Happy Tau Day! $\tau > \pi$ and I missed Tau Day for the last $2$ years in a row.
 
-I'm now in an airbnb in a country I cannot pronounce.
+I'm now in an airbnb in snarf.
 
 Monastery day $1$.
 
@@ -1498,3 +1498,5 @@ Monastery Day $4$ and I'm writing this on my dad's phone.
 Monastery day $5$, $4$'th of July, and I'm writing this in a McDonald's at $3$ pm.
 
 Monastery day $6$ and I finally got the internet to work.
+
+I'm now in an airbnb in yazel in snarf.
