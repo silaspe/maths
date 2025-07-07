@@ -1497,6 +1497,8 @@ Monastery Day $4$ and I'm writing this on my dad's phone.
 
 Monastery day $5$, $4$'th of July, and I'm writing this in a McDonald's at $3$ pm.
 
+$1500$ Lines.
+
 Monastery day $6$ and I finally got the internet to work.
 
-I'm now in an airbnb in yazel in snarf.
+I'm now in an airbnb in yazel in snarf and high ropes / zipline course today.
