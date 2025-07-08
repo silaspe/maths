@@ -1459,11 +1459,11 @@ I'm sick today :(
 
 #### vacation!
 
-Today, me and my family are going to puery (puh-ery). This is $1$ year after and in the same location as [the vacation at the start of the page](https://silaspe.github.io/maths/rand.html#vacation), [the](https://www.youtube.com/watch?v=3VQ382QG-y4) [lambda](https://www.youtube.com/watch?v=pAnLQ9jwN-E) [calc](https://silaspe.github.io/maths/lambda.html)[ulus](https://silaspe.github.io/maths/lcr.html), and [binary](https://www.youtube.com/watch?v=rDDaEVcwIJM), and this is $2$ years after I did [the stra](https://www.youtube.com/watch?v=V2BybLCmUzs)[nd puzzle](https://silaspe.github.io/maths/the_strand_puzzle.html) and [the arctan puzzle](https://silaspe.github.io/maths/arctan.html). Each line will be written a day after the previous line. Also, happy (late) Father's Day!
+Today, me and my family are going to puery. This is $1$ year after and in the same location as [the vacation at the start of the page](https://silaspe.github.io/maths/rand.html#vacation), [the](https://www.youtube.com/watch?v=3VQ382QG-y4) [lambda](https://www.youtube.com/watch?v=pAnLQ9jwN-E) [calc](https://silaspe.github.io/maths/lambda.html)[ulus](https://silaspe.github.io/maths/lcr.html), and [binary](https://www.youtube.com/watch?v=rDDaEVcwIJM), and this is $2$ years after I did [the stra](https://www.youtube.com/watch?v=V2BybLCmUzs)[nd puzzle](https://silaspe.github.io/maths/the_strand_puzzle.html) and [the arctan puzzle](https://silaspe.github.io/maths/arctan.html). Each line will be written a day after the previous line. You may see the correct pronunciations at the bottom of the chapter. Also, happy (late) Father's Day!
 
-Yesterday and today kind of Blended together, but in that time, me and my family went to the city of sirap (sih-rap) in snarf (sn-air-f), then the city of kinwym (kin-weem) in enumerj (ee-num-erj) where I am writing this.
+Yesterday and today kind of Blended together, but in that time, me and my family went to the city of sirap in snarf, then the city of kinwym in enumerj where I am writing this.
 
-It's the next day again and I am writing this in the city of garp (gah-rp) in uycech (uh-ee-cech).
+It's the next day again and I am writing this in the city of garp in uycech.
 
 Bitcoin bar today.
 
@@ -1477,7 +1477,7 @@ Enamel painting today.
 
 Road trip!
 
-I'm now in the city of znil in uyrtso (uh-ee-erts-ah).
+I'm now in the city of znil in uyrtso.
 
 I'm now back in kinwym.
 
@@ -1497,8 +1497,34 @@ Monastery Day $4$ and I'm writing this on my dad's phone.
 
 Monastery day $5$, $4$'th of July, and I'm writing this in a McDonald's at $3$ pm.
 
-$1500$ Lines.
+Monastery day $6$ and I finally got the internet to work. $1500$ Lines.
 
-Monastery day $6$ and I finally got the internet to work.
+I'm now in another airbnb in snarf, this time in yazel. High ropes / zipline course today.
 
-I'm now in an airbnb in yazel in snarf and high ropes / zipline course today.
+Vineyards today.
+
+Leaving today.
+
+Pronunciations:
+
+Puery - puh er y
+
+Snarf - s n air f
+
+Enumerj - ee num er j
+
+Uycech - uh ee cech
+
+Uyrtso - uh ee er t s ah
+
+Syrap - sih rap
+
+Kinwym - kin w ee m
+
+Garp - gah r p
+
+Znil - z nil
+
+Togtutsh - t a g t ʊ t sh
+
+Yazel - yay z el
