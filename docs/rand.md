@@ -1503,9 +1503,11 @@ I'm now in another airbnb in Snarf, this time in Yazel. High ropes / zipline cou
 
 Vineyards today.
 
-I'm now in another airbnb in Snarf, this time in Ske (which is the only place that I knew we were going to ahead of time).
+I'm now in another airbnb in Snarf, this time in Ske, which is the only place that I knew we were going to ahead of time and where my dad's parents used to live.
 
 Beach today.
+
+Beach today and extended family tomorrow.
 
 Pronunciations:
 
