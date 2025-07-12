@@ -1507,7 +1507,7 @@ I'm now in another airbnb in Snarf, this time in Ske, which is the only place th
 
 Beach today.
 
-Beach today and extended family tomorrow.
+Beach today on the other side of the lake in Yasrom and extended family tomorrow.
 
 Pronunciations:
 
@@ -1529,8 +1529,10 @@ Garp - gah r p
 
 Znil - z nil
 
-Togtutsh - t a g t ʊ t sh
+Togtutsh - tah g t ʊ t sh
 
 Yazel - yazel
 
 Ske - s k eh
+
+Yasrom - yes rah m
