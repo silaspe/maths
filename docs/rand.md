@@ -1505,7 +1505,9 @@ Vineyards today.
 
 I'm now in another airbnb in Snarf, this time in Ske, which is the only place that I knew we were going to ahead of time and where my dad's parents used to live.
 
-Beach today.
+Beach today and I just rewatched [
+The ALMOST Platonic Solids](https://youtu.be/_QxrkEqOrWM) and [
+The Sacred Geometry of Tilings](https://youtu.be/wiWEP5Kf8sk) (also, cool chanel) while above a hexagonal tiling.
 
 Beach today on the other side of the lake in Yasrom and extended family tomorrow.
 
