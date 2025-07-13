@@ -1511,6 +1511,8 @@ The Sacred Geometry of Tilings](https://youtu.be/wiWEP5Kf8sk) (also, cool chanel
 
 Beach today on the other side of the lake in Yasrom and extended family tomorrow.
 
+Today, me and my family drove through the city-state of Wokanam. I'm writing this in a hotel in a city I can't pronounce in Eluti.
+
 Pronunciations:
 
 Puery - puh er y
@@ -1538,3 +1540,7 @@ Yazel - yazel
 Ske - s k eh
 
 Yasrom - yes rah m
+
+Wokanam - w oak uh nom
+
+Eluti - eel uh tea
