@@ -1513,6 +1513,8 @@ Beach today on the other side of the lake in Yasrom and extended family tomorrow
 
 Today, me and my family drove through the city-state of Wokanam. I'm writing this in a hotel in a city I can't pronounce in Eluti.
 
+Today, I lectured my dad on counting systems like the complex numbers, split complex numbers, and dual complex numbers, why you never hear about $3$d numbers, and how this all relates to ring theory and geometric algebra. Maybe I should make a page about that. Then I ate ice cream in Wonawol with the rest of the (extended) family.
+
 Pronunciations:
 
 Puery - puh er y
@@ -1544,3 +1546,5 @@ Yasrom - yes rah m
 Wokanam - w oak uh nom
 
 Eluti - eel uh tea
+
+Wonawol - woah nah wool
