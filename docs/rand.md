@@ -1515,6 +1515,8 @@ Today, me and my family drove through the city-state of Wokanam. I'm writing thi
 
 Today, I lectured my dad on counting systems like the complex numbers, split complex numbers, and dual complex numbers, why you never hear about $3$d numbers, and how this all relates to ring theory and geometric algebra. Maybe I should make a page about that. Then I ate ice cream in Wonawol with the rest of the (extended) family.
 
+Beach today.
+
 Pronunciations:
 
 Puery - puh er y
