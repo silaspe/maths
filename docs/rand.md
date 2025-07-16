@@ -1517,6 +1517,8 @@ Today, I lectured my dad on counting systems like the complex numbers, split com
 
 Beach today.
 
+Waterpark today.
+
 Pronunciations:
 
 Puery - puh er y
