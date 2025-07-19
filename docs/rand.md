@@ -1523,6 +1523,10 @@ Beach today. Me and the bros dug a hole and then buried my mom's sisters son.
 
 Different beach today.
 
+Same beach as yesterday today.
+
+Leaving today.
+
 Pronunciations:
 
 Puery - puh er y
@@ -1534,6 +1538,8 @@ Enumerj - ee num er j
 Uycech - uh ee cech
 
 Uyrtso - uh ee er t s ah
+
+Eluti - eel uh tea
 
 Syrap - sih rap
 
@@ -1552,7 +1558,5 @@ Ske - s k eh
 Yasrom - yes rah m
 
 Wokanam - w oak uh nom
-
-Eluti - eel uh tea
 
 Wonawol - woah nah wool
