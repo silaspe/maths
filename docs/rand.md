@@ -1511,19 +1511,21 @@ The Sacred Geometry of Tilings](https://youtu.be/wiWEP5Kf8sk) (also, cool chanel
 
 Beach today on the other side of the lake in Yasrom and extended family tomorrow.
 
-Today, me and my family drove through the city-state of Wokanam. I'm writing this in a hotel in a city I can't pronounce in Eluti.
+Today, me and my family drove through the city-state of Wokanam. I'm writing this in a hotel in a city I can't pronounce in Eluti. Today I am meeting my mom's older sister's family and my mom's younger brother's family minus my mom's older sister's husband.
 
 Today, I lectured my dad on counting systems like the complex numbers, split complex numbers, and dual complex numbers, why you never hear about $3$d numbers, and how this all relates to ring theory and geometric algebra. Maybe I should make a page about that. Then I ate ice cream in Wonawol with the rest of the (extended) family.
 
-Beach today. Me and the bros (the three male grandchildren of my mom's parents) dug a hole and then buried my mom's brothers son.
+Beach today. Me and the bros (the three male grandchildren of my mom's parents) dug a hole and then buried my mom's younger brothers son.
 
 Waterpark today.
 
-Beach today. Me and the bros dug a hole and then buried my mom's sisters son.
+Beach today. Me and the bros dug a hole and then buried my mom's older sisters son.
 
 Different beach today.
 
-Same beach as yesterday today.
+Same beach as yesterday and last day of extended family today.
+
+I'm now in a hotel in Nalim in Eluti.
 
 Leaving today.
 
@@ -1539,7 +1541,7 @@ Uycech - uh ee cech
 
 Uyrtso - uh ee er t s ah
 
-Eluti - eel uh tea
+Eluti - ee luh tih
 
 Syrap - sih rap
 
@@ -1557,6 +1559,8 @@ Ske - s k eh
 
 Yasrom - yes rah m
 
-Wokanam - w oak uh nom
+Wokanam - woah kuh nom
 
 Wonawol - woah nah wool
+
+Nalim - nah limb
