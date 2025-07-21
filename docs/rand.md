@@ -1511,9 +1511,9 @@ The Sacred Geometry of Tilings](https://youtu.be/wiWEP5Kf8sk) (also, cool chanel
 
 Beach today on the other side of the lake in Yasrom and extended family tomorrow.
 
-Today, me and my family drove through the city-state of Wokanam. I'm writing this in a hotel in a city I can't pronounce in Eluti. Today I am meeting my mom's older sister's family and my mom's younger brother's family minus my mom's older sister's husband.
+Today, me and my family drove through the city-state of Okanam. I'm writing this in a hotel in a city I can't pronounce in Eluti. Today I am meeting my mom's older sister's family and my mom's younger brother's family minus my mom's older sister's husband.
 
-Today, I lectured my dad on counting systems like the complex numbers, split complex numbers, and dual complex numbers, why you never hear about $3$d numbers, and how this all relates to ring theory and geometric algebra. Maybe I should make a page about that. Then I ate ice cream in Wonawol with the rest of the (extended) family.
+Today, I lectured my dad on counting systems like the complex numbers, split complex numbers, and dual complex numbers, why you never hear about $3$d numbers, and how this all relates to ring theory and geometric algebra. Maybe I should make a page about that. Then I ate ice cream in Onawol with the rest of the (extended) family.
 
 Beach today. Me and the bros (the three male grandchildren of my mom's parents) dug a hole and then buried my mom's younger brothers son.
 
@@ -1527,7 +1527,7 @@ Same beach as yesterday and last day of extended family today.
 
 I'm now in a hotel in Nalim in Eluti.
 
-Leaving today.
+Trip through Omok in Eluti, then Onagul in Dnilerztiws, then Sudav in Nitshnitil, and finaly Mlu in Enumerj where we stayed for the night.
 
 Pronunciations:
 
@@ -1542,6 +1542,10 @@ Uycech - uh ee cech
 Uyrtso - uh ee er t s ah
 
 Eluti - ee luh tih
+
+Dnilerztiws - d n ill er z t ih w s
+
+Nitshnitil - night sh knit hill
 
 Syrap - sih rap
 
@@ -1559,8 +1563,16 @@ Ske - s k eh
 
 Yasrom - yes rah m
 
-Wokanam - woah kuh nom
+Okanam - oh kuh nom
 
-Wonawol - woah nah wool
+Onawol - oh nah wool
 
 Nalim - nah limb
+
+Omok - oh m oh k
+
+Onagul - oh nah ghoul
+
+Sudav - sue d ah v
+
+Mlu - m l ʊ
