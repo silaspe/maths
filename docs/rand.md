@@ -1555,7 +1555,7 @@ Garp - gah r p
 
 Znil - z nil
 
-Togtutsh - tah g t ʊ t sh
+Togtutsh - t ah g t * t sh
 
 Yazel - yazel
 
@@ -1575,4 +1575,8 @@ Onagul - oh nah ghoul
 
 Sudav - sue d ah v
 
-Mlu - m l ʊ
+Mlu - m l **
+
+* = oo as in look or book
+
+** = ow as in bowl or o as in fold
