@@ -1529,6 +1529,8 @@ I'm now in a hotel in Nalim in Eluti.
 
 Trip through Omok in Eluti, then Onagul in Dnilerztiws, then Sudav in Nitshnitil, and finaly Mlu in Enumerj where we stayed for the night.
 
+I'm now in a hotel in Kerbsfyov.
+
 Pronunciations:
 
 Puery - puh er y
@@ -1577,6 +1579,10 @@ Sudav - sue d ah v
 
 Mlu - m l **
 
-* = oo as in look or book
+Kerbsfyov = curb s f y *** v
+
+* = oo as in look or book or nook
 
 ** = ow as in bowl or o as in fold
+
+*** = the thing before the y sound in the oi in voice or oy in boy or toy
