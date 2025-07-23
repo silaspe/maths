@@ -1527,9 +1527,11 @@ Same beach as yesterday and last day of extended family today.
 
 I'm now in a hotel in Nalim in Eluti.
 
-Trip through Omok in Eluti, then Onagul in Dnilerztiws, then Sudav in Nitshnitil, and finaly Mlu in Enumerj where we stayed for the night.
+Today me and my family triped through Omok in Eluti, then Onagul in Dnilerztiws, then Sudav in Nitshnitil, and finaly Mlu in Enumerj where we stayed for the night.
 
 I'm now in a hotel in Kerbsfyov.
+
+I'm seeing my grandparents today.
 
 Pronunciations:
 
