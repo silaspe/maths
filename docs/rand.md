@@ -1533,6 +1533,8 @@ I'm now in a hotel in Kerbsfyov.
 
 I'm seeing my grandparents today.
 
+Same thing as yesterday today.
+
 Pronunciations:
 
 Puery - puh er y
