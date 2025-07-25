@@ -1535,6 +1535,8 @@ I'm seeing my grandparents today.
 
 Same thing as yesterday today.
 
+Today, my sister went wakeboarding / water skiing.
+
 Pronunciations:
 
 Puery - puh er y
