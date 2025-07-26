@@ -1535,7 +1535,7 @@ I'm seeing my grandparents today.
 
 Same thing as yesterday today.
 
-Today, my sister went wakeboarding / water skiing.
+Today I'm meeting with my mom's older sister and her kids.
 
 Pronunciations:
 
