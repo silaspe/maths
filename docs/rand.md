@@ -1529,13 +1529,17 @@ I'm now in a hotel in Nalim in Eluti.
 
 Today me and my family triped through Omok in Eluti, then Onagul in Dnilerztiws, then Sudav in Nitshnitil, and finaly Mlu in Enumerj where we stayed for the night.
 
-I'm now in a hotel in Kerbsfyov.
+I'm now in a hotel in Kerbsfyov in Enumerj.
 
 I'm seeing my grandparents today.
 
 Same thing as yesterday today.
 
 Today I'm meeting with my mom's older sister and her kids.
+
+Special day today.
+
+Last full day in Enumerj.
 
 Pronunciations:
 
