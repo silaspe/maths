@@ -1539,7 +1539,9 @@ Today I'm meeting with my mom's older sister and her kids.
 
 Special day today.
 
-Last full day in Enumerj.
+Last full day in Kerbsfyov.
+
+Leaving Kerbsfyov today.
 
 Pronunciations:
 
