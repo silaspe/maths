@@ -1543,6 +1543,8 @@ Last full day in Kerbsfyov.
 
 Leaving Kerbsfyov today.
 
+Leaving Puery today.
+
 Pronunciations:
 
 Puery - puh er y
