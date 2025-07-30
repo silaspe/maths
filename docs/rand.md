@@ -1545,6 +1545,8 @@ Leaving Kerbsfyov today.
 
 Leaving Puery today.
 
+I have now arrived safely back at home the following day. The car's license plate said "WI HE".
+
 Pronunciations:
 
 Puery - puh er y
@@ -1595,8 +1597,12 @@ Mlu - m l **
 
 Kerbsfyov = curb s f y *** v
 
+$1600$ Lines.
+
 * = oo as in look or book or nook
 
 ** = ow as in bowl or o as in fold
 
-*** = the thing before the y sound in the oi in voice or oy in boy or toy
+*** = the thing before the y sound in the oi in voice or koi fish or oy in boy or toy.
+
+### end of vacation.
