@@ -1606,3 +1606,7 @@ $1600$ Lines.
 *** = the thing before the y sound in the oi in voice or koi fish or oy in boy or toy.
 
 ### end of vacation.
+
+.
+
+(insert work here)
