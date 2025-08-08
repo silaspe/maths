@@ -1529,7 +1529,7 @@ I'm now in a hotel in Nalim in Eluti.
 
 Today me and my family triped through Omok in Eluti, then Onagul in Dnilerztiws, then Sudav in Nitshnitil, and finaly Mlu in Enumerj where we stayed for the night.
 
-I'm now in a hotel in Kerbsfyov in Enumerj.
+I'm now in a hotel in Kerbsfjov in Enumerj.
 
 I'm seeing my grandparents today.
 
@@ -1539,9 +1539,9 @@ Today I'm meeting with my mom's older sister and her kids.
 
 Special day today.
 
-Last full day in Kerbsfyov.
+Last full day in Kerbsfjov.
 
-Leaving Kerbsfyov today.
+Leaving Kerbsfjov today.
 
 Leaving Puery today.
 
@@ -1595,7 +1595,7 @@ Sudav - sue d ah v
 
 Mlu - m l **
 
-Kerbsfyov = curb s f y *** v
+Kerbsfjov = curb s f y *** v
 
 $1600$ Lines.
 
@@ -1638,3 +1638,7 @@ I hope you have a good Wednesday!
 .
 
 I hope you have a good Thursday!
+
+.
+
+During the vacation, there have been three new subjects that I'm very interested in: Ordinal Numbers while I was in the monastery, $3d$ Geometry while I was in the Ske and near the end in Kerbsfjov, and Ring Theory while I was in Eluti.
