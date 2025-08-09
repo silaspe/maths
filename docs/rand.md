@@ -1641,4 +1641,4 @@ I hope you have a good Thursday!
 
 .
 
-During the vacation, there have been three new subjects that I'm very interested in: Ordinal Numbers while I was in the monastery, $3d$ Geometry while I was in the Ske and near the end in Kerbsfjov, and Ring Theory while I was in Eluti.
+I hope you have a good Friday and, during the vacation, there have been three new subjects that I was very interested in: Ordinal Numbers while I was in the monastery, $3d$ Geometry while I was in the Ske and near the end in Kerbsfjov, and Ring Theory while I was in Eluti.
