@@ -1672,3 +1672,7 @@ I hope you have a good Thursday!
 I hope you have a good Friday and today I am going to try to $3d$ model the following Platonic and Archimedean solids: cube, octahedron, truncated cube, truncated octahedron, cuboctahedron, great rhombicuboctahedron, rhombicuboctahedron, and snub cube.
 
 P.S. yes, these are just the ones with octahedral symmetry.
+
+.
+
+I hope you have a good Saturday!
