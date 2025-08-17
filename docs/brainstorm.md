@@ -2310,3 +2310,21 @@ But this leads to a paradox: would $\{S:$ not $S \in S \}$ (the set containing o
 Clearly there's a problem with this. Let's take a step back.
 
 #### what is a set, really?
+
+### combinatorial games and surreal numbers?
+
+Based off of a video ([HACKENBUSH: a window to a new world of math](https://www.youtube.com/watch?v=ZYj4NkeGPdM&list=PPSV) by Owen Maitzen) based off of a book (Winning ways for your mathematical plays by John Conway, Elwin Berlekamp, and Richard guy (sorry, couldn't find the book)).
+
+Now that I'm done with the opening credits, you're probably asking the following question:
+
+#### what is a combinatorial game?
+
+A combinatorial game is a two-player turn based game where there is no randomness or secret information. So like chess, checkers, tic-tac-toe, connect $4$, games like that. From now on, I will call the players blue and red.
+
+But when I'm talking about things that apply to most combinatorial games, I'll actually use a game that you've probably never heard about: hackenbush.
+
+##### what is hackenbush?
+
+Great question, I'm glad you asked. Hackenbush is a simple game played on a "bush" made of red and blue branches. Players take turns chopping a branch of their respective color, and all the branches above fall down. You win by chopping the last branch* and lose by having no valid moves.
+
+*You also win if all of your opponent's branches crash down to the ground, and hence leaving them with no valid moves on their turn.
