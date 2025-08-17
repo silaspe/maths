@@ -2,7 +2,7 @@ The equations below are the beginning of pages that may or may not get added to 
 
 ### galois theory/group theory/ring theory?
 
-A field of numbers is a collection of numbers where you can add, subtract, multiply, and even sometimes divide two numbers (as long as you don't divide by zero) in that field to get another number in that field. For example, the rationals, the reals and the complex numbers are all fields that are infinite and you can divide them. The complex lattice points (which are complex numbers of the form $integer + integer \cdot i$ ), the matrices (insert joke here), and the integers, are all infinite but can not always be divided. I know what you might be thinking: "what the (abbreviation that I am allowed to say for a curse word that I am not allowed to say) is a non-infinite field?". A non-infinite field or finite field is something like the [modulo numbers](https://silaspe.github.io/maths/mod.html). You might not be able to divide in a non-prime base, but you can do it in a prime base. So that completes the venn diagram!
+A field of numbers is a collection of numbers where you can add, subtract, multiply, and even sometimes divide two numbers (as long as you don't divide by zero) in that field to get another number in that field. For example, the rationals, the reals and the complex numbers are all fields that are infinite and you can divide them. The complex lattice points (which are complex numbers of the form $integer + integer \cdot i$ ), the matrices (insert joke here), and the integers, are all infinite but can not always be divided. I know what you might be thinking: "what the stand-in-for-a-curse-word is a non-infinite field?". A non-infinite field (or finite field) is something like the [modulo numbers](https://silaspe.github.io/maths/mod.html). You might not be able to divide in a non-prime base, but you can do it in a prime base. So that completes the venn diagram!
 
 Today, I want to show you an infinite field where you can not divide, I'm talking (well, typing) about numbers of the form
 
@@ -1004,7 +1004,7 @@ Y'know how any two distinct points on the affine plane have a line through them?
 #### greek letters
 
 | Alpha | Beta | Gamma | Delta | Epsilon | Zeta | Eta | Theta | Iota | Kappa | Lambda | Mu | Nu | Xi | Omicron | Pi | Rho | Sigma (yes, actualy) | Tau | Upsilon | Phi | Chi | Psi | Omega |
-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|
+| - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - |
 | $\alpha$ | $\beta$ | $\gamma$ | $\delta$ | $\epsilon$ | $\zeta$ | $\eta$ | $\theta$ | $\iota$ | $\kappa$ | $\lambda$ | $\mu$ | $\nu$ | $\xi$ | $\omicron$ | $\pi$ | $\rho$ | $\sigma$ | $\tau$ | $\upsilon$ | $\phi$ | $\chi$ | $\psi$ | $\omega$ |
 | $\Alpha$ | $\Beta$ | $\Gamma$ | $\Delta$ | $\Epsilon$ | $\Zeta$ | $\Eta$ | $\Theta$ | $\Iota$ | $\Kappa$ | $\Lambda$ | $\Mu$ | $\Nu$ | $\Xi$ | $\Omicron$ | $\Pi$ | $\Rho$ | $\Sigma$ | $\Tau$ | $\Upsilon$ | $\Phi$ | $\Chi$ | $\Psi$ | $\Omega$ |
 | A | B |  |  | E | Z | H |  | I | K |  | M | N |  | O |  | P |  | T |  |  | X |  |  |
@@ -2299,7 +2299,7 @@ In other words, sets are only defined by their elements.
 
 $2300$ Lines.
 
-As for some notation, the set of all even numbers would be written as $\{ 2, 4, 6, 8 ... \}$, $\{$ number $n: n$ is even $\}$, or $\{x: x$ is a number and is even $\}$. (Pronounced "the set containing $2$, $4$, $6$, $8$ and so on", "the set of all numbers $n$ where $n$ is even", and "the set of all $x$ where $x$ is a number, and furthermore, $x$ is even" respectively.)
+As for some notation, the set of all even numbers would be written as $\{ 2, 4, 6, 8 ... \}$, $\{$ numbers $n: n$ is even $\}$, or $\{ x: x$ is a number and is even $\}$. (Pronounced "the set containing $2$, $4$, $6$, $8$ and so on", "the set of all numbers $n$ where $n$ is even", and "the set of all $x$ where $x$ is a number, and furthermore, $x$ is even" respectively.)
 
 Also, the symbol for "$x$ is a member of $S$" where $S$ is a set is $x \in S$.
 
@@ -2328,3 +2328,96 @@ But when I'm talking about things that apply to most combinatorial games, I'll a
 Great question, I'm glad you asked. Hackenbush is a simple game played on a "bush" made of red and blue branches. Players take turns chopping a branch of their respective color, and all the branches above fall down. You win by chopping the last branch* and lose by having no valid moves.
 
 *You also win if all of your opponent's branches crash down to the ground, and hence leaving them with no valid moves on their turn.
+
+
+Idk. I'd rather talk about...
+
+#### ordinals
+
+$$ 0 = Ø $$
+
+$$ 1 = \{ 0 \} $$
+
+$$ 2 = \{ 1 \} $$
+
+$$ 3 = \{ 2 \} $$
+
+$$ \omega = \{ 0, 1, 2, 3 ... \} $$
+
+$$ \omega + 1 = \{ \omega \} $$
+
+$$ \omega + 2 = \{ \omega + 1 \} $$
+
+$$ \omega + 3 = \{ \omega + 2 \} $$
+
+$$ \omega + \omega = 2 \omega = \{ \omega, \omega + 1, \omega + 2, \omega + 3 ... \} $$
+
+$$ 2 \omega + 1 = \{ 2 \omega \} $$
+
+$$ 2 \omega + 2 = \{ 2 \omega + 1 \} $$
+
+$$ 2 \omega + 3 = \{ 2 \omega + 2 \} $$
+
+$$ 2 \omega + \omega = 3 \omega = \{ 2 \omega, 2 \omega + 1, 2 \omega + 2, 2 \omega + 3 ... \} $$
+
+$$ \omega \omega = \omega^2 = \{ \omega, 2 \omega, 3 \omega ... \} $$
+
+$$ \omega^2 + 1 = \{ \omega^2 \} $$
+
+$$ \omega^2 + 2 = \{ \omega^2 + 1 \} $$
+
+$$ \omega^2 + 3 = \{ \omega^2 + 2 \} $$
+
+$$ \omega^2 + \omega = \{ \omega^2, \omega^2 + 1, \omega^2 + 2, \omega^2 + 3 ... \} $$
+
+$$ \omega^2 + \omega + 1 = \{ \omega^2 + \omega \} $$
+
+$$ \omega^2 + \omega + 2 = \{ \omega^2 + \omega + 1 \} $$
+
+$$ \omega^2 + \omega + 3 = \{ \omega^2 + \omega + 2 \} $$
+
+$$ \omega^2 + \omega + \omega = \omega^2 + 2 \omega = \{ \omega^2 + \omega, \omega^2 + \omega + 1, \omega^2 + \omega + 2, \omega^2 + \omega + 3 ... \} $$
+
+$$ \omega^2 + \omega \omega = \omega^2 + \omega^2 = 2 \omega^2 = \{ \omega^2, \omega^2 + \omega, \omega^2 + 2 \omega ... \} $$
+
+$$ 2 \omega^2 + 1 = \{ 2 \omega^2 \} $$
+
+$$ 2 \omega^2 + 2 = \{ 2 \omega^2 + 1 \} $$
+
+$$ 2 \omega^2 + 3 = \{ 2 \omega^2 + 2 \} $$
+
+$$ 2 \omega^2 + \omega = \{ 2 \omega^2, 2 \omega^2 + 1, 2 \omega^2 + 2, 2 \omega^2 + 3 ... \} $$
+
+$$ 2 \omega^2 + \omega + 1 = \{ 2 \omega^2 + \omega \} $$
+
+$$ 2 \omega^2 + \omega + 2 = \{ 2 \omega^2 + \omega + 1 \} $$
+
+$$ 2 \omega^2 + \omega + 3 = \{ 2 \omega^2 + \omega + 2 \} $$
+
+$$ 2 \omega^2 + \omega + \omega = 2 \omega^2 + 2 \omega = \{ 2 \omega^2 + \omega, 2 \omega^2 + \omega + 1, 2 \omega^2 + \omega + 2, 2 \omega^2 + \omega + 3 ... \} $$
+
+$$ 2 \omega^2 + \omega \omega = 2 \omega^2 + \omega^2 = 3 \omega^2 = \{ 2 \omega^2, 2 \omega^2 + \omega, 2 \omega^2 + 2 \omega ... \} $$
+
+$$ \omega \omega^2 = \omega^3 = \{ \omega^2, 2 \omega^2, 3 \omega^2 ... \} $$
+
+$$ \omega^3 + \omega \omega^2 = \omega^3 + \omega^3 = 2 \omega^3 = \{ \omega^3, \omega^3 + \omega^2, \omega^3 + 2 \omega^2 ... \} $$
+
+$$ 2 \omega^3 + \omega \omega^2 = 2 \omega^3 + \omega^3 = 3 \omega^3 = \{ 2 \omega^3, 2 \omega^3 + \omega^2, 2 \omega^3 + 2 \omega^2 ... \} $$
+
+$$ \omega \omega^3 = \omega^4 = \{ \omega^3, 2 \omega^3, 3 \omega^3 ... \} $$
+
+$$ \omega^{\omega} = \{ \omega, \omega^2, \omega^3, \omega^4 ... \} $$
+
+$$ \omega \omega^{\omega} = \omega^{\omega + 1} = \{ \omega^{\omega}, 2 \omega^{\omega}, 3 \omega^{\omega} ... \} $$
+
+$$ \omega \omega^{\omega + 1} = \omega^{\omega + 2} = \{ \omega^{\omega + 1}, 2 \omega^{\omega + 1}, 3 \omega^{\omega + 1} ... \} $$
+
+Wait a minute! I can just do what I've already done, but in the exponents.
+
+$$ \omega^{\omega^{\omega}} = \{ \omega^{\omega}, \omega^{\omega^2}, \omega^{\omega^3} ... \} $$
+
+$2400$ Lines.
+
+$$ \omega^{\omega^{\omega^{\omega}}} = \{ \omega^{\omega^{\omega}}, \omega^{\omega^{\omega^2}}, \omega^{\omega^{\omega^3}} ... \} $$
+
+$$ \epsilon_0 = \{ \omega, \omega^{\omega}, \omega^{\omega^{\omega}}, \omega^{\omega^{\omega^{\omega}}} ... \} $$

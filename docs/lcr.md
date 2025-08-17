@@ -26,7 +26,7 @@ I gotta go do kid stuff now.
 
 It's been $20$ minutes.
 
-Oh, right, there's also parens.
+Oh, right, there's also parenthesis.
 
 And that's the entire lambda calculus.
 
@@ -36,7 +36,7 @@ Let's start with the Backus-Naur Form...
 
 #### $x$
 
-there's pretty much one thing to say about variables in the lambda calculus: they are immutable, they can not be changed after the fact, there's no concept of "assignment" per say, in the lambda calculus (there is binding, i.e. You can assign a variable to a value, but only once, it becomes a "bound variable"), if a variable is bound to a value, that's its value for now and forever more.
+There's pretty much one thing to say about variables in the lambda calculus: they are immutable, they can not be changed after the fact, there's no concept of "assignment" per say, in the lambda calculus (there is binding, i.e. You can assign a variable to a value, but only once. It becomes a "bound variable"), if a variable is bound to a value, that's its value for now and forever more.
 
 On the other hand, the Backus-Naur Form $M(N)$ is slightly more interesting
 
@@ -48,16 +48,16 @@ $$ M, N ::= x \text{ } | \text{ } M \text{ } N \text{ } | \text{ } \lambda x. M 
 
 This seems weird at first, but in reality, it ends up removing a lot of noise from our expressions.
 
-| The Lambda Calculus | Code |
-| ------------------- | ---- |
-| $f$ $x$| `f(x)` |
-| $f$ $x$ $y$ | `f(x)(y)`!! |
+| The Lambda Calculus | Code        |
+| ------------------- | ----------- |
+| $f$ $x$             | `f(x)`      |
+| $f$ $x$ $y$         | `f(x)(y)`!! |
 
-Now, I have to interrupt this to explain...
+I just wanted to have a multi-input function, but now, I have to interrupt this to explain...
 
-#### currying
+### currying
 
-In the lambda calculus, all functions are unary, this ($f$ $x$ $y$) is really a curried function, $f$ takes in $x$, and outputs a new function that takes in $y$. A classic example of a curried function is the curried addition function, `add(1)` is the add $1$ function, and if I apply it to $2$, I get $3$ (`add(1)(2) == 3`).
+In the lambda calculus, all functions are unary. This ($f$ $x$ $y$) is really a curried function, $f$ takes in $x$, and outputs a new function that takes in $y$. A classic example of a curried function is the curried addition function, `add(1)` is the add $1$ function, and if I apply it to $2$, I get $3$ (`add(1)(2) == 3`).
 
 So $f$ $x$ $y$ can be read as $f$ first taking in an $x$, then a $y$, and if there were more inputs, they would also be fed in one by one from the left to the right.
 

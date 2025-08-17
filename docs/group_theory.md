@@ -4,67 +4,63 @@ Here's some great videos about the subject that should get at least some credit:
 
 I'll start off with the textbook definition of a group:
 
-PS I don't have a group theory textbook.
+P.S. I don't have a group theory textbook.
 
 ### textbook definitions
 
-It is a set or collection of things together with a binary operation (e.g. addition or multiplication because they input two things and output one thing) (this binary operation is usually denoted with a composition circle (this thing: ∘) so that is the notation that I will use) such that...
+A group is a set or collection of things together with a binary operation, e.g. addition or multiplication because they input two things and output one thing (I'll be writing this as ∘) such that the following hold:
 
-$1$. Closure: (this one is sometimes a given) If you have $a$ and $b$ in the group, then $a$ ∘ $b$ is also within the group.
+$1$. Closure (sometimes a given): If you have $a$ and $b$ in the group, then $a$ ∘ $b$ is also in the group. This makes sure that your group is, well, closed.
 
-$2$. Associativity: If you have $a$, $b$ and $c$ in the group, then $(a$ ∘ $b)$ ∘ $c$ is equal to $a$ ∘ $(b$ ∘ $c)$. For this reason, I will be denoting both as $a$ ∘ $b$ ∘ $c$.
+$2$. Associativity: If you have $a$, $b$ and $c$ in the group, then $(a$ ∘ $b)$ ∘ $c$ is equal to $a$ ∘ $(b$ ∘ $c)$*. This makes sure both that addition, multiplication, function composition, and matrix multiplication all work, but also makes a lot of other things don't.
 
-$3$. Identity (or neutral depending on where you're from): There must always be a term in the group (call it $e$) where if you have $a$ in the group, then $a$ ∘ $e$ is equal to $e$ ∘ $a$ is equal to $a$.
+$3$. Identity (or neutral depending on where you're from): There must always be a term in the group (call it $e$) where if you have $a$ in the group, then $a$ ∘ $e$ is equal to $e$ ∘ $a$ is equal to $a$. This is like a $0$ for addition or a $1$ for multiplication. There must always be an option to do nothing.
 
-$4$. Inverses: If you have $a$ in the group, then there is also $a^{-1}$ in the group where $a$ ∘ $a^{-1}$ is equal to $e$.
+$4$. Inverses: If you have $a$ in the group, then there is also $a^{-1}$ in the group where $a$ ∘ $a^{-1}$ is equal to $e$. This is like the negative for addition, or $1$ divided by for multiplication. You must always be able to undo what you have done.
 
-Notice there is no point where I say that the operation is commutative (i.e. $a$ ∘ $b = b$ ∘ $a$). If it is commutative, it is also known as an Abelian group.
+Notice: there is no point where I say that the operation is commutative (i.e. $a$ ∘ $b = b$ ∘ $a$). If it is, the group is known as an Abelian group.
 
-Also by the way, it is common to notate $a$ ∘ $a$ ∘ $a$ ∘ ... and so on $n$ times as $a^n$.
+Also, by the way, it is common to notate $a$ ∘ $a$ ∘ $a$ ∘ ... ∘ $a$ with $n$ total a's as $a^n$.
 
-A good way to think about what some groups actually are is as sets of symmetries. This is because these four rules are exactly what you would expect rotations and reflections to do with the operation of doing one after the other.
+A good way to think about what some groups actually represent is as sets of symmetries. This is because these $4$ rules are exactly what you'd expect rotations and reflections to do with the operation of doing one after the other. Now the closure rule makes sense because if doing one thing preserves the symmetry, and doing another thing preserves the symmetry, then doing one after the other should also preserve the symmetry, the associativity rule makes sense because rotating, then flipping... then rotating should be the same as rotating... then flipping, then rotating, the Identity Rule makes sense because doing nothing should preserve the symmetry, and the inverses rule makes sense because if you rotate clockwise, then of course you should also be able to rotate counterclockwise.
 
-For example, now the inverses rule makes sense because if you rotate clockwise then of course you should also be able to rotate counterclockwise.
+*For this reason, I will be denoting both as $a$ ∘ $b$ ∘ $c$.
 
 ### example groups
 
 An example of a group is the integers with the operation of addition.
 
-Adding two integers would result in another integer. Addition is associative and there is only one $a + b + c$. There is of course an identity element, of which is zero. And the inverse would of course be the negative.
+Adding two integers would result in another integer. Addition is associative and there is only one $a + b + c$, there is, of course, an identity element, of which is zero, and the inverse would of course be the negative.
 
-Thus, it is a group! And the symbol is $ℤ$.
+Thus, the integers form a group! And the symbol is $ℤ$.
 
 Let's see what happens to the integers with an operation of multiplication!
 
-Multiplying two integers would result in another integer. There is only one $a \times b \times c$. There is an identity element (i.e. $1$). But sadly, only one and $-1$ have inverses.
+Multiplying two integers would result in another integer. There is only one $a \times b \times c$. There is an identity element (i.e. $1$). But sadly, only $1$ and $-1$ have inverses.
 
 Thus, this is not a group :(
 
-This is also why it's written $ℤ$ and not $ℤ^+$
+This is also why it's written $ℤ$ and not $ℤ$ w/ addition.
 
 But this does hint that the rationals with the operation of multiplication form a group (as long as you exclude zero because it doesn't have an inverse), and that is correct!
 
 And the symbol is $ℚ^\times$.
 
-And if you follow through all of the steps yourself or you got a hint from that times superscript then you know that the rationals with an operation of addition also form a group: $ℚ^+$.
+And if you follow through all of the steps yourself or you got a hint from that times superscript, you know that the rationals with an operation of addition also form a group: $ℚ^+$.
 
-Let me introduce you to another type of group, some finite groups: The dihedral groups! I'll use the example of $\text{D}_3$. It is the group of all rotations and reflections of an  equilateral triangle that leave it looking the same, with the operation of doing one after the other.
+Let me introduce you to another type of group, a certain type of finite group: the dihedral groups! I'll use the example of $\text{D}_3$ (the dihedral group of order $3$). It is the group of all rotations and reflections of an equilateral triangle that leave it looking the same, with the operation of doing one after the other.
 
 The operations are: do nothing, rotate clockwise $120$°, rotate counterclockwise $120$° reflect along the vertical axis, reflect on a $60$° tilted axis, and reflect along a $60$° tilted in the other direction axis.
 
 This group works similarly for other numbers, with the subscript being the amount of faces on the regular polygon.
 
-But there's a big debate over if it should be $n$ or $2n$.
-
-Because on the one hand, it should be $n$ because that's the amount of sides it has, the group is kind of based off of that thing.
+But there's a big debate over if the subscript should be $n$ or $2n$, because on the one hand, it should be $n$ because that's the amount of sides the polygon has (the group is kind of based off of that), But on the other hand it's pronounced "the dihedral group of order $n$ or $2n$" and order means size in the context of a group, so the dihedral group of order $2n$ is what it should be called.
 
 Personally, I think that the subscript should be the amount of faces.
 
-But on the other hand, subscripts also usually denote the size and the size is always $2n$ (unless $n = 2$ or less).
-
 There was this one time when I was talking to ChatGPT, and it said that $\text{D}_4$ was the dihedral group of order $8$.
 
-There's also the integers with the operation of addition, and it loops back around once you reach a certain number (These groups are also known as the [modular](https://silaspe.github.io/maths/mod.html) groups). If that number is $n$ (i.e. the elements of the group are $0$ all the way up to $n - 1$), then it is denoted $ℤ_n$.
+There's also the integers with the operation of addition, but it loops back around once you reach a certain number, these groups are also known as the [modular](https://silaspe.github.io/maths/mod.html) groups, and if that number is $n$, i.e. the elements of the group are $0$ all the way up to $n - 1$, then the group it is denoted $ℤ_n$ or $C_n$.
 
 ### proofs
 
@@ -987,9 +983,9 @@ But this means that if you ∘ an element of $H$ by $c^p$ a total of $|\sigma|$ 
 
 But by using the properties of exponents, we realize that ${(c^p)}^{|\sigma|} = c^{p |\sigma|} = c^{|\sigma| p} = {(c^{|\sigma|})}^p$, so ${(c^{|\sigma|})}^p$ is the identity.
 
-Because $p$ by definition has no factors, while multiplying by $(c^{|\sigma|})$ it can't have hit an earlier term and have that term as the order.
+Because $p$ by definition has no factors, while multiplying by $c^{|\sigma|}$ it can't have hit an earlier term and have that term as the order.
 
-Thus, $(c^{|\sigma|})$ is an element of $C$ of order $p$.
+Thus, $c^{|\sigma|}$ is an element of $C$ of order $p$.
 
 QED!
 
