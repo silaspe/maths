@@ -1745,4 +1745,8 @@ I hope you have a good Sunday!
 
 .
 
-I hope you have a good Monday and labor day!
+I hope you have a good Monday and labor day! only $3$ days until Hollow Knight Silksong!
+
+.
+
+I hope you have a good Tuesday and today I am going to audit Dr. Katz's class for the third time! only $2$ days until Hollow Knight Silksong!
