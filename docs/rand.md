@@ -1729,7 +1729,7 @@ I hope you have a good Wednesday!
 
 .
 
-I hope you have a good Thursday! only $1$ week until Hollow Knight Silksong and today I am going to audit Dr. Katz's class again!
+I hope you have a good Thursday! Only $1$ week until Hollow Knight Silksong and today I am going to audit Dr. Katz's class again!
 
 .
 
@@ -1745,8 +1745,12 @@ I hope you have a good Sunday!
 
 .
 
-I hope you have a good Monday and labor day! only $3$ days until Hollow Knight Silksong!
+I hope you have a good Monday and labor day! Only $3$ days until Hollow Knight Silksong!
 
 .
 
-I hope you have a good Tuesday and today I am going to audit Dr. Katz's class for the third time! only $2$ days until Hollow Knight Silksong!
+I hope you have a good Tuesday and today I am going to audit Dr. Katz's class for the third time! Only $2$ days until Hollow Knight Silksong!
+
+.
+
+I hope you have a good Wednesday! Silksong tomorrow!
