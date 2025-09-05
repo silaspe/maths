@@ -309,11 +309,7 @@ Next stop: the beach!
 
 .
 
-Actually, I went to mississippi, then alabama, then florida, then a restaraunt.
-
-.
-
-Yess, I spelled "restaraunt" first try.
+Actually, I went to mississippi, then alabama, then florida, then a restauraunt.
 
 .
 
@@ -397,11 +393,11 @@ Happy thanksgiving!
 
 .
 
-$400$ Lines.
+(insert work here)
 
 .
 
-(insert work here)
+$400$ Lines.
 
 .
 
@@ -496,12 +492,12 @@ Last time it snowed it didn't snow for very long and it didn't really stay. That
 
 .
 
-
-$500$ Lines.
+The snow has melted :(
 
 .
 
-The snow has melted :(
+
+$500$ Lines.
 
 .
 
@@ -597,11 +593,11 @@ $$ \text{Act } 1 \text{ Scene } 2 $$
 
 Actors: my friend (male) and my friend (female) as the past versions of the parents.
 
-$600$ Lines.
-
 My friend (female): "I'm not doing that pop test no matter what happens!"
 
 My friend (male): "Yes."
+
+$600$ Lines.
 
 My friend (female): "Oh, my god, I've fallen over."
 
@@ -697,11 +693,11 @@ My sister: "You need to go to class."
 
 My friend (female): "No, we're not going to class no matter what! We have a pop test today, and y’know, I don't do well with math, so-"
 
-$700$ Lines.
-
 My sister: "Neither do I."
 
 My friend (female): * Walks up closer to her *
+
+$700$ Lines.
 
 My friend (female): "Neither do I."
 
@@ -795,13 +791,13 @@ And then most of us lined up and we all bowed at different times, except for me,
 
 .
 
-
-
-$800$ Lines.
+Happy Valentine's Day!
 
 .
 
-Happy Valentine's Day!
+
+
+$800$ Lines.
 
 I think I'm still too young for this. More chocolates for me then!
 
@@ -895,13 +891,13 @@ If ur mom jokes are about how fat she is, then ur dad jokes should be about how 
 
 My mom came up with this idea because she was tired of hearing ur mom jokes between me and my sister.
 
-.
-
-$900$ Lines.
-
 Here's one that my sister came up with:
 
 The reason why you look into the sky when you miss someone is because ur dad reached escape velocity when he left.
+
+.
+
+$900$ Lines.
 
 .
 
@@ -997,11 +993,11 @@ Happy late St. Patrick's Day!
 
 If you think that you had the craziest work week or busiest schedule, think again! I'll try to add all of these after Monday on the corresponding day. You'll figure out why this is a work week on the $7$th day. Here's one I found in a book:
 
-$1000$ Lines, wow.
-
 $$ \text{Sunday} $$
 
 Genesis 1:1
+
+$1000$ Lines, wow.
 
 First, God created the heavens (up to interpretation) and the earth.
 
@@ -1097,11 +1093,11 @@ Genesis 1:22
 
 And then God blessed them and told them to be fruitful and increase in numbers.
 
-$1100$ Lines.
-
 Genesis 1:23
 
 This concludes the fifth day.
+
+$1100$ Lines.
 
 $$ \text{Friday} $$
 
@@ -1115,7 +1111,7 @@ And then God made just that, and God saw that it was good.
 
 Genesis 1:26
 
-And then God said "Let us (?) make man in our (?) own image, in our (?) own likeness, and let them rule over all of the earth".
+And then God said "Let us make man in our own image, in our own likeness, and let them rule over all of the earth".
 
 Genesis 1:27
 
@@ -1197,11 +1193,11 @@ How do I know this? Well, partially GitHub commit history, but also because of a
 
 .
 
-$1200$ Lines.
+(insert work here)
 
 .
 
-(insert work here)
+$1200$ Lines.
 
 .
 
@@ -1295,13 +1291,13 @@ Day four and we're already leaving.
 
 .
 
-
-
-$1300$ Lines.
+Actually, on day four we went to btc++ which was an entire bitcoin conference, and because it happened yesterday I don't even remember what the most interesting thing that happened there was, and I was not informed by my family that we were going there until after I wrote down the message, and the next time I got to use a computer was now.
 
 .
 
-Actually, on day four we went to btc++ which was an entire bitcoin conference, and because it happened yesterday I don't even remember what the most interesting thing that happened there was, and I was not informed by my family that we were going there until after I wrote down the message, and the next time I got to use a computer was now.
+
+
+$1300$ Lines.
 
 .
 
@@ -1395,13 +1391,13 @@ leaving today.
 
 .
 
-
-
-$1400$ Lines.
+(insert work here)
 
 .
 
-(insert work here)
+
+
+$1400$ Lines.
 
 .
 
@@ -1459,11 +1455,11 @@ I'm sick today :(
 
 #### vacation!
 
-Today, me and my family are going to Puery. This is $1$ year after and in the same location as [the vacation at the start of the page](https://silaspe.github.io/maths/rand.html#vacation), [the](https://www.youtube.com/watch?v=3VQ382QG-y4) [lambda](https://www.youtube.com/watch?v=pAnLQ9jwN-E) [calc](https://silaspe.github.io/maths/lambda.html)[ulus](https://silaspe.github.io/maths/lcr.html), and [binary](https://www.youtube.com/watch?v=rDDaEVcwIJM), and this is $2$ years after I did [the stra](https://www.youtube.com/watch?v=V2BybLCmUzs)[nd puzzle](https://silaspe.github.io/maths/the_strand_puzzle.html) and [the arctan puzzle](https://silaspe.github.io/maths/arctan.html). Each line will be written a day after the previous line. You may see the correct pronunciations at the bottom of the chapter. Also, happy (late) Father's Day!
+Today, me and my family are going to [Puery](https://silaspe.github.io/maths/rand.html#pronunciations). This is $1$ year after and in the same location as [the vacation at the start of the page](https://silaspe.github.io/maths/rand.html#vacation), [the](https://www.youtube.com/watch?v=3VQ382QG-y4) [lambda](https://www.youtube.com/watch?v=pAnLQ9jwN-E) [calc](https://silaspe.github.io/maths/lambda.html)[ulus](https://silaspe.github.io/maths/lcr.html), and [binary](https://www.youtube.com/watch?v=rDDaEVcwIJM), and this is $2$ years after I did [the stra](https://www.youtube.com/watch?v=V2BybLCmUzs)[nd puzzle](https://silaspe.github.io/maths/the_strand_puzzle.html) and [the arctan puzzle](https://silaspe.github.io/maths/arctan.html). Each line will be written a day after the previous line. You may see the correct pronunciations at the bottom of the chapter. Also, happy (late) Father's Day!
 
-Yesterday and today kind of Blended together, but in that time, me and my family went to the city of Syrap in Snarf, then the city of Kinwym in Enumerj where I am writing this.
+Yesterday and today kind of Blended together, but in that time, me and my family went to the city of [Syrap](https://silaspe.github.io/maths/rand.html#pronunciations) in [Snarf](https://silaspe.github.io/maths/rand.html#pronunciations), then the city of [Kinwym](https://silaspe.github.io/maths/rand.html#pronunciations) in [Enumerj](https://silaspe.github.io/maths/rand.html#pronunciations) where I am writing this.
 
-It's the next day again and I am writing this in the city of Garp in Uycech.
+It's the next day again and I am writing this in the city of [Garp](https://silaspe.github.io/maths/rand.html#pronunciations) in [Uycech](https://silaspe.github.io/maths/rand.html#pronunciations).
 
 Bitcoin bar today.
 
@@ -1477,11 +1473,11 @@ Enamel painting today.
 
 Road trip!
 
-I'm now in the city of Znil in Uyrtso.
+I'm now in the city of [Znil](https://silaspe.github.io/maths/rand.html#pronunciations) in [Uyrtso](https://silaspe.github.io/maths/rand.html#pronunciations).
 
 I'm now back in Kinwym.
 
-I'm now in the city of Togtutsh in Enumerj.
+I'm now in the city of [Togtutsh](https://silaspe.github.io/maths/rand.html#pronunciations) in Enumerj.
 
 Happy Tau Day! $\tau > \pi$ and I missed Tau Day for the last $2$ years in a row.
 
@@ -1497,23 +1493,23 @@ Monastery Day $4$ and I'm writing this on my dad's phone.
 
 Monastery day $5$, $4$'th of July, and I'm writing this in a McDonald's at $3$ pm.
 
-Monastery day $6$ and I finally got the internet to work. $1500$ Lines.
+Monastery day $6$ and I finally got the internet to work.
 
-I'm now in another airbnb in Snarf, this time in Yazel. High ropes / zipline course today.
+I'm now in another airbnb in Snarf, this time in [Yazel](https://silaspe.github.io/maths/rand.html#pronunciations). High ropes / zipline course today.
 
-Vineyards today.
+Vineyards today. $1500$ Lines.
 
-I'm now in another airbnb in Snarf, this time in Ske, which is the only place that I knew we were going to ahead of time and where my dad's parents used to live.
+I'm now in another airbnb in Snarf, this time in [Ske](https://silaspe.github.io/maths/rand.html#pronunciations), which is the only place that I knew we were going to ahead of time and where my dad's parents used to live.
 
 Beach today and I just rewatched [
 The ALMOST Platonic Solids](https://youtu.be/_QxrkEqOrWM) and [
-The Sacred Geometry of Tilings](https://youtu.be/wiWEP5Kf8sk) (also, cool chanel) while above a hexagonal tiling.
+The Sacred Geometry of Tilings](https://youtu.be/wiWEP5Kf8sk) while above a hexagonal tiling (also, cool chanel).
 
-Beach today on the other side of the lake in Yasrom and extended family tomorrow.
+Beach today on the other side of the lake in [Yasrom](https://silaspe.github.io/maths/rand.html#pronunciations) and extended family tomorrow.
 
-Today, me and my family drove through the city-state of Okanam. I'm writing this in a hotel in a city I can't pronounce in Eluti. Today I am meeting my mom's older sister's family and my mom's younger brother's family minus my mom's older sister's husband.
+Today, me and my family drove through the city-state of [Okanam](https://silaspe.github.io/maths/rand.html#pronunciations). I'm writing this in a hotel in a city I can't pronounce in [Eluti](https://silaspe.github.io/maths/rand.html#pronunciations). Today I am meeting my mom's older sister's family and my mom's younger brother's family minus my mom's older sister's husband.
 
-Today, I lectured my dad on counting systems like the complex numbers, split complex numbers, and dual complex numbers, why you never hear about $3$d numbers, and how this all relates to ring theory and geometric algebra. Maybe I should make a page about that. Then I ate ice cream in Onawol with the rest of the (extended) family.
+Today, I lectured my dad on counting systems like the complex numbers, split complex numbers, and dual complex numbers, why you never hear about $3$d numbers, and how this all relates to ring theory and geometric algebra. Maybe I should make a page about that. Then I ate ice cream in [Onawol](https://silaspe.github.io/maths/rand.html#pronunciations) with the rest of the (extended) family.
 
 Beach today. Me and the bros (the three male grandchildren of my mom's parents) dug a hole and then buried my mom's younger brothers son.
 
@@ -1525,11 +1521,11 @@ Different beach today.
 
 Same beach as yesterday and last day of extended family today.
 
-I'm now in a hotel in Nalim in Eluti.
+I'm now in a hotel in [Nalim](https://silaspe.github.io/maths/rand.html#pronunciations) in Eluti.
 
-Today me and my family triped through Omok in Eluti, then Onagul in Dnilerztiws, then Sudav in Nitshnitil, and finaly Mlu in Enumerj where we stayed for the night.
+Today me and my family triped through [Omok](https://silaspe.github.io/maths/rand.html#pronunciations) in Eluti, then [Onagul](https://silaspe.github.io/maths/rand.html#pronunciations) in [Dnilerztiws](https://silaspe.github.io/maths/rand.html#pronunciations), then [Sudav](https://silaspe.github.io/maths/rand.html#pronunciations) in [Nitshnitil](https://silaspe.github.io/maths/rand.html#pronunciations), and finaly [Mlu](https://silaspe.github.io/maths/rand.html#pronunciations) in Enumerj where we stayed for the night.
 
-I'm now in a hotel in Kerbsfjov in Enumerj.
+I'm now in a hotel in [Kerbsfjov](https://silaspe.github.io/maths/rand.html#pronunciations) in Enumerj.
 
 I'm seeing my grandparents today.
 
@@ -1547,7 +1543,7 @@ Leaving Puery today.
 
 I have now arrived safely back at home the following day. The car's license plate said "WI HE".
 
-Pronunciations:
+##### pronunciations
 
 Puery - puh er y
 
@@ -1597,11 +1593,11 @@ Mlu - m l **
 
 Kerbsfjov = curb s f y *** v
 
-$1600$ Lines.
-
 * = oo as in look or book or nook
 
 ** = ow as in bowl or o as in fold
+
+$1600$ Lines.
 
 *** = the thing before the y sound in the oi in voice or koi fish or oy in boy or toy.
 
@@ -1695,13 +1691,13 @@ I hope you have a good Wednesday!
 
 .
 
-
-
-$1700$ Lines.
+I hope you have a good Thursday and Hollow Knight Silksong Release Date!
 
 .
 
-I hope you have a good Thursday and Hollow Knight Silksong Release Date!
+
+
+$1700$ Lines.
 
 .
 
@@ -1729,7 +1725,7 @@ I hope you have a good Wednesday!
 
 .
 
-I hope you have a good Thursday! Only $1$ week until Hollow Knight Silksong and today I am going to audit Dr. Katz's class again!
+I hope you have a good Thursday! Only $1$ week until Hollow Knight Silksong and today I am going to Dr. Katz's class again!
 
 .
 
@@ -1749,7 +1745,7 @@ I hope you have a good Monday and labor day! Only $3$ days until Hollow Knight S
 
 .
 
-I hope you have a good Tuesday and today I am going to audit Dr. Katz's class for the third time! Only $2$ days until Hollow Knight Silksong!
+I hope you have a good Tuesday and today I am going to Dr. Katz's class for the third time! Only $2$ days until Hollow Knight Silksong!
 
 .
 
@@ -1757,4 +1753,8 @@ I hope you have a good Wednesday! Silksong tomorrow!
 
 .
 
-SILKSONG IS OUT!!!!!! That is one exclamation point per year the community has been waiting for this. Also, today I am going to audit Dr. Katz's class for the fourth time!. Also, it's the $1234$th commit. Also I hope you have a good Thursday!
+SILKSONG IS OUT!!!!!! That is one exclamation point per year the community has been waiting for this! Also, today I am going to Dr. Katz's class for the fourth time!. Also, it's the $1234$th commit. Also, I hope you have a good Thursday!
+
+.
+
+I hope you have a good Friday!
