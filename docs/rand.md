@@ -1753,7 +1753,7 @@ I hope you have a good Wednesday! Silksong tomorrow!
 
 .
 
-SILKSONG IS OUT!!!!!! That is one exclamation point per year the community has been waiting for this! Also, today I am going to Dr. Katz's class for the fourth time!. Also, it's the $1234$th commit. Also, I hope you have a good Thursday!
+SILKSONG IS OUT!!!!!! That is one exclamation point per year the community has been waiting for this! Also, today I am going to Dr. Katz's class for the fourth time! Also, it's the $1234$th commit. Also, I hope you have a good Thursday! Also, it's exam day.
 
 .
 
@@ -1778,3 +1778,7 @@ I hope you have a good Tuesday! $1776$ Lines.
 .
 
 I hope you have a good Wednesday!
+
+.
+
+I hope you have a good Thursday! Also, it's exam day.
