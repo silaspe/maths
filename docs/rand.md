@@ -1894,3 +1894,7 @@ I hope you have a good Wednesday! Also, it's MIDTERM exam day.
 .
 
 I hope you have a good Thursday!
+
+.
+
+I hope you have a good Friday!
