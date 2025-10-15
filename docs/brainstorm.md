@@ -2396,6 +2396,9 @@ $$ 2 \omega^2 + \omega + 3 = \{ 2 \omega^2 + \omega + 2 \} $$
 
 $$ 2 \omega^2 + \omega + \omega = 2 \omega^2 + 2 \omega = \{ 2 \omega^2 + \omega, 2 \omega^2 + \omega + 1, 2 \omega^2 + \omega + 2, 2 \omega^2 + \omega + 3 ... \} $$
 
+
+$2400$ Lines.
+
 $$ 2 \omega^2 + \omega \omega = 2 \omega^2 + \omega^2 = 3 \omega^2 = \{ 2 \omega^2, 2 \omega^2 + \omega, 2 \omega^2 + 2 \omega ... \} $$
 
 $$ \omega \omega^2 = \omega^3 = \{ \omega^2, 2 \omega^2, 3 \omega^2 ... \} $$
@@ -2416,8 +2419,108 @@ Wait a minute! I can just do what I've already done, but in the exponents.
 
 $$ \omega^{\omega^{\omega}} = \{ \omega^{\omega}, \omega^{\omega^2}, \omega^{\omega^3} ... \} $$
 
-$2400$ Lines.
-
 $$ \omega^{\omega^{\omega^{\omega}}} = \{ \omega^{\omega^{\omega}}, \omega^{\omega^{\omega^2}}, \omega^{\omega^{\omega^3}} ... \} $$
 
 $$ \epsilon_0 = \{ \omega, \omega^{\omega}, \omega^{\omega^{\omega}}, \omega^{\omega^{\omega^{\omega}}} ... \} $$
+
+### ring theory?
+
+Links: [Why Negative Times Negative is Positive - Definition of Ring | Ring Theory E1](https://www.youtube.com/watch?v=4nG49xTTjIA), [Zero Product Property is False - Divisibility, Units, Zero Divisors | Ring Theory E2](https://www.youtube.com/watch?v=u1uW_BOUGoM), and [Number Systems Invented to Solve the Hardest Problem - History of Rings | Ring Theory E0](https://www.youtube.com/watch?v=M-9_rZfVQVE) all by [EpsilonDelta](https://www.youtube.com/@EpsilonDeltaMain), and [Every Hypercomplex Number Explained #SoME4](https://www.youtube.com/watch?v=DuNXn6qA2NE) by [Johttacus J. J. Begallo](https://www.youtube.com/@johttacusj.j.begallo1432)
+
+It's another day.
+
+#### what is a ring?
+
+A ring is a number system where you can add numbers, multiply numbers, and subtract numbers. More formally, a ring is a set that has operations of addition and multiplication that have the following requirements:
+
+$1$: Closure ($+$): if $a$ is in the ring and $b$ is in the ring, then $a + b$ is also in the ring.
+
+$2$: Closure ($\cdot$): if $a$ is in the ring and $b$ is in the ring, then $a b$ is also in the ring.
+
+$3$: Associativity ($+$): if $a$, $b$, and $c$ are all in the ring, then $(a + b) + c = a + (b + c) = a + b + c$.
+
+$4$: Associativity ($\cdot$): if $a$, $b$, and $c$ are all in the ring, then $(a b) c = a (b c) = a b c$.
+
+$5$: Commutativity ($+$): if $a$ is in the ring and $b$ is in the ring, then $a + b = b + a$.
+
+$6$: Identity ($+$): there must always be a $0$ where, if you pick any $a$ in the ring, then $a + 0 = a$.
+
+$7$: Identity ($\cdot$): there must always be a $1$ where, if you pick any $a$ in the ring, then $1 a = a 1 = a$.
+
+$8$: Inverses ($+$): if $a$ is in the ring, then there must always be a $-a$ in the ring where $a + -a = 0$.
+
+$9$: Distributivity ($+$ & $\cdot$): if $a$, $b$, and $c$ are all in the ring, then $a (b + c) = (b + c) a = a b + a c$.
+
+So, if you know the definition of a group, then ignoring distributivity gives you the following: if you remove multiplication, you're left with an abelian group, and if you remove addition, you're left with something that's like a group, but it has no inverse requirement.
+
+It's another day.
+
+Notice: I said addition, multiplication, and subtraction at the start. This is to emphasize that you can take the negatives of things, but not necessarily the multiplicative inverses.
+
+After re-watching the first half of [Why Negative Times Negative is Positive - Definition of Ring | Ring Theory E1](https://www.youtube.com/watch?v=4nG49xTTjIA) yesterday, or two days ago, or three days ago, or however long ago I last worked on this, I have forgotten what's inside of the video, and I'll just do something else for the next part.
+
+#### why is a ring?
+
+This isn't a chapter as much as it is the reason why these rules are in place, especially distributivity. It turns out, some of these rules are designed so that the first definition of multiplication you learned actually works.
+
+$$ R \text{ is a ring} $$
+
+$$ a \text{ is in } R $$
+
+$$ 3 a = (1 + 1 + 1) a = 1 a + 1 a + 1 a = a + a + a $$
+
+I came up with that in the middle of the night.
+
+$$ \frac{1}{3} \text{ is in } R $$
+
+$$ \frac{1}{3} a = x $$
+
+$$ 3 (\frac{1}{3} a) = 3 x $$
+
+$$ \frac{1}{3} a + \frac{1}{3} a + \frac{1}{3} a = (\frac{1}{3} + \frac{1}{3} + \frac{1}{3}) a = x + x + x $$
+
+$$ \frac{1}{3} + \frac{1}{3} + \frac{1}{3} : = 1 $$
+
+$$ (\frac{1}{3} + \frac{1}{3} + \frac{1}{3}) a = 1 a = a $$
+
+$$ x + x + x = a $$
+
+I came up with that after seeing a scene in the movie Arrival where someone said something like $\frac{1}{6}$ means $1$ of $6$ parts.
+
+$$ b \text{ is in } R $$
+
+$$ a b = a (b + 0) = a b + a 0 $$
+
+$$ a b = a b + a 0 $$
+
+$$ a b + -(a b) = a b + a 0 + -(a b) $$
+
+$$ a 0 = 0 $$
+
+$2500$ Lines.
+
+I came up with that after trying to prove that it's true.
+
+$$ (-1) a = x $$
+
+$$ a 0 = 0 $$
+
+$$ a 0 = a (1 + (-1)) = a 1 + a (-1) = a + a (-1) $$
+
+$$ a + a (-1) = 0 $$
+
+$$ a + a (-1) + (-a) = 0 + (-a) $$
+
+$$ a (-1) = -a $$
+
+I came up with this one while writing it, and I think it was also in [Why Negative Times Negative is Positive - Definition of Ring | Ring Theory E1](https://www.youtube.com/watch?v=4nG49xTTjIA).
+
+There's probably more to put in this chapter, but you can just watch [Why Negative Times Negative is Positive - Definition of Ring | Ring Theory E1](https://www.youtube.com/watch?v=4nG49xTTjIA)
+
+#### examples of rings and how to build them
+
+You might have noticed that it's been a while (actually, I think it's been a month), and that's because I always decided to work on the problem set I had instead of working on this page, but now problem set $3$ has been turned in, I can finally work on this page!
+
+But anyways, I thought it would be helpful if I showed examples of what's a ring and what isn't a ring. The definition of a ring is very general, so most things you can think of as number systems count as rings. (And even some things you wouldn't ever really think of as number systems are rings!)
+
+The most famous rings I can think of are, well, there's the integers, the rational numbers, the real numbers, matrices, and complex numbers.
