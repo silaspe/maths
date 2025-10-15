@@ -2517,10 +2517,51 @@ I came up with this one while writing it, and I think it was also in [Why Negati
 
 There's probably more to put in this chapter, but you can just watch [Why Negative Times Negative is Positive - Definition of Ring | Ring Theory E1](https://www.youtube.com/watch?v=4nG49xTTjIA)
 
-#### examples of rings and how to build them
+#### basic ring information
 
 You might have noticed that it's been a while (actually, I think it's been a month), and that's because I always decided to work on the problem set I had instead of working on this page, but now problem set $3$ has been turned in, I can finally work on this page!
 
 But anyways, I thought it would be helpful if I showed examples of what's a ring and what isn't a ring. The definition of a ring is very general, so most things you can think of as number systems count as rings. (And even some things you wouldn't ever really think of as number systems are rings!)
 
 The most famous rings I can think of are, well, there's the integers, the rational numbers, the real numbers, matrices, and complex numbers.
+
+Something strange just happened: when I pressed the edit button, for the first time in this website's history, there wasn't an empty line.
+
+Anyways, it's Wednesday. Wednesday is a week after midterms, which is a week and a day after problem set five, and it said earlier that it was problem set three, so it's been a month.
+
+What about the different types of rings? Well, a commutative ring is one where the multiplication operation is commutative.  (Remember how I only wrote down commutativity for addition?) A division ring is one where every number has a multiplicative inverse. If something is both a commutative and a division ring, it's called a field, the highest honor a ring can have.
+
+But the requirements for a division ring still seem too strict (and don't allow for primes, because any $p$ is equal to $x (x^{-1} p)$, for $x \ne 0$). If only there was another requirement that all division rings have where it would be nice if you had it for your ring. Well, it turns out there is! They're called cancelable rings, and they're called that because in a cancelable ring, the following holds:
+
+$$ a b = a c, a \ne 0 → b = c $$
+
+It turns out that this is the same as the property that if $ab = 0$, then $a = 0$ or $b = 0$. If this is not the case, then $a$ is called a left zero divisor and $b$ is called a right zero divisor. Here's a proof that cancelable ring and no zero divisors are the same statement:
+
+Proof of backward case:
+
+$$ a b = a c $$
+
+$$ a \ne 0 $$
+
+$$ a b - a c = 0 $$
+
+$$ a (b - c) = 0 $$
+
+$$ \text{Because } a \ne 0 \text{, } b - c = 0 $$
+
+$$ b = c $$
+
+
+$2555$ Lines.
+
+Proof of forward case:
+
+$$ a b = 0 $$
+
+$$ a (b + 0) = 0 $$
+
+$$ a b + a 0 = 0 $$
+
+This is obviously true if $a = 0$, but if $a \ne 0$ then we can use our assumption that the ring is cancelable. This would mean that $b = 0$ which, together with $a = 0$ being a solution, means that means that if $ab = 0$ then $a = 0$ or $b = 0$.
+
+Now it's time to finish categorizing rings. As you know, if a group has no zero divisors, then it's cancelable. But if a ring is cancelable and is also commutative, then it's called an integral ring (because it behaves like the integers). Also, if something is a division ring, then it should be obvious that there are no zero divisors, because if $ab = 0$ and $a$ and $b$ are both nonzero, then you can just divide by $b$ and then get that $a = 0$.
