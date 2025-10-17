@@ -1922,3 +1922,7 @@ I hope you have a good Wednesday!
 .
 
 I hope you have a good Thursday! Also, it's NOT exam day.
+
+.
+
+I hope you have a good Friday!
