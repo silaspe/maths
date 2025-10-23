@@ -40,9 +40,9 @@ I'll leave it to J perm.
 
 Hyperbolic arcs
 
-$$ \text{I'm sorry that this got shoved in your face. Just scroll up.} $$
+$$ \text{This line used to be a warning for the below one.} $$
 
-<iframe src="https://www.geogebra.org/calculator/ysw94mwz?embed" width="800" height="600" allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;" frameborder="0"></iframe>
+$$ \text{This line used to be a GeoGebra file that would always load first even if you're trying to scroll down.} $$
 
 This used to be a page on the website until I deleted it. The page still exists and you can find it by replacing the `rand` in the URL link above with `hyperbolic`, I think you can see why I deleted it.
 
