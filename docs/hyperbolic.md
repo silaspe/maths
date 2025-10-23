@@ -26,7 +26,7 @@ If you manged to scroll down, here's a chosse your own adventure: if you found t
 
 ### page 1
 
-[.](https://silaspe.github.io/maths/aa.html#hyperbolic-arcs)
+[.](https://silaspe.github.io/maths/brainstorm.html#hyperbolic-arcs)
 
 .
 
