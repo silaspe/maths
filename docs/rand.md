@@ -1934,3 +1934,19 @@ I hope you have a good Saturday!
 .
 
 I hope you have a good Sunday! It's a special day today.
+
+.
+
+I hope you have a good Monday!
+
+.
+
+I hope you have a good Tuesday!
+
+.
+
+I hope you have a good Wednesday!
+
+.
+
+I hope you have a good Thursday! Also, it's exam day.
