@@ -1982,3 +1982,11 @@ I hope you have a good Thursday! Also, it's exam day.
 .
 
 I hope you have a good Friday and a Happy Halloween!
+
+.
+
+I hope you have a good Saturday and November!
+
+.
+
+I hope you have a good Sunday!
