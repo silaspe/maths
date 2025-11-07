@@ -2523,7 +2523,12 @@ You might have noticed that it's been a while (actually, I think it's been a mon
 
 But anyways, I thought it would be helpful if I showed examples of what's a ring and what isn't a ring. The definition of a ring is very general, so most things you can think of as number systems count as rings. (And even some things you wouldn't ever really think of as number systems are rings!)
 
-The most famous rings I can think of are, well, there's the integers, the rational numbers, the real numbers, matrices, and complex numbers.
+The most famous rings I can think of are, well, there's the integers, the rational numbers, the real numbers, matrices*, and complex numbers.
+
+*$\begin{bmatrix} 0 & 0 \\
+0 & 0 \\ \end{bmatrix}$ is $0$, $\begin{bmatrix} 1 & 0 \\
+0 & 1 \\ \end{bmatrix}$, $\begin{bmatrix} 1 & 0 \\
+0 & 1 \\ \end{bmatrix}$ is $1$.
 
 Something strange just happened: when I pressed the edit button, for the first time in this website's history, there wasn't an empty line.
 
@@ -2549,10 +2554,10 @@ $$ a (b - c) = 0 $$
 
 $$ \text{Because } a \ne 0 \text{, } b - c = 0 $$
 
-$$ b = c $$
-
 
 $2555$ Lines.
+
+$$ b = c $$
 
 Proof of forward case:
 
@@ -2564,4 +2569,16 @@ $$ a b + a 0 = 0 $$
 
 This is obviously true if $a = 0$, but if $a \ne 0$ then we can use our assumption that the ring is cancelable. This would mean that $b = 0$ which, together with $a = 0$ being a solution, means that means that if $ab = 0$ then $a = 0$ or $b = 0$.
 
-Now it's time to finish categorizing rings. As you know, if a group has no zero divisors, then it's cancelable. But if a ring is cancelable and is also commutative, then it's called an integral ring (because it behaves like the integers). Also, if something is a division ring, then it should be obvious that there are no zero divisors, because if $ab = 0$ and $a$ and $b$ are both nonzero, then you can just divide by $b$ and then get that $a = 0$.
+Now it's time to finish categorizing rings. As you know, if a ring has no zero divisors, then it's cancelable. But if a ring is cancelable and is also commutative, then it's called an integral ring (because it behaves like the integers). Also, if something is a division ring, then it should be obvious that there are no zero divisors, because if $ab = 0$ and $a$ and $b$ are both nonzero, then you can just divide by $b$ and then get that $a = 0$.
+
+So, you know that list I said earlier? Well, the integers are an integral ring (like I said earlier), the rational numbers form a field, the real numbers form a field, and the complex numbers form a field.
+
+#### what's in a ring?
+
+As I said earlier, zero divisors could be in a ring, but there's actually another thing that's kind of the opposite of a zero divisor: a unit.
+
+A unit $u$ has a number $u^{-1}$ that is also in the ring where $u u^{-1} = u^{-1} u = 1$.
+
+Units have the same annoying property as $1$ where they divide everything because $a = u (u^{-1} a)$. you have probably seen units before, you know how in the definition for a prime, it says that a prime if it is is a number that's divisible by $1$ and itself only? Well, because the positive integers don't form a ring, inside of the integers you have to also consider that, for example, $5$ is equal to $(-1) (-5)$, or $(-1) (-1) 5$.
+
+I will continue to talk about primes for the rest of this page (if I end up finishing it), but for now, just know that units are another thing that could be inside of a ring where everything inside a division ring (other than $0$) is one of them.
