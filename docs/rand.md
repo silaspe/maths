@@ -2030,4 +2030,8 @@ I hope you have a good Sunday!
 
 .
 
-I hope you have a good Monday!
+I hope you have a good Monday! Also, it's oral exam day.
+
+.
+
+I hope you have a good Tuesday!
