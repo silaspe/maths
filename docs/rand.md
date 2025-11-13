@@ -2039,3 +2039,7 @@ I hope you have a good Tuesday and St. Martin's day!
 .
 
 I hope you have a good Wednesday!
+
+.
+
+I hope you have a good Thursday! Also, it's exam day.
