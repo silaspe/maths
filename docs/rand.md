@@ -2071,3 +2071,7 @@ I hope you have a good Wednesday!
 .
 
 I hope you have a good Thursday! Also, it's exam day. Something very bad just happened.
+
+.
+
+I hope you have a good Friday!
