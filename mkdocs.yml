@@ -36,6 +36,7 @@ nav:
   - Lambda Calculus revisited: lcr.md
   - Linear algebra: linear.md
   - Group theory: group_theory.md
+  - Ring theory: ring.md
 theme:
   name: material
   palette:
