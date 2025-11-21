@@ -70,8 +70,6 @@ $$ a b + -(a b) = a b + a 0 + -(a b) $$
 
 $$ a 0 = 0 $$
 
-$2500$ Lines.
-
 I came up with that after trying to prove that it's true.
 
 $$ (-1) a = x $$
@@ -97,6 +95,9 @@ You might have noticed that it's been a while (actually, I think it's been a mon
 But anyways, I thought it would be helpful if I showed examples of what's a ring and what isn't a ring. The definition of a ring is very general, so most things you can think of as number systems count as rings. (And even some things you wouldn't ever really think of as number systems are rings!)
 
 The most famous rings I can think of are, well, there's the integers, the rational numbers, the real numbers, matrices*, and complex numbers.
+
+
+$100$ Lines.
 
 *$\begin{bmatrix} 0 & 0 \\
 0 & 0 \\ \end{bmatrix}$ is $0$, $\begin{bmatrix} 1 & 0 \\
@@ -127,9 +128,6 @@ $$ a (b - c) = 0 $$
 
 $$ \text{Because } a \ne 0 \text{, } b - c = 0 $$
 
-
-$2555$ Lines.
-
 $$ b = c $$
 
 Proof of forward case:
@@ -155,3 +153,5 @@ A unit $u$ has a number $u^{-1}$ that is also in the ring where $u u^{-1} = u^{-
 Units have the same annoying property as $1$ where they divide everything because $a = u (u^{-1} a)$. you have probably seen units before, you know how in the definition for a prime, it says that a prime if it is is a number that's divisible by $1$ and itself only? Well, because the positive integers don't form a ring, inside of the integers you have to also consider that, for example, $5$ is equal to $(-1) (-5)$, or $(-1) (-1) 5$.
 
 I will continue to talk about primes for the rest of this page (if I end up finishing it), but for now, just know that units are another thing that could be inside of a ring where everything inside a division ring (other than $0$) is one of them.
+
+Everything above this line was made in the concept for this page. Everything below and including this line was made after the creation of this page.
