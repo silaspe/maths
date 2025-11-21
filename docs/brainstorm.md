@@ -2423,7 +2423,7 @@ $$ \omega^{\omega^{\omega^{\omega}}} = \{ \omega^{\omega^{\omega}}, \omega^{\ome
 
 $$ \epsilon_0 = \{ \omega, \omega^{\omega}, \omega^{\omega^{\omega}}, \omega^{\omega^{\omega^{\omega}}} ... \} $$
 
-### ring theory?
+### ring theory
 
 Links: [Why Negative Times Negative is Positive - Definition of Ring | Ring Theory E1](https://www.youtube.com/watch?v=4nG49xTTjIA), [Zero Product Property is False - Divisibility, Units, Zero Divisors | Ring Theory E2](https://www.youtube.com/watch?v=u1uW_BOUGoM), and [Number Systems Invented to Solve the Hardest Problem - History of Rings | Ring Theory E0](https://www.youtube.com/watch?v=M-9_rZfVQVE) all by [EpsilonDelta](https://www.youtube.com/@EpsilonDeltaMain), and [Every Hypercomplex Number Explained #SoME4](https://www.youtube.com/watch?v=DuNXn6qA2NE) by [Johttacus J. J. Begallo](https://www.youtube.com/@johttacusj.j.begallo1432)
 
