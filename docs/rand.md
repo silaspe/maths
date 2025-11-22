@@ -2075,3 +2075,7 @@ I hope you have a good Thursday! Also, it's exam day. Something very bad just ha
 .
 
 I hope you have a good Friday!
+
+.
+
+I hope you have a good Saturday! I'm now in an Airbnb in a different city.
