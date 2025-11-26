@@ -2074,7 +2074,7 @@ I hope you have a good Thursday! Also, it's exam day. Something very bad just ha
 
 .
 
-I hope you have a good Friday! My family is now on a road trip.
+I hope you have a good Friday! My family is now on a road trip and the Final Exam problem set is out.
 
 .
 
