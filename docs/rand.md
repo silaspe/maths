@@ -2095,3 +2095,7 @@ I hope you have a good Tuesday!
 .
 
 I hope you have a good Wednesday!
+
+.
+
+Happy Thanksgiving and I hope you have a good Thursday!
