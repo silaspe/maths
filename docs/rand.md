@@ -2134,3 +2134,7 @@ I hope you have a good Wednesday!
 .
 
 I hope you have a good Thursday! Also, it's NOT exam day and I'm about to go to class $1$ last time!
+
+.
+
+I hope you have a good Friday!
