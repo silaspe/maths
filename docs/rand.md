@@ -2138,3 +2138,7 @@ I hope you have a good Thursday! Also, it's NOT exam day and I'm about to go to 
 .
 
 I hope you have a good Friday!
+
+.
+
+I hope you have a good Saturday!
