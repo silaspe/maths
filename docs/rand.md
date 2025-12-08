@@ -2086,7 +2086,7 @@ I hope you have a good Sunday and Fibonacci day! It's now time to go home.
 
 .
 
-I hope you have a good Monday
+I hope you have a good Monday!
 
 .
 
@@ -2146,3 +2146,7 @@ I hope you have a good Saturday and St. Nicholas day!
 .
 
 I hope you have a good Sunday!
+
+.
+
+I hope you have a good Monday!
