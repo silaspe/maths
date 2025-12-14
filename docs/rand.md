@@ -2162,3 +2162,15 @@ I hope you have a good Wednesday! Also, I just got a haircut.
 .
 
 I hope you have a good Thursday! Also, today I will have my final exams.
+
+.
+
+I hope you have a good Friday!
+
+.
+
+I hope you have a good Saturday!
+
+.
+
+I hope you have a good Sunday!
