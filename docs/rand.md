@@ -2189,4 +2189,4 @@ I hope you have a good Wednesday! Also, my fever IS gone.
 
 .
 
-I hope you have a good Thursday! Also, it's my birthday, !'m $12$ now.
+I hope you have a good Thursday! Also, it's my birthday, I'm $12$ now.
