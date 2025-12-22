@@ -2177,7 +2177,7 @@ I hope you have a good Sunday! Also, I have a fever.
 
 .
 
-I hope you have a good Monday! Also, I still have a fever, but it's getting brtter.
+I hope you have a good Monday! Also, I still have a fever, but it's getting better.
 
 .
 
@@ -2206,3 +2206,7 @@ I hope you have a good Saturday!
 .
 
 I hope you have a good Sunday!
+
+.
+
+I hope you have a good Monday!
