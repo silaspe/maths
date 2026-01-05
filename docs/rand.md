@@ -273,7 +273,7 @@ Only ~ $2$ weeks until halloween! (That was the day I created this website.)
 
 i before e except after c...
 
-... Unless you're being one of eight weird beige foreign sovereign forfeiting weightlifting, either caffeine or budweiser drinking neighbors, running a feisty heist to seize the height of technology! ([See original](https://youtu.be/1bXjB0zrjp0?t=256))
+... Unless you're being one of eight weird beige foreign sovereign forfeiting weightlifting, either budweiser drinking or pareidolia having neighbors, running a feisty heist to seize the height of technology! ([See original](https://youtu.be/1bXjB0zrjp0?t=256))
 
 .
 
