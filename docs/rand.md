@@ -2279,11 +2279,27 @@ I hope you have a good Tuesday!
 
 .
 
-Merry (orthodox) Christmas!
+I hope you have a good Wednesday!
 
 .
 
 Merry (orthodox) Christmas!
+
+.
+
+I hope you have a good Friday!
+
+.
+
+I hope you have a good Saturday!
+
+.
+
+I hope you have a good Sunday!
+
+.
+
+I hope you have a good Monday!
 
 .
 
@@ -2292,3 +2308,19 @@ I hope you have a good Tuesday!
 .
 
 I hope you have a good Wednesday!
+
+.
+
+I hope you have a good Thursday!
+
+.
+
+I hope you have a good Friday!
+
+.
+
+I hope you have a good Saturday!
+
+.
+
+I hope you have a good Sunday!
