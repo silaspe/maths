@@ -1,0 +1,1953 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="projective_geometry.html">
+      
+      
+        <link rel="next" href="linear.html">
+      
+      
+        
+      
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.2">
+    
+    
+      
+        <title>Lambda Calculus revisited - Silas Maths</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#coders-perspective" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="index.html" title="Silas Maths" class="md-header__button md-logo" aria-label="Silas Maths" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Silas Maths
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Lambda Calculus revisited
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/silaspe/maths" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Silas Maths
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="index.html" title="Silas Maths" class="md-nav__button md-logo" aria-label="Silas Maths" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Silas Maths
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/silaspe/maths" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Silas Maths
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="brainstorm.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Brainstorming a new page
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="derivatives.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Calculus
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="polynomial.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Polynomial
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="calculus_2.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Calculus part 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="trigonometry.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Trigonometry
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="complex.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Complex
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="jacobian.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Jacobian
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="eigen.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Eigenstuff
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="gamma.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Gamma
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="harmonic.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Harmonic
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="binomial.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Binomial
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="fractional_calculas.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fractional calculus
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="fibbonacci.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fibbonacci
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="probability.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Probability
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="complex_2.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Complex II
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="the_strand_puzzle.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The strand puzzle
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="arctan.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The infamous "arctan puzzle"
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="mod.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modular arithmetic
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="geometric_algebra.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Geometric algebra
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="set_theory.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Set theory
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="actual_repo.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Code repo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="binary.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The best way to count
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="geometric_algebra_2.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Geometric algebra 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="lambda.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lambda calculus
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="rand.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Non-math
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="some4.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Summer of Math Exposition 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="logic.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Set theory II
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="projective_geometry.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Projective geometry
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lambda Calculus revisited
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="lcr.html" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lambda Calculus revisited
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#coders-perspective" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        coder's perspective
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="coder&#39;s perspective">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Introduction
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#what-is-this-lambda" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What is this \(\lambda\)?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#what-is-the-lambda-calculus" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What is The Lambda Calculus?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#syntax" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        syntax
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#examplescomparisons" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        examples/comparisons
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="examples/comparisons">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#x" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        \(x\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mn" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        \(M(N)\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#currying" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        currying
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#back-to-examplescomparisons" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        back to examples/comparisons
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="back to examples/comparisons">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#m-n" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        \(M\) \(N\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lambda-x-m" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        \(\lambda x. M\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#beta-reduction-and-others" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        \(\beta\)-reduction and others
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#formalism" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        formalism
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="formalism">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#extensional-vs-intensional-view-of-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        extensional vs. intensional view of functions
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-lambda-calculus" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The lambda calculus
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#just-read-the-paper" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        just read the paper.
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#coders-perspective_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        coder's perspective
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="linear.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Linear algebra
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="group_theory.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Group theory
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="ring.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ring theory
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#coders-perspective" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        coder's perspective
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="coder&#39;s perspective">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Introduction
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#what-is-this-lambda" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What is this \(\lambda\)?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#what-is-the-lambda-calculus" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What is The Lambda Calculus?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#syntax" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        syntax
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#examplescomparisons" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        examples/comparisons
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="examples/comparisons">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#x" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        \(x\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mn" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        \(M(N)\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#currying" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        currying
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#back-to-examplescomparisons" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        back to examples/comparisons
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="back to examples/comparisons">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#m-n" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        \(M\) \(N\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lambda-x-m" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        \(\lambda x. M\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#beta-reduction-and-others" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        \(\beta\)-reduction and others
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#formalism" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        formalism
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="formalism">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#extensional-vs-intensional-view-of-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        extensional vs. intensional view of functions
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-lambda-calculus" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The lambda calculus
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#just-read-the-paper" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        just read the paper.
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#coders-perspective_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        coder's perspective
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+  <h1>Lambda Calculus revisited</h1>
+
+<h2 id="coders-perspective">coder's perspective<a class="headerlink" href="#coders-perspective" title="Permanent link">&para;</a></h2>
+<h3 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h3>
+<p>Let's start out with a function <span class="arithmatex">\(I\)</span> equal to <span class="arithmatex">\(\lambda x. x\)</span>. If I plug in <span class="arithmatex">\(1\)</span> to this function, what do I get back? What is <span class="arithmatex">\(\text{I} (1)\)</span>? Yeah, <span class="arithmatex">\(\text{I} (1) = 1\)</span>, <span class="arithmatex">\(\text{I} (2) = 2\)</span>, what about <span class="arithmatex">\(\text{I} (\text{I})\)</span>? Yeah, it's <span class="arithmatex">\(\text{I}\)</span>.</p>
+<p>So, the identity combinator takes in an input <span class="arithmatex">\(x\)</span>, and returns an output, also <span class="arithmatex">\(x\)</span>. So the identity of any <span class="arithmatex">\(x\)</span> is <span class="arithmatex">\(x\)</span>, and as seen before, we can use functions as arguments, verbs are nouns and nouns are verbs, so the identity of identity is itself.</p>
+<h3 id="what-is-this-lambda">What is this <span class="arithmatex">\(\lambda\)</span>?<a class="headerlink" href="#what-is-this-lambda" title="Permanent link">&para;</a></h3>
+<p>So, you might've seen this lambda stuff (<span class="arithmatex">\(\lambda x. x\)</span>) earlier and wondered what it ment, so I'll break it down into small parts. Lambda (<span class="arithmatex">\(\lambda\)</span>) is a signifier, a notation that I'm gonna use, to indicate that we're starting the definition of a function.</p>
+<p>So we can read this as: we're starting to define a function (<span class="arithmatex">\(\lambda\)</span>), that takes a single input (<span class="arithmatex">\(x\)</span>), or parameter, and returns some expression, some body (<span class="arithmatex">\(x\)</span>) (the part after rhe dot). This whole thing is called a lambda abstraction in the lambda calculus, but it just means that it's a unary (takes a single input) anonymous function</p>
+<h3 id="what-is-the-lambda-calculus">What is The Lambda Calculus?<a class="headerlink" href="#what-is-the-lambda-calculus" title="Permanent link">&para;</a></h3>
+<p>A purely functional programming language. It's called "calculus" because the term "calculus" just means a method of moving around symbols on a page, but instead of the calculus of the very small and the very large, it's the calculus of evaluating and defining functions.</p>
+<h3 id="syntax">syntax<a class="headerlink" href="#syntax" title="Permanent link">&para;</a></h3>
+<p>So in the lambda calculus, we have variables (which are kinda boring), we have expressions (applying a function to an argument), and we have lambda abstractions. In total, lambda terms are of the Backus-Naur Form:</p>
+<div class="arithmatex">\[ M, N ::= x \text{ } | \text{ } M(N) \text{ } | \text{ } \lambda x. M \]</div>
+<p>I gotta go do kid stuff now.</p>
+<p>It's been <span class="arithmatex">\(20\)</span> minutes.</p>
+<p>Oh, right, there's also parenthesis.</p>
+<p>And that's the entire lambda calculus.</p>
+<h3 id="examplescomparisons">examples/comparisons<a class="headerlink" href="#examplescomparisons" title="Permanent link">&para;</a></h3>
+<p>Let's start with the Backus-Naur Form...</p>
+<h4 id="x"><span class="arithmatex">\(x\)</span><a class="headerlink" href="#x" title="Permanent link">&para;</a></h4>
+<p>There's pretty much one thing to say about variables in the lambda calculus: they are immutable, they can not be changed after the fact, there's no concept of "assignment" per say, in the lambda calculus (there is binding, i.e. You can assign a variable to a value, but only once. It becomes a "bound variable"), if a variable is bound to a value, that's its value for now and forever more.</p>
+<p>On the other hand, the Backus-Naur Form <span class="arithmatex">\(M(N)\)</span> is slightly more interesting</p>
+<h4 id="mn"><span class="arithmatex">\(M(N)\)</span><a class="headerlink" href="#mn" title="Permanent link">&para;</a></h4>
+<p>In the lambda calculus, application is just a space, there's no parens for invocation. So, correction:</p>
+<div class="arithmatex">\[ M, N ::= x \text{ } | \text{ } M \text{ } N \text{ } | \text{ } \lambda x. M \]</div>
+<p>This seems weird at first, but in reality, it ends up removing a lot of noise from our expressions.</p>
+<table>
+<thead>
+<tr>
+<th>The Lambda Calculus</th>
+<th>Code</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="arithmatex">\(f\)</span> <span class="arithmatex">\(x\)</span></td>
+<td><code>f(x)</code></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(f\)</span> <span class="arithmatex">\(x\)</span> <span class="arithmatex">\(y\)</span></td>
+<td><code>f(x)(y)</code>!!</td>
+</tr>
+</tbody>
+</table>
+<p>I just wanted to have a multi-input function, but now, I have to interrupt this to explain...</p>
+<h3 id="currying">currying<a class="headerlink" href="#currying" title="Permanent link">&para;</a></h3>
+<p>In the lambda calculus, all functions are unary. This (<span class="arithmatex">\(f\)</span> <span class="arithmatex">\(x\)</span> <span class="arithmatex">\(y\)</span>) is really a curried function, <span class="arithmatex">\(f\)</span> takes in <span class="arithmatex">\(x\)</span>, and outputs a new function that takes in <span class="arithmatex">\(y\)</span>. A classic example of a curried function is the curried addition function, <code>add(1)</code> is the add <span class="arithmatex">\(1\)</span> function, and if I apply it to <span class="arithmatex">\(2\)</span>, I get <span class="arithmatex">\(3\)</span> (<code>add(1)(2) == 3</code>).</p>
+<p>So <span class="arithmatex">\(f\)</span> <span class="arithmatex">\(x\)</span> <span class="arithmatex">\(y\)</span> can be read as <span class="arithmatex">\(f\)</span> first taking in an <span class="arithmatex">\(x\)</span>, then a <span class="arithmatex">\(y\)</span>, and if there were more inputs, they would also be fed in one by one from the left to the right.</p>
+<h3 id="back-to-examplescomparisons">back to examples/comparisons<a class="headerlink" href="#back-to-examplescomparisons" title="Permanent link">&para;</a></h3>
+<h4 id="m-n"><span class="arithmatex">\(M\)</span> <span class="arithmatex">\(N\)</span><a class="headerlink" href="#m-n" title="Permanent link">&para;</a></h4>
+<p>You could make <span class="arithmatex">\(f\)</span> <span class="arithmatex">\(x\)</span> <span class="arithmatex">\(y\)</span> more clear by saying <span class="arithmatex">\((f\)</span> <span class="arithmatex">\(x)\)</span> <span class="arithmatex">\(y\)</span>, but that dosen't do anything because application is left associative.</p>
+<p>But you can use parens to force it to be evaluated in a different order. So <span class="arithmatex">\(f\)</span> <span class="arithmatex">\((x\)</span> <span class="arithmatex">\(y)\)</span> is actually a different expression from <span class="arithmatex">\((f\)</span> <span class="arithmatex">\(x)\)</span> <span class="arithmatex">\(y\)</span>, it means first apply <span class="arithmatex">\(x\)</span> to <span class="arithmatex">\(y\)</span>, then the result of that to <span class="arithmatex">\(f\)</span>.</p>
+<table>
+<thead>
+<tr>
+<th>The Lambda Calculus</th>
+<th>Code</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="arithmatex">\(f\)</span> <span class="arithmatex">\(x\)</span></td>
+<td><code>f(x)</code></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(f\)</span> <span class="arithmatex">\(x\)</span> <span class="arithmatex">\(y\)</span></td>
+<td><code>f(x)(y)</code></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\((f\)</span> <span class="arithmatex">\(x)\)</span> <span class="arithmatex">\(y\)</span></td>
+<td><code>(f(x))(y)</code></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(f\)</span> <span class="arithmatex">\((x\)</span> <span class="arithmatex">\(y)\)</span></td>
+<td><code>f(x(y))</code></td>
+</tr>
+</tbody>
+</table>
+<p>On the third hand, let's look at the Backus-Naur Form...</p>
+<h4 id="lambda-x-m"><span class="arithmatex">\(\lambda x. M\)</span><a class="headerlink" href="#lambda-x-m" title="Permanent link">&para;</a></h4>
+<p>Let's go from simple to complicated.</p>
+<div class="arithmatex">\[ \lambda a. b \]</div>
+<p>(Or <code>a =&gt; b</code>.)</p>
+<p>Takes in an input <span class="arithmatex">\(a\)</span>, throws it away, and outputs whatever <span class="arithmatex">\(b\)</span> is.</p>
+<div class="arithmatex">\[ \lambda a. b \text{ } x \]</div>
+<p>(Or <code>a =&gt; b(x)</code>.)</p>
+<p>Takes in an input <span class="arithmatex">\(a\)</span>, throws it away, and outputs whatever <span class="arithmatex">\(b\)</span> is, but applied to whatever <span class="arithmatex">\(x\)</span> is.</p>
+<p>Footnote: the lambda abstraction swallows up as many things to the right as it can (use parens to stop the lambda term).</p>
+<p><span class="arithmatex">\(100\)</span> Lines!</p>
+<div class="arithmatex">\[ \lambda a. (b \text{ } x) \]</div>
+<p>(Or <code>a =&gt; (b(x))</code>.)</p>
+<p>But that's the same thing.</p>
+<div class="arithmatex">\[ (\lambda a. b) \text{ } x \]</div>
+<p>(Or <code>(a =&gt; b)(x)</code>.)</p>
+<p>Which is actually a different thing, it's the function that takes an input, throws it away, and outputs whatever <span class="arithmatex">\(b\)</span> is. That is, applied to <span class="arithmatex">\(x\)</span></p>
+<div class="arithmatex">\[ \lambda x. \lambda y. x \]</div>
+<p>(Or <code>x =&gt; y =&gt; x</code>.)</p>
+<p>This is an example of a curried function. In particular, it does the first of two things.</p>
+<div class="arithmatex">\[ \lambda x. (\lambda y. x) \]</div>
+<p>(Or <code>x =&gt; (y =&gt; x)</code>.)</p>
+<p>But that's the same thing.</p>
+<table>
+<thead>
+<tr>
+<th>The Lambda Calculus</th>
+<th>JS</th>
+<th>py</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="arithmatex">\(\lambda a. b\)</span></td>
+<td><code>a =&gt; b</code></td>
+<td><code>lambda a: b</code></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(\lambda a. b \text{ } x\)</span></td>
+<td><code>a =&gt; b(x)</code></td>
+<td><code>lambda a: b(x)</code></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(\lambda a. (b \text{ } x)\)</span></td>
+<td><code>a =&gt; (b(x))</code></td>
+<td><code>lambda a: (b(x))</code></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\((\lambda a. b) \text{ } x\)</span></td>
+<td><code>(a =&gt; b)(x)</code></td>
+<td><code>(lambda a: b)(x)</code></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(\lambda x. \lambda y. x\)</span></td>
+<td><code>x =&gt; y =&gt; x</code></td>
+<td><code>lambda x: lambda y: x</code></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(\lambda x. (\lambda y. x)\)</span></td>
+<td><code>x =&gt; (y =&gt; x)</code></td>
+<td><code>lambda x: (lambda y: x)</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="beta-reduction-and-others"><span class="arithmatex">\(\beta\)</span>-reduction and others<a class="headerlink" href="#beta-reduction-and-others" title="Permanent link">&para;</a></h3>
+<p>Beta reduction is literally just plugging arguments into functions.</p>
+<div class="arithmatex">\[ (\lambda a. a)(\lambda b. \lambda c. b)(x)(\lambda e. f) \]</div>
+<p>Plugging the argument into the parameter, and replacing the parameter in the body</p>
+<div class="arithmatex">\[ (\lambda b. \lambda c. b)(x)(\lambda e. f) \]</div>
+<p>Plugging the argument into the parameter, and replacing the parameter in the body</p>
+<div class="arithmatex">\[ (\lambda c. x)(\lambda e. f) \]</div>
+<p>Plugging the argument into the parameter, and replacing the parameter in the body</p>
+<div class="arithmatex">\[ x \]</div>
+<p>And now, it is in <span class="arithmatex">\(\beta\)</span>-normal form (that is, it has no redexes (that is, a thing that can be reduced (that is, an application where the function part starts with a <span class="arithmatex">\(\lambda\)</span>)))</p>
+<p>All in an honest days work (I've added the entire page up to this point in one Oct. <span class="arithmatex">\(15\)</span>'th)</p>
+<p>There's also bound and free variables: bound ones are the ones that start out in between a <span class="arithmatex">\(\lambda\)</span> and a <span class="arithmatex">\(.\)</span> and free variables are the other ones.</p>
+<p>There's also <span class="arithmatex">\(\alpha\)</span>-equivalence: two things are alpha equivalent if they differ only in the name of a bound variable.</p>
+<p>There's extensionally vs intentionally equal: extensionally equal means giving the same inputs gives the same outputs, and intentionally equal means the same formula.</p>
+<p>You can abbreviate <span class="arithmatex">\(\lambda x. \lambda y. \lambda z.\)</span> as <span class="arithmatex">\(\lambda xyz.\)</span>, which you can interpret as a ternary (takes three inputs) function, but don't be fooled, as every function in the lambda calculus is unary.</p>
+<p>And finally, I know what you might be thinking: you keep using that word 'combinator', I don't think it means what you think it means. To that, I say: yes, I do know what it means, other than function in the lambda calculus, it means function that has no free variables. I'm gonna give some examples, and you try to figure out which ones are combinators.</p>
+<div class="arithmatex">\[ \lambda b. b \]</div>
+<div class="arithmatex">\[ \lambda b. a \]</div>
+<div class="arithmatex">\[ \lambda ab. a \]</div>
+<div class="arithmatex">\[ \lambda a. a \text{ } b \]</div>
+<div class="arithmatex">\[ \lambda abc. c(\lambda e. b) \]</div>
+<p>First one: a combinator, nothing left undefined.</p>
+<p>Second one: not a combinator, what is <span class="arithmatex">\(a\)</span>?</p>
+<p>Third one: a combinator, doesn't matter if <span class="arithmatex">\(b\)</span> isn't used.</p>
+<p>Fourth one: not a combinator, what is <span class="arithmatex">\(b\)</span>?</p>
+<p>Fifth one: a combinator.</p>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Combinator</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="arithmatex">\(\lambda b. b\)</span></td>
+<td>Yes</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(\lambda b. a\)</span></td>
+<td>No</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(\lambda ab. a\)</span></td>
+<td>Yes</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(\lambda a. a\)</span> <span class="arithmatex">\(b\)</span></td>
+<td>No</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(\lambda abc. c\)</span> <span class="arithmatex">\(\lambda e. b\)</span></td>
+<td>Yes</td>
+</tr>
+</tbody>
+</table>
+<h2 id="formalism">formalism<a class="headerlink" href="#formalism" title="Permanent link">&para;</a></h2>
+<p>Ok, to any mathematicians reading this (which is my general audience), you can stop holding your breath, I'm gonna rigorously define all of this.</p>
+<p><span class="arithmatex">\(200\)</span> Lines!</p>
+<h3 id="extensional-vs-intensional-view-of-functions">extensional vs. intensional view of functions<a class="headerlink" href="#extensional-vs-intensional-view-of-functions" title="Permanent link">&para;</a></h3>
+<p>What is a function? Probably that "functions as graphs" thing: every function (call it <span class="arithmatex">\(f\)</span>) has a fixed domain (call it <span class="arithmatex">\(X\)</span>) and codomain (call it <span class="arithmatex">\(Y\)</span>). We often say <span class="arithmatex">\(f: X → Y\)</span> to denote this (pronounced <span class="arithmatex">\(f\)</span> maps <span class="arithmatex">\(X\)</span> to <span class="arithmatex">\(Y\)</span>). The function is a subset of <span class="arithmatex">\(X \times Y\)</span> (the set of all ordered pairs of size <span class="arithmatex">\(2\)</span> where the first term is in <span class="arithmatex">\(X\)</span> and the second in <span class="arithmatex">\(Y\)</span>) such that if <span class="arithmatex">\(x \in X\)</span> there exists one and only one <span class="arithmatex">\(y \in Y\)</span> such that the ordered pair <span class="arithmatex">\((x, y) \in f\)</span> (Side note! If both <span class="arithmatex">\(X\)</span> and <span class="arithmatex">\(Y\)</span> were the set of all real numbers, the ordered pair <span class="arithmatex">\((x, y)\)</span> would not just look like a point, but would be the (well, at least, my) definition of a point. End of side note). Two functions <span class="arithmatex">\(f, g: X → Y\)</span> are considered equal if they are the same set, that is, giving the same inputs gives the same outputs, a.k.a. An extensional perspective.</p>
+<p>Alternitavely, there's the "functions as rules" paradigm, commonlly used in the <span class="arithmatex">\(19\)</span>th century: each function has a rule (e.g. the square function is a rule, and you can write this rule like <span class="arithmatex">\(x^2 = x \cdot x\)</span>, or <span class="arithmatex">\(^2 = x ↦ x \cdot x\)</span>). Yeah, that's it. But it is as intensional view.</p>
+<p>Pop quiz/famous unsolved problem: are <span class="arithmatex">\(x ↦ x\)</span> and <span class="arithmatex">\(y ↦ y\)</span> intensionally equal?</p>
+<p>In this notion, you don't need to know the exact domain and codomain of a function. e.g. <span class="arithmatex">\(f(x) = x\)</span> has domain and codomain <span class="arithmatex">\(X\)</span> for any set <span class="arithmatex">\(X\)</span>.</p>
+<p>In most of mathematics, the "functions as graphs" paradigm is the most elegant and appropriate way of dealing with functions. Graphs define a more general class of functions, because it includes functions that are not necessarily given by a rule.</p>
+<p>On the other hand, in computer science, the “functions as rules” paradigm is often more appropriate. Think of a computer program as defining a function that maps input to output. Most computer programmers (and users) do not only care about the extensional behavior of a program (which inputs are mapped to which outputs), but also about how the output is calculated: How much time does it take? How much memory and disk space is used in the process? How much communication bandwidth is used? These are intensional questions having to do with the particular way in which a function was defined.</p>
+<h3 id="the-lambda-calculus">The lambda calculus<a class="headerlink" href="#the-lambda-calculus" title="Permanent link">&para;</a></h3>
+<p>... Is a method for defining functions as rules.</p>
+<p>Time for arihmetic! Arithmetic expressions are made up from variables (<span class="arithmatex">\(x\)</span>, <span class="arithmatex">\(y\)</span>, <span class="arithmatex">\(z\)</span>...), numbers (<span class="arithmatex">\(1\)</span>, <span class="arithmatex">\(2\)</span>, <span class="arithmatex">\(3\)</span>,...), and operators (<span class="arithmatex">\(+\)</span>, <span class="arithmatex">\(-\)</span>, <span class="arithmatex">\(\times\)</span> etc.). An expression such as <span class="arithmatex">\(x + y\)</span> stands for the result of an addition (as opposed to an instruction to add, or the statement that something is being added). The great advantage of this language is that expressions can be nested without any need to mention the intermediate results explicitly (e.g. "<span class="arithmatex">\(A = (x + y) \times z^2\)</span>" and not "let <span class="arithmatex">\(w = x + y\)</span>, then let <span class="arithmatex">\(u = z^2\)</span>, then let <span class="arithmatex">\(A = w \times u\)</span>").</p>
+<p>The lambda calculus extends the idea of an expression language to include functions. Where we normally write "Let <span class="arithmatex">\(f\)</span> be the function <span class="arithmatex">\(x ↦ x^2\)</span>. Then consider A = f(5)", in the lambda calculus we just write <span class="arithmatex">\(A = (x ↦ x^2)(5)\)</span>. But, because I want it to look more fancy, it is written <span class="arithmatex">\(A = (\lambda x. x^2)(5)\)</span>. The expression <span class="arithmatex">\(\lambda x. x^2\)</span> stands for the function that maps <span class="arithmatex">\(x\)</span> to <span class="arithmatex">\(x^2\)</span> (as opposed to the statement that <span class="arithmatex">\(x\)</span> is being mapped to <span class="arithmatex">\(x^2\)</span>). As in arithmetic, we use parentheses to group terms.</p>
+<p>It is understood that the variable <span class="arithmatex">\(x\)</span> is a local variable in the term <span class="arithmatex">\(\lambda x. x^2\)</span>. Thus, it does not make any difference if we write <span class="arithmatex">\(\lambda y. y^2\)</span> instead. A local variable is also called a bound variable.</p>
+<p>One advantage of the lambda notation is that it allows us to easily talk about higher-order functions, i.e., functions whose inputs and/or outputs are themselves functions. An example is the operation <span class="arithmatex">\(f ↦ f ∘ f\)</span> in mathematics, which takes a function <span class="arithmatex">\(f\)</span> and maps it to <span class="arithmatex">\(f ∘ f\)</span>, the composition of f with itself. In the lambda calculus, <span class="arithmatex">\(f ∘ f\)</span> is written as <span class="arithmatex">\(\lambda x. f(f(x))\)</span>, and the operation that maps <span class="arithmatex">\(f\)</span> to <span class="arithmatex">\(f ∘ f\)</span> is written as <span class="arithmatex">\(\lambda f. \lambda x. f(f(x))\)</span>.</p>
+<h3 id="just-read-the-paper">just read the paper.<a class="headerlink" href="#just-read-the-paper" title="Permanent link">&para;</a></h3>
+<h2 id="coders-perspective_1">coder's perspective<a class="headerlink" href="#coders-perspective_1" title="Permanent link">&para;</a></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": [], "search": "assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

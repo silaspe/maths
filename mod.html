@@ -1,0 +1,1586 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="arctan.html">
+      
+      
+        <link rel="next" href="geometric_algebra.html">
+      
+      
+        
+      
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.2">
+    
+    
+      
+        <title>Modular arithmetic - Silas Maths</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#like-the-title-suggests-what-would-happen-if-you-restart-counting-after-10" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="index.html" title="Silas Maths" class="md-header__button md-logo" aria-label="Silas Maths" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Silas Maths
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Modular arithmetic
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/silaspe/maths" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Silas Maths
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="index.html" title="Silas Maths" class="md-nav__button md-logo" aria-label="Silas Maths" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Silas Maths
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/silaspe/maths" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Silas Maths
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="brainstorm.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Brainstorming a new page
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="derivatives.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Calculus
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="polynomial.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Polynomial
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="calculus_2.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Calculus part 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="trigonometry.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Trigonometry
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="complex.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Complex
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="jacobian.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Jacobian
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="eigen.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Eigenstuff
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="gamma.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Gamma
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="harmonic.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Harmonic
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="binomial.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Binomial
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="fractional_calculas.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fractional calculus
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="fibbonacci.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fibbonacci
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="probability.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Probability
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="complex_2.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Complex II
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="the_strand_puzzle.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The strand puzzle
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="arctan.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The infamous "arctan puzzle"
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modular arithmetic
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="mod.html" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modular arithmetic
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#like-the-title-suggests-what-would-happen-if-you-restart-counting-after-10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Like the title suggests, what would happen if you restart counting after \(10\)?
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Like the title suggests, what would happen if you restart counting after \(10\)?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#non-integers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Non-integers
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#answer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        answer
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-to-make-your-own-diagram-for-modular-arithmetic-in-base-p-in-the-desmos-graphing-calculator" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        how to make your own diagram for modular arithmetic in base \(p\) in the desmos graphing calculator
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="geometric_algebra.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Geometric algebra
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="set_theory.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Set theory
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="actual_repo.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Code repo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="binary.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The best way to count
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="geometric_algebra_2.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Geometric algebra 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="lambda.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lambda calculus
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="rand.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Non-math
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="some4.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Summer of Math Exposition 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="logic.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Set theory II
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="projective_geometry.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Projective geometry
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="lcr.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lambda Calculus revisited
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="linear.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Linear algebra
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="group_theory.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Group theory
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="ring.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ring theory
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#like-the-title-suggests-what-would-happen-if-you-restart-counting-after-10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Like the title suggests, what would happen if you restart counting after \(10\)?
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Like the title suggests, what would happen if you restart counting after \(10\)?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#non-integers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Non-integers
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#answer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        answer
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-to-make-your-own-diagram-for-modular-arithmetic-in-base-p-in-the-desmos-graphing-calculator" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        how to make your own diagram for modular arithmetic in base \(p\) in the desmos graphing calculator
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+  <h1>Modular arithmetic</h1>
+
+<h2 id="like-the-title-suggests-what-would-happen-if-you-restart-counting-after-10">Like the title suggests, what would happen if you restart counting after <span class="arithmatex">\(10\)</span>?<a class="headerlink" href="#like-the-title-suggests-what-would-happen-if-you-restart-counting-after-10" title="Permanent link">&para;</a></h2>
+<p>You (supposedly) started counting when you were very young, so starting with counting to the integers, we will rebuild arithmetic from the ground up.</p>
+<div class="arithmatex">\[ 1 \]</div>
+<div class="arithmatex">\[ 2 \]</div>
+<div class="arithmatex">\[ 3 \]</div>
+<div class="arithmatex">\[ 4 \]</div>
+<div class="arithmatex">\[ 5 \]</div>
+<div class="arithmatex">\[ 6 \]</div>
+<div class="arithmatex">\[ 7 \]</div>
+<div class="arithmatex">\[ 8 \]</div>
+<div class="arithmatex">\[ 9 \]</div>
+<div class="arithmatex">\[ 10 \]</div>
+<div class="arithmatex">\[ 1 \]</div>
+<div class="arithmatex">\[ 2 \]</div>
+<p>Okay, this seems about right, but the whole point (kinda) is for there to be one digit, so instead of <span class="arithmatex">\(10\)</span>, what about <span class="arithmatex">\(0\)</span>?</p>
+<div class="arithmatex">\[ 1 \]</div>
+<div class="arithmatex">\[ 2 \]</div>
+<div class="arithmatex">\[ 3 \]</div>
+<div class="arithmatex">\[ 4 \]</div>
+<div class="arithmatex">\[ 5 \]</div>
+<div class="arithmatex">\[ 6 \]</div>
+<div class="arithmatex">\[ 7 \]</div>
+<div class="arithmatex">\[ 8 \]</div>
+<div class="arithmatex">\[ 9 \]</div>
+<div class="arithmatex">\[ 0 \]</div>
+<div class="arithmatex">\[ 1 \]</div>
+<div class="arithmatex">\[ 2 \]</div>
+<p>That's better, just use the last digit of a number. But you might be asking: What about the equals sign? In this case, the equals sign tells if two numbers have the same last digit, I'll use the O-equals sign for this.</p>
+<div class="arithmatex">\[ n = 10 \]</div>
+<div class="arithmatex">\[ k ⊜ k + n \]</div>
+<div class="arithmatex">\[ k ⊜ k + 2n \]</div>
+<div class="arithmatex">\[ k ⊜ k + 3n \]</div>
+<div class="arithmatex">\[ \vdots \]</div>
+<div class="arithmatex">\[ k ⊜ k - n \]</div>
+<div class="arithmatex">\[ k ⊜ k - 2n \]</div>
+<div class="arithmatex">\[ k ⊜ k - 3n \]</div>
+<div class="arithmatex">\[ \vdots \]</div>
+<div class="arithmatex">\[ \text{Remember, these are only integers so far!} \]</div>
+<div class="arithmatex">\[ a ⊜ b \to M(a) = M(b) \]</div>
+<div class="arithmatex">\[ a ⊜ M(a) \]</div>
+<p>A function like <span class="arithmatex">\(M\)</span> would be useful for converting back and forth, but what should it be? What about <span class="arithmatex">\(M(k)\)</span> equals the <span class="arithmatex">\(k\)</span>'th term in, I'll call it the modular counting. Also, instead of the objective of finding what numbers are equal to, you try to find it's <span class="arithmatex">\(M\)</span>. Also, there are only <span class="arithmatex">\(10\)</span> numbers in modular arithmetic, because</p>
+<div class="arithmatex">\[ -1 &lt; M(k) &lt; n. \]</div>
+<div class="arithmatex">\[ k = k_d n + M(k) \]</div>
+<div class="arithmatex">\[ k ⊜ M(k) \text{, So } M(M(k)) = M(k) \text{.} \]</div>
+<div class="arithmatex">\[ M(a + b) = ? \]</div>
+<div class="arithmatex">\[ a = a_d n + M(a) \]</div>
+<div class="arithmatex">\[ b = b_d n + M(b) \]</div>
+<div class="arithmatex">\[ M(a + b) = M(a_d n + M(a) + b_d n + M(b)) = M((a_d + b_d) n + M(a) + M(b)) \]</div>
+<div class="arithmatex">\[ M(a + b) = M(M(a) + M(b)) \]</div>
+<div class="arithmatex">\[ M(ab) = ? \]</div>
+<div class="arithmatex">\[ M(ab) = M((a_d n + M(a))(b_d n + M(b))) = M(a_d n b_d n + a_d n M(b) + M(a) b_d n + M(a) M(b)) = M((a_d b_d n + a_d M(b) + b_d M(a)) n + M(a) M(b)) \]</div>
+<div class="arithmatex">\[ M(ab) = M(M(a)M(b)) \]</div>
+<div class="arithmatex">\[ M(a - b) = M(M(a) + M(-b)) \]</div>
+<div class="arithmatex">\[ M(-b) ⊜ -b ⊜ -M(b) \]</div>
+<div class="arithmatex">\[ M(a - b) = M(M(a) - M(b))) \]</div>
+<h3 id="non-integers">Non-integers<a class="headerlink" href="#non-integers" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[ M(\frac{a}{b}) = M(M(a)M(\frac{1}{b})) \]</div>
+<p>Remember, these are only integers so far, this should be the part where you learn about non-integers, but modular arithmetic actually has only <span class="arithmatex">\(10\)</span> numbers in it. But first, we need to take a leap of faith, the multiplicative inverse.</p>
+<div class="arithmatex">\[ 3 \cdot 7 = 21 ⊜ 1 \]</div>
+<div class="arithmatex">\[ \text{Thus} \]</div>
+<div class="arithmatex">\[ 7 ⊜ \frac{1}{3} \]</div>
+<div class="arithmatex">\[ \text{and} \]</div>
+<div class="arithmatex">\[ 3 ⊜ \frac{1}{7} \]</div>
+<div class="arithmatex">\[ \frac{5}{7} = 5 \cdot 3 = 15 ⊜ 5. \]</div>
+<p>But there is a problem, and it's not <span class="arithmatex">\(\frac{1}{10}\)</span>, but here is the problem with <span class="arithmatex">\(\frac{1}{10}\)</span> anyways.</p>
+<div class="arithmatex">\[ 10 ⊜ 0 \]</div>
+<div class="arithmatex">\[ \frac{1}{10} ? ⊜ ? \frac{1}{0} \]</div>
+<div class="arithmatex">\[ \frac{1}{10} ⊜ ? \]</div>
+<div class="arithmatex">\[ ? \cdot 10 ⊜ 1 \]</div>
+<div class="arithmatex">\[ \text{any number} \cdot 10 ⊜ 0 \]</div>
+<div class="arithmatex">\[ ? ⊜ \frac{1}{0} \]</div>
+<div class="arithmatex">\[ \frac{1}{10} ⊜ \frac{1}{0} \]</div>
+<div class="arithmatex">\[ \text{The problem is that } 1 \text{ divided by a non-} 0 \text{ number is undefined, say } 2. \]</div>
+<div class="arithmatex">\[ 2 ⊜ / ⊜ 0 \]</div>
+<div class="arithmatex">\[ \frac{1}{2} ? ⊜ / ⊜ ? \frac{1}{0} \]</div>
+<div class="arithmatex">\[ \frac{1}{2} ⊜ ? \]</div>
+<div class="arithmatex">\[ 1 \cdot 2 ⊜ 2 \ne 1 \]</div>
+<div class="arithmatex">\[ ? \ne 1 \]</div>
+<div class="arithmatex">\[ 2 \cdot 2 ⊜ 4 \ne 1 \]</div>
+<div class="arithmatex">\[ ? \ne 2 \]</div>
+<div class="arithmatex">\[ 3 \cdot 2 ⊜ 6 \ne 1 \]</div>
+<div class="arithmatex">\[ ? \ne 3 \]</div>
+<div class="arithmatex">\[ \vdots \]</div>
+<div class="arithmatex">\[ 5 \cdot 2 ⊜ 0 \text{ again} \]</div>
+<div class="arithmatex">\[ \vdots \]</div>
+<div class="arithmatex">\[ 10 \cdot 2 ⊜ 0 \ne 1 \]</div>
+<div class="arithmatex">\[ ? \ne 3 \]</div>
+<div class="arithmatex">\[ \frac{1}{2} ⊜ \frac{1}{0} \]</div>
+<p>So the problem is that you can't divide by some non-0 numbers like I said. This happens when you are dividing by a factor of the base of the modulus (the base of the modulus is the term where you restart counting first) and the numerator does not also have a factor of it. Said simply</p>
+<div class="arithmatex">\[ \frac{a}{b} ⊜ \frac{1}{0} \text{ precisely when } n \text{ divides } b \text{, and } a \text{ does not divide } b. \]</div>
+<div class="arithmatex">\[ \text{The solution, of coarse, is to switch the base from } 10 \text{ to } 5 \]</div>
+<div class="arithmatex">\[ n = 5. \]</div>
+<div class="arithmatex">\[ \text{Side note! } 2 \text{ and } 3 \text{ are } i \text{ and } -i \text{ respectively. Actually I don't know which is } i \text{ and which is } -i \text{, but here's proof!} \]</div>
+<div class="arithmatex">\[ i^2 = -1 \]</div>
+<div class="arithmatex">\[ (-i)^2 = -1 \]</div>
+<div class="arithmatex">\[ 2^2 = 4 = 5 - 1 ⊜ -1 \]</div>
+<div class="arithmatex">\[ 3^2 = 9 = 2 \cdot 5 - 1 ⊜ -1 \]</div>
+<div class="arithmatex">\[ i \cdot -i = 1 \]</div>
+<div class="arithmatex">\[ 2 \cdot 3 = 6 ⊜ 1 \]</div>
+<p>(<span class="arithmatex">\(200\)</span> lines btw)</p>
+<div class="arithmatex">\[ i + (-i) = 0 \]</div>
+<div class="arithmatex">\[ -(i) = -i \]</div>
+<div class="arithmatex">\[ -(-i) = i \]</div>
+<div class="arithmatex">\[ 2 + 3 = 5 = 5 \cdot 1 + 0 ⊜ 0 \]</div>
+<div class="arithmatex">\[ -2 = 5 \cdot (-1) + 3 ⊜ 3 \]</div>
+<div class="arithmatex">\[ -3 = 5 \cdot (-1) + 2 ⊜ 2 \]</div>
+<p>So, because <span class="arithmatex">\(0\)</span> <span class="arithmatex">\(1\)</span> <span class="arithmatex">\(i\)</span> <span class="arithmatex">\(-i\)</span> and <span class="arithmatex">\(-1\)</span> would multiply to get another one of <span class="arithmatex">\(0\)</span> <span class="arithmatex">\(1\)</span> <span class="arithmatex">\(i\)</span> <span class="arithmatex">\(-i\)</span> and <span class="arithmatex">\(-1\)</span>. This means that if you want to multiply numbers mod <span class="arithmatex">\(5\)</span>, just use the beautiful angle addition of the complex plane. Let's try to find the mod <span class="arithmatex">\(7\)</span> equivalent using last Monday's work. That took all day. First, the times tables mod <span class="arithmatex">\(7\)</span></p>
+<div class="arithmatex">\[ \begin{bmatrix} \times \quad 0 &amp; 1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 &amp; 6 \\
+0 \quad 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\
+1 \quad 0 &amp; 1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 &amp; 6 \\
+2 \quad 0 &amp; 2 &amp; 4 &amp; 6 &amp; 1 &amp; 3 &amp; 5 \\
+3 \quad 0 &amp; 3 &amp; 6 &amp; 2 &amp; 5 &amp; 1 &amp; 4 \\
+4 \quad 0 &amp; 4 &amp; 1 &amp; 5 &amp; 2 &amp; 6 &amp; 3 \\
+5 \quad 0 &amp; 5 &amp; 3 &amp; 1 &amp; 6 &amp; 4 &amp; 2 \\
+6 \quad 0 &amp; 6 &amp; 5 &amp; 4 &amp; 3 &amp; 2 &amp; 1 \\ \end{bmatrix} \]</div>
+<p>So, I would want numbers <span class="arithmatex">\(2\)</span> - <span class="arithmatex">\(5\)</span> to correspond with letters <span class="arithmatex">\(a\)</span> - <span class="arithmatex">\(d\)</span>. And no letter for <span class="arithmatex">\(6\)</span>, because it is already equal to <span class="arithmatex">\(-1\)</span> mod <span class="arithmatex">\(7\)</span>. So the puzzle is to solve for complex numbers <span class="arithmatex">\(a\)</span> <span class="arithmatex">\(b\)</span> <span class="arithmatex">\(c\)</span> and <span class="arithmatex">\(d\)</span> with the following times table:</p>
+<div class="arithmatex">\[ \begin{bmatrix} \times \quad 0 &amp; 1 &amp; a &amp; b &amp; c &amp; d &amp; -1 \\
+0 \quad 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\
+1 \quad 0 &amp; 1 &amp; a &amp; b &amp; c &amp; d &amp; -1 \\
+a \quad 0 &amp; a &amp; c &amp; -1 &amp; 1 &amp; b &amp; d \\
+b \quad 0 &amp; b &amp; -1 &amp; a &amp; d &amp; 1 &amp; c \\
+c \quad 0 &amp; c &amp; 1 &amp; d &amp; a &amp; -1 &amp; b \\
+d \quad 0 &amp; d &amp; b &amp; 1 &amp; -1 &amp; c &amp; a \\
+-1 \quad 0 &amp; -1 &amp; d &amp; c &amp; b &amp; a &amp; 1 \\ \end{bmatrix} \]</div>
+<div class="arithmatex">\[ j = \pm i \]</div>
+<div class="arithmatex">\[ k = -j = \mp i \]</div>
+<div class="arithmatex">\[ \text{So, mod } 5 \]</div>
+<div class="arithmatex">\[ 2 = j \]</div>
+<div class="arithmatex">\[ 3 = k \]</div>
+<div class="arithmatex">\[ \text{back to mod } 7 \text{ with a more flattened out times table without multiplication by } 0 \text{ or } 1 \text{, because that is pretty self explanatory.} \]</div>
+<div class="arithmatex">\[ aa = c \]</div>
+<div class="arithmatex">\[ ab = -1 \]</div>
+<div class="arithmatex">\[ ac = 1 \]</div>
+<div class="arithmatex">\[ ad = b \]</div>
+<div class="arithmatex">\[ a (-1) = d \]</div>
+<div class="arithmatex">\[ bb = a \]</div>
+<div class="arithmatex">\[ bc = d \]</div>
+<div class="arithmatex">\[ bd = 1 \]</div>
+<div class="arithmatex">\[ b (-1) = c \]</div>
+<div class="arithmatex">\[ cc = a \]</div>
+<div class="arithmatex">\[ cd = -1 \]</div>
+<div class="arithmatex">\[ c (-1) = d \]</div>
+<div class="arithmatex">\[ dd = c \]</div>
+<div class="arithmatex">\[ d (-1) = a \]</div>
+<div class="arithmatex">\[ (-1) (-1) = 1 \]</div>
+<p>I'll let you think about it.</p>
+<p>SPOILERS BELOW</p>
+<p>.</p>
+<p>.</p>
+<p>.</p>
+<p>.</p>
+<p>.</p>
+<p>.</p>
+<p>.</p>
+<h3 id="answer">answer<a class="headerlink" href="#answer" title="Permanent link">&para;</a></h3>
+<p>You might have gussed that all of these have absolute value <span class="arithmatex">\(1\)</span>, but you might not have known that these are the <a href="https://silaspe.github.io/maths/complex_2.html">roots of unity</a>. But remember to use that <span class="arithmatex">\(j\)</span> thing. And yes, as opposed to <span class="arithmatex">\(e^{i\theta} = cos(\theta) + i \text{ } sin(\theta)\)</span>,</p>
+<div class="arithmatex">\[ e^{j\theta} = cos(\theta) + j sin(\theta). \]</div>
+<p>Also, <span class="arithmatex">\(300\)</span> lines by the way.</p>
+<p>You might have also noticed that these numbers can circle around in two different ways. (I found the <span class="arithmatex">\(d\)</span> one before the <span class="arithmatex">\(b\)</span> one by the way)</p>
+<div class="arithmatex">\[ 1b = b \]</div>
+<div class="arithmatex">\[ bb = a \]</div>
+<div class="arithmatex">\[ ab = -1 \]</div>
+<div class="arithmatex">\[ (-1) b = c \]</div>
+<div class="arithmatex">\[ cb = d \]</div>
+<div class="arithmatex">\[ db = 1. \]</div>
+<p>and also</p>
+<div class="arithmatex">\[ 1d = d \]</div>
+<div class="arithmatex">\[ dd = c \]</div>
+<div class="arithmatex">\[ cd = -1 \]</div>
+<div class="arithmatex">\[ (-1) d = a \]</div>
+<div class="arithmatex">\[ ad = b \]</div>
+<div class="arithmatex">\[ bd = 1. \]</div>
+<p>Here's a diagram of both in the complex plane:</p>
+<iframe src="https://www.desmos.com/calculator/romrb3jmbq?embed" width="500" height="500" style="border: 1px solid #ccc" frameborder=0></iframe>
+
+<p>And for <span class="arithmatex">\(d\)</span>:</p>
+<iframe src="https://www.desmos.com/calculator/fhdf4mg7bb?embed" width="500" height="500" style="border: 1px solid #ccc" frameborder=0></iframe>
+
+<p>And also, if two numbers on the complex plane have absolute value <span class="arithmatex">\(1\)</span>, and they multiply to <span class="arithmatex">\(1\)</span>, then they are complex conjugates or as you might know as <span class="arithmatex">\(ccong\)</span>, so the correct picture translating back from letters <span class="arithmatex">\(a\)</span> - <span class="arithmatex">\(d\)</span> and <span class="arithmatex">\(-1\)</span> to numbers <span class="arithmatex">\(2\)</span> - <span class="arithmatex">\(5\)</span> and <span class="arithmatex">\(6\)</span> would be the <span class="arithmatex">\(b\)</span> - picture with up being <span class="arithmatex">\(j\)</span> and down being <span class="arithmatex">\(k\)</span>. And here it is:</p>
+<iframe src="https://www.desmos.com/calculator/nbtmgnbayw?embed" width="500" height="500" style="border: 1px solid #ccc" frameborder=0></iframe>
+
+<p>Isn't it beautiful? I can just add the angles and multiply the magnitudes of any two numbers to get their product mod <span class="arithmatex">\(7\)</span>. <span class="arithmatex">\(6\)</span> is on <span class="arithmatex">\(-1\)</span> which makes sense because <span class="arithmatex">\(6 = 7 - 1\)</span>. Also, numbers on opposite sides add to <span class="arithmatex">\(7\)</span>, and "opposite side" in complex numbers means "negative", so that is also just so perfect to me too. Also, if two numbers are complex conjugates on the unit circle, then they are inverses of each other, and I've never seen that in a real desmos graph before! Also, that was a bit of a lie, because I'm actually editing on the repo, so the graph isn’t loading, and I would have to click on the tab with the graph to see it. Alternatively, I could just hit the "Commit changes" button on the top-right and wait for <span class="arithmatex">\(2\)</span> minutes to see it on the website. Yeah, I'll do that.</p>
+<p>I will add only this line of text to my website, because it would be sad to add anything else to my website on easter.</p>
+<p>I will add only this line of text to my website, because it would be sad to add anything else to my website on April <span class="arithmatex">\(1\)</span>'st. Well, no it wouldn't be, but no one would believe something added on April <span class="arithmatex">\(1\)</span>'st. So I'll take the day off.</p>
+<p>Okay, you know the drill. Time to copy paste and tweak the previous line, just give me a sec... Wait! April <span class="arithmatex">\(2\)</span>'nd is not a holiday. But that means that I have to work today. I think I liked the quadruple weekend more.</p>
+<p>And, would you look at that. I forgot to work at all yesterday, and I have to take the day off for my family. Like I said many times: I'll imbed the desmos graphs tomorrow, or maybe today if I am lucky</p>
+<p>At this point on April <span class="arithmatex">\(4\)</span>'th, I'll just stop working on this page and write down below the day that I embedded the desmos graphs.</p>
+<p>April <span class="arithmatex">\(6\)</span>'th, I deleted the thing I did the day before, and that's why it doesn't look different.</p>
+<h3 id="how-to-make-your-own-diagram-for-modular-arithmetic-in-base-p-in-the-desmos-graphing-calculator">how to make your own diagram for modular arithmetic in base <span class="arithmatex">\(p\)</span> in the desmos graphing calculator<a class="headerlink" href="#how-to-make-your-own-diagram-for-modular-arithmetic-in-base-p-in-the-desmos-graphing-calculator" title="Permanent link">&para;</a></h3>
+<p>You don't actually need to write out the full times table, you just have to find the smallest primitave root <span class="arithmatex">\(r\)</span> of the base (a primitave root of a base is a number where it's power's would result in all different numbers (exept <span class="arithmatex">\(0\)</span>) in the modular base. e.g. <span class="arithmatex">\(2\)</span> in mod <span class="arithmatex">\(5\)</span>, <span class="arithmatex">\(2^0 ⊜ 1\)</span>, <span class="arithmatex">\(2^1 ⊜ 2\)</span>, <span class="arithmatex">\(2^2 ⊜ 4\)</span>, <span class="arithmatex">\(2^3 ⊜ 3\)</span>, <span class="arithmatex">\(2^4 ⊜ 1\)</span>. One way to find one is to google it, or use brute force) and then put it a <span class="arithmatex">\(p - 1\)</span>'th around the unit circle from <span class="arithmatex">\(1\)</span>, which is just the point (<span class="arithmatex">\(1\)</span>, <span class="arithmatex">\(0\)</span>). Anyways, first boot up <a href="https://www.desmos.com/calculator">the desmos graphing calculator</a>, then I realized that the colors of the functions you draw go red, blue, green, purple, black, and back to red. First, type <span class="arithmatex">\(x\)</span> and check if it is a good color for your circle,  if it is, remove the letter <span class="arithmatex">\(x\)</span> and copy this "x^{2}+y^{2}=1" and paste it into desmos, if not, press the button on the top-right of the box that you are writing in, which I will call the <span class="arithmatex">\(x\)</span> button, and repeat until you either find a good color, or choose the least worst color available. In my case, black. Oh, and paste in <code>p=1</code> to make a slider called <span class="arithmatex">\(p\)</span> and set it to the base that you chose. then do the same thing for the dots, but click on the emptyness underneith the box before pressing the <span class="arithmatex">\(x\)</span> button. Once you find a good dot color, paste in <code>\left(0,0\right)</code>. Then, this is the tricky part, click on the emptyness underneith the box, then press the <span class="arithmatex">\(x\)</span> button, repeat <span class="arithmatex">\(5\)</span> times to get the same color, this will be known as "repeat until same color". then copy and paste in <code>\left(1,0\right)</code>, repeat until same color, than paste in <code>\left(\cos\left(\frac{2\pi}{p - 1}\right),\sin\left(\frac{2\pi}{p - 1}\right)\right)</code>, repeat until same color, than paste in <code>\left(\cos\left(2\frac{2\pi}{p - 1}\right),\sin\left(2\frac{2\pi}{p - 1}\right)\right)</code>, repeat until same color, than paste in <code>\left(\cos\left(3\frac{2\pi}{p - 1}\right),\sin\left(3\frac{2\pi}{p - 1}\right)\right)</code>... For this reason, you should probably choose <span class="arithmatex">\(p\)</span> to be small like <span class="arithmatex">\(5\)</span> or <span class="arithmatex">\(7\)</span>, and I probably should've told you that earlier. Then the best part, press "label" on each dot and click on the big underscore to start naming, the dot in the center is named " <span class="arithmatex">\(0\)</span> ". the one directly to the right and not up or down is named " <span class="arithmatex">\(1\)</span> ". The name of the one that is directly counterclockwise to the previous is found by multiplying the previous value by <span class="arithmatex">\(r\)</span> and subtracting <span class="arithmatex">\(p\)</span> until you get <span class="arithmatex">\(0\)</span> or a number less than <span class="arithmatex">\(p\)</span>. And yeah, that's really all there is to it, I'm sorry for those who decided to read through this wall of text (which is the biggest one yet) and didn't just skip to here, but for those people who did read this whole thing, you should now have a beautiful diagram for modular arithmetic.</p>
+<p>Say goodbye to the modular arithmetic page and say hello to a new page, It's name is the name of the first chapter on the <a href="https://silaspe.github.io/maths/brainstorm.html">brainstorm page</a> without a question mark... Or just scroll down the dropdown menu or home page.</p>
+<p>And with that, the page has ended.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": [], "search": "assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

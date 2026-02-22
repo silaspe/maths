@@ -1,0 +1,1539 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="the_strand_puzzle.html">
+      
+      
+        <link rel="next" href="mod.html">
+      
+      
+        
+      
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.2">
+    
+    
+      
+        <title>The infamous "arctan puzzle" - Silas Maths</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#first-some-history" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="index.html" title="Silas Maths" class="md-header__button md-logo" aria-label="Silas Maths" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Silas Maths
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              The infamous "arctan puzzle"
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/silaspe/maths" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Silas Maths
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="index.html" title="Silas Maths" class="md-nav__button md-logo" aria-label="Silas Maths" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Silas Maths
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/silaspe/maths" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Silas Maths
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="brainstorm.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Brainstorming a new page
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="derivatives.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Calculus
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="polynomial.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Polynomial
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="calculus_2.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Calculus part 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="trigonometry.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Trigonometry
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="complex.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Complex
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="jacobian.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Jacobian
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="eigen.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Eigenstuff
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="gamma.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Gamma
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="harmonic.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Harmonic
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="binomial.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Binomial
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="fractional_calculas.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fractional calculus
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="fibbonacci.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fibbonacci
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="probability.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Probability
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="complex_2.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Complex II
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="the_strand_puzzle.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The strand puzzle
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The infamous "arctan puzzle"
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="arctan.html" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The infamous "arctan puzzle"
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#first-some-history" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        First, some history
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-even-is-the-arctan-puzzle" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        what even is the arctan puzzle?
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="what even is the arctan puzzle?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#derivitave-of-arctan" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        derivitave of arctan
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#many-weeks-later" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Many weeks later...
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Many weeks later...">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#quick-tangent-no-pun-intended-plus-this-is-more-about-arctan-than-tan" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Quick tangent (no pun intended, plus this is more about arctan than tan)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#back-on-track" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        back on track
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="mod.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modular arithmetic
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="geometric_algebra.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Geometric algebra
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="set_theory.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Set theory
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="actual_repo.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Code repo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="binary.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The best way to count
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="geometric_algebra_2.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Geometric algebra 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="lambda.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lambda calculus
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="rand.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Non-math
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="some4.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Summer of Math Exposition 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="logic.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Set theory II
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="projective_geometry.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Projective geometry
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="lcr.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lambda Calculus revisited
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="linear.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Linear algebra
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="group_theory.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Group theory
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="ring.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ring theory
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#first-some-history" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        First, some history
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-even-is-the-arctan-puzzle" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        what even is the arctan puzzle?
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="what even is the arctan puzzle?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#derivitave-of-arctan" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        derivitave of arctan
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#many-weeks-later" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Many weeks later...
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Many weeks later...">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#quick-tangent-no-pun-intended-plus-this-is-more-about-arctan-than-tan" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Quick tangent (no pun intended, plus this is more about arctan than tan)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#back-on-track" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        back on track
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+  <h1>The infamous "arctan puzzle"</h1>
+
+<h3 id="first-some-history">First, some history<a class="headerlink" href="#first-some-history" title="Permanent link">&para;</a></h3>
+<p>Before this website was even created, I was on a vacation for family, and I solved at last <span class="arithmatex">\(2\)</span> puzzles. After that, I said that I solved the strand puzzle and the arctan puzzle. First, I solved the strand puzzle in praha, but I only solved fir <span class="arithmatex">\(x_n\)</span> and not <span class="arithmatex">\(y_n\)</span>, the time that I truly solved the strand puzzle was while I was writing it down on the page. I solved the strand puzzle first by the way. I know what you might be thinking,</p>
+<h2 id="what-even-is-the-arctan-puzzle">what even is the arctan puzzle?<a class="headerlink" href="#what-even-is-the-arctan-puzzle" title="Permanent link">&para;</a></h2>
+<div class="arithmatex">\[ z = a + bi = re^{i\theta} = r(cos(\theta) + i \text{ } sin(\theta)) = rcos(\theta) + irsin(\theta) \]</div>
+<div class="arithmatex">\[ a = rcos(\theta) \]</div>
+<div class="arithmatex">\[ b = rsin(\theta) \]</div>
+<p>Good, you can convert from polar to cartesian coordinates, but what about back from cartesian to polar? (<span class="arithmatex">\(r\)</span> Is the distance from the origin at <span class="arithmatex">\(0\)</span>, and <span class="arithmatex">\(\theta\)</span> is the angle counerclockwise from the positave <span class="arithmatex">\(x\)</span> axis. I'm saying this, because either I didn't say it earlier, or as a reminder) You would probably use the pythagorian therom to prove this, but this website doesn't heve illustrations, so I will prove the pythagorian therom without geometry. First, take the complex conjegate.</p>
+<div class="arithmatex">\[ a - bi = rcos(\theta) - irsin(\theta) \]</div>
+<div class="arithmatex">\[ cos(\theta) = cos(-\theta) \]</div>
+<div class="arithmatex">\[ -sin(\theta) = sin(-\theta) \]</div>
+<div class="arithmatex">\[ a - bi = rcos(-\theta) + irsin(-\theta) \]</div>
+<div class="arithmatex">\[ a - bi = re^{-i\theta} \]</div>
+<div class="arithmatex">\[ \text{Side note!} \]</div>
+<div class="arithmatex">\[ \text{ccong} (e^{i\theta}) = e^{-i\theta} = \frac{1}{e^{i\theta}} \]</div>
+<div class="arithmatex">\[ \text{End of side note.} \]</div>
+<div class="arithmatex">\[ (a + bi)(a - bi) = a^2 - abi + bia + b^2 = a^2 + b^2 = re^{i\theta} re^{-i\theta} = r^2 \]</div>
+<div class="arithmatex">\[ \text{Side note!.. Again.} \]</div>
+<div class="arithmatex">\[ r = |z| \text{ The distance from } 0 \text{, get it?} \]</div>
+<div class="arithmatex">\[ z \text{ ccong} (z) = |z|^2 \]</div>
+<div class="arithmatex">\[ \text{ccong} (z) = \frac{|z|^2}{z} \]</div>
+<div class="arithmatex">\[ \frac{1}{z} = \frac{|z|^2}{\text{ccong} (z)} \]</div>
+<div class="arithmatex">\[ \text{End of side note... Again.} \]</div>
+<div class="arithmatex">\[ a^2 + b^2 = r^2 \]</div>
+<p>Okay, that is the pythagonian therom done, bou I was looking for <span class="arithmatex">\(r\)</span>.</p>
+<div class="arithmatex">\[ r \text{ (Insert is greater than or equal to symbol here.) } 0 \]</div>
+<div class="arithmatex">\[ r = \sqrt{a^2 + b^2} \]</div>
+<p>That's <span class="arithmatex">\(r\)</span>, but what about <span class="arithmatex">\(\theta\)</span>?</p>
+<div class="arithmatex">\[ \frac{b}{a} = \frac{rsin(\theta)}{rcos(\theta)} = \frac{sin(\theta)}{cos(\theta)} = tan(\theta) \]</div>
+<div class="arithmatex">\[ \text{Good, } r \text{ doesn't change } \theta! \]</div>
+<div class="arithmatex">\[ \theta = arctan(\frac{b}{a}) = ? \]</div>
+<p>There's the arctan. By the way, this was when I used <span class="arithmatex">\(h\)</span> instead of <span class="arithmatex">\(dx\)</span>. If <span class="arithmatex">\(arctan = tan^{-1}\)</span>, than I tried to find the derivitves of the inverse for the taylor seiries. I accedentally proved the chain rule with the proof that is now on the <a href="https://silaspe.github.io/maths/derivatives.html">calculus page</a> as a bonus. I thought "different method for finding <span class="arithmatex">\(\theta\)</span>. First, normalise <span class="arithmatex">\(z\)</span>."</p>
+<div class="arithmatex">\[ ln(z) = ln(e^{i\theta}) = i\theta \]</div>
+<div class="arithmatex">\[ i^2 = -1 \]</div>
+<div class="arithmatex">\[ (i) (-i) = 1 \]</div>
+<div class="arithmatex">\[ \frac{1}{i} = -i \]</div>
+<div class="arithmatex">\[ \theta = -i \text{ } ln(z) \]</div>
+<div class="arithmatex">\[ \text{But what about } ln(z) \text{?} \]</div>
+<div class="arithmatex">\[ \text{You might remember the formula } \frac{a^{dx} - 1}{dx} \text{ for } ln(a) \text{, so let's try that!} \]</div>
+<div class="arithmatex">\[ \theta = -i \frac{z^{dx} - 1}{dx} \]</div>
+<div class="arithmatex">\[ \text{But then, what about }z^{dx} \text{?} \]</div>
+<div class="arithmatex">\[ \theta = -i \text{ } \frac{((1 + i dx)^{\frac{\theta}{dx}})^{dx} - 1}{dx} = \frac{1}{i} \text{ } \frac{(1 + i dx)^\theta - 1}{dx} = \text{ } \frac{(1 + i\theta dx) - 1}{i dx} \]</div>
+<div class="arithmatex">\[ \theta = \theta \]</div>
+<p>So, all that we have proved is that <span class="arithmatex">\(\theta = \theta\)</span>. Yay!</p>
+<p>Ok, so that's the end of that train of thought. I googled "derivitave of arctan" for the result. When I found the awnser <span class="arithmatex">\(\frac{1}{1 + x^2}\)</span>, I diden't find an awnser why. So, of course I asked ChatGPT, the proof went something like this:</p>
+<p>Actually, I forgot it and this is my best guess, with <span class="arithmatex">\(\overline{f}\)</span> as the inverse of <span class="arithmatex">\(f\)</span>:</p>
+<h3 id="derivitave-of-arctan">derivitave of arctan<a class="headerlink" href="#derivitave-of-arctan" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[ f(\overline{f} (x)) = : x \]</div>
+<div class="arithmatex">\[ \frac{d}{dx} f(\overline{{}^f} (x)) = f\prime (\overline{f} (x)) \overline{f}\prime (x) = 1 \]</div>
+<div class="arithmatex">\[ \overline{f}\prime (x) = \frac{1}{f\prime (\overline{f} (x))} \]</div>
+<div class="arithmatex">\[ f(x) = tan(x) \]</div>
+<div class="arithmatex">\[ \overline{f} = arctan(x) \]</div>
+<div class="arithmatex">\[ arctan \prime (x) = \frac{1}{tan \prime (arctan(x))} \]</div>
+<div class="arithmatex">\[ \text{Oh! I forgot to tell you about (well, for one, it's pi day today) the other trigonometric functions other than } \text{sin} \text{ pronounced "sine", and } cos \text{ pronounced "cosine" or "cos", but I prefer cosine, theres } tan = \frac{sin}{cos} \text{ pronounced "tan" or "tangent", which I use interchangibly in real life, and it's inverse } arctan \text{ pronounced execly how it is spelled, but theres also } sec = \frac{1}{cos} \text{ pronounced "secant" or "sec", but I prefer secant, but theres also } csc = \frac{1}{sin} \text{ counterintuitivly, but it's pronounced "cosec" or "cosecant", but I prefer cosec. You can also square any of these for a } 2 \text{ superscript in front of the function instead of the parenthasies} \]</div>
+<div class="arithmatex">\[ tan \prime (x) = (\frac{sin(x)}{cos(x)}) \prime = \frac{sin\prime (x) cos(x) - sin(x) cos\prime (x)}{cos^2(x)} = \frac{cos(x) cos(x) + sin(x) sin(x)}{cos^2(x)} \]</div>
+<div class="arithmatex">\[ \text{Okay, we have } cos^2 + sin^2 \text{. Eccept, I still have to derive that.} \]</div>
+<div class="arithmatex">\[ z = e^{i\theta} = r(cos(\theta) + i \text{ } sin(\theta)) = rcos(\theta) + irsin(\theta) \]</div>
+<div class="arithmatex">\[ r = 1 \]</div>
+<div class="arithmatex">\[ z = cos(\theta) + isin(\theta) = a + bi \]</div>
+<div class="arithmatex">\[ a = cos(\theta) \]</div>
+<div class="arithmatex">\[ b = sin(\theta) \]</div>
+<div class="arithmatex">\[ r = \sqrt{a^2 + b^2} \]</div>
+<div class="arithmatex">\[ cos^2 (\theta) + sin^2 (\theta) = 1 \]</div>
+<div class="arithmatex">\[ \text{Okay, time to keep going.} \]</div>
+<div class="arithmatex">\[ tan \prime (x) = \frac{1}{cos^2(x)} \]</div>
+<div class="arithmatex">\[ tan \prime (x) = sec^2 (x) \]</div>
+<div class="arithmatex">\[ tan^2 (x) = \frac{sin^2 (x)}{cos^2 (x)} = \frac{sin^2 (x) + cos^2 (x) - cos^2 (x)}{cos^2 (x)} = \frac{sin^2 (x) + cos^2 (x)}{cos^2 (x)} - \frac{cos^2 (x)}{cos^2 (x)} \]</div>
+<div class="arithmatex">\[ tan^2 (x) = sec^2 (x) - 1 \]</div>
+<div class="arithmatex">\[ arctan\prime (x) = \frac{1}{sec^2 (arctan(x))} = \frac{1}{1 + sec^2 (arctan(x)) - 1} = \frac{1}{1 + tan^2 (arctan(x))} = \frac{1}{1 + tan(arctan(x))tan(arctan(x))} \]</div>
+<div class="arithmatex">\[ arctan\prime (x) = \frac{1}{1 + x^2} \]</div>
+<h3 id="many-weeks-later">Many weeks later...<a class="headerlink" href="#many-weeks-later" title="Permanent link">&para;</a></h3>
+<p>I asked ChatGPT for awnsers, and it solved it immediety. This is why I called the arctan puzzle the "tricky puzzle that took <span class="arithmatex">\(1\)</span> ChatGPT search to solve". Warning: This counts as a <a href="suibl.aisop/em.agtihtsh/">taylor seiries</a> (404 page not found) for <span class="arithmatex">\(arctan(x)\)</span> in the interval <span class="arithmatex">\(-1 &lt; x &lt; 1\)</span> (or equal to <span class="arithmatex">\(1\)</span>!)</p>
+<div class="arithmatex">\[ arctan(0) = 0 \]</div>
+<div class="arithmatex">\[ arctan(x) = \int_{0}^{x} \frac{1}{1 + t^2} dt \]</div>
+<h4 id="quick-tangent-no-pun-intended-plus-this-is-more-about-arctan-than-tan">Quick tangent (no pun intended, plus this is more about arctan than tan)<a class="headerlink" href="#quick-tangent-no-pun-intended-plus-this-is-more-about-arctan-than-tan" title="Permanent link">&para;</a></h4>
+<div class="arithmatex">\[ \sum\limits_{n=0}^{\infty}x^n = ? \]</div>
+<div class="arithmatex">\[ \text{By the convention in the harmonic page below, if } -1 &lt; x &lt; 1 \text{, than the powers of } x \text{ approach } 0 \]</div>
+<p><a href="https://silaspe.github.io/maths/harmonic.html#frac1infty">.</a></p>
+<div class="arithmatex">\[ ? x = x \sum\limits_{n=0}^{\infty}x^n = \sum\limits_{n=0}^{\infty}x^{n + 1} = \sum\limits_{n=1}^{\infty + 1}x^n = \sum\limits_{n=0}^{\infty}x^n - x^0 + x^{\infty + 1} \]</div>
+<div class="arithmatex">\[ x^0 = 1 \]</div>
+<div class="arithmatex">\[ x^{\infty + 1} \to 0 \]</div>
+<div class="arithmatex">\[ ? x = ? - 1 \]</div>
+<div class="arithmatex">\[ ? (x - 1) = -1 \]</div>
+<div class="arithmatex">\[ ? = \frac{-1}{x - 1} \]</div>
+<div class="arithmatex">\[ \sum\limits_{n=0}^{\infty}x^n = \frac{1}{1 - x} \]</div>
+<h4 id="back-on-track">back on track<a class="headerlink" href="#back-on-track" title="Permanent link">&para;</a></h4>
+<div class="arithmatex">\[ \frac{1}{1 + x^2} = \frac{1}{1 - (-x^2)} = \sum\limits_{n=0}^{\infty} (-x^2)^n = \sum\limits_{n=0}^{\infty} (-1)^n x^{2n} \]</div>
+<div class="arithmatex">\[ arctan(x) = \int_{0}^{x} \sum\limits_{n=0}^{\infty} (-1)^n t^{2n} dt = \sum\limits_{n=0}^{\infty} \int_{0}^{x} (-1)^n t^{2n} dt \]</div>
+<div class="arithmatex">\[ \int_{0}^{x} (-1)^n t^{2n} dt = (-1)^n \frac{x^{2n + 1}}{2n + 1} \]</div>
+<div class="arithmatex">\[ arctan(x) = \sum\limits_{n=0}^{\infty} (-1)^n \frac{x^{2n + 1}}{2n + 1} = x - \frac{x^3}{3} + \frac{x^5}{5} - \frac{x^7}{7} \dots \]</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": [], "search": "assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

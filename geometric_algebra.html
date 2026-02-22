@@ -1,0 +1,1786 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="mod.html">
+      
+      
+        <link rel="next" href="set_theory.html">
+      
+      
+        
+      
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.2">
+    
+    
+      
+        <title>Geometric algebra - Silas Maths</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#why-cant-youyou-cant-multiply-two-vectors" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="index.html" title="Silas Maths" class="md-header__button md-logo" aria-label="Silas Maths" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Silas Maths
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Geometric algebra
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/silaspe/maths" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Silas Maths
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="index.html" title="Silas Maths" class="md-nav__button md-logo" aria-label="Silas Maths" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Silas Maths
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/silaspe/maths" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Silas Maths
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="brainstorm.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Brainstorming a new page
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="derivatives.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Calculus
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="polynomial.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Polynomial
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="calculus_2.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Calculus part 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="trigonometry.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Trigonometry
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="complex.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Complex
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="jacobian.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Jacobian
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="eigen.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Eigenstuff
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="gamma.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Gamma
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="harmonic.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Harmonic
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="binomial.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Binomial
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="fractional_calculas.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fractional calculus
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="fibbonacci.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fibbonacci
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="probability.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Probability
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="complex_2.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Complex II
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="the_strand_puzzle.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The strand puzzle
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="arctan.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The infamous "arctan puzzle"
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="mod.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modular arithmetic
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Geometric algebra
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="geometric_algebra.html" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Geometric algebra
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#why-cant-youyou-cant-multiply-two-vectors" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        why can't you/you can't multiply two vectors
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#geometric-algebra" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        geometric algebra
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="geometric algebra">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#frac1vecv-and-vecv2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        \(\frac{1}{\vec{v}}\) (and \(\vec{v}^2\))
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="\(\frac{1}{\vec{v}}\) (and \(\vec{v}^2\))">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fun-fact" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        fun fact!
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#complex-numbers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        complex numbers
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rotors" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Rotors
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#maxwells-equation-singular-spoilers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Maxwell's equation (singular) (#spoilers)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="set_theory.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Set theory
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="actual_repo.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Code repo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="binary.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The best way to count
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="geometric_algebra_2.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Geometric algebra 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="lambda.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lambda calculus
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="rand.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Non-math
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="some4.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Summer of Math Exposition 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="logic.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Set theory II
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="projective_geometry.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Projective geometry
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="lcr.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lambda Calculus revisited
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="linear.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Linear algebra
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="group_theory.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Group theory
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="ring.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ring theory
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#why-cant-youyou-cant-multiply-two-vectors" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        why can't you/you can't multiply two vectors
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#geometric-algebra" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        geometric algebra
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="geometric algebra">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#frac1vecv-and-vecv2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        \(\frac{1}{\vec{v}}\) (and \(\vec{v}^2\))
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="\(\frac{1}{\vec{v}}\) (and \(\vec{v}^2\))">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fun-fact" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        fun fact!
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#complex-numbers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        complex numbers
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rotors" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Rotors
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#maxwells-equation-singular-spoilers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Maxwell's equation (singular) (#spoilers)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+  <h1>Geometric algebra</h1>
+
+<h3 id="why-cant-youyou-cant-multiply-two-vectors">why can't you/you can't multiply two vectors<a class="headerlink" href="#why-cant-youyou-cant-multiply-two-vectors" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[ \vec{u} = \begin{bmatrix} u_x \\
+u_y \\
+u_z \\ \end{bmatrix} = u_x \hat{i} + u_y \hat{j} + u_z \hat{k} \]</div>
+<div class="arithmatex">\[ \vec{v} = \begin{bmatrix} v_x \\
+v_y \\
+v_z \\ \end{bmatrix} = v_x \hat{i} + v_y \hat{j} + v_z \hat{k} \]</div>
+<div class="arithmatex">\[ \vec{u} \vec{v} = (u_x \hat{i} + u_y \hat{j} + u_z \hat{k}) (v_x \hat{i} + v_y \hat{j} + v_z \hat{k}) = u_x \hat{i} v_x \hat{i} + u_x \hat{i} v_y \hat{j} + u_x \hat{i} v_z \hat{k} + u_y \hat{j} v_x \hat{i} + u_y \hat{j} v_y \hat{j} + u_y \hat{j} v_z \hat{k} + u_z \hat{k} v_x \hat{i} + u_z \hat{k} v_y \hat{j} + u_z \hat{k} v_z \hat{k} \]</div>
+<div class="arithmatex">\[ \text{For lack of a better way to display this, } \vec{u} \vec{v} \text{ equals the sum of the things below:} \]</div>
+<div class="arithmatex">\[ (\hat{i} \hat{i})(u_x v_x) + (\hat{i} \hat{j})(u_x v_y) + (\hat{i} \hat{k})(u_x v_z) \]</div>
+<div class="arithmatex">\[ (\hat{j} \hat{i})(u_y v_x) + (\hat{j} \hat{j})(u_y v_y) + (\hat{j} \hat{k})(u_y v_z) \]</div>
+<div class="arithmatex">\[ (\hat{k} \hat{i})(u_z v_x) + (\hat{k} \hat{j})(u_z v_y) + (\hat{k} \hat{k})(u_z v_z) \]</div>
+<h2 id="geometric-algebra">geometric algebra<a class="headerlink" href="#geometric-algebra" title="Permanent link">&para;</a></h2>
+<p>WARNING! This page requires knowing <a href="https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab">linear algebra</a>, mostly just vectors, and the first part of <a href="https://www.youtube.com/watch?v=60z_hpEAtD8&amp;t=179s">A Swift Introduction to Geometric Algebra</a> (literally, that was the name) to know what a <span class="arithmatex">\(k\)</span>-vector and a <a href="https://www.youtube.com/watch?v=60z_hpEAtD8&amp;t=705s">multivector</a> is (stop at 12:20). (Also, it's where these ideas come from (at least in this chapter and the <a href="https://silaspe.github.io/maths/geomatric_algebra.html#complex-numbers">complex numbers chapter</a> coming soon... And the Maxwell's equation chapter at the end).) Here is the definition for the product of basis vectors: The product of a basis vector <span class="arithmatex">\(e_i\)</span> and it self is <span class="arithmatex">\(1\)</span>, and the product of two basis vectors <span class="arithmatex">\(e_i\)</span> and <span class="arithmatex">\(e_j\)</span> equals <span class="arithmatex">\(-e_j e_i (i \ne j)\)</span>. This means that you can do this at any point in the product of basis vectors (this should make sense). By the way, <span class="arithmatex">\(U = \hat{i} \hat{j} \hat{k}\)</span></p>
+<div class="arithmatex">\[ \hat{i} = \hat{x} \]</div>
+<div class="arithmatex">\[ \hat{j} = \hat{y} \]</div>
+<div class="arithmatex">\[ \hat{k} = \hat{z} \]</div>
+<div class="arithmatex">\[ \text{Now is about as good of a time as any to simplify the product.} \]</div>
+<div class="arithmatex">\[ \vec{u} \vec{v} = \begin{pmatrix} (\hat{x} \hat{x})(u_x v_x) + (\hat{x} \hat{y})(u_x v_y) + (\hat{x} \hat{z})(u_x v_z) +  \\
+(\hat{y} \hat{x})(u_y v_x) + (\hat{y} \hat{y})(u_y v_y) + (\hat{y} \hat{z})(u_y v_z) + \\
+(\hat{z} \hat{x})(u_z v_x) + (\hat{z} \hat{y})(u_z v_y) + (\hat{z} \hat{z})(u_z v_z) \\ \end{pmatrix} = \begin{pmatrix} (\hat{x} \hat{x})(u_x v_x) + (\hat{x} \hat{y})(u_x v_y) - (\hat{z} \hat{x})(u_x v_z) -  \\
+(\hat{x} \hat{y})(u_y v_x) + (\hat{y} \hat{y})(u_y v_y) + (\hat{y} \hat{z})(u_y v_z) + \\
+(\hat{z} \hat{x})(u_z v_x) - (\hat{y} \hat{z})(u_z v_y) + (\hat{z} \hat{z})(u_z v_z) \\ \end{pmatrix} = \begin{pmatrix} u_x v_x + (\hat{x} \hat{y})(u_x v_y) - (\hat{z} \hat{x})(u_x v_z) -  \\
+(\hat{x} \hat{y})(u_y v_x) + u_y v_y + (\hat{y} \hat{z})(u_y v_z) + \\
+(\hat{z} \hat{x})(u_z v_x) - (\hat{y} \hat{z})(u_z v_y) + u_z v_z \\ \end{pmatrix} = u_x v_x +  u_y v_y + u_z v_z + \begin{pmatrix} (\hat{x} \hat{y})(u_x v_y - u_y v_x) +  \\
+(\hat{y} \hat{z})(u_y v_z - u_z v_y) + \\
+(\hat{z} \hat{x})(u_z v_x - u_x v_z) \\ \end{pmatrix} = \vec{u} \cdot \vec{v} + \begin{pmatrix} (\hat{x} \hat{y})(u_x v_y - u_y v_x) +  \\
+(\hat{y} \hat{z})(u_y v_z - u_z v_y) + \\
+(\hat{z} \hat{x})(u_z v_x - u_x v_z) \\ \end{pmatrix} \]</div>
+<div class="arithmatex">\[ \text{But now, I need to turn a bivector into a vector. What about that } U \text{ thing?} \]</div>
+<p>Puzzle time! Prove that <span class="arithmatex">\(U \vec{v} = \vec{v} U\)</span>.</p>
+<div class="arithmatex">\[ U^2 = \hat{x} \hat{y} \hat{z} \hat{x} \hat{y} \hat{z} = -\hat{x} \hat{y} \hat{z} \hat{x} \hat{z} \hat{y} = \hat{x} \hat{y} \hat{z} \hat{z} \hat{x} \hat{y} = \hat{x} \hat{y} \hat{x} \hat{y} = -\hat{x} \hat{x} \hat{y} \hat{y} \]</div>
+<div class="arithmatex">\[ U^2 = -1 \]</div>
+<p><span class="arithmatex">\(U\)</span> is usually called <span class="arithmatex">\(i\)</span> for this reason.</p>
+<div class="arithmatex">\[ U^3 = \hat{x} \hat{y} \hat{z} \hat{x} \hat{y} \hat{z} \hat{x} \hat{y} \hat{z} = -\hat{x} \hat{y} \hat{x} \hat{z} \hat{y} \hat{z} \hat{x} \hat{y} \hat{z} = \hat{x} \hat{x} \hat{y} \hat{z} \hat{y} \hat{z} \hat{x} \hat{y} \hat{z} = \hat{y} \hat{z} \hat{y} \hat{z} \hat{x} \hat{y} \hat{z} = -\hat{y} \hat{y} \hat{z} \hat{z} \hat{x} \hat{y} \hat{z} = -\hat{x} \hat{y} \hat{z} = -U = \hat{x} \hat{z} \hat{y} = -\hat{z} \hat{x} \hat{y} = \hat{z} \hat{y} \hat{x} \]</div>
+<div class="arithmatex">\[ U^4 = U^2 U^2 = (-1) (-1) = 1 \]</div>
+<div class="arithmatex">\[ U^4 = U^3 U = (-U) U = -U^2 = -(-1) = 1 \]</div>
+<p>.</p>
+<div class="arithmatex">\[ U^1 = U = \hat{x} \hat{y} \hat{z} \]</div>
+<div class="arithmatex">\[ U^2 = 1 \]</div>
+<div class="arithmatex">\[ U^3 = -U = \hat{z} \hat{y} \hat{x} = -\hat{x} \hat{y} \hat{z} \]</div>
+<div class="arithmatex">\[ U^4 = (-U) U  = 1 \]</div>
+<p>.</p>
+<div class="arithmatex">\[ \hat{x} \hat{y} = \hat{x} \hat{y} \hat{z} \hat{z} = U \hat{z} \]</div>
+<div class="arithmatex">\[ \hat{y} \hat{z} = \hat{y} \hat{z} \hat{x} \hat{x} = -\hat{y} \hat{x} \hat{z} \hat{x} = \hat{x} \hat{y} \hat{z} \hat{x} = U \hat{x} \]</div>
+<div class="arithmatex">\[ \hat{z} \hat{x} = \hat{z} \hat{x} \hat{y} \hat{y} = -\hat{z} \hat{y} \hat{x} \hat{y} = -(-U) \hat{y} = U \hat{y} \]</div>
+<div class="arithmatex">\[ \text{Yes! Now I can finally solve the puzzle.} \]</div>
+<div class="arithmatex">\[ \vec{u} \vec{v} = \vec{u} \cdot \vec{v} + \begin{pmatrix} (U \hat{z})(u_x v_y - u_y v_x) +  \\
+(U \hat{x})(u_y v_z - u_z v_y) + \\
+(U \hat{y})(u_z v_x - u_x v_z) \\ \end{pmatrix} = \vec{u} \cdot \vec{v} + U \begin{pmatrix} \hat{x} (u_y v_z - u_z v_y) +  \\
+\hat{y} (u_z v_x - u_x v_z) + \\
+\hat{z} (u_x v_y - u_y v_x) \\ \end{pmatrix} = \vec{u} \cdot \vec{v} + U \begin{bmatrix} u_y v_z - u_z v_y \\
+u_z v_x - u_x v_z \\
+u_x v_y - u_y v_x \\ \end{bmatrix} \]</div>
+<p>.</p>
+<div class="arithmatex">\[ \vec{u} \vec{v} = \vec{u} \cdot \vec{v} + U \text{ } \vec{u} \times \vec{v} \]</div>
+<div class="arithmatex">\[ \vec{u} \vec{v} = \vec{u} \cdot \vec{v} + \hat{x} \hat{y} \hat{z} \text{ } \vec{u} \times \vec{v} \]</div>
+<div class="arithmatex">\[ \vec{u} \vec{v} = \vec{u} \cdot \vec{v} + \vec{u} \times \vec{v} \text{ } i \]</div>
+<p>Also, the cross product only works in <span class="arithmatex">\(3d\)</span> while this <span class="arithmatex">\(U \text{ } \vec{u} \times \vec{v}\)</span> thing works in any dimension. This operator actually has a name (well, two names), the outer product (as opposed to the dot product sometimes referred to as the inner product) or wedge product for its appearance as a wedge unicode character. This more general cross product is written <span class="arithmatex">\(\vec{u} ∧ \vec{v}\)</span>. (While we're on the topic of products, <span class="arithmatex">\(\vec{u} \vec{v}\)</span> is known as the geometric product of <span class="arithmatex">\(\vec{u}\)</span> and <span class="arithmatex">\(\vec{v}\)</span>.) Also, I have to interrupt this for...</p>
+<p><span class="arithmatex">\(100\)</span> lines! But</p>
+<div class="arithmatex">\[ \vec{u} \vec{v} = \vec{u} \cdot \vec{v} + \vec{u} ∧ \vec{v}. \]</div>
+<h3 id="frac1vecv-and-vecv2"><span class="arithmatex">\(\frac{1}{\vec{v}}\)</span> (and <span class="arithmatex">\(\vec{v}^2\)</span>)<a class="headerlink" href="#frac1vecv-and-vecv2" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[ \text{Let's say that we are in dimension } d \text{. First, basis vectors} \]</div>
+<div class="arithmatex">\[ e_1 = \hat{i} = \hat{x} \]</div>
+<div class="arithmatex">\[ e_2 = \hat{j} = \hat{y} \]</div>
+<div class="arithmatex">\[ e_3 = \hat{k} = \hat{z} \]</div>
+<div class="arithmatex">\[ e_4 = \hat{l} = \hat{w} \]</div>
+<div class="arithmatex">\[ \vdots \]</div>
+<div class="arithmatex">\[ \vec{u} = \begin{bmatrix} u_1 \\
+u_2 \\
+u_3 \\
+\vdots \\
+u_d\\ \end{bmatrix} = \sum\limits_{n = 1}^{d} u_n e_n \]</div>
+<div class="arithmatex">\[ \vec{v} = \begin{bmatrix} v_1 \\
+v_2 \\
+v_3 \\
+\vdots \\
+v_d \\ \end{bmatrix} = \sum\limits_{n = 1}^{d} v_n e_n \]</div>
+<div class="arithmatex">\[ \vec{u} \vec{v} = \begin{bmatrix} (\hat{x} \hat{x}) u_1 v_1 &amp; (\hat{x} \hat{y}) u_1 v_2 &amp; (\hat{x} \hat{z}) u_1 v_3 &amp; (\hat{x} \hat{w}) u_1 v_4 &amp; \dots &amp; (\hat{x} e_d) u_1 v_d  \\
+(\hat{y} \hat{x}) u_2 v_1 &amp; (\hat{y} \hat{y}) u_2 v_2 &amp; (\hat{y} \hat{z}) u_2 v_3 &amp; (\hat{y} \hat{w}) u_2 v_4 &amp; \dots &amp; (\hat{y} e_d) u_2 v_d \\
+(\hat{z} \hat{x}) u_3 v_1 &amp; (\hat{z} \hat{y}) u_3 v_2 &amp; (\hat{z} \hat{z}) u_3 v_3 &amp; (\hat{z} \hat{w}) u_3 v_4 &amp; \dots &amp; (\hat{z} e_d) u_3 v_d \\
+(\hat{w} \hat{x}) u_4 v_1 &amp; (\hat{w} \hat{y}) u_4 v_2 &amp; (\hat{w} \hat{z}) u_4 v_3 &amp; (\hat{w} \hat{w}) u_4 v_4 &amp; \dots &amp; (\hat{w} e_d) u_4 v_d \\
+\vdots &amp; \vdots &amp; \vdots &amp; \vdots &amp; \ddots &amp; \vdots \\
+(e_d \hat{x}) u_d v_1 &amp; (e_d \hat{y}) u_d v_2 &amp; (e_d \hat{z}) u_d v_3 &amp; (e_d \hat{w}) u_d v_4 &amp; \dots &amp; (e_d e_d) u_d v_d \\ \end{bmatrix} = \begin{bmatrix} u_1 v_1 &amp; (\hat{x} \hat{y}) u_1 v_2 &amp; (\hat{x} \hat{z}) u_1 v_3 &amp; (\hat{x} \hat{w}) u_1 v_4 &amp; \dots &amp; (\hat{x} e_d) u_1 v_d  \\
+(\hat{y} \hat{x}) u_2 v_1 &amp; u_2 v_2 &amp; (\hat{y} \hat{z}) u_2 v_3 &amp; (\hat{y} \hat{w}) u_2 v_4 &amp; \dots &amp; (\hat{y} e_d) u_2 v_d \\
+(\hat{z} \hat{x}) u_3 v_1 &amp; (\hat{z} \hat{y}) u_3 v_2 &amp; u_3 v_3 &amp; (\hat{z} \hat{w}) u_3 v_4 &amp; \dots &amp; (\hat{z} e_d) u_3 v_d \\
+(\hat{w} \hat{x}) u_4 v_1 &amp; (\hat{w} \hat{y}) u_4 v_2 &amp; (\hat{w} \hat{z}) u_4 v_3 &amp; u_4 v_4 &amp; \dots &amp; (\hat{w} e_d) u_4 v_d \\
+\vdots &amp; \vdots &amp; \vdots &amp; \vdots &amp; \ddots &amp; \vdots \\
+(e_d \hat{x}) u_d v_1 &amp; (e_d \hat{y}) u_d v_2 &amp; (e_d \hat{z}) u_d v_3 &amp; (e_d \hat{w}) u_d v_4 &amp; \dots &amp; u_d v_d \\ \end{bmatrix} \]</div>
+<div class="arithmatex">\[ \vec{u} \vec{v} = (u_1 v_1 + u_2 v_2 + u_3 v_3 + u_4 v_4 + \dots + u_d v_d) + \begin{bmatrix}  &amp; (\hat{x} \hat{y}) u_1 v_2 &amp; (\hat{x} \hat{z}) u_1 v_3 &amp; (\hat{x} \hat{w}) u_1 v_4 &amp; \dots &amp; (\hat{x} e_d) u_1 v_d  \\
+-(\hat{x} \hat{y}) u_2 v_1 &amp;  &amp; (\hat{y} \hat{z}) u_2 v_3 &amp; (\hat{y} \hat{w}) u_2 v_4 &amp; \dots &amp; (\hat{y} e_d) u_2 v_d \\
+-(\hat{x} \hat{z}) u_3 v_1 &amp; -(\hat{y} \hat{z}) u_3 v_2 &amp;  &amp; (\hat{z} \hat{w}) u_3 v_4 &amp; \dots &amp; (\hat{z} e_d) u_3 v_d \\
+-(\hat{x} \hat{w}) u_4 v_1 &amp; -(\hat{y} \hat{w}) u_4 v_2 &amp; -(\hat{z} \hat{w}) u_4 v_3 &amp;  &amp; \dots &amp; (\hat{w} e_d) u_4 v_d \\
+\vdots &amp; \vdots &amp; \vdots &amp; \vdots &amp;  &amp; \vdots \\
+-(\hat{x} e_d) u_d v_1 &amp; -(\hat{y} e_d) u_d v_2 &amp; -(\hat{z} e_d) u_d v_3 &amp; -(\hat{w} e_d) u_d v_4 &amp; \dots &amp; \\ \end{bmatrix} \]</div>
+<div class="arithmatex">\[ \text{It was really frustrating to write a plus in between, so I just gave up. Just assume that the results above and below are summed together (I kept swiching between "Just assume that the result above is summed together" and "Just assume that the results above and below are summed together") (you can assume that every matrix on this page is a sum). Here's an idea! Square the vector.} \]</div>
+<div class="arithmatex">\[ \vec{v} \vec{v} = (v_1 v_1 + v_2 v_2 + v_3 v_3 + v_4 v_4 + \dots + v_d v_d) + \begin{bmatrix}  &amp; (\hat{x} \hat{y}) v_1 v_2 &amp; (\hat{x} \hat{z}) v_1 v_3 &amp; (\hat{x} \hat{w}) v_1 v_4 &amp; \dots &amp; (\hat{x} e_d) v_1 v_d  \\
+-(\hat{x} \hat{y}) v_2 v_1 &amp;  &amp; (\hat{y} \hat{z}) v_2 v_3 &amp; (\hat{y} \hat{w}) v_2 v_4 &amp; \dots &amp; (\hat{y} e_d) v_2 v_d \\
+-(\hat{x} \hat{z}) v_3 v_1 &amp; -(\hat{y} \hat{z}) v_3 v_2 &amp;  &amp; (\hat{z} \hat{w}) v_3 v_4 &amp; \dots &amp; (\hat{z} e_d) v_3 v_d \\
+-(\hat{x} \hat{w}) v_4 v_1 &amp; -(\hat{y} \hat{w}) v_4 v_2 &amp; -(\hat{z} \hat{w}) v_4 v_3 &amp;  &amp; \dots &amp; (\hat{w} e_d) v_4 v_d \\
+\vdots &amp; \vdots &amp; \vdots &amp; \vdots &amp;  &amp; \vdots \\
+-(\hat{x} e_d) v_d v_1 &amp; -(\hat{y} e_d) v_d v_2 &amp; -(\hat{z} e_d) v_d v_3 &amp; -(\hat{w} e_d) v_d v_4 &amp; \dots &amp;  \\ \end{bmatrix} \]</div>
+<p>(insert filler text here)</p>
+<div class="arithmatex">\[ \text{By the way, } \hat{\hat{\hat{\hat{\hat{\hat{\hat{\hat{\hat{\hat{\hat{\hat{\hat{\hat{\hat{\hat{\hat{\hat{\hat{\hat{\hat{\hat{\hat{\hat{\hat{\hat{\hat{\hat{\hat{\hat{w}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}. \]</div>
+<div class="arithmatex">\[ \text{Also by the way, here's the formulas for the dot product and absolute value of two and one vector respectively.} \]</div>
+<div class="arithmatex">\[ \vec{u} \cdot \vec{v} = u_1 v_1 + u_2 v_2 + u_3 v_3 + u_4 v_4 + \dots + u_d v_d = \sum\limits_{n = 1}^{d} u_n v_n \]</div>
+<div class="arithmatex">\[ || \vec{v} || = \sqrt{v_1^2 + v_2^2 + v_3^2 + v_4^2 + \dots + v_d^2} \]</div>
+<div class="arithmatex">\[ || \vec{v} ||^2 = || v_1^2 + v_2^2 + v_3^2 + v_4^2 + \dots + v_d^2 || \]</div>
+<div class="arithmatex">\[ \text{But the square of a number is always positive (this is VGA (vanilla geometric algebra), not CGA (
+complex geometric algebra (the term CGA actually means conformal geometric algebra)) also, the square of the square root of itself, and } i^2 \text{ is still } -1 \text{, I think that I was confusing the square of the square root with the square root of the square), and the sum of positive numbers is positive, and the absolute value of a positive number is positive, so...} \]</div>
+<div class="arithmatex">\[ || \vec{v} ||^2 = v_1^2 + v_2^2 + v_3^2 + v_4^2 + \dots + v_d^2 \]</div>
+<div class="arithmatex">\[ \vec{v} \cdot \vec{v} = v_1^2 + v_2^2 + v_3^2 + v_4^2 + \dots + v_d^2 \]</div>
+<div class="arithmatex">\[ || \vec{v} ||^2 = \vec{v} \cdot \vec{v} \]</div>
+<div class="arithmatex">\[ \text{But then I realized, this is halfway to the square of a vector.} \]</div>
+<div class="arithmatex">\[ \vec{v}^2 = \vec{v} \cdot \vec{v} + \vec{v} ∧ \vec{v} = || \vec{v} ||^2 + \vec{v} ∧ \vec{v} \]</div>
+<div class="arithmatex">\[ \text{If the cross product of a vector with itself is the zero vector, and the } 3d \text{ wedge product is proportional to the cross product, than it would make sense that the wedge product of a vector with itself is zero as well (this argument works in } 3d \text{ by the way). You might have noticed earlier that we almost proved this.} \]</div>
+<div class="arithmatex">\[ \vec{v}^2 = || \vec{v} ||^2 + \begin{bmatrix}  &amp; (\hat{x} \hat{y}) v_1 v_2 &amp; (\hat{x} \hat{z}) v_1 v_3 &amp; (\hat{x} \hat{w}) v_1 v_4 &amp; \dots &amp; (\hat{x} e_d) v_1 v_d  \\
+-(\hat{x} \hat{y}) v_2 v_1 &amp;  &amp; (\hat{y} \hat{z}) v_2 v_3 &amp; (\hat{y} \hat{w}) v_2 v_4 &amp; \dots &amp; (\hat{y} e_d) v_2 v_d \\
+-(\hat{x} \hat{z}) v_3 v_1 &amp; -(\hat{y} \hat{z}) v_3 v_2 &amp;  &amp; (\hat{z} \hat{w}) v_3 v_4 &amp; \dots &amp; (\hat{z} e_d) v_3 v_d \\
+-(\hat{x} \hat{w}) v_4 v_1 &amp; -(\hat{y} \hat{w}) v_4 v_2 &amp; -(\hat{z} \hat{w}) v_4 v_3 &amp;  &amp; \dots &amp; (\hat{w} e_d) v_4 v_d \\
+\vdots &amp; \vdots &amp; \vdots &amp; \vdots &amp;  &amp; \vdots \\
+-(\hat{x} e_d) v_d v_1 &amp; -(\hat{y} e_d) v_d v_2 &amp; -(\hat{z} e_d) v_d v_3 &amp; -(\hat{w} e_d) v_d v_4 &amp; \dots &amp;  \\ \end{bmatrix} = || \vec{v} ||^2 + \begin{bmatrix}  &amp; (\hat{x} \hat{y}) v_1 v_2 &amp; (\hat{x} \hat{z}) v_1 v_3 &amp; (\hat{x} \hat{w}) v_1 v_4 &amp; \dots &amp; (\hat{x} e_d) v_1 v_d  \\
+-(\hat{x} \hat{y}) v_1 v_2 &amp;  &amp; (\hat{y} \hat{z}) v_2 v_3 &amp; (\hat{y} \hat{w}) v_2 v_4 &amp; \dots &amp; (\hat{y} e_d) v_2 v_d \\
+-(\hat{x} \hat{z}) v_1 v_3 &amp; -(\hat{y} \hat{z}) v_2 v_3 &amp;  &amp; (\hat{z} \hat{w}) v_3 v_4 &amp; \dots &amp; (\hat{z} e_d) v_3 v_d \\
+-(\hat{x} \hat{w}) v_1 v_4 &amp; -(\hat{y} \hat{w}) v_2 v_4 &amp; -(\hat{z} \hat{w}) v_3 v_4 &amp;  &amp; \dots &amp; (\hat{w} e_d) v_4 v_d \\
+\vdots &amp; \vdots &amp; \vdots &amp; \vdots &amp;  &amp; \vdots \\
+-(\hat{x} e_d) v_1 v_d &amp; -(\hat{y} e_d) v_2 v_d &amp; -(\hat{z} e_d) v_3 v_d &amp; -(\hat{w} e_d) v_4 v_d &amp; \dots &amp;  \\ \end{bmatrix} \]</div>
+<div class="arithmatex">\[ \text{As you can see, each term is perfectly canceled out by the term across the diagonal. And perfect timing, it will be on } 200 \text{ lines.} \]</div>
+<div class="arithmatex">\[ \vec{v}^2 = || \vec{v} ||^2 \]</div>
+<div class="arithmatex">\[ \text{Also, now I can solve for } \frac{1}{\vec{v}} \]</div>
+<div class="arithmatex">\[ \vec{v} \vec{v} = || \vec{v} ||^2 \]</div>
+<div class="arithmatex">\[ \vec{v} = \frac{|| \vec{v} ||^2}{\vec{v}} \]</div>
+<div class="arithmatex">\[ \frac{1}{\vec{v}} = \frac{\vec{v}}{|| \vec{v} ||^2} \]</div>
+<div class="arithmatex">\[ \text{I had this proof that } \frac{1}{\frac{1}{\vec{v}}} = \vec{v} \text{ that I would put right here, but I accidentally deleted that one (and it is now an exercise for the viewer). In conclusion:} \]</div>
+<div class="arithmatex">\[ \vec{v}^2 = || \vec{v} ||^2 \]</div>
+<div class="arithmatex">\[ \text{And} \]</div>
+<div class="arithmatex">\[ \frac{1}{\vec{v}} = \frac{\vec{v}}{|| \vec{v} ||^2}. \]</div>
+<div class="arithmatex">\[ \text{By the way, this means that the inverse of a vector is a vector, } \frac{\vec{u}}{\vec{v}} = \frac{\vec{u} \vec{v}}{|| \vec{v} ||^2} \text{. The inverse of a } 2d \text{ is it's circle inverse, the inverse of a } 3d \text{ vector is it's sphere inverse, the inverse of a } 4d \text{ vector is it's hypersphere inverse, and so on.} \]</div>
+<h4 id="fun-fact">fun fact!<a class="headerlink" href="#fun-fact" title="Permanent link">&para;</a></h4>
+<p>As you know, <span class="arithmatex">\(\vec{u} \cdot \vec{v} = u_1 v_1 + u_2 v_2 + u_3 v_3 + u_4 v_4 + \dots + u_d v_d\)</span>. But what about <span class="arithmatex">\(\vec{v} \cdot \vec{u}\)</span>? And what about the wedge product? (By the way, this is about the vector product or sometimes called the geometric product)</p>
+<div class="arithmatex">\[ \vec{v} \cdot \vec{u} = v_1 u_1 + v_2 u_2 + v_3 u_3 + v_4 u_4 + \dots + v_d u_d = u_1 v_1 + u_2 v_2 + u_3 v_3 + u_4 v_4 + \dots + u_d v_d \]</div>
+<div class="arithmatex">\[ \vec{v} \cdot \vec{u} = \vec{u} \cdot \vec{v} \]</div>
+<div class="arithmatex">\[ \vec{v} \vec{u} = \vec{u} \cdot \vec{v} + \vec{v} ∧ \vec{u} \]</div>
+<div class="arithmatex">\[ \vec{u} ∧ \vec{v} = \begin{bmatrix}  &amp; (\hat{x} \hat{y}) u_1 v_2 &amp; (\hat{x} \hat{z}) u_1 v_3 &amp; (\hat{x} \hat{w}) u_1 v_4 &amp; \dots &amp; (\hat{x} e_d) u_1 v_d  \\
+-(\hat{x} \hat{y}) u_2 v_1 &amp;  &amp; (\hat{y} \hat{z}) u_2 v_3 &amp; (\hat{y} \hat{w}) u_2 v_4 &amp; \dots &amp; (\hat{y} e_d) u_2 v_d \\
+-(\hat{x} \hat{z}) u_3 v_1 &amp; -(\hat{y} \hat{z}) u_3 v_2 &amp;  &amp; (\hat{z} \hat{w}) u_3 v_4 &amp; \dots &amp; (\hat{z} e_d) u_3 v_d \\
+-(\hat{x} \hat{w}) u_4 v_1 &amp; -(\hat{y} \hat{w}) u_4 v_2 &amp; -(\hat{z} \hat{w}) u_4 v_3 &amp;  &amp; \dots &amp; (\hat{w} e_d) u_4 v_d \\
+\vdots &amp; \vdots &amp; \vdots &amp; \vdots &amp;  &amp; \vdots \\
+-(\hat{x} e_d) u_d v_1 &amp; -(\hat{y} e_d) u_d v_2 &amp; -(\hat{z} e_d) u_d v_3 &amp; -(\hat{w} e_d) u_d v_4 &amp; \dots &amp;  \\ \end{bmatrix} \]</div>
+<div class="arithmatex">\[ \vec{v} ∧ \vec{u} = \begin{bmatrix}  &amp; (\hat{x} \hat{y}) v_1 u_2 &amp; (\hat{x} \hat{z}) v_1 u_3 &amp; (\hat{x} \hat{w}) v_1 u_4 &amp; \dots &amp; (\hat{x} e_d) v_1 u_d  \\
+-(\hat{x} \hat{y}) v_2 u_1 &amp;  &amp; (\hat{y} \hat{z}) v_2 u_3 &amp; (\hat{y} \hat{w}) v_2 u_4 &amp; \dots &amp; (\hat{y} e_d) v_2 u_d \\
+-(\hat{x} \hat{z}) v_3 u_1 &amp; -(\hat{y} \hat{z}) v_3 u_2 &amp;  &amp; (\hat{z} \hat{w}) v_3 u_4 &amp; \dots &amp; (\hat{z} e_d) v_3 u_d \\
+-(\hat{x} \hat{w}) v_4 u_1 &amp; -(\hat{y} \hat{w}) v_4 u_2 &amp; -(\hat{z} \hat{w}) v_4 u_3 &amp;  &amp; \dots &amp; (\hat{w} e_d) v_4 u_d \\
+\vdots &amp; \vdots &amp; \vdots &amp; \vdots &amp;  &amp; \vdots \\
+-(\hat{x} e_d) v_d u_1 &amp; -(\hat{y} e_d) v_d u_2 &amp; -(\hat{z} e_d) v_d u_3 &amp; -(\hat{w} e_d) v_d u_4 &amp; \dots &amp;  \\ \end{bmatrix} = -\begin{bmatrix}  &amp; -(\hat{x} \hat{y}) v_1 u_2 &amp; -(\hat{x} \hat{z}) v_1 u_3 &amp; -(\hat{x} \hat{w}) v_1 u_4 &amp; \dots &amp; -(\hat{x} e_d) v_1 u_d  \\
+(\hat{x} \hat{y}) v_2 u_1 &amp;  &amp; -(\hat{y} \hat{z}) v_2 u_3 &amp; -(\hat{y} \hat{w}) v_2 u_4 &amp; \dots &amp; -(\hat{y} e_d) v_2 u_d \\
+(\hat{x} \hat{z}) v_3 u_1 &amp; (\hat{y} \hat{z}) v_3 u_2 &amp;  &amp; -(\hat{z} \hat{w}) v_3 u_4 &amp; \dots &amp; -(\hat{z} e_d) v_3 u_d \\
+(\hat{x} \hat{w}) v_4 u_1 &amp; (\hat{y} \hat{w}) v_4 u_2 &amp; (\hat{z} \hat{w}) v_4 u_3 &amp;  &amp; \dots &amp; -(\hat{w} e_d) v_4 u_d \\
+\vdots &amp; \vdots &amp; \vdots &amp; \vdots &amp;  &amp; \vdots \\
+(\hat{x} e_d) v_d u_1 &amp; (\hat{y} e_d) v_d u_2 &amp; (\hat{z} e_d) v_d u_3 &amp; (\hat{w} e_d) v_d u_4 &amp; \dots &amp;  \\ \end{bmatrix} = -\begin{bmatrix}  &amp; (\hat{x} \hat{y}) u_1 v_2 &amp; (\hat{x} \hat{z}) u_1 v_3 &amp; (\hat{x} \hat{w}) u_1 v_4 &amp; \dots &amp; (\hat{x} e_d) u_1 v_d  \\
+-(\hat{x} \hat{y}) u_2 v_1 &amp;  &amp; (\hat{y} \hat{z}) u_2 v_3 &amp; (\hat{y} \hat{w}) u_2 v_4 &amp; \dots &amp; (\hat{y} e_d) u_2 v_d \\
+-(\hat{x} \hat{z}) u_3 v_1 &amp; -(\hat{y} \hat{z}) u_3 v_2 &amp;  &amp; (\hat{z} \hat{z}) u_3 v_4 &amp; \dots &amp; (\hat{z} e_d) u_3 v_d \\
+-(\hat{x} w) u_4 v_1 &amp; -(\hat{y} w) u_4 v_2 &amp; -(\hat{z} w) u_4 v_3 &amp;  &amp; \dots &amp; (w e_d) u_4 v_d \\
+\vdots &amp; \vdots &amp; \vdots &amp; \vdots &amp;  &amp; \vdots \\
+-(\hat{x} e_d) u_d v_1 &amp; -(\hat{y} e_d) u_d v_2 &amp; -(\hat{z} e_d) u_d v_3 &amp; -(w e_d) u_d v_4 &amp; \dots &amp;  \\ \end{bmatrix} \]</div>
+<div class="arithmatex">\[ \vec{v} ∧ \vec{u} = - \vec{u} ∧ \vec{v} \]</div>
+<p>Also, halfway through (well, more like mostly through), if I added one more <span class="arithmatex">\(\hat{w}\)</span>, it would be "unable to render expression". By the way, <span class="arithmatex">\(2 \cdot 2 \cdot 2 \cdot 2 \cdot 2 \cdot 2 \cdot 2 \cdot 2\)</span> lines.</p>
+<div class="arithmatex">\[ \vec{v} \vec{u} = \vec{u} \cdot \vec{v} - \vec{u} ∧ \vec{v} \]</div>
+<h3 id="complex-numbers">complex numbers<a class="headerlink" href="#complex-numbers" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[ \text{complex numbers (surprisingly in geometric algebra) come from } 2d \text{ geometric algebra. So time to re-derive that! (And use } i \text{ this time instead of } U \text{.) (I thought that } i \text{ should have a hat, but that wouldn't work.) Here's the definitions and link to the complex numbers page:} \]</div>
+<p><a href="https://silaspe.github.io/maths/complex.html">.</a></p>
+<div class="arithmatex">\[ \hat{i} = \hat{x} \text{ (This is so that } \hat{i} \text{ isn't confused with } i \text{).} \]</div>
+<div class="arithmatex">\[ \hat{j} = \hat{y} \]</div>
+<div class="arithmatex">\[ \hat{x} \hat{y} = i \]</div>
+<div class="arithmatex">\[ \hat{x}^2 = 1 \]</div>
+<div class="arithmatex">\[ \hat{y}^2 = 1 \]</div>
+<div class="arithmatex">\[ \hat{x} \hat{y} = -\hat{y} \hat{x} \text{(} = i \text{)} \]</div>
+<div class="arithmatex">\[ \text{And with those, you can derive} \]</div>
+<div class="arithmatex">\[ i^2 = -1 \]</div>
+<div class="arithmatex">\[ \text{this is why it was called } i. \]</div>
+<p>.</p>
+<div class="arithmatex">\[ \text{Also, a bivector in } 2 \text{ dimensions has one degree of freedom (just like how a vector behaves in } 1d \text{) (by the way, a } k \text{-vector in } n \text{ dimensions has } \begin{pmatrix} n \\
+k \\ \end{pmatrix} \text{ DoF's (degrees of freedom)), so I'll call it, I dunno, a pseudoscalar. (} i \text{ Is always the unit pseudoscalar no matter the dimension.)} \]</div>
+<div class="arithmatex">\[ \vec{u} = \begin{bmatrix} u_x \\
+u_y \\ \end{bmatrix} = u_x \hat{x} + u_y \hat{y} \]</div>
+<div class="arithmatex">\[ \vec{v} = \begin{bmatrix} v_x \\
+v_y \\ \end{bmatrix} = v_x \hat{x} + v_y \hat{y} \]</div>
+<div class="arithmatex">\[ \vec{u} \vec{v} = \begin{pmatrix} (\hat{x} \hat{x}) u_x v_x &amp; (\hat{x} \hat{y}) u_x v_y \\
+(\hat{y} \hat{x}) u_y v_x &amp; (\hat{y} \hat{y}) u_y v_y \\ \end{pmatrix} = (u_x v_x + u_y v_y) + (u_x v_y - u_y v_x)i \]</div>
+<p><span class="arithmatex">\(300\)</span> Lines!</p>
+<div class="arithmatex">\[ \vec{u} ∧ \vec{v} = i \cdot Det \begin{bmatrix} u_x &amp; u_y \\
+v_x &amp; v_y \\ \end{bmatrix} \]</div>
+<p>Here's a <a href="https://www.youtube.com/watch?v=Ip3X9LOh2dk">determinant video</a> and <a href="https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab">linear algebra playlist</a> for context (make sure to skip the cross product video) (also, that determinant is probably the only matrix on this page. I'll come back here when I finish the page and put the answer here: ). ( <span class="arithmatex">\(\text{ }\)</span> : ) <span class="arithmatex">\(\text{ }\)</span> Btw.)</p>
+<div class="arithmatex">\[  \text{Text over time! (As opposed to voice over, it's a font switch.) What's something that viewers of this website would want from geometric algebra? I think I have an idea: rotate a vector by the angle between two other vectors. I'll do it in } 20 \text{ minutes.} \]</div>
+<div class="arithmatex">\[ \text{It's the next day.} \]</div>
+<div class="arithmatex">\[ \vec{v} i = (v_x \hat{x} + v_y \hat{y})i = v_x \hat{x} i + v_y \hat{y} i = v_x \hat{x} \hat{x} \hat{y} + v_y \hat{y} \hat{x} \hat{y} = v_x \hat{y} - v_y \hat{x} \hat{y} \hat{y} = v_x \hat{y} - v_y \hat{x} \]</div>
+<div class="codehilite"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">complexify</span><span class="p">(</span><span class="n">v_x</span><span class="p">,</span> <span class="n">v_y</span><span class="p">):</span>
+  <span class="k">return</span> <span class="n">v_x</span> <span class="o">+</span> <span class="n">v_y</span> <span class="o">*</span> <span class="n">j</span>
+</code></pre></div>
+
+<div class="arithmatex">\[ \text{I just realized that this isn't a code repo(sitory). It was my instinct to write it in code form.} \]</div>
+<div class="arithmatex">\[ \text{complexify} (v_x \hat{x} + v_y \hat{y}) = v_x + v_y i \]</div>
+<p>(insert filler text here)</p>
+<div class="arithmatex">\[ \text{complexify} (\vec{v} i) = i \text{ complexify} (\vec{v}) \]</div>
+<div class="arithmatex">\[ i \vec{v} = i(v_x \hat{x} + v_y \hat{y}) = i v_x x + i v_y \hat{y} \]</div>
+<div class="arithmatex">\[ \text{But } v_x \text{ and } v_y \text{ are scalars, so} \]</div>
+<div class="arithmatex">\[ i \vec{v} = v_x i \hat{x} + v_y i \hat{y} = v_x \hat{x} \hat{y} \hat{x} + v_y \hat{x} \hat{y} \hat{y} = -v_x \hat{y} \hat{x} \hat{x} + v_y \hat{x} = -v_x \hat{y} + v_y \hat{x} \]</div>
+<div class="arithmatex">\[ \text{complexify} (i \vec{v}) = -i \text{ complexify} (\vec{v}). \]</div>
+<div class="arithmatex">\[ \text{Next: vector times a complex number.} \]</div>
+<div class="arithmatex">\[ \text{vectorize} (a + bi) = a \hat{x} + b \hat{y} \]</div>
+<div class="arithmatex">\[ \text{complexify} (\text{vectorize} (z)) = z \]</div>
+<div class="arithmatex">\[ \text{vectorize} (\text{complexify} (\vec{v})) = \vec{v} \]</div>
+<div class="arithmatex">\[ (a \hat{x} + b \hat{y})(c + di) = a \hat{x} c + a \hat{x} di + b \hat{y} c + b \hat{y} di = \begin{pmatrix} ac (\hat{x}) &amp; ad (\hat{x} i) \\
+bc (\hat{y}) &amp; bd (\hat{y} i) \\ \end{pmatrix} = \begin{pmatrix} ac (\hat{x}) &amp; ad (\hat{x} \hat{x} \hat{y}) \\
+bc (\hat{y}) &amp; bd (\hat{y} \hat{x} \hat{y}) \\ \end{pmatrix} = \begin{pmatrix} ac (\hat{x}) &amp; ad (\hat{y}) \\
+bc (\hat{y}) &amp; -bd (\hat{x} \hat{y} \hat{y}) \\ \end{pmatrix} = \begin{pmatrix} ac (\hat{x}) &amp; ad (\hat{y}) \\
+bc (\hat{y}) &amp; -bd (\hat{x}) \\ \end{pmatrix} = (ac - bd) \hat{x} + (ad + bc) \hat{y} \]</div>
+<div class="arithmatex">\[ z = a + bi \]</div>
+<div class="arithmatex">\[ w = c + di \]</div>
+<div class="arithmatex">\[ \text{vectorize} (z) w = \text{vectorize} (zw) \]</div>
+<div class="arithmatex">\[ \vec{u} \text{ complexify} (\vec{v}) = \text{vectorize} (\text{complexify} (\vec{u}) \text{ complexify} (v)) \]</div>
+<div class="arithmatex">\[ \vec{v} z = \text{vectorize} (\text{complexify} (\vec{v}) z) \]</div>
+<p>Wait a minute! (Which was the catchphrase of sudgy (pronounced soo-gey) in the quick introduction that I mentioned earlier.) If multiplying a vector by a complex number acts like complex number multiplication (rotating and scaling) (exempt it returns a vector, not a complex number), and a vector times a vector is a complex number, then what rotation is that? (Well, the rotation and scaling of a complex number scales by the magnitude and rotates by the angle counterclockwise from the positive <span class="arithmatex">\(x\)</span> axis.)</p>
+<div class="arithmatex">\[ \text{By the way, } \vec{v} \vec{u} = \text{ccong} (\vec{u} \vec{v}) \]</div>
+<div class="arithmatex">\[ |a + bi| = \sqrt{a^2 + b^2} \]</div>
+<div class="arithmatex">\[ a + bi = \vec{u} \vec{v} \]</div>
+<div class="arithmatex">\[ a = \vec{u} \cdot \vec{v} = u_x v_x + u_y v_y \]</div>
+<div class="arithmatex">\[ bi = \vec{u} ∧ \vec{v} = (u_x v_y - u_y v_x)i \text{ (This also means that } b = u_x v_y - u_y v_x = \vec{u} \times \vec{v} \text{).} \]</div>
+<div class="arithmatex">\[ || \vec{u} \vec{v} || = \sqrt{(\vec{u} \cdot \vec{v})^2 + (\vec{u} \times \vec{v})^2} = \sqrt{(u_x v_x + u_y v_y)^2 + (u_x v_y - u_y v_x)^2} = \sqrt{u_x v_x u_x v_x + u_x v_x u_y v_y + u_y v_y u_x v_x + u_y v_y u_y v_y + u_x v_y u_x v_y - u_x v_y u_y v_x - u_y v_x u_x v_y + u_y v_x u_y v_x} = \sqrt{u_x^2 v_x^2 + u_x^2 v_y^2 + u_y^2 v_x^2 + u_y^2 v_y^2} = \sqrt{(u_x^2 + u_y^2)(v_x^2 + v_y^2)} = \sqrt{u_x^2 + u_y^2} \sqrt{v_x^2 + v_y^2} \]</div>
+<div class="arithmatex">\[ || \vec{u} || = \sqrt{u_x^2 + u_y^2} \]</div>
+<div class="arithmatex">\[ || \vec{v} || = \sqrt{v_x^2 + v_y^2} \]</div>
+<div class="arithmatex">\[ || \vec{u} \vec{v} || = || \vec{u} || \text{ } || \vec{v} || \]</div>
+<div class="arithmatex">\[ \text{Next: the part that I have no idea how to prove!} \]</div>
+<div class="arithmatex">\[ \vec{u} \vec{v} = || \vec{u} || \text{ } || \vec{v} || e^{i \theta} \]</div>
+<div class="arithmatex">\[ \theta = \text{ The angle counterclockwise from } \vec{u} \text{ towards } \vec{v}. \]</div>
+<div class="arithmatex">\[ \text{By the way, with this we can derive two new equations! (But you probably know the first.)} \]</div>
+<div class="arithmatex">\[ \vec{u} \cdot \vec{v} = || \vec{u} || \text{ } || \vec{v} ||  cos(\theta) \]</div>
+<div class="arithmatex">\[ \vec{u} ∧ \vec{v} = || \vec{u} || \text{ } || \vec{v} ||sin(\theta) i \]</div>
+<p>But what I wanted was that <span class="arithmatex">\(\theta!\)</span> But I know that it is (<a href="https://silaspe.github.io/maths/arctan.html">almost</a>) impossible to find <span class="arithmatex">\(\theta\)</span> when all you know is <span class="arithmatex">\(e^{i \theta}\)</span>. Wait a minute! If a complex number of the form <span class="arithmatex">\(e^{i \theta}\)</span> is just a rotation, and if multiplying a vector by a complex number acts like they were both complex numbers (exempt it returns a vector), than you can rotate a vector <span class="arithmatex">\(\vec{w}\)</span> by the angle between two unit vectors (or just ones with inverse magnitude, but normalizing them is easier) without having to even know about complex numbers!</p>
+<div class="arithmatex">\[ \hat{u} = \frac{\vec{u}}{|| \vec{u} ||} \]</div>
+<div class="arithmatex">\[ \hat{v} = \frac{\vec{v}}{|| \vec{v} ||} \]</div>
+<div class="arithmatex">\[ \hat{u} \hat{v} = e^{i \theta} \]</div>
+<div class="arithmatex">\[ \text{So, the rotation is} \]</div>
+<div class="arithmatex">\[ \vec{w} \hat{u} \hat{v}. \]</div>
+<p>(Mic drop.) Also, that was on <span class="arithmatex">\(400\)</span> lines exactly.</p>
+<div class="arithmatex">\[ \text{One more thing before maxwell's equation and rotors.} \]</div>
+<div class="arithmatex">\[ (c + di)(a \hat{x} + b \hat{y}) = ca \hat{x} + cb \hat{y} + dia \hat{x} + dib \hat{y} = \begin{pmatrix} ca (\hat{x}) &amp; cb (\hat{y}) \\
+da (i \hat{x}) &amp; db (i \hat{y}) \\ \end{pmatrix} = \begin{pmatrix} ca (\hat{x}) &amp; cb (\hat{y}) \\
+da (\hat{x} \hat{y} \hat{x}) &amp; db (\hat{x} \hat{y} \hat{y}) \\ \end{pmatrix} = \begin{pmatrix} ca (\hat{x}) &amp; cb (\hat{y}) \\
+-da (\hat{y} \hat{x} \hat{x}) &amp; db (\hat{x}) \\ \end{pmatrix} = \begin{pmatrix} ca (\hat{x}) &amp; cb (\hat{y}) \\
+-da (\hat{y}) &amp; db (\hat{x}) \\ \end{pmatrix} = (ca + db) \hat{x} + (cb - da) \hat{y} = (a \hat{x} + b \hat{y})(c - di) \]</div>
+<div class="arithmatex">\[ z \vec{v} = \vec{v} \text{ ccong} (z) \]</div>
+<div class="arithmatex">\[ \text{But if you remember, } \vec{v} \vec{u} = \text{ccong} (\vec{u} \vec{v}) \text{ and } \vec{u} \vec{v} \text{ is a complex number, so...} \]</div>
+<div class="arithmatex">\[ \vec{u} \vec{v} \vec{w} = \vec{w} \text{ ccong} (\vec{u} \vec{v}) = \vec{w} \vec{v} \vec{u} \]</div>
+<div class="arithmatex">\[ \text{One more thing.} \]</div>
+<div class="arithmatex">\[ \theta (\vec{u}, \vec{v}) = \text{ The angle counterclockwise from } \vec{u} \text{ towards } \vec{v}. \]</div>
+<div class="arithmatex">\[ \vec{w} \vec{u} \vec{v} = \vec{w} \text{ Scaled by the length of } \vec{u} \text{ and } \vec{v} \text{, and rotated by } \theta (\vec{u}, \vec{v}).  \]</div>
+<h3 id="rotors">Rotors<a class="headerlink" href="#rotors" title="Permanent link">&para;</a></h3>
+<p>A rotor is a way to rotate a vector by any angle <span class="arithmatex">\(\theta\)</span> in any plane (Yes, plane. I think it makes the same if not more sense to rotate in a plane. I also think that this is similar to the ∧ v.s. <span class="arithmatex">\(\times\)</span> Product.) in any dimension. Let's start with the simplest possible rotor I can think of, in <span class="arithmatex">\(3d\)</span>, <span class="arithmatex">\(90\)</span>°, <span class="arithmatex">\(\hat{x}\)</span> - <span class="arithmatex">\(\hat{y}\)</span> plane. (I'll call <span class="arithmatex">\(\vec{v}\)</span> rotated by the name of <span class="arithmatex">\(\vec{v} \prime\)</span>)</p>
+<div class="arithmatex">\[ \vec{v} = v_x \hat{x} + v_y \hat{y} + v_z \hat{z} \]</div>
+<div class="arithmatex">\[ \vec{v} \prime = v_x \hat{y} - v_y \hat{x} + v_z \hat{z} \]</div>
+<div class="arithmatex">\[ \vec{v} \prime = \vec{v} \hat{x} \hat{y} ? \]</div>
+<div class="arithmatex">\[ \vec{v} \hat{x} \hat{y} = (v_x \hat{x} + v_y \hat{y} + v_z \hat{z}) \hat{x} \hat{y} = v_x \hat{x} \hat{x} \hat{y} + v_y \hat{y} \hat{x} \hat{y} + v_z \hat{z} \hat{x} \hat{y} = v_x \hat{y} - v_y \hat{x} \hat{y} \hat{y} - v_z \hat{x} \hat{z} \hat{y} = (v_x) \hat{y} - (v_y) \hat{x} + (v_z) \hat{x} \hat{y} \hat{z} \]</div>
+<div class="arithmatex">\[ \text{What was that thing he said at this point? Oh right, it was: Well, it almost worked, the } x \text{ and the } y \text{ coordinates got rotated correctly, but the } z \text{ coordinate got turned into this trivector, let's try something else.} \]</div>
+<div class="arithmatex">\[ \text{Do you remember that time when I proved that } z \vec{v} = \vec{v} \text{ ccong} (z) \text{, that means that I can now prove this: } \vec{v} z = \text{ccong} (z) \vec{v} \text{. I'll assume that that means } \hat{y} \hat{x} \text{, I'll try that!} \]</div>
+<div class="arithmatex">\[ \hat{y} \hat{x} \vec{v} = \hat{y} \hat{x} (v_x \hat{x} + v_y \hat{y} + v_z \hat{z}) = \hat{y} \hat{x} v_x \hat{x} + \hat{y} \hat{x} v_y \hat{y} + \hat{y} \hat{x} v_z \hat{z} = v_x \hat{y} \hat{x} \hat{x} + v_y \hat{y} \hat{x} \hat{y} + v_z \hat{y} \hat{x} \hat{z} = v_x \hat{y} - v_y \hat{x} \hat{y} \hat{y} - v_z xyz = (v_x) y - (v_y) x - (v_z) \hat{x} \hat{y} \hat{z} \]</div>
+<div class="arithmatex">\[ \text{Once again, the } x \text{ and the } y \text{ coordinates got rotated correctly, but the } z \text{ coordinate got turned into the inverse trivector this time, maybe doing both at once would cancel out?} \]</div>
+<div class="arithmatex">\[ \hat{y} \hat{x} \vec{v} \hat{x} \hat{y} = \hat{y} \hat{x} (v_x \hat{x} + v_y \hat{y} + v_z \hat{z}) \hat{x} \hat{y} = \hat{y} \hat{x} v_x \hat{x} \hat{x}  \hat{y} + \hat{y} \hat{x} v_y \hat{y} \hat{x} \hat{y} + \hat{y} \hat{x} v_z \hat{z} \hat{x} \hat{y} = v_x \hat{y} \hat{x} \hat{y} + v_y \hat{y} \hat{x} \hat{y} \hat{x} \hat{y} + \hat{y} \hat{x} v_z \hat{z} \hat{x} \hat{y} = - v_x \hat{x} \hat{y} \hat{y} - v_y \hat{y} \hat{y} \hat{x} \hat{x} \hat{y} + \hat{y} \hat{x} v_z \hat{z} \hat{x} \hat{y} = - v_x \hat{x} - v_y \hat{y} + \hat{y} \hat{x} v_z \hat{z} \hat{x} \hat{y} \]</div>
+<div class="arithmatex">\[ \hat{y} \hat{x} v_z \hat{z} \hat{x} \hat{y} = v_z \hat{y} \hat{x} \hat{z} \hat{x} \hat{y} = -v_z \hat{y} \hat{x} \hat{x} \hat{z} \hat{y} = -v_z \hat{y} \hat{z} \hat{y} = v_z \hat{y} \hat{y} \hat{z} \]</div>
+<div class="arithmatex">\[ \hat{y} \hat{x} v_z \hat{z} \hat{x} \hat{y} = v_z \hat{z} \]</div>
+<div class="arithmatex">\[ \hat{y} \hat{x} \vec{v} \hat{x} \hat{y} = - v_x \hat{x} - v_y \hat{y} + v_z \hat{z} \]</div>
+<div class="arithmatex">\[ \text{ The } z \text{ coordinate is correct! Success! But the } x \text{ and } y \text{ got messed up, of course they did, we rotated twice. (Once for } \hat{y} \hat{x} \text{ on the left, and once for } \hat{x} \hat{y} \text{ on the right.) Let's add back in that angle } \theta \text{ to prove that we did rotate twice.} \]</div>
+<p>Do you remember <a href="https://silaspe.github.io/maths/complex.html">euler's identity</a>, <span class="arithmatex">\(e^{i \theta} = cos(\theta) + isin(\theta)\)</span> right? Well, this actually for any <span class="arithmatex">\(i\)</span> whose square is <span class="arithmatex">\(-1\)</span>, the thing is that <span class="arithmatex">\((\hat{x} \hat{y})^2 = \hat{x} \hat{y} \hat{x} \hat{y} = -\hat{x} \hat{x} \hat{y} \hat{y} = -1\)</span>, so</p>
+<div class="arithmatex">\[ e^{\hat{x} \hat{y} \theta} = cos(\theta) + \hat{x} \hat{y} \text{ } sin(\theta). \]</div>
+<div class="arithmatex">\[ \text{And just to make sure, let's test for } \theta = 90° \]</div>
+<div class="arithmatex">\[ cos(90°) + \hat{x} \hat{y} \text{ } sin(90°) = 0 + \hat{x} \hat{y} \text{ } 1 = \hat{x} \hat{y}. \]</div>
+<div class="arithmatex">\[ \text{Also, } cos(\theta) = c \text{ and } sin(\theta) = s \]</div>
+<div class="arithmatex">\[ \text{So, replace } \hat{x} \hat{y} \text{ and } \hat{y} \hat{x} \text{ with } c + \hat{x} \hat{y} \text{ } s \text{ and } cos(-\theta) + \hat{x} \hat{y} \text{ } sin(-\theta) \text{ respectively.} \]</div>
+<div class="arithmatex">\[ \text{(The second one can simplify to } c - \hat{x} \hat{y} \text{ } s \text{).} \]</div>
+<div class="arithmatex">\[ \vec{v} \prime = (v_x c - v_y s) \hat{x} + (v_y c + v_x s) \hat{y} + v_z \hat{z} \]</div>
+<div class="arithmatex">\[ (c - \hat{x} \hat{y} \text{ } s) \text{ } \vec{v} \text{ } (c + \hat{x} \hat{y} \text{ } s) = (c - \hat{x} \hat{y} \text{ } s) (v_x \hat{x} + v_y \hat{y} + v_z \hat{z}) (c + \hat{x} \hat{y} \text{ } s) \]</div>
+<div class="arithmatex">\[ (c - \hat{x} \hat{y} \text{ } s) \text{ } \vec{v} \text{ } (c + \hat{x} \hat{y} \text{ } s) = c v_x \hat{x} \text{ } c + c v_x \hat{x} \hat{x} \hat{y} \text{ } s - \hat{x} \hat{y} \text{ } s v_x \hat{x} \text{ } c - \hat{x} \hat{y} \text{ } s v_x \hat{x} \hat{x} \hat{y} \text{ } s + c v_y \hat{y} \text{ } c + c v_y \hat{y} \hat{x} \hat{y} \text{ } s - \hat{x} \hat{y} \text{ } s v_y \hat{y} \text{ } c - \hat{x} \hat{y} \text{ } s v_y \hat{y} \hat{x} \hat{y} \text{ } s + c v_z \hat{z} \text{ } c + c v_z \hat{z} \hat{x} \hat{y} \text{ } s - \hat{x} \hat{y} \text{ } s v_z \hat{z} \text{ } c - \hat{x} \hat{y} \text{ } s v_z \hat{z} \hat{x} \hat{y} \text{ } s = (v_x cc) \hat{x} + (v_x cs) \hat{x} \hat{x} \hat{y} - (v_x sc) \hat{x} \hat{y} \hat{x} - (v_x ss) \hat{x} \hat{y} \hat{x} \hat{x} \hat{y} + (v_y cc) \hat{y} + (v_y cs) \hat{y} \hat{x} \hat{y} - (v_y sc) \hat{x} \hat{y} \hat{y} - (v_y ss) \hat{x} \hat{y} \hat{y} \hat{x} \hat{y} + (v_z cc) \hat{z} + (v_z cs) \hat{z} \hat{x} \hat{y} - (v_z sc) \hat{x} \hat{y} \hat{z} - (v_z sin(\theta) sin(\theta)) \hat{x} \hat{y} \hat{z} \hat{x} \hat{y} \]</div>
+<div class="arithmatex">\[ \text{I had to split it in } 2 \text{, it reached the limit of LaTeX symbols per line.} \]</div>
+<div class="arithmatex">\[ \hat{x} \hat{x} \hat{y} = \hat{y} \]</div>
+<div class="arithmatex">\[ \hat{x} \hat{y} \hat{x} = -\hat{y} \hat{x} \hat{x} = -\hat{y} \]</div>
+<div class="arithmatex">\[ \hat{x} \hat{y} \hat{x} \hat{x} \hat{y} = \hat{x} \hat{y} \hat{y} = \hat{x} \]</div>
+<div class="arithmatex">\[ \hat{y} \hat{x} \hat{y} = -\hat{y} \hat{y} \hat{x} = -\hat{x} \]</div>
+<div class="arithmatex">\[ \hat{x} \hat{y} \hat{y} = \hat{x} \]</div>
+<div class="arithmatex">\[ \hat{x} \hat{y} \hat{y} \hat{x} \hat{y} = \hat{x} \hat{x} \hat{y} = \hat{y} \]</div>
+<div class="arithmatex">\[ \hat{z} \hat{x} \hat{y} = -\hat{x} \hat{z} \hat{y} = \hat{x} \hat{y} \hat{z} \]</div>
+<div class="arithmatex">\[ \hat{x} \hat{y} \hat{z} \hat{x} \hat{y} = -\hat{x} \hat{y} \hat{x} \hat{z} \hat{y} = \hat{x} \hat{x} \hat{y} \hat{z} \hat{y} = \hat{y} \hat{z} \hat{y} = -\hat{z} \hat{y} \hat{y} = -\hat{z} \]</div>
+<div class="arithmatex">\[ (c - \hat{x} \hat{y} \text{ } s) \text{ } \vec{v} \text{ } (c + \hat{x} \hat{y} \text{ } s) = (v_x cc) \hat{x} + (v_x cs) \hat{y} + (v_x sc) \hat{y} - (v_x ss) \hat{x} + (v_y cc) \hat{y} - (v_y cs) \hat{x} - (v_y sc) \hat{x} - (v_y ss) \hat{y} + (v_z cc) \hat{z} + (v_z cs) \hat{x} \hat{y} \hat{z} - (v_z sc) \hat{x} \hat{y} \hat{z} + (v_z ss) \hat{z} \]</div>
+<div class="arithmatex">\[ (v_x cc) \hat{x} + (v_x cs) \hat{y} + (v_x sc) \hat{y} - (v_x ss) \hat{x} = (v_x cc - v_x ss) \hat{x} + (v_x cs + v_x sc) \hat{y} = (v_x(cos(\theta) cos(\theta) - sin(\theta) sin(\theta))) \hat{x} + (v_x(cos(\theta) sin(\theta) + sin(\theta) cos(\theta))) \hat{y} \]</div>
+<p>And then, with some <a href="https://silaspe.github.io/maths/trigonometry.html">trigonometry identities</a>...</p>
+<div class="arithmatex">\[ cos(\theta + \theta) = cos(\theta) cos(\theta) - sin(\theta) sin(\theta) \]</div>
+<p><span class="arithmatex">\(500\)</span> Lines!</p>
+<div class="arithmatex">\[ sin(\theta + \theta) = cos(\theta) sin(\theta) + sin(\theta) cos(\theta) \]</div>
+<div class="arithmatex">\[ (v_x cc) \hat{x} + (v_x cs) \hat{y} + (v_x sc) \hat{y} - (v_x ss) \hat{x} = (v_x cos(2 \theta)) \hat{x} + (v_x sin(2 \theta)) \hat{y} \]</div>
+<div class="arithmatex">\[ (v_y cc) \hat{y} - (v_y cs) \hat{x} - (v_y sc) \hat{x} - (v_y ss) \hat{y} = (v_y cc - v_y ss) \hat{y} - (v_y cs + v_y sc) \hat{x} = (v_y(cos(\theta) cos(\theta) - sin(\theta) sin(\theta))) \hat{y} - (v_y(cos(\theta) sin(\theta) + sin(\theta) cos(\theta))) \hat{x} \]</div>
+<div class="arithmatex">\[ (v_y cc) \hat{y} - (v_y cs) \hat{x} - (v_y sc) \hat{x} - (v_y ss) \hat{y} = (v_y cos(2 \theta)) \hat{y} - (v_y sin(2 \theta)) \hat{x} \]</div>
+<div class="arithmatex">\[ (v_x cc) \hat{x} + (v_x cs) \hat{y} + (v_x sc) \hat{y} - (v_x ss) \hat{x} + (v_y cc) \hat{y} - (v_y cs) \hat{x} - (v_y sc) \hat{x} - (v_y ss) \hat{y} = (v_x cos(2 \theta)) \hat{x} + (v_x sin(2 \theta)) \hat{y} + (v_y cos(2 \theta)) \hat{y} - (v_y sin(2 \theta)) \hat{x} = (v_x cos(2 \theta) - v_y sin(2 \theta)) \hat{x} + (v_y cos(2 \theta) + v_x sin(2 \theta)) \hat{y} \]</div>
+<div class="arithmatex">\[ (v_z cc) \hat{z} + (v_z cs) \hat{x} \hat{y} \hat{z} - (v_z sc) \hat{x} \hat{y} \hat{z} + (v_z ss) \hat{z} = (v_z cc) \hat{z} + (v_z ss) \hat{z} = (v_z(cc + ss)) \hat{z} \]</div>
+<p>And then, with some more <a href="https://silaspe.github.io/maths/arctan.html#what-even-is-the-arctan-puzzle">trigonometry identities</a>...</p>
+<div class="arithmatex">\[ (v_z cc) \hat{z} + (v_z cs) \hat{x} \hat{y} \hat{z} - (v_z sc) \hat{x} \hat{y} \hat{z} + (v_z ss) \hat{z} = (v_z) \hat{z} \]</div>
+<div class="arithmatex">\[ \text{Also, } cos(2 \theta) = C \text{ and } sin(2 \theta) = S \]</div>
+<div class="arithmatex">\[ \vec{v} \prime \prime = (v_x C - v_y S) \hat{x} + (v_y C + v_x S) \hat{y} + v_z \hat{z} \]</div>
+<div class="arithmatex">\[ e^{-\hat{x} \hat{y} \theta} \vec{v} e^{\hat{x} \hat{y} \theta} = \vec{v} \prime \prime \]</div>
+<div class="arithmatex">\[ \text{Yessssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss! (Yes, that was } 100 \text{ s's.) Now I have proved that it did rotate twice. There is a simple fix, divide the angle by } 2. \]</div>
+<div class="arithmatex">\[ \vec{v} \prime = e^{-\hat{x} \hat{y} \frac{\theta}{2}} \vec{v} e^{\hat{x} \hat{y} \frac{\theta}{2}} \]</div>
+<div class="arithmatex">\[ \text{And there it is, } \vec{v} \text{ in its prime.} \]</div>
+<h3 id="maxwells-equation-singular-spoilers">Maxwell's equation (singular) (#spoilers)<a class="headerlink" href="#maxwells-equation-singular-spoilers" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[ \text{First, I don't know what any of it means, but here's the un-simplified Maxwell's equations (in the order of Gauss's law, Ampere's law, Faraday's law, and, I dunno, Gauss's law for magnetism I guess.):} \]</div>
+<div class="arithmatex">\[ \vec{\nabla} \cdot \vec{E} = \frac{\rho}{\epsilon_0} \]</div>
+<p>And cut! This page has reached the maximum LaTeX limit, continue at <a href="geometric_algebra_2.html">Geometric algebra 2!</a></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": [], "search": "assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

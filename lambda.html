@@ -1,0 +1,1737 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="geometric_algebra_2.html">
+      
+      
+        <link rel="next" href="rand.html">
+      
+      
+        
+      
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.2">
+    
+    
+      
+        <title>Lambda calculus - Silas Maths</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#chapter-1-introduction" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="index.html" title="Silas Maths" class="md-header__button md-logo" aria-label="Silas Maths" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Silas Maths
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Lambda calculus
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/silaspe/maths" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Silas Maths
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="index.html" title="Silas Maths" class="md-nav__button md-logo" aria-label="Silas Maths" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Silas Maths
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/silaspe/maths" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Silas Maths
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="brainstorm.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Brainstorming a new page
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="derivatives.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Calculus
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="polynomial.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Polynomial
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="calculus_2.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Calculus part 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="trigonometry.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Trigonometry
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="complex.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Complex
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="jacobian.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Jacobian
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="eigen.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Eigenstuff
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="gamma.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Gamma
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="harmonic.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Harmonic
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="binomial.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Binomial
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="fractional_calculas.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fractional calculus
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="fibbonacci.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fibbonacci
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="probability.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Probability
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="complex_2.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Complex II
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="the_strand_puzzle.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The strand puzzle
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="arctan.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The infamous "arctan puzzle"
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="mod.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modular arithmetic
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="geometric_algebra.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Geometric algebra
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="set_theory.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Set theory
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="actual_repo.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Code repo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="binary.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The best way to count
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="geometric_algebra_2.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Geometric algebra 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lambda calculus
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="lambda.html" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lambda calculus
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-1-introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Chapter \(1\): Introduction
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Chapter \(1\): Introduction">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#chapter-2-what-is-this-lambda" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        chapter \(2\): What is this \(\lambda\)?
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-3-what-is-lambda-calculus" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        chapter \(3\): What is Lambda Calculus?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-4-im-tired-of-this-heres-a-crash-course-on-lambda-calculus" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        chapter \(4\): I'm tired of this, here's a crash course on lambda calculus.
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-5-big-numbers-and-transfinite-ordinals" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        chapter \(5\): Big numbers and Transfinite ordinals
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="chapter \(5\): Big numbers and Transfinite ordinals">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#chapter-6-the-veblen-hierarchy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        chapter \(6\): THE VEBLEN HIERARCHY
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#logic" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        logic
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-7-currying-operations-numbers-arithmetic-operations-groupings-subtraction-is-0-inequalities-equalities-and-the-biggest-codable-number" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        chapter \(7\): currying operations, numbers, arithmetic operations, groupings, subtraction, is \(0\), inequalities, equalities, and the biggest (codable) number
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="rand.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Non-math
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="some4.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Summer of Math Exposition 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="logic.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Set theory II
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="projective_geometry.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Projective geometry
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="lcr.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lambda Calculus revisited
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="linear.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Linear algebra
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="group_theory.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Group theory
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="ring.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ring theory
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-1-introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Chapter \(1\): Introduction
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Chapter \(1\): Introduction">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#chapter-2-what-is-this-lambda" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        chapter \(2\): What is this \(\lambda\)?
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-3-what-is-lambda-calculus" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        chapter \(3\): What is Lambda Calculus?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-4-im-tired-of-this-heres-a-crash-course-on-lambda-calculus" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        chapter \(4\): I'm tired of this, here's a crash course on lambda calculus.
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-5-big-numbers-and-transfinite-ordinals" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        chapter \(5\): Big numbers and Transfinite ordinals
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="chapter \(5\): Big numbers and Transfinite ordinals">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#chapter-6-the-veblen-hierarchy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        chapter \(6\): THE VEBLEN HIERARCHY
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#logic" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        logic
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-7-currying-operations-numbers-arithmetic-operations-groupings-subtraction-is-0-inequalities-equalities-and-the-biggest-codable-number" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        chapter \(7\): currying operations, numbers, arithmetic operations, groupings, subtraction, is \(0\), inequalities, equalities, and the biggest (codable) number
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+  <h1>Lambda calculus</h1>
+
+<p>Ok, so, lambda calculus, I'll be following along with <a href="https://www.youtube.com/watch?v=3VQ382QG-y4">the first part</a>, at least for now, and I haven't seen this in a year, so we'll be reacting to it together.</p>
+<h3 id="chapter-1-introduction">Chapter <span class="arithmatex">\(1\)</span>: Introduction<a class="headerlink" href="#chapter-1-introduction" title="Permanent link">&para;</a></h3>
+<p>Ok, so, it looks like he's starting off with a function (written as <span class="arithmatex">\(I\)</span>) that he calls "the identity". Now, what do you think <span class="arithmatex">\(I(1)\)</span> is? * Man in the background says " same value! "<em>, and that is correct, <span class="arithmatex">\(I(1) = 1\)</span>, <span class="arithmatex">\(I(2) = 2\)</span>, what about <span class="arithmatex">\(I(I)\)</span>? * No one answers</em>, yeah, it's <span class="arithmatex">\(I\)</span>. (By the way, functions in lambda calculus are also called "combinators", each one has a function name (e.g. <span class="arithmatex">\(I\)</span>), a more descriptive function name (e.g. identity), and an alias (which is always a bird for some reason) (e.g. Idiot bird.)) (Also by the way, I'll be copying what he's saying for the rest of this page, and putting my thoughts in between parentheses.) And then he uses some fancy notation " <span class="arithmatex">\(\lambda a. a\)</span> ". It takes in (<span class="arithmatex">\(\lambda\)</span>) a value (<span class="arithmatex">\(a\)</span>), and outputs (<span class="arithmatex">\(.\)</span>) that same value (<span class="arithmatex">\(a\)</span>). So, <span class="arithmatex">\(I(x) = x\)</span> for any <span class="arithmatex">\(x\)</span>. As you saw, you can use functions as arguments (which is why they are called "combinators". Also, to me, this is the heart of lambda calculus), erbs are nouns and nouns are erbs. </p>
+<h4 id="chapter-2-what-is-this-lambda">chapter <span class="arithmatex">\(2\)</span>: What is this <span class="arithmatex">\(\lambda\)</span>?<a class="headerlink" href="#chapter-2-what-is-this-lambda" title="Permanent link">&para;</a></h4>
+<p>Ok, so, what was this <span class="arithmatex">\(\lambda\)</span> stuff from earlier? (Finally he explains it.) So, lambda is a signafier, it's a way to indicate that we are starting the definition of a function. So, we can read this (this <span class="arithmatex">\(\lambda a. a\)</span>) as: we're starting the definition of a function (<span class="arithmatex">\(\lambda\)</span>), which takes a single input (<span class="arithmatex">\(a\)</span>), or parameter (The <span class="arithmatex">\(.\)</span> signifies that we are no longer writing down the parameters), and returns some expression (<span class="arithmatex">\(a\)</span>). This whole thing is called a lambda abstraction in lambda calculus.</p>
+<h3 id="chapter-3-what-is-lambda-calculus">chapter <span class="arithmatex">\(3\)</span>: What is Lambda Calculus?<a class="headerlink" href="#chapter-3-what-is-lambda-calculus" title="Permanent link">&para;</a></h3>
+<p>Lambda calculus is a really tiny symbol manipulation framework, a calculus is just a way of moving around symbols on a page (I actually didn't know that), the subject that you may have learnd in school called "calculus" is a specific calculus for things like differentials and integrals and stuff like that, derivatives. But this calculus is about something else, this calculus is about evaluating and defining functions.</p>
+<h3 id="chapter-4-im-tired-of-this-heres-a-crash-course-on-lambda-calculus">chapter <span class="arithmatex">\(4\)</span>: I'm tired of this, here's a crash course on lambda calculus.<a class="headerlink" href="#chapter-4-im-tired-of-this-heres-a-crash-course-on-lambda-calculus" title="Permanent link">&para;</a></h3>
+<p>Functions (aka combinators) act on other functions, each one has a single letter abbreviation, and an alias. For the <span class="arithmatex">\(2\)</span> example functions, they are written " <span class="arithmatex">\(M\)</span> " and " <span class="arithmatex">\(K\)</span> ", and called "The Mockingbird" and "The Kestrel". Now, how it's defined in lambda calculus is " <span class="arithmatex">\(M = : \lambda a. aa\)</span> " and " <span class="arithmatex">\(K = : \lambda x. \lambda y. x\)</span> ". Now, this is where it starts to get complicated (that's a family meme). First, there's a <span class="arithmatex">\(\lambda\)</span> (aka lambda), which means: defining inputs (functions). Then, it defines an input (<span class="arithmatex">\(a\)</span>), then, there's a <span class="arithmatex">\(.\)</span>, which means: stop defining inputs. (Right here in the other one, there's another <span class="arithmatex">\(\lambda\)</span>, so, define inputs again.) Then, there's an <span class="arithmatex">\(aa\)</span> (which is actually <span class="arithmatex">\(a(a)\)</span>, it's just auto-parenthesized). The <span class="arithmatex">\(a\)</span> being a function is explaind by when I said "inputs (functions)", but then, there's another question: why is <span class="arithmatex">\(a\)</span> also an input? One or the other, right? Well, no, it is explaind by when I said "Functions act on other functions". Putting it all together, The Mockingbird function takes in one input, and evaluates it on itself, and The Kestrel takes in two inputs, and just does the first one.</p>
+<h3 id="chapter-5-big-numbers-and-transfinite-ordinals">chapter <span class="arithmatex">\(5\)</span>: Big numbers and Transfinite ordinals<a class="headerlink" href="#chapter-5-big-numbers-and-transfinite-ordinals" title="Permanent link">&para;</a></h3>
+<p>This chapter doesn't have much lambda calculus, it's just what I have been doing for the past week. <a href="https://www.youtube.com/watch?v=b-Bb_TyhC1A&amp;t=1449s">This</a>, <a href="https://www.youtube.com/watch?v=Mzgw6zMtipQ&amp;t=465s">this</a>, and <a href="https://www.youtube.com/watch?v=0X9DYRLmTNY&amp;t=486s">this</a> were my only evidence (in that order) (you should watch them anyways, they're really cool videos), I knew enough about the fast-growing hierarchies, but very little about the infinite ordinals.</p>
+<p>Also, that second video had a pretty cool premise of "biggest textable number" (the video went into more detail on that), so I'm gonna steal it.</p>
+<div class="arithmatex">\[ f_0 (x) = : x + 1 \]</div>
+<div class="arithmatex">\[ f_{n + 1} (x) = : f_n(f_n(f_n(...(f_n(x)))))... = f_n^x(x) \]</div>
+<div class="arithmatex">\[ f_1 (x) = 2x \]</div>
+<div class="arithmatex">\[ f_2 (x) = x \cdot 2^x \]</div>
+<div class="arithmatex">\[ f_3 (3) &gt; 10^{100} \times \text{The american national debt.} \]</div>
+<div class="arithmatex">\[ f_\omega (x) = : f_x (x) \]</div>
+<div class="arithmatex">\[ \text{Yes, that omega is a transfinite ordinal, but there's nothing infinite about it, it just grows faster than any finite number would (e.g. } f_{1000} (x) &lt; f_\omega (x) \text{ because for all } x &gt; 1000 \text{, the subscript would be bigger, thus it would grow faster), it's just notational shorthand, because if the input is really long to write, you would have to write it twice. But there is a connection between transfinite ordinals and these functions (which have a connection to big numbers, hence the name: Big numbers and Transfinite ordinals) that I will explain after I get to the largest ordinal that I know.} \]</div>
+<div class="arithmatex">\[ \text{For ordinals, there are three rules, } 1 \text{: you start with omega (} \omega \text{), } 2 \text{: you can add } 1 \text{, } 3 \text{: you can repeat 'til infinity*} \]</div>
+<div class="arithmatex">\[ \text{*only an infinity that you have already reached} \]</div>
+<div class="arithmatex">\[ \omega \]</div>
+<div class="arithmatex">\[ \omega + 1 \]</div>
+<div class="arithmatex">\[ \omega + 2 \]</div>
+<div class="arithmatex">\[ \omega + 3 \]</div>
+<div class="arithmatex">\[ \vdots \]</div>
+<div class="arithmatex">\[ \omega + \omega \]</div>
+<div class="arithmatex">\[ 2 \omega \]</div>
+<div class="arithmatex">\[ 2 \omega + 1 \]</div>
+<div class="arithmatex">\[ 2 \omega + 2 \]</div>
+<div class="arithmatex">\[ 2 \omega + 3 \]</div>
+<div class="arithmatex">\[ \vdots \]</div>
+<div class="arithmatex">\[ 2 \omega + \omega \]</div>
+<div class="arithmatex">\[ 3 \omega \]</div>
+<div class="arithmatex">\[ \vdots \]</div>
+<div class="arithmatex">\[ \omega \omega \]</div>
+<div class="arithmatex">\[ \omega^2 \]</div>
+<div class="arithmatex">\[ \omega^\omega \]</div>
+<div class="arithmatex">\[ \omega^{\omega^\omega} \]</div>
+<div class="arithmatex">\[ \omega^{\omega^{\omega^{\omega^{.^{.^.}}}}} = : \epsilon_0 = \text{}^\omega \omega \]</div>
+<div class="arithmatex">\[ \text{Where }^y x \text{ is pronounced "} x \text{ tetrated to } y \text{" and equals } x^{x^{x^{x^{.^{.^.}}}}} y \text{ times. (Also, it's parenthesized from the right to the left.)} \]</div>
+<div class="arithmatex">\[ \text{Also, } \epsilon_0 = \omega^{\epsilon_0} \text{, so } \epsilon_0 \text{ is a "fixed point" of } \omega \text{.} \]</div>
+<div class="arithmatex">\[ \epsilon_{n + 1} = : \epsilon_n^{\epsilon_n^{\epsilon_n^{\epsilon_n^{.^{.^.}}}}} \]</div>
+<div class="arithmatex">\[ \epsilon_\omega \]</div>
+<div class="arithmatex">\[ \epsilon_{\epsilon_0} \]</div>
+<div class="arithmatex">\[ \epsilon_{\epsilon_{\epsilon_{\epsilon_\ddots}}} = : \zeta_0 \]</div>
+<div class="arithmatex">\[ \text{IMPORTANT! This is only } \zeta_0 \text{ because at the end of that tower* of epsilons, there is a } 0 \text{.} \]</div>
+<div class="arithmatex">\[ \text{*The term "tower" is exclusive to exponents, the term for subscripts is "dungeon".} \]</div>
+<div class="arithmatex">\[ \zeta_n^{\zeta_n^{\zeta_n^{\zeta_n^{.^{.^.}}}}} = : \epsilon_{\zeta_n + 1} \]</div>
+<p><span class="arithmatex">\(100\)</span> lines.</p>
+<div class="arithmatex">\[ \zeta_{n + 1} = : \epsilon_{\epsilon_{\epsilon_{\epsilon_\ddots}}} \text{ Where the final epsilon is an } \epsilon_{\zeta_n + 1} \text{.} \]</div>
+<div class="arithmatex">\[ \zeta_\omega \]</div>
+<div class="arithmatex">\[ \zeta_{\epsilon_0} \]</div>
+<div class="arithmatex">\[ \zeta_{\zeta_0} \]</div>
+<div class="arithmatex">\[ \zeta_{\zeta_{\zeta_{\zeta_\ddots}}} = : \eta_0 = : \varphi_3 (0) \]</div>
+<h4 id="chapter-6-the-veblen-hierarchy">chapter <span class="arithmatex">\(6\)</span>: THE VEBLEN HIERARCHY<a class="headerlink" href="#chapter-6-the-veblen-hierarchy" title="Permanent link">&para;</a></h4>
+<p>First, if there's any confusion, the veblen hierarchy is this <span class="arithmatex">\(\varphi\)</span> thing.</p>
+<div class="arithmatex">\[ \varphi_0 (\alpha) = : \omega^\alpha \]</div>
+<div class="arithmatex">\[ \varphi_1 (\alpha) = : \epsilon_\alpha \]</div>
+<div class="arithmatex">\[ \varphi_2 (\alpha) = : \zeta_\alpha \]</div>
+<div class="arithmatex">\[ \varphi_3 (\alpha) = : \eta_\alpha \]</div>
+<div class="arithmatex">\[ \varphi_\omega (0) = \varphi_{\varphi_0 (1)} (0) \]</div>
+<div class="arithmatex">\[ \varphi_{\varphi_{\varphi_0 (1)} (0)} (0) \]</div>
+<p><span class="arithmatex">\(2 \cdot 2 \cdot 2 \cdot 2 \cdot 2 \cdot 2 \cdot 2\)</span> Lines!</p>
+<div class="arithmatex">\[ \varphi_{\varphi_{\varphi_{\varphi_\ddots (0)} (0)} (0)} (0) = : \Gamma_0 = \varphi_{\Gamma_0} (0) \]</div>
+<div class="arithmatex">\[ \text{Ok, here's the connection: Let's say that we want to turn an infinite ordinal (} \epsilon_0 \text{) into a function. First, the function will be } f_{\epsilon_0} (x) \text{, but for even more notational shorthand, it is written } \epsilon_0 (x) \text{. But here's how it's defined: step } 1 \text{: write the ordinal in terms of omega (so }^\omega \omega \text{), maybe easier said than done, step } 2 \text{: replace every omega with an } x \text{ (so, }^x x \text{), step } 3 \text{: make it a subscript for } f \text{ and evaluate it on } x \text{ (so } f_{^x x} (x) \text{).} \]</div>
+<p>Now, you can go over to <a href="https://silaspe.github.io/maths/actual_repo.html#big-numbers-and-transfinite-ordinals">my repo</a> to see how to do it in python.</p>
+<h4 id="logic">logic<a class="headerlink" href="#logic" title="Permanent link">&para;</a></h4>
+<p>Feel free to skip this part if you just want to see the big number in lambda calculus.</p>
+<div class="arithmatex">\[ K = \text{Kestrel} = \lambda x. \lambda y. x = : \text{True} = \text{T} \]</div>
+<div class="arithmatex">\[ Ki = \text{Kite} = \lambda x. \lambda y. y = : \text{False} = \text{F} \]</div>
+<div class="arithmatex">\[ \text{And} = : \lambda pq. p(q(\text{T}, \text{F}), q(\text{F}, \text{F})) = \lambda pq. p(q, \text{F}) = \lambda pq. p(q, p) \]</div>
+<div class="arithmatex">\[ \text{And} = \lambda pq. pqp \]</div>
+<div class="arithmatex">\[ \text{Or} = : \lambda pq. p(q(\text{T}, \text{T}), q(\text{T}, F)) = \lambda pq. p(\text{T}, q) = \lambda pq. p(p, q) \]</div>
+<div class="arithmatex">\[ \text{Or} = \lambda pq. ppq \]</div>
+<div class="arithmatex">\[ \text{Not} = : \lambda p. p(\text{F}, \text{T}) \]</div>
+<div class="arithmatex">\[ \text{Not} = \lambda p. p \text{F} \text{T} \]</div>
+<h3 id="chapter-7-currying-operations-numbers-arithmetic-operations-groupings-subtraction-is-0-inequalities-equalities-and-the-biggest-codable-number">chapter <span class="arithmatex">\(7\)</span>: currying operations, numbers, arithmetic operations, groupings, subtraction, is <span class="arithmatex">\(0\)</span>, inequalities, equalities, and the biggest (codable) number<a class="headerlink" href="#chapter-7-currying-operations-numbers-arithmetic-operations-groupings-subtraction-is-0-inequalities-equalities-and-the-biggest-codable-number" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[ \text{By the way, everything else that I had learned (other than this page's main plot of the biggest (codable) number) while writing this (currying operations, arithmetic operations, groupings, and subtraction) (that I learned via actually watching through the videos) was going to be in a post credit scene, but they were actually required for the code (e.g. I needed an exponent function for the `for i in range(x - 1): result = x ** result` on lines $4$ - $5$ of the epsilon subscript function).} \]</div>
+<div class="arithmatex">\[ \text{First: currying. How I think of it is like this (this entire next line):} \]</div>
+<div class="arithmatex">\[ \text{A function can have as many (or as few) inputs as possible. If the function is, say, The Kestrel (} 2 \text{ inputs), you can easily define the } 2 \text{ input version, and the no input version would just always return itself. Three is harder, but doable, and everything bigger has the same idea (one of two ideas both referred to as currying), it requires the first half of currying: } f(a, b) \text{ for single input function } f \text{ is equal to } (f(a))(b) \text{. But for } 1 \text{ input, it is much harder. New function: addition (yes, number addition) (specifically the } 2 \text{ input one). If you only give it } 1 \text{ input (} 1 \text{ for example), you get the add } 1 \text{ function. So that's the second rule of currying!} \]</div>
+<div class="arithmatex">\[ \text{So basically, currying is when you give a function the incorrect amount of inputs, and it either waits for more, or evaluates the function on the next input.} \]</div>
+<div class="arithmatex">\[ \text{you can also combine these to get } f(a, b) = f(a)(b) \text{ for } 2 \text{ input function } f \text{, making the comma redundant.} \]</div>
+<div class="arithmatex">\[ \text{Next: numbers (church numerals).} \]</div>
+<div class="arithmatex">\[ n0 = \lambda f. \lambda x. x \text{ } ( = \text{False}) \]</div>
+<div class="arithmatex">\[ n1 = \lambda f. \lambda x. f x \]</div>
+<div class="arithmatex">\[ n2 = \lambda f. \lambda x. f(f x) \]</div>
+<div class="arithmatex">\[ n3 = \lambda f. \lambda x. f(f(f x)) \]</div>
+<div class="arithmatex">\[ \text{So, } 1 \text{ equals once, } 2 \text{ equals twice, } 3 \text{ equals thrice, } 4 \text{ equals fourfold, and so on.} \]</div>
+<div class="arithmatex">\[ \text{Next: successor!} \]</div>
+<div class="arithmatex">\[ \text{Successor} (n2) = n3 \]</div>
+<div class="arithmatex">\[ \text{Successor} (f(f x)) = f(f(f x)) \]</div>
+<div class="arithmatex">\[ \text{Successor} (n) = f(n) \]</div>
+<div class="arithmatex">\[ Succ = \lambda nfx. f(n(f, x)) \]</div>
+<div class="arithmatex">\[ \text{And the auto-parenthesized one:} \]</div>
+<div class="arithmatex">\[ Succ = \lambda nfx. f(nfx) \]</div>
+<div class="arithmatex">\[ \text{Next: addition!} \]</div>
+<div class="arithmatex">\[ \text{Addition} (n2, n3) = n5 \]</div>
+<div class="arithmatex">\[ \text{Addition} (2, 3) = 2 + 1 + 1 + 1 = 3( + 1, 2) \]</div>
+<p><span class="arithmatex">\(200\)</span> Lines.</p>
+<div class="arithmatex">\[ Add = \lambda nk. n(Succ, k) \]</div>
+<div class="arithmatex">\[ \text{And the auto-parenthesized one:} \]</div>
+<div class="arithmatex">\[ Add = \lambda nk. n \text{ } Succ \text{ } k \]</div>
+<div class="arithmatex">\[ \text{Next: NOT subtraction, multiplication instead!} \]</div>
+<div class="arithmatex">\[ \text{because subtraction is so hard, it's going into its own subchapter.} \]</div>
+<div class="arithmatex">\[ Mult \text{ } n2 \text{ } n3 = n6 \]</div>
+<div class="arithmatex">\[ \text{Before I expand that, I would like to say that } f f f f f f x \text{ is interpreted as } f(f, f, f, f, f, x) \text{, because of currying, so I'll say that } (f ∘ f ∘ f ∘ f ∘ f ∘ f) x \text{ is equal to } f(f(f(f(f(f x))))) \text{.} \]</div>
+<div class="arithmatex">\[ Mult \text{ } n2 \text{ } n3 \text{ } f \text{ } x = (f ∘ f ∘ f ∘ f ∘ f ∘ f) (x) \]</div>
+<div class="arithmatex">\[ \text{By the way, that's a curried function on the left.} \]</div>
+<div class="arithmatex">\[ \text{But, composition is associative (Which is a word that he used } 6 \text{ times) (a function like } + \text{ is associative if and only if } a + (b + c) = (a + b) + c \text{), so you can write it like this:} \]</div>
+<div class="arithmatex">\[ Mult \text{ } n2 \text{ } n3 \text{ } f \text{ } x = ((f ∘ f ∘ f) ∘ (f ∘ f ∘ f)) (x) \]</div>
+<div class="arithmatex">\[ \text{you can kinda replace the } f ∘ f ∘ f \text{ with an } n3(f) \text{, but be careful, it's a curried function, so it will wait for an input, and then do } (f ∘ f ∘ f) (x) \text{. But the function is kinda already waiting for an input, so} \]</div>
+<div class="arithmatex">\[ Mult \text{ } n2 \text{ } n3 \text{ } f \text{ } x = ((n3(f)) ∘ (n3(f)) (x) \]</div>
+<div class="arithmatex">\[ \text{And we can use the same trick now to get} \]</div>
+<div class="arithmatex">\[ Mult \text{ } n2 \text{ } n3 \text{ } f \text{ } x = n2(n3(f)) (x) \]</div>
+<div class="arithmatex">\[ \text{But, because it's a curried function on the left, the } x \text{ on the right, and the fact that if } f(x) = g(x) \text{, than } f = g \text{, I can say that} \]</div>
+<div class="arithmatex">\[ Mult \text{ } n2 \text{ } n3 \text{ } f = n2(n3(f)) \]</div>
+<div class="arithmatex">\[ Mult = \lambda nkf. n(k(f)) \]</div>
+<div class="arithmatex">\[ \text{And the auto-parenthesized one:} \]</div>
+<div class="arithmatex">\[ Mult = \lambda nkf. n(kf) \]</div>
+<div class="arithmatex">\[ \text{Now, I'm just gonna say, multiplication is just function composition, represented with The Bluebird combinator.} \]</div>
+<div class="arithmatex">\[ B = \lambda fgx. f(gx) \]</div>
+<div class="arithmatex">\[ Mult = B \]</div>
+<div class="arithmatex">\[ \text{Next: exponents!} \]</div>
+<div class="arithmatex">\[ Pow \text{ } n2 \text{ } n4 = n16 \]</div>
+<div class="arithmatex">\[ Pow \text{ } n2 \text{ } n4 \text{ } f \text{ } x = (f ∘ f ∘ f ∘ f ∘ f ∘ f ∘ f ∘ f ∘ f ∘ f ∘ f ∘ f ∘ f ∘ f ∘ f ∘ f) (x) \]</div>
+<div class="arithmatex">\[ Pow \text{ } n2 \text{ } n3 \text{ } f = f ∘ f ∘ f ∘ f ∘ f ∘ f ∘ f ∘ f ∘ f ∘ f ∘ f ∘ f ∘ f ∘ f ∘ f ∘ f = (((f ∘ f) ∘ (f ∘ f)) ∘ ((f ∘ f) ∘ (f ∘ f))) ∘ (((f ∘ f) ∘ (f ∘ f)) ∘ ((f ∘ f) ∘ (f ∘ f))) = ((n2(f) ∘ n2(f)) ∘ (n2(f) ∘ n2(f))) ∘ ((n2(f) ∘ n2(f)) ∘ (n2(f) ∘ n2(f))) = (n2(n2(f)) ∘ n2(n2(f))) ∘ (n2(n2(f)) ∘ n2(n2(f))) = n2(n2(n2(f))) ∘ n2(n2(n2(f))) = n2(n2(n2(n2(f))))) = n4(n2, f) = n4(n2)(f) \]</div>
+<p><span class="arithmatex">\(2 \cdot 2 \cdot 2 \cdot 2 \cdot 2 \cdot 2 \cdot 2 \cdot 2\)</span> Lines!</p>
+<div class="arithmatex">\[ Pow \text{ } n2 \text{ } n4 = n4(n2) \]</div>
+<div class="arithmatex">\[ Pow = \lambda nk. k(n) \]</div>
+<div class="arithmatex">\[ \text{And the auto-parenthesized one:} \]</div>
+<div class="arithmatex">\[ Pow = \lambda nk. kn \]</div>
+<div class="arithmatex">\[ \text{Next: groupings!} \]</div>
+<div class="arithmatex">\[ \text{This subchapter is about the smallest data structure in lambda calculus, The Vireo (V), here's it's definition:} \]</div>
+<div class="arithmatex">\[ \text{V} = \lambda abf. f(a, b) \]</div>
+<div class="arithmatex">\[ \text{And the auto-parenthesized one:} \]</div>
+<div class="arithmatex">\[ \text{V} = \lambda abf. fab \]</div>
+<div class="arithmatex">\[ \text{This function mainly works with the second rule of currying, you see, The Vireo can do this:} \]</div>
+<div class="arithmatex">\[ \text{V} (a, b) (f) = f(a, b) \]</div>
+<div class="arithmatex">\[ \text{but what happens to the V} (a, b) \text{ before the } f \text{? Solution: } a \text{ and } b \text{ are paired together.} \]</div>
+<div class="arithmatex">\[ \text{By the way, because it is used so much (and this just makes sense), V} (a, b) = (a, b) \text{.} \]</div>
+<div class="arithmatex">\[ \text{Now, when you want to evaluate a regular function } f \text{ on a pair } p \text{, than that would be } p(f) \text{, but if you wanted a function that evaluates more like } f(p) \text{ than } p(f) \text{, then you need a pairwise function (not to be confused with piecewise function, as it is the only result when you google "pairwise function", and piecewise functions don't actually exist in lambda calculus) (e.g. a function that inputs a pair, and outputs the first thing in that pair) actually, that second thing would be really useful, I'm gonna try to derive it (as well as a function that inputs a pair, and outputs the second thing in that pair).} \]</div>
+<div class="arithmatex">\[ Fst((a, b)) = a \]</div>
+<div class="arithmatex">\[ \text{And because this is the first pairwise function that I'm gonna derive, it has to use regular functions in its definition, so} \]</div>
+<div class="arithmatex">\[ Fst((a, b)) = (a, b)(f) = f(a, b) = a \]</div>
+<div class="arithmatex">\[ \text{Hmm... } f(a, b) = a \text{, sounds like The Kestrel!} \]</div>
+<div class="arithmatex">\[ Fst = \lambda p. p (\text{T}) \]</div>
+<div class="arithmatex">\[ \text{And the auto-parenthesized one:} \]</div>
+<div class="arithmatex">\[ Fst = \lambda p. p \text{ } \text{T} \]</div>
+<p><span class="arithmatex">\(300\)</span> Lines.</p>
+<div class="arithmatex">\[ \text{And, because } \text{F} \text{ is like the opposite of } \text{T} \text{ (in that it does the second and not the first), } Snd \text{ should just be } \lambda p. p \text{ } \text{F} \text{!} \]</div>
+<div class="arithmatex">\[ \text{Ok, fine, I'll prove it (the } Snd = \lambda p. p \text{ } \text{F} \text{ thing).} \]</div>
+<div class="arithmatex">\[ (a, b)(\text{F}) = \text{F}(a, b) = b \]</div>
+<div class="arithmatex">\[ \text{And that's exactly what you'd expect (from a function that inputs a pair, and outputs the second thing in that pair), proof complete!} \]</div>
+<div class="arithmatex">\[ \text{Next: (it might not seem obvious why, but) I want to tell you about The Phi Combinator!} \]</div>
+<div class="arithmatex">\[ \Phi = \lambda p. \text{V} (Snd(p))(Succ(Snd(p))) \]</div>
+<div class="arithmatex">\[ \text{And the auto-parenthesized one:} \]</div>
+<div class="arithmatex">\[ \Phi = \lambda p. \text{V} (Snd \text{ } p)(Succ(Snd \text{ } p)) \]</div>
+<div class="arithmatex">\[ \text{And the pair notation one:} \]</div>
+<div class="arithmatex">\[ \Phi = \lambda p. (Snd(p), Succ(Snd(p))) \]</div>
+<div class="arithmatex">\[ \text{And the auto-parenthesized and pair notation one:} \]</div>
+<div class="arithmatex">\[ \Phi = \lambda p. (Snd \text{ } p, Succ(Snd \text{ } p)) \]</div>
+<div class="arithmatex">\[ \Phi((\text{doesn't matter what the first thing is}, n0)) = (n0, n1) \]</div>
+<div class="arithmatex">\[ \Phi((n0, n1)) = \Phi(\Phi((\text{doesn't matter what the first thing is}, n0))) = (n1, n2) \]</div>
+<div class="arithmatex">\[ \Phi((n1, n2)) = \Phi(\Phi(\Phi((\text{doesn't matter what the first thing is}, n0)))) = (n2, n3) \]</div>
+<div class="arithmatex">\[ \vdots \]</div>
+<div class="arithmatex">\[ \Phi((n6, n7)) = \Phi(\Phi(\Phi(\Phi(\Phi(\Phi(\Phi(\Phi((\text{doesn't matter what the first thing is}, n0))))))))) = n8(\Phi, (\text{doesn't matter what the first thing is}, n0)) = (n7, n8) \]</div>
+<div class="arithmatex">\[ Fst(n8(\Phi, (\text{doesn't matter what the first thing is}, n0))) = Fst((n7, n8)) \]</div>
+<div class="arithmatex">\[ Fst(n8(\Phi, (\text{doesn't matter what the first thing is}, n0))) = n7 \]</div>
+<div class="arithmatex">\[ Pred = \lambda n. Fst(n(\Phi, \text{V} (\text{doesn't matter what the first thing is}, n0))) \]</div>
+<div class="arithmatex">\[ \text{And the auto-parenthesized one:} \]</div>
+<div class="arithmatex">\[ Pred = \lambda n. Fst(n \text{ } \Phi \text{ } (\text{V} \text{ doesn't matter what the first thing is } n0)) \]</div>
+<div class="arithmatex">\[ \text{And the pair notation one:} \]</div>
+<div class="arithmatex">\[ Pred = \lambda n. Fst(n(\Phi, (\text{doesn't matter what the first thing is}, n0))) \]</div>
+<div class="arithmatex">\[ \text{And the auto-parenthesized and pair notation one:} \]</div>
+<div class="arithmatex">\[ Pred = \lambda n. Fst(n \text{ } \Phi \text{ } (\text{doesn't matter what the first thing is}, n0)) \]</div>
+<div class="arithmatex">\[ \text{Before we do subtraction, what is } Pred(n0) \text{?} \]</div>
+<div class="arithmatex">\[ Pred(n0) = Fst(n0(\Phi, (\text{doesn't matter what the first thing is}, n0))) \]</div>
+<div class="arithmatex">\[ n0(\Phi, (\text{doesn't matter what the first thing is}, n0)) = (\text{doesn't matter what the first thing is}, n0) \]</div>
+<div class="arithmatex">\[ Fst((\text{doesn't matter what the first thing is}, n0)) = \text{doesn't matter what the first thing is} \]</div>
+<div class="arithmatex">\[ \text{I'll just choose } n0 \text{.} \]</div>
+<div class="arithmatex">\[ \text{This also means that I have to redo the predecessor function.} \]</div>
+<div class="arithmatex">\[ Pred = \lambda n. Fst(n(\Phi, \text{V} (n0, n0))) \]</div>
+<div class="arithmatex">\[ \text{And the auto-parenthesized one:} \]</div>
+<div class="arithmatex">\[ Pred = \lambda n. Fst(n \text{ } \Phi \text{ } ( \text{V } n0 \text{ } n0)) \]</div>
+<div class="arithmatex">\[ \text{And the pair notation one:} \]</div>
+<div class="arithmatex">\[ Pred = \lambda n. Fst(n(\Phi, (n0, n0))) \]</div>
+<div class="arithmatex">\[ \text{And the auto-parenthesized and pair notation one:} \]</div>
+<div class="arithmatex">\[ Pred = \lambda n. Fst(n \text{ } \Phi \text{ } (n0, n0)) \]</div>
+<div class="arithmatex">\[ \text{Next: subtraction!} \]</div>
+<div class="arithmatex">\[ Sub = \lambda nk. n(Pred, k) \]</div>
+<div class="arithmatex">\[ \text{And the auto-parenthesized one:} \]</div>
+<div class="arithmatex">\[ Sub = \lambda nk. n \text{ } Pred \text{ } k \]</div>
+<div class="arithmatex">\[ \text{Next: is } 0 \text{!} \]</div>
+<div class="arithmatex">\[ f(n0) = \text{T} \]</div>
+<div class="arithmatex">\[ f(n) = \text{F } (n &gt; 0) \]</div>
+<div class="arithmatex">\[ f(n) = n(g, x) \]</div>
+<div class="arithmatex">\[ f(n0) = n0(g, x) = x = \text{T} \]</div>
+<div class="arithmatex">\[ x = \text{T} \]</div>
+<p><span class="arithmatex">\(400\)</span> Lines.</p>
+<div class="arithmatex">\[ f(n) = n(g, \text{T}) \]</div>
+<div class="arithmatex">\[ f(n1) = n1(g, \text{T}) = g(\text{T}) = \text{F} \]</div>
+<div class="arithmatex">\[ g(\text{T}) = \text{F} \]</div>
+<div class="arithmatex">\[ g = \text{Not???} \]</div>
+<div class="arithmatex">\[ f(n2) = n2(g, \text{T}) = g(g(\text{T})) = g(\text{F}) = \text{F} \]</div>
+<div class="arithmatex">\[ g(\text{F}) = \text{F} \]</div>
+<div class="arithmatex">\[ g(p) = \text{F} \]</div>
+<div class="arithmatex">\[ g = h(y) \]</div>
+<div class="arithmatex">\[ h(y)(p) = \text{F} \]</div>
+<div class="arithmatex">\[ h(y, p) = \text{F} \]</div>
+<div class="arithmatex">\[ y = \text{F} \]</div>
+<div class="arithmatex">\[ h = K \]</div>
+<div class="arithmatex">\[ g = K(\text{F}) \]</div>
+<div class="arithmatex">\[ f(n) = n(K(\text{F}), \text{T}) \]</div>
+<div class="arithmatex">\[ is0 = \lambda n. n(K(\text{F}))(\text{T}) \]</div>
+<div class="arithmatex">\[ \text{And the auto-parenthesized one:} \]</div>
+<div class="arithmatex">\[ is0 = \lambda n. n \text{ } (K \text{F}) \text{ } \text{T} \]</div>
+<div class="arithmatex">\[ \text{Next: I'll keep it a mystery, 'cause the question is:} \]</div>
+<div class="arithmatex">\[ \text{When is } n - k \text{ equal to } 0 \text{? (Well, } n0 \text{ actually.)} \]</div>
+<div class="arithmatex">\[ \text{Well, there's an obvious answer of when } n \text{is equal to } k \text{, but remember when I said that the predecessor of } n0 \text{ is } n0 \text{? So, any time } n \text{ is less than } k \text{, } n - k = n0 \text{. So} \]</div>
+<div class="arithmatex">\[ Leq = \lambda nk. is0(Sub(n, k)) \]</div>
+<div class="arithmatex">\[ \text{And the auto-parenthesized one:} \]</div>
+<div class="arithmatex">\[ Leq = \lambda nk. is0(Sub \text{ } n \text{ } k)) \]</div>
+<div class="arithmatex">\[ \text{Next: } ≥ \text{!} \]</div>
+<div class="arithmatex">\[ Geq = \lambda nk. is0(Sub(k, n)) \]</div>
+<div class="arithmatex">\[ \text{And the auto-parenthesized one:} \]</div>
+<div class="arithmatex">\[ Geq = \lambda nk. is0(Sub \text{ } k \text{ } n)) \]</div>
+<div class="arithmatex">\[ \text{Next: } &gt; \text{!} \]</div>
+<div class="arithmatex">\[ Gt = \text{Not} (Leq) \]</div>
+<div class="arithmatex">\[ \text{Next: } &lt; \text{!} \]</div>
+<div class="arithmatex">\[ Lt = \text{Not} (Geq) \]</div>
+<div class="arithmatex">\[ \text{Next: } = \text{!} \]</div>
+<div class="arithmatex">\[ Eq = \text{And} (Leq, Geq) \]</div>
+<div class="arithmatex">\[ \text{Next: } \ne \text{!} \]</div>
+<div class="arithmatex">\[ Neq = \text{Not} (Eq) \]</div>
+<div class="arithmatex">\[ \text{before we do the biggest (codable) number, let's write down every function that we know in one line.} \]</div>
+<div class="arithmatex">\[ I \text{ } M \text{ } K / \text{T} \text{ } Ki / \text{F} \text{ } \text{And} \text{ } \text{Or} \text{ } \text{Not} \text{ } n0 \text{ } n1 \text{ } n2 \text{ } n3 \text{ } Succ \text{ } Add \text{ } Mult \text{ } B \text{ } Pow \text{ } \text{V} \text{ } Fst \text{ } Snd \text{ } \Phi \text{ } Pred \text{ } Sub \text{ } is0 \text{ } Leq \text{ } Geq \text{ } Gt \text{ } Lt \text{ } Eq \text{ } Neq \]</div>
+<div class="arithmatex">\[ \text{Finally, the thing you've all been waiting for (final boss music starts playing), the biggest (codable) number} \]</div>
+<div class="arithmatex">\[ Fgh = \lambda nx. is0(n)(Succ(x), Eq(n, n1)(Mult(n2, x), Eq(n, n2)(Mult(x, Pow(2, x)), x(Fgh(Pred(n)), x)))) \]</div>
+<div class="arithmatex">\[ \text{Next: I'm skipping omega, because there's already an omega combinator (even though it's a capital omega), and it's equivalent to } M(M) \text{. So, epsilon next} \]</div>
+<div class="arithmatex">\[ Epss = \lambda xn. is0(n)(Pred(x)(Pow(x), x), Pred(x)(Pow(Epss(x, Pred(n))), Epss(x, Pred(n)))) \]</div>
+<div class="arithmatex">\[ Eps = \lambda xn. Fgh(Epss(x, n), x) \]</div>
+<div class="arithmatex">\[ \varphi_s = \lambda nxy. is0(n)(Pow(x, y), Eq(n, n1)(Epss(x, y), is0(y)(x(\varphi_s (Pred(n), x), 0), Pred(x)(Pow(\varphi_s (n, x, Pred(y))), x)))) \]</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": [], "search": "assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

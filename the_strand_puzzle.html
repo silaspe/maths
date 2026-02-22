@@ -1,0 +1,1758 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="complex_2.html">
+      
+      
+        <link rel="next" href="arctan.html">
+      
+      
+        
+      
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.2">
+    
+    
+      
+        <title>The strand puzzle - Silas Maths</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#house-numbers" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="index.html" title="Silas Maths" class="md-header__button md-logo" aria-label="Silas Maths" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Silas Maths
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              The strand puzzle
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/silaspe/maths" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Silas Maths
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="index.html" title="Silas Maths" class="md-nav__button md-logo" aria-label="Silas Maths" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Silas Maths
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/silaspe/maths" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Silas Maths
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="brainstorm.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Brainstorming a new page
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="derivatives.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Calculus
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="polynomial.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Polynomial
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="calculus_2.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Calculus part 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="trigonometry.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Trigonometry
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="complex.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Complex
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="jacobian.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Jacobian
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="eigen.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Eigenstuff
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="gamma.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Gamma
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="harmonic.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Harmonic
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="binomial.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Binomial
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="fractional_calculas.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fractional calculus
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="fibbonacci.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fibbonacci
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="probability.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Probability
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="complex_2.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Complex II
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The strand puzzle
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="the_strand_puzzle.html" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The strand puzzle
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#house-numbers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        house numbers
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="house numbers">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#calculation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        calculation
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="calculation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-formula-for-the-sums-of-integers-i-couldnt-find-a-better-name" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        the formula for the sums of integers (I couldn't find a better name)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#putting-it-all-together" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        putting it all together
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#back-to-the-strand-puzzle-or-whatever-i-was-doing-because-i-dont-remember" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        back to the strand puzzle or whatever I was doing because I don't remember
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pell-equation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        pell equation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#in-general" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        in general
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#time-to-keep-going" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Time to keep going
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-final-dash-in-the-silaspe-marathon-yes-that-is-a-reference-to-mathologer-marathon" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The final dash in the silaspe marathon (yes, that is a reference to mathologer marathon)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-final-step-in-the-silaspe-marathon" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The final step in the silaspe marathon
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="arctan.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The infamous "arctan puzzle"
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="mod.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modular arithmetic
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="geometric_algebra.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Geometric algebra
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="set_theory.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Set theory
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="actual_repo.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Code repo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="binary.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The best way to count
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="geometric_algebra_2.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Geometric algebra 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="lambda.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lambda calculus
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="rand.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Non-math
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="some4.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Summer of Math Exposition 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="logic.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Set theory II
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="projective_geometry.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Projective geometry
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="lcr.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lambda Calculus revisited
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="linear.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Linear algebra
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="group_theory.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Group theory
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="ring.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ring theory
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#house-numbers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        house numbers
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="house numbers">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#calculation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        calculation
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="calculation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-formula-for-the-sums-of-integers-i-couldnt-find-a-better-name" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        the formula for the sums of integers (I couldn't find a better name)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#putting-it-all-together" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        putting it all together
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#back-to-the-strand-puzzle-or-whatever-i-was-doing-because-i-dont-remember" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        back to the strand puzzle or whatever I was doing because I don't remember
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pell-equation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        pell equation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#in-general" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        in general
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#time-to-keep-going" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Time to keep going
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-final-dash-in-the-silaspe-marathon-yes-that-is-a-reference-to-mathologer-marathon" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The final dash in the silaspe marathon (yes, that is a reference to mathologer marathon)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-final-step-in-the-silaspe-marathon" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The final step in the silaspe marathon
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+  <h1>The strand puzzle</h1>
+
+<h2 id="house-numbers">house numbers<a class="headerlink" href="#house-numbers" title="Permanent link">&para;</a></h2>
+<p>First things first, I have to copy the strand puzzle word for word, having the same punctuation, same capitalization, and same timing for pressing enter, and here it is</p>
+<p>"There is a man who lives on a long street, numbered on</p>
+<p>his side one, two, three, and so on, and that all the</p>
+<p>numbers on one side of him added up exactly the same</p>
+<p>as all the numbers on the other side of him.</p>
+<p>.</p>
+<p>He said he knew there was more than</p>
+<p>fifty houses on that side of the street, but not so many</p>
+<p>as five hundred."</p>
+<p>Just to clarify, there are no houses on the other side of the street, and the house numbers don't skip any. To solve the puzzle, you find the number of his house, and the total number of houses on the street / number of the last house on the street, and that one is between <span class="arithmatex">\(50\)</span> and <span class="arithmatex">\(500\)</span>. For future reference, I will call those unknowns <span class="arithmatex">\(x\)</span> and <span class="arithmatex">\(y\)</span> respectively. When someone gave ramanujan (I'm a big fan of him by the way), he (supposedly) solved it in under <span class="arithmatex">\(10\)</span> seconds.</p>
+<h3 id="calculation">calculation<a class="headerlink" href="#calculation" title="Permanent link">&para;</a></h3>
+<p>also, because it is against MY rules to use something that I haven't derived (which is why the <a href="https://silaspe.github.io/maths/polynomial.html">polynomial</a> page has more than <span class="arithmatex">\(10\)</span> lines), and why most of the contents of this website are derivations), first I will derive the formula for the sums of integers using <a href="https://silaspe.github.io/maths/binomial.html">discrete calculus</a></p>
+<h4 id="the-formula-for-the-sums-of-integers-i-couldnt-find-a-better-name">the formula for the sums of integers (I couldn't find a better name)<a class="headerlink" href="#the-formula-for-the-sums-of-integers-i-couldnt-find-a-better-name" title="Permanent link">&para;</a></h4>
+<div class="arithmatex">\[ \sum\limits_{k = 0}^{n} k = f(n) \]</div>
+<div class="arithmatex">\[ \Delta f(n) = \sum\limits_{k = 0}^{n + 1} (k) - \sum\limits_{k = 0}^{n} (k) = n + 1 + \sum\limits_{k = 0}^{n} (k) - \sum\limits_{k = 0}^{n} (k) \]</div>
+<div class="arithmatex">\[ \Delta f(n) = n + 1 \]</div>
+<div class="arithmatex">\[ f(n - 1) + n = f(n) \]</div>
+<div class="arithmatex">\[ f(n - 1) = f(n) - n \]</div>
+<div class="arithmatex">\[ f(1) = 1 \]</div>
+<div class="arithmatex">\[ f(1 - 1) = f(0) = f(1) - 1 \]</div>
+<div class="arithmatex">\[ f(0) = 0 \]</div>
+<div class="arithmatex">\[ \Delta^2 g(n) = : \Delta (\Delta g(n)) \]</div>
+<div class="arithmatex">\[ \Delta^2 f(n) = \Delta (n + 1) = n + 1 + 1 - n - 1 = 1 \]</div>
+<div class="arithmatex">\[ \Delta f(0) = 0 + 1 = 1 \]</div>
+<div class="arithmatex">\[ \Delta^2 f(0) = 1 \]</div>
+<div class="arithmatex">\[ \text{for the rest of this page, until I say "ao!", the things about } f(n) \text{ and } g(n) \text{ work for any } f \text{ and } g \]</div>
+<div class="arithmatex">\[ \Delta (f(n) + g(n)) = f(n + 1) + g(n + 1) - f(n) - g(n) = f(n + 1) - f(n) + g(n + 1) - g(n) = \Delta f(n) + \Delta g(n) \]</div>
+<div class="arithmatex">\[ f(n + 1) = f(n) + \Delta f(n) \]</div>
+<div class="arithmatex">\[ \Delta (c f(n)) \text{(in respect to n)} = c f(n + 1) - c f(n) = c (f(n) + \Delta f(n)) - c f(n) = c f(n) + c \Delta f(n) - c f(n) = c \Delta f(n) \]</div>
+<h4 id="putting-it-all-together">putting it all together<a class="headerlink" href="#putting-it-all-together" title="Permanent link">&para;</a></h4>
+<div class="arithmatex">\[ \Delta \begin{pmatrix} n \\
+k \\ \end{pmatrix} \text{(in respect to n)} = \begin{pmatrix} n \\
+k - 1 \\ \end{pmatrix} \]</div>
+<div class="arithmatex">\[ \begin{pmatrix} n \\
+k \\ \end{pmatrix} = \frac{n^{\frac{k}{}}}{k!} \]</div>
+<div class="arithmatex">\[ \Delta f(n) = 5 \begin{pmatrix} n \\
+0 \\ \end{pmatrix} + 1 \begin{pmatrix} n \\
+1 \\ \end{pmatrix} + 4 \begin{pmatrix} n \\
+2 \\ \end{pmatrix} + 2 \begin{pmatrix} n \\
+3 \\ \end{pmatrix} \]</div>
+<div class="arithmatex">\[ f(n) = f(0) + 5 \begin{pmatrix} n \\
+1 \\ \end{pmatrix} + 1 \begin{pmatrix} n \\
+2 \\ \end{pmatrix} + 4 \begin{pmatrix} n \\
+3 \\ \end{pmatrix} + 2 \begin{pmatrix} n \\
+4 \\ \end{pmatrix} = f(0) \begin{pmatrix} n \\
+0 \\ \end{pmatrix} + 5 \begin{pmatrix} n \\
+1 \\ \end{pmatrix} + 1 \begin{pmatrix} n \\
+2 \\ \end{pmatrix} + 4 \begin{pmatrix} n \\
+3 \\ \end{pmatrix} + 2 \begin{pmatrix} n \\
+4 \\ \end{pmatrix} \]</div>
+<div class="arithmatex">\[ \text{ao!} \]</div>
+<div class="arithmatex">\[ \Delta^2 f(n) = \begin{pmatrix} n \\
+0 \\ \end{pmatrix} \]</div>
+<div class="arithmatex">\[ \Delta f(0) = 1 \]</div>
+<div class="arithmatex">\[ \Delta f(n) = \begin{pmatrix} n \\
+0 \\ \end{pmatrix} + \begin{pmatrix} n \\
+1 \\ \end{pmatrix} \]</div>
+<div class="arithmatex">\[ f(0) = 0 \]</div>
+<div class="arithmatex">\[ f(n) = \begin{pmatrix} n \\
+1 \\ \end{pmatrix} + \begin{pmatrix} n \\
+2 \\ \end{pmatrix} \]</div>
+<div class="arithmatex">\[ \begin{pmatrix} n \\
+0 \\ \end{pmatrix} = 1 \]</div>
+<div class="arithmatex">\[ \begin{pmatrix} n \\
+1 \\ \end{pmatrix} = n \]</div>
+<div class="arithmatex">\[ \begin{pmatrix} n \\
+2 \\ \end{pmatrix} = \frac{n (n - 1)}{2} \]</div>
+<div class="arithmatex">\[ f(n) = \frac{n (n - 1)}{2} + n = \frac{n (n - 1)}{2} + \frac{2n}{2} = \frac{(n - 1) n + (2) n}{2} = \frac{n (n - 1 + 2)}{2} \]</div>
+<div class="arithmatex">\[ \sum\limits_{k = 0}^{n} k = \frac{n (n + 1)}{2} \]</div>
+<h3 id="back-to-the-strand-puzzle-or-whatever-i-was-doing-because-i-dont-remember">back to the strand puzzle or whatever I was doing because I don't remember<a class="headerlink" href="#back-to-the-strand-puzzle-or-whatever-i-was-doing-because-i-dont-remember" title="Permanent link">&para;</a></h3>
+<p>Now I can find formulas for the sums of house numbers and say that they are equal. The first starts at <span class="arithmatex">\(1\)</span> and stops at <span class="arithmatex">\(x - 1\)</span>, so the formula is:</p>
+<div class="arithmatex">\[ \frac{(x - 1) x}{2} \]</div>
+<p>Now, for the second formula, there are two methods. If I say "ao!", then forget the last <span class="arithmatex">\(2\)</span> lines, if I say "oa!", then remember them. With that being said...</p>
+<p>one method is to pull out an <span class="arithmatex">\(x\)</span> at each of the <span class="arithmatex">\(y - x\)</span> steps, which amounts to an added <span class="arithmatex">\(x(y - x)\)</span>, so it is:</p>
+<div class="arithmatex">\[ \frac{(y - x) (y - x + 1)}{2} + x(y - x) = \frac{1}{2}((y - x) (y - x + 1) + 2x(y - x)) = \frac{1}{2}(y^2 - xy + y - xy + x^2 - x + 2xy - 2x^2) = \frac{1}{2}(y^2 + y - x^2 - x) = \frac{y (y + 1)}{2} - \frac{x (x + 1)}{2} \]</div>
+<p>ao!</p>
+<p>one method is to realize that this is the difference between the first <span class="arithmatex">\(y\)</span> houses and the first <span class="arithmatex">\(x\)</span> houses, so it is:</p>
+<div class="arithmatex">\[ \frac{y (y + 1)}{2} - \frac{x (x + 1)}{2} \]</div>
+<p>oa!</p>
+<p>you can probably tell that the first was made by me, but time for some algebra!</p>
+<div class="arithmatex">\[ \frac{(x - 1) x}{2} = \frac{y (y + 1)}{2} - \frac{x (x + 1)}{2} \]</div>
+<div class="arithmatex">\[ (x - 1) x = y (y + 1) - x (x + 1) \]</div>
+<div class="arithmatex">\[ x^2 - x = y^2 + y - x^2 - x \]</div>
+<div class="arithmatex">\[ 2x^2 = y^2 + y \]</div>
+<p>Bit more!</p>
+<div class="arithmatex">\[ 2 (4x^2) = 4y^2 + 4y \]</div>
+<div class="arithmatex">\[ 2 (2x)^2 = 4y^2 + 4y + 1 - 1 = (4y^2 + 4y + 1) - 1 = (2y + 1)^2 - 1 \]</div>
+<div class="arithmatex">\[ (2y + 1)^2 - 2 (2x)^2 - 1 = 0 \]</div>
+<div class="arithmatex">\[ (2y + 1)^2 - 2 (2x)^2 = 1 \]</div>
+<div class="arithmatex">\[ X = : 2x \]</div>
+<div class="arithmatex">\[ Y = : 2y + 1 \]</div>
+<div class="arithmatex">\[ Y^2 - 2X^2 = 1 \]</div>
+<p>Which you might (but probably don't) know as the...</p>
+<h3 id="pell-equation">pell equation<a class="headerlink" href="#pell-equation" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[ Y^2 - 2X^2 \approx 0 \]</div>
+<div class="arithmatex">\[ Y^2 \approx 2X^2 \]</div>
+<div class="arithmatex">\[ \frac{Y^2}{X^2} \approx 2 \]</div>
+<div class="arithmatex">\[ (\frac{Y}{X})^2 \approx 2 \]</div>
+<div class="arithmatex">\[ \frac{Y}{X} \approx \sqrt{2} \]</div>
+<p>But that is besides the point. The pell equation can be rearranged into <span class="arithmatex">\(Y = \sqrt{2X^2 + 1}\)</span>, then plug in values for <span class="arithmatex">\(X\)</span> until <span class="arithmatex">\(Y\)</span> is an integer. Doing this, (and remembering to divide by <span class="arithmatex">\(2\)</span> and take the floor), I'll list the solutions that we get.</p>
+<div class="arithmatex">\[ 6 \quad 8 \]</div>
+<div class="arithmatex">\[ 35 \quad 49 \]</div>
+<p>Just barely misses!</p>
+<div class="arithmatex">\[ 204 \quad 288 \]</div>
+<p>There it is!</p>
+<h3 id="in-general">in general<a class="headerlink" href="#in-general" title="Permanent link">&para;</a></h3>
+<p>The real solution would be a formula for the <span class="arithmatex">\(n\)</span>'th solution to the strand puzzle dropping the second rule, it is a bit tedious to check using this method and someone probably would have used the formula and this wouldn't work. I usually don't tell you <a href="https://www.youtube.com/watch?v=V2BybLCmUzs">the video</a> that this page is built on, but this time, you would notice that it takes a completely different method. So yes, I built the rest of this page from the ground up.</p>
+<p>Something that is easy to notice but hard to prove is that the bigger the <span class="arithmatex">\(X\)</span> and <span class="arithmatex">\(Y\)</span>, the better the approximation of <span class="arithmatex">\(\sqrt{2}\)</span>, so I will conjecture the following: Any ratio <span class="arithmatex">\(\frac{Y}{X}\)</span> for <span class="arithmatex">\(X\)</span> and <span class="arithmatex">\(Y\)</span> solving the pell equation*, is closer to <span class="arithmatex">\(\sqrt{2}\)</span> than any other fraction with denominator less than or equal to <span class="arithmatex">\(X\)</span>.</p>
+<p>*The numbers <span class="arithmatex">\(X\)</span> and <span class="arithmatex">\(Y\)</span> could solve the alternative <span class="arithmatex">\(Y^2 - 2X^2 = - 1\)</span> that alternates with the pell equation as <span class="arithmatex">\(X\)</span> and <span class="arithmatex">\(Y\)</span> get bigger, so instead of the pell equation, from now on, it is more like <span class="arithmatex">\(|Y^2 - 2X^2| = 1\)</span>.</p>
+<p>By the way, the conjecture was an "I'll leave this as an exercise for the viewer", and I made up the proof as I went.</p>
+<p>Proof (by contradiction): Let's say that there is a fraction <span class="arithmatex">\(\frac{b}{a}\)</span> that is a better approximation of <span class="arithmatex">\(\sqrt{2}\)</span> than <span class="arithmatex">\(\frac{Y}{X}\)</span> with <span class="arithmatex">\(a\)</span> strictly<em> less than <span class="arithmatex">\(X\)</span>. <span class="arithmatex">\(X\)</span> and <span class="arithmatex">\(Y\)</span> solve <span class="arithmatex">\(|Y^2 - 2X^2| = 1\)</span>, and <span class="arithmatex">\(X\)</span> is the next biggest solution than <span class="arithmatex">\(a\)</span>. Well, what is <span class="arithmatex">\(|b^2 - 2a^2|\)</span>? By the thing that is easy to notice but hard to prove, even if <span class="arithmatex">\(|b^2 - 2a^2| = 1\)</span>, it still doesn't work, so <span class="arithmatex">\(|b^2 - 2a^2| \neq 1\)</span>, and by the fact that <span class="arithmatex">\(\sqrt{2}\)</span> is irrational</em>* (I'll prove that later), <span class="arithmatex">\(|b^2 - 2a^2| \neq 0\)</span>, and by the fact that <span class="arithmatex">\(a\)</span> and <span class="arithmatex">\(b\)</span> are integers, <span class="arithmatex">\(|b^2 - 2a^2| = an\)</span> <span class="arithmatex">\(integer\)</span>. So <span class="arithmatex">\(|b^2 - 2a^2|\)</span> is an integer, does not equal <span class="arithmatex">\(0\)</span>, and does not equal <span class="arithmatex">\(1\)</span>. But the closer to <span class="arithmatex">\(1\)</span>, the better the approximation (unless the numbers are bigger). Thus, the proof is complete!</p>
+<p><em>If <span class="arithmatex">\(a = X\)</span>, than <span class="arithmatex">\(|b^2 - 2a^2| = |b^2 - 2X^2|\)</span>. If <span class="arithmatex">\(b = Y\)</span>, than I can ignore that case because <span class="arithmatex">\(\frac{Y}{X}\)</span> cannot be a better approximation of <span class="arithmatex">\(\sqrt{2}\)</span> than <span class="arithmatex">\(\frac{Y}{X}\)</span>. So if <span class="arithmatex">\(b &lt; Y\)</span>, <span class="arithmatex">\(b^2 &lt; Y^2\)</span> * </em>, so <span class="arithmatex">\(|b^2 - 2X^2|\)</span> also is not <span class="arithmatex">\(1\)</span>.</p>
+<p>(<em> </em>) If <span class="arithmatex">\(a\)</span>, <span class="arithmatex">\(b\)</span>, <span class="arithmatex">\(X\)</span>, and <span class="arithmatex">\(Y\)</span> are all negative, then <span class="arithmatex">\(b^2 &gt; Y^2\)</span>. But for one, if they are both negative, then they are not in reduced fractions. And for another, if one is negative, then the whole thing is negative, and <span class="arithmatex">\(\sqrt{2}\)</span> is not. Also if <span class="arithmatex">\(b &gt; Y\)</span> (yes, it was only a constraint on <span class="arithmatex">\(a\)</span> and not <span class="arithmatex">\(b\)</span>), then it still wouldn't work.</p>
+<p>** Warning! I will swap <span class="arithmatex">\(a\)</span> and <span class="arithmatex">\(b\)</span> in this proof: Note that an even number is two times an integer, if the square of a number is even, than the number that is being squared is even, and a ratio of two even numbers is not in reduced form. You can derive these because I am too busy writing this proof down. Let's say that a fraction <span class="arithmatex">\(\frac{a}{b}\)</span> in lowest terms (that will be important in the contradiction part of proof by contradiction) that equals <span class="arithmatex">\(\sqrt{2}\)</span>. Going back, this means that <span class="arithmatex">\(a^2 = 2b^2\)</span>. But <span class="arithmatex">\(b^2\)</span> is an integer, so <span class="arithmatex">\(a^2\)</span> is even, so <span class="arithmatex">\(a\)</span> is even. if <span class="arithmatex">\(a\)</span> is even, than let's say that <span class="arithmatex">\(a = 2m\)</span> for some integer <span class="arithmatex">\(m\)</span>, <span class="arithmatex">\(a^2 = 4m^2\)</span>, so <span class="arithmatex">\(4m^2 = 2b^2\)</span>, so <span class="arithmatex">\(2m^2 = b^2\)</span>. But <span class="arithmatex">\(m^2\)</span> is an integer, so <span class="arithmatex">\(b^2\)</span> is even, so <span class="arithmatex">\(b\)</span> is even, so <span class="arithmatex">\(a\)</span> and <span class="arithmatex">\(b\)</span> are both even, but if they are both even, (and if you remembered), this is a contradiction!</p>
+<p>Side note! With this proof, you can prove the thing that is easy to notice but hard to prove, but this would be a circular argument, because we need it to be true for it to be true. To this day, I haven't found any proof of this fact. But if I do, then you know the drill by now, I'll write the proof here and put this in quotation marks.</p>
+<p>Now, the proof is finally complete! Where was I again?</p>
+<h3 id="time-to-keep-going">Time to keep going<a class="headerlink" href="#time-to-keep-going" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[ Y^2 - 2X^2 = 1 \]</div>
+<div class="arithmatex">\[ \hat{Y} = 2X + Y \]</div>
+<div class="arithmatex">\[ \hat{X} = X + Y \]</div>
+<div class="arithmatex">\[ \hat{Y}^2 - 2 \hat{X}^2 = (2X + Y)^2 - 2(X + Y)^2 = 4X^2 + 4XY + Y^2 - 2X^2 - 4XY - 2Y^2 = 2X^2 - Y^2 = -(Y^2 - 2X^2) \]</div>
+<div class="arithmatex">\[ \hat{Y}^2 - 2 \hat{X}^2 = - 1 \]</div>
+<div class="arithmatex">\[ Y_N = 2 \hat{X} + \hat{Y} \]</div>
+<div class="arithmatex">\[ \text{(N for next)} \]</div>
+<div class="arithmatex">\[ X_N = \hat{X} + \hat{Y} \]</div>
+<p>But the calculations that I did earlier still work, so</p>
+<div class="arithmatex">\[ Y_N^2 - 2X_N^2 = 1 \]</div>
+<p>So like I said, solutions for the pell equation and inverse pell equation alternate.</p>
+<p>Okay, this actually happened: I was solving the strand puzzle and got up to this point. I met someone new, and naturally, I opened with how I got here and where I was with the strand puzzle. She said "can you prove that this is the next solution to the pell equation", and I said "I'm too tired for that". My point is that you should just run with it.</p>
+<p>From now on, <span class="arithmatex">\(X\)</span> will be replaced with <span class="arithmatex">\(X_n\)</span>, <span class="arithmatex">\(Y\)</span> will be replaced with <span class="arithmatex">\(Y_n\)</span>, <span class="arithmatex">\(\hat{X}\)</span> will be replaced with <span class="arithmatex">\(X_{n + 1}\)</span>, <span class="arithmatex">\(\hat{Y}\)</span> will be replaced with <span class="arithmatex">\(Y_{n + 1}\)</span>, <span class="arithmatex">\(X_N\)</span> will be replaced with <span class="arithmatex">\(X_{n + 2}\)</span>, and <span class="arithmatex">\(Y_N\)</span> will be replaced with <span class="arithmatex">\(Y_{n + 2}\)</span>. this is because it will look more like a formula on <span class="arithmatex">\(n\)</span> when you solve for <span class="arithmatex">\(Y_n\)</span> as opposed to <span class="arithmatex">\(Y\)</span>. Also these can be solutions to the inverse pell equation. For the pell equation, I want to have a <span class="arithmatex">\(2n\)</span>, so it has to be the inverse pell equation first, an easy answer is</p>
+<div class="arithmatex">\[ X_1 = 1 \]</div>
+<div class="arithmatex">\[ Y_1 = 1 \]</div>
+<p>and the first solution to the strand puzzle is <span class="arithmatex">\(1 \quad 1\)</span>, so <span class="arithmatex">\(2 \quad 3\)</span> falls out of that, you can verify this solution yourself (you might recognize <span class="arithmatex">\(\frac{17}{12}\)</span> from the mathologer video, it translates to <span class="arithmatex">\(6 \quad 8\)</span> considered as the first real solution, but we’ll get there), so</p>
+<div class="arithmatex">\[ X_2 = 2 \]</div>
+<div class="arithmatex">\[ Y_2 = 3 \]</div>
+<p>and because of the recurrence...</p>
+<div class="arithmatex">\[ X_{n + 1} = X_n + Y_n \]</div>
+<div class="arithmatex">\[ Y_{n + 1} = 2X_n + Y_n \]</div>
+<div class="arithmatex">\[ X_{n + 2} = X_{n + 1} + Y_{n + 1} = X_n + Y_n + 2X_n + Y_n = 3X_n + 2Y_2 = 2(X_n + Y_n) + X_n = 2X_{n + 1} + X_n \]</div>
+<div class="arithmatex">\[ Y_{n + 2} = 2X_{n + 1} + Y_{n + 1} = X_n + X_n + Y_n + Y_n + 2X_n + Y_n = 4X_n + 3Y_n = 2(2X_n + Y_n) + Y_n = 2Y_{n + 1} + Y_n \]</div>
+<div class="arithmatex">\[ X_n = 2X_{n - 1} + X_{n - 2} \]</div>
+<div class="arithmatex">\[ Y_n = 2Y_{n - 1} + Y_{n - 2} \]</div>
+<h3 id="the-final-dash-in-the-silaspe-marathon-yes-that-is-a-reference-to-mathologer-marathon">The final dash in the silaspe marathon (yes, that is a reference to mathologer marathon)<a class="headerlink" href="#the-final-dash-in-the-silaspe-marathon-yes-that-is-a-reference-to-mathologer-marathon" title="Permanent link">&para;</a></h3>
+<p>For now, I will just copy some text from the <a href="https://silaspe.github.io/maths/fibbonacci.html">fibonacci</a> page, and manipulate it.</p>
+<div class="arithmatex">\[ z^2 = z + 1 \]</div>
+<div class="arithmatex">\[ z = \begin{Bmatrix} 1 + \sqrt{2} = c \\
+1 - \sqrt{2} = d \\ \end{Bmatrix} \]</div>
+<div class="arithmatex">\[ c^2 = 2c + 1 \]</div>
+<div class="arithmatex">\[ c^3 = 2c^2 + c = 5c + 2 \]</div>
+<div class="arithmatex">\[ c^4 = 5c^2 + 2c = 12c + 5 \]</div>
+<div class="arithmatex">\[ \vdots \]</div>
+<div class="arithmatex">\[ c^n = c_{n, n} c + c_{n, n - 1} \]</div>
+<div class="arithmatex">\[ c^{n + 1} = c_{n + 1, n + 1}c + c_{n + 1, n} = c^n c = c_{n, n} c^2 + c_{n, n - 1} c = 2c_{n, n}c + c_{n, n} + c_{n, n - 1} c \]</div>
+<div class="arithmatex">\[ c_{n + 1, n} = c_{n, n} \]</div>
+<div class="arithmatex">\[ c_{n + 2, n} = c_{n + 1, n} = c_{n, n} \]</div>
+<div class="arithmatex">\[ \vdots \]</div>
+<div class="arithmatex">\[ c_{n + k, n} = c_{n, n} \]</div>
+<div class="arithmatex">\[ C_n = : c_{n, n} \]</div>
+<div class="arithmatex">\[ c^n = C_n c + C_{n - 1} \]</div>
+<div class="arithmatex">\[ c^{n + 1} = C_{n + 1}c + C_n = c^n c = C_n c^2 + C_{n - 1} c = 2C_n c + C_n + C_{n - 1} c \]</div>
+<div class="arithmatex">\[ C_{n + 1} = C_n + C_{n - 1} \]</div>
+<div class="arithmatex">\[ C_n = 2C_{n - 1} + C_{n - 2} \]</div>
+<div class="arithmatex">\[ c^2 = 2c + 1 = c C_2 + C_1 \]</div>
+<div class="arithmatex">\[ C_1 = 1 \]</div>
+<div class="arithmatex">\[ C_2 = 2 \]</div>
+<div class="arithmatex">\[ C_n = X_n \]</div>
+<div class="arithmatex">\[ c^n = X_n c + X_{n - 1} \]</div>
+<div class="arithmatex">\[ \text{Yay, now I could solve for $X_n$ if it weren't for the second term, so how can I solve that?} \]</div>
+<div class="arithmatex">\[ \text{Well, this is only because $c^2 = 2c + 1$, but same goes for $d$, so...} \]</div>
+<div class="arithmatex">\[ d^n = X_n d + X_{n - 1} \]</div>
+<div class="arithmatex">\[ \text{and subtracting, we get...} \]</div>
+<div class="arithmatex">\[ c^n - d^n = X_n c + X_{n - 1} - X_n d - X_{n - 1} = (c - d) X_n = (1 + \sqrt{2} - 1 + \sqrt{2}) X_n = 2\sqrt{2} X_n \]</div>
+<div class="arithmatex">\[ X_n = \frac{c^n - d^n}{2\sqrt{2}} = \frac{c^n - d^n}{c - d} \]</div>
+<div class="arithmatex">\[ \text{On a different note, rearranging the recurrence, we get} \]</div>
+<div class="arithmatex">\[ X_{n - 2} = X_n - 2X_{n - 1} \]</div>
+<div class="arithmatex">\[ Y_{n - 2} = Y_n - 2Y_{n - 1} \]</div>
+<div class="arithmatex">\[ X_2 = 2 = 2X_1 + X_0 = 2 + X_0 \]</div>
+<div class="arithmatex">\[ Y_2 = 3 = 2Y_1 + Y_0 = 2 + Y_0 \]</div>
+<div class="arithmatex">\[ X_0 = 0 \]</div>
+<div class="arithmatex">\[ Y_0 = 1 \]</div>
+<div class="arithmatex">\[ \text{but that is besides the point, what I want is a formula for } Y \text{. Skipping through a lot of trial and error, you might try this:} \]</div>
+<div class="arithmatex">\[ X_n = 2X_{n - 1} + X_{n - 2} \]</div>
+<div class="arithmatex">\[ X_{n - 1} = 2X_{n - 2} + X_{n - 3} \]</div>
+<div class="arithmatex">\[ X_n + X_{n - 1} = 2X_{n - 1} + X_{n - 2} + 2X_{n - 2} + X_{n - 3} \]</div>
+<div class="arithmatex">\[ (X_{(n)} + X_{(n) - 1}) = 2(X_{(n - 1)} + X_{(n - 1) - 1}) + (X_{(n - 2)} + X_{(n - 2) - 1}) \]</div>
+<div class="arithmatex">\[ X_1 + X_{1 - 1} = X_1 + X_0 = 1 + 0 \]</div>
+<div class="arithmatex">\[ X_1 + X_{1 - 1} = 1 \]</div>
+<div class="arithmatex">\[ X_2 + X_{2 - 1} = X_2 + X_1 = 2 + 1 \]</div>
+<div class="arithmatex">\[ X_2 + X_{2 - 1} = 3 \]</div>
+<div class="arithmatex">\[ \text{Sound familiar? If not, I'll write down the formulas that we have just derived along with the formulas for } Y. \]</div>
+<div class="arithmatex">\[ (X_{(n)} + X_{(n) - 1}) = 2(X_{(n - 1)} + X_{(n - 1) - 1}) + (X_{(n - 2)} + X_{(n - 2) - 1}) \]</div>
+<div class="arithmatex">\[ X_1 + X_{1 - 1} = 1 \]</div>
+<div class="arithmatex">\[ X_2 + X_{2 - 1} = 3 \]</div>
+<div class="arithmatex">\[ \text{Now for } Y. \]</div>
+<div class="arithmatex">\[ Y_n = 2Y_{n - 1} + Y_{n - 2} \]</div>
+<div class="arithmatex">\[ Y_1 = 1 \]</div>
+<div class="arithmatex">\[ Y_2 = 3 \]</div>
+<div class="arithmatex">\[ \text{Now, it should click.} \]</div>
+<div class="arithmatex">\[ Y_n = X_n + X_{n - 1} \]</div>
+<div class="arithmatex">\[ Y_n = \frac{c^n - d^n}{2\sqrt{2}} + \frac{c^{n - 1} - d^{n - 1}}{2\sqrt{2}} = \frac{c^n - d^n + c^{n - 1} - d^{n - 1}}{2\sqrt{2}} = \frac{c^n - d^n + \frac{1}{c} c^n - \frac{1}{d} d^n}{2\sqrt{2}} \]</div>
+<div class="arithmatex">\[ cd = (1 + \sqrt{2})(1 - \sqrt{2}) = 1 - \sqrt{2} + \sqrt{2} - 2 = -1 \]</div>
+<div class="arithmatex">\[ Y_n = -\frac{d^n - c^n + \frac{1}{d} d^n - \frac{1}{c} c^n}{2\sqrt{2}} = \frac{cd d^n - cd c^n + cd \frac{1}{d} d^n - cd \frac{1}{c} c^n}{2\sqrt{2}} = \frac{cd d^n - cd c^n + cd^n - dc^n}{2\sqrt{2}} = \frac{cd^n (d + 1) - dc^n (c + 1)}{2\sqrt{2}} \]</div>
+<div class="arithmatex">\[ c + 1 = 1 + \sqrt{2} + 1 = \sqrt{2}(1 + \sqrt{2}) = c\sqrt{2} \]</div>
+<div class="arithmatex">\[ d + 1 = 1 - \sqrt{2} + 1 = \sqrt{2}(\sqrt{2} - 1) = -d\sqrt{2} \]</div>
+<div class="arithmatex">\[ Y_n = \frac{-cdd^n\sqrt{2} - cdc^n\sqrt{2}}{2\sqrt{2}} = \frac{-cdc^n - cdd^n}{2} \]</div>
+<div class="arithmatex">\[ -cd = 1 \]</div>
+<div class="arithmatex">\[ Y_n = \frac{c^n + d^n}{2} \]</div>
+<h3 id="the-final-step-in-the-silaspe-marathon">The final step in the silaspe marathon<a class="headerlink" href="#the-final-step-in-the-silaspe-marathon" title="Permanent link">&para;</a></h3>
+<p>You might recognize these two formulas from the mathologer video that I showed you earlier. Around half of the page after and including the "in general" chapter was improv, including things like "the proof". The only things that weren't improv were the result for <span class="arithmatex">\(X_n\)</span>, the proof was using*, the other thing was the recurrence relation, I used a recurrence relation that went backwards, but it still counts. You can use these formulas (that I'll write down) for solutions for <span class="arithmatex">\(x_n\)</span> and <span class="arithmatex">\(y_n\)</span> (I bet that you forgot about them). I forgot to tell you that <span class="arithmatex">\(x_n\)</span> and <span class="arithmatex">\(y_n\)</span> are the <span class="arithmatex">\(n\)</span>'th solutions to the strand puzzle respectively. Another thing to notice is that on the <a href="https://github.com/silaspe/maths/blob/main/docs/the_strand_puzzle.md">github repo</a>, this is the <span class="arithmatex">\(395\)</span>'th line, this is already the longest page so far, but from now on, if I reach <span class="arithmatex">\(400\)</span> lines, I'll write down "<span class="arithmatex">\(400\)</span> lines!!".</p>
+<p>*Bunnymatics, a study of the population of immortal bunnies. They can be a child, or an adult. Each day, the child bunnies turn into adult bunnies, and the adult bunnies asexually reproduce and then clone themselves (probably an adult thing). Day one, there is one adult bunny. if you give the bunnies price of <span class="arithmatex">\(1\)</span> for child bunnies and price <span class="arithmatex">\(c\)</span> for adult bunnies, one more day is multiplying the price by <span class="arithmatex">\(c\)</span></p>
+<p><span class="arithmatex">\(400\)</span> lines!!!!!!</p>
+<div class="arithmatex">\[ X_n = \frac{(1 + \sqrt{2})^n - (1 - \sqrt{2})^n}{2\sqrt{2}} \]</div>
+<div class="arithmatex">\[ Y_n = \frac{(1 + \sqrt{2})^n + (1 - \sqrt{2})^n}{2} \]</div>
+<div class="arithmatex">\[ X_n \approx 2x_n \]</div>
+<div class="arithmatex">\[ Y_n \approx 2y_n + 1 \]</div>
+<div class="arithmatex">\[ x_n = \frac{X_{2n}}{2} \]</div>
+<div class="arithmatex">\[ y_n = \frac{Y_{2n}}{2} - \frac{1}{2} \]</div>
+<div class="arithmatex">\[ x_n = \frac{(1 + \sqrt{2})^{2n} - (1 - \sqrt{2})^{2n}}{4\sqrt{2}} \]</div>
+<div class="arithmatex">\[ y_n = \frac{(1 + \sqrt{2})^n + (1 - \sqrt{2})^n}{4} - \frac{1}{2} \]</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": [], "search": "assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

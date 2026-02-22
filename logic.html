@@ -1,0 +1,1936 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="some4.html">
+      
+      
+        <link rel="next" href="projective_geometry.html">
+      
+      
+        
+      
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.2">
+    
+    
+      
+        <title>Set theory II - Silas Maths</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#boolean-operations" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="index.html" title="Silas Maths" class="md-header__button md-logo" aria-label="Silas Maths" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Silas Maths
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Set theory II
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/silaspe/maths" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Silas Maths
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="index.html" title="Silas Maths" class="md-nav__button md-logo" aria-label="Silas Maths" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Silas Maths
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/silaspe/maths" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Silas Maths
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="brainstorm.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Brainstorming a new page
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="derivatives.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Calculus
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="polynomial.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Polynomial
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="calculus_2.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Calculus part 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="trigonometry.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Trigonometry
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="complex.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Complex
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="jacobian.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Jacobian
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="eigen.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Eigenstuff
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="gamma.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Gamma
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="harmonic.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Harmonic
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="binomial.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Binomial
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="fractional_calculas.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fractional calculus
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="fibbonacci.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fibbonacci
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="probability.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Probability
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="complex_2.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Complex II
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="the_strand_puzzle.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The strand puzzle
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="arctan.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The infamous "arctan puzzle"
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="mod.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modular arithmetic
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="geometric_algebra.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Geometric algebra
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="set_theory.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Set theory
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="actual_repo.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Code repo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="binary.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The best way to count
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="geometric_algebra_2.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Geometric algebra 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="lambda.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lambda calculus
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="rand.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Non-math
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="some4.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Summer of Math Exposition 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Set theory II
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="logic.html" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Set theory II
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#boolean-operations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        boolean operations
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="boolean operations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#extensions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        extensions
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#other-things-from-set-theory" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        other things from set theory
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="other things from set theory">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#numbers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        numbers
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#russells-paradox" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Russell's paradox
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#addition" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        addition
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mappings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        mappings
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="mappings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cardinality" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        cardinality
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mappings-again" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        mappings (again)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#other-random-stuff" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        other random stuff
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-8-axioms-of-zermelofraenkel-set-theory-zfc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        the \(8\) axioms of Zermelo–Fraenkel set theory (ZFC)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="the \(8\) axioms of Zermelo–Fraenkel set theory (ZFC)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-secret-9th-axiom-of-zermelofraenkel-set-theory-zfc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        the secret \(9\)'th axiom of Zermelo–Fraenkel set theory (ZFC)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#comparosins" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        comparosins
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#my-new-notation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        my new notation
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#my-newer-notation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        my newer notation
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="my newer notation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        \(1 + 1\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="projective_geometry.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Projective geometry
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="lcr.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lambda Calculus revisited
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="linear.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Linear algebra
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="group_theory.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Group theory
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="ring.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ring theory
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#boolean-operations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        boolean operations
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="boolean operations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#extensions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        extensions
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#other-things-from-set-theory" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        other things from set theory
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="other things from set theory">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#numbers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        numbers
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#russells-paradox" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Russell's paradox
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#addition" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        addition
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mappings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        mappings
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="mappings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cardinality" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        cardinality
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mappings-again" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        mappings (again)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#other-random-stuff" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        other random stuff
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-8-axioms-of-zermelofraenkel-set-theory-zfc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        the \(8\) axioms of Zermelo–Fraenkel set theory (ZFC)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="the \(8\) axioms of Zermelo–Fraenkel set theory (ZFC)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-secret-9th-axiom-of-zermelofraenkel-set-theory-zfc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        the secret \(9\)'th axiom of Zermelo–Fraenkel set theory (ZFC)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#comparosins" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        comparosins
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#my-new-notation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        my new notation
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#my-newer-notation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        my newer notation
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="my newer notation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        \(1 + 1\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+  <h1>Set theory II</h1>
+
+<p>This page doesn't require seeing the set theory page, but you can see it anyways.</p>
+<p>The idea behind this page is that you can derive all of set theory from logic, so <span class="arithmatex">\(\text{T}\)</span> is true, and <span class="arithmatex">\(\text{F}\)</span> is false.</p>
+<p>Tools: <span class="arithmatex">\(\text{T}\)</span>, <span class="arithmatex">\(\text{F}\)</span>, <span class="arithmatex">\(=\)</span>*, and another thing that will be defined later.</p>
+<p>*Returns true if the two things are the same, and false if they are not.</p>
+<h3 id="boolean-operations">boolean operations<a class="headerlink" href="#boolean-operations" title="Permanent link">&para;</a></h3>
+<p>I can derive the and operation like this:</p>
+<div class="arithmatex">\[ \text{F} ∩ \text{F} = \text{F} \]</div>
+<div class="arithmatex">\[ \text{F} ∩ \text{T} = \text{F} \]</div>
+<div class="arithmatex">\[ \text{T} ∩ \text{F} = \text{F} \]</div>
+<div class="arithmatex">\[ \text{T} ∩ \text{T} = \text{T} \]</div>
+<p>and the or operation like this:</p>
+<div class="arithmatex">\[ \text{F} ∨ \text{F} = \text{F} \]</div>
+<div class="arithmatex">\[ \text{F} ∨ \text{T} = \text{T} \]</div>
+<div class="arithmatex">\[ \text{T} ∨ \text{F} = \text{T} \]</div>
+<div class="arithmatex">\[ \text{T} ∨ \text{T} = \text{T} \]</div>
+<p>and the not operation like this:</p>
+<div class="arithmatex">\[ ¬ \text{F} = \text{T} \]</div>
+<div class="arithmatex">\[ ¬ \text{T} = \text{F} \]</div>
+<p>and the less famous implies operation like this:</p>
+<div class="arithmatex">\[ \text{F} → \text{F} = \text{T} \]</div>
+<div class="arithmatex">\[ \text{F} → \text{T} = \text{T} \]</div>
+<div class="arithmatex">\[ \text{T} → \text{F} = \text{F} \]</div>
+<div class="arithmatex">\[ \text{T} → \text{T} = \text{T} \]</div>
+<div class="arithmatex">\[ (p \iff q) = (p = q) \]</div>
+<div class="arithmatex">\[ (p = q) \iff (p → q) ∩ (q → p) \]</div>
+<div class="arithmatex">\[ \text{Order of operations: } ¬ &gt; ∩ &gt; ∨ &gt; = &gt; → &gt; \iff \text{.} \]</div>
+<h4 id="extensions">extensions<a class="headerlink" href="#extensions" title="Permanent link">&para;</a></h4>
+<div class="arithmatex">\[ \{ x| p(x) \} = \text{ The extension of } p(x) \text{ (and the secret } 4 \text{th tool) (curly braces didn't work for rendering reasons), the set of all } x \text{ such that } p(x) \text{ (is true), and this is how I'm going to define sets. This function } p(x) \text{ inputs, well, anything, and outputs a boolean (true or false) (e.g. is } x \text{ an odd number?).} \]</div>
+<div class="arithmatex">\[ \text{The extension of that particular function is the set of all odd numbers.} \]</div>
+<h3 id="other-things-from-set-theory">other things from set theory<a class="headerlink" href="#other-things-from-set-theory" title="Permanent link">&para;</a></h3>
+<p>You can also derive the membership or element sign like this:</p>
+<div class="arithmatex">\[ x \in \{ y| p(y) \} \iff p(x) \text{ (} = \text{T)} \]</div>
+<p>which goes somewhere in between and and not in the order of operations.</p>
+<p>And just for fun, I'll also derive the for any and there exists signs like this:</p>
+<div class="arithmatex">\[ \text{But first, } p(x) ≡ \text{T} \text{ Means } p(x) = \text{T} \text{ for all values of } x \text{, same thing for } p(x) ≡ \text{F} \text{ and } p(x) ≡ q(x) \text{.} \]</div>
+<div class="arithmatex">\[ \text{And it goes in between or and equals in the order of operations.} \]</div>
+<div class="arithmatex">\[ \text{I'll start with the general form for the for any sign: } ∀(x) \cdot p(x) \text{ (} = \text{T)}: q(x) \text{ (} = \text{T)} \]</div>
+<div class="arithmatex">\[ \text{And that example in logic: } p(x) → q(x) \text{, at least, I think.} \]</div>
+<div class="arithmatex">\[ \text{Yeah, it doesn't work, different values for } x \text{ would give different outputs.} \]</div>
+<div class="arithmatex">\[ \text{But, there's a simple trick, take the and over all values for } x \text{, so } (p(x) → q(x)) ≡ \text{T} \text{.} \]</div>
+<div class="arithmatex">\[ \text{And the general form for the there exists sign: } \exists (x) \cdot p(x) \text{ (} = \text{T)} \]</div>
+<div class="arithmatex">\[ \text{And that example in logic: } ¬(p(x) ≡ \text{F}) \]</div>
+<div class="arithmatex">\[ \text{Maybe I'll use it.} \]</div>
+<div class="arithmatex">\[ \text{There's also the highlander function, it's general form is} \]</div>
+<div class="arithmatex">\[ \exists ! (x) \cdot p(x) \text{ (} = \text{T)}  \]</div>
+<div class="arithmatex">\[ \text{And that example in logic: } ¬(p(x) ≡ \text{F}) ∩ (p(x) → (¬(y = x) → p(y) = \text{F})) \]</div>
+<div class="arithmatex">\[ \text{Alternative: } ¬(p(x) ≡ \text{F}) ∩ (p(x) ∩ ¬(y = x) → p(y) = \text{F}) \]</div>
+<h4 id="numbers">numbers<a class="headerlink" href="#numbers" title="Permanent link">&para;</a></h4>
+<div class="arithmatex">\[ 0 = Ø = \{ x| \text{F} \} \]</div>
+<div class="arithmatex">\[ \text{succ} (x) = \{ y| y = x \} \]</div>
+<p><span class="arithmatex">\(100\)</span> Lines.</p>
+<div class="arithmatex">\[ \text{succ} (0) = 1 \]</div>
+<div class="arithmatex">\[ \text{succ} (1) = 2 \]</div>
+<div class="arithmatex">\[ \text{succ} (2) = 3 \]</div>
+<div class="arithmatex">\[ 0 \in ℕ \]</div>
+<div class="arithmatex">\[ x \in ℕ → \text{succ} (x) \in ℕ \]</div>
+<div class="arithmatex">\[ ℕ = \{ x| (x = 0) ∨ \exists (y) \cdot (\text{succ} (y) = x) ∩ y \in ℕ \} = \{ x| (x = 0) ∨ ¬(((\text{succ} (y) = x) ∩ y \in ℕ) ≡ \text{F}) \} \]</div>
+<h4 id="russells-paradox">Russell's paradox<a class="headerlink" href="#russells-paradox" title="Permanent link">&para;</a></h4>
+<div class="arithmatex">\[ R = \{ x| ¬(x \in x) \} \]</div>
+<div class="arithmatex">\[ \text{Now, the question is, is } R \in R \text{? Because if } ¬(R \in R) \text{, than } ¬(x \in x) \text{ would be true (for } x \text{ equal to } R \text{), but then, } R \text{ would be an element of } R \text{, but if } R \in R \text{, than } ¬(x \in x) \text{ would be false (for } x \text{ equal to } R \text{), but then, } R \text{ wouldn't be an element of } R \text{, paradox!)} \]</div>
+<div class="arithmatex">\[ x \in \{ y| p(y) \} = \text{N (} \ne ℕ \text{)} \iff (¬(x \in \{ y| p(y) \}) → p(x) = \text{T}) ∩ ((x \in \{ y| p(y) \}) → p(x) = \text{F}) \]</div>
+<div class="arithmatex">\[ \text{N} ∩ \text{Anything} = \text{N} \]</div>
+<div class="arithmatex">\[ \text{N} ∨ \text{Anything} = \text{N} \]</div>
+<div class="arithmatex">\[ ¬ \text{N} = \text{N} \]</div>
+<div class="arithmatex">\[ R \in R = \text{N} \]</div>
+<p>Now, I'll define an infinite set of things <span class="arithmatex">\(x1, x2, x3,...\)</span> that are all in <span class="arithmatex">\(\{ x| \text{T} \}\)</span>.</p>
+<p>And define <span class="arithmatex">\(x1, x2, x3 \in S\)</span> as <span class="arithmatex">\(x1 \in S ∩ x2 \in S ∩ x3 \in S\)</span>.</p>
+<p>And that, if a statement involves <span class="arithmatex">\(x1\)</span> or <span class="arithmatex">\(x2\)</span> or <span class="arithmatex">\(x3\)</span> and so on, then it's true for any value <span class="arithmatex">\(x1, x2, x3,...\)</span>.</p>
+<h4 id="addition">addition<a class="headerlink" href="#addition" title="Permanent link">&para;</a></h4>
+<div class="arithmatex">\[ \text{I already defined the successor, what about addition?} \]</div>
+<div class="arithmatex">\[ x1, x2 \in ℕ → x1 + succ(x2) = succ(x1 + x2) \]</div>
+<div class="arithmatex">\[ x1 \in ℕ → x1 + 0 = x1 \]</div>
+<h3 id="mappings">mappings<a class="headerlink" href="#mappings" title="Permanent link">&para;</a></h3>
+<p>A mapping <span class="arithmatex">\(f\)</span> is, well, first pick a domain <span class="arithmatex">\(X\)</span> and codomain <span class="arithmatex">\(Y\)</span>. Then, um, I gotta get out the set theory textbook.</p>
+<p>Ok, I got out The real number system, in an algebraic setting, by J. B. Roberts. A gift from my grandpa.</p>
+<p>A mapping <span class="arithmatex">\(f\)</span> is kinda like a function or a dictionary in python, (a mapping <span class="arithmatex">\(f\)</span> from domain <span class="arithmatex">\(X\)</span> and codomain <span class="arithmatex">\(Y\)</span> is denoted as <span class="arithmatex">\(f: X → Y\)</span>) if you pick an <span class="arithmatex">\(x\)</span> in <span class="arithmatex">\(X\)</span>, is it <span class="arithmatex">\(tied\)</span> <span class="arithmatex">\(to\)</span> some <span class="arithmatex">\(y\)</span> in <span class="arithmatex">\(Y\)</span>. The particular value of <span class="arithmatex">\(y\)</span> for given <span class="arithmatex">\(x\)</span> is denoted as <span class="arithmatex">\(f(x)\)</span>, but for a given <span class="arithmatex">\(y\)</span> in <span class="arithmatex">\(Y\)</span>, there could be <span class="arithmatex">\(0\)</span>, <span class="arithmatex">\(1\)</span>, or more values of <span class="arithmatex">\(x\)</span> (e.g. The absolute value function). How you represent a mapping would be something like <span class="arithmatex">\(f(x) = x^2\)</span>, <span class="arithmatex">\(x ↦ x^2\)</span>, or <span class="arithmatex">\(\lambda x. x^2\)</span> <a href="https://silaspe.github.io/maths/lambda.html">.</a>. <span class="arithmatex">\(f(x)\)</span> for <span class="arithmatex">\(¬(x \in X)\)</span> is <span class="arithmatex">\(\text{N}\)</span> (<span class="arithmatex">\(\text{N}\)</span> stands for neither, but it can also br interpreted an NoneType from python). And finally, the image of <span class="arithmatex">\(f\)</span> is (<span class="arithmatex">\(I(f)\)</span>):</p>
+<div class="arithmatex">\[ I(f) = \{ y| y \in Y ∩ \exists (x) \cdot x \in X ∩ f(x) = y \} \]</div>
+<p>So</p>
+<div class="arithmatex">\[ I(f) = \{ y| y \in Y ∩ ¬((x \in X ∩ f(x) = y) ≡ \text{F}) \} \]</div>
+<p>But if you don't like domains and codomains, here's the versions without them:</p>
+<div class="arithmatex">\[ I(f) = \{ y| ¬(y = \text{N}) ∩ \exists (x) \cdot f(x) = y \} \]</div>
+<div class="arithmatex">\[ I(f) = \{ y| ¬(y = \text{N}) ∩ ¬((f(x) = y) ≡ \text{F}) \} \]</div>
+<h4 id="cardinality">cardinality<a class="headerlink" href="#cardinality" title="Permanent link">&para;</a></h4>
+<div class="arithmatex">\[ \text{The cardinality of } S \text{ is denoted as hashtag } S \text{, but hashtags aren't allowed in git, so it's } C(S) \text{ instead.} \]</div>
+<div class="arithmatex">\[ (\exists (n) \cdot n \in ℕ ∩ (S = \{ k| k &lt; n \})) → C(S) = n \]</div>
+<div class="arithmatex">\[ C(S) = C(T) \iff \exists (f: S → T) \cdot ∀(t) \cdot t \in T: \exists ! (s) \cdot f(s) = t \]</div>
+<h3 id="mappings-again">mappings (again)<a class="headerlink" href="#mappings-again" title="Permanent link">&para;</a></h3>
+<p>A definition that I thought of for mappings (that dosent imply a domain or codomain) uses a new thing to define axiomatioly (i.e. A thing that I have to define that it exists, and hasn't been seen before (e.g. How sets and extensions are not booleans)) (e.g. The <span class="arithmatex">\(\text{N}\)</span> in the Russell's paradox section): <span class="arithmatex">\(→\)</span> (Yes, another arrow (that makes <span class="arithmatex">\(4\)</span> (boolean arrow <span class="arithmatex">\(→\)</span>, mapping arrow <span class="arithmatex">\(→\)</span>, fancy functional arrow <span class="arithmatex">\(↦\)</span>, and new arrow <span class="arithmatex">\(→\)</span>))). I'll explain with an example: the function <span class="arithmatex">\(x ↦ x^2\)</span> would be denoted as the set containing <span class="arithmatex">\(0 → 0\)</span>, <span class="arithmatex">\(1 → 1\)</span>, <span class="arithmatex">\(2 → 4\)</span>, <span class="arithmatex">\(3 → 9\)</span>, <span class="arithmatex">\(4 → 16\)</span>, <span class="arithmatex">\(5 → 25\)</span>, and so on. (<span class="arithmatex">\((x → y)[1] = x\)</span>, And <span class="arithmatex">\((x → y)[2] = y\)</span>.)</p>
+<p>You can also define ordered sets as mappings from natural numbers greater than <span class="arithmatex">\(0\)</span> (or from all natural numbers if you want it to be confusing like in every single programming language exept fortran) (this is why I didn't use ordered lists last time, because, they are defined with mappings) (I gotta go ice skating now, bye!) (I'm back and it's been <span class="arithmatex">\(2\)</span> hours).</p>
+<div class="arithmatex">\[ f(x) = \begin{Bmatrix} ¬ \exists(t) \cdot t \in f ∩ (t[1] = x): \text{N} \\
+\exists(t) \cdot t \in f ∩ (t[1] = x): t[2] \\ \end{Bmatrix} \]</div>
+<h3 id="other-random-stuff">other random stuff<a class="headerlink" href="#other-random-stuff" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[ \{ x| p(x)] ∨ \{ x| q(x)] = \{ x| p(x) ∨ q(x)] \]</div>
+<div class="arithmatex">\[ \{ x| p(x)] ∩ \{ x| q(x)] = \{ x| p(x) ∩ q(x)] \]</div>
+<div class="arithmatex">\[ S \times T \text{ is pronounced "the cartesian product of } S \text{ and } T \text{".} \]</div>
+<div class="arithmatex">\[ \{ x| p(x)] \times \{ x| q(x)] = \{ l| l \text{ is a list of size } 2 ∩ (p(l(1)) ∩ q(l(2)))] \]</div>
+<div class="arithmatex">\[ S \times T = \{ l| l \text{ is a list of size } 2 ∩ (l(1) \in S ∩ l(2) \in T)] \]</div>
+<p>The reason why it's called "the cartesian product" is (at least, I think) because <span class="arithmatex">\(ℝ \times ℝ\)</span> (<span class="arithmatex">\(ℝ\)</span> is the set of all real numbers) is the set of all ordered pairs of real numbers. That is, the set of all points on the cartesian plane.</p>
+<p>The actual axiom of choice:</p>
+<p><span class="arithmatex">\(200\)</span> Lines.</p>
+<div class="arithmatex">\[ ∀(S) \cdot S \text{ Is a set of sets}: \exists (f: S → \{ x| \exists(T) \cdot x \in T ∩ T \in S]) \cdot ∀(T) \cdot T \in S: f(T) \in T \]</div>
+<div class="arithmatex">\[ \text{There's also compositions denoted as } f ∘ g \text{, but that does } g \text{ first, then } f \text{ (} (f ∘ g)(x) = f(g(x)) \text{). So I'll say that } f^* g \text{ does } f \text{ first, then } g \text{ (} (f^* g)(x) = g(f(x)) \text{).} \]</div>
+<p>Here's a diagram of sets <span class="arithmatex">\(A\)</span>, <span class="arithmatex">\(B\)</span>, <span class="arithmatex">\(C\)</span>, mappings <span class="arithmatex">\(f: A → B\)</span> and <span class="arithmatex">\(g: B → C\)</span>, <span class="arithmatex">\(f^* g: A → C\)</span>, and <span class="arithmatex">\(I: \{ x| \text{T}] → \{ x| \text{T}] = x ↦ x\)</span> <a href="https://www.youtube.com/watch?v=DrldYpmwN5s&amp;t=857s">:</a> (Just replace <span class="arithmatex">\(\text{id}\)</span> with <span class="arithmatex">\(I\)</span>, and <span class="arithmatex">\(g ∘ f\)</span> with <span class="arithmatex">\(f^* g\)</span>)</p>
+<h3 id="the-8-axioms-of-zermelofraenkel-set-theory-zfc">the <span class="arithmatex">\(8\)</span> axioms of Zermelo–Fraenkel set theory (ZFC)<a class="headerlink" href="#the-8-axioms-of-zermelofraenkel-set-theory-zfc" title="Permanent link">&para;</a></h3>
+<p><span class="arithmatex">\(1\)</span>: The Axiom of Extensionality:</p>
+<div class="arithmatex">\[ ∀(S, T): (∀(x): x \in S \iff x \in T → S = T) \]</div>
+<p><span class="arithmatex">\(2\)</span>: The Axiom of Pairing:</p>
+<div class="arithmatex">\[ ∀(S, T): \exists (U) \cdot U = \{ x| x = S ∨ x = T] \]</div>
+<p><span class="arithmatex">\(3\)</span>: The Axiom of Union:</p>
+<div class="arithmatex">\[ ∀(S, T): \exists (U) \cdot U = \{ x| x \in S ∨ x \in T] \]</div>
+<p><span class="arithmatex">\(4\)</span>: The Axiom of the Power Set:</p>
+<div class="arithmatex">\[ ∀(S): \exists (T) \cdot T = \{ x| x ⊆ S] \]</div>
+<p><span class="arithmatex">\(5\)</span>: The Axiom of Infinity:</p>
+<div class="arithmatex">\[ \exists (S) \cdot S = \{ x| x = \{ y| \text{F}] ∨ \exists (y) \cdot y \in S ∩ x = \{ z| z \in y ∨ z = y]] \]</div>
+<p><span class="arithmatex">\(6\)</span>: The Axiom of Schema of Replacement:</p>
+<div class="arithmatex">\[ ∀(f): \exists (S) \cdot S = \{ y| \exists (P) \cdot P \in f ∩ p[2] = y] \]</div>
+<p><span class="arithmatex">\(7\)</span>: The Axiom of Regularity:</p>
+<div class="arithmatex">\[ ∀(A): (A \ne \{ x| \text{F}] → \exists (B) \cdot (B \in (A ∩ B) ∩ A = \{ x| \text{F}])) \]</div>
+<p><span class="arithmatex">\(8\)</span>: The Axiom of Schema of Separation:</p>
+<div class="arithmatex">\[ ∀(S): \exists (T) \cdot ∀(x) \cdot x \in T: x \in S \]</div>
+<h4 id="the-secret-9th-axiom-of-zermelofraenkel-set-theory-zfc">the secret <span class="arithmatex">\(9\)</span>'th axiom of Zermelo–Fraenkel set theory (ZFC)<a class="headerlink" href="#the-secret-9th-axiom-of-zermelofraenkel-set-theory-zfc" title="Permanent link">&para;</a></h4>
+<p>The Axiom of Choice:</p>
+<div class="arithmatex">\[ ∀(S): \exists (f) \cdot ∀(T) \cdot T \in S ∩ T \ne \{ x| \text{F}]: f(T) \in T \]</div>
+<h3 id="comparosins">comparosins<a class="headerlink" href="#comparosins" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>My old notation</th>
+<th>Standard notation</th>
+<th>My new notation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="arithmatex">\(∀(x) \cdot p(x): q(x)\)</span></td>
+<td><span class="arithmatex">\(∀x. p(x) → q(x)\)</span></td>
+<td><span class="arithmatex">\((p(x) → q(x)) =_x \text{T}\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(∀(x): p(x)\)</span></td>
+<td><span class="arithmatex">\(∀x. p(x)\)</span></td>
+<td><span class="arithmatex">\(p(x) =_x \text{T}\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(\exists (x) \cdot p(x)\)</span></td>
+<td><span class="arithmatex">\(\exists x. p(x)\)</span></td>
+<td><span class="arithmatex">\(¬p(x) =_x \text{F}\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(∀(A): \exists (f) \cdot ∀(B) \cdot B \in A ∩ ¬B = \{ x \| \text{F}]: f(B) \in B\)</span></td>
+<td><span class="arithmatex">\(∀A. \exists f. ∀B. B \in A ∩ B \ne Ø → f(B) \in B\)</span></td>
+<td><span class="arithmatex">\(((B^S \in A^S ∩ ¬B = \{ x \| \text{F}] → f(B) \in B) =_f \text{F}) =_{A, B} \text{F}\)</span></td>
+</tr>
+</tbody>
+</table>
+<h3 id="my-new-notation">my new notation<a class="headerlink" href="#my-new-notation" title="Permanent link">&para;</a></h3>
+<p>The <span class="arithmatex">\(=_x\)</span> sign is pronounced "is equal to, for all values of <span class="arithmatex">\(x\)</span>". Also, I (kinda) wrote <span class="arithmatex">\(\exists (x) \cdot p(x)\)</span> as <span class="arithmatex">\(¬(∀(x): p(x) = \text{F}\)</span>), because the statement "there exists an <span class="arithmatex">\(x\)</span> where <span class="arithmatex">\(p(x)\)</span> is true" is just the inversion of the statemment "<span class="arithmatex">\(p(x)\)</span> is, for all values of <span class="arithmatex">\(x\)</span>, equal to false". Then I realized that the for any sign takes the and over all values of <span class="arithmatex">\(x\)</span> and that the there exists sign takes the or over all values of <span class="arithmatex">\(x\)</span>. So that <span class="arithmatex">\(¬(∀(x): p(x) = \text{F})\)</span> thing is just DeMorgan's laws: <span class="arithmatex">\(¬(¬p ∩ ¬q) = p ∨ q\)</span> and <span class="arithmatex">\(¬(¬p ∨ ¬q) = p ∩ q\)</span>. So the equuivalent statement for the for any sign is <span class="arithmatex">\(¬(\exists (x) \cdot p(x) = \text{F})\)</span></p>
+<h3 id="my-newer-notation">my newer notation<a class="headerlink" href="#my-newer-notation" title="Permanent link">&para;</a></h3>
+<p>All the symbols we need are: <span class="arithmatex">\(∧\)</span> (and), <span class="arithmatex">\(∨\)</span> (or), <span class="arithmatex">\(¬\)</span> (not), <span class="arithmatex">\(→\)</span> (implies), <span class="arithmatex">\(\iff\)</span> (if and only if/precisely when), <span class="arithmatex">\((\)</span> (open parentheses), <span class="arithmatex">\()\)</span>(close parentheses), <span class="arithmatex">\(∀\)</span> (for any/all), <span class="arithmatex">\(∃\)</span> (there exists), <span class="arithmatex">\(\in\)</span> (is an element) of, a separator (such as a dot), and none of the above (so literally anything else, I'll choose <span class="arithmatex">\(x\)</span>). These are all of the symbols you need to describe all of set theory, and hence, all of modern mathematics.</p>
+<p>Order of operations: <span class="arithmatex">\(() &gt; \in &gt; ¬ &gt; ∩ &gt; ∨ &gt; → &gt; \iff\)</span>, and if you have a for any or there exists sign, it keeps going as far to the right as possible, kind of like a lambda.</p>
+<p>Also, the statement <span class="arithmatex">\(x \in S\)</span> is the only possible way to make a statement that might be true and might be false, you can even think of sets as boolean functions that might be true and might be false depending on the input.</p>
+<p>Also also, the reason why I'm using a dot as in for any <span class="arithmatex">\(x\)</span> and then a dots is because all of the variables are just strings of <span class="arithmatex">\(x\)</span>'s, so for any <span class="arithmatex">\(xx\)</span>, <span class="arithmatex">\(xxx\)</span> and then something, if I didn't have that separator, it would just be written as one block of five <span class="arithmatex">\(x\)</span>'s, and it would not be certain what it actually meant.</p>
+<p>Also also also, instead of writing out the full thing with lots of <span class="arithmatex">\(x\)</span>'s, I'm usually just going to write <span class="arithmatex">\(x\)</span> subscript and then the amount of <span class="arithmatex">\(x\)</span>'s there should be.</p>
+<p>An example of a line of logic is: "<span class="arithmatex">\(∀x.x \ne Ø → ∃xx.xx \in x\)</span>, <span class="arithmatex">\(∀x.x \ne Ø → ∃xx.\)</span> Double <span class="arithmatex">\(x\)</span> is wihin <span class="arithmatex">\(x\)</span>", "<span class="arithmatex">\(∀x.x \ne Ø\)</span> implies that there exists double <span class="arithmatex">\(x\)</span> where double <span class="arithmatex">\(x\)</span> is wihin <span class="arithmatex">\(x\)</span>", "For all <span class="arithmatex">\(x\)</span>, x not being epty implies that there exists double <span class="arithmatex">\(x\)</span> where double <span class="arithmatex">\(x\)</span> is wihin <span class="arithmatex">\(x\)</span>"</p>
+<h4 id="1-1"><span class="arithmatex">\(1 + 1\)</span><a class="headerlink" href="#1-1" title="Permanent link">&para;</a></h4>
+<p>Before I start, none of this was scripted.</p>
+<p>What I want to do here is prove that <span class="arithmatex">\(1 + 1 = 2\)</span>. But most of the time, you find yourself in a loop of defining things. For example: what is <span class="arithmatex">\(1\)</span>? <span class="arithmatex">\(1\)</span> is the successor of <span class="arithmatex">\(0\)</span>. What is the successor operation? The successor operation is the function that-</p>
+<p>"Stop right there!" Said person #<span class="arithmatex">\(2\)</span>, "What is a function?".</p>
+<p>"Okay, fine!" Said person #<span class="arithmatex">\(1\)</span>, "I'll instead say that <span class="arithmatex">\(1\)</span> is the set that contains <span class="arithmatex">\(0\)</span>." (written <span class="arithmatex">\(\{ 0 \}\)</span>.)</p>
+<p>"That's better, but can you express <span class="arithmatex">\(\{ 0 \}\)</span> more formally?" Said person #<span class="arithmatex">\(2\)</span>.</p>
+<p>"Well, what I mean by that is: <span class="arithmatex">\(∀x.x \in \{ 0 \} \iff x = 0\)</span>." Said person #<span class="arithmatex">\(1\)</span>. (For any/all <span class="arithmatex">\(x\)</span>, <span class="arithmatex">\(x\)</span> is within <span class="arithmatex">\(\{ 0 \}\)</span> precisely when <span class="arithmatex">\(x = 0\)</span>.)</p>
+<p>"But what is <span class="arithmatex">\(=\)</span>?" Said person #<span class="arithmatex">\(2\)</span>.</p>
+<p>"Axiom #<span class="arithmatex">\(1\)</span> of ZFC: the axiom of extensionality" said person #<span class="arithmatex">\(1\)</span>, "it states that <span class="arithmatex">\(S = T\)</span> precisely when for any <span class="arithmatex">\(s \in S\)</span>, <span class="arithmatex">\(s \in T\)</span>, and for any <span class="arithmatex">\(t \in T\)</span>, <span class="arithmatex">\(t \in S\)</span>"</p>
+<p>"Okay, so what you're saying is that <span class="arithmatex">\(∀x.x \in 1 \iff (∀y.y \in x → y \in 0) ∧ (∀y.y \in 0 → y \in x)\)</span>." Said person #<span class="arithmatex">\(2\)</span>.</p>
+<p>"Yes. Is there anything else left undefined?" Said person #<span class="arithmatex">\(1\)</span>.</p>
+<p>"Yes, always!" Said person #<span class="arithmatex">\(2\)</span>. "What is <span class="arithmatex">\(0\)</span>?"</p>
+<p><span class="arithmatex">\(300\)</span> Lines.</p>
+<p>"Are you really gonna make me answer that?" Said person #<span class="arithmatex">\(1\)</span>.</p>
+<p>"Yes!" Said person #<span class="arithmatex">\(2\)</span>.</p>
+<p>"Okay, fine!" Person #<span class="arithmatex">\(1\)</span> said with frustration. "<span class="arithmatex">\(0\)</span> is Ø" (the empty set) "is the set with nothing in it, so <span class="arithmatex">\(¬∃x.x \in Ø\)</span>."</p>
+<p>"So, what you really meant by <span class="arithmatex">\(∀x.x \in 1 \iff (∀y.y \in x → y \in 0) ∧ (∀y.y \in 0 → y \in x)\)</span> was <span class="arithmatex">\(∀x.x \in 1 \iff ¬∃y.y \in x\)</span>." Said person #<span class="arithmatex">\(2\)</span></p>
+<p>"Yes!" Said person #<span class="arithmatex">\(1\)</span>.</p>
+<p>"So <span class="arithmatex">\(1\)</span> is the set of all empty sets, of which there are only one" Said person #<span class="arithmatex">\(2\)</span> "am I understanding this correctly?" Said person #<span class="arithmatex">\(2\)</span></p>
+<p>"Yes!" Said person #<span class="arithmatex">\(1\)</span>.</p>
+<p>I'm tired of this conversation between a mathematician and probably a mathematical snob who only accepts the truest logical statements crafted from pure mathematical set theory.</p>
+<div class="arithmatex">\[ ∀x_1.(∀x_2.x_2 \in x_1 \iff ¬∃x_3.x_3 \in x_2) → x_1 + x_1 = 2 \]</div>
+<div class="arithmatex">\[ \text{"For any variable (call it } x_1 \text{), that variable being } 1 \text{ implies that adding it to itself results in } 2 \text{, that is, there is not an } x_3 \in x_2 \text{"} \]</div>
+<div class="arithmatex">\[ ∀x_1.x_1 \in 2 \iff (∀x_2.x_2 \in x_1 \iff ¬∃x_3.x_3 \in x_2) \]</div>
+<div class="arithmatex">\[ \text{"For any variable (call it } x_1 \text{), } x_1 \in 2 \text{ implies that } x_1 = 1 \text{, that is, for any variable (call it } x_2 \text{), } x_2 \in 1 \text{ precisely when } x_2 = 0 \text{, that is, there is not an } x_3 \in x_2 \text{"} \]</div>
+<div class="arithmatex">\[ ∀x_1.∀x_2.(∀x_3.x_3 \in x_1 \iff ¬∃x_4.x_4 \in x_3) ∧ (∀x_3.x_3 \in x_2 \iff (∀x_4.x_4 \in x_3 \iff ¬∃x_5.x_5 \in x_4)) → ∀x_3.x_3 \in x_1 + x_1 \iff x_3 \in x_2 \]</div>
+<div class="arithmatex">\[ A(m, n) = m + n \]</div>
+<div class="arithmatex">\[ A(n, 0) = n \]</div>
+<div class="arithmatex">\[ S(n) = n + 1 \]</div>
+<div class="arithmatex">\[ A(m, S(n)) = S(A(m, n)) \]</div>
+<div class="arithmatex">\[ ∀m.∀n.n = S(m) \iff (∀x.x \in n \iff x = m) \]</div>
+<div class="arithmatex">\[ ∀m.∀n.n = S(m) \iff (∀x_1.x_1 \in n \iff (∀x_2.x_2 \in x_1 \iff x_2 \in m)) \]</div>
+<p>I feel like doing something else, how about Russel's paradox? It states that there is no set that conain only sets that don't contain themselves.</p>
+<div class="arithmatex">\[ ¬∃x_1.∀x_2.x_2 \in x_1 \iff ¬x_2 \in x_2 \]</div>
+<p>Next: the first axiom of set theory (The Axiom of Extensionality). It states that two sets are equal if they have the same elements, but I think it actually means that if two sets are equal (i.e. they have the same elements), a set cannot contain just one of them, it has to contain either both or neither of the sets.</p>
+<div class="arithmatex">\[ ∀x_1.∀x_2.x_1 = x_2 → ∀x_3.x_1 \in x_3 \iff x_2 \in x_3 \]</div>
+<div class="arithmatex">\[ ∀x_1.∀x_2.(∀x_3.x_3 \in x_1 \iff x_3 \in x_2) → ∀x_3.x_1 \in x_3 \iff x_2 \in x_3 \]</div>
+<p>Next: the second axiom of set theory (The Axiom of Foundation). It states that every set must have an element disjoint from itself (i.e. an element where the union of that element and the original set is empty (i.e. they don't have any common elements)).</p>
+<div class="arithmatex">\[ ∀x_1.x_1 \ne Ø → ∃x_2.x_2 \in x_1 ∧ x_2 ∩ x_1 = Ø \]</div>
+<div class="arithmatex">\[ ∀x_1.¬x_1 = Ø → ∃x_2.x_2 \in x_1 ∧ ¬∃x_3.x_3 \in x_1 ∧ x_3 \in x_2 \]</div>
+<div class="arithmatex">\[ ∀x_1.x_1 = Ø ∨ ∃x_2.x_2 \in x_1 ∧ ¬∃x_3.x_3 \in x_1 ∧ x_3 \in x_2 \]</div>
+<div class="arithmatex">\[ ∀x_1.¬(∃x_2.x_2 \in x_1) ∨ ∃x_2.x_2 \in x_1 ∧ ¬∃x_3.x_3 \in x_1 ∧ x_3 \in x_2 \]</div>
+<p>Next: the third axiom of set theory (The Axiom of Pairing). Actually, I'm not going to use the axiom of pairing, I'm going to use the closely related singleton axiom, It states that if you have a set then there exists the set containing that set, as opposed to the axiom of pairing which says that if you have two sets then there is a set containing both of them. These two statements are equivalent, but I prefer the first one.</p>
+<p>Also I realized that this axiom makes the axiom a regularity redundant. Let's say that <span class="arithmatex">\(S = \{ S \}\)</span>. then you would say that <span class="arithmatex">\(S\)</span> is a set because it is equal to the set containing <span class="arithmatex">\(S\)</span>. So we would also need to assume that <span class="arithmatex">\(S\)</span> is a set for that to work, so that would mean that we need to prove that <span class="arithmatex">\(S\)</span> is a set, so that would mean that we need to prove that <span class="arithmatex">\(S\)</span> is a set, you just never get to the bottom of it and you can never declare that <span class="arithmatex">\(S\)</span> is a set.</p>
+<p>Also this is a weird kind of axiom because it doesn't always make the set containing a set into a set, you still have to prove it with the other rules. So we just knocked out two axioms of set theory with one stone.</p>
+<p>Also, at around this point I would like to tell you something about existence that you can tell someone to cocktail party.</p>
+<p>First, I have to think of a property. How about even-ness? Okay, now that we have a property, I can tell you what the problem is.</p>
+<p>The statement "there does not exist <span class="arithmatex">\(x\)</span> where <span class="arithmatex">\(x\)</span> is odd" is the same as the statement "for all <span class="arithmatex">\(x\)</span>, <span class="arithmatex">\(x\)</span> is even". The statement "there does not exist <span class="arithmatex">\(x\)</span> where <span class="arithmatex">\(x\)</span> is even" is the same as the statement "for all <span class="arithmatex">\(x\)</span>, <span class="arithmatex">\(x\)</span> is odd". The statement "there exists <span class="arithmatex">\(x\)</span> where <span class="arithmatex">\(x\)</span> is odd" is just the inversion of the statement "for all <span class="arithmatex">\(x\)</span>, <span class="arithmatex">\(x\)</span> is even". And the statement "there exists <span class="arithmatex">\(x\)</span> where <span class="arithmatex">\(x\)</span> is even" is just the inversion of the statement "for all <span class="arithmatex">\(x\)</span>, <span class="arithmatex">\(x\)</span> is odd".</p>
+<p>If you put it that way, the <span class="arithmatex">\(∃\)</span> seems kind of redundant.</p>
+<p>This for all/their exists thing is a consequence of De Morgan's laws.</p>
+<p>Didn't I already say this? Anyways, before we continue with the axioms have set theory. I'm goind to do the axioms of proof theory. Of which I'm going to take from <a href="https://youtu.be/3czgfHULZCs?t=644s">this course by bri the math guy</a> (the actual series didn't exist, only the full movie), using the statements <span class="arithmatex">\(x \in S\)</span> and <span class="arithmatex">\(y \in S\)</span> (yes) instead of <span class="arithmatex">\(p\)</span> and <span class="arithmatex">\(q\)</span>.</p>
+<p>Modes Ponens: If <span class="arithmatex">\(p\)</span> is true and <span class="arithmatex">\(p\)</span> implies <span class="arithmatex">\(q\)</span>, then <span class="arithmatex">\(q\)</span> is true. It's like the consequence of an implication.</p>
+<div class="arithmatex">\[ ∀S.∀x.∀y.x \in S ∧ (x \in S → y \in S) → y \in S \]</div>
+<p>Modes Tollens: If <span class="arithmatex">\(q\)</span> is false and <span class="arithmatex">\(p\)</span> implies <span class="arithmatex">\(q\)</span>, then <span class="arithmatex">\(p\)</span> is false. It's like an implication turned on its head.</p>
+<div class="arithmatex">\[ ∀S.∀x.∀y.¬y \in S ∧ (x \in S → y \in S) → ¬x \in S \]</div>
+<p>Hypothetical Syllogism: If <span class="arithmatex">\(p\)</span> implies <span class="arithmatex">\(q\)</span> and <span class="arithmatex">\(q\)</span> implies <span class="arithmatex">\(r\)</span>, then <span class="arithmatex">\(p\)</span> implies <span class="arithmatex">\(r\)</span>. i.e. you can chain implications.</p>
+<div class="arithmatex">\[ ∀S.∀x.∀y.∀z.(x \in S → y \in S) ∧ (y \in S → z \in S) → (x \in S → z \in S) \]</div>
+<p>Disjunctive Syllogism: If <span class="arithmatex">\(p\)</span> is false and <span class="arithmatex">\(p\)</span> or <span class="arithmatex">\(q\)</span> is true, then <span class="arithmatex">\(q\)</span> is false. It has to be one or the other! (Or both, but that's irrelevant.)</p>
+<div class="arithmatex">\[ ∀S.∀x.∀y.¬x \in S ∧ (x \in S ∨ y \in S) → y \in S \]</div>
+<p>Addition: If <span class="arithmatex">\(p\)</span> is true, then <span class="arithmatex">\(p\)</span> or <span class="arithmatex">\(q\)</span> is true. The more, the marrier!</p>
+<div class="arithmatex">\[ ∀S.∀x.∀y.x \in S → (x \in S ∨ y \in S) \]</div>
+<p>Simplification: If <span class="arithmatex">\(p\)</span> and <span class="arithmatex">\(q\)</span> are true, then <span class="arithmatex">\(p\)</span> is true. They must both be true!</p>
+<p><span class="arithmatex">\(400\)</span> Lines.</p>
+<div class="arithmatex">\[ ∀S.∀x.∀y.(x \in S ∧ y \in S) → x \in S \]</div>
+<p>Conjunction: If <span class="arithmatex">\(p\)</span> is true and <span class="arithmatex">\(q\)</span> is true, then <span class="arithmatex">\(p\)</span> and <span class="arithmatex">\(q\)</span> are true. Litterally just <span class="arithmatex">\(p\)</span> implies <span class="arithmatex">\(p\)</span>.</p>
+<div class="arithmatex">\[ ∀S.∀x.∀y.(x \in S ∧ y \in S) → (x \in S ∧ y \in S) \]</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": [], "search": "assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

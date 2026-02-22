@@ -1,0 +1,2857 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="linear.html">
+      
+      
+        <link rel="next" href="ring.html">
+      
+      
+        
+      
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.2">
+    
+    
+      
+        <title>Group theory - Silas Maths</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#textbook-definitions" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="index.html" title="Silas Maths" class="md-header__button md-logo" aria-label="Silas Maths" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Silas Maths
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Group theory
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/silaspe/maths" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Silas Maths
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="index.html" title="Silas Maths" class="md-nav__button md-logo" aria-label="Silas Maths" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Silas Maths
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/silaspe/maths" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Silas Maths
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="brainstorm.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Brainstorming a new page
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="derivatives.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Calculus
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="polynomial.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Polynomial
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="calculus_2.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Calculus part 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="trigonometry.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Trigonometry
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="complex.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Complex
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="jacobian.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Jacobian
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="eigen.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Eigenstuff
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="gamma.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Gamma
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="harmonic.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Harmonic
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="binomial.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Binomial
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="fractional_calculas.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fractional calculus
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="fibbonacci.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fibbonacci
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="probability.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Probability
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="complex_2.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Complex II
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="the_strand_puzzle.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The strand puzzle
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="arctan.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The infamous "arctan puzzle"
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="mod.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modular arithmetic
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="geometric_algebra.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Geometric algebra
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="set_theory.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Set theory
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="actual_repo.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Code repo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="binary.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The best way to count
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="geometric_algebra_2.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Geometric algebra 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="lambda.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lambda calculus
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="rand.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Non-math
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="some4.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Summer of Math Exposition 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="logic.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Set theory II
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="projective_geometry.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Projective geometry
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="lcr.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lambda Calculus revisited
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="linear.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Linear algebra
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Group theory
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="group_theory.html" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Group theory
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#textbook-definitions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        textbook definitions
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-groups" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        example groups
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#proofs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        proofs
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="proofs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#proof-number-1-theres-only-1-identity-element" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        proof number \(1\): there's only \(1\) identity element.
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#proof-number-2-the-inverse-of-the-inverse-is-the-original" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        proof number \(2\): The inverse of the inverse is the original
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#proof-number-3-the-inverse-can-cancel-out-from-either-side" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        proof number \(3\): The inverse can cancel out from either side
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#proof-number-4-theres-only-1-inverse-for-a-given-term" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        proof number \(4\): There's only \(1\) inverse for a given term
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#proof-number-5-a2-1-a-12-and-they-can-both-be-denoted-as-a-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        proof number \(5\): \((a^2)^{-1} = (a^{-1})^2\) and they can both be denoted as \(a^{-2}\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#subgroups-cosets" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        subgroups &amp; cosets
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="subgroups &amp; cosets">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#subgroups" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        subgroups
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="subgroups">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#textbook-definitions_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        textbook definitions
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        examples
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cosets" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        cosets
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lagranges-theorem" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lagrange's theorem
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#isomorphic-groups-and-homomorphisms" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        isomorphic groups and homomorphisms
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="isomorphic groups and homomorphisms">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#isomorphic-groups" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        isomorphic groups
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#homomorphisms" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        homomorphisms
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="homomorphisms">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parity" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        parity
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#theorem" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        theorem
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#isomorphisms" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        isomorphisms
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#automorphisms" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        automorphisms
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#misc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        misc
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="misc">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#finite-groups" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        finite groups
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="finite groups">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#groups-of-size-0" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        groups of size \(0\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#groups-of-size-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        groups of size \(1\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#groups-of-size-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        groups of size \(2\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#groups-of-size-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        groups of size \(3\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#groups-of-size-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        groups of size \(4\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#groups-of-size-5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        groups of size \(5\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#misc_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        misc
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#z_2-times-z_n" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        \(ℤ_2 \times ℤ_n\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#finite-groups-part-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        finite groups part \(2\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#something-cool-about-the-first-few-groups" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        something cool about the first few groups
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="something cool about the first few groups">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#g-cong-e" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        \(G \cong \{ e \}\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#g-cong-z_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        \(G \cong ℤ_2\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#g-cong-z_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        \(G \cong ℤ_3\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#g-cong-z_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        \(G \cong ℤ_4\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#group-theory-card-game" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        group theory card game
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#my-assignment-this-week-well-two-weeks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        my assignment this week (well, two weeks)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="ring.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ring theory
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#textbook-definitions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        textbook definitions
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-groups" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        example groups
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#proofs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        proofs
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="proofs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#proof-number-1-theres-only-1-identity-element" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        proof number \(1\): there's only \(1\) identity element.
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#proof-number-2-the-inverse-of-the-inverse-is-the-original" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        proof number \(2\): The inverse of the inverse is the original
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#proof-number-3-the-inverse-can-cancel-out-from-either-side" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        proof number \(3\): The inverse can cancel out from either side
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#proof-number-4-theres-only-1-inverse-for-a-given-term" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        proof number \(4\): There's only \(1\) inverse for a given term
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#proof-number-5-a2-1-a-12-and-they-can-both-be-denoted-as-a-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        proof number \(5\): \((a^2)^{-1} = (a^{-1})^2\) and they can both be denoted as \(a^{-2}\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#subgroups-cosets" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        subgroups &amp; cosets
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="subgroups &amp; cosets">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#subgroups" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        subgroups
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="subgroups">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#textbook-definitions_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        textbook definitions
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        examples
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cosets" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        cosets
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lagranges-theorem" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lagrange's theorem
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#isomorphic-groups-and-homomorphisms" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        isomorphic groups and homomorphisms
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="isomorphic groups and homomorphisms">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#isomorphic-groups" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        isomorphic groups
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#homomorphisms" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        homomorphisms
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="homomorphisms">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parity" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        parity
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#theorem" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        theorem
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#isomorphisms" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        isomorphisms
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#automorphisms" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        automorphisms
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#misc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        misc
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="misc">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#finite-groups" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        finite groups
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="finite groups">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#groups-of-size-0" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        groups of size \(0\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#groups-of-size-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        groups of size \(1\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#groups-of-size-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        groups of size \(2\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#groups-of-size-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        groups of size \(3\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#groups-of-size-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        groups of size \(4\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#groups-of-size-5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        groups of size \(5\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#misc_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        misc
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#z_2-times-z_n" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        \(ℤ_2 \times ℤ_n\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#finite-groups-part-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        finite groups part \(2\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#something-cool-about-the-first-few-groups" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        something cool about the first few groups
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="something cool about the first few groups">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#g-cong-e" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        \(G \cong \{ e \}\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#g-cong-z_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        \(G \cong ℤ_2\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#g-cong-z_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        \(G \cong ℤ_3\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#g-cong-z_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        \(G \cong ℤ_4\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#group-theory-card-game" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        group theory card game
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#my-assignment-this-week-well-two-weeks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        my assignment this week (well, two weeks)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+  <h1>Group theory</h1>
+
+<p>I am finally making this page to celebrate the upcoming <span class="arithmatex">\(2000\)</span>th line on the brainstorm page.</p>
+<p>Here's some great videos about the subject that should get at least some credit: <a href="https://www.youtube.com/watch?v=mH0oCDa74tE">Group theory, abstraction, and the 196,883-dimensional monster</a> for the intuition, <a href="https://www.youtube.com/playlist?list=PLFw-I5kGJQ3TKSMHJdAqjmZAJVD6y0CFs">This playlist by Nemean</a> for the proofs, the examples of things, and I would assume isomorphism examples (I decided not to watch the second video yet), and <a href="https://www.youtube.com/playlist?list=PLsdeQ7TnWVm_KATm7HjPoZ-q0UaQNjYrC">This playlist by Another Roof</a> Which I don't think I'll take any of the same things from it.</p>
+<p>I'll start off with the textbook definition of a group:</p>
+<p>P.S. I don't have a group theory textbook.</p>
+<h3 id="textbook-definitions">textbook definitions<a class="headerlink" href="#textbook-definitions" title="Permanent link">&para;</a></h3>
+<p>A group is a set or collection of things together with a binary operation, e.g. addition or multiplication because they input two things and output one thing (I'll be writing this as ∘) such that the following hold:</p>
+<p><span class="arithmatex">\(1\)</span>. Closure (sometimes a given): If you have <span class="arithmatex">\(a\)</span> and <span class="arithmatex">\(b\)</span> in the group, then <span class="arithmatex">\(a\)</span> ∘ <span class="arithmatex">\(b\)</span> is also in the group. This makes sure that your group is, well, closed.</p>
+<p><span class="arithmatex">\(2\)</span>. Associativity: If you have <span class="arithmatex">\(a\)</span>, <span class="arithmatex">\(b\)</span> and <span class="arithmatex">\(c\)</span> in the group, then <span class="arithmatex">\((a\)</span> ∘ <span class="arithmatex">\(b)\)</span> ∘ <span class="arithmatex">\(c\)</span> is equal to <span class="arithmatex">\(a\)</span> ∘ <span class="arithmatex">\((b\)</span> ∘ <span class="arithmatex">\(c)\)</span>*. This makes sure both that addition, multiplication, function composition, and matrix multiplication all work, but also makes a lot of other things don't.</p>
+<p><span class="arithmatex">\(3\)</span>. Identity (or neutral depending on where you're from): There must always be a term in the group (call it <span class="arithmatex">\(e\)</span>) where if you have <span class="arithmatex">\(a\)</span> in the group, then <span class="arithmatex">\(a\)</span> ∘ <span class="arithmatex">\(e\)</span> is equal to <span class="arithmatex">\(e\)</span> ∘ <span class="arithmatex">\(a\)</span> is equal to <span class="arithmatex">\(a\)</span>. This is like a <span class="arithmatex">\(0\)</span> for addition or a <span class="arithmatex">\(1\)</span> for multiplication. There must always be an option to do nothing.</p>
+<p><span class="arithmatex">\(4\)</span>. Inverses: If you have <span class="arithmatex">\(a\)</span> in the group, then there is also <span class="arithmatex">\(a^{-1}\)</span> in the group where <span class="arithmatex">\(a\)</span> ∘ <span class="arithmatex">\(a^{-1}\)</span> is equal to <span class="arithmatex">\(e\)</span>. This is like the negative for addition, or <span class="arithmatex">\(1\)</span> divided by for multiplication. You must always be able to undo what you have done.</p>
+<p>Notice: there is no point where I say that the operation is commutative (i.e. <span class="arithmatex">\(a\)</span> ∘ <span class="arithmatex">\(b = b\)</span> ∘ <span class="arithmatex">\(a\)</span>). If it is, the group is known as an Abelian group.</p>
+<p>Also, by the way, it is common to notate <span class="arithmatex">\(a\)</span> ∘ <span class="arithmatex">\(a\)</span> ∘ <span class="arithmatex">\(a\)</span> ∘ ... ∘ <span class="arithmatex">\(a\)</span> with <span class="arithmatex">\(n\)</span> total a's as <span class="arithmatex">\(a^n\)</span>.</p>
+<p>A good way to think about what some groups actually represent is as sets of symmetries. This is because these <span class="arithmatex">\(4\)</span> rules are exactly what you'd expect rotations and reflections to do with the operation of doing one after the other. Now the closure rule makes sense because if doing one thing preserves the symmetry, and doing another thing preserves the symmetry, then doing one after the other should also preserve the symmetry, the associativity rule makes sense because rotating, then flipping... then rotating should be the same as rotating... then flipping, then rotating, the Identity Rule makes sense because doing nothing should preserve the symmetry, and the inverses rule makes sense because if you rotate clockwise, then of course you should also be able to rotate counterclockwise.</p>
+<p>*For this reason, I will be denoting both as <span class="arithmatex">\(a\)</span> ∘ <span class="arithmatex">\(b\)</span> ∘ <span class="arithmatex">\(c\)</span>.</p>
+<h3 id="example-groups">example groups<a class="headerlink" href="#example-groups" title="Permanent link">&para;</a></h3>
+<p>An example of a group is the integers with the operation of addition.</p>
+<p>Adding two integers would result in another integer. Addition is associative and there is only one <span class="arithmatex">\(a + b + c\)</span>, there is, of course, an identity element, of which is zero, and the inverse would of course be the negative.</p>
+<p>Thus, the integers form a group! And the symbol is <span class="arithmatex">\(ℤ\)</span>.</p>
+<p>Let's see what happens to the integers with an operation of multiplication!</p>
+<p>Multiplying two integers would result in another integer. There is only one <span class="arithmatex">\(a \times b \times c\)</span>. There is an identity element (i.e. <span class="arithmatex">\(1\)</span>). But sadly, only <span class="arithmatex">\(1\)</span> and <span class="arithmatex">\(-1\)</span> have inverses.</p>
+<p>Thus, this is not a group :(</p>
+<p>This is also why it's written <span class="arithmatex">\(ℤ\)</span> and not <span class="arithmatex">\(ℤ\)</span> w/ addition.</p>
+<p>But this does hint that the rationals with the operation of multiplication form a group (as long as you exclude zero because it doesn't have an inverse), and that is correct!</p>
+<p>And the symbol is <span class="arithmatex">\(ℚ^\times\)</span>.</p>
+<p>And if you follow through all of the steps yourself or you got a hint from that times superscript, you know that the rationals with an operation of addition also form a group: <span class="arithmatex">\(ℚ^+\)</span>.</p>
+<p>Let me introduce you to another type of group, a certain type of finite group: the dihedral groups! I'll use the example of <span class="arithmatex">\(\text{D}_3\)</span> (the dihedral group of order <span class="arithmatex">\(3\)</span>). It is the group of all rotations and reflections of an equilateral triangle that leave it looking the same, with the operation of doing one after the other.</p>
+<p>The operations are: do nothing, rotate clockwise <span class="arithmatex">\(120\)</span>°, rotate counterclockwise <span class="arithmatex">\(120\)</span>° reflect along the vertical axis, reflect on a <span class="arithmatex">\(60\)</span>° tilted axis, and reflect along a <span class="arithmatex">\(60\)</span>° tilted in the other direction axis.</p>
+<p>This group works similarly for other numbers, with the subscript being the amount of faces on the regular polygon.</p>
+<p>But there's a big debate over if the subscript should be <span class="arithmatex">\(n\)</span> or <span class="arithmatex">\(2n\)</span>, because on the one hand, it should be <span class="arithmatex">\(n\)</span> because that's the amount of sides the polygon has (the group is kind of based off of that), But on the other hand it's pronounced "the dihedral group of order <span class="arithmatex">\(n\)</span> or <span class="arithmatex">\(2n\)</span>" and order means size in the context of a group, so the dihedral group of order <span class="arithmatex">\(2n\)</span> is what it should be called.</p>
+<p>Personally, I think that the subscript should be the amount of faces.</p>
+<p>There was this one time when I was talking to ChatGPT, and it said that <span class="arithmatex">\(\text{D}_4\)</span> was the dihedral group of order <span class="arithmatex">\(8\)</span>.</p>
+<p>There's also the integers with the operation of addition, but it loops back around once you reach a certain number, these groups are also known as the <a href="https://silaspe.github.io/maths/mod.html">modular</a> groups, and if that number is <span class="arithmatex">\(n\)</span>, i.e. the elements of the group are <span class="arithmatex">\(0\)</span> all the way up to <span class="arithmatex">\(n - 1\)</span>, then the group it is denoted <span class="arithmatex">\(ℤ_n\)</span> or <span class="arithmatex">\(C_n\)</span>.</p>
+<h3 id="proofs">proofs<a class="headerlink" href="#proofs" title="Permanent link">&para;</a></h3>
+<h4 id="proof-number-1-theres-only-1-identity-element">proof number <span class="arithmatex">\(1\)</span>: there's only <span class="arithmatex">\(1\)</span> identity element.<a class="headerlink" href="#proof-number-1-theres-only-1-identity-element" title="Permanent link">&para;</a></h4>
+<p>This proof uses a proof by contradiction strategy. Let's say that there are more than <span class="arithmatex">\(1\)</span> identity element. So I'm going to choose the first two being <span class="arithmatex">\(e_1\)</span> and <span class="arithmatex">\(e_2\)</span>.</p>
+<p>Now, I ask of you, what is <span class="arithmatex">\(e_1\)</span> ∘ <span class="arithmatex">\(e_2\)</span>? Because on the one hand, it should equal <span class="arithmatex">\(e_2\)</span> because <span class="arithmatex">\(e_1\)</span> times anything is that thing. But on the other hand, it should equal <span class="arithmatex">\(e_1\)</span> because anything times <span class="arithmatex">\(e_2\)</span> is that thing.</p>
+<p>Thus, because they are both equal to <span class="arithmatex">\(e_1\)</span> ∘ <span class="arithmatex">\(e_2\)</span>, they must themselves be equal. Thus there is only <span class="arithmatex">\(1\)</span> identity element.</p>
+<p>And you can keep going with this logic, doing the same thing with the next one, and the next one, until there is only <span class="arithmatex">\(1\)</span> left.</p>
+<p>QED!</p>
+<h4 id="proof-number-2-the-inverse-of-the-inverse-is-the-original">proof number <span class="arithmatex">\(2\)</span>: The inverse of the inverse is the original<a class="headerlink" href="#proof-number-2-the-inverse-of-the-inverse-is-the-original" title="Permanent link">&para;</a></h4>
+<p>Every element has an inverse. So, by definition, the inverse has an inverse.</p>
+<p>Let's operate all of these together and see what happens.</p>
+<div class="arithmatex">\[ a ∘ a^{-1} ∘ (a^{-1})^{-1} \]</div>
+<p>This should of course equal <span class="arithmatex">\(a\)</span> because <span class="arithmatex">\(a^{-1}\)</span> times its inverse should cancel out. But also this should equal <span class="arithmatex">\((a^{-1})^{-1}\)</span> because <span class="arithmatex">\(a\)</span> and its inverse should cancel out. Thus, because they are both equal to the same thing, they themselves must be equal.</p>
+<p>QED!</p>
+<h4 id="proof-number-3-the-inverse-can-cancel-out-from-either-side">proof number <span class="arithmatex">\(3\)</span>: The inverse can cancel out from either side<a class="headerlink" href="#proof-number-3-the-inverse-can-cancel-out-from-either-side" title="Permanent link">&para;</a></h4>
+<p>The term <span class="arithmatex">\(a^{-1}\)</span> ∘ <span class="arithmatex">\(a\)</span> can also be simplified. Because <span class="arithmatex">\(a\)</span> is equal to <span class="arithmatex">\((a^{-1})^{-1}\)</span>, I can cancel <span class="arithmatex">\(a^{-1}\)</span> with its inverse, resulting in the identity.</p>
+<p><span class="arithmatex">\(100\)</span> Lines.</p>
+<div class="arithmatex">\[ a^{-1} ∘ a = a^{-1} ∘ (a^{-1})^{-1} = e \]</div>
+<p>QED!</p>
+<h4 id="proof-number-4-theres-only-1-inverse-for-a-given-term">proof number <span class="arithmatex">\(4\)</span>: There's only <span class="arithmatex">\(1\)</span> inverse for a given term<a class="headerlink" href="#proof-number-4-theres-only-1-inverse-for-a-given-term" title="Permanent link">&para;</a></h4>
+<p>This one uses the same general strategy as proof number <span class="arithmatex">\(1\)</span>. Let's assume that there were multiple inverses, denoted <span class="arithmatex">\(a^{-1}_1\)</span> and <span class="arithmatex">\(a^{-1}_2\)</span>. Then of course, <span class="arithmatex">\(a\)</span> ∘ <span class="arithmatex">\(a^{-1}_1 = e\)</span>.</p>
+<p>Let's see what happens when you ∘ both sides on the left by <span class="arithmatex">\(a^{-1}_2\)</span>.</p>
+<div class="arithmatex">\[ a^{-1}_2 ∘ a ∘ a^{-1}_1 = a^{-1}_2 ∘ e \]</div>
+<p>Then <span class="arithmatex">\(a^{-1}_2\)</span> and <span class="arithmatex">\(a\)</span> would cancel out resulting in <span class="arithmatex">\(a^{-1}_1\)</span> on the left. But on the other side, the identity element cancels out resulting in <span class="arithmatex">\(a^{-1}_2\)</span>. Thus, because they are both equal to the same thing, they themselves must be equal.</p>
+<p>QED!</p>
+<h4 id="proof-number-5-a2-1-a-12-and-they-can-both-be-denoted-as-a-2">proof number <span class="arithmatex">\(5\)</span>: <span class="arithmatex">\((a^2)^{-1} = (a^{-1})^2\)</span> and they can both be denoted as <span class="arithmatex">\(a^{-2}\)</span><a class="headerlink" href="#proof-number-5-a2-1-a-12-and-they-can-both-be-denoted-as-a-2" title="Permanent link">&para;</a></h4>
+<div class="arithmatex">\[ a^2 ∘ (a^2)^{-1} = e \]</div>
+<div class="arithmatex">\[ a^2 ∘ (a^{-1})^2 = a ∘ a ∘ a^{-1} ∘ a^{-1} = a ∘ a^{-1} = e \]</div>
+<p>Because these are both the inverse of <span class="arithmatex">\(a^2\)</span>, and because of proof number four, they must both be the same.</p>
+<p>QED!</p>
+<p>Using the example of the integers, we have just proved that: there's only <span class="arithmatex">\(1\)</span> zero, <span class="arithmatex">\(-(-3) = 3\)</span>, <span class="arithmatex">\(3 + (-3) = (-3) + 3 = 0\)</span>, and there's only one <span class="arithmatex">\(-3\)</span></p>
+<p>At the same time, we have just proved that: there's only one <span class="arithmatex">\(1\)</span>, <span class="arithmatex">\(\frac{1}{\frac{1}{3}} = 3\)</span>, <span class="arithmatex">\(3 \frac{1}{3} = \frac{1}{3} 3 = 1\)</span>, and there's only one <span class="arithmatex">\(\frac{1}{3}\)</span></p>
+<p>They're all connected! They're all secretly the same! Group theory (or, more generally abstract algebra) really is the grand unified theory of algebraic systems!</p>
+<p>Now you can pretty much skip to any other chapter you want.</p>
+<h3 id="subgroups-cosets">subgroups &amp; cosets<a class="headerlink" href="#subgroups-cosets" title="Permanent link">&para;</a></h3>
+<h4 id="subgroups">subgroups<a class="headerlink" href="#subgroups" title="Permanent link">&para;</a></h4>
+<p>Once again, I'll start with the textbook definition of a subgroup.</p>
+<h5 id="textbook-definitions_1">textbook definitions<a class="headerlink" href="#textbook-definitions_1" title="Permanent link">&para;</a></h5>
+<p>If you have a group and, taking just a portion of it, operating any of those elements together would result in another thing within that portion, then that portion is also known as a subgroup, as it is a group within a group.</p>
+<p>And yeah, I think that that's pretty intuitive of a definition, you can take just some of the elements of the group and they still form a group.</p>
+<h5 id="examples">examples<a class="headerlink" href="#examples" title="Permanent link">&para;</a></h5>
+<p>Some examples of a subgroup are: the even integers for <span class="arithmatex">\(ℤ\)</span>, the integers for <span class="arithmatex">\(ℚ^+\)</span>, just the rotations from the dihedral groups (Which by the way are just the modular groups), or if the base is composite then the dihedral group from any of its factors, or the same thing for the modular group.</p>
+<p>But notice, the odd integers don't form a group because of the closure axiom, Adding two odd integers forms an even integer.</p>
+<p>But there are better ways to form and notate subgroups than to just guess and check. For example, the rotations can be formed by repeatedly applying the <span class="arithmatex">\(120\)</span>° rotation. And an example of a subgroup of a modular group is the <span class="arithmatex">\(0\)</span>, <span class="arithmatex">\(3\)</span>, <span class="arithmatex">\(6\)</span> group within <span class="arithmatex">\(ℤ_9\)</span> (which is isomorphic to <span class="arithmatex">\(ℤ_3\)</span>, but will get to isomorphism later).</p>
+<p>Something these all have in common is that they are formed by starting at the identity and then checking everything that is formed by repeatedly ∘ing with a thing.</p>
+<p>There is a notation for this: <span class="arithmatex">\(⟨a⟩\)</span> represents the sets of all powers of <span class="arithmatex">\(a\)</span>.</p>
+<p>The system is closed because a power of <span class="arithmatex">\(a\)</span> ∘ a power of <span class="arithmatex">\(a\)</span> is a power of <span class="arithmatex">\(a\)</span>.</p>
+<p>And this is indeed a group even for finite groups. Because if it's a finite group then repeatedly operating <span class="arithmatex">\(a\)</span> on it should eventually go through all of the elements and loop back around to itself. So the one before <span class="arithmatex">\(a\)</span> has to be the identity.</p>
+<p>Also, if <span class="arithmatex">\(e = a^8\)</span>, then the inverse of <span class="arithmatex">\(a^n\)</span> is just <span class="arithmatex">\(a^{8 - n}\)</span>.</p>
+<p>I know you might be thinking: why does it have to loop back around to the identity? What if <span class="arithmatex">\(a^n\)</span> were equal to <span class="arithmatex">\(a\)</span>? Well, then ∘ing both sides by the inverse of <span class="arithmatex">\(a\)</span>, you would get <span class="arithmatex">\(a^8\)</span> ∘ <span class="arithmatex">\(a^{-1}\)</span>, which is of course equal to <span class="arithmatex">\(a^7\)</span>. However, on the right of the equation, you get <span class="arithmatex">\(a\)</span> ∘ <span class="arithmatex">\(a^{-1}\)</span> which is of course the identity. So then <span class="arithmatex">\(a^7\)</span> would be the identity.</p>
+<p>However, this argument doesn't necessarily work for integers as the group is infinitely large, and <span class="arithmatex">\(⟨2⟩\)</span> would only result in <span class="arithmatex">\(2\)</span>, <span class="arithmatex">\(4\)</span>, <span class="arithmatex">\(6\)</span>, <span class="arithmatex">\(8\)</span>, and so on, and not all of the even integers.</p>
+<p>Just going to say: this is still valid notation even if it isn't a group.</p>
+<p>But, this can be fixed! The true definition includes the identity element and the negative powers when needed, so <span class="arithmatex">\(⟨2⟩\)</span> is now a group!</p>
+<h4 id="cosets">cosets<a class="headerlink" href="#cosets" title="Permanent link">&para;</a></h4>
+<p>Cosets can be explained as shifted copies of subgroups.</p>
+<p>How you can more formally define cosets are as subgroups but each term is ∘ed on the left (or on the right depending on the context) by a certain thing.</p>
+<p>Notice: it uses the word "set" because it isn't necessarily a group. For example, the odd numbers are a coset, but not a group.</p>
+<p>The notation for cosets is kind of what you'd expect. For example, the odd numbers are just notated <span class="arithmatex">\(1 + ⟨2⟩\)</span> (This notation makes them seem more like arrays in coding than lists)</p>
+<p>Also, <span class="arithmatex">\(3 + ⟨2⟩\)</span> or <span class="arithmatex">\(5 + ⟨2⟩\)</span> or <span class="arithmatex">\(6 + ⟨2⟩\)</span> would also work.</p>
+<p>Also, because of notation like <span class="arithmatex">\(⟨a⟩\)</span> ∘ <span class="arithmatex">\(e\)</span>, subgroups are a type of coset.</p>
+<p>Also, within the dihedral group, the reflections are cosets. The reason why is because if you do a reflection then a rotation, then it just rotates the reflection line.</p>
+<p>You can do the same thing the other way around with the identity and a flip with the shift being a rotation, and you get another case of perfect symmetry of a subgroup and its corresponding cosets perfectly filling up the group. I feel like this is building up to something big!</p>
+<h4 id="lagranges-theorem">Lagrange's theorem<a class="headerlink" href="#lagranges-theorem" title="Permanent link">&para;</a></h4>
+<p>Lagrange's theorem (or at least something equivalent to it) states that if you pick a subgroup, then every element of the group will be covered once and only once by that subgroup and its cosets.</p>
+<p>Let's say that the group has <span class="arithmatex">\(16\)</span> elements and that the elements of the subgroup are <span class="arithmatex">\(e\)</span>, <span class="arithmatex">\(a\)</span>, <span class="arithmatex">\(b\)</span>, and <span class="arithmatex">\(c\)</span>.</p>
+<p>If I have any element <span class="arithmatex">\(x\)</span>, then it is not too hard to cover it with a subgroup. Just shift it over by <span class="arithmatex">\(x\)</span>, and the corresponding term to the identity element will cover it as <span class="arithmatex">\(x\)</span> ∘ <span class="arithmatex">\(e = x\)</span>.</p>
+<p><span class="arithmatex">\(200\)</span> Lines.</p>
+<p>You can take this as either a subgroup or a proof that everything in the group is covered by at least one coset.</p>
+<p>Now, we have elements: <span class="arithmatex">\(e\)</span>, <span class="arithmatex">\(a\)</span>, <span class="arithmatex">\(b\)</span>, <span class="arithmatex">\(c\)</span>, <span class="arithmatex">\(x\)</span>, <span class="arithmatex">\(x\)</span> ∘ <span class="arithmatex">\(a\)</span>, <span class="arithmatex">\(x\)</span> ∘ <span class="arithmatex">\(b\)</span>, and <span class="arithmatex">\(x\)</span> ∘ <span class="arithmatex">\(c\)</span></p>
+<p>Also, now I would like to convince you that the cosets are of course the same size.</p>
+<p>Because if the code set is bigger than there must have been an extra term you ∘ by to get to it.</p>
+<p>But it can't be any less because if <span class="arithmatex">\(x\)</span> ∘ <span class="arithmatex">\(a = x\)</span> ∘ <span class="arithmatex">\(b\)</span>, then ∘ing both sides by <span class="arithmatex">\(x^{-1}\)</span> (and using a little bit of proof number three), you get that <span class="arithmatex">\(a = b\)</span>, which would just mean that the original subgroup is smaller, not that the coset is smaller than the subgroup.</p>
+<p>But, you might still be thinking: what if the cosets overlap? Well, this is very complicated to prove. First: can a coset overlap with the original group? Well, then <span class="arithmatex">\(x\)</span> ∘ <span class="arithmatex">\(a = b\)</span>, so <span class="arithmatex">\(x = b\)</span> ∘ <span class="arithmatex">\(a^{-1}\)</span></p>
+<p>Because of the inverse property for the subgroup, <span class="arithmatex">\(a^{-1}\)</span> is also within the subgroup. And because of the closure property for the subgroup, <span class="arithmatex">\(b\)</span> ∘ <span class="arithmatex">\(a^{-1}\)</span> is in the subgroup.</p>
+<p>Thus, <span class="arithmatex">\(x\)</span> must be within the subgroup. And shifting by something within the subgroup doesn't really change anything, so subgroups and cosets can't overlap.</p>
+<p>However, you can technically define <span class="arithmatex">\(x\)</span> ∘ <span class="arithmatex">\(a\)</span> as <span class="arithmatex">\((x\)</span> ∘ <span class="arithmatex">\(y^{-1})\)</span> ∘ <span class="arithmatex">\((y\)</span> ∘ <span class="arithmatex">\(a)\)</span>, so you can convince yourself that they can't overlap.</p>
+<p>Now, we have elements: <span class="arithmatex">\(e\)</span>, <span class="arithmatex">\(a\)</span>, <span class="arithmatex">\(b\)</span>, <span class="arithmatex">\(c\)</span>, <span class="arithmatex">\(x\)</span>, <span class="arithmatex">\(x\)</span> ∘ <span class="arithmatex">\(a\)</span>, <span class="arithmatex">\(x\)</span> ∘ <span class="arithmatex">\(b\)</span>, <span class="arithmatex">\(x\)</span> ∘ <span class="arithmatex">\(c\)</span>, <span class="arithmatex">\(y\)</span>, <span class="arithmatex">\(y\)</span> ∘ <span class="arithmatex">\(a\)</span>, <span class="arithmatex">\(y\)</span> ∘ <span class="arithmatex">\(b\)</span>, <span class="arithmatex">\(y\)</span> ∘ <span class="arithmatex">\(c\)</span>, <span class="arithmatex">\(z\)</span>, <span class="arithmatex">\(z\)</span> ∘ <span class="arithmatex">\(a\)</span>, <span class="arithmatex">\(z\)</span> ∘ <span class="arithmatex">\(b\)</span>, and <span class="arithmatex">\(z\)</span> ∘ <span class="arithmatex">\(c\)</span>.</p>
+<p>We have just proven that you can neatly partition a group with a subgroup and its cosets, and from this, you can drive The following theorem:</p>
+<p>For any group <span class="arithmatex">\(G\)</span> and subgroup <span class="arithmatex">\(H\)</span>, the size of <span class="arithmatex">\(G\)</span> is divisible by the size of <span class="arithmatex">\(H\)</span>.</p>
+<p>This theorem is also known as Lagrange's theorem (Which Lagrange knew nothing about).</p>
+<p>We've been building up to this for the entire chapter! We have seen that the reflections and the rotations are both of size <span class="arithmatex">\(n\)</span>! We have seen that the <span class="arithmatex">\(0\)</span>, <span class="arithmatex">\(3\)</span>, <span class="arithmatex">\(6\)</span> group is of size <span class="arithmatex">\(3\)</span> and <span class="arithmatex">\(ℤ_9\)</span> is of size <span class="arithmatex">\(9\)</span>! We... actually have seen no other examples for this because this only works for finite groups.</p>
+<p>Here's one way to think about it: if the size of a group is a prime number (like <span class="arithmatex">\(7\)</span>), then the only possible size is of subgroups are of size <span class="arithmatex">\(1\)</span> (which is clearly just the set containing the identity (yes, it is a group)) and the whole thing itself. So if you take any term <span class="arithmatex">\(a\)</span> in the group and you keep ∘ing by it, then you will eventually form a subgroup.</p>
+<p>Except, the size of the subgroup is either <span class="arithmatex">\(1\)</span> or <span class="arithmatex">\(7\)</span>, and if it's <span class="arithmatex">\(1\)</span>, then clearly, <span class="arithmatex">\(a\)</span> was just the identity.</p>
+<p>But if it's anything else, then the size has to be <span class="arithmatex">\(7\)</span> as <span class="arithmatex">\(a\)</span>, not being the identity, wouldn't have an identity element. And if it's of size <span class="arithmatex">\(7\)</span>, that must be the whole group, so you can just label each term as <span class="arithmatex">\(e\)</span>, <span class="arithmatex">\(a\)</span>, <span class="arithmatex">\(a^2\)</span>, <span class="arithmatex">\(a^3\)</span>, <span class="arithmatex">\(a^4\)</span>, <span class="arithmatex">\(a^5\)</span>, and <span class="arithmatex">\(a^6\)</span>.</p>
+<p>Then what if we just label <span class="arithmatex">\(e\)</span> as zero, <span class="arithmatex">\(a\)</span> as <span class="arithmatex">\(1\)</span>, <span class="arithmatex">\(a^2\)</span> as 2, and so on, also ∘ as <span class="arithmatex">\(+\)</span>.</p>
+<p>Then we realize that every single group of which its size is prime number <span class="arithmatex">\(p\)</span>, the group is actually just <span class="arithmatex">\(ℤ_p\)</span> in disguise!</p>
+<h3 id="isomorphic-groups-and-homomorphisms">isomorphic groups and homomorphisms<a class="headerlink" href="#isomorphic-groups-and-homomorphisms" title="Permanent link">&para;</a></h3>
+<h4 id="isomorphic-groups">isomorphic groups<a class="headerlink" href="#isomorphic-groups" title="Permanent link">&para;</a></h4>
+<p>First, let's just parse this term "isomorphic" (by the way, I think isomorphic and homomorphic mean the same thing. But isomorphic is used in group theory and category theory, while homeomorphic is used in topology) two things are isomorphic if they are related via homeomorphism (that's a direct quote from ChatGPT). homo means the same, and morphic means what you think it means. So homeomorphic means you can morph one into the other and they still look the same (as you do in topology, and it's kind of the same thing in group theory) and a homeomorphism is a method of doing just that.</p>
+<p>Long story short, two groups are isomorphic when they have the same general structure.</p>
+<p>I'll take the example of <span class="arithmatex">\(\text{V}_4\)</span> (what I called the <span class="arithmatex">\(2x2\)</span> sudoku group (long story), then the rock paper scissors group, then it's formal name), then there's an identity element, if you take two non-identity ones that are themselves distinct and you ∘ them, you get the third one, and if you take two of the same one and you ∘ them, you get the identity.</p>
+<p>If a group <span class="arithmatex">\(G\)</span> has the same structure, then we write:</p>
+<div class="arithmatex">\[ G \cong \text{V}_4 \]</div>
+<p>(<span class="arithmatex">\(G\)</span> is isomorphic to <span class="arithmatex">\(\text{V}_4\)</span>)</p>
+<p>Now, how do we formally define this "isomorphism"? Well, I have a definition, except it's kind of long. It is:</p>
+<p>If you have groups <span class="arithmatex">\(G\)</span> and <span class="arithmatex">\(H\)</span> and <span class="arithmatex">\(G\)</span> has operation <span class="arithmatex">\(\cdot\)</span> while <span class="arithmatex">\(H\)</span> has operation <span class="arithmatex">\(*\)</span>, then they are isomorphic if you can find an isomorphism (which is a type of one to one correspondence) between them. But, it has to do the following: if you pick <span class="arithmatex">\(a\)</span> and <span class="arithmatex">\(b\)</span> that are within <span class="arithmatex">\(G\)</span>, then if <span class="arithmatex">\(a \cdot b\)</span> is equal to <span class="arithmatex">\(c\)</span>, then with the corresponding <span class="arithmatex">\(E\)</span> (<span class="arithmatex">\(e\)</span> was taken) and <span class="arithmatex">\(f\)</span> in <span class="arithmatex">\(H\)</span>, you get that <span class="arithmatex">\(E * f\)</span> is the corresponding term to <span class="arithmatex">\(c\)</span>.</p>
+<p>Okay, that definition was terrible. Here's a definition that was given to me by ChatGPT:</p>
+<div class="arithmatex">\[ \varphi : G → H \]</div>
+<p>(A mapping <span class="arithmatex">\(\varphi\)</span> from <span class="arithmatex">\(G\)</span> to <span class="arithmatex">\(H\)</span>)</p>
+<div class="arithmatex">\[ \varphi (a \cdot b) = \varphi (a) * \varphi (b) \]</div>
+<p>(If you pick <span class="arithmatex">\(a\)</span> and <span class="arithmatex">\(b\)</span> in <span class="arithmatex">\(G\)</span>, then <span class="arithmatex">\(\varphi (a \cdot b) = \varphi (a) * \varphi (b)\)</span>)</p>
+<p>It shouldn't be too hard to convince yourself that these two are the same. <span class="arithmatex">\(\varphi (a)\)</span> is <span class="arithmatex">\(E\)</span>, <span class="arithmatex">\(\varphi (b)\)</span> is <span class="arithmatex">\(f\)</span>, <span class="arithmatex">\(a \cdot b\)</span> is <span class="arithmatex">\(c\)</span>, <span class="arithmatex">\(\varphi (x)\)</span> is the corresponding term in <span class="arithmatex">\(H\)</span> to the term <span class="arithmatex">\(x\)</span> in <span class="arithmatex">\(G\)</span>, and then, if you substitute those in, you get <span class="arithmatex">\(\varphi (c) = E * f\)</span>.</p>
+<p>And that's actually a Silas original definition, intuition, and example! (Well, apart from the ChatGPT part.)</p>
+<p>Now, let's look at another example of isomorphism: the real numbers with the operation of addition (<span class="arithmatex">\(ℝ^+\)</span>), and the real numbers with the operation of multiplication (excluding zero) (<span class="arithmatex">\(ℝ^\times\)</span>) (This example was found in a three blue and brown video about group theory, except I don't remember which one. Just search "three blue brown group theory").</p>
+<p>If we're trying to find an isomorphism between <span class="arithmatex">\(ℝ^+\)</span> and <span class="arithmatex">\(ℝ^\times\)</span>, then what function would work?</p>
+<div class="arithmatex">\[ f(x + y) = f(x)f(y) \]</div>
+<p>Does this equation look familiar to anyone? This function <span class="arithmatex">\(f\)</span> not only exists, but it's an exponential function!</p>
+<div class="arithmatex">\[ e^{x + y} = e^x e^y \]</div>
+<p>Thus, <span class="arithmatex">\(ℝ^+ \cong ℝ^\times\)</span>.</p>
+<p>Okay, now I'm going to watch the <a href="https://youtu.be/VZiLpYC0t5E">video by Nemean</a>.</p>
+<h4 id="homomorphisms">homomorphisms<a class="headerlink" href="#homomorphisms" title="Permanent link">&para;</a></h4>
+<p>I got <span class="arithmatex">\(9\)</span> minutes and <span class="arithmatex">\(46\)</span> seconds into the video and I already have so many ideas.</p>
+<p>First, I got the terminology wrong. ChatGPT didn't misspeak when it said "two things are isomorphic if they're related via homomorphism".</p>
+<p>But let's explore this idea of a homomorphism more. First, it might only take a few elements to define the homomorphism. Kind of like how a linear transformation only needs the two basis vectors to determine what it is for all outputs.</p>
+<p>In group theory, this (<span class="arithmatex">\(\varphi (a\)</span> ∘ <span class="arithmatex">\(b) = \varphi (a)\)</span> ∘ <span class="arithmatex">\(\varphi (b)\)</span>) relation of the homomorphism acts in kind of the same way, only needing a few outputs to define the whole thing. (In fact, I think that linear algebra is part of abstract algebra, of which group theory is a part of.)</p>
+<p>Also, homomorphisms can go between groups of different sizes, but I don't think that that means that they're isomorphic because they don't feel the same, they aren't bijections, they're surjections.</p>
+<p><span class="arithmatex">\(300\)</span> Lines.</p>
+<p>Here's an example: if I want to map from <span class="arithmatex">\(ℤ_6\)</span> to <span class="arithmatex">\(ℤ_3\)</span>, I only need <span class="arithmatex">\(1\)</span> output, which is <span class="arithmatex">\(\varphi (1)\)</span>. Let me explain.</p>
+<div class="arithmatex">\[ \varphi (1) = 1 \]</div>
+<div class="arithmatex">\[ \varphi (2) = \varphi (1 \cdot 1) = \varphi (1) * \varphi (1) = 1 * 1 = 2 \]</div>
+<div class="arithmatex">\[ \varphi (2) = 2 \]</div>
+<div class="arithmatex">\[ \varphi (3) = \varphi (2 \cdot 1) = \varphi (2) * \varphi (1) = 2 * 1 = 0 \]</div>
+<div class="arithmatex">\[ \varphi (3) = 0 \]</div>
+<div class="arithmatex">\[ \varphi (4) = \varphi (3 \cdot 1) = \varphi (3) * \varphi (1) = 0 * 1 = 1 \]</div>
+<div class="arithmatex">\[ \varphi (4) = 1 \]</div>
+<div class="arithmatex">\[ \varphi (5) = \varphi (4 \cdot 1) = \varphi (4) * \varphi (1) = 1 * 1 = 2 \]</div>
+<div class="arithmatex">\[ \varphi (5) = 2 \]</div>
+<div class="arithmatex">\[ \varphi (0) = \varphi (5 \cdot 1) = \varphi (5) * \varphi (1) = 2 * 1 = 0 \]</div>
+<div class="arithmatex">\[ \varphi (0) = 0 \]</div>
+<p>If you know that <span class="arithmatex">\(\cdot\)</span> loops around every six and <span class="arithmatex">\(*\)</span> loops around every three, this should make sense.</p>
+<p>More importantly, we just derived what all of the outputs should be for a given input using only <span class="arithmatex">\(1\)</span> example.</p>
+<h5 id="parity">parity<a class="headerlink" href="#parity" title="Permanent link">&para;</a></h5>
+<p>By the way, I came up with pretty much this entire sub-subchapter at the ice skating rink today.</p>
+<p>We can find more examples of homomorphism. For example, a homomorphism between <span class="arithmatex">\(ℤ\)</span> and <span class="arithmatex">\(ℤ_2\)</span>.</p>
+<p><span class="arithmatex">\(ℤ_2\)</span> is a small group (in fact, the second smallest possible group), one containing only two elements, one where if you operate the non-identity element (that will henceforth be called <span class="arithmatex">\(a\)</span>) with itself, you get the identity element.</p>
+<p><span class="arithmatex">\(a\)</span> to the power of any number <span class="arithmatex">\(n\)</span> is <span class="arithmatex">\(a\)</span> if <span class="arithmatex">\(n\)</span> is odd and the identity elements if <span class="arithmatex">\(n\)</span> is even. This can capture the idea of even or odd-ness, a.k.a. parity. So we can define the map <span class="arithmatex">\(\varphi\)</span> as just <span class="arithmatex">\(a\)</span> raised to the power of the input number.</p>
+<p>No we get an important fact that I would rather show than tell:</p>
+<div class="arithmatex">\[ \varphi (n + k) = \varphi (n) ∘ \varphi (k) \]</div>
+<p>What it was saying is that the parity of <span class="arithmatex">\(n + k\)</span> is determined by the parity of <span class="arithmatex">\(n\)</span> and the parity of <span class="arithmatex">\(k\)</span> in exactly the way you'd expect. Even plus even is even, even plus odd is odd, odd plus even is odd, and odd plus odd is even. The same way how ∘ works in <span class="arithmatex">\(ℤ_2\)</span>: <span class="arithmatex">\(e\)</span> ∘ <span class="arithmatex">\(e = e\)</span>, <span class="arithmatex">\(e\)</span> ∘ <span class="arithmatex">\(a = a\)</span>, <span class="arithmatex">\(a\)</span> ∘ <span class="arithmatex">\(e = a\)</span>, and <span class="arithmatex">\(a\)</span> ∘ <span class="arithmatex">\(a = e\)</span>.</p>
+<p>But there are more examples of a homomorphism from a group to <span class="arithmatex">\(ℤ_2\)</span> (a.k.a. a parity homomorphism).</p>
+<p>Case in point: this one time I was talking to ChatGPT about all of the subgroups of <span class="arithmatex">\(\text{S}_4\)</span> (which is the group of all of the ways to arrange four things) (the reason why was because my code was so inefficient that after waiting for a solid <span class="arithmatex">\(30\)</span> seconds, it only had the trivial group because it had to loop through every single combination of the <span class="arithmatex">\(24\)</span> inputs which is very slow).</p>
+<p>The results given to me by ChatGPT were the things I expected: the trivial group, variations of <span class="arithmatex">\(ℤ_2\)</span>, variations of <span class="arithmatex">\(ℤ_3\)</span>, variations of <span class="arithmatex">\(ℤ_4\)</span>, even the group <span class="arithmatex">\(\text{V}_4\)</span> which was a pleasant surprise, and the group <span class="arithmatex">\(\text{D}_4\)</span>.</p>
+<p>But there was one that I didn't expect (but in hindsight it makes sense): <span class="arithmatex">\(\text{A}_4\)</span>, A group described by <span class="arithmatex">\(3\)</span> blue <span class="arithmatex">\(1\)</span> brown as permutations of four things that preserve a certain parity.</p>
+<p>This does kind of make sense as you could define a homomorphism <span class="arithmatex">\(\varphi\)</span> from the group <span class="arithmatex">\(\text{S}_4\)</span> to the group <span class="arithmatex">\(ℤ_2\)</span>. And if you plug in the numbers...</p>
+<div class="arithmatex">\[ \varphi (p ∘ q) = \varphi (p) ∘ \varphi (q) \]</div>
+<p>Suppose that both <span class="arithmatex">\(p\)</span> and <span class="arithmatex">\(q\)</span> have even parity. Then even parity ∘ even parity would of course be even parity. Thus, <span class="arithmatex">\(p\)</span> ∘ <span class="arithmatex">\(q\)</span> has even parity (this is explained better in the next sub-subchapter). So, this system is completely closed, and hence, this group has a name: <span class="arithmatex">\(\text{A}_4\)</span>.</p>
+<p>By the way, the parity is if it takes an even or odd amount of <span class="arithmatex">\(2\)</span>-swaps to get to it from the identity.</p>
+<p>Also by the way, Along with the whole group <span class="arithmatex">\(\text{S}_4\)</span>, this completes ChatGPT's list.</p>
+<p>Also by the way, there's a great <a href="https://www.youtube.com/watch?v=w0mxdo5ur_A">mathologer video about the parity of permutations</a>.</p>
+<p>Now that I think about it, this should mean that there's a general theorem. The theorem is as follows:</p>
+<h5 id="theorem">theorem<a class="headerlink" href="#theorem" title="Permanent link">&para;</a></h5>
+<p>If you have a mapping <span class="arithmatex">\(\varphi\)</span> from a group <span class="arithmatex">\(G\)</span> to a group <span class="arithmatex">\(H\)</span>, then all of the elements where the output of <span class="arithmatex">\(\varphi\)</span> is the identity element in <span class="arithmatex">\(H\)</span>, those elements themselves form a subgroup of <span class="arithmatex">\(G\)</span>.</p>
+<p>I actually just came up with this theorem while I was writing this, and I'm going to ask ChatGPT if this is a well-known theorem.</p>
+<p>The answer is of course yes, and the theorem is known as the Kernel theorem. The reason why is because the set of all elements where the output is the identity is known as the kernel of <span class="arithmatex">\(\varphi\)</span>.</p>
+<p>ChatGPT also provided a sketch of a proof:</p>
+<p><span class="arithmatex">\(1\)</span>. Closure. I've already done this proof, but I'll say it again.</p>
+<div class="arithmatex">\[ a, b \in \text{ker} (\varphi) \]</div>
+<div class="arithmatex">\[ \varphi (a) = \varphi (b) = e \]</div>
+<div class="arithmatex">\[ \varphi (a \cdot b) = \varphi (a) * \varphi (b) = e * e = e \]</div>
+<div class="arithmatex">\[ \varphi (a \cdot b) = e \]</div>
+<div class="arithmatex">\[ a \cdot b \in \text{ker} (\varphi) \]</div>
+<p><span class="arithmatex">\(2\)</span>. Associativity. This one is a given as a subgroup has the same operation as the original, and thus, you don't need to prove that it is associative.</p>
+<p><span class="arithmatex">\(3\)</span>. Identity. This one uses a proof by contradiction strategy. First, let's assume that <span class="arithmatex">\(\varphi (e) \ne e\)</span></p>
+<div class="arithmatex">\[ \varphi (a \cdot e) = \varphi (a) * \varphi (e) = e * \text{not } e = \text{not } e \]</div>
+<div class="arithmatex">\[ a \cdot e = a \]</div>
+<div class="arithmatex">\[ \varphi (a) \ne e \]</div>
+<p><span class="arithmatex">\(400\)</span> lines.</p>
+<p>Contradiction!</p>
+<p><span class="arithmatex">\(4\)</span>. Inverses. As there is only one inverse for a given term, I'll have to prove that the one inverse is within <span class="arithmatex">\(\text{ker} (\varphi)\)</span></p>
+<div class="arithmatex">\[ \varphi (a) = \varphi (a) \]</div>
+<div class="arithmatex">\[ \varphi (a \cdot a) = \varphi (a) * \varphi (a) \]</div>
+<div class="arithmatex">\[ \varphi (a \cdot a \cdot a) = \varphi (a) * \varphi (a) * \varphi (a) \]</div>
+<div class="arithmatex">\[ \vdots \]</div>
+<div class="arithmatex">\[ \varphi (a \cdot a \cdot a \cdot \dots \cdot a) = \varphi (a) * \varphi (a) * \varphi (a) * \dots * \varphi (a) \]</div>
+<div class="arithmatex">\[ \varphi (a^n) = \varphi (a)^n \]</div>
+<p>Assuming that <span class="arithmatex">\(G\)</span> is finite, I can plug <span class="arithmatex">\(-1\)</span> into this equation.</p>
+<div class="arithmatex">\[ \varphi (a^{-1}) = (\varphi (a))^{-1} = e^{-1} = e \]</div>
+<div class="arithmatex">\[ \varphi (a^{-1}) = e \]</div>
+<p><span class="arithmatex">\(420\)</span> Lines. (I'm a kid, can you blame me?)</p>
+<div class="arithmatex">\[ a^{-1} \in \text{ker} (\varphi) \]</div>
+<p>This completes the proof.</p>
+<p>I also found in the video a simple reproof that <span class="arithmatex">\(\varphi (e) = e\)</span>:</p>
+<div class="arithmatex">\[ \varphi (a \cdot e) = \varphi (a) * \varphi (e) \]</div>
+<div class="arithmatex">\[ \varphi (a \cdot e) = \varphi (a) \]</div>
+<div class="arithmatex">\[ \varphi (a) = \varphi (a) * \varphi (e) \]</div>
+<p>And as there's only one identity element, this completes the proof.</p>
+<p>I also found a proof in the video about the inverse rule:</p>
+<div class="arithmatex">\[ a \in \text{ker} (\varphi) \]</div>
+<div class="arithmatex">\[ \varphi (a \cdot a^{-1}) = \varphi (a) * \varphi (a^{-1}) \]</div>
+<div class="arithmatex">\[ \varphi (a \cdot a^{-1}) = \varphi (e) = e \]</div>
+<div class="arithmatex">\[ \varphi (a) * \varphi (a^{-1}) = e \]</div>
+<p>And as there's only one inverse element, this completes the proof.</p>
+<h4 id="isomorphisms">isomorphisms<a class="headerlink" href="#isomorphisms" title="Permanent link">&para;</a></h4>
+<p>You know the thing I said about how homomorphisms sometimes mapping to smaller groups? Well, I got the terminology wrong again, and ChatGPT got the terminology wrong. If the homomorphism maps from one group to another group where they're the same size, then it's called an isomorphism.</p>
+<p>By the way, if there's an isomorphism <span class="arithmatex">\(\varphi\)</span> from a group <span class="arithmatex">\(G\)</span> to a group <span class="arithmatex">\(H\)</span>, then there's an isomorphism <span class="arithmatex">\(\varphi^{-1}\)</span> from <span class="arithmatex">\(H\)</span> to <span class="arithmatex">\(G\)</span></p>
+<p>He also said <a href="https://youtu.be/VZiLpYC0t5E?t=1329s">here</a> that it was crazy that if you use multiplication for the modular groups instead of addition, then <span class="arithmatex">\(ℤ^{\times}_p = ℤ_{p - 1}\)</span>, and I already knew this fact because one: computer, two: modular arithmetic <span class="arithmatex">\(10\)</span> months ago.</p>
+<p>He also said <a href="https://youtu.be/VZiLpYC0t5E?t=1349s">here</a> that there is no pattern, but it's literally just an exponential function.</p>
+<h4 id="automorphisms">automorphisms<a class="headerlink" href="#automorphisms" title="Permanent link">&para;</a></h4>
+<p>An automorphism is an isomorphism from a group to itself, and I remember calling this one a self-homomorphism.</p>
+<p>Here's an example: if you swap any of the non-identity elements in <span class="arithmatex">\(\text{V}_4\)</span>, it's still the same.</p>
+<p>Also, right now we stumble upon a sort of meta group theory (which to me is more similar to category theory): if you have a given group, then all of its automorphisms form a group with the operation of composition.</p>
+<p>Now that I'm done with pretty much the entire page, I can finally copy over work that I did on the brainstorm page that never made it into the story.</p>
+<h3 id="misc">misc<a class="headerlink" href="#misc" title="Permanent link">&para;</a></h3>
+<p>Because the story of the pages is already complete and you should already understand the concepts, this is where I'll put my group theory work from now on.</p>
+<h4 id="finite-groups">finite groups<a class="headerlink" href="#finite-groups" title="Permanent link">&para;</a></h4>
+<p>When I talk about all of these group categories, it really makes you think: what are all of the groups? (Or at least finite groups.) I will answer this question with at least the first few groups (ranked by size), and once I reach one of my favorites, I'll talk about it.</p>
+<p>At every step of the way. there is of course the cyclic group of that size, which is when you can repeatedly ∘ by one term to go all the way around.</p>
+<p>These are kind of boring (at least to me).</p>
+<p>By the definition of a set (of which a group is a type of set), the amount of elements within it have to be a positive integer (including zero).</p>
+<p>So, let's start with...</p>
+<h5 id="groups-of-size-0">groups of size <span class="arithmatex">\(0\)</span><a class="headerlink" href="#groups-of-size-0" title="Permanent link">&para;</a></h5>
+<p>As the set not having any elements doesn't have an identity element, this breaks the identity rule.</p>
+<p>By the way, the empty group is closed as not having elements means it's impossible to ∘ two of them to get outside the group.</p>
+<p>It is associative, and I'll prove that to you by going through all of the possibilities:</p>
+<p>with all the elements, we need every element to have an inverse. But as there are no elements, we don't need to add extra inverses.</p>
+<p>But anyways, every group of size zero fumbles at the identity rule. Time for...</p>
+<p><span class="arithmatex">\(500\)</span> Lines.</p>
+<h5 id="groups-of-size-1">groups of size <span class="arithmatex">\(1\)</span><a class="headerlink" href="#groups-of-size-1" title="Permanent link">&para;</a></h5>
+<p>Of course, because of the identity rule, the one element has to be the identity element, and this is a group as:</p>
+<p><span class="arithmatex">\(1\)</span>. It is closed, as <span class="arithmatex">\(e\)</span> ∘ <span class="arithmatex">\(e = e\)</span></p>
+<p><span class="arithmatex">\(2\)</span>. It is associative, and I'll prove that to you by going through all of the possibilities: <span class="arithmatex">\((e\)</span> ∘ <span class="arithmatex">\(e)\)</span> ∘ <span class="arithmatex">\(e = e\)</span> ∘ <span class="arithmatex">\(e = e\)</span>. But also: <span class="arithmatex">\(e\)</span> ∘ <span class="arithmatex">\((e\)</span> ∘ <span class="arithmatex">\(e) = e\)</span> ∘ <span class="arithmatex">\(e = e\)</span>. Because they're both equal to the identity, they themselves must be equal, and because we have comprehensively gone through all possibilities, this group must have an associative operation.</p>
+<p><span class="arithmatex">\(3\)</span>. it obviously has an identity element</p>
+<p><span class="arithmatex">\(4\)</span> inverses. I'll go through each term along with its inverse in the following table:</p>
+<table>
+<thead>
+<tr>
+<th>element</th>
+<th>inverse</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="arithmatex">\(e\)</span></td>
+<td><span class="arithmatex">\(e\)</span></td>
+</tr>
+</tbody>
+</table>
+<p>And yeah, that's kind of it, the group containing the identity is the only <span class="arithmatex">\(1\)</span> element group, and all other <span class="arithmatex">\(1\)</span> element groups are just isomorphic to it, with their own identity element and own operation.</p>
+<p>Time for...</p>
+<h5 id="groups-of-size-2">groups of size <span class="arithmatex">\(2\)</span><a class="headerlink" href="#groups-of-size-2" title="Permanent link">&para;</a></h5>
+<p>As we have proved in the Lagrange's theorem subchapter, every group whose size is a prime number must be isomorphic to each other and to the corresponding cyclic group. Thus, the only group of size <span class="arithmatex">\(2\)</span> is <span class="arithmatex">\(ℤ_2\)</span>, and as this is a cyclic group, I'll say that it's already proved that it is a group.</p>
+<p>I didn't really feel like doing this argument for the last sub-subchapter.</p>
+<p>Everything I liked about this group was discussed in the parity sub-subchapter.</p>
+<p>And yeah, that's kind of it, <span class="arithmatex">\(ℤ_2\)</span> is the only <span class="arithmatex">\(2\)</span> element group, and all other <span class="arithmatex">\(2\)</span> element groups are just isomorphic to it, with their own operation.</p>
+<p>Time for...</p>
+<h5 id="groups-of-size-3">groups of size <span class="arithmatex">\(3\)</span><a class="headerlink" href="#groups-of-size-3" title="Permanent link">&para;</a></h5>
+<p>By the same logic, there can only be one <span class="arithmatex">\(3\)</span> element group.</p>
+<p>I never really thought about this group too hard.</p>
+<p>And yeah, I'm kind of tired of repeatedly copying and pasting the same thing. But <span class="arithmatex">\(ℤ_3\)</span> is the only <span class="arithmatex">\(3\)</span> element group.</p>
+<p>Time for...</p>
+<h5 id="groups-of-size-4">groups of size <span class="arithmatex">\(4\)</span><a class="headerlink" href="#groups-of-size-4" title="Permanent link">&para;</a></h5>
+<p>What I would like to prove to you is that the only <span class="arithmatex">\(4\)</span> element groups are <span class="arithmatex">\(ℤ_4\)</span> and <span class="arithmatex">\(\text{V}_4\)</span>.</p>
+<p>By the way, I thought of (almost) this whole proof last night.</p>
+<p>Let's say you pick an element <span class="arithmatex">\(a\)</span> and you keep ∘ing by it until you form a subgroup. By Lagrange's theorem, the size of the subgroup is either <span class="arithmatex">\(1\)</span>, <span class="arithmatex">\(2\)</span> or <span class="arithmatex">\(4\)</span>.</p>
+<p>If it's <span class="arithmatex">\(1\)</span>, you clearly just picked the identity element. If it's <span class="arithmatex">\(4\)</span>, it's just the cyclic group, and the only other possibility is that it's <span class="arithmatex">\(2\)</span>. If it is <span class="arithmatex">\(2\)</span>, then <span class="arithmatex">\(a^2\)</span> must be <span class="arithmatex">\(e\)</span>.</p>
+<p>Let's do the same with another term <span class="arithmatex">\(b\)</span>. Once again, if the size is <span class="arithmatex">\(1\)</span>, you clearly just picked the identity, and if the size is <span class="arithmatex">\(4\)</span>, it's clearly just the cyclic group. (And this is the only part that I didn't figure out last night.) But this is still consistent as <span class="arithmatex">\(b^2\)</span> must equal <span class="arithmatex">\(a\)</span>, then that term squared must have been the identity.</p>
+<p>Anyways, the point is that <span class="arithmatex">\(a^2\)</span> must be <span class="arithmatex">\(e\)</span> if the group isn't just the cyclic group.</p>
+<p>Let's pick the final element <span class="arithmatex">\(c\)</span>. You know the drill by now, so I won't go over it again.</p>
+<p>But what's worth noting is that  this subgroup can't be of size <span class="arithmatex">\(4\)</span>, because if it was, then it would just be the cyclic group, but it can't be the cyclic group as the cyclic group only has one non-identity term that squares to the identity.</p>
+<p>Anyways, we now know that any cyclic group with non-identity elements <span class="arithmatex">\(a\)</span>, <span class="arithmatex">\(b\)</span>, and <span class="arithmatex">\(c\)</span> has to have the following equality:</p>
+<div class="arithmatex">\[ a^2 = b^2 = c^2 = e \]</div>
+<p>The proof is almost complete, I just have to ask the question: what is <span class="arithmatex">\(a\)</span> ∘ <span class="arithmatex">\(b\)</span>? It can't be the identity because of the following, it can't be <span class="arithmatex">\(a\)</span> because of the following after that, it can't be <span class="arithmatex">\(b\)</span> because of the one after that, so the only possibility is that it is <span class="arithmatex">\(c\)</span>. The same argument works even when you swap out <span class="arithmatex">\(a\)</span> and <span class="arithmatex">\(b\)</span> for something else.</p>
+<div class="arithmatex">\[ a ∘ b = e \]</div>
+<div class="arithmatex">\[ b ∘ b = e \]</div>
+<div class="arithmatex">\[ a ∘ b = b ∘ b \]</div>
+<div class="arithmatex">\[ a ∘ b ∘ b^{-1} = b ∘ b ∘ b^{-1} \]</div>
+<div class="arithmatex">\[ a ∘ e = b ∘ e \]</div>
+<div class="arithmatex">\[ a = b \]</div>
+<p>.</p>
+<div class="arithmatex">\[ a ∘ b = a \]</div>
+<div class="arithmatex">\[ a ∘ e = a \]</div>
+<div class="arithmatex">\[ a ∘ b = a ∘ e \]</div>
+<div class="arithmatex">\[ a^{-1} ∘ a ∘ b = a^{-1} ∘ a ∘ e \]</div>
+<div class="arithmatex">\[ e ∘ b = e ∘ e \]</div>
+<div class="arithmatex">\[ b = e \]</div>
+<p>.</p>
+<div class="arithmatex">\[ a ∘ b = b \]</div>
+<div class="arithmatex">\[ e ∘ b = b \]</div>
+<p><span class="arithmatex">\(600\)</span> Lines.</p>
+<div class="arithmatex">\[ a ∘ b = e ∘ b \]</div>
+<div class="arithmatex">\[ a ∘ b ∘ b^{-1} = e ∘ b ∘ b^{-1} \]</div>
+<div class="arithmatex">\[ a ∘ e = e ∘ e \]</div>
+<div class="arithmatex">\[ a = e \]</div>
+<p>.</p>
+<p>Note: you can swap <span class="arithmatex">\(a\)</span> and <span class="arithmatex">\(b\)</span> in this argument, meaning that the operation is also commutative.</p>
+<p>Now, let's look at the evidence we have for what this non-cyclic group is: it's a <span class="arithmatex">\(4\)</span> element group where every term squared is the identity, it has a commutative operation, and ∘ing two non-identity terms results in the third.</p>
+<p>The only group that fits this description is <span class="arithmatex">\(\text{V}_4\)</span>.</p>
+<p>QED!</p>
+<p>Because <span class="arithmatex">\(\text{V}_4\)</span> is my favorite group (and because this is the best time to talk about it), I would like to tell you why I gave it the nickname "the <span class="arithmatex">\(2x2\)</span> sudoku group":</p>
+<p>One day many years ago I played a game of <span class="arithmatex">\(2x2\)</span> sudoku with a completely blank board. I went through each term within a square, then throughout all four of the squares, always picking the smallest number that would still follow the rules. You quickly run into a contradiction with a board of size <span class="arithmatex">\(3\)</span>, but when I did it with a board of size <span class="arithmatex">\(2\)</span>, I always got the same pattern. Within any square, there was a repeating pattern, and it was the same for each row and each column. The pattern was <span class="arithmatex">\(1\)</span> <span class="arithmatex">\(2\)</span> <span class="arithmatex">\(3\)</span> <span class="arithmatex">\(4\)</span>, <span class="arithmatex">\(3\)</span> <span class="arithmatex">\(4\)</span> <span class="arithmatex">\(1\)</span> <span class="arithmatex">\(2\)</span>, <span class="arithmatex">\(2\)</span> <span class="arithmatex">\(1\)</span> <span class="arithmatex">\(4\)</span> <span class="arithmatex">\(3\)</span>, and <span class="arithmatex">\(4\)</span> <span class="arithmatex">\(3\)</span> <span class="arithmatex">\(2\)</span> <span class="arithmatex">\(1\)</span>. Time went by, and then I eventually asked "do all of these swaps for my group?" The answer is yes, and that is the story of why I always called it "the <span class="arithmatex">\(2x2\)</span> sudoku group"</p>
+<p>By the way, <span class="arithmatex">\(\text{V}_4\)</span> is the only group that uses the letter <span class="arithmatex">\(\text{V}\)</span> because it's just that special.</p>
+<p>Also, <span class="arithmatex">\(\text{V}_4\)</span> is the first composite group. This is an actual definition that I just guessed one day well in a bath: <span class="arithmatex">\(G \times H\)</span> is a group where the elements of it are ordered pairs of things from <span class="arithmatex">\(G\)</span> and <span class="arithmatex">\(H\)</span>. The operation is to just do it with each individual term.</p>
+<p>I just thought it would be cool for there to be a product of two groups, and then ChatGPT gave me a definition.</p>
+<p>If you're curious, <span class="arithmatex">\(\text{V}_4\)</span> is equal to <span class="arithmatex">\(ℤ_2 \times ℤ_2\)</span>, kind of like how <span class="arithmatex">\(4\)</span> is the first composite number because it's equal to <span class="arithmatex">\(2 \times 2\)</span></p>
+<p>Time for...</p>
+<h5 id="groups-of-size-5">groups of size <span class="arithmatex">\(5\)</span><a class="headerlink" href="#groups-of-size-5" title="Permanent link">&para;</a></h5>
+<p>By the same logic I used before, there can only be one <span class="arithmatex">\(5\)</span> element group.</p>
+<p>And I'll stop here. Here's my table:</p>
+<table>
+<thead>
+<tr>
+<th>group size</th>
+<th>groups with that size</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="arithmatex">\(0\)</span></td>
+<td></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(1\)</span></td>
+<td><span class="arithmatex">\(\{ e \}\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(2\)</span></td>
+<td><span class="arithmatex">\(ℤ_2\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(3\)</span></td>
+<td><span class="arithmatex">\(ℤ_3\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(4\)</span></td>
+<td><span class="arithmatex">\(ℤ_4\)</span>, <span class="arithmatex">\(\text{V}_4\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(5\)</span></td>
+<td><span class="arithmatex">\(ℤ_5\)</span></td>
+</tr>
+</tbody>
+</table>
+<h4 id="misc_1">misc<a class="headerlink" href="#misc_1" title="Permanent link">&para;</a></h4>
+<p>Also, because now is the best time to talk about it, I made a ∘ table, but instead of symbols, I used colors. I first had this idea while I was trying to visualize the group <span class="arithmatex">\(\text{S}_4\)</span>, but I made some in MS paint. One for the trivial group, one for <span class="arithmatex">\(\text{D}_3\)</span>, one for <span class="arithmatex">\(ℤ_2\)</span>, and one for <span class="arithmatex">\(\text{V}_4\)</span>.</p>
+<p>What I realized was that I saw the same pattern again in all of the rows: in the right order, then swap the first two along with the second two, then you swap the first two with the second two, then you put everything in reverse. The idea of the swaps being isomorphic to the original group does kind of make sense as these swaps encapsulate the idea of ∘ing on the left by your thing.</p>
+<p>So of course ∘ing on the left by <span class="arithmatex">\(b\)</span>, then by <span class="arithmatex">\(a\)</span> is just ∘ing on the left by their product. Thus, these swaps are isomorphic to the original.</p>
+<p>I also plan to make a T-shirt about group theory as I did for <a href="https://silaspe.github.io/maths/mod.html">Modular Arithmeic</a> and <a href="https://silaspe.github.io/maths/lambda.html">The Lambda Calculus</a>, and this is just the thing for that!</p>
+<p>If you were wondering, here's the diagrams:</p>
+<p><img width="100" alt="{e}" src="https://github.com/user-attachments/assets/224327ac-1ec0-4ed3-aedf-7f156b8be228" /></p>
+<p><img width="100" alt="z2 2" src="https://github.com/user-attachments/assets/aef0c8d7-4648-490a-b13f-de299e625f99" /></p>
+<p><img width="100" alt="V4" src="https://github.com/user-attachments/assets/4418657f-32c7-490b-980f-22ea30dcd5da" /></p>
+<p>On the left column is the first term with each color corresponding to a term. On the top is the second term, and if you look at The corresponding pixel color to that row and that column, that can tell you what the product is.</p>
+<p>By the way, the background color is black.</p>
+<p>It's the first idea that came to mind when I thought about how to display the underlying structure of a group that would be the same for all isomorphic groups.</p>
+<p>Also, this is the first time I've imported an image into my website.</p>
+<h4 id="z_2-times-z_n"><span class="arithmatex">\(ℤ_2 \times ℤ_n\)</span><a class="headerlink" href="#z_2-times-z_n" title="Permanent link">&para;</a></h4>
+<p>But being able to multiply modular groups does beg the question: what is <span class="arithmatex">\(ℤ_2 \times ℤ_n\)</span>? Well, it's the group of ordered lists of either <span class="arithmatex">\(0\)</span> or <span class="arithmatex">\(1\)</span> in the first position, and any number <span class="arithmatex">\(0\)</span> to <span class="arithmatex">\(n - 1\)</span> in the second. The group has operations you can probably guess.</p>
+<p>Note: the part where I was talking about <span class="arithmatex">\(\text{V}_4\)</span> earlier and the text here were originally in the same area, so that's why I would ask this question.</p>
+<p>So, what is, for example, the group <span class="arithmatex">\(ℤ_2 \times ℤ_3\)</span>? Last night I made a full ∘ table, but then I just asked ChatGPT, and the answer was surprisingly <span class="arithmatex">\(ℤ_6\)</span>*. I was first thinking why this is the case, but as you can see below, they are perfectly isomorphic.</p>
+<p>Also, because the operation in the modular groups is similar to addition, I'm going to replace the multiplicationy notation with more additiony notation.</p>
+<div class="arithmatex">\[ 0(1, 1) = (0, 0) \]</div>
+<div class="arithmatex">\[ 1(1, 1) = (1, 1) \]</div>
+<div class="arithmatex">\[ 2(1, 1) = (1, 1) + (1, 1) = (1 + 1, 1 + 1) = (0, 2) \]</div>
+<div class="arithmatex">\[ 3(1, 1) = 2(1, 1) + (1, 1) = (0, 2) + (1, 1) = (0 + 1, 2 + 1) = (1, 0) \]</div>
+<div class="arithmatex">\[ 4(1, 1) = 3(1, 1) + (1, 1) = (1, 0) + (1, 1) = (1 + 1, 0 + 1) = (0, 1) \]</div>
+<div class="arithmatex">\[ 5(1, 1) = 4(1, 1) + (1, 1) = (0, 1) + (1, 1) = (0 + 1, 1 + 1) = (1, 2) \]</div>
+<div class="arithmatex">\[ 6(1, 1) = 5(1, 1) + (1, 1) = (1, 2) + (1, 1) = (1 + 1, 2 + 1) = (0, 0) \]</div>
+<p><span class="arithmatex">\(700\)</span> Lines. This page is officially long.</p>
+<div class="arithmatex">\[ (0, 0) = 0(1, 1) \]</div>
+<div class="arithmatex">\[ (0, 1) = 4(1, 1) \]</div>
+<div class="arithmatex">\[ (0, 2) = 2(1, 1) \]</div>
+<div class="arithmatex">\[ (1, 0) = 3(1, 1) \]</div>
+<div class="arithmatex">\[ (1, 1) = 1(1, 1) \]</div>
+<div class="arithmatex">\[ (1, 2) = 5(1, 1) \]</div>
+<div class="arithmatex">\[ \varphi (n(1, 1)) = n \]</div>
+<p>This same method of proof works as long as <span class="arithmatex">\(n\)</span> is an odd number as you can see below. But if <span class="arithmatex">\(n\)</span> is an even number, then I guess there's really no way to categorize them, other than that they are a composite group. Personally, I would denote them with the letter <span class="arithmatex">\(\text{V}\)</span>.</p>
+<div class="arithmatex">\[ 0(1, 1) = (0, 0) \]</div>
+<div class="arithmatex">\[ 1(1, 1) = (1, 1) \]</div>
+<div class="arithmatex">\[ 2(1, 1) = (1, 1) + (1, 1) = (1 + 1, 1 + 1) = (0, 2) \]</div>
+<div class="arithmatex">\[ 3(1, 1) = 2(1, 1) + (1, 1) = (0, 2) + (1, 1) = (0 + 1, 2 + 1) = (1, 2) \]</div>
+<div class="arithmatex">\[ \vdots \]</div>
+<div class="arithmatex">\[ n(1, 1) = (n - 1)(1, 1) + (1, 1) = (0, n - 1) + (1, 1) = (0 + 1, (n - 1) + 1) = (1, 0) \]</div>
+<div class="arithmatex">\[ (n + 1)(1, 1) = n(1, 1) + (1, 1) = (1, 0) + (1, 1) = (1 + 1, 0 + 1) = (0, 1) \]</div>
+<div class="arithmatex">\[ (n + 2)(1, 1) = (n + 1)(1, 1) + (1, 1) = (0, 1) + (1, 1) = (1 + 1, 1 + 1) = (1, 2) \]</div>
+<div class="arithmatex">\[ (n + 3)(1, 1) = (n + 2)(1, 1) + (1, 1) = (1, 2) + (1, 1) = (1 + 1, 2 + 1) = (0, 3) \]</div>
+<div class="arithmatex">\[ \vdots \]</div>
+<div class="arithmatex">\[ 2n(1, 1) = (2n - 1)(1, 1) + (1, 1) = (1, 2n - 1) + (1, 1) = (1 + 1, (n - 1) + 1) = (0, 0) \]</div>
+<div class="arithmatex">\[ (x, y) = \begin{Bmatrix} x + y = 2k: y(1, 1) \\
+x + y = 2k + 1: (y + n)(1, 1) \\ \end{Bmatrix} \]</div>
+<div class="arithmatex">\[ \varphi (n(1, 1)) = n \]</div>
+<h4 id="finite-groups-part-2">finite groups part <span class="arithmatex">\(2\)</span><a class="headerlink" href="#finite-groups-part-2" title="Permanent link">&para;</a></h4>
+<p>Also, I asked ChatGPT to make a list of all of the groups of size <span class="arithmatex">\(10\)</span> and under, and it delivered.</p>
+<p>Also, now I can finally answer that asterisk:</p>
+<ul>
+<li>This ChatGPT conversation was the one where it said that the answer was <span class="arithmatex">\(ℤ_6\)</span>, except what it said was that the only groups of size <span class="arithmatex">\(6\)</span> are <span class="arithmatex">\(ℤ_6\)</span> and <span class="arithmatex">\(\text{S}_3\)</span> / <span class="arithmatex">\(\text{D}_3\)</span>. But in <span class="arithmatex">\(ℤ_6\)</span>, <span class="arithmatex">\(0\)</span>, <span class="arithmatex">\(2\)</span>, and <span class="arithmatex">\(4\)</span> cubed- times <span class="arithmatex">\(3\)</span> results in the identity. But also, in <span class="arithmatex">\(ℤ_2 \times ℤ_3\)</span>, <span class="arithmatex">\((0, 0)\)</span>, <span class="arithmatex">\((0, 1)\)</span>, and <span class="arithmatex">\((0, 2)\)</span> all cube to the identity. But also, <span class="arithmatex">\(0\)</span> and <span class="arithmatex">\(2\)</span> all square- times <span class="arithmatex">\(2\)</span> is the identity, while <span class="arithmatex">\((0, 0)\)</span> and <span class="arithmatex">\((1, 0)\)</span> do so as well. Also, in <span class="arithmatex">\(\text{D}_3\)</span>, there are three things that square to the identity, while in <span class="arithmatex">\(ℤ_2 \times ℤ_3\)</span>, there are only two. From all this, I concluded that <span class="arithmatex">\(ℤ_2 \times ℤ_3 \cong ℤ_6\)</span>*</li>
+</ul>
+<p>*I actually only did the <span class="arithmatex">\(3(0) = 3(2) = 3(4) = 0\)</span> / <span class="arithmatex">\(3(0, 0) = 3(0, 1) = 3(0, 2) = (0, 0)\)</span> and <span class="arithmatex">\(2(0) = 2(3) = 0\)</span> / <span class="arithmatex">\(2(0, 0) = 2(1, 0) = (0, 0)\)</span> tests.</p>
+<p>Also, you're probably wondering about the ChatGPT thing, and here's the table!:</p>
+<table>
+<thead>
+<tr>
+<th>group size</th>
+<th>groups with that size</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="arithmatex">\(0\)</span></td>
+<td></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(1\)</span></td>
+<td><span class="arithmatex">\(\{ e \}\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(2\)</span></td>
+<td><span class="arithmatex">\(ℤ_2\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(3\)</span></td>
+<td><span class="arithmatex">\(ℤ_3\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(4\)</span></td>
+<td><span class="arithmatex">\(ℤ_4\)</span>, <span class="arithmatex">\(ℤ_2 \times ℤ_2\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(5\)</span></td>
+<td><span class="arithmatex">\(ℤ_5\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(6\)</span></td>
+<td><span class="arithmatex">\(ℤ_6\)</span>, <span class="arithmatex">\(\text{S}_3\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(7\)</span></td>
+<td><span class="arithmatex">\(ℤ_7\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(8\)</span></td>
+<td><span class="arithmatex">\(ℤ_8\)</span>, <span class="arithmatex">\(ℤ_4 \times ℤ_2\)</span>, <span class="arithmatex">\(ℤ_2 \times ℤ_2 \times ℤ_2\)</span>, <span class="arithmatex">\(\text{D}_4\)</span>, <span class="arithmatex">\(\text{Q}_8\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(9\)</span></td>
+<td><span class="arithmatex">\(ℤ_9\)</span>, <span class="arithmatex">\(ℤ_3 \times ℤ_3\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(10\)</span></td>
+<td><span class="arithmatex">\(ℤ_{10}\)</span>, <span class="arithmatex">\(\text{D}_5\)</span></td>
+</tr>
+</tbody>
+</table>
+<p>Now, I can see why people don't call <span class="arithmatex">\(ℤ_2 \times ℤ_n\)</span> by the shorter <span class="arithmatex">\(\text{V}_{2n}\)</span></p>
+<p>Also, you're probably wondering the same thing I was wondering at the time: what is <span class="arithmatex">\(\text{Q}_8\)</span>? Answer: it's a group of eight quaternions being <span class="arithmatex">\(1\)</span>, <span class="arithmatex">\(-1\)</span>, <span class="arithmatex">\(i\)</span>, <span class="arithmatex">\(-i\)</span>, <span class="arithmatex">\(j\)</span>, <span class="arithmatex">\(-j\)</span>, <span class="arithmatex">\(k\)</span>, and <span class="arithmatex">\(-k\)</span> with the operation of multiplication.</p>
+<p>I remember thinking one day at the playground <span class="arithmatex">\(1.5\)</span> or <span class="arithmatex">\(2.5\)</span> years ago that these eight are closed under multiplication, but I never really thought they would be a group. I even made a times table!</p>
+<p><span class="arithmatex">\(777\)</span> Lines.</p>
+<p>Also, here's the full ∘ table:</p>
+<div class="arithmatex">\[ \begin{matrix} ∘ &amp; 1 &amp; -1 &amp; i &amp; -i &amp; j &amp; -j &amp; k &amp; -k \\
+1 &amp; 1 &amp; -1 &amp; i &amp; -i &amp; j &amp; -j &amp; k &amp; -k \\
+-1 &amp; -1 &amp; 1 &amp; -i &amp; i &amp; -j &amp; j &amp; -k &amp; k \\
+i &amp; i &amp; -i &amp; -1 &amp; 1 &amp; k &amp; -k &amp; -j &amp; j \\
+-i &amp; -i &amp; i &amp; 1 &amp; -1 &amp; -k &amp; k &amp; j &amp; -j \\
+j &amp; j &amp; -j &amp; -k &amp; k &amp; -1 &amp; 1 &amp; i &amp; -i \\
+-j &amp; -j &amp; j &amp; k &amp; -k &amp; 1 &amp; -1 &amp; -i &amp; i \\
+k &amp; k &amp; -k &amp; j &amp; -j &amp; -i &amp; i &amp; -1 &amp; 1 \\
+-k &amp; -k &amp; k &amp; -j &amp; j &amp; i &amp; -i &amp; 1 &amp; -1 \\ \end{matrix} \]</div>
+<p>Here's an analogy for the group <span class="arithmatex">\(ℤ_2\)</span>:</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>...my friend is...</th>
+<th>...my enemy is...</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>The friend of...</td>
+<td>...my friend</td>
+<td>...my enemy</td>
+</tr>
+<tr>
+<td>The enemy of...</td>
+<td>...my enemy</td>
+<td>...my friend</td>
+</tr>
+</tbody>
+</table>
+<h4 id="something-cool-about-the-first-few-groups">something cool about the first few groups<a class="headerlink" href="#something-cool-about-the-first-few-groups" title="Permanent link">&para;</a></h4>
+<p><span class="arithmatex">\(800\)</span> Lines.</p>
+<p>How does subchapter will work is I go over every group that is isomorphic to the corresponding group of the chapter, and I give each element a name, and figure out how that group should work. This should give me what I wanted from group theory when I started studying it.</p>
+<p>Also, when I refer to "This group", what I really mean is "This group considered up to isomorphism".</p>
+<p>Also, <span class="arithmatex">\(|a|\)</span> means "The smallest non-zero number <span class="arithmatex">\(n\)</span> where <span class="arithmatex">\(a^n = e\)</span>".</p>
+<p>Also, <span class="arithmatex">\(x\)</span> and <span class="arithmatex">\(y\)</span> are in <span class="arithmatex">\(G\)</span>.</p>
+<h5 id="g-cong-e"><span class="arithmatex">\(G \cong \{ e \}\)</span><a class="headerlink" href="#g-cong-e" title="Permanent link">&para;</a></h5>
+<p>Boring!</p>
+<p>Next!</p>
+<h5 id="g-cong-z_2"><span class="arithmatex">\(G \cong ℤ_2\)</span><a class="headerlink" href="#g-cong-z_2" title="Permanent link">&para;</a></h5>
+<p>I feel like I said all that needs to be said about this group in the start of the parity sub-subchapter and a couple lines ago. But I feel like it captures the idea of a negative times a negative is a positive, odd plus odd is an even, and so on.</p>
+<p>Next!</p>
+<h5 id="g-cong-z_3"><span class="arithmatex">\(G \cong ℤ_3\)</span><a class="headerlink" href="#g-cong-z_3" title="Permanent link">&para;</a></h5>
+<p>Last time I went over this, I kind of just brushed it off as "I never really thought about this group too hard", but I feel like that isn't what this group deserves.</p>
+<p>Anyways, here's the part I've been waiting to put on this website for <span class="arithmatex">\(5\)</span> days!</p>
+<p>As <span class="arithmatex">\(G\)</span> is the only group of order <span class="arithmatex">\(3\)</span>, it has identity element <span class="arithmatex">\(e\)</span>, as well as two non-identity elements <span class="arithmatex">\(a\)</span> and <span class="arithmatex">\(b\)</span>, and here are their properties:</p>
+<div class="arithmatex">\[ x ∘ y = y ∘ x \]</div>
+<div class="arithmatex">\[ x ∘ e = x \]</div>
+<div class="arithmatex">\[ a^2 = b \]</div>
+<div class="arithmatex">\[ b^2 = a \]</div>
+<div class="arithmatex">\[ a ∘ b = b ∘ a = e \]</div>
+<p>And here's those plus some additional ones that you can derive from them.</p>
+<div class="arithmatex">\[ x ∘ y = y ∘ x \]</div>
+<div class="arithmatex">\[ x ∘ e = x \]</div>
+<div class="arithmatex">\[ |a| = 3 \]</div>
+<div class="arithmatex">\[ |b| = 3 \]</div>
+<div class="arithmatex">\[ a^2 = b \]</div>
+<div class="arithmatex">\[ b^2 = a \]</div>
+<div class="arithmatex">\[ a ∘ b = e \]</div>
+<p>For all these reasons, I don't know if the elements of <span class="arithmatex">\(ℤ_2\)</span> or <span class="arithmatex">\(a\)</span> and <span class="arithmatex">\(b\)</span> are more like yin and yang.</p>
+<p>Next!</p>
+<h5 id="g-cong-z_4"><span class="arithmatex">\(G \cong ℤ_4\)</span><a class="headerlink" href="#g-cong-z_4" title="Permanent link">&para;</a></h5>
+<p>I've been waiting to do this one for <span class="arithmatex">\(4\)</span> days! (I added the previous chapter <span class="arithmatex">\(4\)</span> days ago.)</p>
+<p><span class="arithmatex">\(G\)</span> has identity element <span class="arithmatex">\(e\)</span>, as well as two non-identity elements <span class="arithmatex">\(a\)</span>, <span class="arithmatex">\(b\)</span>, and <span class="arithmatex">\(c\)</span>, and here are their properties:</p>
+<div class="arithmatex">\[ x ∘ y = y ∘ x \]</div>
+<div class="arithmatex">\[ x ∘ e = x \]</div>
+<div class="arithmatex">\[ a^2 = c \]</div>
+<div class="arithmatex">\[ c ∘ a = b \]</div>
+<div class="arithmatex">\[ b ∘ a = e \]</div>
+<p>And here's those plus some additional ones that you can derive from them.</p>
+<div class="arithmatex">\[ x ∘ y = y ∘ x \]</div>
+<div class="arithmatex">\[ x ∘ e = x \]</div>
+<div class="arithmatex">\[ |a| = 4 \]</div>
+<div class="arithmatex">\[ |b| = 4 \]</div>
+<div class="arithmatex">\[ c^2 = e \]</div>
+<div class="arithmatex">\[ a^2 = c \]</div>
+<div class="arithmatex">\[ b^2 = c \]</div>
+<div class="arithmatex">\[ a ∘ c = b \]</div>
+<div class="arithmatex">\[ b ∘ c = a \]</div>
+<div class="arithmatex">\[ a ∘ b = e \]</div>
+<p>If you were wondering how I came up with these, replace the ∘ with times, <span class="arithmatex">\(e\)</span> with <span class="arithmatex">\(1\)</span>, <span class="arithmatex">\(a\)</span> with <span class="arithmatex">\(i\)</span>, <span class="arithmatex">\(c\)</span> with <span class="arithmatex">\(-1\)</span>, and <span class="arithmatex">\(b\)</span> with <span class="arithmatex">\(-i\)</span>.</p>
+<p><span class="arithmatex">\(900\)</span> Lines.</p>
+<p>But if it makes more sense, replace the ∘ with doing one after the other, <span class="arithmatex">\(e\)</span> with a <span class="arithmatex">\(0\)</span>° rotation, <span class="arithmatex">\(a\)</span> with a <span class="arithmatex">\(90\)</span>° clockwise rotation, <span class="arithmatex">\(c\)</span> with a <span class="arithmatex">\(180\)</span>° rotation, and <span class="arithmatex">\(b\)</span> with a <span class="arithmatex">\(90\)</span>° counterclockwise rotation.</p>
+<h4 id="group-theory-card-game">group theory card game<a class="headerlink" href="#group-theory-card-game" title="Permanent link">&para;</a></h4>
+<p>I came up with the rules of this game in about <span class="arithmatex">\(10\)</span> minutes and it has not been playtested or even played before. You have been warned.</p>
+<p>First, you pick a deck. Each deck corresponds to a different group and the cards represent the elements of the group. There may or may not be duplicate cards depending on how big or small the group is.</p>
+<p>Then you deal one of each card out, get out an object, and place it on the identity element.</p>
+<p>If there's only one of each card in the deck, then get out another deck for doing this.</p>
+<p>The card that this object sits on should be viewed by every player.</p>
+<p>Then you deal <span class="arithmatex">\(5\)</span> cards to each player, deal a card into what will soon become the pile, and move the object from the identity element to that card.</p>
+<p>Note: you can choose to not do this and just deal <span class="arithmatex">\(5\)</span> cards to each player and start playing from here with the object still on the identity.</p>
+<p>Then you choose someone to go first. That player plays a card from their hand onto the pile, then they take the card that the object is currently sitting on and ∘s it by the card that was dealt, and of course recards.</p>
+<p>Play continues clockwise until the marker goes back on the identity, then the person who dealt the last card gets the pile.</p>
+<p>Then you do the same process again, but that person who got the pile plays the first card.</p>
+<p>Play continues until you run out of cards in the deck, then the current pile goes to no one and the game ends.</p>
+<p>Then the player with the most cards across all of the decks wins.</p>
+<h4 id="my-assignment-this-week-well-two-weeks">my assignment this week (well, two weeks)<a class="headerlink" href="#my-assignment-this-week-well-two-weeks" title="Permanent link">&para;</a></h4>
+<p>It all starts with having a finite group <span class="arithmatex">\(G\)</span> and it's center <span class="arithmatex">\(C\)</span>, but often we'll just take <span class="arithmatex">\(C\)</span> to be an Abelian group.</p>
+<p>The assignment is, given that the size of <span class="arithmatex">\(C\)</span> is divisible by prime number <span class="arithmatex">\(p\)</span>, to prove that there's an element of <span class="arithmatex">\(C\)</span> of order <span class="arithmatex">\(p\)</span>.</p>
+<p>He already partially completed this problem, and I'll work through that.</p>
+<p>He said: just pick an element at random. Call it <span class="arithmatex">\(x\)</span>.</p>
+<p>Maybe you get lucky and the order of <span class="arithmatex">\(x\)</span> is <span class="arithmatex">\(p\)</span>.</p>
+<p>Maybe you'll get kind of lucky and the order of <span class="arithmatex">\(x\)</span> is at least divisible by <span class="arithmatex">\(p\)</span>.</p>
+<p>Or maybe you'll get unlucky and the order of <span class="arithmatex">\(x\)</span> isn't even divisible by <span class="arithmatex">\(p\)</span>.</p>
+<p>In the first case, the problem is solved. In the second, for reasons I do not fully understand, the problem is also solved. But the third, there's something very interesting you can do.</p>
+<p>Let's call the subgroup of all powers of <span class="arithmatex">\(x\)</span> by the name <span class="arithmatex">\(H\)</span>.</p>
+<p>Then the size (or commonly called the order) of <span class="arithmatex">\(H\)</span> is the order of <span class="arithmatex">\(x\)</span> is not divisible by <span class="arithmatex">\(p\)</span>. It was at this point that I realized why the two senses of the word are used.</p>
+<p>Here's some terminology that I'm going to have to define at some point, so I'll define it here. <span class="arithmatex">\(G / H\)</span> is pronounced "<span class="arithmatex">\(G\)</span> mod <span class="arithmatex">\(H\)</span>" and means "the set of all cosets of H".</p>
+<p>You might think that that's just <span class="arithmatex">\(G\)</span> because there's <span class="arithmatex">\(1\)</span> for each element. But no, there are only <span class="arithmatex">\(2\)</span> cosets of the even numbers for example (the evens and the odds).</p>
+<p>This notation is valid only for normal subgroups. I know what you're thinking: what is a normal subgroup? Well, normal subgroups are subgroups where the set of all things of form <span class="arithmatex">\(ghg^{-1}\)</span> for <span class="arithmatex">\(g\)</span> in <span class="arithmatex">\(G\)</span> and <span class="arithmatex">\(h\)</span> in <span class="arithmatex">\(H\)</span> is <span class="arithmatex">\(H\)</span> itself, just maybe with its elements shuffled.</p>
+<p>Notice how, three paragraphs ago, I said "the set of all cosets of <span class="arithmatex">\(H\)</span>". Because, as you should figure out for yourself, it's the same if you do it from the left or the right.</p>
+<p>Also, fun fact! <span class="arithmatex">\(ℤ\)</span> mod all of the integers divisible by <span class="arithmatex">\(n\)</span> is actually equal to <span class="arithmatex">\(ℤ_n\)</span>. Or written more formally, it looks like this:</p>
+<div class="arithmatex">\[ ℤ_n : = ℤ / ⟨n⟩ \]</div>
+<p>Also, taking the coset formed by an element of the subgroup itself doesn't change it. That also means that ∘ing the thing you're taking a coset with by an element of the subgroup, it doesn't change the coset.</p>
+<p>A consequence of this is that the size of <span class="arithmatex">\(G / H\)</span> is the size of <span class="arithmatex">\(G\)</span> divided by the size of <span class="arithmatex">\(H\)</span>.</p>
+<p>Also, if the group is Abelian, then every subgroup is normal.</p>
+<p>I can't believe I haven't said this before so I'll say it now. The size of a group is denoted with absolute value signs.</p>
+<p>With all of this in mind, realize that the size of <span class="arithmatex">\(C / H\)</span> times the size of <span class="arithmatex">\(H\)</span> is equal to the size of <span class="arithmatex">\(C\)</span> (<span class="arithmatex">\(|C / H| \cdot |H| = |C|\)</span>). But remember, at the start I said that the size of <span class="arithmatex">\(C\)</span> is divisible by <span class="arithmatex">\(p\)</span>, so if the factor of <span class="arithmatex">\(p\)</span> definitely didn't come from <span class="arithmatex">\(H\)</span>, then it definitely came from <span class="arithmatex">\(C / H\)</span>!</p>
+<p>You might not know why this is important (and neither do I), but this statement is really close to solving the problem, and for reasons that I do not fully understand, this means that <span class="arithmatex">\(C / H\)</span> has an element of order <span class="arithmatex">\(p\)</span>. Now the only thing left for me to prove this week is that if <span class="arithmatex">\(C / H\)</span> has an element of order <span class="arithmatex">\(p\)</span>, then so does <span class="arithmatex">\(C\)</span>.</p>
+<p>I solved the problem around <span class="arithmatex">\(20\)</span> minutes after I wrote that down.</p>
+<p>What happened was I analyzed the coset itself. That is, the one of order <span class="arithmatex">\(p\)</span>.</p>
+<p>I'll just take a random element of this coset and call it <span class="arithmatex">\(c\)</span>. By definition, if you ∘ each element of <span class="arithmatex">\(H\)</span> by <span class="arithmatex">\(c\)</span> a total of <span class="arithmatex">\(p\)</span> times (that is, once by <span class="arithmatex">\(c^p\)</span>), then you just shuffle around the elements of <span class="arithmatex">\(H\)</span>.</p>
+<p>But realize: that shuffling action can be described perfectly with an element of <span class="arithmatex">\(\text{S}_{|H|}\)</span>. That is, a permutation of <span class="arithmatex">\(H\)</span>'s elements. Call it <span class="arithmatex">\(\sigma\)</span>.</p>
+<p>But because <span class="arithmatex">\(\sigma\)</span> is a permutation of a finite number of things, it by definition has an order, and you can keep doing it <span class="arithmatex">\(|\sigma|\)</span> times to get back where you started.</p>
+<p>But this means that if you ∘ an element of <span class="arithmatex">\(H\)</span> by <span class="arithmatex">\(c^p\)</span> a total of <span class="arithmatex">\(|\sigma|\)</span> times (that is, once by <span class="arithmatex">\({(c^p)}^{|\sigma|}\)</span>) then you get back to where you started, which means you ∘ed by the identity. Thus, <span class="arithmatex">\({(c^p)}^{|\sigma|}\)</span> is the identity.</p>
+<p>But by using the properties of exponents, we realize that <span class="arithmatex">\({(c^p)}^{|\sigma|} = c^{p |\sigma|} = c^{|\sigma| p} = {(c^{|\sigma|})}^p\)</span>, so <span class="arithmatex">\({(c^{|\sigma|})}^p\)</span> is the identity.</p>
+<p>Because <span class="arithmatex">\(p\)</span> by definition has no factors, while multiplying by <span class="arithmatex">\(c^{|\sigma|}\)</span> it can't have hit an earlier term and have that term as the order.</p>
+<p>Thus, <span class="arithmatex">\(c^{|\sigma|}\)</span> is an element of <span class="arithmatex">\(C\)</span> of order <span class="arithmatex">\(p\)</span>.</p>
+<p>QED!</p>
+<p>Clarification: the thing I said two paragraphs ago would mean that <span class="arithmatex">\({(c^{|\sigma|})}^p\)</span> is the identity because <span class="arithmatex">\(p\)</span> is divisible by that smaller exponent, i.e. you would just repeatedly hit the identity on every multiple of said smaller exponent including <span class="arithmatex">\(p\)</span>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": [], "search": "assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

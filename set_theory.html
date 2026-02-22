@@ -1,0 +1,1615 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="geometric_algebra.html">
+      
+      
+        <link rel="next" href="actual_repo.html">
+      
+      
+        
+      
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.2">
+    
+    
+      
+        <title>Set theory - Silas Maths</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#what-even-is-a-set" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="index.html" title="Silas Maths" class="md-header__button md-logo" aria-label="Silas Maths" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Silas Maths
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Set theory
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/silaspe/maths" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Silas Maths
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="index.html" title="Silas Maths" class="md-nav__button md-logo" aria-label="Silas Maths" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Silas Maths
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/silaspe/maths" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Silas Maths
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="brainstorm.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Brainstorming a new page
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="derivatives.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Calculus
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="polynomial.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Polynomial
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="calculus_2.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Calculus part 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="trigonometry.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Trigonometry
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="complex.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Complex
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="jacobian.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Jacobian
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="eigen.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Eigenstuff
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="gamma.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Gamma
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="harmonic.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Harmonic
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="binomial.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Binomial
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="fractional_calculas.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fractional calculus
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="fibbonacci.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fibbonacci
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="probability.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Probability
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="complex_2.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Complex II
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="the_strand_puzzle.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The strand puzzle
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="arctan.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The infamous "arctan puzzle"
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="mod.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modular arithmetic
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="geometric_algebra.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Geometric algebra
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Set theory
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="set_theory.html" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Set theory
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-even-is-a-set" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What even is a set?
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="What even is a set?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#meanings-of-things" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        meanings of things
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#definitions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        definitions
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="definitions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        .
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#numbers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        numbers
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#back-to-definitions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        back to definitions
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#group-theory" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        group theory
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="group theory">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#limits" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        limits
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#set-theory-proofs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        set theory proofs?
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="actual_repo.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Code repo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="binary.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The best way to count
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="geometric_algebra_2.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Geometric algebra 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="lambda.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lambda calculus
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="rand.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Non-math
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="some4.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Summer of Math Exposition 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="logic.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Set theory II
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="projective_geometry.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Projective geometry
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="lcr.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lambda Calculus revisited
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="linear.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Linear algebra
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="group_theory.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Group theory
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="ring.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ring theory
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-even-is-a-set" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What even is a set?
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="What even is a set?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#meanings-of-things" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        meanings of things
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#definitions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        definitions
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="definitions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        .
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#numbers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        numbers
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#back-to-definitions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        back to definitions
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#group-theory" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        group theory
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="group theory">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#limits" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        limits
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#set-theory-proofs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        set theory proofs?
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+  <h1>Set theory</h1>
+
+<h2 id="what-even-is-a-set">What even is a set?<a class="headerlink" href="#what-even-is-a-set" title="Permanent link">&para;</a></h2>
+<p>A set is a well defined collection of objects, a set could contain the two shoes on you feet, or the <span class="arithmatex">\(5\)</span> pieces of cheese on this cutting board (that I'm going to pretend exists), sets can even contain other sets, but sets can not contain themselves, because it would lead to a paradox: would the set that contains every set that doesn't contain itself contain itself?" This also means that there isn't a set that contains everything.</p>
+<p>But the thing is, using some symbols, you can describe almost all of math. These symbols can just be pronounced as words, and it would make a sentence, such as " <span class="arithmatex">\(¬ \exists (x): |x| &lt; 0\)</span> " as " there does not exist <span class="arithmatex">\(x\)</span> such that the absolute value of <span class="arithmatex">\(x\)</span> is strictly less than <span class="arithmatex">\(0\)</span> ". Time to rapidfire through each one's pronunciation and meaning.</p>
+<h3 id="meanings-of-things">meanings of things<a class="headerlink" href="#meanings-of-things" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[ ∀ \text{ Is pronounced "for any" or "for all" (but I prefer "for any") and means what it says. It than has an open parentheses, a thing (or sometimes multiple things separated by a comma) (} x, y, z, \text{ or a set) that I will call } x \text{ for now, a closed parentheses (parenthese is not a word), a } \cdot \text{, a statement that implies something about } x \text{, a colon, and finish it off with a statement including } x. \]</div>
+<div class="arithmatex">\[ \text{left and right parentheses are not pronounced.} \]</div>
+<div class="arithmatex">\[ \cdot \text{ Is pronounced "such that" and it's only used in two contexts: "for any } x \text{ such that..." and "there exists } x \text{ such that...".} \]</div>
+<div class="arithmatex">\[ : \text{ Is pronounced however a colon is pronounced.} \]</div>
+<div class="arithmatex">\[ , \text{ Is pronounced however a comma is pronounced.} \]</div>
+<div class="arithmatex">\[ \exists \text{ Is pronounced "there exists" and I don't think I need to explain that.} \]</div>
+<div class="arithmatex">\[ ¬ \text{ Is pronounced "is not" or "does not" as in "there does not exist } x \text{".} \]</div>
+<div class="arithmatex">\[ \in \text{ Is pronounced "is an element of" where an element of a set is a singular object that is contained in that set.} \]</div>
+<div class="arithmatex">\[ x, y, \text{ And } z \text{ are pronounced "} x, y, \text{ And } z \text{" and they all mean "a thing that could be an element of a set".} \]</div>
+<div class="arithmatex">\[ \text{capital letters are sets.} \]</div>
+<div class="arithmatex">\[ \iff \text{ Is pronounced "if and only if" as in "if statement } a \text{ is true, statement } b \text{ is true, and if statement } a \text{ is false, statement } b \text{ is false".} \]</div>
+<div class="arithmatex">\[ ∩ \text{ Is pronounced "and" and means "} a ∩ b \text{ is true if and only if statement } a \text{ is true and } b \text{ is true", it can also mean the intersection of two sets, in that case, it is pronounced "intersectioned with", but I'll get to its formal meaning in the next chapter.} \]</div>
+<div class="arithmatex">\[ = : \text{ Is pronounced "equals by definition" and means "define the thing on the left as the thing on the right", or was it the other way around?} \]</div>
+<div class="arithmatex">\[ ∨ \text{ Is pronounced "or" and means "} a ∨ b \text{ is true if statement } a \text{ is true or } b \text{ is true... Or both!", it can also mean the union of two sets, in that case, it is pronounced "unioned with", but I'll get to its formal meaning in the next chapter.} \]</div>
+<div class="arithmatex">\[ \text{succ Is pronounced "the immediate successor of" and means "that number } + 1 \text{".} \]</div>
+<div class="arithmatex">\[ → \text{ Is technically called the if then sign, but it is pronounced "implies" and means "statement } a → b \text{ is true if statement } a \text{ being true implies statement } b \text{ is true", so } a → b \text{ is true if statement } a \text{ is true and statement } b \text{ is true, or if statement } a \text{ is false and statement } b \text{ is false, or if statement } a \text{ is true and statement } b \text{ is false, but not if statement } a \text{ is false and statement } b \text{ is true. Also, if there was an element sign two spaces behind, pronounce it "being an element of" as opposed to  "is an element of".} \]</div>
+<div class="arithmatex">\[ \text{I don't think that I need to explain the } &lt; \text{sign.} \]</div>
+<div class="arithmatex">\[ ℝ \text{ Is pronounced "the set of all real numbers" and means, well, the set of all real numbers.} \]</div>
+<div class="arithmatex">\[ ℕ \text{ Is pronounced "the set of all natural numbers" and means "the set of all positive integers", it's debatable weather or not it includes } 0 \text{.} \]</div>
+<h3 id="definitions">definitions<a class="headerlink" href="#definitions" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[ Ø \text{ Is pronounced "the empty set" and means "the set of which is empty inside", but here that is in set theory:} \]</div>
+<div class="arithmatex">\[ ¬ \exists (x) \cdot x \in Ø \]</div>
+<div class="arithmatex">\[ ⊆ \text{ Is pronounced "is a subset of", and the meaning of that is:} \]</div>
+<div class="arithmatex">\[ A ⊆ B \iff ∀(x) \cdot x \in A: x \in B \]</div>
+<div class="arithmatex">\[ pow \text{ Is pronounced "the power set of" as in "} pow(S) \text{", and the meaning of that is:} \]</div>
+<div class="arithmatex">\[ ∀(P) \cdot ∀(U) \cdot U ⊆ S: U \in P ∩ ∀(T) \cdot T ¬ ⊆ S: T ¬ \in P: P = : pow(S) \]</div>
+<div class="arithmatex">\[ = \text{ Is pronounced "is the same as" or "is equal to", and the meaning of that is:} \]</div>
+<div class="arithmatex">\[ A = B \iff A ⊆ B ∩ B ⊆ A \]</div>
+<div class="arithmatex">\[ ¬ \exists (S) \cdot S \in S \]</div>
+<div class="arithmatex">\[ x \in \in S \iff \exists (U) \cdot U \in S ∩ x \in U \]</div>
+<div class="arithmatex">\[ x \in \in S \text{ can also be written as } \in^2 \]</div>
+<div class="arithmatex">\[ x \in \in \in S \iff \exists (U) \cdot U \in S ∩ x \in^2 U \]</div>
+<div class="arithmatex">\[ x \in \in \in S \text{ can also be written as } \in^3 \]</div>
+<div class="arithmatex">\[ x \in \in \in \in S \iff \exists (U) \cdot U \in S ∩ x \in^3 U \]</div>
+<div class="arithmatex">\[ x \in \in \in \in S \text{ can also be written as } \in^4 \]</div>
+<div class="arithmatex">\[ \vdots \]</div>
+<div class="arithmatex">\[ x \in^{a + b} S \iff \exists (U) \cdot U \in^a S ∩ x \in^b U \]</div>
+<div class="arithmatex">\[ x \in^{a + b} S \text{ can also be written as } x \in^a \in^b S \]</div>
+<div class="arithmatex">\[ \in^S \text{ Is pronounced "is a super element of" (} S \text{ for super), and the definition is:} \]</div>
+<div class="arithmatex">\[ x \in^S S \iff x \in S ∨ \exists (U) \cdot U \in S ∩ x \in^S U \]</div>
+<h6 id="_1">.<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h6>
+<p>Was <a href="https://silaspe.github.io/maths/set_theory.html#_1">recursion</a> in the rule book? I guess so.</p>
+<p><a href="https://silaspe.github.io/maths/set_theory.html#_1">Recursion?</a> Get it?</p>
+<h3 id="numbers">numbers<a class="headerlink" href="#numbers" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[ 0 = Ø \]</div>
+<div class="arithmatex">\[ \text{succ} (n) \text{ (Which mathematically equals } n + 1 \text{) Is how you would usually define numbers, so I'll define numbers that way, I'll say that succ} (n) \text{ is the set that contains all numbers } 0 \text{-} n \text{. But first: the union of two sets, denoted as an } ∨ \text{ sign.} \]</div>
+<div class="arithmatex">\[ x \in A ∨ B \iff x \in A ∨ x \in B \]</div>
+<div class="arithmatex">\[ set \text{ Is pronounced "the set containing" as in "} set(S) \text{", and} \]</div>
+<div class="arithmatex">\[ ∀(S) \cdot E \in S ∩ ∀(T) \cdot T ¬= E: T ¬ \in S: S = : set(E) \]</div>
+<div class="arithmatex">\[ \text{Around } 100 \text{ lines?? (I might add or remove another definition, but at the time of typing this, this is on } 95 \text{ lines.)} \]</div>
+<div class="arithmatex">\[ \text{succ} (n) = : set(n) ∨ n \]</div>
+<h3 id="back-to-definitions">back to definitions<a class="headerlink" href="#back-to-definitions" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[ ∩ \text{ Is pronounced "and" and means "} a ∩ b \text{ is true if and only if statement } a \text{ is true and } b \text{ is true", it can also mean the intersection of two sets, in that case, it is pronounced "intersectioned with", but} \]</div>
+<div class="arithmatex">\[ x \in A ∩ B \iff x \in A ∩ x \in B \]</div>
+<div class="arithmatex">\[ \text{Here's another definition of the subset: } ∀(A, B) \cdot ¬ \exists (x) \cdot x \in A ¬ → x \in B: A ⊆ B. \]</div>
+<div class="arithmatex">\[ \text{And another one! } A ⊆ B \iff ¬ \exists (x) \cdot x \in A ∩ x ¬ \in B \]</div>
+<div class="arithmatex">\[ n_1 &lt; n_2 \iff n_1 \in n_2 \]</div>
+<div class="arithmatex">\[ \text{WARNING! The next statement is the axiom of choice, kinda controversial.} \]</div>
+<div class="arithmatex">\[ ∀(S) \cdot S ¬= Ø: \exists (x) \cdot x \in S \]</div>
+<h3 id="group-theory">group theory<a class="headerlink" href="#group-theory" title="Permanent link">&para;</a></h3>
+<p>A group (call it <span class="arithmatex">\(G\)</span>) is a certain type of set, including an addition like thing represented with a <span class="arithmatex">\(+\)</span> sign (this addition like thing could also be multiplication), let's start with the set of numbers <span class="arithmatex">\(0\)</span> - <span class="arithmatex">\(4\)</span> under <a href="https://silaspe.github.io/maths/mod.html">modular</a> addition. To be a group, it has to follow <span class="arithmatex">\(4\)</span> different rules.</p>
+<div class="arithmatex">\[ 1 \text{, Closure} \]</div>
+<div class="arithmatex">\[ ∀(a, b) \cdot a \in G ∩ b \in G: a + b \in G \]</div>
+<p>Because it is modular, this holds true for modular addition.</p>
+<div class="arithmatex">\[ 2 \text{, Associativity} \]</div>
+<div class="arithmatex">\[ ∀(a, b, c) \cdot a \in G ∩ b \in G ∩ c \in G: (a + b) + c = a + (b + c) \]</div>
+<p>Because addition is associative, this holds true for modular addition.</p>
+<div class="arithmatex">\[ 3 \text{, Identity} \]</div>
+<div class="arithmatex">\[ \exists (e) \cdot e \in G ∩ ∀(a) \cdot a \in G: a + e = a ∩ ∀(b) \cdot b \in G: e + b = b \]</div>
+<p>Because of <span class="arithmatex">\(0\)</span>, this holds true for modular addition.</p>
+<div class="arithmatex">\[ 4 \text{, Inverses} \]</div>
+<div class="arithmatex">\[ ∀(a) \cdot a \in G: \exists (b) \cdot b \in G ∩ a + b = e ∩ b + a = e \]</div>
+<p>Because of negatives and them looping back around, this holds true for modular addition. (Also, modular multiplication almost works, but it fails at this step because there is no <span class="arithmatex">\(\frac{1}{0}\)</span>.)</p>
+<p>Thus, the set of numbers <span class="arithmatex">\(0\)</span> - <span class="arithmatex">\(4\)</span> under modular addition is a group.</p>
+<h4 id="limits">limits<a class="headerlink" href="#limits" title="Permanent link">&para;</a></h4>
+<div class="arithmatex">\[ \lim_{n \to \infty} f(n) = x \iff ∀(y) \cdot y \in ℝ ∩ y \ne x: \exists (n) \cdot n \in ℕ ∩ ∀(k) \cdot k \in ℕ ∩ k ≥ n: |f(k) - x| &lt; |f(k) - y| \]</div>
+<div class="arithmatex">\[ \lim_{n \to \infty} f(n) \to \infty \iff ∀(y) \cdot y \in ℝ: \exists (n) \cdot n \in ℕ ∩ ∀(k) \cdot k \in ℕ ∩ k ≥ n: f(k) &gt; y \]</div>
+<div class="arithmatex">\[ \lim_{n \to \infty} f(n) \to -\infty \iff ∀(y) \cdot y \in ℝ: \exists (n) \cdot n \in ℕ ∩ ∀(k) \cdot k \in ℕ ∩ k ≥ n: f(k) &lt; y \]</div>
+<div class="arithmatex">\[ \lim_{n \to \infty} f(n) = 0 \iff ∀(y) \cdot y \in ℝ ∩ y \ne 0: \exists (n) \cdot n \in ℕ ∩ ∀(k) \cdot k \in ℕ ∩ k ≥ n: |f(k)| &lt; |y| \]</div>
+<div class="arithmatex">\[ \lim_{n \to \infty} f(n) = x^{+} \iff ∀(y) \cdot y \in ℝ ∩ y \ne x: \exists (n) \cdot n \in ℕ ∩ ∀(k) \cdot k \in ℕ ∩ k ≥ n: |f(k) - x| &lt; |f(k) - y| ∩ f(k) &gt; x \]</div>
+<div class="arithmatex">\[ \lim_{n \to \infty} f(n) = x^{-} \iff ∀(y) \cdot y \in ℝ ∩ y \ne x: \exists (n) \cdot n \in ℕ ∩ ∀(k) \cdot k \in ℕ ∩ k ≥ n: |f(k) - x| &lt; |f(k) - y| ∩ f(k) &lt; x \]</div>
+<h3 id="set-theory-proofs">set theory proofs?<a class="headerlink" href="#set-theory-proofs" title="Permanent link">&para;</a></h3>
+<p>No.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": [], "search": "assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

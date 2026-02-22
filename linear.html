@@ -1,0 +1,1651 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="lcr.html">
+      
+      
+        <link rel="next" href="group_theory.html">
+      
+      
+        
+      
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.2">
+    
+    
+      
+        <title>Linear algebra - Silas Maths</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#linear-algebra" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="index.html" title="Silas Maths" class="md-header__button md-logo" aria-label="Silas Maths" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Silas Maths
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Linear algebra
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/silaspe/maths" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Silas Maths
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="index.html" title="Silas Maths" class="md-nav__button md-logo" aria-label="Silas Maths" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Silas Maths
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/silaspe/maths" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Silas Maths
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="brainstorm.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Brainstorming a new page
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="derivatives.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Calculus
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="polynomial.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Polynomial
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="calculus_2.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Calculus part 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="trigonometry.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Trigonometry
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="complex.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Complex
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="jacobian.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Jacobian
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="eigen.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Eigenstuff
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="gamma.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Gamma
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="harmonic.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Harmonic
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="binomial.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Binomial
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="fractional_calculas.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fractional calculus
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="fibbonacci.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fibbonacci
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="probability.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Probability
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="complex_2.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Complex II
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="the_strand_puzzle.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The strand puzzle
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="arctan.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The infamous "arctan puzzle"
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="mod.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modular arithmetic
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="geometric_algebra.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Geometric algebra
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="set_theory.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Set theory
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="actual_repo.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Code repo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="binary.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The best way to count
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="geometric_algebra_2.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Geometric algebra 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="lambda.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lambda calculus
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="rand.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Non-math
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="some4.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Summer of Math Exposition 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="logic.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Set theory II
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="projective_geometry.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Projective geometry
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="lcr.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lambda Calculus revisited
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Linear algebra
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="linear.html" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Linear algebra
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#linear-algebra" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        linear algebra
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="linear algebra">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#part-1-choose-your-fighte-vector-space" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        part \(1\): choose your fighte- vector space!
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#part-2-linear-combinations-span-and-basis-vectors" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        part \(2\): linear combinations, span, and basis vectors
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#part-3-matrices-and-linear-transformations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        part \(3\): matrices and linear transformations
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#part-4-matrix-multiplication" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        part \(4\): matrix multiplication
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="group_theory.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Group theory
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="ring.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ring theory
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#linear-algebra" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        linear algebra
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="linear algebra">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#part-1-choose-your-fighte-vector-space" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        part \(1\): choose your fighte- vector space!
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#part-2-linear-combinations-span-and-basis-vectors" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        part \(2\): linear combinations, span, and basis vectors
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#part-3-matrices-and-linear-transformations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        part \(3\): matrices and linear transformations
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#part-4-matrix-multiplication" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        part \(4\): matrix multiplication
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+  <h1>Linear algebra</h1>
+
+<h2 id="linear-algebra">linear algebra<a class="headerlink" href="#linear-algebra" title="Permanent link">&para;</a></h2>
+<h3 id="part-1-choose-your-fighte-vector-space">part <span class="arithmatex">\(1\)</span>: choose your fighte- vector space!<a class="headerlink" href="#part-1-choose-your-fighte-vector-space" title="Permanent link">&para;</a></h3>
+<p>As you might know, the main thing in linear algebra is the vector. so, to make this as general as possible, I'm gonna let you make your own vector space (space in which vectors live). Something important that defines a vector is that there's a sense of vector <span class="arithmatex">\(\vec{u} + \vec{v}\)</span> (for vectors <span class="arithmatex">\(\vec{u}\)</span> and <span class="arithmatex">\(\vec{v}\)</span>) and there's a sense of vector <span class="arithmatex">\(c \vec{v}\)</span> (for vector <span class="arithmatex">\(\vec{v}\)</span> and scalar (real number) <span class="arithmatex">\(c\)</span>). But, you cannot (necessarily) multiply vectors or add vectors and scalars (unless you use geometric algebra). But, for something to quallify as a vector space, there are some more rules/axioms it has to follow: (assume that your vector space is denoted as <span class="arithmatex">\(\text{V}\)</span> with vectors <span class="arithmatex">\(\vec{u}\)</span>, <span class="arithmatex">\(\vec{v}\)</span>, <span class="arithmatex">\(\vec{w}\)</span> and scalars <span class="arithmatex">\(x\)</span>, <span class="arithmatex">\(y\)</span>, and <span class="arithmatex">\(z\)</span>)</p>
+<p>Rule #<span class="arithmatex">\(1\)</span>:</p>
+<p><span class="arithmatex">\(\vec{u} + (\vec{v} + \vec{w}) = (\vec{u} + \vec{v}) + \vec{w}\)</span></p>
+<p>Rule #<span class="arithmatex">\(2\)</span>:</p>
+<p><span class="arithmatex">\(\vec{u} + \vec{v} = \vec{v} + \vec{u}\)</span></p>
+<p>Rule #<span class="arithmatex">\(3\)</span> with words:</p>
+<p>There is a vector <span class="arithmatex">\(\vec{0}\)</span> aka "the zero vector" such that <span class="arithmatex">\(\vec{v} + \vec{0} = \vec{v}\)</span> for all <span class="arithmatex">\(\vec{v}\)</span></p>
+<p>Rule #<span class="arithmatex">\(3\)</span> with set theory:</p>
+<p><span class="arithmatex">\(\exists \vec{0} \in \text{V}. ∀ \vec{v} \in \text{V}. \vec{v} + \vec{0} = \vec{v}\)</span></p>
+<p>Rule #<span class="arithmatex">\(4\)</span> with words:</p>
+<p>For any <span class="arithmatex">\(\vec{v}\)</span> there is a <span class="arithmatex">\(-\vec{v}\)</span> such that <span class="arithmatex">\(\vec{v} + (-\vec{v}) = \vec{0}\)</span> for all <span class="arithmatex">\(\vec{v}\)</span></p>
+<p>Rule #<span class="arithmatex">\(4\)</span> with set theory:</p>
+<p><span class="arithmatex">\(∀ \vec{v} \in \text{V}. \exists -\vec{v} \in \text{V}. \vec{v} + (-\vec{v}) = \vec{0}\)</span></p>
+<p>Rule #<span class="arithmatex">\(5\)</span>:</p>
+<p><span class="arithmatex">\(x(y \vec{v}) = (xy) \vec{v}\)</span></p>
+<p>Rule #<span class="arithmatex">\(6\)</span>:</p>
+<p><span class="arithmatex">\(1 \vec{v} = \vec{v}\)</span></p>
+<p>Rule #<span class="arithmatex">\(7\)</span>:</p>
+<p><span class="arithmatex">\(x(\vec{u} + \vec{v}) = x \vec{u} + x \vec{v}\)</span></p>
+<p>Rule #<span class="arithmatex">\(8\)</span>:</p>
+<p><span class="arithmatex">\((x + y) \vec{v} = x \vec{v} + y \vec{v}\)</span></p>
+<p>The vector space that (at least to me) makes all of the intuition click is arrows in space where it's the same if it has the same length and direction (hence the little arrow over every vector). The result of adding two of them is putting the base of the second on the tip of the first and drawing a new arrow from the base of the first to the tip of the second. The result of multiplying one of these by a number is scaling the length by a factor of the number (hence the name) and flipping the vector and scaling the length by a factor of the absolute value of the number if it is negative. You can convince yourself that this is a vector space. Also, these sorts of vectors are usually rooted at the origin.</p>
+<p>another commonly used definition of a vector is that of lists of numbers. The result of adding two of them is adding them term by term and the result of multiplying one of these by a number is multiplying each term by said number. You can convince yourself that this is a vector space.</p>
+<p>You can convert from the first definition to the second by making a list of the vector's coordinates and doing the opposite to convert from a list of numbers to an arrow.</p>
+<p>Now that you have chosen a vector space, we can now move on to...</p>
+<h3 id="part-2-linear-combinations-span-and-basis-vectors">part <span class="arithmatex">\(2\)</span>: linear combinations, span, and basis vectors<a class="headerlink" href="#part-2-linear-combinations-span-and-basis-vectors" title="Permanent link">&para;</a></h3>
+<p>In <span class="arithmatex">\(2d\)</span> (arrows of length <span class="arithmatex">\(1\)</span> or list of two numbers) there are vectors that will prove to be very important. The first being called <span class="arithmatex">\(\hat{x}\)</span> (x hat), the unit vector pointing to the right (in the direction in the <span class="arithmatex">\(x\)</span> axis) or the list of numbers <span class="arithmatex">\(\begin{bmatrix} 1 \\
+0 \\ \end{bmatrix}\)</span> (vectors that are of length <span class="arithmatex">\(1\)</span> are denoted with a hat) and <span class="arithmatex">\(\hat{y}\)</span> (y hat) the unit vector pointing up (in the direction in the <span class="arithmatex">\(y\)</span> axis). AKA the list of numbers <span class="arithmatex">\(\begin{bmatrix} 0 \\
+1 \\ \end{bmatrix}\)</span>.</p>
+<p>If you think about it, any <span class="arithmatex">\(2d\)</span> vector <span class="arithmatex">\(\begin{bmatrix} x \\
+y \\ \end{bmatrix}\)</span> can be written in terms of <span class="arithmatex">\(\hat{x}\)</span> and <span class="arithmatex">\(\hat{y}\)</span> (i.e. <span class="arithmatex">\(x \begin{bmatrix} 1 \\
+0 \\ \end{bmatrix} = \begin{bmatrix} x \\
+0 \\ \end{bmatrix}\)</span>, <span class="arithmatex">\(y \begin{bmatrix} 0 \\
+1 \\ \end{bmatrix} = \begin{bmatrix} 0 \\
+y \\ \end{bmatrix}\)</span>, <span class="arithmatex">\(\begin{bmatrix} x \\
+0 \\ \end{bmatrix} + \begin{bmatrix} 0 \\
+y \\ \end{bmatrix} = \begin{bmatrix} x \\
+y \\ \end{bmatrix}\)</span>).</p>
+<p>Alternatively (and you might need a grid for this), you can take the unit vector in the x direction and scale it until it's tip is on the same vertical line as the tip of your vector and the same thing with the y direction. And, when you add them up, (you can deduce that) you get your original vector. This can be used as another way to go back and forth between the two definitions of a vector.</p>
+<p>By the way, this is called a linear combination of <span class="arithmatex">\(\hat{x}\)</span> and <span class="arithmatex">\(\hat{y}\)</span> (linear because if you fix one and vary the other, it traces out a line if you look at the tip of the result).</p>
+<p>For this reason that every <span class="arithmatex">\(2d\)</span> vector can be made out of <span class="arithmatex">\(\hat{x}\)</span> and <span class="arithmatex">\(\hat{y}\)</span>, they are called the basis vectors.</p>
+<p>Also, Every Vector that can be formed by adding and scaling <span class="arithmatex">\(\hat{x}\)</span>, $\hat{y}, and any other vector formed in this way is of the form <span class="arithmatex">\(a \hat{x} + b \hat{y}\)</span>, and the reason why is because <span class="arithmatex">\((a \hat{x} + b \hat{y}) + c \hat{x} + d \hat{y} = (a + c) \hat{x} + (b + d) \hat{y}\)</span> and <span class="arithmatex">\(c(a \hat{x} + b \hat{y}) = (a) \hat{x} + (cb) \hat{y}\)</span>.</p>
+<p>Also by the way, <span class="arithmatex">\(a \vec{u} + b \vec{v}\)</span> is called a linear combination of <span class="arithmatex">\(\vec{u}\)</span> and <span class="arithmatex">\(\vec{v}\)</span>.</p>
+<p>But this begs the question: we could've used any other two basis vectors and we would've gotten another completely sensible way of going back and forth between the two definitions of a vector. That is, of course, unless the two vectors that are aligned with each other (or are both the zero vector).</p>
+<p>By the way, the set of all the vectors that can be made with a linear combination of two vectors is called the span of those two vectors. This idea of using different basis vectors, aka a different basis, is something that I'll go much more in detail about later.</p>
+<p>Also, if you have just one vector, think of it as an arrow, but if you have many vectors, think of each of them as a point where the point lies at the tip of the vector.</p>
+<p>But, things get more interesting in <span class="arithmatex">\(3d\)</span>, now <span class="arithmatex">\(a \vec{u} + b \vec{v}\)</span> is a flat sheet cutting through the origin.</p>
+<p>But what about the span of <span class="arithmatex">\(3\)</span> vectors in <span class="arithmatex">\(3d\)</span>, Now it's <span class="arithmatex">\(a \vec{u} + b \vec{v} + c \vec{w}\)</span> for scalars <span class="arithmatex">\(a\)</span>, <span class="arithmatex">\(b\)</span>, <span class="arithmatex">\(c\)</span>. And if the third is in the span of the other two, it doesn't change the span and it's still a flat sheet cutting through the origin.</p>
+<p>You can imagine the first two forming a plane, and then the third one moving the plane around, sweeping it through space. Another intuition is that you're using all three scalars to your advantage, you can't replace one of them with the other two.</p>
+<p>Whenever you can remove a vector without changing its span it is also known as linearly dependent, but <span class="arithmatex">\(\hat{z}\)</span> signed the declaration of independence ~<span class="arithmatex">\(250\)</span> years ago, so they span all of <span class="arithmatex">\(3d\)</span> space.</p>
+<p>So, the more formal definition of a basis is a set of linearly independent vectors that span all of space.</p>
+<p>Some of you might have seen the definition of linear independence as "The only solution to <span class="arithmatex">\(a \vec{u} + b \vec{v} + c \vec{w} = 0\)</span> is <span class="arithmatex">\(a = b = c = 0\)</span>". But I think you should instead think of it as "There isn't any <span class="arithmatex">\(a\)</span>, <span class="arithmatex">\(b\)</span> such that <span class="arithmatex">\(\vec{w} = a \vec{u} + b \vec{v}\)</span>"</p>
+<p><span class="arithmatex">\(100\)</span> Lines.</p>
+<h3 id="part-3-matrices-and-linear-transformations">part <span class="arithmatex">\(3\)</span>: matrices and linear transformations<a class="headerlink" href="#part-3-matrices-and-linear-transformations" title="Permanent link">&para;</a></h3>
+<p>This is probably the most important part in this course.</p>
+<p>Let's start off this part with a quote:</p>
+<p>No one really understands The Matrix, you just have to see for yourself.</p>
+<p>-Morpheus</p>
+<p>Jokes Aside, for this part I'm going to be talking about linear transformations.</p>
+<p>Transformation is just a fancy word for function (In this context, it's a function that inputs and outputs vectors), but what makes it linear is that it preserves the two operations of vector addition and scalar multiplication.</p>
+<p>That is, <span class="arithmatex">\(L(\vec{u} + \vec{v}) = L(\vec{u}) + L(\vec{v})\)</span>, and <span class="arithmatex">\(L(c \vec{v}) = c L(\vec{v})\)</span> (I'll explain why the word linear is used later).</p>
+<p>You can picture moving every vector to the corresponding output vector. And, if you remember what I told you the last part, that should mean transforming the grid itself, stretching and morphing it.</p>
+<p>But linear algebra limits itself to a very specific type of transformation: transformations of space that keep the grid lines parallel and evenly spaced with the origin remaining fixed.</p>
+<p>You can convince yourself that these two are the same.</p>
+<p>But, if you were given one of these guys, how would you describe it numerically? What is <span class="arithmatex">\(L(\vec{v})\)</span>?</p>
+<p>Well, describe <span class="arithmatex">\(\vec{v}\)</span> as a linear combination of <span class="arithmatex">\(\hat{x}\)</span> and <span class="arithmatex">\(\hat{y}\)</span>, so <span class="arithmatex">\(v_x \hat{x} + v_y \hat{y}\)</span></p>
+<div class="arithmatex">\[ L(\vec{v}) = L(v_x \hat{x} + v_y \hat{y}) = L(v_x \hat{x}) + L(v_y \hat{y}) = v_x L(\hat{x}) + v_y L(\hat{y}) \]</div>
+<p>This is why it's called a linear transformation, <span class="arithmatex">\(L(\vec{v})\)</span> is a linear combination of <span class="arithmatex">\(L(\hat{x})\)</span> and <span class="arithmatex">\(L(\hat{y})\)</span></p>
+<p>So, literally all you need to define a (<span class="arithmatex">\(2d\)</span>) linear transformation is where <span class="arithmatex">\(\hat{x}\)</span> and <span class="arithmatex">\(\hat{y}\)</span> each go.</p>
+<p>Here's a concrete example: let's say that the transformation applied to <span class="arithmatex">\(\hat{x}\)</span> is <span class="arithmatex">\(\begin{bmatrix} 1 \\
+-2 \\ \end{bmatrix}\)</span> and the transformation applied to <span class="arithmatex">\(\hat{y}\)</span> is <span class="arithmatex">\(\begin{bmatrix} 3 \\
+0 \\ \end{bmatrix}\)</span>, then the transformation applied to <span class="arithmatex">\(-1 \hat{x} + 2 \hat{y}\)</span> should be <span class="arithmatex">\(-1 \begin{bmatrix} 1 \\
+-2 \\ \end{bmatrix} + 2 \begin{bmatrix} 3 \\
+0 \\ \end{bmatrix} = \begin{bmatrix} (-1)(1) + (2)(3) \\
+(-1)(-2) + (2)(0) \\ \end{bmatrix} = \begin{bmatrix} 5 \\
+2 \\ \end{bmatrix}\)</span></p>
+<p>Ok, got all that?</p>
+<p>In general, this transformation applied to <span class="arithmatex">\(\begin{bmatrix} x \\
+y \\ \end{bmatrix}\)</span> is <span class="arithmatex">\(\begin{bmatrix} 1x + 3y \\
+-2x + 0y \\ \end{bmatrix}\)</span>. You give me any vector and I tell you the output vector.</p>
+<p>What I'm saying is that the linear transformation <span class="arithmatex">\(L\)</span> is completely determined by four numbers: the <span class="arithmatex">\(x\)</span> coordinate of the transformed <span class="arithmatex">\(\hat{x}\)</span>, the y coordinate of the transformed <span class="arithmatex">\(\hat{x}\)</span>, the <span class="arithmatex">\(x\)</span> coordinate of the transformed <span class="arithmatex">\(\hat{y}\)</span>, and the y coordinate of the transformed <span class="arithmatex">\(\hat{y}\)</span>.</p>
+<p>Usually how you write a linear transformation is with a <span class="arithmatex">\(2x2\)</span> group of numbers, also called a called a <span class="arithmatex">\(2x2\)</span> matrix. You can read off the first column as where <span class="arithmatex">\(\hat{x}\)</span> goes, and the second as where <span class="arithmatex">\(\hat{y}\)</span> goes.</p>
+<p>By the way, linear transformations are usually denoted with an <span class="arithmatex">\(L\)</span> (<span class="arithmatex">\(L\)</span> for linear), but matrices are usually denoted as capital letters.</p>
+<p>Also by the way, if you're applying a linear transformation to a vector and the linear transformation is written as a matrix, <span class="arithmatex">\(A(\vec{v})\)</span> is usually just denoted as <span class="arithmatex">\(A \vec{v}\)</span>  and called "matrix vector multiplication".</p>
+<p>If you're given a matrix describing a linear transformation, and you're also given some specific vector, and you want to compute the linear transformation evaluated on said vector, you multiply the coordinates of the vector by the columns of the matrix and adding up the results.</p>
+<p>Here's a concrete example:</p>
+<div class="arithmatex">\[ \begin{bmatrix} 3 &amp; 2 \\
+-2 &amp; 1 \\ \end{bmatrix} \begin{bmatrix} 5 \\
+7 \\ \end{bmatrix} = 5 \begin{bmatrix} 3 \\
+-2 \\ \end{bmatrix} + 7 \begin{bmatrix} 2 \\
+1 \\ \end{bmatrix} \]</div>
+<p>What about the most general possible example of matrix vector multiplication:</p>
+<div class="arithmatex">\[ \begin{bmatrix} a &amp; b \\
+c &amp; d \\ \end{bmatrix} \begin{bmatrix} x \\
+y \\ \end{bmatrix} = x \begin{bmatrix} a \\
+c \\ \end{bmatrix} + y \begin{bmatrix} b \\
+d \\ \end{bmatrix} = \begin{bmatrix} ax \\
+cx \\ \end{bmatrix} + \begin{bmatrix} by \\
+dy \\ \end{bmatrix} \]</div>
+<div class="arithmatex">\[ \begin{bmatrix} a &amp; b \\
+c &amp; d \\ \end{bmatrix} \begin{bmatrix} x \\
+y \\ \end{bmatrix} = \begin{bmatrix} ax + by \\
+cx + dy \\ \end{bmatrix} \]</div>
+<p>You could even use this formula as a definition. And then you could teach it to high schoolers worldwide and not teach them the key intuition that makes it intuitive (<span class="arithmatex">\(x \begin{bmatrix} a \\
+c \\ \end{bmatrix} + y \begin{bmatrix} b \\
+d \\ \end{bmatrix}\)</span>)</p>
+<p>Isn't it better to think of the columns of the matrix as where <span class="arithmatex">\(\hat{x}\)</span> and <span class="arithmatex">\(\hat{y}\)</span> each go? And the result of multiplying a matrix by a vector as the appropriate linear combination?</p>
+<p>How would you describe a linear transformation like a 90° counterclockwise rotation? (Yes, that is a linear transformation.) Well, <span class="arithmatex">\(\hat{x}\)</span> gets shifted up towards <span class="arithmatex">\(\begin{bmatrix} 0 \\
+1 \\ \end{bmatrix}\)</span> (<span class="arithmatex">\(\hat{y}\)</span>), and <span class="arithmatex">\(\hat{y}\)</span> gets rotated down towards <span class="arithmatex">\(\begin{bmatrix} -1 \\
+0 \\ \end{bmatrix}\)</span> (<span class="arithmatex">\(-\hat{x}\)</span>). So the result should be the matrix <span class="arithmatex">\(\begin{bmatrix} 0 &amp; -1 \\
+1 &amp; 0 \\ \end{bmatrix}\)</span>, and if you want to rotate any vector clockwise by 90 degrees, just multiply it by the matrix <span class="arithmatex">\(\begin{bmatrix} 0 &amp; -1 \\
+1 &amp; 0 \\ \end{bmatrix}\)</span>.</p>
+<p>On the other hand, if the two columns are linearly dependent, the transformation squishes all of space onto one line, the span of the two linearly dependent columns.</p>
+<p>Summary:</p>
+<p><span class="arithmatex">\(200\)</span> Lines.</p>
+<p>linear transformations are those that preserve the operations of vector addition and scalar multiplication, of which you can think of as transformations of space that keep the grid lines parallel and evenly spaced with the origin remaining fixed. But to describe your linear transformation, you only need a handful of numbers: the coordinates of where the basis vectors land. matrices give us a language for linear transformations: just read off the columns and you'll know where the basis vectors land. And matrix vector multiplication just tells you what the linear transformation does to a given vector.</p>
+<p>Ok, got all that?</p>
+<h3 id="part-4-matrix-multiplication">part <span class="arithmatex">\(4\)</span>: matrix multiplication<a class="headerlink" href="#part-4-matrix-multiplication" title="Permanent link">&para;</a></h3>
+<p>What happens if you want to apply more than one linear transformation to a given vector? How do you do that?</p>
+<p>If you want to apply <span class="arithmatex">\(\begin{bmatrix} 0 &amp; -1 \\
+1 &amp; 0 \\ \end{bmatrix}\)</span> (aka rotate the plane 90° counterclockwise), then <span class="arithmatex">\(\begin{bmatrix} 1 &amp; 1 \\
+0 &amp; 1 \\ \end{bmatrix}\)</span> (commonly called a shear (?)) You get a new matrix, commonly called the composition of the other two.</p>
+<p>Here's a quick proof that the result is indeed a linear transformation:</p>
+<div class="arithmatex">\[ C(\vec{v}) = L(M(\vec{v})) \]</div>
+<div class="arithmatex">\[ C(\vec{u} + \vec{v}) = L(M(\vec{u} + \vec{v})) = L(M(\vec{u}) + M(\vec{v})) = L(M(\vec{u})) + L(M(\vec{v})) = C(\vec{u}) + C(\vec{v}) \]</div>
+<div class="arithmatex">\[ C(c \vec{v}) = L(M(c \vec{v})) = L(c M(\vec{v})) = c L(M(\vec{v})) = c C(\vec{v}) \]</div>
+<p>Side note!</p>
+<p>if you apply <span class="arithmatex">\(A\)</span> to <span class="arithmatex">\(\vec{v}\)</span>, then you apply <span class="arithmatex">\(B\)</span> to that, it's actually written as <span class="arithmatex">\(BA \vec{v}\)</span> (because <span class="arithmatex">\(B(A \vec{v})\)</span>).</p>
+<p>This stems from how functions are written, because if you have something like <span class="arithmatex">\(f(g(x))\)</span>, then was really saying is apply <span class="arithmatex">\(g\)</span> first, then <span class="arithmatex">\(f\)</span>, you have to read it right to left.</p>
+<p>Good for the Hebrew eaters (?), bad news for the rest of us.</p>
+<p>End of side note.</p>
+<p>We can find the columns of this new composition matrix like this:</p>
+<div class="arithmatex">\[ A \hat{x} = \begin{bmatrix} ? &amp; ? \\
+? &amp; ? \\ \end{bmatrix} \hat{x} = \begin{bmatrix} 1 &amp; 1 \\
+0 &amp; 1 \\ \end{bmatrix} (\begin{bmatrix} 0 &amp; -1 \\
+1 &amp; 0 \\ \end{bmatrix} \hat{x}) : = \begin{bmatrix} 1 &amp; 1 \\
+0 &amp; 1 \\ \end{bmatrix} \begin{bmatrix} 0 \\
+1 \\ \end{bmatrix} = \begin{bmatrix} (1)(0) + (1)(1) \\
+(0)(0) + (1)(1) \\ \end{bmatrix} \]</div>
+<div class="arithmatex">\[ \begin{bmatrix} ? &amp; ? \\
+? &amp; ? \\ \end{bmatrix} \hat{x} = \begin{bmatrix} 1 \\
+1 \\ \end{bmatrix} \]</div>
+<div class="arithmatex">\[ A \hat{y} = \begin{bmatrix} 1 &amp; ? \\
+1 &amp; ? \\ \end{bmatrix} \hat{y} = \begin{bmatrix} 1 &amp; 1 \\
+0 &amp; 1 \\ \end{bmatrix} (\begin{bmatrix} 0 &amp; -1 \\
+1 &amp; 0 \\ \end{bmatrix} \hat{y}) : = \begin{bmatrix} 1 &amp; 1 \\
+0 &amp; 1 \\ \end{bmatrix} \begin{bmatrix} -1 \\
+0 \\ \end{bmatrix} = \begin{bmatrix} (1)(-1) + (1)(0) \\
+(0)(-1) + (1)(0) \\ \end{bmatrix} \]</div>
+<div class="arithmatex">\[ \begin{bmatrix} 1 &amp; ? \\
+1 &amp; ? \\ \end{bmatrix} \hat{y} = \begin{bmatrix} -1 \\
+0 \\ \end{bmatrix} \]</div>
+<div class="arithmatex">\[ A = \begin{bmatrix} 1 &amp; -1 \\
+1 &amp; 0 \\ \end{bmatrix} \]</div>
+<p>Here's a new way to think about the composition matrix: if you were to take your vector and apply the rotation to it, and then the shear. The long way of doing this is to first multiply it on the left by the rotation matrix, and then by the shear. But the short way of doing it is just multiplying it by this new composition matrix.</p>
+<p>This should work no matter what the initial vector was, because this new matrix should be able to capture the idea of the "rotation then shear" action</p>
+<p><span class="arithmatex">\(\begin{bmatrix} 1 &amp; 1 \\
+0 &amp; 1 \\ \end{bmatrix} (\begin{bmatrix} 0 &amp; -1 \\
+1 &amp; 0 \\ \end{bmatrix} \vec{v}) = \begin{bmatrix} 1 &amp; -1 \\
+1 &amp; 0 \\ \end{bmatrix} \vec{v}\)</span></p>
+<p>And if I'm assuming that matrix vector multiplication is associative (i.e. <span class="arithmatex">\(x^\star (y^\star z) = (x^\star y)^\star z\)</span>), then <span class="arithmatex">\(A(B \vec{v}) = (AB) \vec{v}\)</span>.</p>
+<p>For this reason, the composition of <span class="arithmatex">\(A\)</span> and <span class="arithmatex">\(B\)</span> is usually denoted as <span class="arithmatex">\(AB\)</span>.</p>
+<p>Imagine this new composition matrix of <span class="arithmatex">\(A\)</span> and <span class="arithmatex">\(B\)</span> as transforming all of space with the <span class="arithmatex">\(B\)</span> transformation, and then transforming it again with the <span class="arithmatex">\(A\)</span> transformation after that.</p>
+<p>Let's look at another example (but this time I'll be explaining it): let's say that <span class="arithmatex">\(M_1 = \begin{bmatrix} 1 &amp; -2 \\
+1 &amp; 0 \\ \end{bmatrix}\)</span> and <span class="arithmatex">\(M_2 = \begin{bmatrix} 0 &amp; 2 \\
+1 &amp; 0 \\ \end{bmatrix}\)</span>. The composition of <span class="arithmatex">\(M_1\)</span> and <span class="arithmatex">\(M_2\)</span> should be a new matrix (call it <span class="arithmatex">\(M_c\)</span>), let's find it!</p>
+<p>To find the first column of <span class="arithmatex">\(M_c\)</span>, we need to figure out what happens when we apply it to <span class="arithmatex">\(\hat{x}\)</span>.</p>
+<p>But <span class="arithmatex">\(M_c\)</span> of <span class="arithmatex">\(\hat{x}\)</span> must just be <span class="arithmatex">\(M_2 M_1 \hat{x}\)</span>.</p>
+<p>But, because <span class="arithmatex">\(M_1\)</span> is the <span class="arithmatex">\(\begin{bmatrix} 1 &amp; -2 \\
+1 &amp; 0 \\ \end{bmatrix}\)</span> matrix, <span class="arithmatex">\(M_1 \hat{x}\)</span> is defined to equal <span class="arithmatex">\(\begin{bmatrix} 1 \\
+1 \\ \end{bmatrix}\)</span></p>
+<p>Now, the question becomes: what is <span class="arithmatex">\(M_2 \begin{bmatrix} 1 \\
+1 \\ \end{bmatrix}\)</span>?</p>
+<p>Well, <span class="arithmatex">\(M_2 \begin{bmatrix} 1 \\
+1 \\ \end{bmatrix} = \begin{bmatrix} 0 &amp; 2 \\
+1 &amp; 0 \\ \end{bmatrix} \begin{bmatrix} 1 \\
+1 \\ \end{bmatrix} = 1 \begin{bmatrix} 0 \\
+1 \\ \end{bmatrix} + 1 \begin{bmatrix} 2 \\
+0 \\ \end{bmatrix} = \begin{bmatrix} 0 \\
+1 \\ \end{bmatrix} + \begin{bmatrix} 2 \\
+0 \\ \end{bmatrix} = \begin{bmatrix} 0 \\
+1 \\ \end{bmatrix} + \begin{bmatrix} 2 \\
+0 \\ \end{bmatrix} = \begin{bmatrix} 2 \\
+1 \\ \end{bmatrix}\)</span></p>
+<p><span class="arithmatex">\(303\)</span> Lines.</p>
+<p>So, <span class="arithmatex">\(M_c = \begin{bmatrix} 2 &amp; ? \\
+1 &amp; ? \\ \end{bmatrix}\)</span></p>
+<p>To find the second column of <span class="arithmatex">\(M_c\)</span>, we need to figure out what happens when we apply it to <span class="arithmatex">\(\hat{y}\)</span>.</p>
+<p>But <span class="arithmatex">\(M_c\)</span> of <span class="arithmatex">\(\hat{y}\)</span> must just be <span class="arithmatex">\(M_2 M_1\)</span> <span class="arithmatex">\(\hat{y}\)</span>.</p>
+<p>But, because <span class="arithmatex">\(M_1\)</span> is the <span class="arithmatex">\(\begin{bmatrix} 1 &amp; -2 \\
+1 &amp; 0 \\ \end{bmatrix}\)</span> matrix, <span class="arithmatex">\(M_1\)</span> <span class="arithmatex">\(\hat{y}\)</span> is defined to equal <span class="arithmatex">\(\begin{bmatrix} -2 \\
+0 \\ \end{bmatrix}\)</span></p>
+<p>Now, the question becomes: what is <span class="arithmatex">\(M_2 \begin{bmatrix} 1 \\
+1 \\ \end{bmatrix}\)</span>?</p>
+<p>Well, <span class="arithmatex">\(M_2 \begin{bmatrix} -2 \\
+0 \\ \end{bmatrix} = \begin{bmatrix} 0 &amp; 2 \\
+1 &amp; 0 \\ \end{bmatrix} \begin{bmatrix} -2 \\
+0 \\ \end{bmatrix} = -2 \begin{bmatrix} 0 \\
+1 \\ \end{bmatrix} + 0 \begin{bmatrix} 2 \\
+0 \\ \end{bmatrix} = \begin{bmatrix} 0 \\
+-2 \\ \end{bmatrix}\)</span></p>
+<p>So, <span class="arithmatex">\(M_c = \begin{bmatrix} 2 &amp; 0 \\
+1 &amp; -2 \\ \end{bmatrix}\)</span></p>
+<p>Let's drive the most general possible formula for <span class="arithmatex">\(2x2\)</span> matrix multiplication.</p>
+<div class="arithmatex">\[ A = \begin{bmatrix} a &amp; b \\
+c &amp; d \\ \end{bmatrix} \]</div>
+<div class="arithmatex">\[ B = \begin{bmatrix} e &amp; f \\
+g &amp; h \\ \end{bmatrix} \]</div>
+<div class="arithmatex">\[ AB = \begin{bmatrix} ? &amp; ? \\
+? &amp; ? \\ \end{bmatrix} \]</div>
+<div class="arithmatex">\[ (AB) \hat{x} = A(B \hat{x}) \]</div>
+<div class="arithmatex">\[ B \hat{x} : = \begin{bmatrix} e \\
+g \\ \end{bmatrix} \]</div>
+<div class="arithmatex">\[ A(B \hat{x}) = A \begin{bmatrix} e \\
+g \\ \end{bmatrix} = \begin{bmatrix} a &amp; b \\
+c &amp; d \\ \end{bmatrix} \begin{bmatrix} e \\
+g \\ \end{bmatrix} = e \begin{bmatrix} a \\
+c \\ \end{bmatrix} + g \begin{bmatrix} b \\
+d \\ \end{bmatrix} = \begin{bmatrix} ae + bg \\
+ce + dg \\ \end{bmatrix} \]</div>
+<div class="arithmatex">\[ (AB) \hat{y} = A(B \hat{y}) \]</div>
+<div class="arithmatex">\[ B \hat{y} : = \begin{bmatrix} f \\
+h \\ \end{bmatrix} \]</div>
+<div class="arithmatex">\[ A(B \hat{y}) = A \begin{bmatrix} f \\
+h \\ \end{bmatrix} = \begin{bmatrix} a &amp; b \\
+c &amp; d \\ \end{bmatrix} \begin{bmatrix} f \\
+h \\ \end{bmatrix} = f \begin{bmatrix} a \\
+c \\ \end{bmatrix} + h \begin{bmatrix} b \\
+d \\ \end{bmatrix} = \begin{bmatrix} af + bh \\
+cf + dh \\ \end{bmatrix} \]</div>
+<div class="arithmatex">\[ AB = \begin{bmatrix} ae + bg &amp; af + bh \\
+ce + dg &amp; cf + dh \\ \end{bmatrix} \]</div>
+<p>We just derived the formula that you (probably) learned in school. Isn't that satisfying? </p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": [], "search": "assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

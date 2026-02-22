@@ -1,0 +1,1654 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="derivatives.html">
+      
+      
+        <link rel="next" href="calculus_2.html">
+      
+      
+        
+      
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.2">
+    
+    
+      
+        <title>Polynomial - Silas Maths</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#disclaimer" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="index.html" title="Silas Maths" class="md-header__button md-logo" aria-label="Silas Maths" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Silas Maths
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Polynomial
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/silaspe/maths" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Silas Maths
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="index.html" title="Silas Maths" class="md-nav__button md-logo" aria-label="Silas Maths" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Silas Maths
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/silaspe/maths" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Silas Maths
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="brainstorm.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Brainstorming a new page
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="derivatives.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Calculus
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Polynomial
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="polynomial.html" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Polynomial
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#disclaimer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        disclaimer
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="disclaimer">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#quartic" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        quartic
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#depressed-quartic" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        depressed quartic
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cubic" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        cubic
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#depressed-cubic" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        depressed cubic
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="depressed cubic">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#y" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        y
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#z" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        z
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#quadratic" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        quadratic
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        .
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label=".">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#depressed-cubic-again" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        depressed cubic (again)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#z-quartic" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        z (quartic)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="calculus_2.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Calculus part 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="trigonometry.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Trigonometry
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="complex.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Complex
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="jacobian.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Jacobian
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="eigen.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Eigenstuff
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="gamma.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Gamma
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="harmonic.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Harmonic
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="binomial.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Binomial
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="fractional_calculas.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fractional calculus
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="fibbonacci.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fibbonacci
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="probability.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Probability
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="complex_2.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Complex II
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="the_strand_puzzle.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The strand puzzle
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="arctan.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The infamous "arctan puzzle"
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="mod.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modular arithmetic
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="geometric_algebra.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Geometric algebra
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="set_theory.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Set theory
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="actual_repo.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Code repo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="binary.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The best way to count
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="geometric_algebra_2.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Geometric algebra 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="lambda.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lambda calculus
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="rand.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Non-math
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="some4.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Summer of Math Exposition 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="logic.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Set theory II
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="projective_geometry.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Projective geometry
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="lcr.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lambda Calculus revisited
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="linear.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Linear algebra
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="group_theory.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Group theory
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="ring.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ring theory
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#disclaimer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        disclaimer
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="disclaimer">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#quartic" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        quartic
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#depressed-quartic" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        depressed quartic
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cubic" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        cubic
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#depressed-cubic" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        depressed cubic
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="depressed cubic">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#y" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        y
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#z" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        z
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#quadratic" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        quadratic
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        .
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label=".">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#depressed-cubic-again" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        depressed cubic (again)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#z-quartic" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        z (quartic)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+  <h1>Polynomial</h1>
+
+<h2 id="disclaimer">disclaimer<a class="headerlink" href="#disclaimer" title="Permanent link">&para;</a></h2>
+<p>this page uses terms like <span class="arithmatex">\(dx\)</span> and <span class="arithmatex">\(e\)</span>, but these have nothing to do with calculus and are just notation, also in the <span class="arithmatex">\(2nd\)</span> and <span class="arithmatex">\(4th\)</span> chapters if this is the <span class="arithmatex">\(1st\)</span>, I swapped <span class="arithmatex">\(x\)</span> for <span class="arithmatex">\(x - \frac{b}{na}\)</span> where <span class="arithmatex">\(n\)</span> is the degree of the polynomial so when plugging things in, make sure to add <span class="arithmatex">\(\frac{b}{na}\)</span>, also I probably should have swapped the order I did this so that the quadratic came first, the last thing to warn you about is that I re-used letters like <span class="arithmatex">\(a\)</span>, <span class="arithmatex">\(b\)</span>, <span class="arithmatex">\(c\)</span>, <span class="arithmatex">\(p\)</span>, <span class="arithmatex">\(q\)</span>, and <span class="arithmatex">\(z\)</span>, anyways let's start strong with the...</p>
+<h3 id="quartic">quartic<a class="headerlink" href="#quartic" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[ ax^4 + bx^3 + cx^2 + dx + e = 0 \]</div>
+<div class="arithmatex">\[ x \to x - \frac{b}{4a} \]</div>
+<div class="arithmatex">\[ a (x - \frac{b}{4a})^4 + b (x - \frac{b}{4a})^3 + c (x - \frac{b}{4a})^2 + d (x - \frac{b}{4a}) + e = 0 \]</div>
+<div class="arithmatex">\[ ax^4 - 4ax^3 \frac{b}{4a} + 6ax^2 \frac{b^2}{16a^2} - 4ax \frac{b^3}{64a^3} + a \frac{b^4}{256a^4} + bx^3 - 3bx^2 \frac{b}{4a} + 3bx \frac{b^2}{16a^2} - b \frac{b^3}{64a^3} + cx^2 - 2cx \frac{b}{4a} + c \frac{b^2}{16a^2} + dx - d \frac{b}{4a} + e = 0 \]</div>
+<div class="arithmatex">\[ ax^4 - bx^3 + \frac{3b^2 x^2}{8a} - \frac{b^3 x}{16a^2} + \frac{b^4}{256a^3} + bx^3 - \frac{3b^2 x^2}{4a} + \frac{3b^3 x}{16a^2} - \frac{b^4}{64a^3} + cx^2 - \frac{bcx}{2a} + \frac{b^2c}{16a^2} + dx - \frac{bd}{4a} + e = 0 \]</div>
+<div class="arithmatex">\[ ax^4 - \frac{3b^2 x^2}{8a} - \frac{b^3 x}{16a^2} + \frac{b^4}{256a^3} + \frac{3b^3 x}{16a^2} - \frac{b^4}{64a^3} + cx^2 - \frac{bcx}{2a} + \frac{b^2c}{16a^2} + dx - \frac{bd}{4a} + e = 0 \]</div>
+<div class="arithmatex">\[ (a)x^4 + (c-\frac{3b^2}{8a})x^2 + (\frac{2b^3}{16a^2} - \frac{bc}{2a} + d)x + (\frac{b^4}{256a^3} - \frac{b^4}{64a^2} + \frac{b^2c}{16a^2} - \frac{bd}{4a} + e) = 0 \]</div>
+<div class="arithmatex">\[ x^4 + (c-\frac{3b^2}{8a^2})x^2 + (\frac{2b^3}{16a^3} - \frac{bc}{2a^2} + \frac{d}{a})x + (\frac{b^4}{256a^4} - \frac{b^4}{64a^3} + \frac{b^2c}{16a^3} - \frac{bd}{4a^2} + \frac{e}{a}) = 0 \]</div>
+<div class="arithmatex">\[ p = c-\frac{3b^2}{8a^2} \]</div>
+<div class="arithmatex">\[ q = \frac{2b^3}{16a^3} - \frac{bc}{2a^2} + \frac{d}{a} \]</div>
+<div class="arithmatex">\[ r = \frac{b^4}{256a^4} - \frac{b^4}{64a^3} + \frac{b^2c}{16a^3} - \frac{bd}{4a^2} + \frac{e}{a} \]</div>
+<h3 id="depressed-quartic">depressed quartic<a class="headerlink" href="#depressed-quartic" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[ x^4 + px^2 + qx + r = 0 \]</div>
+<div class="arithmatex">\[ x^4 + px^2 = -qx - r \]</div>
+<div class="arithmatex">\[ x^4 + 2px^2 + p^2 = px^2 - qx - r + p^2 \]</div>
+<div class="arithmatex">\[ (x^2 + p)^2 = px^2 - qx - r + p^2 \]</div>
+<div class="arithmatex">\[ (x^2 + p)^2 + 2(x^2 + p)z + z^2 = (x^2 + p + z)^2 = px^2 - qx - r + p^2 + 2zx^2 + 2pz + z^2 = (p + 2z)x^2 - qx + 2pz + z^2 - r + p^2 \]</div>
+<p>Now, define z so that the right side of this equation is a perfect square. But then a quadratic is of the form <span class="arithmatex">\(c(x - ?)(x - ?)\)</span> or <span class="arithmatex">\((\something x + \something)^2\)</span>, so if it is a perfect square, than there is only one solution, which means that the <a href="https://silaspe.github.io/maths/polynomial.html#depressed-quartic-again">discriminant</a> equals zero, so</p>
+<div class="arithmatex">\[ (-q)^2 - 4(p + 2z)(2pz + z^2 - r + p^2) = 0 \]</div>
+<p>expanding out, we get a cubic polynomial to solve for z. and once we do, we have that <span class="arithmatex">\((x^2 + p + z)^2 = (\something x + \something)^2\)</span>, so now we can solve for x with a quadratic</p>
+<p>yay! but we still have to derive the quadratic discriminant and the cubic formula in the next few chapters.</p>
+<h3 id="cubic">cubic<a class="headerlink" href="#cubic" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[ ax^3 + bx^2 + cx + d = 0 \]</div>
+<div class="arithmatex">\[ x \to x - \frac{b}{3a} \]</div>
+<div class="arithmatex">\[ a (x - \frac{b}{3a})^3 + b (x - \frac{b}{3a})^2 + c (x - \frac{b}{3a}) + d = 0 \]</div>
+<div class="arithmatex">\[ ax^3 - 3ax^2 \frac{b}{3a} + 3ax \frac{b^2}{9a^2} - a \frac{b^3}{27a^3} + bx^2 - 2bx \frac{b}{3a} + b \frac{b^2}{9a^2} + cx - c \frac{b}{3a} + d = 0 \]</div>
+<div class="arithmatex">\[ ax^3 - bx^2 + \frac{b^2x}{3a} - \frac{b^3}{27a^2} + bx^2 - \frac{2b^2x}{3a} + \frac{b^3}{9a^2} + cx - \frac{bc}{3a} + d = 0 \]</div>
+<div class="arithmatex">\[ ax^3 - \frac{b^2x}{3a} + \frac{b^3}{6a^2} + cx - \frac{bc}{3a} + d = 0 \]</div>
+<div class="arithmatex">\[ (a)x^3 + (c - \frac{b^2}{3a})x + (\frac{b^3}{6a^2} - \frac{bc}{3a} + d) = 0 \]</div>
+<div class="arithmatex">\[ x^3 + (c - \frac{b^2}{3a^2})x + (\frac{b^3}{6a^3} - \frac{bc}{3a^2} + \frac{d}{a}) = 0 \]</div>
+<div class="arithmatex">\[ p = c - \frac{b^2}{3a^2} \]</div>
+<div class="arithmatex">\[ q = \frac{b^3}{6a^3} - \frac{bc}{3a^2} + \frac{d}{a} \]</div>
+<h3 id="depressed-cubic">depressed cubic<a class="headerlink" href="#depressed-cubic" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[ x^3 + px + q = 0 \]</div>
+<div class="arithmatex">\[ x + y = z \]</div>
+<div class="arithmatex">\[ z^3 = x^3 + 3x^2 y + 3x y^2 + y^3 = x^3 + 3xyz + y^3 \]</div>
+<div class="arithmatex">\[ 3xyz = px \]</div>
+<div class="arithmatex">\[ x^3 + 3xyz + q = 0 \]</div>
+<div class="arithmatex">\[ x^3 + 3xyz + y^3 = y^3 - q \]</div>
+<div class="arithmatex">\[ 3yz = p \]</div>
+<div class="arithmatex">\[ z^3 = y^3 - q \]</div>
+<h4 id="y">y<a class="headerlink" href="#y" title="Permanent link">&para;</a></h4>
+<div class="arithmatex">\[ z = \frac{p}{3y} \]</div>
+<div class="arithmatex">\[ y^3 - q = \frac{p^3}{27y^3} \]</div>
+<div class="arithmatex">\[ (y^3)^2 - qy^3 - (\frac{p}{3})^3 = 0 \]</div>
+<h4 id="z">z<a class="headerlink" href="#z" title="Permanent link">&para;</a></h4>
+<div class="arithmatex">\[ y = \frac{p}{3z} \]</div>
+<div class="arithmatex">\[ z^3 = \frac{p^3}{27z^3} - q \]</div>
+<div class="arithmatex">\[ (z^3)^2 + qz^3 - (\frac{p}{3})^3 = 0 \]</div>
+<p>okay, so now we have to solve the quadratic, take the cube root, and subtract just to solve for x</p>
+<h3 id="quadratic">quadratic<a class="headerlink" href="#quadratic" title="Permanent link">&para;</a></h3>
+<p>either <a href="https://silaspe.github.io/maths/quadratic.html">this</a></p>
+<p>or <a href="https://silaspe.github.io/maths/polynomial.html#_1">that</a></p>
+<h3 id="_1">.<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[ ax^2 + bx + c = 0 \]</div>
+<div class="arithmatex">\[ x^2 + \frac{b}{a} x = x^2 + 2 \frac{b}{2a} x = - \frac{c}{a} \]</div>
+<div class="arithmatex">\[ x^2 + 2 \frac{b}{2a} x + \frac{b^2}{4a^2} = (x + \frac{b}{2a})^2 = \frac{b^2}{4a^2} - \frac{c}{a} = \frac{b^2 - 4ac}{4a^2} \]</div>
+<div class="arithmatex">\[ x + \frac{b}{2a} = \pm  = \pm \frac{\sqrt{b^2 - 4ac}}{2a} \]</div>
+<div class="arithmatex">\[ x = -\frac{b}{2a} \pm \frac{\sqrt{b^2 - 4ac}}{2a} = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a} \]</div>
+<div class="arithmatex">\[ x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a} = -\frac{b}{2a} \pm \sqrt{\frac{b^2 - 4ac}{4a^2}} \]</div>
+<h4 id="depressed-cubic-again">depressed cubic (again)<a class="headerlink" href="#depressed-cubic-again" title="Permanent link">&para;</a></h4>
+<div class="arithmatex">\[ y^3 = \frac{q}{2} \pm \sqrt{\frac{q^2 + 4(\frac{p}{3})^3}{4}} = \frac{q}{2} \pm \sqrt{(\frac{q}{2})^2 + (\frac{p}{3})^3} \]</div>
+<div class="arithmatex">\[ y = \sqrt[3]{\frac{q}{2} \pm \sqrt{(\frac{q}{2})^2 + (\frac{p}{3})^3}} \]</div>
+<div class="arithmatex">\[ z^3 = -\frac{q}{2} \pm \sqrt{\frac{q^2 + 4(\frac{p}{3})^3}{4}} = -\frac{q}{2} \pm \sqrt{(\frac{q}{2})^2 + (\frac{p}{3})^3} \]</div>
+<div class="arithmatex">\[ z = \sqrt[3]{-\frac{q}{2} \pm \sqrt{(\frac{q}{2})^2 + (\frac{p}{3})^3}} \]</div>
+<div class="arithmatex">\[ x = z - y = \sqrt[3]{-\frac{q}{2} \pm \sqrt{(\frac{q}{2})^2 + (\frac{p}{3})^3}} - \sqrt[3]{\frac{q}{2} \pm \sqrt{(\frac{q}{2})^2 + (\frac{p}{3})^3}} = \sqrt[3]{-\frac{q}{2} \pm \sqrt{(\frac{q}{2})^2 + (\frac{p}{3})^3}} + \sqrt[3]{-\frac{q}{2} \mp \sqrt{(\frac{q}{2})^2 + (\frac{p}{3})^3}} \]</div>
+<p>but now, that <span class="arithmatex">\(\pm\)</span> is the only difference between <span class="arithmatex">\(y\)</span> and <span class="arithmatex">\(z\)</span>, and if they are the same then <span class="arithmatex">\(x\)</span> equals zero, and if you saw <a href="https://www.youtube.com/watch?v=N-KXStupwsc&amp;t=978s">this mathologer video</a> and stop at timestamp and 19:55, than you know that we might as well say that they are different because we only need one solution, if <span class="arithmatex">\(x \neq 0\)</span> than they have to be different. In all cases, one has to be <span class="arithmatex">\(+\)</span> and one has to be <span class="arithmatex">\(-\)</span>, you can choose which but I will just put the plus one first. In total:</p>
+<div class="arithmatex">\[ x = \sqrt[3]{-\frac{q}{2} + \sqrt{(\frac{q}{2})^2 + (\frac{p}{3})^3}} + \sqrt[3]{-\frac{q}{2} - \sqrt{(\frac{q}{2})^2 + (\frac{p}{3})^3}} \]</div>
+<p>so just plug in for <span class="arithmatex">\(p\)</span> and <span class="arithmatex">\(q\)</span> and add <span class="arithmatex">\(\frac{b}{3a}\)</span> and you have the cubic formula!</p>
+<h4 id="z-quartic">z (quartic)<a class="headerlink" href="#z-quartic" title="Permanent link">&para;</a></h4>
+<p>So finally, after reading the whole page, you can understand the quadratic discriminant, (either that or you just skipped to this part) but probably not. So this discriminant is the <span class="arithmatex">\(b^2 - 4ac\)</span> in the quadratic formula, because the square root of a positive number is positive and plus or minus a positive number has two solutions, the square root of a negative number is undefined (unless complex numbers) and plus or minus an undefined number has zero solutions, the square root zero is zero and plus or minus zero has one solution. In total, the sign of the <span class="arithmatex">\(b^2 - 4ac\)</span> determines how many solutions exist, which is why it is called discriminant, so...</p>
+<div class="arithmatex">\[ (-q)^2 - 4(p + 2z)(2pz + z^2 - r + p^2) = 0 \]</div>
+<div class="arithmatex">\[ q^2 - 8p^2z - 16pz^2 - 4pz^2 - 8z^3 + 4pr + 8rz - 4p^3 - 8p^2z = 0 \]</div>
+<div class="arithmatex">\[ (-8)z^3 + (-20p)z^2 + (8(r - 2p^2))z + (q^2 + 4pr - 4p^3) = 0 \]</div>
+<div class="arithmatex">\[ (8)z^3 + (20p)z^2 + (16p^2 - 8r)z + (4p(p^2 - r) - q^2) = 0 \]</div>
+<p>solve for z! (not <span class="arithmatex">\(\Gamma\)</span><a href="https://silaspe.github.io/maths/gamma.html"> </a>(<span class="arithmatex">\(z + 1\)</span>))</p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": [], "search": "assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
